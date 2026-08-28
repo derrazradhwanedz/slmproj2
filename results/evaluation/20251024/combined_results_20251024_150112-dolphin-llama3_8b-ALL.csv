@@ -1,0 +1,27 @@
+record_id,question,answer,final_answer,dataset,start_time,end_time,delta_time_seconds,cpu_usage_avg_percent,ram_usage_avg_mb,ram_usage_avg_percent,gpu_usage_avg_percent,gpu_memory_avg_mb,pred_token_count,ref_token_count,rouge1_f1,rouge2_f1,rougeL_f1,bleu,exact_match,token_f1,token_precision,token_recall,token_overlap_count,normalized_edit_distance,char_f1,bert_score_f1,semantic_similarity,Readability,Coherence,Relevance,Specificity,Engagement,Creativity,Precise,Concise,Complete,Informative,Coherent,Length,Elaboration,Burstiness,Zipf,Hapax,Entropy,Perplexity,Sentiment,Correct
+1,"A car is being driven, in a straight line and at a uniform speed, towards the base of a vertical tower. The top of the tower is observed from the car and, in the process, it takes 10 minutes for the angle of elevation to change from 45° to 60°. After how much more time will this car reach the base of the tower?
+# Answer option: ['A)5(√3 + 1)', 'B)6(√3 + √2)', 'C)7(√3 – 1)', 'D)8(√3 – 2)', 'E)None of these']",,"To solve this problem, we can use trigonometry. Let's denote the height of the tower as h and the distance traveled by the car as d.
+
+We know that the angle of elevation changes from 45° to 60° in 10 minutes. We also know that tan(45°) = tan(60°), so the ratio of the height to the distance is equal at both angles:
+
+h/d = sin(60°)/sin(45°)
+
+Since sin(60°) = √3/2 and sin(45°) = 1/√2, we have:
+
+h/d = (√3/2)/(1/√2) = √3
+
+Now let's consider the time it takes for the car to reach the base of the tower. We know that the angle of elevation changes from 60° to 90° in some additional time t. At this point, tan(90°) = ∞, so the ratio of the height to the distance becomes:
+
+h/d = sin(90°)/sin(60°)
+
+Since sin(90°) = 1 and sin(60°) = √3/2, we have:
+
+h/d = 1/(√3/2) = 2/√3
+
+Now we can equate the two ratios of h to d:
+
+√3 = 2/√3 - t
+
+Solving for t, we get:
+
+t = √3 - 2",AQUA,2025-10-24 14:52:54,2025-10-24 15:01:11,497.8227,0.0,0.0,0.0,,,85,0,0.0,0.0,0,0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.010892030782997608,1.0,0.047942556,0.62097,0.52378666,0.020080866,0.95948255,0.5039079,1.0,0.001741441,0.8650086,1.0,0.040992238,0.3792103,0.1015062,0.900747,0.9185202,0.06174355,0.004094988,0.0,1.0

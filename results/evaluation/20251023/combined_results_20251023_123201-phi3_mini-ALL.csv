@@ -1,0 +1,12 @@
+record_id,question,answer,final_answer,dataset,start_time,end_time,delta_time_seconds,cpu_usage_avg_percent,ram_usage_avg_mb,ram_usage_avg_percent,gpu_usage_avg_percent,gpu_memory_avg_mb,pred_token_count,ref_token_count,rouge1_f1,rouge2_f1,rougeL_f1,bleu,exact_match,token_f1,token_precision,token_recall,token_overlap_count,normalized_edit_distance,char_f1,bert_score_f1,semantic_similarity,Readability,Coherence,Relevance,Specificity,Engagement,Creativity,Precise,Concise,Complete,Informative,Coherent,Length,Elaboration,Burstiness,Zipf,Hapax,Entropy,Perplexity,Sentiment,Correct
+1,"A car is being driven, in a straight line and at a uniform speed, towards the base of a vertical tower. The top of the tower is observed from the car and, in the process, it takes 10 minutes for the angle of elevation to change from 45° to 60°. After how much more time will this car reach the base of the tower?
+# Answer option: ['A)5(√3 + 1)', 'B)6(√3 + √2)', 'C)7(√3 – 1)', 'D)8(√3 – 2)', 'E)None of these']",,"To solve this problem, we need to apply trigonometry and understand the relationship between angles of elevation and distances. Since it takes 10 minutes for the angle of elevation from a certain point on the road (where car is) towards the top of the tower to change from 45° to 60°, this implies that during these 10 minutes, the distance covered by the car reduces as per trigonometric principles.
+
+Let's denote:
+- The initial height difference between the observer and the base of the tower when angle is 45° as H (which would be equal to the horizontal distance from the point on road directly opposite the tower because tan(45°) = 1).
+- The final vertical height difference after time t minutes, which we'll call h. This can also represent how much closer the car gets to the base of the tower as it travels towards it.
+- Speed of the car v (in distance per minute), since speed is uniform and constant throughout its journey toward the tower.
+
+From trigonometry: 
+tan(60°) = h / H, which simplifies to tan(60°) = sqrt(3). Since we know that at time t=10 minutes (when angle of elevation was 45°), car had covered some distance D towards the tower and hence height difference is now less by d meters.
+",AQUA,2025-10-23 12:24:00,2025-10-23 12:32:01,480.7251,0.0,0.0,0.0,,,119,0,0.0,0.0,0,0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.012781479395925999,1.0,0.047942556,0.62097,0.52378666,0.020080866,0.95948255,0.5039079,1.0,0.001741441,0.8650086,1.0,0.040992238,0.3792103,0.1015062,0.900747,0.9185202,0.06174355,0.004094988,0.0,1.0

@@ -1,0 +1,22 @@
+model_names:
+  - "phi3:mini"
+  - "llama3.2:1b"
+  - "gemma2:2b"
+  - "qwen2:1.5b"
+  - "mistral:7b"
+  - "openchat:7b"
+  - "deepseek-r1:8b"
+dataset_dir: "benchmarks"
+output_dir: "results/evaluation"
+max_records: 1
+sample_interval: 0.5
+
+nnet:
+  model_path: "results/weights/model.pth"
+  q_scaler_path: "results/weights/q_scaler.pkl"
+  a_scaler_path: "results/weights/a_scaler.pkl"
+
+llm:
+  num_gpu: -1
+  num_predict: 300
+  temperature: 0.0
