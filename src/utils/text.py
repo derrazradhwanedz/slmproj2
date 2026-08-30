@@ -2,6 +2,7 @@
 
 from typing import List, Optional, Set, Tuple
 
+import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
@@ -19,17 +20,16 @@ def preprocess_text(text: str) -> Tuple[List[str], List[str]]:
 
     Raises:
         TypeError: If text is not a string.
-        RuntimeError: If the NLTK 'punkt' data is missing.
     """
     if not isinstance(text, str):
         raise TypeError(f"text must be a str, got {type(text).__name__}")
 
     try:
         tokens = word_tokenize(text.lower())
-    except LookupError as exc:
-        raise RuntimeError(
-            "Missing NLTK 'punkt' data. Run nltk.download('punkt')."
-        ) from exc
+    except LookupError:
+        nltk.download("punkt", quiet=True)
+        nltk.download("punkt_tab", quiet=True)
+        tokens = word_tokenize(text.lower())
 
     words = [w for w in tokens if w.isalpha()]
     return words, tokens
@@ -40,16 +40,12 @@ def get_stopwords() -> Set[str]:
 
     Returns:
         The set of English stopwords.
-
-    Raises:
-        RuntimeError: If the NLTK 'stopwords' data is missing.
     """
     global _stopwords_cache
     if _stopwords_cache is None:
         try:
             _stopwords_cache = set(stopwords.words("english"))
-        except LookupError as exc:
-            raise RuntimeError(
-                "Missing NLTK 'stopwords' data. Run nltk.download('stopwords')."
-            ) from exc
+        except LookupError:
+            nltk.download("stopwords", quiet=True)
+            _stopwords_cache = set(stopwords.words("english"))
     return _stopwords_cache

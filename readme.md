@@ -6,6 +6,12 @@ target quality metrics for the answer and asks the model to match them).
 
 ## Version
 
+**v1.0.1**
+
+- **Automatic NLTK Resource Management (`src/utils/text.py`)**: Preprocessing and stopword loaders now automatically detect and download missing NLTK corpora (`stopwords`, `punkt`, `punkt_tab`) on demand, preventing runtime `LookupError`/`RuntimeError` exceptions.
+- **Embedded CUDA Index URL (`requirements.txt`)**: Added PyTorch CUDA index repository (`--extra-index-url https://download.pytorch.org/whl/cu121`) directly into `requirements.txt` for one-step installation via `pip install -r requirements.txt`.
+- **Dataset Filtering & Multi-Model Evaluation Defaults (`main.py`)**: Added `_filter_datasets()` helper to `BenchmarkRunner` with dataset subset support for `process_one()` and `process_many()`, and updated default execution to run 4 SLM models (`phi3:mini`, `llama3.2:1b`, `gemma2:2b`, `qwen2:1.5b`) across 10 benchmark datasets.
+
 **v1.0.0**
 
 - `BenchmarkRunner.process_one()`/`process_many()` accept a `datasets` argument to run only a
