@@ -6,6 +6,11 @@ target quality metrics for the answer and asks the model to match them).
 
 ## Version
 
+**v1.0.2**
+
+- **Cross-Platform & Intel/AMD GPU Hardware Tracking (`src/metrics/hardware/gpu.py`)**: Added Windows Performance Data Helper (PDH) fallback to `GpuUsage`, enabling real-time GPU engine utilization and GPU memory usage profiling on Intel (e.g. Iris Xe) and AMD graphics hardware alongside NVIDIA NVML.
+- **Python 3.10 Dependency Fix (`requirements.txt`)**: Updated `scipy==1.15.3` in `requirements.txt` for compatibility across Python 3.10+ environments.
+
 **v1.0.1**
 
 - **Automatic NLTK Resource Management (`src/utils/text.py`)**: Preprocessing and stopword loaders now automatically detect and download missing NLTK corpora (`stopwords`, `punkt`, `punkt_tab`) on demand, preventing runtime `LookupError`/`RuntimeError` exceptions.

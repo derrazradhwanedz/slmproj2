@@ -413,13 +413,13 @@ def main() -> None:
     runner = BenchmarkRunner()
     runner.process_many(
         model_names=[
-            "phi3:mini", 
-            "llama3.2:1b", 
-            "gemma2:2b", 
-            "qwen2:1.5b", 
-            # "mistral:7b", 
-            # "openchat:7b", 
-            # "deepseek-r1:8b"
+            # "phi3:mini", 
+            # "llama3.2:1b", 
+            # "gemma2:2b", 
+            # "qwen2:1.5b", 
+            "mistral:7b", 
+            "openchat:7b", 
+            "deepseek-r1:8b",
         ],
         max_records=50,
         stream=False,   
