@@ -6,6 +6,10 @@ target quality metrics for the answer and asks the model to match them).
 
 ## Version
 
+**v1.0.3**
+
+- **Robust Semantic & Lexical Metric Scoring (`src/metrics/`)**: Added safety guards to `BertScoreF1` and `SemanticSimilarity` metrics against empty or whitespace-only model outputs, resolving compatibility issues with `transformers` tokenizer internals (`AttributeError: RobertaTokenizer has no attribute build_inputs_with_special_tokens`).
+
 **v1.0.2**
 
 - **Cross-Platform & Intel/AMD GPU Hardware Tracking (`src/metrics/hardware/gpu.py`)**: Added Windows Performance Data Helper (PDH) fallback to `GpuUsage`, enabling real-time GPU engine utilization and GPU memory usage profiling on Intel (e.g. Iris Xe) and AMD graphics hardware alongside NVIDIA NVML.

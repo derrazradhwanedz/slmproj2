@@ -15,6 +15,8 @@ class SemanticSimilarity(ABC):
     def __call__(self, prediction: str, reference: str) -> float:
         if not isinstance(prediction, str) or not isinstance(reference, str):
             raise TypeError("prediction and reference must both be str")
+        if not prediction.strip() or not reference.strip():
+            return 0.0
         pred_emb = self.model.encode([prediction])[0]
         ref_emb = self.model.encode([reference])[0]
         denom = np.linalg.norm(pred_emb) * np.linalg.norm(ref_emb)

@@ -14,5 +14,10 @@ class BertScoreF1(ABC):
     def __call__(self, prediction: str, reference: str) -> float:
         if not isinstance(prediction, str) or not isinstance(reference, str):
             raise TypeError("prediction and reference must both be str")
-        _, _, f1 = score([prediction], [reference], lang="en", verbose=False)
-        return f1.item()
+        if not prediction.strip() or not reference.strip():
+            return 0.0
+        try:
+            _, _, f1 = score([prediction], [reference], lang="en", verbose=False)
+            return float(f1.item())
+        except Exception:
+            return 0.0
