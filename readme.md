@@ -4,6 +4,25 @@ Evaluates Small Language Models (SLMs) on reasoning benchmarks under two mechani
 **SCoT** (plain step-by-step Chain-of-Thought) and **MGCoT** (Metric-Guided CoT, which predicts
 target quality metrics for the answer and asks the model to match them).
 
+## Version
+
+**v1.0.0**
+
+- `BenchmarkRunner.process_one()`/`process_many()` accept a `datasets` argument to run only a
+  chosen subset of dataset folders (case-insensitive name match), instead of always evaluating
+  every dataset found under `dataset_dir`.
+- `main()`'s active `process_many()` call now uses inline `model_names`/`max_records` literals
+  instead of reading them from `app.yaml`, so they're visible and editable directly in the code.
+- MGCoT's prompt (`src/prompts/mgcot.py`) now includes a metric-definitions glossary explaining
+  what each of the 11 target metrics means and its range, so the SLM has grounding for the raw
+  numeric targets it's asked to match.
+- Fixed a hardware-profiling bug (`src/metrics/hardware/cpu.py`): CPU sampling used
+  `psutil.cpu_percent(interval=1)`, which blocks for a full second on every call. Since it was
+  called once per streamed response chunk, this added up to minutes of artificial delay per
+  generation and dominated `delta_time_seconds`. Now uses non-blocking incremental sampling.
+- `stream` argument added through `evaluate()` / `process_one()` / `process_many()` to print the
+  SLM's response to the terminal live as it generates.
+
 ## 1. Setup
 
 Create and activate a virtual environment, then install dependencies:

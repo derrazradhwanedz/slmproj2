@@ -307,11 +307,38 @@ class BenchmarkRunner:
         logger.info(f"Found {len(dataset_dirs)} datasets: {[os.path.basename(d) for d in dataset_dirs]}")
         return dataset_dirs
 
+    def _filter_datasets(self, datasets: Optional[List[str]]) -> List[str]:
+        """Filter self.dataset_dirs down to the requested dataset names.
+
+        Args:
+            datasets: Dataset folder names to include (case-insensitive),
+                e.g. ["aqua", "gsm8k"]. None includes every dataset found.
+
+        Returns:
+            Paths to the matching dataset subfolders.
+
+        Raises:
+            ValueError: If any requested name matches no discovered dataset.
+        """
+        if datasets is None:
+            return self.dataset_dirs
+
+        wanted = {name.lower() for name in datasets}
+        matched = [d for d in self.dataset_dirs if os.path.basename(d).lower() in wanted]
+
+        found_names = {os.path.basename(d).lower() for d in matched}
+        missing = wanted - found_names
+        if missing:
+            raise ValueError(f"Unknown dataset name(s): {sorted(missing)}")
+
+        return matched
+
     def process_one(
         self,
         model_name: str,
         max_records: Optional[int] = None,
         stream: bool = False,
+        datasets: Optional[List[str]] = None,
     ) -> None:
         """Evaluate one model on every dataset and save per-dataset + combined CSVs.
 
@@ -321,6 +348,8 @@ class BenchmarkRunner:
                 max_records if not given.
             stream: If True, print each chunk of the SLM's response to the
                 terminal as it arrives.
+            datasets: Dataset folder names to evaluate (case-insensitive),
+                e.g. ["aqua", "gsm8k"]. None evaluates every dataset found.
         """
         if max_records is None:
             max_records = _CONFIG.get("max_records")
@@ -328,7 +357,7 @@ class BenchmarkRunner:
         safe_model_name = model_name.replace(":", "_")
         all_dfs = []
 
-        for dataset_path in self.dataset_dirs:
+        for dataset_path in self._filter_datasets(datasets):
             dataset_name = os.path.basename(os.path.normpath(dataset_path))
             logger.info(f"Evaluating dataset: {dataset_name}")
 
@@ -360,6 +389,7 @@ class BenchmarkRunner:
         model_names: List[str],
         max_records: Optional[int] = None,
         stream: bool = False,
+        datasets: Optional[List[str]] = None,
     ) -> None:
         """Evaluate multiple models, each on every dataset.
 
@@ -369,21 +399,41 @@ class BenchmarkRunner:
                 max_records if not given.
             stream: If True, print each chunk of the SLM's response to the
                 terminal as it arrives.
+            datasets: Dataset folder names to evaluate (case-insensitive),
+                e.g. ["aqua", "gsm8k"]. None evaluates every dataset found.
         """
         for model_name in model_names:
             logger.info(f"Evaluating model: {model_name}")
-            self.process_one(model_name, max_records=max_records, stream=stream)
+            self.process_one(model_name, max_records=max_records, stream=stream, datasets=datasets)
 
 
 def main() -> None:
     """CLI entrypoint: evaluate every model in model_names on every dataset."""
     # run all models in sequence, each on every dataset, saving per-dataset and combined CSVs
     runner = BenchmarkRunner()
-    # runner.process_many(model_names=_CONFIG["model_names"], 
-    #                     max_records=_CONFIG.get("max_records"))
+    runner.process_many(
+        model_names=["phi3:mini", 
+                     "llama3.2:1b", 
+                     "gemma2:2b", 
+                     "qwen2:1.5b", 
+                     "mistral:7b", 
+                     "openchat:7b", 
+                     "deepseek-r1:8b"],
+        max_records=50,
+        datasets=["aqua", 
+                  "asdiv", 
+                  "clutrr", 
+                  "date", 
+                  "gsm8k", 
+                  "MultiArith", 
+                  "QASports", 
+                  "saycan", 
+                  "StrategyQA", 
+                  "SVAMP"],
+    )
     
     # run a single model on every dataset, saving per-dataset and combined CSVs
-    runner.process_one(model_name="phi3:mini", max_records=2, stream=True)
+    # runner.process_one(model_name="phi3:mini", max_records=2, stream=True)
     
     
 if __name__ == "__main__":
