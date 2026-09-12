@@ -1,0 +1,514 @@
+record_id,dataset,question,gold_answer,mechanism,final_answer,delta_time_seconds,cpu_usage_avg_percent,ram_usage_avg_mb,ram_usage_avg_percent,gpu_usage_avg_percent,gpu_memory_avg_mb,rouge1_f1,rouge2_f1,rougeL_f1,bleu,exact_match,token_precision,token_recall,token_f1,token_overlap_count,normalized_edit_distance,char_f1,bert_score_f1,semantic_similarity,target_Readability,target_Coherence,target_Relevance,target_Specificity,target_Engagement,target_Concise,target_Length,target_Zipf,target_Hapax,target_Entropy,target_Perplexity
+1,clutrr,"[Scott] and [Lewis] are brothers. [Jason] is father of their father
+Question: How is [Lewis] related to [Jason]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question: The question is asking about the relationship between [Lewis] and [Jason].
+2. **PLAN** the reasoning steps: We know that [Scott] and [Lewis] are brothers, and [Jason] is the father of their father.
+3. **SOLVE** step by step:
+   a. [Scott] and [Lewis] are brothers, which means they have the same father and the same mother.
+   b. [Jason] is the father of their father, which means [Jason] is the grandfather of [Scott] and [Lewis].
+   c. Since [Lewis] is one of the brothers, [Lewis] is also the grandson of [Jason].
+4. **STATE** the final answer clearly: [Lewis] is the grandson of [Jason].",102.6769,19.976237623762383,11221.438215501237,69.17227722772263,9.490099009900991,3904.765625,0.05660377358490566,0.0,0.03773584905660377,5.7187224260924895e-232,0.0,0.018518518518518517,0.3333333333333333,0.03508771929824561,1,0.040257648953301084,0.4705882352941177,0.7981703281402588,0.31840306520462036,,,,,,,,,,,
+1,clutrr,"[Scott] and [Lewis] are brothers. [Jason] is father of their father
+Question: How is [Lewis] related to [Jason]?",grandson-brother #### grandson,MGCoT, [Lewis] is the grandson of [Jason].,11.8105,19.473333333333333,11104.04375,68.46666666666667,17.733333333333334,3904.765625,0.2222222222222222,0.0,0.2222222222222222,1.1640469867513693e-231,0.0,0.1111111111111111,0.3333333333333333,0.16666666666666666,1,0.2222222222222222,0.6666666666666667,0.8499884009361267,0.3995942175388336,100.0,0.07589404284954071,0.6484670639038086,0.6939290165901184,0.0034500316251069307,0.9736818075180054,0.0,0.6774431467056274,0.7052357196807861,0.1653381884098053,1.3338075876235962
+2,clutrr,"[Jason] and his wife [Gabrielle] baked a cake for [Lisa], his daughter.
+Question: How is [Lisa] related to [Gabrielle]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Lisa and Gabrielle.
+2. **PLAN** to reason by understanding the information given in the sentence.
+3. **SOLVE** step by step:
+   - Jason is married to Gabrielle.
+   - They baked a cake for Lisa, who is Jason's daughter.
+   - Therefore, Lisa is Gabrielle's stepdaughter.
+4. **STATE** the final answer clearly: Lisa is related to Gabrielle as her stepdaughter.",62.8157,19.348780487804888,11177.023755081302,68.90162601626022,9.666666666666666,3904.765625,0.028985507246376812,0.0,0.028985507246376812,0.0,0.0,0.02,0.3333333333333333,0.03773584905660377,1,0.060889929742388715,0.5098039215686275,0.807884931564331,0.35195136070251465,,,,,,,,,,,
+2,clutrr,"[Jason] and his wife [Gabrielle] baked a cake for [Lisa], his daughter.
+Question: How is [Lisa] related to [Gabrielle]?",husband-daughter #### daughter,MGCoT, Lisa is [Gabrielle]'s daughter-in-law.,12.3658,18.07058823529411,11144.279641544117,68.68823529411766,15.176470588235293,3904.765625,0.2,0.0,0.2,0.0,0.0,0.0,0.0,0.0,0,0.28205128205128205,0.7647058823529412,0.8322766423225403,0.3753599524497986,100.0,0.0568581260740757,0.8178364038467407,0.8401674032211304,0.0,0.964139461517334,0.0,0.8073705434799194,0.8205790519714355,0.15287522971630096,1.3217350244522095
+3,clutrr,"[Myrna] and her father [Jason] are having a very nice chicken dinner with [Jason]'s wife [Gabrielle].
+Question: How is [Myrna] related to [Gabrielle]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Myrna and Gabrielle.
+2. **PLAN** to reason by identifying the relationships between the individuals mentioned.
+3. **SOLVE** step by step:
+   - Myrna is having dinner with Jason and Gabrielle.
+   - Jason is Gabrielle's husband.
+   - Therefore, Myrna is related to Gabrielle as Jason's daughter.
+4. **STATE** the final answer clearly: Myrna is related to Gabrielle as her step-mother.",66.5883,19.12,11267.798557692307,69.45307692307689,9.430769230769231,3904.765625,0.056338028169014086,0.0,0.056338028169014086,0.0,0.0,0.021739130434782608,0.3333333333333333,0.04081632653061224,1,0.05530973451327437,0.5098039215686275,0.8060682415962219,0.3630315065383911,,,,,,,,,,,
+3,clutrr,"[Myrna] and her father [Jason] are having a very nice chicken dinner with [Jason]'s wife [Gabrielle].
+Question: How is [Myrna] related to [Gabrielle]?",husband-daughter #### daughter,MGCoT, Myrna is related to Gabrielle as her step-sister.,12.8298,17.95294117647059,11287.62362132353,69.60000000000001,19.88235294117647,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.18000000000000005,0.7272727272727273,0.8410319685935974,0.2548355460166931,99.36784362792969,0.10207066684961319,0.5674671530723572,0.6016282439231873,0.005420873407274485,0.9092592000961304,0.0,0.5651376843452454,0.5857242941856384,0.2721346318721771,1.4702719449996948
+4,clutrr,"[David] likes to watch baseball with his brother. His name is [Joe]. [Gabrielle] loves making cookies for her daughter's son. His name is [David].
+Question: How is [Joe] related to [Gabrielle]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between Joe and Gabrielle.
+2. **PLAN** to find the relationship by analyzing the given information.
+3. **SOLVE** step by step:
+   - We know that David likes to watch baseball with his brother, Joe.
+   - We also know that Gabrielle loves making cookies for her daughter's son, who is named David.
+   - From this information, we can deduce that Joe is David's brother.
+   - Since Gabrielle is David's mother, Joe must be Gabrielle's son.
+4. **STATE** the final answer clearly: Joe is related to Gabrielle as her son.",81.7045,19.282500000000027,11353.064819335938,70.00187500000004,9.3625,3904.765625,0.0202020202020202,0.0,0.0202020202020202,0.0,0.0,0.0,0.0,0.0,0,0.04513888888888884,0.5098039215686275,0.8044116497039795,0.2883622646331787,,,,,,,,,,,
+4,clutrr,"[David] likes to watch baseball with his brother. His name is [Joe]. [Gabrielle] loves making cookies for her daughter's son. His name is [David].
+Question: How is [Joe] related to [Gabrielle]?",grandson-brother #### grandson,MGCoT, Joe is Gabrielle's son-in-law.,11.3243,21.0,11379.20703125,70.16428571428573,23.428571428571427,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.09677419354838712,0.6666666666666666,0.8552950024604797,0.24130800366401672,97.9781494140625,0.16921381652355194,0.7403331995010376,0.6853957176208496,0.0,0.8101252317428589,0.0015178235480561852,0.6472218036651611,0.6819819211959839,0.7149443626403809,2.0293726921081543
+5,clutrr,"[Donald] was playing on his bike outside his grandfather [Jason]'s house and his brother [Russell] told him he needed to come inside and finish his homework before it got dark.
+Question: How is [Russell] related to [Jason]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between Russell and Jason.
+2. **PLAN** to find the relationship by identifying the relevant information in the given text.
+3. **SOLVE** by identifying that Donald is the grandson of Jason and the brother of Russell.
+4. **STATE** the final answer clearly: Russell is the grandson of Jason.",44.5686,19.51162790697673,11466.739553052326,70.69767441860455,10.325581395348838,3904.765625,0.10169491525423728,0.0,0.10169491525423728,6.659801989051833e-232,0.0,0.02631578947368421,0.3333333333333333,0.048780487804878044,1,0.0714285714285714,0.4897959183673469,0.8176154494285583,0.31907546520233154,,,,,,,,,,,
+5,clutrr,"[Donald] was playing on his bike outside his grandfather [Jason]'s house and his brother [Russell] told him he needed to come inside and finish his homework before it got dark.
+Question: How is [Russell] related to [Jason]?",grandson-brother #### grandson,MGCoT, [Russell] is the grandson of [Jason].,11.8359,17.920000000000005,11391.157291666666,70.24666666666668,22.533333333333335,3904.765625,0.2222222222222222,0.0,0.2222222222222222,1.1640469867513693e-231,0.0,0.1111111111111111,0.3333333333333333,0.16666666666666666,1,0.23684210526315785,0.6666666666666667,0.8489121198654175,0.42009592056274414,99.02620697021484,0.13553015887737274,0.7540069818496704,0.772990345954895,0.0008305316441692412,0.8431901931762695,0.0031082804780453444,0.7617765069007874,0.7750537395477295,0.4484354853630066,2.0576746463775635
+6,clutrr,"[James] and his daughter [Theresa] took a day off school to go to the zoo. [James] and his wife [Dorothy] went to the beach to watch the fireworks on the 4th of July.
+Question: How is [Theresa] related to [Dorothy]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Theresa and Dorothy.
+2. **PLAN** to find the relationship by analyzing the information given.
+3. **SOLVE** step by step:
+   - James and Theresa went to the zoo.
+   - James and Dorothy went to the beach.
+   - Both James and Dorothy are related to Theresa.
+4. **STATE** the final answer clearly: Theresa is the daughter of James, and since James is married to Dorothy, Theresa is the granddaughter of Dorothy.",67.7905,19.60151515151516,11495.172289299242,70.8598484848486,10.045454545454545,3904.765625,0.02531645569620253,0.0,0.02531645569620253,6.110848977001762e-232,0.0,0.022222222222222223,0.3333333333333333,0.04166666666666667,1,0.0545073375262054,0.52,0.8084756135940552,0.3455384075641632,,,,,,,,,,,
+6,clutrr,"[James] and his daughter [Theresa] took a day off school to go to the zoo. [James] and his wife [Dorothy] went to the beach to watch the fireworks on the 4th of July.
+Question: How is [Theresa] related to [Dorothy]?",husband-daughter #### daughter,MGCoT," Theresa is the daughter of James, and James is the husband of Dorothy. Therefore, Theresa is the granddaughter of Dorothy.",19.8827,19.380645161290328,11406.987147177419,70.31290322580644,13.161290322580646,3904.765625,0.1739130434782609,0.0,0.08695652173913045,8.614911585158347e-232,0.0,0.07692307692307693,0.3333333333333333,0.125,1,0.1707317073170732,0.7058823529411764,0.8366901278495789,0.42395293712615967,98.89301300048828,0.189308300614357,0.8037679195404053,0.7888173460960388,0.00013810631935484707,0.8105087280273438,0.0017303262138739228,0.7780694961547852,0.794381856918335,0.695848822593689,2.3504767417907715
+7,clutrr,"[Myrna] and her husband [Christopher] went on a cruise. They had a wonderful time. [Christopher] and his daughter [Lucille] took a day off school to go to the zoo.
+Question: How is [Lucille] related to [Myrna]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Lucille and Myrna.
+2. **PLAN** to find the relationship by examining the information given.
+3. **SOLVE** step by step:
+   - Myrna and Christopher went on a cruise together.
+   - Christopher and Lucille went to the zoo.
+   - Lucille is Christopher's daughter.
+4. **STATE** the final answer clearly: Lucille is Myrna's stepdaughter.",59.6319,20.524137931034478,11390.700700431034,70.21982758620679,10.275862068965518,3904.765625,0.031746031746031744,0.0,0.031746031746031744,0.0,0.0,0.023809523809523808,0.3333333333333333,0.044444444444444446,1,0.06499999999999995,0.52,0.8130341172218323,0.34845608472824097,,,,,,,,,,,
+7,clutrr,"[Myrna] and her husband [Christopher] went on a cruise. They had a wonderful time. [Christopher] and his daughter [Lucille] took a day off school to go to the zoo.
+Question: How is [Lucille] related to [Myrna]?",husband-daughter #### daughter,MGCoT," [Lucille] is the daughter of [Christopher], who is the husband of [Myrna]. Therefore, [Lucille] is the granddaughter of [Myrna].",24.4003,19.090000000000003,11150.74609375,68.71250000000002,13.5,3904.765625,0.18181818181818182,0.0,0.09090909090909091,8.726094729337945e-232,0.0,0.06666666666666667,0.3333333333333333,0.1111111111111111,1,0.16279069767441856,0.6153846153846153,0.8210310935974121,0.4156041145324707,98.26319122314453,0.27540430426597595,0.5531564950942993,0.5858208537101746,0.006411232519894838,0.7281134128570557,0.004609012510627508,0.502990186214447,0.5575083494186401,0.9069635272026062,2.9177756309509277
+8,clutrr,"[Gabrielle] has a grandson who is [Kevin]. [Dan] went to his brother [Kevin]'s Birthday party
+Question: How is [Dan] related to [Gabrielle]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question: We need to determine the relationship between Dan and Gabrielle.
+2. **PLAN** the reasoning steps: We know that Kevin is Gabrielle's grandson and Dan attended Kevin's birthday party.
+3. **SOLVE** step by step:
+   a. Kevin is Gabrielle's grandson.
+   b. Dan attended Kevin's birthday party.
+   c. Since Dan attended Kevin's birthday party, he must be related to Kevin in some way.
+   d. If Kevin is Gabrielle's grandson, then Dan must be Kevin's father, uncle, or another close relative.
+4. **STATE** the final answer clearly: Dan is related to Gabrielle as Kevin's father or uncle.",89.626,20.1630681818182,11286.79727450284,69.57329545454533,9.579545454545455,3904.765625,0.037037037037037035,0.0,0.037037037037037035,5.8051759849861466e-232,0.0,0.016666666666666666,0.3333333333333333,0.031746031746031744,1,0.040983606557377095,0.4897959183673469,0.8000869750976562,0.32569825649261475,,,,,,,,,,,
+8,clutrr,"[Gabrielle] has a grandson who is [Kevin]. [Dan] went to his brother [Kevin]'s Birthday party
+Question: How is [Dan] related to [Gabrielle]?",grandson-brother #### grandson,MGCoT, Dan is [Gabrielle]'s grandson's brother.,12.8368,18.841176470588238,11153.91130514706,68.7470588235294,15.529411764705882,3904.765625,0.4,0.0,0.4,0.0,0.0,0.1111111111111111,0.3333333333333333,0.16666666666666666,1,0.31707317073170727,0.75,0.8374402523040771,0.43578270077705383,100.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0
+9,clutrr,"[Dan]'s brother, [Micheal], and his grandmother, [Gabrielle], met him for his birthday dinner at the local diner.
+Question: How is [Micheal] related to [Gabrielle]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between [Micheal] and [Gabrielle].
+2. **PLAN** to reason by identifying the common relation between [Micheal] and [Gabrielle] in the given context.
+3. **SOLVE** by identifying that [Micheal] is [Dan]'s brother and [Gabrielle] is [Dan]'s grandmother. Therefore, [Micheal] and [Gabrielle] are siblings.
+4. **STATE** the final answer clearly: [Micheal] is related to [Gabrielle] as a sibling.",75.1069,20.113605442176883,11234.44884672619,69.26598639455777,10.312925170068027,3904.765625,0.028985507246376812,0.0,0.028985507246376812,0.0,0.0,0.0,0.0,0.0,0,0.055432372505543226,0.46153846153846156,0.7985554337501526,0.36875835061073303,,,,,,,,,,,
+9,clutrr,"[Dan]'s brother, [Micheal], and his grandmother, [Gabrielle], met him for his birthday dinner at the local diner.
+Question: How is [Micheal] related to [Gabrielle]?",grandson-brother #### grandson,MGCoT, [Micheal] is [Gabrielle]'s grandson.,13.3298,18.88888888888889,11177.036024305555,68.90000000000002,15.222222222222221,3904.765625,0.25,0.0,0.25,0.0,0.0,0.125,0.3333333333333333,0.18181818181818182,1,0.32432432432432434,0.6666666666666667,0.8323752284049988,0.4096985459327698,100.0,0.08601561188697815,0.8252371549606323,0.8560925722122192,0.0011275506112724543,0.9391593933105469,0.0,0.8054326772689819,0.8276150226593018,0.23368766903877258,1.5778480768203735
+10,clutrr,"[Gabrielle] made tacos with her grandson [Dan]. [Dan]'s brother [Kevin] watched the process.
+Question: How is [Kevin] related to [Gabrielle]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between Gabrielle and Kevin.
+2. **PLAN** to reason by identifying the relationships mentioned in the text.
+3. **SOLVE** step by step:
+   - Gabrielle made tacos with Dan, which means Dan is Gabrielle's grandson.
+   - Dan has a brother, Kevin, who watched the process.
+   - Therefore, Kevin is Dan's brother, which makes Kevin Gabrielle's grandson's brother.
+4. **STATE** the final answer clearly: Kevin is related to Gabrielle as her grandson's brother.",74.5032,19.46849315068494,11369.636076626712,70.10684931506846,9.876712328767123,3904.765625,0.07142857142857142,0.0,0.07142857142857142,0.0,0.0,0.018518518518518517,0.3333333333333333,0.03508771929824561,1,0.05058365758754868,0.5098039215686275,0.8111278414726257,0.3583157956600189,,,,,,,,,,,
+10,clutrr,"[Gabrielle] made tacos with her grandson [Dan]. [Dan]'s brother [Kevin] watched the process.
+Question: How is [Kevin] related to [Gabrielle]?",grandson-brother #### grandson,MGCoT, Kevin is Gabrielle's grandson's brother.,11.3031,17.828571428571433,11316.01088169643,69.78571428571426,17.428571428571427,3904.765625,0.4,0.0,0.4,0.0,0.0,0.14285714285714285,0.3333333333333333,0.2,1,0.2682926829268293,0.75,0.857772171497345,0.3930976092815399,100.0,0.08872758597135544,0.768670916557312,0.7624425888061523,0.0,0.9460052847862244,0.0008178665302693844,0.7295001745223999,0.7454183101654053,0.284513384103775,1.5246411561965942
+11,clutrr,"[Michael] and his wife [Alma] baked a cake for [Jennifer], his daughter.
+Question: How is [Jennifer] related to [Alma]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Jennifer and Alma.
+2. **PLAN** to reason by understanding the information given in the sentence.
+3. **SOLVE** step by step:
+   - Michael is Jennifer's father.
+   - Alma is Michael's wife.
+   - Therefore, Alma is Jennifer's stepmother.
+4. **STATE** the final answer clearly: Jennifer is related to Alma as her stepmother.",56.3143,19.418181818181825,11361.250177556818,70.04818181818186,9.472727272727273,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.05641025641025643,0.5098039215686275,0.8053702116012573,0.2931361794471741,,,,,,,,,,,
+11,clutrr,"[Michael] and his wife [Alma] baked a cake for [Jennifer], his daughter.
+Question: How is [Jennifer] related to [Alma]?",husband-daughter #### daughter,MGCoT, [Jennifer] is [Alma]'s daughter-in-law.,13.3284,19.01052631578948,11258.410361842105,69.4,18.473684210526315,3904.765625,0.2,0.0,0.2,0.0,0.0,0.0,0.0,0.0,0,0.25,0.6666666666666665,0.8312152624130249,0.43769562244415283,100.0,0.0568581260740757,0.8178364038467407,0.8401674032211304,0.0,0.964139461517334,0.0,0.8073705434799194,0.8205790519714355,0.15287522971630096,1.3217350244522095
+12,clutrr,"[Jason] and his daughter [Alma] took a day off school to go to the zoo. [Jason] and his wife [Gabrielle] went to the beach to watch the fireworks on the 4th of July.
+Question: How is [Alma] related to [Gabrielle]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Alma and Gabrielle.
+2. **PLAN** to find the relationship by analyzing the information given.
+3. **SOLVE** step by step:
+   - Jason and Alma went to the zoo.
+   - Jason and Gabrielle went to the beach.
+   - No direct relationship is mentioned between Alma and Gabrielle.
+4. **STATE** the final answer clearly:
+   - Based on the information provided, it is not possible to determine the exact relationship between Alma and Gabrielle.",68.8126,19.348507462686577,11324.76072761194,69.81194029850747,10.104477611940299,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.043912175648702645,0.5098039215686275,0.8111999034881592,0.17975418269634247,,,,,,,,,,,
+12,clutrr,"[Jason] and his daughter [Alma] took a day off school to go to the zoo. [Jason] and his wife [Gabrielle] went to the beach to watch the fireworks on the 4th of July.
+Question: How is [Alma] related to [Gabrielle]?",husband-daughter #### daughter,MGCoT, Alma is the daughter of Gabrielle.,9.8363,18.41818181818182,11324.98544034091,69.79999999999998,21.636363636363637,3904.765625,0.2222222222222222,0.0,0.2222222222222222,1.1640469867513693e-231,0.0,0.14285714285714285,0.3333333333333333,0.2,1,0.3142857142857143,0.7096774193548386,0.8598025441169739,0.29662638902664185,98.89301300048828,0.189308300614357,0.8037679195404053,0.7888173460960388,0.00013810631935484707,0.8105087280273438,0.0017303262138739228,0.7780694961547852,0.794381856918335,0.695848822593689,2.3504767417907715
+13,clutrr,"[Michael] and [Alma] werent able to have children naturally, so they adopted [Vanessa] from sweden.
+Question: How is [Vanessa] related to [Alma]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Vanessa and Alma.
+2. **PLAN** to reason by understanding the information given in the statement.
+3. **SOLVE** step by step:
+   - Michael and Alma adopted Vanessa from Sweden.
+   - This means Vanessa is not their biological child.
+   - Adoption creates a legal parent-child relationship.
+4. **STATE** the final answer clearly:
+   - Vanessa is related to Alma as her adoptive daughter.",61.3075,19.405833333333337,11368.26884765625,70.07749999999992,9.466666666666667,3904.765625,0.028571428571428574,0.0,0.028571428571428574,0.0,0.0,0.018518518518518517,0.3333333333333333,0.03508771929824561,1,0.05518763796909487,0.5416666666666667,0.8098353147506714,0.27870890498161316,,,,,,,,,,,
+13,clutrr,"[Michael] and [Alma] werent able to have children naturally, so they adopted [Vanessa] from sweden.
+Question: How is [Vanessa] related to [Alma]?",husband-daughter #### daughter,MGCoT, [Vanessa] is adopted by [Alma] and [Michael].,13.3357,19.044444444444448,11353.125868055555,69.97222222222223,14.666666666666666,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.21739130434782605,0.5294117647058824,0.8188098073005676,0.2234727144241333,100.0,0.056043632328510284,0.8914909362792969,0.9172976613044739,6.315984501270577e-05,0.9787936210632324,0.0,0.8796342611312866,0.8990274667739868,0.14122804999351501,1.351072907447815
+14,clutrr,"[Robert] and his brother [Chad] went to the park to play basketball. [Jason] is the proud grandfather of [Robert].
+Question: How is [Chad] related to [Jason]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between Chad and Jason.
+2. **PLAN** to reason through the information given.
+3. **SOLVE** step by step:
+   - We know that Robert is the son of Jason.
+   - We know that Chad is the brother of Robert.
+   - Therefore, Chad is the nephew of Jason.
+4. **STATE** the final answer clearly: Chad is the nephew of Jason.",56.5388,19.078181818181818,11207.363103693182,69.08272727272725,9.590909090909092,3904.765625,0.030303030303030304,0.0,0.030303030303030304,0.0,0.0,0.0,0.0,0.0,0,0.06702412868632712,0.52,0.8087759613990784,0.2827884256839752,,,,,,,,,,,
+14,clutrr,"[Robert] and his brother [Chad] went to the park to play basketball. [Jason] is the proud grandfather of [Robert].
+Question: How is [Chad] related to [Jason]?",grandson-brother #### grandson,MGCoT, Chad is the grandson of Jason.,9.3165,18.220000000000002,11117.778125,68.5,31.4,3904.765625,0.2222222222222222,0.0,0.2222222222222222,1.1640469867513693e-231,0.0,0.14285714285714285,0.3333333333333333,0.2,1,0.19354838709677424,0.7333333333333334,0.8661645650863647,0.39702996611595154,98.68927764892578,0.20869410037994385,0.7785671949386597,0.7288320660591125,0.00011310618720017374,0.787330687046051,0.0022829503286629915,0.5919932126998901,0.5983881950378418,0.7810420989990234,2.2727150917053223
+15,clutrr,"[Lisa] and [Jason] did the Father daughter dance at the recital and his wife [Gabrielle] was so happy she cried
+Question: How is [Lisa] related to [Gabrielle]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between [Lisa] and [Gabrielle].
+2. **PLAN** to reason by analyzing the information given in the question.
+3. **SOLVE** step by step:
+   a. [Lisa] and [Jason] did the Father daughter dance at the recital.
+   b. [Gabrielle] is [Jason]'s wife.
+   c. Since [Lisa] did the Father daughter dance with [Jason], it implies that [Lisa] is [Jason]'s daughter.
+   d. Therefore, [Lisa] is related to [Gabrielle] as [Gabrielle] is the wife of [Lisa]'s father, [Jason].
+4. **STATE** the final answer clearly: [Lisa] is [Gabrielle]'s daughter-in-law.",106.1883,20.594258373205772,11268.749102870814,69.4645933014355,9.885167464114833,3904.765625,0.0404040404040404,0.0,0.0404040404040404,5.9149039435907374e-232,0.0,0.017241379310344827,0.3333333333333333,0.03278688524590164,1,0.041876046901172526,0.4905660377358491,0.7962164282798767,0.39585739374160767,,,,,,,,,,,
+15,clutrr,"[Lisa] and [Jason] did the Father daughter dance at the recital and his wife [Gabrielle] was so happy she cried
+Question: How is [Lisa] related to [Gabrielle]?",husband-daughter #### daughter,MGCoT, [Lisa] is [Gabrielle]'s daughter.,12.3371,18.462500000000002,11191.932373046875,68.96875,21.25,3904.765625,0.25,0.0,0.25,0.0,0.0,0.125,0.3333333333333333,0.18181818181818182,1,0.32352941176470584,0.7096774193548386,0.8334754109382629,0.41942206025123596,100.0,0.03768419474363327,0.9577103853225708,0.9760065674781799,0.0,0.9815184473991394,0.0,0.9717920422554016,0.9732908010482788,0.09000277519226074,1.228243350982666
+16,clutrr,"[Jeffrey] asked his brother [William] if he would come help him fix his car next weekend. [Gabrielle] was delighted to see her grandson, [William], at her birthday party.
+Question: How is [Jeffrey] related to [Gabrielle]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between Jeffrey and Gabrielle.
+2. **PLAN** to find the connection between Jeffrey and Gabrielle through the information provided.
+3. **SOLVE** step by step:
+   - Jeffrey is related to William (his brother).
+   - Gabrielle is delighted to see her grandson, William.
+   - Therefore, Gabrielle is the grandmother of William.
+4. **STATE** the final answer clearly: Jeffrey is related to Gabrielle as her grandson's brother.",66.6935,19.34076923076924,11262.664453125,69.42153846153828,9.661538461538461,3904.765625,0.0821917808219178,0.0,0.0547945205479452,0.0,0.0,0.02040816326530612,0.3333333333333333,0.03846153846153846,1,0.05405405405405406,0.4905660377358491,0.8078050017356873,0.32013222575187683,,,,,,,,,,,
+16,clutrr,"[Jeffrey] asked his brother [William] if he would come help him fix his car next weekend. [Gabrielle] was delighted to see her grandson, [William], at her birthday party.
+Question: How is [Jeffrey] related to [Gabrielle]?",grandson-brother #### grandson,MGCoT, [Jeffrey] is [Gabrielle]'s grandson.,13.3412,18.772222222222226,11291.045789930555,69.60555555555554,16.555555555555557,3904.765625,0.25,0.0,0.25,0.0,0.0,0.125,0.3333333333333333,0.18181818181818182,1,0.32432432432432434,0.6060606060606061,0.8359473943710327,0.39660555124282837,98.2152328491211,0.18576784431934357,0.8553951978683472,0.8014470338821411,0.0,0.7736843228340149,0.004999401047825813,0.7403594851493835,0.7517255544662476,0.7285410165786743,2.354203224182129
+17,clutrr,"[Gabrielle] made tacos with her grandson [Jeffrey]. [Jeffrey]'s brother [William] watched the process.
+Question: How is [William] related to [Gabrielle]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between Gabrielle and William.
+2. **PLAN** to reason by identifying the relationships mentioned in the text.
+3. **SOLVE** step by step:
+   - Gabrielle made tacos with Jeffrey.
+   - Jeffrey is William's brother.
+   - Therefore, Jeffrey and William are siblings.
+   - Since Gabrielle made tacos with Jeffrey, she is related to Jeffrey as his grandmother.
+   - Since Jeffrey is William's brother, and Gabrielle is related to Jeffrey as his grandmother, Gabrielle is related to William as his great-grandmother.
+4. **STATE** the final answer clearly: William is related to Gabrielle as his great-grandfather.",91.724,19.433888888888905,11379.6333984375,70.14388888888885,9.622222222222222,3904.765625,0.019607843137254905,0.0,0.019607843137254905,0.0,0.0,0.0,0.0,0.0,0,0.03903903903903905,0.5,0.7970343828201294,0.2995513379573822,,,,,,,,,,,
+17,clutrr,"[Gabrielle] made tacos with her grandson [Jeffrey]. [Jeffrey]'s brother [William] watched the process.
+Question: How is [William] related to [Gabrielle]?",grandson-brother #### grandson,MGCoT, William is Gabrielle's grandson's brother.,11.3027,17.657142857142862,11325.72265625,69.79999999999998,22.428571428571427,3904.765625,0.4,0.0,0.4,0.0,0.0,0.14285714285714285,0.3333333333333333,0.2,1,0.2558139534883721,0.75,0.8582075834274292,0.36455971002578735,100.0,0.08872758597135544,0.768670916557312,0.7624425888061523,0.0,0.9460052847862244,0.0008178665302693844,0.7295001745223999,0.7454183101654053,0.284513384103775,1.5246411561965942
+18,clutrr,"[Jason] has a daughter called [Alma]. [Jason] is very much in love with his wife. Her name is [Gabrielle].
+Question: How is [Alma] related to [Gabrielle]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Alma and Gabrielle.
+2. **PLAN** to use the information given to determine the relationship.
+3. **SOLVE** step by step:
+   - Jason has a daughter named Alma.
+   - Jason is in love with his wife, Gabrielle.
+   - Since Jason is the father of Alma and the husband of Gabrielle, we can deduce that Alma is the daughter of Gabrielle as well.
+4. **STATE** the final answer clearly: Alma is the daughter of Gabrielle.",70.0442,19.009489051094896,11386.060532618612,70.1985401459854,9.795620437956204,3904.765625,0.07317073170731708,0.0,0.07317073170731708,6.054173467777274e-232,0.0,0.018867924528301886,0.3333333333333333,0.03571428571428571,1,0.05427974947807934,0.52,0.8095967769622803,0.34853309392929077,,,,,,,,,,,
+18,clutrr,"[Jason] has a daughter called [Alma]. [Jason] is very much in love with his wife. Her name is [Gabrielle].
+Question: How is [Alma] related to [Gabrielle]?",husband-daughter #### daughter,MGCoT," Alma is related to Gabrielle as her step-sister. Jason is married to Gabrielle, making Alma's mother and Gabrielle's mother sisters, and thus, Alma and Gabrielle are step-sisters.",31.906,20.36363636363636,11334.875426136363,69.8909090909091,12.472727272727273,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.09999999999999998,0.7027027027027025,0.823316216468811,0.2482336014509201,98.5673828125,0.17731675505638123,0.1656741350889206,0.23678871989250183,0.00873474683612585,0.8221492171287537,0.0,0.18524381518363953,0.21658778190612793,0.47955742478370667,1.9791899919509888
+19,clutrr,"[Gabrielle] invited her grandson [Dan] to go ice skating. [Dan] was only willing to go if his brother [Micheal] could come along.
+Question: How is [Micheal] related to [Gabrielle]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking for the relationship between [Micheal] and [Gabrielle].
+2. **PLAN** the reasoning steps needed:
+   a. Identify the relationship between [Gabrielle] and [Dan].
+   b. Identify the relationship between [Dan] and [Micheal].
+   c. Combine the relationships to determine the relationship between [Micheal] and [Gabrielle].
+3. **SOLVE** step by step:
+   a. [Gabrielle] is [Dan]'s grandparent.
+   b. [Dan] is [Micheal]'s brother.
+   c. Combining the relationships, [Micheal] is [Gabrielle]'s grandchild.
+4. **STATE** the final answer clearly: [Micheal] is [Gabrielle]'s grandchild.",104.6903,20.131553398058262,11394.386017141991,70.24708737864077,9.737864077669903,3904.765625,0.022988505747126436,0.0,0.022988505747126436,0.0,0.0,0.0,0.0,0.0,0,0.040849673202614345,0.4705882352941177,0.7924008369445801,0.32682979106903076,,,,,,,,,,,
+19,clutrr,"[Gabrielle] invited her grandson [Dan] to go ice skating. [Dan] was only willing to go if his brother [Micheal] could come along.
+Question: How is [Micheal] related to [Gabrielle]?",grandson-brother #### grandson,MGCoT, [Micheal] is the grandson of [Gabrielle].,12.8386,20.317647058823535,11244.594439338236,69.31764705882351,15.294117647058824,3904.765625,0.2222222222222222,0.0,0.2222222222222222,1.1640469867513693e-231,0.0,0.1111111111111111,0.3333333333333333,0.16666666666666666,1,0.1428571428571429,0.7058823529411764,0.8374708294868469,0.39051663875579834,98.808349609375,0.10281145572662354,0.8556174039840698,0.860568106174469,0.0,0.8785640001296997,0.0008775893948040903,0.8123897314071655,0.8418148756027222,0.37097159028053284,1.6509989500045776
+20,clutrr,"[Dwight] and [Lisa] werent able to have children naturally, so they adopted [Donna] from sweden.
+Question: How is [Donna] related to [Lisa]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between [Donna] and [Lisa].
+2. **PLAN** to reason by understanding the information given in the statement.
+3. **SOLVE** step by step:
+   a. [Dwight] and [Lisa] adopted [Donna] from Sweden.
+   b. Adoption implies a legal process that establishes a parent-child relationship.
+   c. [Lisa] is one of the adoptive parents of [Donna].
+4. **STATE** the final answer clearly: [Donna] is the adopted child of [Lisa].",72.9006,19.293706293706293,11201.885516826924,69.04545454545467,9.552447552447552,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.04893617021276597,0.52,0.8044414520263672,0.2948896884918213,,,,,,,,,,,
+20,clutrr,"[Dwight] and [Lisa] werent able to have children naturally, so they adopted [Donna] from sweden.
+Question: How is [Donna] related to [Lisa]?",husband-daughter #### daughter,MGCoT, [Donna] is related to [Lisa] as her adopted daughter.,12.8407,19.34705882352941,11117.508042279413,68.5529411764706,20.705882352941178,3904.765625,0.16666666666666666,0.0,0.16666666666666666,0.0,0.0,0.08333333333333333,0.3333333333333333,0.13333333333333333,1,0.2962962962962963,0.6875000000000001,0.838016927242279,0.2851312458515167,100.0,0.056043632328510284,0.8914909362792969,0.9172976613044739,6.315984501270577e-05,0.9787936210632324,0.0,0.8796342611312866,0.8990274667739868,0.14122804999351501,1.351072907447815
+21,clutrr,"[Russell] enjoys going fishing with his brother. His name is [Donald]. [Jason] took his grandson [Donald] fishing.
+Question: How is [Russell] related to [Jason]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between Russell and Jason.
+2. **PLAN** to use the information given to determine the relationship.
+3. **SOLVE** step by step:
+   a. We know that Russell enjoys going fishing with his brother, Donald.
+   b. We also know that Jason took his grandson, Donald, fishing.
+   c. Since Jason took Donald fishing, and Donald is Russell's brother, Jason must be related to Russell.
+4. **STATE** the final answer clearly: Russell is related to Jason as Jason's grandson.",69.093,20.140000000000015,11215.735619212963,69.1311111111111,9.244444444444444,3904.765625,0.06818181818181818,0.0,0.06818181818181818,0.0,0.0,0.018518518518518517,0.3333333333333333,0.03508771929824561,1,0.04798464491362764,0.48,0.8094748854637146,0.2980819046497345,,,,,,,,,,,
+21,clutrr,"[Russell] enjoys going fishing with his brother. His name is [Donald]. [Jason] took his grandson [Donald] fishing.
+Question: How is [Russell] related to [Jason]?",grandson-brother #### grandson,MGCoT, Russell is Jason's grandson.,8.8168,18.688888888888886,11128.858072916666,68.60000000000001,26.0,3904.765625,0.25,0.0,0.25,0.0,0.0,0.16666666666666666,0.3333333333333333,0.2222222222222222,1,0.30000000000000004,0.6206896551724138,0.8670339584350586,0.3875502347946167,99.3815689086914,0.14966712892055511,0.7258532047271729,0.7313944697380066,0.0,0.8671402335166931,0.0,0.6395585536956787,0.6776429414749146,0.5454473495483398,1.8810018301010132
+22,clutrr,"[Lucille] and her father [Christopher] are having a very nice chicken dinner with [Christopher]'s wife [Myrna].
+Question: How is [Lucille] related to [Myrna]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Lucille and Myrna.
+2. **PLAN** to reason by identifying the relationships between the individuals mentioned.
+3. **SOLVE** step by step:
+   - Lucille is having dinner with Christopher and Myrna.
+   - Christopher is Myrna's husband.
+   - Therefore, Lucille is related to Myrna as Christopher's daughter.
+4. **STATE** the final answer clearly: Lucille is Myrna's daughter-in-law.",64.5176,19.39047619047618,11205.844153025793,69.08253968253975,9.825396825396826,3904.765625,0.08695652173913045,0.0,0.08695652173913045,0.0,0.0,0.022222222222222223,0.3333333333333333,0.04166666666666667,1,0.058295964125560484,0.52,0.8082292675971985,0.40191859006881714,,,,,,,,,,,
+22,clutrr,"[Lucille] and her father [Christopher] are having a very nice chicken dinner with [Christopher]'s wife [Myrna].
+Question: How is [Lucille] related to [Myrna]?",husband-daughter #### daughter,MGCoT," [Lucille] is [Christopher]'s daughter, making her [Myrna]'s stepdaughter.",17.8312,18.41851851851852,11293.570891203704,69.60370370370367,12.296296296296296,3904.765625,0.15384615384615383,0.0,0.15384615384615383,0.0,0.0,0.07692307692307693,0.3333333333333333,0.125,1,0.2702702702702703,0.5789473684210527,0.8288450241088867,0.4127901494503021,99.36784362792969,0.10207066684961319,0.5674671530723572,0.6016282439231873,0.005420873407274485,0.9092592000961304,0.0,0.5651376843452454,0.5857242941856384,0.2721346318721771,1.4702719449996948
+23,clutrr,"[Gabrielle]'s grandson, [Donald], was scolded for misbehaving at dinner. [Russell] played chess with his brother [Donald].
+Question: How is [Russell] related to [Gabrielle]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking for the relationship between Russell and Gabrielle.
+2. **PLAN** to find the connection between Donald and Gabrielle, and then determine Russell's relationship to Gabrielle.
+3. **SOLVE** step by step:
+   a. Donald is Gabrielle's grandson.
+   b. Russell played chess with his brother, Donald.
+   c. Since Russell is Donald's brother, Russell is also Gabrielle's grandson.
+4. **STATE** the final answer clearly: Russell is Gabrielle's grandson.",70.5406,19.689130434782626,11350.444576539856,69.95434782608685,10.246376811594203,3904.765625,0.07792207792207792,0.0,0.07792207792207792,0.0,0.0,0.022222222222222223,0.3333333333333333,0.04166666666666667,1,0.05208333333333337,0.4897959183673469,0.8101904392242432,0.2879454493522644,,,,,,,,,,,
+23,clutrr,"[Gabrielle]'s grandson, [Donald], was scolded for misbehaving at dinner. [Russell] played chess with his brother [Donald].
+Question: How is [Russell] related to [Gabrielle]?",grandson-brother #### grandson,MGCoT, [Russell] is [Gabrielle]'s grandson's cousin.,14.8565,18.95714285714286,11348.856026785714,69.98095238095237,15.904761904761905,3904.765625,0.2,0.0,0.2,0.0,0.0,0.1111111111111111,0.3333333333333333,0.16666666666666666,1,0.23913043478260865,0.6250000000000001,0.8281790018081665,0.3795201778411865,99.06422424316406,0.12269718199968338,0.7706269025802612,0.7730315327644348,0.0,0.8762955665588379,0.0014457639772444963,0.7672709822654724,0.797095537185669,0.4244551658630371,1.7885347604751587
+24,clutrr,"[Guillermina] and [Christopher] did the Father daughter dance at the recital and his wife [Myrna] was so happy she cried
+Question: How is [Guillermina] related to [Myrna]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Guillermina and Myrna.
+2. **PLAN** to reason by analyzing the information given in the question.
+3. **SOLVE** step by step:
+   a. [Guillermina] and [Christopher] did the Father daughter dance at the recital.
+   b. [Christopher] is the father of [Guillermina].
+   c. [Christopher] is married to [Myrna].
+   d. Therefore, [Guillermina] is the daughter of [Christopher] and the stepdaughter of [Myrna].
+4. **STATE** the final answer clearly: [Guillermina] is the stepdaughter of [Myrna].",89.6153,19.33011363636366,11389.091020063921,70.21875000000017,9.75,3904.765625,0.04819277108433735,0.0,0.04819277108433735,6.091662401187491e-232,0.0,0.02,0.3333333333333333,0.03773584905660377,1,0.045126353790613694,0.48,0.7961755394935608,0.42946094274520874,,,,,,,,,,,
+24,clutrr,"[Guillermina] and [Christopher] did the Father daughter dance at the recital and his wife [Myrna] was so happy she cried
+Question: How is [Guillermina] related to [Myrna]?",husband-daughter #### daughter,MGCoT, Guillermina is the daughter of Myrna.,10.8306,19.215384615384615,11331.923076923076,69.84615384615384,22.307692307692307,3904.765625,0.2222222222222222,0.0,0.2222222222222222,1.1640469867513693e-231,0.0,0.14285714285714285,0.3333333333333333,0.2,1,0.21052631578947367,0.6875000000000001,0.843013346195221,0.3170718252658844,100.0,0.03768419474363327,0.9577103853225708,0.9760065674781799,0.0,0.9815184473991394,0.0,0.9717920422554016,0.9732908010482788,0.09000277519226074,1.228243350982666
+25,clutrr,"[Myrna] took her husband, [Christopher], to have dinner with his daughter, [Angela].
+Question: How is [Angela] related to [Myrna]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Angela and Myrna.
+2. **PLAN** to reason by understanding the given information.
+3. **SOLVE** step by step:
+   - Myrna took her husband, Christopher, to have dinner with his daughter, Angela.
+   - This implies that Christopher is Angela's father.
+   - Therefore, Angela is Christopher's daughter, which makes Angela Myrna's stepdaughter.
+4. **STATE** the final answer clearly: Angela is Myrna's stepdaughter.",66.9741,19.106870229007644,11393.337219704199,70.2396946564886,9.236641221374045,3904.765625,0.0821917808219178,0.0,0.0821917808219178,0.0,0.0,0.0196078431372549,0.3333333333333333,0.037037037037037035,1,0.0545073375262054,0.52,0.8105920553207397,0.4724520444869995,,,,,,,,,,,
+25,clutrr,"[Myrna] took her husband, [Christopher], to have dinner with his daughter, [Angela].
+Question: How is [Angela] related to [Myrna]?",husband-daughter #### daughter,MGCoT, [Angela] is [Myrna]'s daughter-in-law.,13.3184,20.02105263157895,11340.774671052632,69.90526315789471,14.421052631578947,3904.765625,0.2,0.0,0.2,0.0,0.0,0.0,0.0,0.0,0,0.2564102564102564,0.6857142857142857,0.8312812447547913,0.4571363925933838,100.0,0.0568581260740757,0.8178364038467407,0.8401674032211304,0.0,0.964139461517334,0.0,0.8073705434799194,0.8205790519714355,0.15287522971630096,1.3217350244522095
+26,clutrr,"[Donald] and [Russell] are brothers. [Jason] is father of their father
+Question: How is [Russell] related to [Jason]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question: The question is asking about the relationship between Russell and Jason.
+2. **PLAN** the reasoning steps: We know that Donald and Russell are brothers, and Jason is the father of their father.
+3. **SOLVE** step by step:
+   a. Since Donald and Russell are brothers, they share the same father.
+   b. Jason is the father of their father, which means he is the grandfather of both Donald and Russell.
+   c. Therefore, Russell is the grandson of Jason.
+4. **STATE** the final answer clearly: Russell is the grandson of Jason.",71.371,20.469285714285725,11310.64609375,69.72428571428559,9.607142857142858,3904.765625,0.06315789473684211,0.0,0.042105263157894736,5.882492291217442e-232,0.0,0.019230769230769232,0.3333333333333333,0.03636363636363637,1,0.04537205081669693,0.4897959183673469,0.808383047580719,0.28622889518737793,,,,,,,,,,,
+26,clutrr,"[Donald] and [Russell] are brothers. [Jason] is father of their father
+Question: How is [Russell] related to [Jason]?",grandson-brother #### grandson,MGCoT," Russell is the son of Donald, and Donald is the son of Jason. Therefore, Russell is the grandson of Jason.",16.8403,18.730769230769234,11193.28545673077,68.99615384615385,12.23076923076923,3904.765625,0.08695652173913045,0.0,0.08695652173913045,8.614911585158347e-232,0.0,0.08333333333333333,0.3333333333333333,0.13333333333333333,1,0.1869158878504673,0.6875000000000001,0.843985915184021,0.3056223690509796,100.0,0.07589404284954071,0.6484670639038086,0.6939290165901184,0.0034500316251069307,0.9736818075180054,0.0,0.6774431467056274,0.7052357196807861,0.1653381884098053,1.3338075876235962
+27,clutrr,"[Jason] and his grandson [Dan] went to the zoo, and had a great time together. [Vincent] and his brother [Dan] always played pranks on each other
+Question: How is [Vincent] related to [Jason]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between Vincent and Jason.
+2. **PLAN** to find the connection between Vincent and Jason through the information given.
+3. **SOLVE** step by step:
+   a. We know that Dan is the grandson of Jason.
+   b. We also know that Vincent and Dan are brothers.
+   c. Therefore, Vincent is the brother of Dan.
+4. **STATE** the final answer clearly: Vincent is related to Jason as Jason's brother-in-law.",62.4921,20.36557377049181,11297.15282402664,69.64016393442628,9.71311475409836,3904.765625,0.05,0.0,0.05,6.211555838206664e-232,0.0,0.0196078431372549,0.3333333333333333,0.037037037037037035,1,0.05530973451327437,0.5098039215686275,0.8081792593002319,0.2656194567680359,,,,,,,,,,,
+27,clutrr,"[Jason] and his grandson [Dan] went to the zoo, and had a great time together. [Vincent] and his brother [Dan] always played pranks on each other
+Question: How is [Vincent] related to [Jason]?",grandson-brother #### grandson,MGCoT," Vincent and Jason are not related in the given information. The text only mentions that Vincent and his brother Dan played pranks on each other, and Jason and his grandson Dan went to the zoo. There is no information provided about the relationship between Vincent and Jason.",32.3956,20.674999999999994,11184.526646205357,68.9517857142858,13.107142857142858,3904.765625,0.08,0.0,0.08,6.957990942521506e-232,0.0,0.02857142857142857,0.3333333333333333,0.05263157894736842,1,0.08695652173913049,0.5714285714285714,0.833097517490387,0.2163103073835373,100.0,0.08607547730207443,0.8945369720458984,0.9157595634460449,0.0005524341831915081,0.9551977515220642,0.0,0.899772584438324,0.9162533283233643,0.2592158913612366,1.620916485786438
+28,clutrr,"[Michael] asked his wife [Alma] if she did the shopping. [Michael] walked his daughter [Jennifer] down the aisle on her wedding day.
+Question: How is [Jennifer] related to [Alma]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking for the relationship between Jennifer and Alma.
+2. **PLAN** to use the information given in the text to determine the relationship.
+3. **SOLVE** step by step:
+   a. Michael is Jennifer's father.
+   b. Alma is Michael's wife.
+   c. Since Michael is Jennifer's father and Alma is Michael's wife, Alma is Jennifer's stepmother.
+4. **STATE** the final answer clearly: Jennifer is related to Alma as her stepmother.",66.0405,19.70077519379846,11305.134871608527,69.70155038759705,9.891472868217054,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.04899777282850781,0.4705882352941177,0.8034053444862366,0.2975913882255554,,,,,,,,,,,
+28,clutrr,"[Michael] asked his wife [Alma] if she did the shopping. [Michael] walked his daughter [Jennifer] down the aisle on her wedding day.
+Question: How is [Jennifer] related to [Alma]?",husband-daughter #### daughter,MGCoT, [Jennifer] is [Alma]'s daughter.,11.8084,17.493333333333336,11218.024739583334,69.14666666666668,17.466666666666665,3904.765625,0.25,0.0,0.25,0.0,0.0,0.125,0.3333333333333333,0.18181818181818182,1,0.303030303030303,0.6470588235294117,0.8337162137031555,0.4352802038192749,100.0,0.0670238509774208,0.4584481716156006,0.4818267822265625,0.0005370348808355629,0.9627717733383179,0.0,0.46078646183013916,0.48181992769241333,0.1818009316921234,1.4035896062850952
+29,clutrr,"[Vincent]'s brother, [Dan], and his grandmother, [Gabrielle], met him for his birthday dinner at the local diner.
+Question: How is [Dan] related to [Gabrielle]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between [Dan] and [Gabrielle].
+2. **PLAN** to reason by identifying the common relation between [Dan] and [Gabrielle] in the given context.
+3. **SOLVE** by identifying that [Dan] is [Vincent]'s brother and [Gabrielle] is [Vincent]'s grandmother. Therefore, [Dan] and [Gabrielle] are siblings.
+4. **STATE** the final answer clearly: [Dan] is related to [Gabrielle] as her grandchild.",72.1545,19.407801418439725,11378.120816710993,70.12482269503549,9.914893617021276,3904.765625,0.028985507246376812,0.0,0.028985507246376812,0.0,0.0,0.0,0.0,0.0,0,0.056306306306306286,0.46153846153846156,0.8010181784629822,0.3639407455921173,,,,,,,,,,,
+29,clutrr,"[Vincent]'s brother, [Dan], and his grandmother, [Gabrielle], met him for his birthday dinner at the local diner.
+Question: How is [Dan] related to [Gabrielle]?",grandson-brother #### grandson,MGCoT, [Dan] is [Gabrielle]'s grandson.,12.3193,18.91875,11338.765869140625,69.89999999999999,19.0,3904.765625,0.25,0.0,0.25,0.0,0.0,0.125,0.3333333333333333,0.18181818181818182,1,0.3939393939393939,0.6666666666666666,0.8341764211654663,0.39411577582359314,100.0,0.08601561188697815,0.8252371549606323,0.8560925722122192,0.0011275506112724543,0.9391593933105469,0.0,0.8054326772689819,0.8276150226593018,0.23368766903877258,1.5778480768203735
+30,clutrr,"[Gabrielle] and her husband [Jason] wanted a child badly [Jason] bought a new dress for his daughter [Lisa].
+Question: How is [Lisa] related to [Gabrielle]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Lisa and Gabrielle.
+2. **PLAN** to find the relationship by analyzing the given information.
+3. **SOLVE** step by step:
+   - Gabrielle and Jason wanted a child.
+   - Jason bought a new dress for his daughter Lisa.
+   - Since Jason is the father of both Gabrielle and Lisa, Lisa must be Gabrielle's sister.
+4. **STATE** the final answer clearly: Lisa is Gabrielle's sister.",64.1346,19.927199999999978,11429.625375,70.44400000000014,10.56,3904.765625,0.027027027027027032,0.0,0.027027027027027032,6.2542494559645334e-232,0.0,0.0196078431372549,0.3333333333333333,0.037037037037037035,1,0.05882352941176472,0.5098039215686275,0.8050270676612854,0.30942007899284363,,,,,,,,,,,
+30,clutrr,"[Gabrielle] and her husband [Jason] wanted a child badly [Jason] bought a new dress for his daughter [Lisa].
+Question: How is [Lisa] related to [Gabrielle]?",husband-daughter #### daughter,MGCoT," Lisa is the daughter of Gabrielle's husband, Jason.",11.8151,18.073333333333338,11335.155729166667,69.89333333333333,19.466666666666665,3904.765625,0.3333333333333333,0.0,0.16666666666666666,1.0832677820940877e-231,0.0,0.09090909090909091,0.3333333333333333,0.14285714285714288,1,0.23076923076923073,0.7058823529411764,0.8513175249099731,0.317331999540329,100.0,0.03709317743778229,0.9432827234268188,0.9844723343849182,0.0,0.9842761754989624,0.0,0.9342979788780212,0.9605733156204224,0.07342258840799332,1.1522202491760254
+31,clutrr,"[Jason] and his grandson [William] went to the zoo, and had a great time together. [Jeffrey] was thrilled his brother, [William], was able to make it to the party.
+Question: How is [Jeffrey] related to [Jason]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between Jeffrey and Jason.
+2. **PLAN** to find the relationship by analyzing the given information.
+3. **SOLVE** step by step:
+   - The information given is: ""Jason and his grandson William went to the zoo, and had a great time together. Jeffrey was thrilled his brother, William, was able to make it to the party.""
+   - From the first sentence, we know that Jason has a grandson named William.
+   - From the second sentence, we know that Jeffrey has a brother named William.
+   - Since Jeffrey's brother is William and Jason's grandson is also named William, we can conclude that Jeffrey and Jason are related.
+4. **STATE** the final answer clearly: Jeffrey is Jason's nephew.",97.9402,20.325000000000006,11406.202128092447,70.29843749999976,10.208333333333334,3904.765625,0.048,0.0,0.048,5.470563275684957e-232,0.0,0.014492753623188406,0.3333333333333333,0.027777777777777776,1,0.03518267929634644,0.5,0.8024730682373047,0.3226037323474884,,,,,,,,,,,
+31,clutrr,"[Jason] and his grandson [William] went to the zoo, and had a great time together. [Jeffrey] was thrilled his brother, [William], was able to make it to the party.
+Question: How is [Jeffrey] related to [Jason]?",grandson-brother #### grandson,MGCoT, Jeffrey is the brother of Jason.,8.8244,18.244444444444447,11363.265625,70.06666666666666,28.88888888888889,3904.765625,0.2222222222222222,0.0,0.2222222222222222,0.0,0.0,0.0,0.0,0.0,0,0.303030303030303,0.689655172413793,0.8696284294128418,0.3203226327896118,98.89696502685547,0.19823211431503296,0.8431006669998169,0.8163753151893616,0.0005334331654012203,0.8029366731643677,0.0015249720308929682,0.7866995334625244,0.797225832939148,0.731921374797821,2.35024094581604
+32,clutrr,"[James] and [Dorothy] werent able to have children naturally, so they adopted [Aida] from sweden.
+Question: How is [Aida] related to [Dorothy]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Aida and Dorothy.
+2. **PLAN** to reason by understanding the information given in the statement.
+3. **SOLVE** step by step:
+   - James and Dorothy adopted Aida from Sweden.
+   - This implies that Aida is their child through adoption.
+4. **STATE** the final answer clearly:
+   - Aida is related to Dorothy as her adoptive daughter.",55.4245,20.675925925925938,11414.17212818287,70.36111111111103,10.37037037037037,3904.765625,0.03125,0.0,0.03125,0.0,0.0,0.02,0.3333333333333333,0.03773584905660377,1,0.06499999999999995,0.5306122448979592,0.810217022895813,0.28447389602661133,,,,,,,,,,,
+32,clutrr,"[James] and [Dorothy] werent able to have children naturally, so they adopted [Aida] from sweden.
+Question: How is [Aida] related to [Dorothy]?",husband-daughter #### daughter,MGCoT, Aida is related to Dorothy as her adopted daughter.,10.8284,17.95384615384615,11332.17998798077,69.86923076923075,20.615384615384617,3904.765625,0.16666666666666666,0.0,0.16666666666666666,0.0,0.0,0.1,0.3333333333333333,0.15384615384615383,1,0.3076923076923077,0.6666666666666666,0.8417105078697205,0.218819722533226,100.0,0.056043632328510284,0.8914909362792969,0.9172976613044739,6.315984501270577e-05,0.9787936210632324,0.0,0.8796342611312866,0.8990274667739868,0.14122804999351501,1.351072907447815
+33,clutrr,"[Alma] took her husband, [Michael], to have dinner with his daughter, [Annette].
+Question: How is [Annette] related to [Alma]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Alma and Annette.
+2. **PLAN** to reason by understanding the given information.
+3. **SOLVE** step by step:
+   - Alma is Michael's wife.
+   - Michael is Annette's father.
+   - Therefore, Annette is Alma's stepdaughter.
+4. **STATE** the final answer clearly: Annette is related to Alma as her stepdaughter.",59.873,19.187179487179478,11215.761485042734,69.12905982905993,9.461538461538462,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.06951871657754005,0.52,0.8091366291046143,0.2885936498641968,,,,,,,,,,,
+33,clutrr,"[Alma] took her husband, [Michael], to have dinner with his daughter, [Annette].
+Question: How is [Annette] related to [Alma]?",husband-daughter #### daughter,MGCoT," [Annette] is [Michael]'s daughter, making her [Alma]'s stepdaughter.",17.3504,21.01481481481482,11238.078125,69.29629629629629,13.037037037037036,3904.765625,0.15384615384615383,0.0,0.15384615384615383,0.0,0.0,0.07692307692307693,0.3333333333333333,0.125,1,0.28985507246376807,0.6111111111111112,0.8310955762863159,0.3858586847782135,100.0,0.0568581260740757,0.8178364038467407,0.8401674032211304,0.0,0.964139461517334,0.0,0.8073705434799194,0.8205790519714355,0.15287522971630096,1.3217350244522095
+34,clutrr,"[Jeffrey] went to his brother [William]'s Birthday party [Gabrielle] planned a birthday party for her grandson, [William].
+Question: How is [Jeffrey] related to [Gabrielle]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between Jeffrey and Gabrielle.
+2. **PLAN** to reason by identifying the relationships mentioned in the given information.
+3. **SOLVE** step by step:
+   - Jeffrey went to William's birthday party.
+   - Gabrielle planned the birthday party for her grandson, William.
+   - Since Jeffrey went to William's birthday party and Gabrielle is William's grandmother, Jeffrey must be related to Gabrielle.
+4. **STATE** the final answer clearly: Jeffrey is related to Gabrielle as her son.",72.6705,21.2880281690141,11382.088523327464,70.16197183098586,10.035211267605634,3904.765625,0.023809523809523808,0.0,0.023809523809523808,0.0,0.0,0.019230769230769232,0.3333333333333333,0.03636363636363637,1,0.04638218923933213,0.5098039215686275,0.8054702281951904,0.27436572313308716,,,,,,,,,,,
+34,clutrr,"[Jeffrey] went to his brother [William]'s Birthday party [Gabrielle] planned a birthday party for her grandson, [William].
+Question: How is [Jeffrey] related to [Gabrielle]?",grandson-brother #### grandson,MGCoT, [Jeffrey] is [Gabrielle]'s brother-in-law.,14.8386,18.37142857142857,11300.311197916666,69.6761904761905,15.333333333333334,3904.765625,0.2,0.0,0.2,0.0,0.0,0.0,0.0,0.0,0,0.18604651162790697,0.6666666666666665,0.8331117033958435,0.31534793972969055,99.75748443603516,0.002617511199787259,0.9080039262771606,0.9602815508842468,0.0,0.9990748167037964,0.0,0.9645618796348572,0.9997526407241821,0.0,1.0
+35,clutrr,"[Dwight] met his wife [Lisa] for dinner. [Dwight]'s daughter [Deborah] stayed home to study.
+Question: How is [Deborah] related to [Lisa]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Deborah and Lisa.
+2. **PLAN** to reason by identifying the relationships mentioned in the given information.
+3. **SOLVE** step by step:
+   - [Dwight] met his wife [Lisa] for dinner.
+   - [Dwight]'s daughter [Deborah] stayed home to study.
+   From the given information, we can deduce that Deborah is the daughter of Dwight, and Lisa is the wife of Dwight.
+4. **STATE** the final answer clearly: Deborah is related to Lisa as Dwight's daughter-in-law.",80.6952,19.50506329113924,11427.66680676424,70.45126582278453,9.645569620253164,3904.765625,0.04597701149425287,0.0,0.04597701149425287,6.054173467777274e-232,0.0,0.017241379310344827,0.3333333333333333,0.03278688524590164,1,0.050000000000000044,0.5,0.8039450645446777,0.3537828028202057,,,,,,,,,,,
+35,clutrr,"[Dwight] met his wife [Lisa] for dinner. [Dwight]'s daughter [Deborah] stayed home to study.
+Question: How is [Deborah] related to [Lisa]?",husband-daughter #### daughter,MGCoT, [Deborah] is the daughter of [Dwight] and the stepdaughter of [Lisa].,17.3625,20.396153846153847,11408.685997596154,70.32692307692307,15.538461538461538,3904.765625,0.14285714285714288,0.0,0.14285714285714288,1.0003688322288243e-231,0.0,0.08333333333333333,0.3333333333333333,0.13333333333333333,1,0.2857142857142857,0.6857142857142857,0.8312930464744568,0.3712781071662903,99.12720489501953,0.10509709268808365,0.7849633693695068,0.8016617894172668,0.0013327402994036674,0.8825057744979858,0.0008072201744653285,0.7412012219429016,0.7478700876235962,0.32392653822898865,1.5876578092575073
+36,clutrr,"[Gabrielle] invited her grandson [Micheal] to go ice skating. [Micheal] was only willing to go if his brother [Kevin] could come along.
+Question: How is [Kevin] related to [Gabrielle]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking for the relationship between Kevin and Gabrielle.
+2. **PLAN** to reason by understanding the given information.
+3. **SOLVE** step by step:
+   - Gabrielle invited her grandson, Micheal.
+   - Micheal wanted Kevin to come along.
+   - This implies that Kevin is Micheal's sibling.
+4. **STATE** the final answer clearly: Kevin is related to Gabrielle as the brother of her grandson, Micheal.",61.6227,19.613333333333333,11480.897395833334,70.8000000000001,9.991666666666667,3904.765625,0.08955223880597014,0.0,0.08955223880597014,0.0,0.0,0.02040816326530612,0.3333333333333333,0.03846153846153846,1,0.06117647058823528,0.52,0.8133676052093506,0.38028329610824585,,,,,,,,,,,
+36,clutrr,"[Gabrielle] invited her grandson [Micheal] to go ice skating. [Micheal] was only willing to go if his brother [Kevin] could come along.
+Question: How is [Kevin] related to [Gabrielle]?",grandson-brother #### grandson,MGCoT, [Kevin] is the grandson of [Gabrielle].,12.3514,18.15625,11424.794921875,70.39999999999999,17.875,3904.765625,0.2222222222222222,0.0,0.2222222222222222,1.1640469867513693e-231,0.0,0.1111111111111111,0.3333333333333333,0.16666666666666666,1,0.15000000000000002,0.7058823529411764,0.8417685031890869,0.4124726355075836,98.808349609375,0.10281145572662354,0.8556174039840698,0.860568106174469,0.0,0.8785640001296997,0.0008775893948040903,0.8123897314071655,0.8418148756027222,0.37097159028053284,1.6509989500045776
+37,clutrr,"[Gabrielle] has a grandson who is [Micheal]. [Micheal] and his brother [Kevin] went to the park to play basketball.
+Question: How is [Kevin] related to [Gabrielle]?",grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between Kevin and Gabrielle.
+2. **PLAN** to use the information given in the text to determine the relationship.
+3. **SOLVE** step by step:
+   - The text states that Gabrielle has a grandson named Michael.
+   - Michael and his brother Kevin went to the park to play basketball.
+   - Since Kevin is Michael's brother, and Michael is Gabrielle's grandson, Kevin must be Gabrielle's grandson as well.
+4. **STATE** the final answer clearly: Kevin is related to Gabrielle as her grandson.",75.0997,19.407482993197295,11519.007918792517,71.01088435374152,9.850340136054422,3904.765625,0.06593406593406592,0.0,0.06593406593406592,5.948228664567313e-232,0.0,0.017857142857142856,0.3333333333333333,0.03389830508474576,1,0.047706422018348627,0.5098039215686275,0.8091847896575928,0.36647114157676697,,,,,,,,,,,
+37,clutrr,"[Gabrielle] has a grandson who is [Micheal]. [Micheal] and his brother [Kevin] went to the park to play basketball.
+Question: How is [Kevin] related to [Gabrielle]?",grandson-brother #### grandson,MGCoT, [Kevin] is the grandson of [Gabrielle].,12.3367,18.03125,11449.76611328125,70.60000000000001,18.25,3904.765625,0.2222222222222222,0.0,0.2222222222222222,1.1640469867513693e-231,0.0,0.1111111111111111,0.3333333333333333,0.16666666666666666,1,0.15000000000000002,0.7058823529411764,0.8417685031890869,0.4124726355075836,99.97744750976562,0.06288597732782364,0.6365125179290771,0.7225020527839661,0.0008087707101367414,0.9611122608184814,0.0,0.72087562084198,0.7685092687606812,0.11702895909547806,1.2690421342849731
+38,clutrr,"[Jason] went to see his daughter [Lisa] for parents day at college. [Jason] and [Gabrielle] got married in Hawaii.
+Question: How is [Lisa] related to [Gabrielle]?",husband-daughter #### daughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Lisa and Gabrielle.
+2. **PLAN** to reason by understanding the information given.
+3. **SOLVE** step by step:
+   - Jason is Lisa's father.
+   - Gabrielle is Jason's spouse.
+   - Therefore, Gabrielle is Lisa's stepmother.
+4. **STATE** the final answer clearly: Lisa is related to Gabrielle as her stepmother.",56.9895,19.19189189189189,11510.031637105856,70.92162162162147,10.144144144144144,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.058510638297872286,0.5098039215686275,0.8092822432518005,0.3009912371635437,,,,,,,,,,,
+38,clutrr,"[Jason] went to see his daughter [Lisa] for parents day at college. [Jason] and [Gabrielle] got married in Hawaii.
+Question: How is [Lisa] related to [Gabrielle]?",husband-daughter #### daughter,MGCoT, [Lisa] is the daughter of [Jason] and the stepdaughter of [Gabrielle].,16.8739,18.555999999999997,11438.3959375,70.516,14.24,3904.765625,0.14285714285714288,0.0,0.14285714285714288,1.0003688322288243e-231,0.0,0.08333333333333333,0.3333333333333333,0.13333333333333333,1,0.2676056338028169,0.6857142857142857,0.8300097584724426,0.370816171169281,99.1751937866211,0.12358289211988449,0.8543368577957153,0.856948971748352,0.0,0.8732479810714722,0.0011183945462107658,0.8074480295181274,0.8309860229492188,0.42170706391334534,1.7855387926101685
+39,clutrr,"[Stanley] took his granddaughter [Darnell] to the movies. [Marian]'s sister [Valerie] was trying on new make-up that [Marian]'s daughter [Darnell] bought for her as a gift.
+Question: How is [Stanley] related to [Valerie]?",sister-daughter-grandfather #### father,SCoT," 1. **ANALYZE** the question is asking for the relationship between Stanley and Valerie.
+2. **PLAN** to find the relationship by tracing the family connections.
+3. **SOLVE** step by step:
+   - Stanley took his granddaughter Darnell to the movies.
+   - Darnell is Marian's daughter.
+   - Valerie is Marian's sister.
+   - Therefore, Stanley is related to Valerie as Darnell's grandfather.
+4. **STATE** the final answer clearly: Stanley is related to Valerie as Darnell's grandfather.",69.273,20.92370370370371,11447.964699074075,70.56962962962966,10.57037037037037,3904.765625,0.07894736842105264,0.0,0.05263157894736842,0.0,0.0,0.0,0.0,0.0,0,0.07276507276507271,0.5490196078431373,0.8083371520042419,0.37404173612594604,,,,,,,,,,,
+39,clutrr,"[Stanley] took his granddaughter [Darnell] to the movies. [Marian]'s sister [Valerie] was trying on new make-up that [Marian]'s daughter [Darnell] bought for her as a gift.
+Question: How is [Stanley] related to [Valerie]?",sister-daughter-grandfather #### father,MGCoT," Stanley is related to Valerie as the grandfather of Valerie's daughter, Darnell.",14.8714,18.852380952380948,11311.270833333334,69.69047619047622,15.904761904761905,3904.765625,0.23529411764705882,0.0,0.11764705882352941,0.0,0.0,0.0,0.0,0.0,0,0.28395061728395066,0.7428571428571429,0.8463835716247559,0.2808416485786438,99.22259521484375,0.19143669307231903,0.6842023134231567,0.6764424443244934,0.005106315016746521,0.83419269323349,0.0010351352393627167,0.6317572593688965,0.6751834154129028,0.6661561727523804,2.23283314704895
+40,clutrr,"[Michelle]'s mother [Molly] was teaching her how to teach when [Michelle]'s husband [Michael] arrived home. [Michael] has a daughter called [Angela].
+Question: How is [Angela] related to [Molly]?",daughter-husband-daughter #### granddaughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Angela and Molly.
+2. **PLAN** to reason through the information given in the text.
+3. **SOLVE** step by step:
+   - [Molly] is [Michelle]'s mother.
+   - [Michelle] is [Michael]'s wife.
+   - [Michael] has a daughter called [Angela].
+   - Therefore, [Angela] is [Michael]'s daughter, which makes [Angela] [Michael]'s child.
+4. **STATE** the final answer clearly: [Angela] is [Molly]'s granddaughter.",80.5667,20.674050632911396,11363.774006131329,70.05759493670892,9.645569620253164,3904.765625,0.08333333333333334,0.0,0.08333333333333334,0.0,0.0,0.0196078431372549,0.3333333333333333,0.037037037037037035,1,0.07939914163090134,0.4905660377358491,0.802308976650238,0.45437803864479065,,,,,,,,,,,
+40,clutrr,"[Michelle]'s mother [Molly] was teaching her how to teach when [Michelle]'s husband [Michael] arrived home. [Michael] has a daughter called [Angela].
+Question: How is [Angela] related to [Molly]?",daughter-husband-daughter #### granddaughter,MGCoT, [Angela] is [Molly]'s granddaughter.,12.3502,18.24375,11276.172119140625,69.5,16.0,3904.765625,0.22222222222222224,0.0,0.22222222222222224,0.0,0.0,0.125,0.3333333333333333,0.18181818181818182,1,0.34090909090909094,0.6470588235294117,0.8388781547546387,0.41238123178482056,100.0,0.0,0.9286279678344727,0.9965164065361023,0.0,1.0,0.0,1.0,1.0,0.0,1.0
+41,clutrr,"[Marian] went shoe shopping with her sister [Michelle]. [Darnell]'s grandfather, [Stanley], taught her how to make a paper airplane while her mother, [Marian], prepared dinner.
+Question: How is [Stanley] related to [Michelle]?",sister-daughter-grandfather #### father,SCoT," 1. **ANALYZE** the question is asking for the relationship between Stanley and Michelle.
+2. **PLAN** to find the relationship by analyzing the given information.
+3. **SOLVE** step by step:
+   - Marian is Michelle's sister.
+   - Stanley is Marian's grandfather.
+   - Therefore, Stanley is Michelle's great-uncle.
+4. **STATE** the final answer clearly: Stanley is related to Michelle as her great-uncle.",56.6549,21.048181818181824,11322.180397727272,69.78454545454531,11.018181818181818,3904.765625,0.061538461538461535,0.0,0.061538461538461535,0.0,0.0,0.0,0.0,0.0,0,0.08208955223880599,0.5490196078431373,0.814012348651886,0.4309579133987427,,,,,,,,,,,
+41,clutrr,"[Marian] went shoe shopping with her sister [Michelle]. [Darnell]'s grandfather, [Stanley], taught her how to make a paper airplane while her mother, [Marian], prepared dinner.
+Question: How is [Stanley] related to [Michelle]?",sister-daughter-grandfather #### father,MGCoT, [Stanley] is [Michelle]'s great-grandfather.,13.8362,18.005263157894742,11281.121299342105,69.54210526315791,15.368421052631579,3904.765625,0.2,0.0,0.2,0.0,0.0,0.0,0.0,0.0,0,0.19999999999999996,0.7222222222222222,0.8529152870178223,0.4317394495010376,99.9964370727539,0.07269814610481262,1.0,1.0,0.0,0.9406462907791138,0.0007727140327915549,0.9710524082183838,0.9795674085617065,0.22077341377735138,1.4127755165100098
+42,clutrr,"[Stanley] told his wife [Molly] that he received a very lovely letter from his grandson [Matthew]. [Matthew] and his brother, [Ellis] run a turtle farm.
+Question: How is [Ellis] related to [Molly]?",husband-grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking for the relationship between Ellis and Molly.
+2. **PLAN** to reason through the relationships given in the text.
+3. **SOLVE** step by step:
+   - Stanley is Molly's husband.
+   - Stanley is Matthew's grandfather.
+   - Ellis is Matthew's brother.
+   - Therefore, Ellis is Molly's son-in-law.
+4. **STATE** the final answer clearly: Ellis is related to Molly as her son-in-law.",64.2599,19.597600000000007,11422.595875,70.41120000000006,10.192,3904.765625,0.05555555555555555,0.0,0.05555555555555555,0.0,0.0,0.0,0.0,0.0,0,0.07281553398058249,0.5384615384615385,0.8087558150291443,0.35263746976852417,,,,,,,,,,,
+42,clutrr,"[Stanley] told his wife [Molly] that he received a very lovely letter from his grandson [Matthew]. [Matthew] and his brother, [Ellis] run a turtle farm.
+Question: How is [Ellis] related to [Molly]?",husband-grandson-brother #### grandson,MGCoT," [Ellis] is related to [Molly] as the brother of her grandson, [Matthew].",17.3537,18.088461538461544,11422.240835336539,70.40000000000003,15.538461538461538,3904.765625,0.25,0.0,0.25,0.0,0.0,0.0625,0.3333333333333333,0.10526315789473684,1,0.28767123287671237,0.6486486486486486,0.8445653319358826,0.39153146743774414,99.76831817626953,0.1447887122631073,0.8701057434082031,0.8390941619873047,0.0,0.8739279508590698,0.0015883849700912833,0.7588558197021484,0.7773411273956299,0.5344410538673401,2.0189709663391113
+43,clutrr,"[Ellis] and [Matthew] were both still very upset with their mother, [Sandra]. [Stanley] was lucky to have an incredibly close relationship with his grandson, [Ellis].
+Question: How is [Stanley] related to [Sandra]?",son-brother-grandfather #### father,SCoT," 1. **ANALYZE** the question is asking about the relationship between [Stanley] and [Sandra].
+2. **PLAN** the reasoning steps needed:
+   - Identify the relationship between [Ellis] and [Sandra]
+   - Identify the relationship between [Stanley] and [Ellis]
+   - Determine the relationship between [Stanley] and [Sandra] based on the relationships identified
+3. **SOLVE** step by step:
+   - [Ellis] and [Matthew] are both still very upset with their mother, [Sandra]. This indicates that [Ellis] and [Matthew] are Sandra's children.
+   - [Stanley] is lucky to have an incredibly close relationship with his grandson, [Ellis]. This indicates that [Ellis] is Stanley's grandchild.
+   - Since [Ellis] is Sandra's child and Stanley's grandchild, [Stanley] must be the parent of Sandra.
+4. **STATE** the final answer clearly: [Stanley] is the father of [Sandra].",132.0753,19.902307692307737,11513.780153245192,70.97999999999979,9.711538461538462,3904.765625,0.015873015873015872,0.0,0.015873015873015872,5.4595004015312194e-232,0.0,0.014285714285714285,0.3333333333333333,0.0273972602739726,1,0.03629976580796257,0.5283018867924527,0.792770504951477,0.33410388231277466,,,,,,,,,,,
+43,clutrr,"[Ellis] and [Matthew] were both still very upset with their mother, [Sandra]. [Stanley] was lucky to have an incredibly close relationship with his grandson, [Ellis].
+Question: How is [Stanley] related to [Sandra]?",son-brother-grandfather #### father,MGCoT," Stanley is Ellis's grandfather, and Ellis is Sandra's son. Therefore, Stanley is Sandra's father-in-law.",20.883,19.918181818181825,11518.581084280304,71.02727272727269,12.303030303030303,3904.765625,0.2608695652173913,0.0,0.17391304347826086,0.0,0.0,0.0,0.0,0.0,0,0.19999999999999996,0.7428571428571429,0.84549880027771,0.43918561935424805,100.0,0.08240970224142075,0.5594171285629272,0.5876726508140564,0.0007513515884056687,0.9632331132888794,0.0008332967991009355,0.5614564418792725,0.5969575643539429,0.2211492508649826,1.5423908233642578
+44,clutrr,"[Sandra] went to the beach with her husband [James]. [Sandra] wanted to visit an art museum, so she asked her father, [Stanley] to take her. [James] took his daughter [Teresa] out for dinner.
+Question: How is [Teresa] related to [Stanley]?",daughter-husband-daughter #### granddaughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Teresa and Stanley.
+2. **PLAN** to find the connection between Teresa and Stanley in the given information.
+3. **SOLVE** by examining the information provided:
+   - Sandra is the daughter of Stanley.
+   - Teresa is the daughter of James.
+   - James is the husband of Sandra.
+4. **STATE** the final answer clearly: Teresa is the granddaughter of Stanley.",58.2845,19.750442477876117,11561.410674778761,71.26106194690252,10.88495575221239,3904.765625,0.11764705882352941,0.0,0.08823529411764706,6.367803053737255e-232,0.0,0.025,0.3333333333333333,0.046511627906976744,1,0.08510638297872342,0.52,0.816100001335144,0.43958601355552673,,,,,,,,,,,
+44,clutrr,"[Sandra] went to the beach with her husband [James]. [Sandra] wanted to visit an art museum, so she asked her father, [Stanley] to take her. [James] took his daughter [Teresa] out for dinner.
+Question: How is [Teresa] related to [Stanley]?",daughter-husband-daughter #### granddaughter,MGCoT, Teresa is related to Stanley as Sandra's daughter.,11.3491,17.992857142857144,11477.02455357143,70.76428571428569,21.285714285714285,3904.765625,0.15384615384615383,0.0,0.15384615384615383,0.0,0.0,0.0,0.0,0.0,0,0.27450980392156865,0.7096774193548386,0.843462347984314,0.32216453552246094,99.88674926757812,0.31142690777778625,0.8019059896469116,0.7411690950393677,0.006306214723736048,0.7541159391403198,0.008111483417451382,0.6351162791252136,0.6956294775009155,1.130393385887146,3.376678228378296
+45,clutrr,"[Elliott] would n't let his son [John] go to the park by himself. [John]'s brother [Sidney] offered to go with him. [Stanley] took his grandson [Sidney] to the park on Saturday and they had a good time.
+Question: How is [Stanley] related to [Elliott]?",son-brother-grandfather #### father,SCoT," 1. **ANALYZE** the question is asking about the relationship between Stanley and Elliott.
+2. **PLAN** to find the connection between Stanley and Elliott through the information given.
+3. **SOLVE** by following the information:
+   - Elliott has a son named John.
+   - John's brother is Sidney.
+   - Stanley took his grandson Sidney to the park.
+4. **STATE** the final answer clearly: Stanley is related to Elliott as the father of Elliott's son, John.",65.4974,20.214960629921265,11521.956323818898,71.03149606299206,10.094488188976378,3904.765625,0.08,0.0,0.08,6.2542494559645334e-232,0.0,0.02,0.3333333333333333,0.03773584905660377,1,0.0665188470066519,0.5384615384615385,0.8107131719589233,0.3765255808830261,,,,,,,,,,,
+45,clutrr,"[Elliott] would n't let his son [John] go to the park by himself. [John]'s brother [Sidney] offered to go with him. [Stanley] took his grandson [Sidney] to the park on Saturday and they had a good time.
+Question: How is [Stanley] related to [Elliott]?",son-brother-grandfather #### father,MGCoT, Stanley is the father of Elliott.,9.8933,18.58,11282.818359375,69.55000000000001,27.4,3904.765625,0.2,0.0,0.2,1.1640469867513693e-231,0.0,0.14285714285714285,0.3333333333333333,0.2,1,0.19999999999999996,0.689655172413793,0.8633905053138733,0.26311376690864563,99.17581939697266,0.49997133016586304,0.6696499586105347,0.6754553914070129,0.01716175675392151,0.5914601683616638,0.015040277503430843,0.5056828856468201,0.6302971839904785,1.6583281755447388,4.734917163848877
+46,clutrr,"[Clarence] and his brother [Carlos] always played pranks on each other [Stanley] had a conversation with his grandson, [Carlos]. [Stanley] asked his wife [Molly] to keep her distance.
+Question: How is [Clarence] related to [Molly]?",husband-grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking about the relationship between [Clarence] and [Molly].
+2. **PLAN** to find the connection between [Clarence] and [Molly] by examining the information provided.
+3. **SOLVE** step by step:
+   - [Clarence] and his brother [Carlos] are mentioned to play pranks on each other.
+   - [Stanley] had a conversation with his grandson, [Carlos].
+   - [Stanley] asked his wife [Molly] to keep her distance.
+   - From the information, we can infer that [Carlos] is the grandson of [Stanley] and [Molly] is the wife of [Stanley].
+4. **STATE** the final answer clearly: [Clarence] is related to [Molly] as the brother-in-law.",105.4914,21.394202898550745,11437.404551630434,70.503381642512,9.458937198067632,3904.765625,0.05825242718446602,0.0,0.03883495145631068,5.746825102397619e-232,0.0,0.015151515151515152,0.3333333333333333,0.028985507246376812,1,0.05084745762711862,0.5283018867924527,0.804288923740387,0.33932432532310486,,,,,,,,,,,
+46,clutrr,"[Clarence] and his brother [Carlos] always played pranks on each other [Stanley] had a conversation with his grandson, [Carlos]. [Stanley] asked his wife [Molly] to keep her distance.
+Question: How is [Clarence] related to [Molly]?",husband-grandson-brother #### grandson,MGCoT, [Clarence] is [Molly]'s brother-in-law.,13.8808,19.72105263157895,11406.559621710527,70.31052631578947,16.105263157894736,3904.765625,0.18181818181818182,0.0,0.18181818181818182,0.0,0.0,0.0,0.0,0.0,0,0.125,0.611111111111111,0.8383490443229675,0.38033056259155273,99.91789245605469,0.1981867253780365,0.8286714553833008,0.8168129324913025,0.003318860661238432,0.847464382648468,0.0034294913057237864,0.7378605604171753,0.7915853261947632,0.695062518119812,2.461836099624634
+47,clutrr,"[Michael] and [Michelle] were lucky to marry each other. [Michelle] already had a kid named [Jeremy]. [Molly] loved to take care of her new grandson, [Jeremy].
+Question: How is [Molly] related to [Michael]?",wife-son-grandmother #### mother,SCoT," 1. **ANALYZE** the question is asking about the relationship between [Molly] and [Michael].
+2. **PLAN** the reasoning steps needed:
+   - Identify the relationships between the characters.
+   - Determine the connection between [Molly] and [Michael].
+3. **SOLVE** step by step:
+   - [Michelle] is [Michael]'s spouse.
+   - [Michelle] has a child named [Jeremy].
+   - [Molly] is the grandmother of [Jeremy].
+4. **STATE** the final answer clearly:
+   - [Molly] is the mother of [Michelle], making her the grandmother of [Michael]'s spouse, and therefore the grandmother of [Michael]. So, [Molly] is the grandmother of [Michael].",97.8187,19.880729166666693,11446.837076822916,70.56822916666691,10.34375,3904.765625,0.04395604395604396,0.0,0.04395604395604396,5.898586811762746e-232,0.0,0.018867924528301886,0.3333333333333333,0.03571428571428571,1,0.04487179487179482,0.5714285714285713,0.7978528141975403,0.3685857355594635,,,,,,,,,,,
+47,clutrr,"[Michael] and [Michelle] were lucky to marry each other. [Michelle] already had a kid named [Jeremy]. [Molly] loved to take care of her new grandson, [Jeremy].
+Question: How is [Molly] related to [Michael]?",wife-son-grandmother #### mother,MGCoT," [Molly] is the grandmother of [Michael]'s spouse, [Michelle], and the grandmother of [Michelle]'s child, [Jeremy].",24.3932,20.3525,11497.42177734375,70.90249999999997,13.85,3904.765625,0.09523809523809523,0.0,0.09523809523809523,0.0,0.0,0.0,0.0,0.0,0,0.18260869565217386,0.6666666666666666,0.8256903290748596,0.45290717482566833,99.66798400878906,0.173209547996521,0.8014044761657715,0.7579689025878906,0.0003850353532470763,0.8617355227470398,0.004367927089333534,0.774222195148468,0.8131476640701294,0.6587440371513367,2.2607431411743164
+48,clutrr,"[Stanley] and his grandson, [Jeremy], like to go fishing with [Thomas], [Jeremy]'s brother. [Thomas] bought to dress for his father [Michael]
+Question: How is [Stanley] related to [Michael]?",son-brother-grandfather #### father,SCoT," 1. **ANALYZE** the question is asking about the relationship between Stanley and Michael.
+2. **PLAN** to reason through the relationships given in the question.
+3. **SOLVE** step by step:
+   - Stanley is related to Jeremy.
+   - Jeremy is related to Thomas.
+   - Thomas bought a dress for his father, Michael.
+   - Therefore, Stanley is related to Michael through Jeremy and Thomas.
+4. **STATE** the final answer clearly: Stanley is related to Michael as Jeremy's grandfather.",61.2822,19.412605042016803,11564.872636554623,71.3058823529411,10.016806722689076,3904.765625,0.05263157894736842,0.0,0.02631578947368421,0.0,0.0,0.02127659574468085,0.3333333333333333,0.04,1,0.06302521008403361,0.5384615384615385,0.8090822696685791,0.38737836480140686,,,,,,,,,,,
+48,clutrr,"[Stanley] and his grandson, [Jeremy], like to go fishing with [Thomas], [Jeremy]'s brother. [Thomas] bought to dress for his father [Michael]
+Question: How is [Stanley] related to [Michael]?",son-brother-grandfather #### father,MGCoT, Stanley is related to Michael as Jeremy's grandfather.,10.3311,17.875,11423.840169270834,70.42499999999998,27.333333333333332,3904.765625,0.15384615384615383,0.0,0.15384615384615383,0.0,0.0,0.0,0.0,0.0,0,0.2545454545454545,0.6857142857142857,0.8441178202629089,0.35384321212768555,99.89485931396484,0.04947802424430847,0.9622591733932495,1.0,0.0,0.9637550711631775,0.0,0.9653112292289734,0.9839863777160645,0.1221441775560379,1.206844687461853
+49,clutrr,"[Stanley] went to visit his daughter [Sandra] and her husband [James]. He was so excited to finally meet [James]'s daughter [Teresa].
+Question: How is [Teresa] related to [Stanley]?",daughter-husband-daughter #### granddaughter,SCoT," 1. **ANALYZE** the question is asking about the relationship between Teresa and Stanley.
+2. **PLAN** to reason through the information given in the text.
+3. **SOLVE** step by step:
+   - Stanley is visiting Sandra, his daughter.
+   - James is Sandra's husband.
+   - Teresa is James's daughter.
+4. **STATE** the final answer clearly: Teresa is Stanley's granddaughter.",55.0726,20.13831775700933,11521.486674941589,71.02149532710281,10.130841121495328,3904.765625,0.13333333333333333,0.0,0.13333333333333333,0.0,0.0,0.023255813953488372,0.3333333333333333,0.04347826086956522,1,0.10899182561307907,0.5,0.8139435648918152,0.44628071784973145,,,,,,,,,,,
+49,clutrr,"[Stanley] went to visit his daughter [Sandra] and her husband [James]. He was so excited to finally meet [James]'s daughter [Teresa].
+Question: How is [Teresa] related to [Stanley]?",daughter-husband-daughter #### granddaughter,MGCoT, Teresa is Stanley's granddaughter.,9.8271,18.154545454545456,11463.438210227272,70.70000000000002,29.454545454545453,3904.765625,0.22222222222222224,0.0,0.22222222222222224,0.0,0.0,0.16666666666666666,0.3333333333333333,0.2222222222222222,1,0.40909090909090906,0.7333333333333334,0.8608915209770203,0.33895963430404663,98.78318786621094,0.15323467552661896,0.6739290952682495,0.6751652956008911,0.0030281597282737494,0.8394724726676941,0.0021010723430663347,0.625954806804657,0.6563987731933594,0.5131089687347412,1.9635502099990845
+50,clutrr,"[Stanley] asked his wife [Molly] if she did the shopping. [Stanley] spent Saturday afternoon helping his grandson, [Clarence], build a model airplane. [Clarence] was excited about the new airplane, and showed it to his brother [Jason] as soon as he got home.
+Question: How is [Jason] related to [Molly]?",husband-grandson-brother #### grandson,SCoT," 1. **ANALYZE** the question is asking for the relationship between [Jason] and [Molly].
+2. **PLAN** to find the connection between the two individuals mentioned in the text.
+3. **SOLVE** by examining the text for clues about their relationship.
+4. **STATE** the final answer clearly.
+
+From the text, we know that [Stanley] is married to [Molly]. [Stanley] is also the grandfather of [Clarence] and [Jason]. Since [Clarence] and [Jason] are brothers, their parents must be siblings. Therefore, [Molly] is the sister of [Jason]'s parents, making her the aunt of [Jason]. So, [Jason] is related to [Molly] as her nephew.",93.9959,19.439673913043492,11527.126231317934,71.06630434782605,10.043478260869565,3904.765625,0.01941747572815534,0.0,0.01941747572815534,0.0,0.0,0.0,0.0,0.0,0,0.05016181229773464,0.4905660377358491,0.7966192364692688,0.3552924692630768,,,,,,,,,,,
+50,clutrr,"[Stanley] asked his wife [Molly] if she did the shopping. [Stanley] spent Saturday afternoon helping his grandson, [Clarence], build a model airplane. [Clarence] was excited about the new airplane, and showed it to his brother [Jason] as soon as he got home.
+Question: How is [Jason] related to [Molly]?",husband-grandson-brother #### grandson,MGCoT, [Jason] is [Molly]'s son-in-law.,13.9175,18.488888888888894,11450.842664930555,70.6,17.666666666666668,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.07894736842105265,0.38709677419354843,0.8441421389579773,0.3451266288757324,99.80428314208984,0.28495436906814575,0.868343710899353,0.8687930703163147,0.002502389717847109,0.7672081589698792,0.007145239040255547,0.8047722578048706,0.8871896266937256,1.0141695737838745,3.2034919261932373

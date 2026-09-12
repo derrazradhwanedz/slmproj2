@@ -1,0 +1,1534 @@
+record_id,dataset,question,gold_answer,mechanism,final_answer,delta_time_seconds,cpu_usage_avg_percent,ram_usage_avg_mb,ram_usage_avg_percent,gpu_usage_avg_percent,gpu_memory_avg_mb,rouge1_f1,rouge2_f1,rougeL_f1,bleu,exact_match,token_precision,token_recall,token_f1,token_overlap_count,normalized_edit_distance,char_f1,bert_score_f1,semantic_similarity,target_Readability,target_Coherence,target_Relevance,target_Specificity,target_Engagement,target_Concise,target_Length,target_Zipf,target_Hapax,target_Entropy,target_Perplexity
+1,aqua,"A car is being driven, in a straight line and at a uniform speed, towards the base of a vertical tower. The top of the tower is observed from the car and, in the process, it takes 10 minutes for the angle of elevation to change from 45° to 60°. After how much more time will this car reach the base of the tower?
+# Answer option: ['A)5(√3 + 1)', 'B)6(√3 + √2)', 'C)7(√3 – 1)', 'D)8(√3 – 2)', 'E)None of these']",A,SCoT," 1. **ANALYZE** the question: We need to find the time it takes for the car to reach the base of the tower after the angle of elevation changes from 45° to 60°.
+
+2. **PLAN** the reasoning steps:
+   - We know that the angle of elevation changes from 45° to 60° in 10 minutes.
+   - We can use the tangent function to relate the angle of elevation to the ratio of the height of the tower to the distance traveled by the car.
+   - We can use the fact that the car is traveling at a uniform speed to find the distance traveled during the 10 minutes.
+   - We can use the tangent function again to find the height of the tower.
+   - Finally, we can use the distance traveled during the 10 minutes and the height of the tower to find the time it takes for the car to reach the base of the tower.
+
+3. **SOLVE** step by step:
+   - The angle of elevation changes from 45° to 60° in 10 minutes.
+   - Using the tangent function, we have:
+     - tan(45°) = height / distance
+     - tan(60°) = height / distance
+   - We can find the ratio of the height to the distance",212.0092,31.040199335548163,14951.645270971761,92.16511627906979,12.890365448504983,2602.752335963455,0.010362694300518135,0.0,0.010362694300518135,0.0,0.0,0.014492753623188406,1.0,0.02857142857142857,1,0.0009496676163343043,0.04545454545454545,0.7528331875801086,0.0825534388422966,,,,,,,,,,,
+1,aqua,"A car is being driven, in a straight line and at a uniform speed, towards the base of a vertical tower. The top of the tower is observed from the car and, in the process, it takes 10 minutes for the angle of elevation to change from 45° to 60°. After how much more time will this car reach the base of the tower?
+# Answer option: ['A)5(√3 + 1)', 'B)6(√3 + √2)', 'C)7(√3 – 1)', 'D)8(√3 – 2)', 'E)None of these']",A,MGCoT," To solve this problem, we need to find the time it takes for the car to reach the base of the tower after the angle of elevation changes from 45° to 60°.
+
+Let's denote the distance from the car to the base of the tower as x, and the height of the tower as y. We know that the car is moving at a uniform speed, so the ratio of the change in height to the change in distance is equal to the tangent of the angle of elevation.
+
+For the angle of elevation to change from 45° to 60°, the ratio of the change in height to the change in distance should change from tan(45°) to tan(60°).
+
+tan(45°) = 1
+tan(60°) = √3
+
+So, the ratio of the change in height to the change in distance is 1/√3.
+
+Now, we can use the Pythagorean theorem to relate the change in height, the change in distance, and the time it takes for the car to travel this distance.
+
+(x + Δx)^2 + y^2 = (x + Δx)^2 + (y + Δy)^2
+
+Since the car is moving at a uniform speed, the ratio of Δy to Δx is equal to the ratio",162.0051,32.43953488372093,15549.187435112126,95.85215946843847,13.308970099667775,3686.765625,0.00980392156862745,0.0,0.00980392156862745,0.0,0.0,0.014084507042253521,1.0,0.02777777777777778,1,0.0,0.04347826086956522,0.741910457611084,0.10439375042915344,99.48136901855469,0.8730787038803101,0.4442921280860901,0.5665662288665771,0.029772715643048286,0.27472662925720215,0.02699226699769497,0.18875333666801453,0.3917376697063446,3.07490873336792,8.54793643951416
+2,aqua,"The original price of an item is discounted 22%. A customer buys the item at this discounted price using a $20-off coupon. There is no tax on the item, and this was the only item the customer bought. If the customer paid $1.90 more than half the original price of the item, what was the original price of the item?
+# Answer option: ['A)$61', 'B)$65', 'C)$67.40', 'D)$70', 'E)$78.20']",E,SCoT," 1. ANALYZE: The question is asking for the original price of an item, given certain conditions.
+2. PLAN: We need to find the original price, given the discount, the coupon, and the final price.
+3. SOLVE:
+   a. Let x be the original price of the item.
+   b. The item is discounted by 22%, so the discounted price is 0.78x.
+   c. The customer uses a $20-off coupon, so the final price is 0.78x - $20.
+   d. The customer paid $1.90 more than half the original price, so 0.5x + $1.90 = 0.78x - $20.
+   e. Solve for x: 0.5x + $1.90 = 0.78x - $20, 0.28x = $21.90, x = $21.90 / 0.28 = $78.20.
+4. STATE: The original price of the item was $78.20. So the answer is E) $78.20.",141.5645,30.42427536231887,14997.13816236413,92.4460144927535,12.920289855072463,3686.765625,0.014598540145985401,0.0,0.014598540145985401,0.0,0.0,0.014285714285714285,1.0,0.028169014084507043,1,0.0014992503748125774,0.042553191489361694,0.7747387290000916,0.1316346675157547,,,,,,,,,,,
+2,aqua,"The original price of an item is discounted 22%. A customer buys the item at this discounted price using a $20-off coupon. There is no tax on the item, and this was the only item the customer bought. If the customer paid $1.90 more than half the original price of the item, what was the original price of the item?
+# Answer option: ['A)$61', 'B)$65', 'C)$67.40', 'D)$70', 'E)$78.20']",E,MGCoT," To find the original price of the item, we need to follow these steps:
+
+1. Determine the discounted price of the item.
+2. Apply the $20-off coupon to the discounted price.
+3. Calculate the original price of the item based on the given information.
+
+Let's start by finding the discounted price of the item:
+
+Let x be the original price of the item.
+The discounted price is 78.2% of the original price, so the discounted price is 0.782x.
+
+Next, we apply the $20-off coupon to the discounted price:
+
+The final price the customer paid is the discounted price minus $20: 0.782x - $20.
+
+We are given that the customer paid $1.90 more than half the original price of the item. Half the original price is 0.5x. Therefore, the final price the customer paid is 0.5x + $1.90.
+
+Now we can set up an equation to solve for x:
+
+0.782x - $20 = 0.5x + $1.90
+
+To solve for x, we can first subtract 0.5x from both sides of the equation:
+
+0.782",156.1799,31.847176079734194,15312.86256748339,94.39568106312286,13.009966777408637,3686.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.046511627906976744,0.7671746015548706,0.022455677390098572,98.62440490722656,0.17251671850681305,0.7623567581176758,0.8394002914428711,0.0,0.8439638018608093,0.0,1.0,1.0,0.6009467840194702,2.2921013832092285
+3,aqua,"Find out which of the following values is the multiple of X, if it is divisible by 9 and 12?
+# Answer option: ['A)36', 'B)15', 'C)17', 'D)5', 'E)7']",A,SCoT," 1. **ANALYZE** the question: We are looking for a number that is divisible by both 9 and 12.
+2. **PLAN** the reasoning steps: We know that a number is divisible by 9 if the sum of its digits is divisible by 9. For a number to be divisible by 12, it must be divisible by both 3 and 4. Since 4 is a factor of 12, the number must be divisible by 3. Therefore, we can conclude that the number must be divisible by both 3 and 9.
+3. **SOLVE** step by step:
+   - Check if the number is divisible by 3: Sum of digits must be divisible by 3.
+   - Check if the number is divisible by 9: The number itself must be divisible by 9.
+4. **STATE** the final answer: Let's check each option:
+   - A) 36: Sum of digits (3+6) is 9, and 36 is divisible by 9.
+   - B) 15: Sum of digits (1+5) is 6, and 15 is not divisible by 9.
+   - C) 17: Sum of digits (1+7) is ",153.4289,29.061129568106324,14550.71047030731,89.70099667774103,12.840531561461795,3686.765625,0.011428571428571429,0.0,0.011428571428571429,0.0,0.0,0.014285714285714285,1.0,0.028169014084507043,1,0.0011862396204033177,0.04545454545454545,0.7432831525802612,0.07063476741313934,,,,,,,,,,,
+3,aqua,"Find out which of the following values is the multiple of X, if it is divisible by 9 and 12?
+# Answer option: ['A)36', 'B)15', 'C)17', 'D)5', 'E)7']",A,MGCoT," To find the value that is divisible by both 9 and 12, we need to find the least common multiple (LCM) of 9 and 12. The LCM of 9 and 12 is 36. Therefore, the value that is divisible by both 9 and 12 is 36.
+
+So, the answer is:
+
+A) 36",49.0385,27.96516853932585,14527.399008075843,89.5505617977528,13.797752808988765,3686.765625,0.03773584905660378,0.0,0.03773584905660378,0.0,0.0,0.03333333333333333,1.0,0.06451612903225806,1,0.004310344827586188,0.06060606060606061,0.7847782373428345,0.07771149277687073,98.67605590820312,0.2159881293773651,0.5945730209350586,0.32515451312065125,0.001863511628471315,0.7732864022254944,0.016588473692536354,0.3252260088920593,0.28695887327194214,1.0074387788772583,2.7465105056762695
+4,aqua,"If the probability that Stock A will increase in value during the next month is 0.56, and the probability that Stock B will increase in value during the next month is 0.74. What is the greatest value for the probability that neither of these two events will occur?
+# Answer option: ['A)0.22', 'B)0.26', 'C)0.37', 'D)0.46', 'E)0.63']",B,SCoT," 1. **ANALYZE** the question is asking for the greatest probability that neither Stock A nor Stock B will increase in value during the next month.
+2. **PLAN** to use the given probabilities to find the probability that at least one of the stocks will increase in value, and then subtract that from 1 to find the probability that neither will increase in value.
+3. **SOLVE** step by step:
+   a. Find the probability that Stock A will not increase in value: 1 - 0.56 = 0.44
+   b. Find the probability that Stock B will not increase in value: 1 - 0.74 = 0.26
+   c. Find the probability that at least one of the stocks will increase in value: 1 - (0.44 * 0.26) = 1 - 0.1144 = 0.8856
+   d. Find the probability that neither of the stocks will increase in value: 1 - 0.8856 = 0.1144
+4. **STATE** the final answer clearly: The greatest value for the probability that neither of these two events will occur is 0.1144, which is not listed in the given answer options.",146.5621,30.837762237762245,14631.848707932691,90.19930069930066,12.748251748251748,3688.765625,0.011235955056179775,0.0,0.011235955056179775,4.9947643922885574e-232,0.0,0.0136986301369863,1.0,0.027027027027027025,1,0.0010438413361169019,0.044444444444444446,0.7612320184707642,0.22942553460597992,,,,,,,,,,,
+4,aqua,"If the probability that Stock A will increase in value during the next month is 0.56, and the probability that Stock B will increase in value during the next month is 0.74. What is the greatest value for the probability that neither of these two events will occur?
+# Answer option: ['A)0.22', 'B)0.26', 'C)0.37', 'D)0.46', 'E)0.63']",B,MGCoT," To find the greatest value for the probability that neither of these two events will occur, we need to consider the probabilities of both events not happening.
+
+The probability of Stock A not increasing in value is 1 - 0.56 = 0.44.
+The probability of Stock B not increasing in value is 1 - 0.74 = 0.26.
+
+To find the probability that both events do not occur, we multiply the individual probabilities:
+
+0.44 * 0.26 = 0.1148
+
+So, the greatest value for the probability that neither of these two events will occur is approximately 0.1148. However, this value is not in the given options. It is possible that there is an error in the options provided.",93.8508,29.468361581920913,14164.476540430791,87.3169491525422,13.344632768361581,3688.765625,0.01680672268907563,0.0,0.01680672268907563,5.551288858995946e-232,0.0,0.017241379310344827,1.0,0.03389830508474576,1,0.0015432098765432167,0.05,0.7687463760375977,0.18802158534526825,100.0,0.08729434013366699,0.7930532693862915,0.8761118054389954,0.0,0.9756792783737183,0.0,1.0,1.0,0.28819525241851807,1.5999585390090942
+5,aqua,"A trader sold an article at a profit of 20% for Rs.360. What is the cost price of the article?
+# Answer option: ['A)270', 'B)300', 'C)280', 'D)320', 'E)315']",B,SCoT," 1. **ANALYZE** the question: We need to find the cost price of the article. We know the profit percentage and the selling price.
+2. **PLAN** the reasoning steps: We can use the formula: Selling Price = Cost Price + Profit. We can rearrange this formula to find the Cost Price: Cost Price = Selling Price - Profit.
+3. **SOLVE** step by step:
+   - We are given the profit percentage as 20% and the selling price as Rs.360.
+   - To find the profit, we can calculate 20% of Rs.360: 20/100 * 360 = Rs. 72.
+   - Now, we can find the cost price by subtracting the profit from the selling price: 360 - 72 = Rs. 288.
+4. **STATE** the final answer clearly: The cost price of the article is Rs. 288. So, the correct answer is 'C)280'.",122.1115,30.96806722689077,14148.452714679623,87.21512605042017,12.936974789915967,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.04347826086956522,0.768902063369751,0.17193222045898438,,,,,,,,,,,
+5,aqua,"A trader sold an article at a profit of 20% for Rs.360. What is the cost price of the article?
+# Answer option: ['A)270', 'B)300', 'C)280', 'D)320', 'E)315']",B,MGCoT," To find the cost price of the article, we need to use the formula:
+
+Cost Price = Selling Price / (1 + Profit Percentage)
+
+In this case, the selling price is Rs. 360, and the profit percentage is 20%.
+
+Cost Price = 360 / (1 + 0.20)
+
+Cost Price = 360 / 1.20
+
+Cost Price = Rs. 300
+
+So, the cost price of the article is Rs. 300. The correct answer is B) 300.",72.1937,30.392592592592592,13815.468952546296,85.16666666666669,13.318518518518518,3688.765625,0.029411764705882353,0.0,0.029411764705882353,0.0,0.0,0.025,1.0,0.04878048780487806,1,0.0028169014084507005,0.05555555555555556,0.7804358601570129,0.1675657033920288,99.88011932373047,0.06241998448967934,0.43580707907676697,0.4659946858882904,0.0,0.9555215239524841,0.0,0.4027125835418701,0.41359999775886536,0.20542222261428833,1.3635883331298828
+6,aqua,"20 marbles were pulled out of a bag of only white marbles, painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 was black, after which they were all returned to the bag. If the percentage of black marbles pulled out the second time represents their percentage in the bag, how many marbles in total Q does the bag currently hold?
+# Answer option: ['A)40', 'B)200', 'C)380', 'D)400', 'E)3200']",D,SCoT," 1. ANALYZE: The question is asking for the total number of marbles in the bag after the given operations.
+2. PLAN: We need to find the total number of marbles in the bag after the second operation.
+3. SOLVE:
+   a. In the first operation, 20 marbles were pulled out and painted black, and then put back in. This means there are now 20 black marbles in the bag.
+   b. In the second operation, 20 marbles were pulled out, and 1 was black. This means that 19 white marbles were pulled out and put back in.
+   c. Since the percentage of black marbles pulled out the second time represents their percentage in the bag, we can set up the following equation:
+      (20 black marbles / (20 black marbles + 19 white marbles)) * Total number of marbles in the bag = 1 black marble pulled out
+   d. Solving for the total number of marbles in the bag, we get:
+      (20 / (20 + 19)) * Q = 1
+      (20 / 39) * Q = 1
+      Q = 1 / (20 / 39)
+      Q = 390 / 20
+      Q = 19.",154.4708,29.174086378737535,13885.035286025748,85.5930232558138,12.903654485049834,3688.765625,0.011560693641618497,0.0,0.011560693641618497,0.0,0.0,0.0,0.0,0.0,0,0.0,0.04878048780487806,0.7586207985877991,0.11462108790874481,,,,,,,,,,,
+6,aqua,"20 marbles were pulled out of a bag of only white marbles, painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 was black, after which they were all returned to the bag. If the percentage of black marbles pulled out the second time represents their percentage in the bag, how many marbles in total Q does the bag currently hold?
+# Answer option: ['A)40', 'B)200', 'C)380', 'D)400', 'E)3200']",D,MGCoT," To answer this question, we need to understand the problem and then construct an answer that matches the targeted metrics.
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - **Readability**: 98.887 - The response should be easy to read with short words and sentences.
+   - **Coherence**: 0.410 - The response should have a smooth logical flow between ideas.
+   - **Relevance**: 0.357 - The response should be focused on the topic and avoid filler words.
+   - **Specificity**: 0.459 - The response should use precise vocabulary and avoid repetition.
+   - **Engagement**: 0.008 - The response should be slightly interactive or conversational.
+   - **Concise**: 0.622 - The response should be compact and have shorter sentences on average.
+   - **Length**: 0.008 - The response should be short, around 100 words.
+   - **Zipf**: 0.624 - The response should have a natural word-frequency distribution.
+   - **Hapax**: 0.720 - The response should have unique, non-repetitive words.
+   - **Entropy**: 1.367 - The response should have",156.1153,31.67308970099664,13815.406211067275,85.16179401993351,13.3421926910299,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.047619047619047616,0.7662860155105591,0.08553171902894974,98.88728332519531,0.4096723794937134,0.3570622503757477,0.45945730805397034,0.007838360033929348,0.6221826076507568,0.007659167516976595,0.6239300966262817,0.7203056812286377,1.367297887802124,4.377665996551514
+7,aqua,"Find the total no. of distinct bike no.'s that can beformed using 2 letters followed by 2 no.'s. How many letters need to be distinct?
+# Answer option: ['A)74453', 'B)64543', 'C)74325', 'D)65000', 'E)97656']",D,SCoT," 1. **ANALYZE** the question: We need to find the total number of distinct bike numbers that can be formed using 2 letters followed by 2 numbers.
+
+2. **PLAN** the reasoning steps needed:
+   - There are 26 choices for each of the 2 letters.
+   - There are 10 choices for each of the 2 numbers.
+   - We need to multiply the number of choices for each position to find the total number of possible combinations.
+
+3. **SOLVE** step by step:
+   - Number of choices for the first letter: 26
+   - Number of choices for the second letter: 26
+   - Number of choices for the first number: 10
+   - Number of choices for the second number: 10
+   - Total number of combinations: 26 * 26 * 10 * 10
+
+4. **STATE** the final answer clearly:
+   - The total number of distinct bike numbers that can be formed using 2 letters followed by 2 numbers is 26 * 26 * 10 * 10 = 676,000.
+
+The answer is not in the given options.",139.7438,30.217948717948737,13763.37720352564,84.83772893772891,12.575091575091575,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.05,0.7553116679191589,0.09635583311319351,,,,,,,,,,,
+7,aqua,"Find the total no. of distinct bike no.'s that can beformed using 2 letters followed by 2 no.'s. How many letters need to be distinct?
+# Answer option: ['A)74453', 'B)64543', 'C)74325', 'D)65000', 'E)97656']",D,MGCoT," To find the total number of distinct bike numbers that can be formed using 2 letters followed by 2 numbers, we need to consider the number of possibilities for each position in the bike number.
+
+1. For the first position, we have 26 options (26 letters in the alphabet).
+2. For the second position, we also have 26 options (26 letters in the alphabet).
+3. For the third position, we have 10 options (0-9, as it's a number).
+4. For the fourth position, we have 10 options (0-9, as it's a number).
+
+To find the total number of distinct bike numbers, we multiply the number of possibilities for each position:
+
+26 (first position) * 26 (second position) * 10 (third position) * 10 (fourth position) = 10,560 distinct bike numbers.
+
+Now, to find out how many letters need to be distinct, we can see that the first two positions are for letters, and the last two positions are for numbers. Therefore, we need 2 distinct letters to form a bike number.
+
+So, the answer is:
+
+A) 74453 (not correct)
+B) 64543 (not correct)
+C) 7432",156.1211,29.744518272425243,13208.181361607143,81.41694352159465,13.17607973421927,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.046511627906976744,0.7628344297409058,0.11488087475299835,98.09989929199219,0.0,0.3117055296897888,0.377462774515152,0.0,0.9380672574043274,0.0,0.6633901596069336,0.7038165330886841,0.0,1.0014100074768066
+8,aqua,"A train running at a speed of 100 miles/hour, takes 10 hours to reach its destination. After covering quarter of the distance, it starts raining and the train has to be slowed to speed of 75 miles/hour. What is the total journey duration?
+# Answer option: ['A)10', 'B)11.5', 'C)12.5', 'D)13.5', 'E)15']",C,SCoT," 1. ANALYZE: The question is asking for the total journey duration of a train that initially travels at 100 miles/hour and then has to slow down to 75 miles/hour due to rain.
+
+2. PLAN: We need to find the distance covered in the first 10 hours and then calculate the remaining distance and time taken to cover that distance at the reduced speed.
+
+3. SOLVE:
+   a. In the first 10 hours, the train covers a distance of 100 miles/hour * 10 hours = 1000 miles.
+   b. The remaining distance is 1000 miles - (1/4) * 1000 miles = 750 miles.
+   c. At a speed of 75 miles/hour, the train takes 750 miles / 75 miles/hour = 10 hours to cover the remaining distance.
+   d. The total journey duration is 10 hours (initial speed) + 10 hours (reduced speed) = 20 hours.
+
+4. STATE: The total journey duration is 20 hours. So, the answer is not in the given options.",138.5168,28.02666666666665,13519.077705439815,83.32962962962984,12.881481481481481,3688.765625,0.012738853503184714,0.0,0.012738853503184714,0.0,0.0,0.0,0.0,0.0,0,0.0,0.044444444444444446,0.7670100331306458,0.251674085855484,,,,,,,,,,,
+8,aqua,"A train running at a speed of 100 miles/hour, takes 10 hours to reach its destination. After covering quarter of the distance, it starts raining and the train has to be slowed to speed of 75 miles/hour. What is the total journey duration?
+# Answer option: ['A)10', 'B)11.5', 'C)12.5', 'D)13.5', 'E)15']",C,MGCoT," To find the total journey duration, we need to consider the two parts of the journey: when the train was running at 100 miles/hour and when it was running at 75 miles/hour.
+
+First, let's find the distance covered when the train was running at 100 miles/hour. Since the train takes 10 hours to reach its destination, and it covers a quarter of the distance at this speed, we can calculate the distance covered in the first part as follows:
+
+Distance = Speed × Time
+Distance = 100 miles/hour × 10 hours
+Distance = 1000 miles
+
+Now, let's find the distance covered when the train was running at 75 miles/hour. Since the train has already covered a quarter of the distance, the remaining distance is three-quarters of the total distance:
+
+Remaining Distance = 3/4 × 1000 miles
+Remaining Distance = 750 miles
+
+Next, let's find the time taken to cover the remaining distance at 75 miles/hour:
+
+Time = Distance ÷ Speed
+Time = 750 miles ÷ 75 miles/hour
+Time = 10 hours
+
+Finally, let's add the time taken for both parts of the journey to find the total journey duration:
+
+Total Jour",156.1296,36.20332225913619,13877.915204526578,85.54684385382068,12.750830564784053,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.046511627906976744,0.7645195722579956,0.11097093671560287,98.22669219970703,0.30442899465560913,0.678070068359375,0.8053224086761475,0.006564387120306492,0.7053616046905518,0.0031629649456590414,0.7826412916183472,0.8757832050323486,0.9430172443389893,3.1374857425689697
+9,aqua,"Of the 200 students in a school, at least 45% attended the prom night and at least 35% took part in the debating session. What is the maximum number of students who could have neither attended the prom night nor the debating session?
+# Answer option: ['A)27', 'B)81', 'C)90', 'D)99', 'E)110']",E,SCoT," 1. ANALYZE: The question asks for the maximum number of students who could have neither attended the prom night nor the debating session.
+
+2. PLAN: We know that at least 45% of the students attended the prom night and at least 35% took part in the debating session. We need to find the maximum number of students who did not attend either event.
+
+3. SOLVE:
+   a. Find the number of students who attended the prom night: 200 * 0.45 = 90 students
+   b. Find the number of students who took part in the debating session: 200 * 0.35 = 70 students
+   c. Add the number of students who attended the prom night and the debating session: 90 + 70 = 160 students
+   d. Subtract the total number of students who attended either event from the total number of students: 200 - 160 = 40 students
+
+4. STATE: The maximum number of students who could have neither attended the prom night nor the debating session is 40. However, this is not an option in the given answer choices. Therefore, the closest option to the calculated answer is 'B)81'.",146.0722,33.220350877192985,14294.958675986842,88.1210526315786,12.652631578947368,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0009718172983479434,0.04166666666666667,0.7684726119041443,0.1328098028898239,,,,,,,,,,,
+9,aqua,"Of the 200 students in a school, at least 45% attended the prom night and at least 35% took part in the debating session. What is the maximum number of students who could have neither attended the prom night nor the debating session?
+# Answer option: ['A)27', 'B)81', 'C)90', 'D)99', 'E)110']",E,MGCoT," To find the maximum number of students who could have neither attended the prom night nor the debating session, we need to consider the minimum number of students who attended both events.
+
+Let's assume x students attended both the prom night and the debating session. Then, the number of students who attended the prom night is 45% of 200, which is 0.45 * 200 = 90 students. Similarly, the number of students who attended the debating session is 35% of 200, which is 0.35 * 200 = 70 students.
+
+Now, we can use the principle of inclusion-exclusion to find the maximum number of students who attended at least one of the events.
+
+Total students = students who attended the prom night + students who attended the debating session - students who attended both events + students who attended neither event
+
+200 = 90 + 70 - x + students who attended neither event
+
+Rearranging the equation, we get:
+
+students who attended neither event = 200 - 90 - 70 + x
+
+Since x is the minimum number of students who attended both events, the maximum value of x is 70.
+
+students who attended neither event = 200 - 90 - 70 + ",156.1321,26.446511627906986,14253.660324958471,87.87009966777396,13.282392026578073,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.047619047619047616,0.7682557106018066,0.06083786115050316,100.0,0.07661032676696777,0.7068405151367188,0.7370672821998596,0.0,0.9542980194091797,0.0,0.9197422862052917,0.9402602910995483,0.22954006493091583,1.5492644309997559
+10,aqua,"A sales person gets a 10% commission on each sale he makes. How many sales of $250 each must he make in order to reach a salary of at least $1000?
+# Answer option: ['A)15', 'B)24', 'C)25', 'D)40', 'E)52']",D,SCoT," 1. **ANALYZE** the question: We need to find out how many sales of $250 each a salesperson must make to reach a salary of at least $1000, given that they get a 10% commission on each sale.
+
+2. **PLAN** the reasoning steps needed:
+   - Determine the total salary needed: $1000
+   - Calculate the commission rate: 10%
+   - Calculate the total sales needed to reach the desired salary
+
+3. **SOLVE** step by step:
+   - Step 1: Determine the total salary needed: $1000
+   - Step 2: Calculate the commission rate: 10% (0.10)
+   - Step 3: Calculate the total sales needed to reach the desired salary:
+     - Let x be the number of sales needed
+     - 0.10 * 250 * x = 1000
+     - 25x = 1000
+     - x = 1000 / 25
+     - x = 40
+
+4. **STATE** the final answer clearly: The salesperson must make 40 sales of $250 each to reach a salary of at least $1000. So, the correct answer is",153.7444,24.83255813953489,14582.66458160299,89.89601328903657,10.528239202657808,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0011494252873562871,0.044444444444444446,0.7537053823471069,0.015441447496414185,,,,,,,,,,,
+10,aqua,"A sales person gets a 10% commission on each sale he makes. How many sales of $250 each must he make in order to reach a salary of at least $1000?
+# Answer option: ['A)15', 'B)24', 'C)25', 'D)40', 'E)52']",D,MGCoT," To find out how many sales of $250 each the salesperson must make to reach a salary of at least $1000, we can use the following formula:
+
+Total Salary = Commission Rate * Number of Sales * Sale Amount
+
+We are given the commission rate (10%), the sale amount ($250), and the desired total salary ($1000). We need to find the number of sales (x).
+
+1000 = 0.10 * x * 250
+
+Now, we can solve for x:
+
+1000 = 0.10x * 250
+1000 = 25x
+x = 1000 / 25
+x = 40
+
+So, the salesperson must make 40 sales of $250 each to reach a salary of at least $1000. The correct answer is D) 40.",112.3872,29.196728971962624,14372.559908002337,88.59345794392533,13.532710280373832,3688.765625,0.018348623853211007,0.0,0.018348623853211007,0.0,0.0,0.016666666666666666,1.0,0.03278688524590164,1,0.001769911504424737,0.04878048780487806,0.771576464176178,0.06729438155889511,99.06514739990234,0.1765691637992859,0.8328877687454224,0.8092938661575317,0.0006997007876634598,0.8117442727088928,0.0037894363049417734,0.7678561210632324,0.7721951007843018,0.6382478475570679,2.319922685623169
+11,aqua,"A company produces 420 units of a particular computer component every month, at a production cost to the company of $110 per component, and sells all of the components by the end of each month. What is the minimum selling price per component that will guarantee that the yearly profit (revenue from sales minus production costs) will be at least $626,400 ?
+# Answer option: ['A)226', 'B)230', 'C)240', 'D)260', 'E)280']",B,SCoT," 1. **ANALYZE** the problem: We need to find the minimum selling price per component that will guarantee a yearly profit of at least $626,400.
+
+2. **PLAN** the reasoning steps needed:
+   a. Calculate the total production cost for a year.
+   b. Calculate the minimum yearly revenue needed to achieve the desired profit.
+   c. Calculate the minimum selling price per component.
+
+3. **SOLVE** step by step:
+   a. Total production cost for a year: 420 components/month * 12 months/year * $110/component = $504,000.
+   b. Minimum yearly revenue needed: $626,400 (desired profit) + $504,000 (production cost) = $1,130,400.
+   c. Minimum selling price per component: $1,130,400 (minimum yearly revenue) / 420 components/year = $2,691.43.
+
+4. **STATE** the final answer clearly: The minimum selling price per component that will guarantee a yearly profit of at least $626,400 is approximately $2,691.43.",153.054,31.000334448160572,14759.079718854515,90.97859531772572,12.762541806020067,3688.765625,0.013793103448275862,0.0,0.013793103448275862,0.0,0.0,0.0,0.0,0.0,0,0.0,0.04545454545454545,0.7609850168228149,0.1571771204471588,,,,,,,,,,,
+11,aqua,"A company produces 420 units of a particular computer component every month, at a production cost to the company of $110 per component, and sells all of the components by the end of each month. What is the minimum selling price per component that will guarantee that the yearly profit (revenue from sales minus production costs) will be at least $626,400 ?
+# Answer option: ['A)226', 'B)230', 'C)240', 'D)260', 'E)280']",B,MGCoT," To find the minimum selling price per component that will guarantee a yearly profit of at least $626,400, we first need to determine the total production cost for the year and the total revenue needed to achieve the desired profit.
+
+1. Calculate the total production cost for the year:
+- Monthly production cost: 420 units * $110 per component = $46,200
+- Annual production cost: $46,200 * 12 months = $554,400
+
+2. Determine the total revenue needed to achieve the desired profit:
+- Desired yearly profit: $626,400
+- Total revenue needed: $554,400 (annual production cost) + $626,400 (desired profit) = $1,170,800
+
+Now, we need to find the minimum selling price per component that will generate the required revenue.
+
+3. Calculate the minimum selling price per component:
+- Total units produced in a year: 420 units * 12 months = 4,620 units
+- Minimum selling price per component: $1,170,800 (total revenue needed) / 4,620 units = $253.96
+
+Since the",156.2587,34.771760797342196,14449.054363060632,89.07076411960139,12.69767441860465,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.7543275356292725,0.12256914377212524,99.6346206665039,0.33012035489082336,0.43121588230133057,0.5290160179138184,0.005525484215468168,0.7100425958633423,0.00493672164157033,0.5696396827697754,0.678464412689209,1.0643783807754517,3.6967945098876953
+12,aqua,"At a certain factory, 10 percent of the staplers produced on Monday were defective and 2 percent of the non-defective staplers were rejected by mistake. If 72 of the non-defective staplers were rejected, what was the number of staplers produced that day?
+# Answer option: ['A)4,000', 'B)4,200', 'C)4,500', 'D)4,800', 'E)5,000']",A,SCoT," 1. ANALYZE: The question is asking for the total number of staplers produced on Monday. We know that 10 percent of the staplers produced were defective and 2 percent of the non-defective staplers were rejected by mistake. We also know that 72 non-defective staplers were rejected.
+
+2. PLAN: We can use the information about the defective and non-defective staplers to set up an equation and solve for the total number of staplers produced.
+
+3. SOLVE:
+
+Let x be the total number of staplers produced.
+
+10% of x are defective, so 0.1x are defective.
+
+2% of (x - 0.1x) are rejected, so 0.02(x - 0.1x) are rejected.
+
+We know that 72 non-defective staplers were rejected, so 0.02(x - 0.1x) = 72.
+
+Simplifying the equation, we get 0.02x - 0.002x = 72.
+
+Combining like terms, we get 0.018x = 72.
+
+Dividing both sides by 0.018",154.1657,33.047176079734236,14897.744328799834,91.8382059800663,12.385382059800664,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0012210012210012167,0.046511627906976744,0.7486472129821777,0.07481180131435394,,,,,,,,,,,
+12,aqua,"At a certain factory, 10 percent of the staplers produced on Monday were defective and 2 percent of the non-defective staplers were rejected by mistake. If 72 of the non-defective staplers were rejected, what was the number of staplers produced that day?
+# Answer option: ['A)4,000', 'B)4,200', 'C)4,500', 'D)4,800', 'E)5,000']",A,MGCoT," To find the total number of staplers produced, we can use the information given about the percentage of non-defective staplers that were rejected.
+
+We know that 2% of the non-defective staplers were rejected, and 72 of them were rejected. We can set up an equation to find the total number of non-defective staplers produced:
+
+0.02 * Total non-defective staplers = 72
+
+Now, we can solve for the total number of non-defective staplers:
+
+Total non-defective staplers = 72 / 0.02 = 3600
+
+Since 10% of the staplers produced were defective, we can find the total number of staplers produced by dividing the number of non-defective staplers by 90% (100% - 10% defective):
+
+Total staplers produced = 3600 / 0.9 = 4000
+
+So, the number of staplers produced that day was 4,000. The correct answer is A) 4,000.",141.6292,32.2779411764706,14510.445585363052,89.4477941176472,12.852941176470589,3688.765625,0.014285714285714287,0.0,0.014285714285714287,0.0,0.0,0.01639344262295082,1.0,0.03225806451612903,1,0.0012499999999999734,0.044444444444444446,0.7463862299919128,0.06845808029174805,98.4013671875,0.22311054170131683,0.477568119764328,0.48904260993003845,0.006206924095749855,0.7722368240356445,0.005065009463578463,0.5884259939193726,0.6187163591384888,0.7245047688484192,2.645676851272583
+13,aqua,"Machine A puts out a yo-yo every 6 minutes. Machine B puts out a yo-yo every 9 minutes. After how many minutes will they have produced 10 yo-yos?
+# Answer option: ['A)24 minutes', 'B)32 minutes', 'C)36 minutes', 'D)64 minutes', 'E)72 minutes']",C,SCoT," 1. **ANALYZE** the question is asking us to find out how many minutes it will take for both machines to produce 10 yo-yos.
+2. **PLAN** the reasoning steps needed:
+   a. Determine the rate at which each machine produces yo-yos.
+   b. Determine the combined rate of both machines.
+   c. Calculate the time it takes for both machines to produce 10 yo-yos.
+3. **SOLVE** step by step:
+   a. Machine A produces 1 yo-yo every 6 minutes.
+   b. Machine B produces 1 yo-yo every 9 minutes.
+   c. Combined rate of both machines: 1/6 + 1/9 = (9+6)/54 = 15/54 = 1/36
+   d. Time to produce 10 yo-yos: 10 / (1/36) = 10 * 36 = 360 minutes
+4. **STATE** the final answer clearly: The machines will have produced 10 yo-yos after 360 minutes. However, this option is not available in the given choices. The closest option is 'C)36 minutes', which is incorrect.",146.187,29.484615384615413,14634.040045891608,90.20804195804197,12.643356643356643,3688.765625,0.012738853503184714,0.0,0.012738853503184714,0.0,0.0,0.011111111111111112,1.0,0.02197802197802198,1,0.0011890606420927874,0.04347826086956522,0.7716544270515442,0.23002447187900543,,,,,,,,,,,
+13,aqua,"Machine A puts out a yo-yo every 6 minutes. Machine B puts out a yo-yo every 9 minutes. After how many minutes will they have produced 10 yo-yos?
+# Answer option: ['A)24 minutes', 'B)32 minutes', 'C)36 minutes', 'D)64 minutes', 'E)72 minutes']",C,MGCoT," To find out how many minutes it will take for both machines to produce 10 yo-yos, we need to determine the total number of yo-yos produced by each machine in a given time and then add them together.
+
+Machine A produces 1 yo-yo every 6 minutes. In 1 minute, it produces 1/6 of a yo-yo. In 10 minutes, it produces 10/6 = 5/3 yo-yos.
+
+Machine B produces 1 yo-yo every 9 minutes. In 1 minute, it produces 1/9 of a yo-yo. In 10 minutes, it produces 10/9 = 10/9 yo-yos.
+
+Now, we add the number of yo-yos produced by both machines in 10 minutes:
+
+5/3 + 10/9 = (5*9 + 10*3) / (3*9) = (45 + 30) / 27 = 75 / 27 = 2.7777777777777777
+
+Since we cannot have a fraction of a yo-yo, we need to round up to the nearest whole number. Therefore, it will take 3 sets of 10 minutes for both machines to produce 10 yo-",156.2095,34.64086378737538,14618.921771179403,90.11661129568111,12.784053156146179,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.04545454545454545,0.7558891177177429,0.19146427512168884,99.26212310791016,0.4782586991786957,0.7170743942260742,0.6210436820983887,0.02125341072678566,0.6355085968971252,0.009410422295331955,0.4476054310798645,0.5242721438407898,1.646826982498169,4.067163944244385
+14,aqua,"Add: +45 and -30
+# Answer option: ['A)-30', 'B)+30', 'C)0', 'D)15', 'E)-15']",D,SCoT," 1. **ANALYZE** the question: The question is asking to add two numbers, 45 and -30.
+2. **PLAN** the reasoning steps needed: We need to add the two numbers together.
+3. **SOLVE** step by step: 
+   a. We have the numbers 45 and -30.
+   b. Add the numbers: 45 + (-30) = 45 - 30 = 15.
+4. **STATE** the final answer clearly: The correct answer is 'D)15'.",67.5317,31.954615384615373,14924.520342548078,92.00076923076918,12.53076923076923,3688.765625,0.03125,0.0,0.03125,0.0,0.0,0.0,0.0,0.0,0,0.0028571428571428914,0.046511627906976744,0.7903518676757812,0.15737761557102203,,,,,,,,,,,
+14,aqua,"Add: +45 and -30
+# Answer option: ['A)-30', 'B)+30', 'C)0', 'D)15', 'E)-15']",D,MGCoT," To add 45 and -30, we first add the positive and negative numbers separately:
+
+45 + 0 = 45
+-30 + 0 = -30
+
+Now, we add the results together:
+
+45 + (-30) = 15
+
+So, the answer is:
+
+D) 15",45.0552,28.667901234567907,14501.829957561727,89.39259259259258,13.481481481481481,3688.765625,0.05555555555555556,0.0,0.05555555555555556,0.0,0.0,0.037037037037037035,1.0,0.07142857142857142,1,0.005434782608695676,0.05714285714285715,0.7924935817718506,0.12430413067340851,99.22805786132812,0.0,0.0,0.002924695611000061,0.0004073433519806713,0.9651575088500977,0.0009590336703695357,0.009014196693897247,0.016165003180503845,0.0,1.0
+15,aqua,"In how many ways can the letters of the word ""PROBLEC"" be rearranged to make 7 letter words such that none of the letters repeat?
+# Answer option: ['A)2!', 'B)3!', 'C)7!', 'D)8!', 'E)9!']",C,SCoT," 1. **ANALYZE** the question: We need to find the number of ways to rearrange the letters of the word ""PROBLEC"" to make 7-letter words without any letter repeating.
+
+2. **PLAN** the reasoning steps:
+   - There are 7 unique letters in the word ""PROBLEC"".
+   - We need to find the number of permutations of these 7 letters.
+   - Since there are no repeated letters, we can use the formula for permutations: n! (n factorial), where n is the number of unique elements.
+
+3. **SOLVE** step by step:
+   - There are 7 unique letters in the word ""PROBLEC"".
+   - Therefore, the number of permutations is 7! (7 factorial).
+
+4. **STATE** the final answer clearly: The number of ways to rearrange the letters of the word ""PROBLEC"" to make 7-letter words such that none of the letters repeat is 7!. So, the answer is 'C)7!'.",124.9694,29.114227642276422,14608.767705157521,90.05121951219505,10.66260162601626,3688.765625,0.014184397163120567,0.0,0.014184397163120567,0.0,0.0,0.013888888888888888,1.0,0.0273972602739726,1,0.0012345679012345512,0.047619047619047616,0.7742546200752258,0.21903420984745026,,,,,,,,,,,
+15,aqua,"In how many ways can the letters of the word ""PROBLEC"" be rearranged to make 7 letter words such that none of the letters repeat?
+# Answer option: ['A)2!', 'B)3!', 'C)7!', 'D)8!', 'E)9!']",C,MGCoT," To answer this question, we need to find the number of ways to rearrange the letters of the word ""PROBLEC"" to make 7-letter words without any letter repeating.
+
+The word ""PROBLEC"" has 7 unique letters. Since there are no repeating letters, we can use each letter only once in each arrangement. Therefore, we can use the factorial of the number of unique letters to find the number of possible arrangements.
+
+Factorial of 7 (7!) is the product of all positive integers from 1 to 7.
+
+7! = 7 × 6 × 5 × 4 × 3 × 2 × 1 = 5,040
+
+So, there are 5,040 ways to rearrange the letters of the word ""PROBLEC"" to make 7-letter words such that none of the letters repeat.
+
+The answer is: C)7!",109.357,33.10095693779905,14345.69220992823,88.42775119617217,13.10047846889952,3688.765625,0.015625,0.0,0.015625,0.0,0.0,0.014492753623188406,1.0,0.02857142857142857,1,0.0014792899408283544,0.04545454545454545,0.7673065066337585,0.21158237755298615,99.13806915283203,0.0,0.45342034101486206,0.5087910890579224,0.0,0.9795700311660767,0.0,0.795691728591919,0.8250184059143066,0.0,1.0259865522384644
+16,aqua,"Let A and B be independent events with P (A) = 0.2 and P(B) = 0.8. Find P(A/B)?
+# Answer option: ['A)0.2', 'B)0.4', 'C)0.6', 'D)1.2', 'E)1.5']",A,SCoT," 1. ANALYZE: The question is asking for the probability of event A given that event B has occurred.
+
+2. PLAN: To find P(A/B), we need to use the formula P(A/B) = P(A and B) / P(B). Since A and B are independent events, we can use the formula P(A and B) = P(A) * P(B).
+
+3. SOLVE:
+   - P(A) = 0.2
+   - P(B) = 0.8
+   - P(A and B) = P(A) * P(B) = 0.2 * 0.8 = 0.16
+   - P(A/B) = P(A and B) / P(B) = 0.16 / 0.8 = 0.2
+
+4. STATE: The final answer is 0.2, which corresponds to option A.",113.0967,31.85272727272727,14073.092027698864,86.7518181818182,12.568181818181818,3688.765625,0.017699115044247787,0.0,0.017699115044247787,5.691293710187394e-232,0.0,0.018867924528301886,1.0,0.037037037037037035,1,0.002096436058700246,0.046511627906976744,0.7442083954811096,0.20171517133712769,,,,,,,,,,,
+16,aqua,"Let A and B be independent events with P (A) = 0.2 and P(B) = 0.8. Find P(A/B)?
+# Answer option: ['A)0.2', 'B)0.4', 'C)0.6', 'D)1.2', 'E)1.5']",A,MGCoT," To find P(A/B), we need to use the conditional probability formula: P(A/B) = P(A and B) / P(B).
+
+Since A and B are independent events, we know that P(A and B) = P(A) * P(B).
+
+Given P(A) = 0.2 and P(B) = 0.8, we can calculate P(A and B) = 0.2 * 0.8 = 0.16.
+
+Now, we can find P(A/B) by dividing P(A and B) by P(B): P(A/B) = 0.16 / 0.8 = 0.2.
+
+So, the answer is A) 0.2.",94.7278,30.598333333333347,13474.201714409723,83.0572222222223,12.777777777777779,3688.765625,0.020833333333333332,0.0,0.020833333333333332,6.091662401187491e-232,0.0,0.023809523809523808,1.0,0.046511627906976744,1,0.0027247956403270157,0.052631578947368425,0.7600580453872681,0.15925025939941406,100.0,0.0,0.16802728176116943,0.2915292978286743,0.0,1.0,0.0,0.5429650545120239,0.6075749397277832,0.0,1.0
+17,aqua,"Consider there is an staircase elevator and you are coming down. If you walk 20 steps and stop, then you reach bottom in 10 minutes. If you walk 10 steps and stop, you reach to the ground in 20 minutes. What is the speed of the elevator?
+# Answer option: ['A)1 step/minute', 'B)2 step/minute', 'C)3 step/minute', 'D)4 step/minute', 'E)None of the above']",A,SCoT," 1. **ANALYZE** the question: The question is asking for the speed of the elevator in steps per minute.
+2. **PLAN** the reasoning steps needed: We need to find the speed of the elevator, which is the number of steps it descends per minute. We are given the time it takes to descend 20 steps and 10 steps.
+3. **SOLVE** step by step:
+   a. We know that when you walk 20 steps and stop, it takes 10 minutes to reach the bottom. So, the elevator descends 20 steps in 10 minutes.
+   b. To find the speed of the elevator, we can divide the number of steps by the time taken. So, the speed of the elevator is 20 steps / 10 minutes = 2 steps per minute.
+4. **STATE** the final answer clearly: The speed of the elevator is 2 steps per minute. So, the correct answer is 'B)2 step/minute'.",113.2916,28.76081081081083,13453.374384149774,82.93063063063072,12.824324324324325,3688.765625,0.013333333333333332,0.0,0.013333333333333332,0.0,0.0,0.0,0.0,0.0,0,0.0012853470437017567,0.05,0.7540804743766785,0.14533503353595734,,,,,,,,,,,
+17,aqua,"Consider there is an staircase elevator and you are coming down. If you walk 20 steps and stop, then you reach bottom in 10 minutes. If you walk 10 steps and stop, you reach to the ground in 20 minutes. What is the speed of the elevator?
+# Answer option: ['A)1 step/minute', 'B)2 step/minute', 'C)3 step/minute', 'D)4 step/minute', 'E)None of the above']",A,MGCoT," To find the speed of the elevator, we need to first determine the rate at which the elevator descends.
+
+Let's denote the speed of the elevator as 's' (in steps per minute).
+
+When you walk 20 steps and stop, it takes you 10 minutes to reach the bottom. This means that the elevator has descended 20 steps in 10 minutes.
+
+So, we can write the equation: 20 steps = 10 minutes * s steps/minute
+
+Solving for 's', we get: s = 20 steps / 10 minutes = 2 steps/minute
+
+Therefore, the speed of the elevator is 2 steps per minute.
+
+So, the correct answer is:
+
+B) 2 step/minute",91.8078,29.883815028901733,13442.303174674855,82.86127167630057,13.144508670520231,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.052631578947368425,0.7576993703842163,0.12634751200675964,98.81393432617188,0.5324934124946594,0.41397544741630554,0.478119820356369,0.015597502700984478,0.5394405126571655,0.016057554632425308,0.5077472925186157,0.614781379699707,1.881418228149414,5.596866607666016
+18,aqua,"Last year, a Home Appliance Store sold an average(arithmetic mean) of 42 microwave ovens per month. In the first 10 months of this year,the store has sold an average(arithmetic mean) of only 20 microwave ovens per month. What was the average number of microwave ovens sold per month during the entire 22 months period ?
+# Answer option: ['A)21', 'B)30', 'C)31', 'D)32', 'E)None of the above']",D,SCoT," 1. ANALYZE: The question is asking for the average number of microwave ovens sold per month during a 22-month period.
+2. PLAN: We need to find the total number of microwave ovens sold in the 22-month period and then divide by 22 to find the average.
+3. SOLVE:
+   - In the first 10 months, the store sold an average of 20 microwave ovens per month. So, the total number of microwave ovens sold in the first 10 months is 20 * 10 = 200.
+   - In the remaining 12 months (last year), the store sold an average of 42 microwave ovens per month. So, the total number of microwave ovens sold in the last 12 months is 42 * 12 = 504.
+   - The total number of microwave ovens sold in the 22-month period is 200 + 504 = 704.
+   - The average number of microwave ovens sold per month during the entire 22-month period is 704 / 22 = 32.
+4. STATE: The answer is D)32.",151.5635,28.430067567567566,13257.074337521115,81.72263513513502,12.858108108108109,3688.765625,0.012422360248447204,0.0,0.012422360248447204,0.0,0.0,0.015384615384615385,1.0,0.030303030303030307,1,0.0011737089201877549,0.04545454545454545,0.7665910124778748,0.11922397464513779,,,,,,,,,,,
+18,aqua,"Last year, a Home Appliance Store sold an average(arithmetic mean) of 42 microwave ovens per month. In the first 10 months of this year,the store has sold an average(arithmetic mean) of only 20 microwave ovens per month. What was the average number of microwave ovens sold per month during the entire 22 months period ?
+# Answer option: ['A)21', 'B)30', 'C)31', 'D)32', 'E)None of the above']",D,MGCoT," To find the average number of microwave ovens sold per month during the entire 22 months period, we need to consider the total number of microwave ovens sold in both periods and divide it by the total number of months.
+
+Last year, the store sold an average of 42 microwave ovens per month. Since there are 12 months in a year, the total number of microwave ovens sold last year is:
+
+42 microwave ovens/month * 12 months = 504 microwave ovens
+
+In the first 10 months of this year, the store has sold an average of 20 microwave ovens per month. The total number of microwave ovens sold in these 10 months is:
+
+20 microwave ovens/month * 10 months = 200 microwave ovens
+
+Now, we can find the total number of microwave ovens sold during the entire 22 months period by adding the number of microwave ovens sold in both periods:
+
+504 microwave ovens (last year) + 200 microwave ovens (first 10 months of this year) = 704 microwave ovens
+
+Finally, we can find the average number of microwave ovens sold",156.1114,30.234219269102955,13115.812616798174,80.84285714285713,12.990033222591363,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.05128205128205127,0.7632492780685425,0.035636164247989655,100.0,0.0,0.09898151457309723,0.12718701362609863,0.0,1.0,0.0,1.0,1.0,0.0,1.0
+19,aqua,"An exam is given in a certain class. The average (arithmetic mean) of the highest score and the lowest score is equal to x. If the average score for the entire class is equal to y and there are z students in the class, where z > 5, then in terms of x, y, and z, what is the average score for the class excluding the highest and lowest scorers?
+# Answer option: ['A)(zy – 2x)/z', 'B)(zy – 2)/z', 'C)(zx – y)/(z – 2)', 'D)(zy – 2x)/(z -2)', 'E)(zy – x)/(z + 2)']",D,SCoT," 1. **ANALYZE** the problem: We are given the average of the highest and lowest scores (x), the average score for the entire class (y), and the number of students in the class (z). We need to find the average score for the class excluding the highest and lowest scorers.
+
+2. **PLAN** the reasoning steps:
+   - We know that the average of the highest and lowest scores is x.
+   - We know that the average score for the entire class is y.
+   - We know that there are z students in the class.
+   - We need to find the average score for the class excluding the highest and lowest scorers.
+
+3. **SOLVE** step by step:
+   - The sum of all the scores in the class is z * y (since the average is y).
+   - The sum of the highest and lowest scores is 2x (since the average is x).
+   - The sum of all the scores in the class excluding the highest and lowest scorers is (z * y) - 2x.
+   - The number of scores in the class excluding the highest and lowest scorers is (z - 2) (since we are excluding 2 scores).
+   - The average score for the class excluding the highest and lowest scorers is ((z * y) -",154.5518,32.38571428571429,13914.531587416943,85.77740863787366,12.744186046511627,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.05405405405405406,0.7495580911636353,0.09920109063386917,,,,,,,,,,,
+19,aqua,"An exam is given in a certain class. The average (arithmetic mean) of the highest score and the lowest score is equal to x. If the average score for the entire class is equal to y and there are z students in the class, where z > 5, then in terms of x, y, and z, what is the average score for the class excluding the highest and lowest scorers?
+# Answer option: ['A)(zy – 2x)/z', 'B)(zy – 2)/z', 'C)(zx – y)/(z – 2)', 'D)(zy – 2x)/(z -2)', 'E)(zy – x)/(z + 2)']",D,MGCoT," To find the average score for the class excluding the highest and lowest scorers, we need to first find the sum of the scores of all students and then divide by the number of students, excluding the highest and lowest scorers.
+
+Let's denote the sum of all scores as S. The average score for the entire class is y, and there are z students in the class. So, we have:
+
+S/z = y
+
+Now, we know that the average of the highest and lowest scores is x. Let's denote the highest score as H and the lowest score as L. We have:
+
+(H + L)/2 = x
+
+We also know that there are z - 2 students left when we exclude the highest and lowest scorers. So, the sum of the scores of the remaining z - 2 students is:
+
+S - H - L
+
+The average score for the class excluding the highest and lowest scorers is the sum of the scores of the remaining z - 2 students divided by the number of students left, which is (z - 2). So, we have:
+
+(S - H - L)/(z - 2) = average score for the class excluding the highest and lowest scorers
+
+Now, we need to express the average score for the class excluding the highest and lowest scorers in terms of x",156.9683,29.03289036544851,13463.469956914452,82.99800664451833,13.308970099667775,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.052631578947368425,0.7578485012054443,0.090370774269104,99.25141906738281,0.09931395947933197,0.5154093503952026,0.5727066993713379,0.0,0.902359127998352,1.2075293852831237e-05,1.0,1.0,0.3083181083202362,1.8428905010223389
+20,aqua,"[5 + ? × 19 - 15 - 7]/[13 × 13 - 156] = 6
+# Answer option: ['A)4', 'B)4.5', 'C)5', 'D)5.5', 'E)6.5']",C,SCoT," 1. ANALYZE: The question is asking to solve the given equation and find the answer from the given options.
+2. PLAN: We need to follow the order of operations (PEMDAS) to solve the equation.
+3. SOLVE:
+   a. Solve the multiplication and division operations first:
+      [5 + ? × 19 - 15 - 7]/[13 × 13 - 156] = 6
+      [5 + ? × 19 - 15 - 7]/[169 - 156] = 6
+      [5 + ? × 19 - 15 - 7]/[13] = 6
+   b. Solve the addition and subtraction operations:
+      [5 + ? × 19 - 15 - 7]/[13] = 6
+      [5 + ? × 19 - 22]/[13] = 6
+      [? × 19 - 22]/[13] = 6
+   c. Solve for ?:
+      ? × 19 - 22 = 6 × 13
+      ? × 19 = 6 × 13 + 22
+      ? × 19 = 78 + ",153.7696,28.43122923588042,13785.937759551494,84.98372093023225,12.591362126245848,3688.765625,0.019801980198019802,0.0,0.019801980198019802,0.0,0.0,0.0,0.0,0.0,0,0.0,0.042553191489361694,0.7419450283050537,0.2302384376525879,,,,,,,,,,,
+20,aqua,"[5 + ? × 19 - 15 - 7]/[13 × 13 - 156] = 6
+# Answer option: ['A)4', 'B)4.5', 'C)5', 'D)5.5', 'E)6.5']",C,MGCoT," To answer this question, we first need to understand the given expression and then choose the correct option from the given choices.
+
+The expression is: [5 + ? × 19 - 15 - 7]/[13 × 13 - 156]
+
+Let's solve the expression step by step:
+
+1. Solve the multiplication and division operations first:
+   13 × 13 = 169
+   156 - 169 = -13
+
+2. Now, substitute the results back into the expression:
+   [5 + ? × 19 - 15 - 7]/[-13]
+
+3. Solve the addition and subtraction operations:
+   5 + ? × 19 - 15 - 7 = ? × 19 - 17
+
+4. Now, substitute the results back into the expression:
+   (? × 19 - 17)/[-13]
+
+Now, we need to find the value of '?' that satisfies the expression.
+
+Let's test the given answer options:
+
+A) 4:
+   (4 × 19 - 17)/[-13] = (76 - 17)/[-13] = 59/[-13] = -59/1",155.5175,27.143189368770773,13783.794396283223,84.97076411960157,13.069767441860465,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.04081632653061225,0.7526670098304749,0.1286398023366928,100.0,0.0,1.0,1.0,0.0,1.0,0.0023156723473221064,1.0,1.0,0.0,1.0
+21,aqua,"A grocer makes a 25% profit on the selling price for each bag of flour it sells. If he sells each bag for $100 and makes $3,000 in profit, how many bags did he sell?
+# Answer option: ['A)12', 'B)16', 'C)24', 'D)30', 'E)40']",C,SCoT," 1. ANALYZE: The question is asking for the number of bags of flour the grocer sold. We know that he makes a 25% profit on the selling price for each bag and that he made $3,000 in profit.
+
+2. PLAN: We can set up an equation to solve for the number of bags. Let x be the number of bags sold. The selling price for each bag is $100, and the profit per bag is 25% of $100, or $25. The total profit is $3,000. So, we have the equation: $25 * x = $3,000.
+
+3. SOLVE: To find the number of bags, we can divide both sides of the equation by $25: x = $3,000 / $25. This gives us x = 120. However, we need to find the number of bags, not the total profit. So, we need to divide 120 by the selling price of each bag, $100: x = 120 / $100. This gives us x = 1.2. Since we can't have a fraction of a bag, we need to round up to the nearest whole number, which is 2.
+
+4. STATE: The grocer sold",153.8294,30.612624584717608,13963.809826619601,86.07906976744161,12.152823920265782,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.046511627906976744,0.7679938673973083,0.16012659668922424,,,,,,,,,,,
+21,aqua,"A grocer makes a 25% profit on the selling price for each bag of flour it sells. If he sells each bag for $100 and makes $3,000 in profit, how many bags did he sell?
+# Answer option: ['A)12', 'B)16', 'C)24', 'D)30', 'E)40']",C,MGCoT," To find the number of bags the grocer sold, we can use the following formula:
+
+Profit = Selling Price × Number of Bags
+
+We are given the profit and the selling price, so we can rearrange the formula to solve for the number of bags:
+
+Number of Bags = Profit ÷ Selling Price
+
+Now, we can plug in the given values:
+
+Number of Bags = $3,000 ÷ $100
+
+Number of Bags = 30
+
+So, the grocer sold 30 bags. The correct answer is D)30.",73.6958,28.74379562043794,13863.077725821167,85.45547445255471,13.401459854014599,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.05882352941176471,0.7738014459609985,0.25784531235694885,99.80720520019531,0.09240257740020752,0.7465029954910278,0.7761760950088501,0.0009436324471607804,0.9229798913002014,0.0,0.8390670418739319,0.8589001893997192,0.2809525430202484,1.6850793361663818
+22,aqua,"Alex and Jacob works at a toy shop that make toys. Alex takes 7 hours to make a toy, and Jacob takes 9 hours to make a toy. During a month, both of them makes 35 toys in total. If both of them have worked for almost similar number of hours how many toys have been prepared by Jacob?
+# Answer option: ['A)15', 'B)16', 'C)17', 'D)18', 'E)19']",A,SCoT," 1. ANALYZE: The question is asking us to find out how many toys Jacob has made, given that both Alex and Jacob work at a toy shop and they have made a total of 35 toys in a month.
+
+2. PLAN: We know that Alex takes 7 hours to make a toy and Jacob takes 9 hours to make a toy. We also know that they have worked for almost similar number of hours. We need to find out how many toys Jacob has made.
+
+3. SOLVE: Let's assume that Alex and Jacob have worked for the same number of hours, say x hours. Since Alex takes 7 hours to make a toy, he can make 1 toy in x/7 hours. Similarly, Jacob takes 9 hours to make a toy, so he can make 1 toy in x/9 hours.
+
+Since they have made a total of 35 toys, we can write the equation:
+
+1*(x/7) + 1*(x/9) = 35
+
+Solving this equation, we get:
+
+x/7 + x/9 = 35
+
+To solve this equation, we need to find a common denominator, which is 63. So, we can rewrite the equation as:
+
+9x/63 + 7x/63 = 35
+
+Adding the",154.038,29.755813953488335,14028.280497300664,86.47541528239216,12.6578073089701,3688.765625,0.0099009900990099,0.0,0.0099009900990099,0.0,0.0,0.011494252873563218,1.0,0.022727272727272724,1,0.001071811361200381,0.04347826086956522,0.7459732890129089,0.15984129905700684,,,,,,,,,,,
+22,aqua,"Alex and Jacob works at a toy shop that make toys. Alex takes 7 hours to make a toy, and Jacob takes 9 hours to make a toy. During a month, both of them makes 35 toys in total. If both of them have worked for almost similar number of hours how many toys have been prepared by Jacob?
+# Answer option: ['A)15', 'B)16', 'C)17', 'D)18', 'E)19']",A,MGCoT," To find out how many toys Jacob has made, we need to first determine the total number of hours they both worked together. Since Alex takes 7 hours to make a toy and Jacob takes 9 hours to make a toy, we can assume that they worked for the same number of hours.
+
+Let's denote the number of toys Alex made as A and the number of toys Jacob made as B. We know that A + B = 35, since they made 35 toys in total.
+
+We also know that Alex takes 7 hours to make a toy and Jacob takes 9 hours to make a toy. Therefore, the total number of hours they worked together is 7A + 9B.
+
+Since they worked for almost the same number of hours, we can assume that 7A ≈ 9B.
+
+Now, we can solve for B:
+
+9B ≈ 7A
+B ≈ 7/9 * A
+
+Since A + B = 35, we can substitute the expression for B:
+
+A + 7/9 * A = 35
+
+Multiplying both sides by 9 to eliminate the fraction:
+
+9A + 7A = 315
+16A = 315
+
+Now, we can solve for A:
+
+A = 315 / 16
+A ≈",156.0864,30.524584717607983,14060.986931582225,86.67740863787387,12.93687707641196,3688.765625,0.010638297872340425,0.0,0.010638297872340425,4.83248462769656e-232,0.0,0.0136986301369863,1.0,0.027027027027027025,1,0.0011086474501108556,0.047619047619047616,0.7507161498069763,0.27871227264404297,98.47318267822266,0.20588834583759308,0.2421056479215622,0.30336496233940125,0.0020556843373924494,0.7858045101165771,0.0023663241881877184,0.7733380794525146,0.8370317220687866,0.6754217147827148,2.6639318466186523
+23,aqua,"John likes to have lightly flavored tea every evening. In a 50% strong milk tea, he replaces 15% of it with milk twice. Then, he replaces 10 percent of the resultant solution with more milk.
+What is the final concentration of tea John drinks?
+# Answer option: ['A)15.38%', 'B)42%', 'C)39.86%', 'D)22.35%', 'E)32.51%']",E,SCoT," 1. **ANALYZE** the question: We need to find the final concentration of tea in John's drink after replacing some of it with milk.
+
+2. **PLAN** the reasoning steps:
+   a. Find the concentration of tea after the first replacement with milk.
+   b. Find the concentration of tea after the second replacement with milk.
+
+3. **SOLVE** step by step:
+   a. The initial concentration of tea is 50%. John replaces 15% of it with milk, so the new concentration of tea is 50% - 15% = 35%.
+   b. Then, he replaces 10% of the resultant solution with more milk. Since the solution is now 35% tea and 65% milk, replacing 10% of it with milk means the new concentration of tea is 35% - 10% = 25%.
+
+4. **STATE** the final answer: The final concentration of tea John drinks is 25%. The answer is not in the given options, so there might be an error in the question or the answer choices.",130.5075,29.77992125984252,13925.570066437007,85.84527559055114,12.421259842519685,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0011507479861909697,0.046511627906976744,0.7703835964202881,0.07785427570343018,,,,,,,,,,,
+23,aqua,"John likes to have lightly flavored tea every evening. In a 50% strong milk tea, he replaces 15% of it with milk twice. Then, he replaces 10 percent of the resultant solution with more milk.
+What is the final concentration of tea John drinks?
+# Answer option: ['A)15.38%', 'B)42%', 'C)39.86%', 'D)22.35%', 'E)32.51%']",E,MGCoT," To find the final concentration of tea John drinks, we need to follow the steps of replacing milk in the tea solution.
+
+1. Initially, John has a 50% strong milk tea.
+2. He replaces 15% of the milk with more milk, making the new milk concentration 50% + 15% = 65%.
+3. Then, he replaces 10% of the new solution with more milk, making the final milk concentration 65% + 10% = 75%.
+
+Now, we know that the final milk concentration is 75%, and the initial milk concentration was 50%. To find the final concentration of tea, we can use the formula:
+
+Final concentration of tea = (Initial milk concentration / (1 + Final milk concentration))
+
+Final concentration of tea = (50 / (1 + 75))
+
+Final concentration of tea = (50 / 1.75)
+
+Final concentration of tea = 28.57%
+
+So, the final concentration of tea John drinks is approximately 28.57%. However, this value is not in the given options. It is possible that there is a slight error in the provided options or the question itself.",143.1437,39.625818181818175,14194.449275568182,87.50072727272733,12.545454545454545,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.044444444444444446,0.7740049958229065,0.044495731592178345,99.15879821777344,0.25528427958488464,0.5699967741966248,0.6308382153511047,0.004854225087910891,0.778820812702179,0.007309390231966972,0.7092724442481995,0.8112518787384033,0.8901410698890686,3.0933663845062256
+24,aqua,"In a class 1/16 of the students study math, 1/10 of the students study bio, 1/8 of the students study english. The total number of students is a 4 digit number. Find the diffrence between maximum number of students and minimum number of students.
+# Answer option: ['A)8880', 'B)8870', 'C)8890', 'D)7890', 'E)6780']",A,SCoT," 1. ANALYZE: The question asks us to find the difference between the maximum and minimum number of students in a class given certain fractions of students studying different subjects.
+
+2. PLAN: We need to find the maximum and minimum number of students in the class. We know that the total number of students is a 4-digit number. We can use the given fractions to find the maximum and minimum number of students studying each subject. Then, we can add these numbers to find the maximum and minimum total number of students. Finally, we can find the difference between the maximum and minimum total number of students.
+
+3. SOLVE:
+- Let's denote the total number of students as x.
+- The maximum number of students studying math would be 1/16 of x, which is (1/16)*x.
+- The maximum number of students studying bio would be 1/10 of x, which is (1/10)*x.
+- The maximum number of students studying english would be 1/8 of x, which is (1/8)*x.
+- The maximum total number of students would be the sum of these three numbers, which is (1/16)*x + (1/10)*x + (1/8)*x.
+- The minimum number of students studying math would be 1/16 of x,",154.0724,30.72624584717604,14313.727185423588,88.23588039867106,12.624584717607974,3688.765625,0.009433962264150945,0.0,0.009433962264150945,0.0,0.0,0.014492753623188406,1.0,0.02857142857142857,1,0.0008904719501335867,0.04347826086956522,0.7457802295684814,0.08019363135099411,,,,,,,,,,,
+24,aqua,"In a class 1/16 of the students study math, 1/10 of the students study bio, 1/8 of the students study english. The total number of students is a 4 digit number. Find the diffrence between maximum number of students and minimum number of students.
+# Answer option: ['A)8880', 'B)8870', 'C)8890', 'D)7890', 'E)6780']",A,MGCoT," To find the difference between the maximum and minimum number of students, we need to first find the maximum and minimum number of students in each subject.
+
+Let's denote the total number of students as x.
+
+For the maximum number of students in each subject, we have:
+- Math: x/16
+- Bio: x/10
+- English: x/8
+
+For the minimum number of students in each subject, we have:
+- Math: x/16 (since it's already the maximum)
+- Bio: x/10 (since it's already the maximum)
+- English: x/8 (since it's already the maximum)
+
+Now, we need to find the maximum and minimum total number of students.
+
+Maximum total number of students:
+- Math: x/16 + x/10 + x/8
+- Bio: x/10 + x/16 + x/8
+- English: x/8 + x/16 + x/10
+
+Since the total number of students is a 4-digit number, we can assume that x is between 1000 and 9999.
+
+Now, let's find the maximum and minimum total number of students:
+
+Maximum total number of students:
+- Math: x/16 + x/10 + x",156.1808,33.30066445182722,14280.110724667775,88.02591362126255,12.55813953488372,3688.765625,0.0111731843575419,0.0,0.0111731843575419,0.0,0.0,0.0196078431372549,1.0,0.038461538461538464,1,0.0,0.05,0.7429718971252441,0.03311428427696228,99.16578674316406,0.0,0.20123140513896942,0.2628830075263977,0.0,1.0,0.0,1.0,1.0,0.0,1.0
+25,aqua,"On a normal day Bill usually averages about 15 mph when riding his bicycle. On a windy day, his speed is reduced by 4 mph. How far can Bill travel on a windy day in 21 minutes? Round to the nearest hundredth.
+# Answer option: ['A)2 miles', 'B)2.25 miles', 'C)3.25 miles', 'D)3.85 miles', 'E)2.85 miles']",D,SCoT," 1. **ANALYZE** the question: We need to find out how far Bill can travel on a windy day in 21 minutes.
+2. **PLAN** the reasoning steps:
+   a. Find Bill's speed on a windy day.
+   b. Convert 21 minutes to hours.
+   c. Calculate the distance Bill can travel in 21 minutes.
+3. **SOLVE** step by step:
+   a. Bill's speed on a windy day is 15 mph - 4 mph = 11 mph.
+   b. 21 minutes = 21/60 hours = 0.35 hours.
+   c. Distance = Speed × Time = 11 mph × 0.35 hours = 3.85 miles.
+4. **STATE** the final answer: The correct answer is 'D)3.85 miles'.",108.3618,31.10857142857143,14402.740234375,88.78476190476191,12.752380952380953,3688.765625,0.01886792452830189,0.0,0.01886792452830189,0.0,0.0,0.0,0.0,0.0,0,0.0018518518518518823,0.046511627906976744,0.7691375017166138,0.1717524230480194,,,,,,,,,,,
+25,aqua,"On a normal day Bill usually averages about 15 mph when riding his bicycle. On a windy day, his speed is reduced by 4 mph. How far can Bill travel on a windy day in 21 minutes? Round to the nearest hundredth.
+# Answer option: ['A)2 miles', 'B)2.25 miles', 'C)3.25 miles', 'D)3.85 miles', 'E)2.85 miles']",D,MGCoT," To find out how far Bill can travel on a windy day in 21 minutes, we need to follow these steps:
+
+1. Determine Bill's speed on a windy day: 15 mph - 4 mph = 11 mph
+2. Convert 21 minutes to hours: 21 minutes / 60 minutes/hour = 0.35 hours
+3. Calculate the distance Bill can travel in 0.35 hours at a speed of 11 mph: 0.35 hours * 11 mph = 3.85 miles
+
+So, on a windy day, Bill can travel approximately 3.85 miles in 21 minutes. The answer is D)3.85 miles.",90.7947,32.09649122807016,14301.893708881578,88.16432748538016,13.12280701754386,3688.765625,0.020408163265306124,0.0,0.020408163265306124,0.0,0.0,0.01818181818181818,1.0,0.03571428571428572,1,0.0022026431718061845,0.04878048780487806,0.777590274810791,0.0440811924636364,99.39093017578125,0.3193552792072296,0.48084574937820435,0.5230836868286133,0.009649839252233505,0.7380171418190002,0.009858613833785057,0.5552704930305481,0.6804869174957275,1.0665723085403442,3.4714677333831787
+26,aqua,"A retailer sold an appliance for 40 percent above cost, which represented a gross profit of $20.00. For what price did the retailer sell the appliance?
+# Answer option: ['A)$27.30', 'B)$51.00', 'C)$63.00', 'D)$70.00', 'E)$91.00']",D,SCoT," 1. **ANALYZE** the question: We are given that the retailer sold the appliance for 40 percent above cost, and this represented a gross profit of $20.00. We need to find the price at which the retailer sold the appliance.
+
+2. **PLAN** the reasoning steps:
+   a. Let the cost price of the appliance be x.
+   b. The selling price of the appliance is 1.4x (40 percent above cost).
+   c. The gross profit is the selling price minus the cost price, which is 1.4x - x = 0.4x.
+   d. We are given that the gross profit is $20.00, so 0.4x = 20.
+   e. Solve for x to find the cost price.
+   f. Find the selling price by multiplying the cost price by 1.4.
+
+3. **SOLVE** step by step:
+   a. 0.4x = 20
+   b. x = 20 / 0.4 = 50
+   c. Selling price = 1.4 * 50 = 70
+
+4. **STATE** the final answer clearly: The retailer sold the appliance for $70.00.",153.7994,31.050166112956788,14375.45626557309,88.61561461794021,12.458471760797343,3688.765625,0.01234567901234568,0.0,0.01234567901234568,0.0,0.0,0.0,0.0,0.0,0,0.0,0.04545454545454545,0.7629130482673645,0.10565811395645142,,,,,,,,,,,
+26,aqua,"A retailer sold an appliance for 40 percent above cost, which represented a gross profit of $20.00. For what price did the retailer sell the appliance?
+# Answer option: ['A)$27.30', 'B)$51.00', 'C)$63.00', 'D)$70.00', 'E)$91.00']",D,MGCoT," To find the price at which the retailer sold the appliance, we need to determine the cost price and then add 40% of the cost price to it. We know that the gross profit is $20.00, which is 40% of the cost price.
+
+Let's denote the cost price as x. We know that 0.4x = $20.00. To find the cost price, we can divide both sides of the equation by 0.4:
+
+x = $20.00 / 0.4
+x = $50.00
+
+Now that we know the cost price, we can find the selling price by adding 40% of the cost price to it:
+
+Selling price = Cost price + 0.4 * Cost price
+Selling price = $50.00 + 0.4 * $50.00
+Selling price = $50.00 + $20.00
+Selling price = $70.00
+
+So, the retailer sold the appliance for $70.00. The correct answer is D) $70.00.",136.5163,29.75610687022902,14025.418147662214,86.4591603053436,13.213740458015268,3688.765625,0.013513513513513513,0.0,0.013513513513513513,0.0,0.0,0.01694915254237288,1.0,0.03333333333333333,1,0.0014265335235378318,0.046511627906976744,0.7626377940177917,0.08718541264533997,100.0,0.0,0.4419267177581787,0.48612144589424133,0.0,1.0,0.0,0.8360496163368225,0.870593786239624,0.0,1.0
+27,aqua,"At 6% per annum simple interest, Rahul borrowed Rs. 500. What amount will he pay to clear the debt after 4 years
+# Answer option: ['A)750', 'B)700', 'C)620', 'D)600', 'E)None of these']",C,SCoT," 1. **ANALYZE** the question: The question is asking for the total amount Rahul will have to pay to clear his debt after 4 years, given that the interest rate is 6% per annum and the principal amount is Rs. 500.
+
+2. **PLAN** the reasoning steps needed:
+   - Calculate the simple interest for 4 years using the formula: Simple Interest = (Principal Amount * Rate * Time) / 100
+   - Add the simple interest to the principal amount to find the total amount to be paid.
+
+3. **SOLVE** step by step:
+   - Simple Interest = (500 * 6 * 4) / 100 = 120
+   - Total amount to be paid = Principal Amount + Simple Interest = 500 + 120 = 620
+
+4. **STATE** the final answer clearly: The amount Rahul will have to pay to clear his debt after 4 years is Rs. 620. So, the correct answer is 'C)620'.",126.5818,28.12672064777327,14041.605895748988,86.55748987854254,13.012145748987853,3688.765625,0.014925373134328356,0.0,0.014925373134328356,0.0,0.0,0.013888888888888888,1.0,0.0273972602739726,1,0.0012836970474967568,0.04347826086956522,0.7794262766838074,0.23443663120269775,,,,,,,,,,,
+27,aqua,"At 6% per annum simple interest, Rahul borrowed Rs. 500. What amount will he pay to clear the debt after 4 years
+# Answer option: ['A)750', 'B)700', 'C)620', 'D)600', 'E)None of these']",C,MGCoT," To calculate the amount Rahul will pay to clear the debt after 4 years, we need to find the total interest and add it to the principal amount. The formula for simple interest is:
+
+Simple Interest = (Principal × Rate × Time) / 100
+
+In this case, the principal amount is Rs. 500, the rate is 6% per annum, and the time is 4 years. Plugging these values into the formula, we get:
+
+Simple Interest = (500 × 6 × 4) / 100
+Simple Interest = (30000 / 100)
+Simple Interest = 300
+
+Now, to find the total amount Rahul will pay, we add the simple interest to the principal amount:
+
+Total Amount = Principal + Simple Interest
+Total Amount = 500 + 300
+Total Amount = 800
+
+So, the correct answer is:
+
+**C) 620**",118.3968,31.767400881057288,13750.249260049559,84.75814977973579,12.713656387665198,3688.765625,0.016666666666666666,0.0,0.016666666666666666,0.0,0.0,0.01639344262295082,1.0,0.03225806451612903,1,0.0014347202295552641,0.046511627906976744,0.7853089570999146,0.19372576475143433,100.0,0.1941758096218109,0.923636794090271,0.6109349131584167,0.0,0.9092440605163574,0.013124185614287853,0.7540848851203918,0.7243696451187134,0.992523193359375,2.574021816253662
+28,aqua,"A computer routine was developed to generate two numbers (x,y) the first being a random number between 0 and 100 inclusive, and the second being less than or equal to the square root of the first. Each of the following pair satisfies the routine except
+# Answer option: ['A)(99,10)', 'B)(85,9)', 'C)(50,7)', 'D)(1,1)', 'E)(1,0)']",A,SCoT," 1. **ANALYZE** the question: The question asks us to find the pair of numbers that does not satisfy the given computer routine.
+
+2. **PLAN** the reasoning steps needed: We need to check each pair of numbers and see if they satisfy the given routine.
+
+3. **SOLVE** step by step:
+
+   a. Check pair A(99,10): 99 is between 0 and 100 inclusive, and 10 is less than or equal to the square root of 99 (which is approximately 9.95). So, this pair satisfies the routine.
+
+   b. Check pair B(85,9): 85 is between 0 and 100 inclusive, and 9 is less than or equal to the square root of 85 (which is 9.22). So, this pair satisfies the routine.
+
+   c. Check pair C(50,7): 50 is between 0 and 100 inclusive, and 7 is less than or equal to the square root of 50 (which is 7.07). So, this pair satisfies the routine.
+
+   d. Check pair D(1,1): 1 is between 0 and 100 inclusive, and 1 is less than or equal to the square root of ",154.1485,31.949169435215914,13866.143012873754,85.476411960133,12.92358803986711,3688.765625,0.010869565217391304,0.0,0.010869565217391304,0.0,0.0,0.01282051282051282,1.0,0.02531645569620253,1,0.0010964912280702066,0.047619047619047616,0.7453644871711731,0.10011285543441772,,,,,,,,,,,
+28,aqua,"A computer routine was developed to generate two numbers (x,y) the first being a random number between 0 and 100 inclusive, and the second being less than or equal to the square root of the first. Each of the following pair satisfies the routine except
+# Answer option: ['A)(99,10)', 'B)(85,9)', 'C)(50,7)', 'D)(1,1)', 'E)(1,0)']",A,MGCoT," A computer routine was developed to generate two numbers (x,y) the first being a random number between 0 and 100 inclusive, and the second being less than or equal to the square root of the first. Each of the following pair satisfies the routine except",33.0568,28.29821428571429,13627.22474888393,84.00714285714282,14.071428571428571,3688.765625,0.042553191489361694,0.0,0.042553191489361694,7.03404585427606e-232,0.0,0.02631578947368421,1.0,0.05128205128205127,1,0.0039525691699604515,0.06451612903225806,0.767836332321167,0.06831434369087219,99.47880554199219,0.025056056678295135,0.29125428199768066,0.3288246691226959,0.0,0.9636780619621277,0.0,0.8871229887008667,0.9499919414520264,0.15478107333183289,1.5012587308883667
+29,aqua,"A jeep travels a certain distance taking 6 hours in the forward journey. During the return journey, it increased its speed by 12km/hr and took 4 hours. What is the distance travelled by the jeep?
+# Answer option: ['A)126km', 'B)144km', 'C)127km', 'D)228km', 'E)128km']",B,SCoT," 1. **ANALYZE** the question: We need to find the distance travelled by the jeep. We know the time taken for the forward journey and the return journey, and the increase in speed during the return journey.
+
+2. **PLAN** the reasoning steps:
+   - Let the distance travelled be D km.
+   - Let the speed during the forward journey be S km/hr.
+   - Let the speed during the return journey be S + 12 km/hr.
+   - Time taken for the forward journey = 6 hours.
+   - Time taken for the return journey = 4 hours.
+
+3. **SOLVE** step by step:
+   - Distance = Speed × Time
+   - Distance travelled during the forward journey = S × 6
+   - Distance travelled during the return journey = (S + 12) × 4
+   - Total distance travelled = Distance travelled during the forward journey + Distance travelled during the return journey
+   - Total distance travelled = S × 6 + (S + 12) × 4
+
+4. **STATE** the final answer:
+   - Since we don't have the value of S, we cannot find the exact distance travelled. However, we can find the total time taken for the forward and return journey, which is 6 +",154.1151,29.833222591362112,13910.593114098838,85.75182724252493,12.710963455149502,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.04347826086956522,0.7535807490348816,0.15707433223724365,,,,,,,,,,,
+29,aqua,"A jeep travels a certain distance taking 6 hours in the forward journey. During the return journey, it increased its speed by 12km/hr and took 4 hours. What is the distance travelled by the jeep?
+# Answer option: ['A)126km', 'B)144km', 'C)127km', 'D)228km', 'E)128km']",B,MGCoT," To find the distance traveled by the jeep, we need to use the formula: Distance = Speed × Time.
+
+Let's denote the speed during the forward journey as S1 and the speed during the return journey as S2.
+
+During the forward journey, the jeep traveled a distance D1 in 6 hours. So, D1 = S1 × 6.
+
+During the return journey, the jeep traveled a distance D2 in 4 hours. Since the speed increased by 12 km/hr, the speed during the return journey would be S2 = S1 + 12. So, D2 = S2 × 4.
+
+Now, we know that the total distance traveled by the jeep is the sum of the distances traveled during the forward and return journeys. So, Total Distance = D1 + D2.
+
+Substituting the expressions for D1 and D2, we get:
+
+Total Distance = (S1 × 6) + (S2 × 4)
+
+Since S2 = S1 + 12, we can rewrite the equation as:
+
+Total Distance = (S1 × 6) + ((S1 + 12) × 4)
+
+Now, we need to find the value of S1. Since we don't have any other information about the speeds, we",156.047,29.75514950166111,13631.295123027408,84.02956810631221,13.215946843853821,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.047619047619047616,0.7587231397628784,0.08613990992307663,98.6078109741211,0.21209755539894104,0.8856874704360962,0.8300732970237732,0.0015523381298407912,0.7794986367225647,0.002658829092979431,0.7413197159767151,0.7614412307739258,0.8120887279510498,2.450169324874878
+30,aqua,"When I was 2 years old, my brother was half my age. Now I am 60 years old, how old is my brother?
+# Answer option: ['A)A)59', 'B)B)69', 'C)C)79', 'D)D)89', 'E)E)99']",A,SCoT," 1. **ANALYZE** the question: The question is asking for the current age of the user's brother.
+2. **PLAN** the reasoning steps needed: We need to find the age difference between the user and their brother, and then add that difference to the current age of the user.
+3. **SOLVE** step by step:
+   a. When the user was 2 years old, their brother was half their age, so the brother was 1 year old.
+   b. Now the user is 60 years old.
+   c. To find the current age of the brother, add the age difference (60 - 1) to the brother's initial age (1).
+   d. The brother's current age is 60 - 1 + 1 = 60 years old.
+4. **STATE** the final answer clearly: The brother is 60 years old.",104.6581,31.45418719211823,13785.376000615763,84.9753694581281,13.044334975369457,3688.765625,0.015384615384615384,0.0,0.015384615384615384,0.0,0.0,0.0,0.0,0.0,0,0.0014836795252225476,0.047619047619047616,0.7576214671134949,0.17575931549072266,,,,,,,,,,,
+30,aqua,"When I was 2 years old, my brother was half my age. Now I am 60 years old, how old is my brother?
+# Answer option: ['A)A)59', 'B)B)69', 'C)C)79', 'D)D)89', 'E)E)99']",A,MGCoT," When you were 2 years old, your brother was half your age, which means he was 1 year old. Now that you are 60 years old, your brother's age can be calculated by doubling his age when you were 2 years old. So, your brother is now 1 * 2 = 2 years old.",41.0297,28.87123287671232,13728.821275684932,84.63150684931509,13.698630136986301,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.06666666666666667,0.7727627158164978,0.07394059747457504,99.8453140258789,0.0,0.25784605741500854,0.34699028730392456,0.002865026704967022,1.0,0.0,0.7162835001945496,0.7279704809188843,0.0,1.0
+31,aqua,"The original retail price of an appliance was 60 percent more than its wholesale cost. If the appliance was actually sold for 20 percent less than the original retail price, then it was sold for what percent more than its wholesale cost?
+# Answer option: ['A)20%', 'B)28%', 'C)36%', 'D)40%', 'E)42%']",B,SCoT," 1. **ANALYZE** the question: We need to find the percentage by which the appliance was sold for more than its wholesale cost.
+
+2. **PLAN** the reasoning steps:
+   a. Find the original retail price.
+   b. Find the selling price.
+   c. Calculate the percentage difference between the wholesale cost and the selling price.
+
+3. **SOLVE** step by step:
+   a. Original retail price = Wholesale cost + 60% of Wholesale cost = 1.6 * Wholesale cost
+   b. Selling price = Original retail price - 20% of Original retail price = 0.8 * Original retail price
+   c. Percentage difference = ((Selling price - Wholesale cost) / Wholesale cost) * 100
+
+4. **STATE** the final answer clearly:
+   The appliance was sold for 42% more than its wholesale cost. So, the answer is 'E)42%'.",117.7344,32.42943722943723,13772.408245400433,84.89480519480524,12.207792207792208,3688.765625,0.016666666666666666,0.0,0.016666666666666666,0.0,0.0,0.0,0.0,0.0,0,0.0,0.044444444444444446,0.7516211271286011,0.1522495150566101,,,,,,,,,,,
+31,aqua,"The original retail price of an appliance was 60 percent more than its wholesale cost. If the appliance was actually sold for 20 percent less than the original retail price, then it was sold for what percent more than its wholesale cost?
+# Answer option: ['A)20%', 'B)28%', 'C)36%', 'D)40%', 'E)42%']",B,MGCoT," To find the answer, we need to follow these steps:
+
+1. Find the original retail price of the appliance.
+2. Find the selling price of the appliance.
+3. Calculate the percentage difference between the wholesale cost and the selling price.
+
+Step 1: The original retail price was 60% more than the wholesale cost. Let's denote the wholesale cost as W. So, the original retail price (R) is:
+
+R = W + 60% of W = W + 0.6W = 1.6W
+
+Step 2: The appliance was sold for 20% less than the original retail price. So, the selling price (S) is:
+
+S = 80% of R = 0.8 * 1.6W = 1.28W
+
+Step 3: Calculate the percentage difference between the wholesale cost (W) and the selling price (S):
+
+Percentage difference = ((S - W) / W) * 100
+
+Substitute the values of S and W:
+
+Percentage difference = ((1.28W - W) / W) * 100
+
+Simplify the expression:
+
+Percentage difference = (0.28W / W) * 100 = 28%",156.3649,36.16943521594683,13882.903576619601,85.57740863787397,11.946843853820598,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.046511627906976744,0.7563983201980591,0.07330866903066635,97.9406967163086,0.13896524906158447,0.3196309208869934,0.3199315369129181,0.0010837232694029808,0.833028256893158,0.003655478125438094,0.8484914302825928,0.8547886610031128,0.4544723629951477,2.0646426677703857
+32,aqua,"On a map, the length of the road from Town F to Town G is measured to be 20 inches. On this map, 1/4 inch represents an actual distance of 10 miles. What is the actual distance, in miles, from Town F to Town G along this road?
+# Answer option: ['A)800', 'B)720', 'C)960', 'D)1140', 'E)1160']",A,SCoT," 1. ANALYZE: The question asks for the actual distance in miles between Town F and Town G, given that 1/4 inch on the map represents 10 miles.
+
+2. PLAN: We need to find the actual distance in miles. We know that 1/4 inch on the map represents 10 miles. We also know that the road on the map is 20 inches long.
+
+3. SOLVE:
+   a. Find the actual distance represented by 1 inch on the map: 10 miles / (1/4 inch) = 40 miles/inch
+   b. Find the actual distance represented by 20 inches on the map: 40 miles/inch * 20 inches = 800 miles
+
+4. STATE: The actual distance from Town F to Town G along this road is 800 miles. So, the answer is A) 800.",106.8772,27.692753623188413,13654.772833635267,84.17198067632843,13.178743961352657,3688.765625,0.015503875968992248,0.0,0.015503875968992248,0.0,0.0,0.016129032258064516,1.0,0.031746031746031744,1,0.0015673981191222097,0.04878048780487806,0.7520343661308289,0.12068720906972885,,,,,,,,,,,
+32,aqua,"On a map, the length of the road from Town F to Town G is measured to be 20 inches. On this map, 1/4 inch represents an actual distance of 10 miles. What is the actual distance, in miles, from Town F to Town G along this road?
+# Answer option: ['A)800', 'B)720', 'C)960', 'D)1140', 'E)1160']",A,MGCoT," To find the actual distance from Town F to Town G in miles, we can use the given information:
+
+1. The length of the road on the map is 20 inches.
+2. 1/4 inch on the map represents an actual distance of 10 miles.
+
+We can set up a proportion to find the actual distance:
+
+(1/4 inch) / (10 miles) = (20 inches) / (x miles)
+
+Now, we can solve for x:
+
+x = (20 inches) * (10 miles / (1/4 inch))
+
+x = 20 * (10 / (1/4))
+
+x = 20 * (10 * 4)
+
+x = 20 * 40
+
+x = 800
+
+So, the actual distance from Town F to Town G along this road is 800 miles. The correct answer is A) 800.",113.3633,28.812500000000004,13484.726924189816,83.12129629629626,13.75925925925926,3688.765625,0.017241379310344827,0.0,0.017241379310344827,0.0,0.0,0.01818181818181818,1.0,0.03571428571428572,1,0.0017857142857142794,0.05555555555555556,0.7516728043556213,0.038341064006090164,98.48565673828125,0.04379233717918396,0.255135178565979,0.2922898232936859,0.0,0.9328907132148743,0.0,0.9371534585952759,0.9602198600769043,0.14080479741096497,1.314606785774231
+33,aqua,"When folded into two equal halves a rectangular sheet had a perimeter of 48cm for each part folded along one set of sides and the same is 66cm when folded along the other set of sides. Find the area of the sheet.
+# Answer option: ['A)1584', 'B)1120', 'C)792', 'D)1320', 'E)1200']",B,SCoT," 1. ANALYZE: The question is asking for the area of a rectangular sheet.
+2. PLAN: We need to find the dimensions of the sheet and then calculate the area.
+3. SOLVE:
+   a. When the sheet is folded along one set of sides, each part has a perimeter of 48 cm. Since it's a rectangle, each part has two equal sides. Let's call the length of each side 'x'. So, the perimeter of each part is 2x = 48 cm. Solving for x, we get x = 24 cm.
+   b. When the sheet is folded along the other set of sides, each part has a perimeter of 66 cm. Again, each part has two equal sides. Let's call the length of each side 'y'. So, the perimeter of each part is 2y = 66 cm. Solving for y, we get y = 33 cm.
+   c. Now we have the dimensions of the sheet: length = 24 cm and width = 33 cm.
+   d. To find the area of the sheet, we multiply the length and width: Area = 24 cm * 33 cm = 792 square cm.
+4. STATE: The area of the sheet is 792 square cm.",154.0348,28.48704318936876,13772.546174210964,84.89700996677746,12.737541528239202,3688.765625,0.010416666666666668,0.0,0.010416666666666668,0.0,0.0,0.0,0.0,0.0,0,0.0,0.047619047619047616,0.7651746869087219,0.12245099991559982,,,,,,,,,,,
+33,aqua,"When folded into two equal halves a rectangular sheet had a perimeter of 48cm for each part folded along one set of sides and the same is 66cm when folded along the other set of sides. Find the area of the sheet.
+# Answer option: ['A)1584', 'B)1120', 'C)792', 'D)1320', 'E)1200']",B,MGCoT," To find the area of the sheet, we first need to determine the dimensions of the sheet. Let's denote the length of the sheet as L and the width as W.
+
+When the sheet is folded along the length (L), each half has a perimeter of 48 cm. Since a rectangle has two pairs of equal sides, the sum of the lengths of the two sides of each half is 48 cm. Therefore, the sum of the length and width of each half is 48 cm.
+
+Sum of the length and width of each half = 48 cm
+Length + Width = 48 cm
+
+When the sheet is folded along the width (W), each half has a perimeter of 66 cm. Similarly, the sum of the lengths of the two sides of each half is 66 cm. Therefore, the sum of the length and width of each half is 66 cm.
+
+Sum of the length and width of each half = 66 cm
+Length + Width = 66 cm
+
+Now we have two equations:
+
+1) Length + Width = 48 cm
+2) Length + Width = 66 cm
+
+We can solve these equations simultaneously to find the values of Length and Width.
+
+Subtracting equation 1 from equation 2, we get:
+
+(Length + Width) - (Length",156.0662,28.99867109634553,13645.214739929403,84.1149501661129,13.521594684385382,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.05128205128205127,0.7566838264465332,0.0617501437664032,99.10517120361328,0.16951002180576324,0.46646931767463684,0.4533383548259735,0.0028323158621788025,0.8493924736976624,0.0032758796587586403,0.7833975553512573,0.819757342338562,0.6011426448822021,2.324738025665283
+34,aqua,"Suppose you can travel from a place M to a place N by 3 buses, from place N to place O by 4 buses, from place O to place P by 1 buses and from place P to place Q by 3 buses. In how many ways can you travel from M to Q ?
+# Answer option: ['A)24', 'B)36', 'C)72', 'D)84', 'E)None']",B,SCoT," 1. ANALYZE: The question is asking for the number of ways to travel from place M to place Q using the given bus routes.
+
+2. PLAN: We need to find the total number of ways to travel from M to Q. We can break this down into the number of ways to travel from M to N, N to O, O to P, and P to Q.
+
+3. SOLVE:
+   - M to N: There are 3 buses, so there are 3 ways to travel from M to N.
+   - N to O: There are 4 buses, so there are 4 ways to travel from N to O.
+   - O to P: There is 1 bus, so there is 1 way to travel from O to P.
+   - P to Q: There are 3 buses, so there are 3 ways to travel from P to Q.
+
+4. To find the total number of ways to travel from M to Q, we multiply the number of ways for each leg of the journey: 3 (M to N) * 4 (N to O) * 1 (O to P) * 3 (P to Q) = 3 * 4 * 1 * 3 = 36 ways.
+
+5. STATE: The final answer is 36 ways to travel from M to",154.1054,29.769767441860463,13780.791865656147,84.94850498338889,12.857142857142858,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.047619047619047616,0.7594342827796936,0.1611030548810959,,,,,,,,,,,
+34,aqua,"Suppose you can travel from a place M to a place N by 3 buses, from place N to place O by 4 buses, from place O to place P by 1 buses and from place P to place Q by 3 buses. In how many ways can you travel from M to Q ?
+# Answer option: ['A)24', 'B)36', 'C)72', 'D)84', 'E)None']",B,MGCoT," To find the total number of ways to travel from M to Q, we need to multiply the number of ways to travel between each pair of consecutive places.
+
+1. M to N: 3 buses, so there are 3 ways.
+2. N to O: 4 buses, so there are 4 ways.
+3. O to P: 1 bus, so there is 1 way.
+4. P to Q: 3 buses, so there are 3 ways.
+
+Now, we multiply the number of ways for each segment together:
+
+3 (M to N) * 4 (N to O) * 1 (O to P) * 3 (P to Q) = 3 * 4 * 1 * 3 = 36 ways.
+
+So, the correct answer is:
+
+B) 36",100.7987,28.383769633507853,13296.065097349476,81.96073298429319,13.256544502617801,3688.765625,0.017543859649122806,0.0,0.017543859649122806,0.0,0.0,0.0196078431372549,1.0,0.038461538461538464,1,0.0020661157024793875,0.05405405405405406,0.7821178436279297,0.21824468672275543,99.68888854980469,0.06734178960323334,0.6172794103622437,0.6547101736068726,0.0,0.9826915860176086,0.0,1.0,1.0,0.25251665711402893,1.5384252071380615
+35,aqua,"A rectangular solid, 3 x 4 x 15, is inscribed in a sphere, so that all eight of its vertices are on the sphere. What is the diameter of the sphere?
+# Answer option: ['A) 13.3542', 'B) 15.8113', 'C) 18.3451', 'D) 19.5667', 'E) 20.8888']",B,SCoT," 1. **ANALYZE** the problem: We are given a rectangular solid with dimensions 3 x 4 x 15, and we need to find the diameter of the sphere that can inscribe this solid.
+
+2. **PLAN** the reasoning steps:
+   a. Find the diagonal of the rectangular solid.
+   b. Use the diagonal to find the radius of the sphere.
+   c. Calculate the diameter of the sphere using the radius.
+
+3. **SOLVE** step by step:
+   a. The diagonal of the rectangular solid can be found using the 3D Pythagorean theorem: √(3^2 + 4^2 + 15^2) = √(9 + 16 + 225) = √(250) = 15.8113.
+   b. The radius of the sphere is half of the diagonal: 15.8113 / 2 = 7.90565.
+   c. The diameter of the sphere is twice the radius: 7.90565 * 2 = 15.8113.
+
+4. **STATE** the final answer clearly: The diameter of the sphere is 15.8113, which corresponds to option B.",152.5679,27.235570469798663,13576.151583473154,83.68657718120802,13.020134228187919,3688.765625,0.013422818791946308,0.0,0.013422818791946308,0.0,0.0,0.012658227848101266,1.0,0.024999999999999998,1,0.0012330456226880004,0.042553191489361694,0.7584389448165894,0.2038346379995346,,,,,,,,,,,
+35,aqua,"A rectangular solid, 3 x 4 x 15, is inscribed in a sphere, so that all eight of its vertices are on the sphere. What is the diameter of the sphere?
+# Answer option: ['A) 13.3542', 'B) 15.8113', 'C) 18.3451', 'D) 19.5667', 'E) 20.8888']",B,MGCoT," To find the diameter of the sphere, we first need to determine the radius of the sphere. Since the rectangular solid is inscribed in the sphere, the diameter of the sphere is equal to the length of the diagonal of the rectangular solid.
+
+We can use the 3D Pythagorean theorem to find the length of the diagonal:
+
+Diagonal^2 = (3^2) + (4^2) + (15^2)
+Diagonal^2 = 9 + 16 + 225
+Diagonal^2 = 250
+Diagonal = √250
+Diagonal ≈ 15.8113
+
+Now, we know that the diameter of the sphere is equal to the diagonal of the rectangular solid. Therefore, the diameter of the sphere is approximately 15.8113 units.
+
+So, the correct answer is:
+
+B) 15.8113",110.9041,27.900473933649288,13702.641217417062,84.46824644549768,13.402843601895734,3688.765625,0.017241379310344827,0.0,0.017241379310344827,0.0,0.0,0.018867924528301886,1.0,0.037037037037037035,1,0.001577287066246047,0.044444444444444446,0.7636271119117737,0.15502536296844482,98.85104370117188,0.18274027109146118,0.5909264087677002,0.6473056077957153,0.004028938245028257,0.8444380760192871,0.0,0.7141155004501343,0.7375402450561523,0.5580379366874695,2.0294339656829834
+36,aqua,"A starts travel towards south 3km, then travel 5 km towards east, and again travels 3 km to north, and finally travels 2km towards west. In the end how far from is A from home?
+# Answer option: ['A)3km', 'B)2km', 'C)4km', 'D)5km', 'E)6km']",A,SCoT," 1. **ANALYZE** the question is asking for the distance of A from home after traveling in a specific pattern.
+2. **PLAN** to use the Pythagorean theorem to find the distance of A from home.
+3. **SOLVE** step by step:
+   - A travels 3 km south, so the initial distance from home is 3 km.
+   - A then travels 5 km east, so the distance from home becomes √(3^2 + 5^2) = √(9 + 25) = √34 km.
+   - A travels 3 km north, so the distance from home becomes √(34 - 3^2) = √(34 - 9) = √25 = 5 km.
+   - Finally, A travels 2 km west, so the distance from home becomes √(5^2 - 2^2) = √(25 - 4) = √21 km.
+4. **STATE** the final answer clearly: The distance of A from home is √21 km.
+
+The answer is not in the given options.",133.6708,28.90229885057473,13498.543956537356,83.21800766283545,13.049808429118775,3688.765625,0.014705882352941178,0.0,0.014705882352941178,5.232135586792358e-232,0.0,0.014925373134328358,1.0,0.029411764705882353,1,0.0014124293785310327,0.04545454545454545,0.7478705644607544,0.15722255408763885,,,,,,,,,,,
+36,aqua,"A starts travel towards south 3km, then travel 5 km towards east, and again travels 3 km to north, and finally travels 2km towards west. In the end how far from is A from home?
+# Answer option: ['A)3km', 'B)2km', 'C)4km', 'D)5km', 'E)6km']",A,MGCoT," To find the distance from A to home, we need to analyze the travel path of A.
+
+1. A travels 3 km towards the south.
+2. A then travels 5 km towards the east.
+3. A travels 3 km towards the north.
+4. Finally, A travels 2 km towards the west.
+
+To find the distance from A to home, we can use the Pythagorean theorem. The theorem states that in a right-angled triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides.
+
+In this case, the south-north movement (3 km south and 3 km north) and the east-west movement (5 km east and 2 km west) form two right-angled triangles.
+
+Let's break down the movements into two right-angled triangles:
+
+Triangle 1:
+- Base: 3 km (south)
+- Height: 3 km (north)
+
+Triangle 2:
+- Base: 5 km (east)
+- Height: 2 km (west)
+
+Now, we can apply the Pythagorean theorem to find the distance from A to home:
+
+Distance = √(Base1^2 + Height1",156.1866,38.41196013289037,14009.410013496677,86.35980066445177,12.518272425249169,3688.765625,0.010752688172043012,0.0,0.010752688172043012,4.946566680442706e-232,0.0,0.012048192771084338,1.0,0.02380952380952381,1,0.0010405827263267886,0.046511627906976744,0.7463890910148621,0.09334807097911835,98.17668914794922,0.03786185011267662,0.5278944969177246,0.5829459428787231,0.000947041844483465,0.907335638999939,0.0,0.6831087470054626,0.7236883640289307,0.1254400610923767,1.268940806388855
+37,aqua,"While selling a watch, a shopkeeper gives a discount of 5%. If he gives a discount of 7%, he earns Rs. 15 less as profit. The marked price of the watch is:
+# Answer option: ['A)Rs. 697.50', 'B)Rs. 712.50', 'C)Rs. 787.50', 'D)Rs. 750', 'E)Rs. 780']",D,SCoT," 1. **ANALYZE** the question: We need to find the marked price of the watch.
+2. **PLAN** the reasoning steps:
+   a. Let the marked price be x.
+   b. When the discount is 5%, the profit is (100 - 5)% of x, which is 95% of x.
+   c. When the discount is 7%, the profit is (100 - 7)% of x, which is 93% of x.
+   d. According to the question, 93% of x is Rs. 15 less than 95% of x.
+   e. Solve for x using the given information.
+3. **SOLVE** step by step:
+   a. 93% of x = 95% of x - Rs. 15
+   b. 0.93x = 0.95x - Rs. 15
+   c. 0.02x = Rs. 15
+   d. x = Rs. 15 / 0.02 = Rs. 750
+4. **STATE** the final answer clearly: The marked price of the watch is Rs. 750. So, the correct option is 'D) Rs. 750'.",152.6372,22.81409395973157,14020.191694630872,86.42416107382553,10.503355704697986,3688.765625,0.013888888888888888,0.0,0.013888888888888888,0.0,0.0,0.0,0.0,0.0,0,0.0014492753623188692,0.042553191489361694,0.7663717865943909,0.17364327609539032,,,,,,,,,,,
+37,aqua,"While selling a watch, a shopkeeper gives a discount of 5%. If he gives a discount of 7%, he earns Rs. 15 less as profit. The marked price of the watch is:
+# Answer option: ['A)Rs. 697.50', 'B)Rs. 712.50', 'C)Rs. 787.50', 'D)Rs. 750', 'E)Rs. 780']",D,MGCoT," To find the marked price of the watch, we can use the given information to set up an equation and solve for the marked price.
+
+Let's denote the marked price as x. When the shopkeeper gives a 5% discount, the selling price is 95% of the marked price, or 0.95x. When the shopkeeper gives a 7% discount, the selling price is 93% of the marked price, or 0.93x.
+
+We know that the difference in profit between the two discounts is Rs. 15. So, we can set up the equation:
+
+0.95x - 0.93x = 15
+
+Now, we can solve for x:
+
+0.02x = 15
+x = 15 / 0.02
+x = 750
+
+So, the marked price of the watch is Rs. 750. Therefore, the correct answer is D) Rs. 750.",117.9109,31.555555555555557,14133.824565972222,87.1262222222223,13.057777777777778,3688.765625,0.015267175572519085,0.0,0.015267175572519085,0.0,0.0,0.014705882352941176,1.0,0.028985507246376812,1,0.0015698587127158659,0.047619047619047616,0.7731062173843384,0.12748713791370392,98.67578887939453,0.0,0.2142258733510971,0.28907227516174316,0.0,1.0,0.0,0.9699543714523315,1.0,0.0,1.0
+38,aqua,"A student instead of finding the value of 7/8 of a number, found the value of 7/18 of the number. If his answer differed from the actual one by 770, find the that number.
+# Answer option: ['A)1584', 'B)2520', 'C)1728', 'D)1656', 'E)None']",A,SCoT," 1. **ANALYZE** the question: We are given that a student found the value of 7/18 of a number instead of 7/8. The difference between the two values is 770. We need to find the original number.
+
+2. **PLAN** the reasoning steps:
+   a. Let the original number be x.
+   b. The student found 7/18 of the number, which is (7/18)x.
+   c. The actual value should be 7/8 of the number, which is (7/8)x.
+   d. The difference between the two values is 770, so we have the equation: (7/18)x - (7/8)x = 770.
+
+3. **SOLVE** step by step:
+   a. To solve the equation, we need to find a common denominator for 18 and 8, which is 72.
+   b. Rewrite the equation with the common denominator: (7/18)x * (72/72) - (7/8)x * (72/72) = 770.
+   c. Simplify the equation: (42/18)x - (42/8)x = 770",153.8761,28.362126245847183,14351.554856208471,88.47076411960117,12.617940199335548,3688.765625,0.012820512820512822,0.0,0.012820512820512822,0.0,0.0,0.014084507042253521,1.0,0.02777777777777778,1,0.0013003901170350884,0.046511627906976744,0.7462556958198547,0.139745831489563,,,,,,,,,,,
+38,aqua,"A student instead of finding the value of 7/8 of a number, found the value of 7/18 of the number. If his answer differed from the actual one by 770, find the that number.
+# Answer option: ['A)1584', 'B)2520', 'C)1728', 'D)1656', 'E)None']",A,MGCoT," Let's denote the number as x. According to the problem, the student found 7/18 of the number, which is (7/18)x. The actual value of the number is x. The difference between the student's answer and the actual value is 770. So, we can write the equation:
+
+x - (7/18)x = 770
+
+To solve for x, we first need to find a common denominator for the fractions, which is 18. So, we can rewrite the equation as:
+
+(18/18)x - (7/18)x = 770
+
+Now, we can combine the fractions on the left side of the equation:
+
+(18 - 7)/18x = 770
+
+11/18x = 770
+
+To isolate x, we can multiply both sides of the equation by 18/11:
+
+x = 770 * (18/11)
+
+x = 1584
+
+So, the correct answer is A) 1584.",136.0258,28.55440613026819,14130.984809027777,87.10919540229898,13.57088122605364,3688.765625,0.014705882352941178,0.0,0.014705882352941178,0.0,0.0,0.014925373134328358,1.0,0.029411764705882353,1,0.0015105740181269312,0.047619047619047616,0.7590624094009399,0.14620697498321533,98.42745971679688,0.04868610203266144,0.2692987322807312,0.27034106850624084,0.0,0.9402199983596802,0.0,0.8799983859062195,0.9227122068405151,0.2472131997346878,1.4762301445007324
+39,aqua,"The monthly salary S of a shop assistant is the sum of a fixed salary of $500 plus 5% of all monthly sales. What should the monthly sales be so that her monthly salary reaches $1500?
+# Answer option: ['A)$50000', 'B)$40000', 'C)$30000', 'D)$20000', 'E)None of these']",D,SCoT," 1. **ANALYZE** the problem: We need to find the monthly sales that will result in a monthly salary of $1500 for a shop assistant.
+2. **PLAN** the reasoning steps:
+   a. We know that the fixed salary is $500.
+   b. We know that the monthly salary is the sum of the fixed salary and 5% of the monthly sales.
+   c. We need to find the monthly sales that will result in a total monthly salary of $1500.
+3. **SOLVE** step by step:
+   a. Let x be the monthly sales.
+   b. The monthly salary is $1500, so we can write the equation: $1500 = $500 + 0.05x.
+   c. Subtract $500 from both sides of the equation: $1000 = 0.05x.
+   d. Divide both sides of the equation by 0.05: x = $1000 / 0.05.
+   e. Calculate the value of x: x = $20000.
+4. **STATE** the final answer clearly: The monthly sales should be $20000 for the shop assistant's monthly salary to reach $1500. So,",154.0705,30.425913621262467,14215.958718334718,87.63355481727578,12.837209302325581,3688.765625,0.01234567901234568,0.0,0.01234567901234568,0.0,0.0,0.0,0.0,0.0,0,0.0011627906976744429,0.04545454545454545,0.7605447769165039,0.030056282877922058,,,,,,,,,,,
+39,aqua,"The monthly salary S of a shop assistant is the sum of a fixed salary of $500 plus 5% of all monthly sales. What should the monthly sales be so that her monthly salary reaches $1500?
+# Answer option: ['A)$50000', 'B)$40000', 'C)$30000', 'D)$20000', 'E)None of these']",D,MGCoT," To find the monthly sales needed for the shop assistant's salary to reach $1500, we can set up an equation based on the given information.
+
+Let S be the shop assistant's monthly salary, which is $500 plus 5% of the monthly sales. We want to find the monthly sales (X) that will result in a salary of $1500.
+
+So, the equation is:
+
+S = 500 + 0.05 * X
+
+We know that S = $1500, so we can substitute that into the equation:
+
+1500 = 500 + 0.05 * X
+
+Now, we can solve for X:
+
+1000 = 0.05 * X
+X = 1000 / 0.05
+X = 20000
+
+So, the monthly sales should be $20,000 for the shop assistant's salary to reach $1500. The correct answer is D) $20,000.",126.4355,31.299999999999994,14124.59872159091,87.07314049586788,13.305785123966942,3688.765625,0.015625,0.0,0.015625,0.0,0.0,0.015625,1.0,0.03076923076923077,1,0.001577287066246047,0.046511627906976744,0.7697015404701233,0.06198352947831154,98.36080932617188,0.11530206352472305,0.19269093871116638,0.2141033560037613,0.006578052416443825,0.8538724780082703,0.000567450188100338,0.31153053045272827,0.32702770829200745,0.3497794568538666,1.8475942611694336
+40,aqua,"An aeroplane flies along the four sides of a square at the speeds of 200, 400, 600 and 800km/hr. Find the average speed of the plane around the field?
+# Answer option: ['A)384', 'B)562', 'C)458', 'D)156', 'E)452']",A,SCoT," 1. **ANALYZE** the question: The question asks us to find the average speed of an aeroplane flying along the four sides of a square at different speeds.
+
+2. **PLAN** the reasoning steps needed:
+   - We need to find the average speed of the aeroplane.
+   - To find the average speed, we need to add up the speeds of the aeroplane at each side and divide by the number of sides.
+
+3. **SOLVE** step by step:
+   - The speeds of the aeroplane at each side are 200, 400, 600, and 800 km/hr.
+   - Add up the speeds: 200 + 400 + 600 + 800 = 2000 km/hr.
+   - Divide the sum by the number of sides (4) to find the average speed: 2000 / 4 = 500 km/hr.
+
+4. **STATE** the final answer clearly: The average speed of the aeroplane around the field is 500 km/hr. However, this option is not available in the given answer options.",138.7326,33.359040590405904,14204.651623039668,87.56309963099636,13.092250922509225,3688.765625,0.013333333333333332,0.0,0.013333333333333332,0.0,0.0,0.013333333333333334,1.0,0.02631578947368421,1,0.0012285012285012664,0.044444444444444446,0.7562612891197205,0.09312234818935394,,,,,,,,,,,
+40,aqua,"An aeroplane flies along the four sides of a square at the speeds of 200, 400, 600 and 800km/hr. Find the average speed of the plane around the field?
+# Answer option: ['A)384', 'B)562', 'C)458', 'D)156', 'E)452']",A,MGCoT," To find the average speed of the plane around the field, we need to consider the speeds at which it flies along the four sides of the square. Let's denote the speeds as A = 200 km/hr, B = 400 km/hr, C = 600 km/hr, and D = 800 km/hr.
+
+The average speed can be calculated using the formula:
+
+Average Speed = (A + B + C + D) / 4
+
+Plugging in the values:
+
+Average Speed = (200 + 400 + 600 + 800) / 4
+Average Speed = 2000 / 4
+Average Speed = 500 km/hr
+
+So, the average speed of the plane around the field is 500 km/hr. However, this answer does not match any of the given options. It is possible that there is an error in the options provided.",115.9169,37.38090909090908,10733.291566051137,66.16636363636353,12.872727272727273,3688.765625,0.016,0.0,0.016,5.354662760929083e-232,0.0,0.014084507042253521,1.0,0.02777777777777778,1,0.0015649452269170805,0.04878048780487806,0.7568182349205017,0.07243596017360687,98.76826477050781,0.18650351464748383,0.7482155561447144,0.6667007207870483,0.0,0.7943660616874695,0.004457529168576002,0.7294468283653259,0.7310984134674072,0.7482869625091553,2.3775651454925537
+41,aqua,"Jack buys 18 sharpeners (white and brown) for rs. 100. If he pays 1 rupee more for each white than brown sharpeners. How many of white and how many brown sharpeners did he buy?
+# Answer option: ['A)10,8', 'B)9,8', 'C)7,8', 'D)5,6', 'E)11,12']",A,SCoT," Let's reason through this problem step by step.
+
+1. **ANALYZE** the problem: We know that Jack buys 18 sharpeners in total, and he pays 1 rupee more for each white sharpener than brown sharpener. We need to find out how many white and brown sharpeners he bought.
+
+2. **PLAN** the reasoning steps: Let's use variables to represent the number of white and brown sharpeners. Let W represent the number of white sharpeners and B represent the number of brown sharpeners. We know that W + B = 18 and W = B + 1.
+
+3. **SOLVE** step by step:
+   - From the second equation, we can rewrite it as B = W - 1.
+   - Substitute the second equation into the first equation: W + (W - 1) = 18.
+   - Simplify the equation: 2W - 1 = 18.
+   - Add 1 to both sides: 2W = 19.
+   - Divide both sides by 2: W = 9.5.
+   - Since the number of sharpeners must be a whole number, we can conclude that W = 9 and B = 9 - 1 = 8.
+
+4. **",154.0572,21.227242524916974,9680.779848421927,59.68139534883721,10.91029900332226,3688.924937707641,0.012121212121212121,0.0,0.012121212121212121,0.0,0.0,0.011494252873563218,1.0,0.022727272727272724,1,0.001107419712070845,0.044444444444444446,0.7548487782478333,0.13430801033973694,,,,,,,,,,,
+41,aqua,"Jack buys 18 sharpeners (white and brown) for rs. 100. If he pays 1 rupee more for each white than brown sharpeners. How many of white and how many brown sharpeners did he buy?
+# Answer option: ['A)10,8', 'B)9,8', 'C)7,8', 'D)5,6', 'E)11,12']",A,MGCoT," Let's denote the number of white sharpeners as W and the number of brown sharpeners as B. We know that W + B = 18, and we also know that the cost of each white sharpener is 1 rupee more than the cost of each brown sharpener. Therefore, the total cost of white sharpeners is 100 - (W * 1) and the total cost of brown sharpeners is 100 - (B * 1).
+
+Since the cost of each white sharpener is 1 rupee more than the cost of each brown sharpener, we can write the equation:
+
+100 - (W * 1) = 100 - (B * 1) + 1
+
+Simplifying the equation, we get:
+
+W = B + 1
+
+Now we have two equations:
+
+1) W + B = 18
+2) W = B + 1
+
+We can substitute the second equation into the first equation:
+
+(B + 1) + B = 18
+
+Combining like terms, we get:
+
+2B + 1 = 18
+
+Subtracting 1 from both sides, we get:
+
+2B = 17
+
+Dividing both sides by 2, we get:
+
+B =",155.9679,28.33289036544853,9854.554583679403,60.742524916943374,13.07641196013289,3688.80181945598,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.04878048780487806,0.7442502379417419,0.08289305865764618,98.07894134521484,0.20080578327178955,0.6271238327026367,0.676323652267456,0.007248878013342619,0.7845361232757568,0.0035992548801004887,0.673706591129303,0.7388871908187866,0.627577006816864,2.3321237564086914
+42,aqua,"Hoses A and B spout water at different constant rates, and hose A can fill a certain pool in 8 hours. Hose A filled the pool alone for the first 2 hours and the two hoses, working together, then finished filling the pool in another 3 hours. How many hours would it have taken hose B, working alone, to fill the entire pool?
+# Answer option: ['A)8', 'B)15', 'C)12', 'D)6', 'E)3']",A,SCoT," 1. **ANALYZE** the problem: We know the rates of hoses A and B, and we need to find the rate of hose B.
+2. **PLAN** the reasoning steps:
+   a. Determine the rate of hose A by finding how much of the pool it fills in 1 hour.
+   b. Determine how much of the pool is filled in the first 2 hours by hose A.
+   c. Determine how much of the pool is filled in the next 3 hours by both hoses.
+   d. Calculate the combined rate of hoses A and B.
+   e. Calculate the rate of hose B by subtracting the rate of hose A from the combined rate.
+3. **SOLVE** step by step:
+   a. The pool is filled in 8 hours by hose A, so the rate of hose A is 1/8 of the pool per hour.
+   b. In 2 hours, hose A fills 2 * (1/8) = 1/4 of the pool.
+   c. In the next 3 hours, both hoses fill the remaining 1 - 1/4 = 3/4 of the pool.
+   d. The combined rate of hoses A and B is (3/4) / 3 = 1",154.1277,27.384717607973407,10185.564226017443,62.78870431893688,12.119601328903654,3688.765625,0.010638297872340425,0.0,0.010638297872340425,4.926607026549805e-232,0.0,0.015151515151515152,1.0,0.02985074626865672,1,0.001166861143523934,0.04878048780487806,0.740842342376709,0.2011798769235611,,,,,,,,,,,
+42,aqua,"Hoses A and B spout water at different constant rates, and hose A can fill a certain pool in 8 hours. Hose A filled the pool alone for the first 2 hours and the two hoses, working together, then finished filling the pool in another 3 hours. How many hours would it have taken hose B, working alone, to fill the entire pool?
+# Answer option: ['A)8', 'B)15', 'C)12', 'D)6', 'E)3']",A,MGCoT," To solve this problem, we need to determine the rate at which Hose B fills the pool. We know that Hose A can fill the pool in 8 hours, so its rate is 1/8 of the pool per hour. Hose A filled the pool alone for the first 2 hours, so it filled 2/8 or 1/4 of the pool during this time. This means that when Hose A and Hose B worked together, they filled the remaining 3/4 of the pool in 3 hours.
+
+Let's denote the rate of Hose B as x. Then, the combined rate of Hose A and Hose B is (1/8) + x. Since they filled 3/4 of the pool in 3 hours, we can write the equation:
+
+(1/8 + x) * 3 = 3/4
+
+Now, we can solve for x:
+
+3/8 + 3x = 3/4
+
+To isolate x, we subtract 3/8 from both sides:
+
+3x = 3/4 - 3/8
+3x = 3/8
+
+Finally, we divide by 3 to find the rate of Hose B:
+
+x = 1/8
+
+So, Hose B can fill the entire pool in 8 hours. Therefore, the correct",156.0782,23.550498338870465,9882.174236918605,60.91960132890365,13.149501661129568,3688.765625,0.010362694300518135,0.0,0.010362694300518135,4.933215501532788e-232,0.0,0.011764705882352941,1.0,0.023255813953488372,1,0.0012004801920768582,0.046511627906976744,0.7465631365776062,0.17881546914577484,99.92630767822266,0.10374720394611359,0.14251072704792023,0.18866491317749023,0.0029511020984500647,0.932742714881897,0.0,0.7591246962547302,0.811279296875,0.32194989919662476,1.8868176937103271
+43,aqua,"If 120 is reduced to 96, what is the reduction percent?
+# Answer option: ['A)30%', 'B)40%', 'C)20%', 'D)10%', 'E)5%']",C,SCoT," 1. **ANALYZE** the question: We need to find the reduction percentage of 120 reduced to 96.
+2. **PLAN** the reasoning steps:
+   a. Find the difference between the original value and the reduced value.
+   b. Divide the difference by the original value.
+   c. Multiply the result by 100 to get the percentage.
+3. **SOLVE** step by step:
+   a. Difference = 120 - 96 = 24
+   b. 24 / 120 = 0.2
+   c. 0.2 * 100 = 20%
+4. **STATE** the final answer clearly: The reduction percentage is 20%. So, the answer is 'C)20%'.",96.0662,22.648128342245993,10196.265562332888,62.85080213903743,10.379679144385026,3688.765625,0.02247191011235955,0.0,0.02247191011235955,0.0,0.0,0.017543859649122806,1.0,0.034482758620689655,1,0.0019607843137254832,0.046511627906976744,0.778144359588623,0.23207131028175354,,,,,,,,,,,
+43,aqua,"If 120 is reduced to 96, what is the reduction percent?
+# Answer option: ['A)30%', 'B)40%', 'C)20%', 'D)10%', 'E)5%']",C,MGCoT," To find the reduction percentage, you can use the formula:
+
+Reduction Percentage = ((Original Value - New Value) / Original Value) * 100
+
+In this case, the original value is 120, and the new value is 96. Plugging these values into the formula:
+
+Reduction Percentage = ((120 - 96) / 120) * 100
+
+Reduction Percentage = (24 / 120) * 100
+
+Reduction Percentage = 0.2 * 100
+
+Reduction Percentage = 20%
+
+So, the reduction percentage is 20%, which corresponds to option C) 20%.",90.1652,26.29005847953219,10387.625548245614,64.03333333333333,13.157894736842104,3688.765625,0.028169014084507043,0.0,0.028169014084507043,0.0,0.0,0.023255813953488372,1.0,0.04545454545454545,1,0.0021276595744680327,0.05128205128205127,0.7712687253952026,0.14225555956363678,99.53474426269531,0.0,0.8522512912750244,0.8796767592430115,0.0,0.9881517291069031,0.0,0.9402033090591431,0.9557019472122192,0.0,1.0
+44,aqua,"I know a 5 digit number having a property that with a 1 after it, it is three times as large as it would be with a 1 before it.
+What is that number?
+# Answer option: ['A)42857', 'B)32456', 'C)76523', 'D)24567', 'E)43566']",A,SCoT," 1. **ANALYZE** the question: We are looking for a 5-digit number that, when a 1 is added to the end, becomes three times larger than when a 1 is added to the beginning.
+
+2. **PLAN** the reasoning steps:
+   a. Let the 5-digit number be represented as ABCDE, where A, B, C, D, and E are digits.
+   b. The number with a 1 added to the beginning is 1ABCDE.
+   c. The number with a 1 added to the end is ABCDE1.
+   d. According to the problem, ABCDE1 = 3 * (1ABCDE).
+
+3. **SOLVE** step by step:
+   a. We can write the equation as ABCDE1 = 3 * 1ABCDE.
+   b. Simplifying, we get ABCDE1 = 3ABCDE.
+   c. Subtracting ABCDE from both sides, we get DE1 = 2ABCDE.
+   d. Since DE1 is a 2-digit number, the only possible value for D is 1, and E must be 0.
+   e. Now we have 101 = 2ABC.
+   f. Solving for ABC, we get ABC =",152.7026,23.573421926910314,10545.83670317691,65.00764119601344,10.259136212624584,3688.765625,0.012820512820512822,0.0,0.012820512820512822,0.0,0.0,0.011627906976744186,1.0,0.022988505747126436,1,0.0012391573729864103,0.05,0.7540332674980164,0.10805558413267136,,,,,,,,,,,
+44,aqua,"I know a 5 digit number having a property that with a 1 after it, it is three times as large as it would be with a 1 before it.
+What is that number?
+# Answer option: ['A)42857', 'B)32456', 'C)76523', 'D)24567', 'E)43566']",A,MGCoT," To find the 5-digit number with the given property, we can start by setting up an equation. Let's call the number x. The property states that when a 1 is added after the number, it becomes three times larger. So, we can write the equation:
+
+x * 1000 + 1 = 3 * (x * 10 + 1)
+
+Now, we can solve for x:
+
+x * 1000 + 1 = 3x * 10 + 3
+1000x + 1 = 30x + 3
+1000x - 30x = 3 - 1
+970x = 2
+x = 2 / 970
+x = 0.002034
+
+Since x is a 5-digit number, we can round it to the nearest whole number, which is 2034. However, this number does not fit the property of becoming three times larger when a 1 is added after it.
+
+Let's try another approach. We can start by assuming the number is in the form of abcd, where a, b, c, and d are digits. The property states that when a 1 is added after the number, it becomes three times larger. So, we can write the equation",156.0547,22.871760797342223,10358.99532807309,63.85614617940202,13.039867109634551,3688.765625,0.011695906432748537,0.0,0.011695906432748537,0.0,0.0,0.011627906976744186,1.0,0.022988505747126436,1,0.0,0.044444444444444446,0.7471688389778137,-0.021973399445414543,96.94437408447266,0.05249641090631485,0.2770692706108093,0.34552493691444397,0.0,0.8616560101509094,0.0,0.5903664827346802,0.5943881273269653,0.16482798755168915,1.4235575199127197
+45,aqua,"At Daifu university, 24% of all students are members of both a chess club and a swim team. If 20% of members of the swim team are not members of the chess club, what percentage of all Daifu students are members of the swim team?
+# Answer option: ['A)20%', 'B)30%', 'C)40%', 'D)50%', 'E)60%']",B,SCoT," 1. ANALYZE: The question asks for the percentage of all Daifu students who are members of the swim team. We know that 24% of all students are members of both the chess club and the swim team, and 20% of members of the swim team are not members of the chess club.
+
+2. PLAN: We can use the principle of inclusion-exclusion to solve this problem. We will find the percentage of students who are members of the swim team and then subtract the percentage of students who are members of both the chess club and the swim team.
+
+3. SOLVE:
+
+Step 1: Find the percentage of students who are members of the swim team and also members of the chess club.
+24% of all students are members of both the chess club and the swim team.
+
+Step 2: Find the percentage of students who are members of the swim team but not members of the chess club.
+20% of members of the swim team are not members of the chess club. Since this is the percentage of members of the swim team who are not in the chess club, it is also the percentage of members of the swim team who are in the chess club.
+
+Step 3: Find the total percentage of students who are members of the swim team.
+Let x be the percentage of all students who are",154.0318,20.600332225913654,10391.542631333057,64.06644518272421,10.013289036544851,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.052631578947368425,0.7563024163246155,0.1743510663509369,,,,,,,,,,,
+45,aqua,"At Daifu university, 24% of all students are members of both a chess club and a swim team. If 20% of members of the swim team are not members of the chess club, what percentage of all Daifu students are members of the swim team?
+# Answer option: ['A)20%', 'B)30%', 'C)40%', 'D)50%', 'E)60%']",B,MGCoT," To find the percentage of all Daifu students who are members of the swim team, we can use the information given about the chess club and the swim team.
+
+We know that 24% of all students are members of both the chess club and the swim team. We also know that 20% of members of the swim team are not members of the chess club.
+
+Let's denote the total percentage of students who are members of the swim team as x. Then, the percentage of students who are members of both the chess club and the swim team is 24%, and the percentage of students who are members of the swim team but not the chess club is 20%.
+
+Since the total percentage of students who are members of the swim team is the sum of those who are members of both the chess club and the swim team and those who are members of the swim team but not the chess club, we can write the equation:
+
+x = 24% + 20%
+
+Solving for x, we get:
+
+x = 44%
+
+So, 44% of all Daifu students are members of the swim team. However, this answer does not match any of the given options. There might be an error in the question or the answer choices.",147.4932,22.44823943661974,10456.199425066021,64.46408450704199,13.253521126760564,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.05405405405405406,0.7573454976081848,0.14946229755878448,98.23310852050781,0.15455684065818787,0.5594261884689331,0.5576589107513428,0.0,0.8440007567405701,0.0008081893902271986,0.9116387963294983,0.9224109649658203,0.5442960858345032,2.1191861629486084
+46,aqua,"If the population of a city increases by 5 % annually, what will be the population of the city in 2 years time if its current population is 78000?
+# Answer option: ['A)81900', 'B)85995', 'C)85800', 'D)90000', 'E)None of these']",B,SCoT," 1. **ANALYZE** the question: We need to find the population of the city in 2 years if it increases by 5% annually and the current population is 78000.
+
+2. **PLAN** the reasoning steps:
+   - Calculate the population after the first year.
+   - Calculate the population after the second year.
+
+3. **SOLVE** step by step:
+   - First year population: 78000 * (1 + 5/100) = 78000 * 1.05 = 81900
+   - Second year population: 81900 * (1 + 5/100) = 81900 * 1.05 = 85800
+
+4. **STATE** the final answer: The population of the city in 2 years time will be 85800. So, the correct answer is 'C)85800'.",117.0663,19.626754385964926,10610.874263294956,65.40833333333345,9.824561403508772,3688.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.042553191489361694,0.7559710741043091,0.18205641210079193,,,,,,,,,,,
+46,aqua,"If the population of a city increases by 5 % annually, what will be the population of the city in 2 years time if its current population is 78000?
+# Answer option: ['A)81900', 'B)85995', 'C)85800', 'D)90000', 'E)None of these']",B,MGCoT," To find the population of the city in 2 years, we need to apply the annual increase percentage for 2 years.
+
+Current population = 78,000
+Annual increase percentage = 5%
+
+First, we'll calculate the population after 1 year:
+Population after 1 year = Current population * (1 + Annual increase percentage)
+Population after 1 year = 78,000 * (1 + 0.05)
+Population after 1 year = 78,000 * 1.05
+Population after 1 year = 81,900
+
+Now, we'll calculate the population after 2 years:
+Population after 2 years = Population after 1 year * (1 + Annual increase percentage)
+Population after 2 years = 81,900 * (1 + 0.05)
+Population after 2 years = 81,900 * 1.05
+Population after 2 years = 85,995
+
+So, the population of the city in 2 years will be approximately 85,995.
+
+Answer option: 'B)85995'",144.5277,23.170143884892138,10480.230131519784,64.59748201438869,13.172661870503598,3688.765625,0.014925373134328356,0.0,0.014925373134328356,0.0,0.0,0.02040816326530612,1.0,0.039999999999999994,1,0.0012820512820512775,0.04878048780487806,0.7724494934082031,0.1293538361787796,99.51685333251953,0.04754803702235222,0.7579977512359619,0.772190511226654,0.0,0.9491928815841675,0.0,0.8315871357917786,0.8370219469070435,0.14300234615802765,1.3386764526367188
+47,aqua,"Two cars start at the same time from opposite ends of a highway that is 50 miles long. One car is riding at 12 mph and the second car is riding at 13 mph. How long after they begin will they meet?
+# Answer option: ['A) 1', 'B) 1.25', 'C) 1.50', 'D) 1.75', 'E) 2']",E,SCoT," 1. ANALYZE: The question is asking for the time it takes for two cars traveling towards each other to meet.
+2. PLAN: We need to find the time it takes for the cars to cover the 50-mile distance.
+3. SOLVE:
+   a. The first car is traveling at 12 mph.
+   b. The second car is traveling at 13 mph.
+   c. Since they are traveling towards each other, we can add their speeds together (12 mph + 13 mph = 25 mph).
+   d. Now we can find the time it takes for them to cover the 50-mile distance by dividing the distance by their combined speed (50 miles / 25 mph = 2 hours).
+4. STATE: The answer is 2 hours, which corresponds to option E.",101.3611,20.852040816326525,10569.083187181122,65.15459183673454,10.188775510204081,3688.765625,0.016260162601626018,0.0,0.016260162601626018,0.0,0.0,0.0136986301369863,1.0,0.027027027027027025,1,0.0015898251192368873,0.047619047619047616,0.7841768860816956,0.12243609130382538,,,,,,,,,,,
+47,aqua,"Two cars start at the same time from opposite ends of a highway that is 50 miles long. One car is riding at 12 mph and the second car is riding at 13 mph. How long after they begin will they meet?
+# Answer option: ['A) 1', 'B) 1.25', 'C) 1.50', 'D) 1.75', 'E) 2']",E,MGCoT," To find out how long it will take for the two cars to meet, we need to determine the relative speed of the two cars and then divide the total distance by that speed.
+
+The first car is traveling at 12 mph, and the second car is traveling at 13 mph. Since they are moving in opposite directions, we can add their speeds together to find their relative speed.
+
+Relative speed = 12 mph + 13 mph = 25 mph
+
+Now, we need to find out how long it will take for the two cars to cover the 50-mile distance at a combined speed of 25 mph.
+
+Time = Distance / Speed
+Time = 50 miles / 25 mph
+Time = 2 hours
+
+So, the two cars will meet after 2 hours. Therefore, the correct answer is:
+
+E) 2",104.3191,22.075757575757613,10525.634765625,64.89040404040388,12.83838383838384,3688.765625,0.015037593984962407,0.0,0.015037593984962407,0.0,0.0,0.014084507042253521,1.0,0.02777777777777778,1,0.0014836795252225476,0.052631578947368425,0.7891855239868164,0.09679331630468369,98.69039916992188,0.37527284026145935,0.7600963115692139,0.811840832233429,0.006979814264923334,0.6647971868515015,0.008416117168962955,0.7325668931007385,0.8229293823242188,1.2471519708633423,3.730405569076538
+48,aqua,"A shopkeeper employed a servant at a monthly salary of 1500. In addition to it, he agreed to pay him a commission of 15% on the monthly sale. How much sale in Rupees should the servant do if he wants his monthly income as 6000?
+# Answer option: ['A)30000', 'B)415000', 'C)31500', 'D)50000', 'E)None of these']",A,SCoT," 1. **ANALYZE** the question: The question is asking for the monthly sale amount the servant needs to achieve in order to earn a total monthly income of 6000.
+
+2. **PLAN** the reasoning steps:
+   a. Determine the fixed salary of the servant.
+   b. Determine the desired total monthly income of the servant.
+   c. Calculate the commission rate based on the monthly sale.
+   d. Calculate the total monthly income by adding the fixed salary and the commission.
+   e. Solve for the monthly sale amount.
+
+3. **SOLVE** step by step:
+   a. The fixed salary of the servant is 1500.
+   b. The desired total monthly income of the servant is 6000.
+   c. The commission rate is 15% of the monthly sale.
+   d. The total monthly income is the sum of the fixed salary and the commission: 1500 + (0.15 * monthly sale) = 6000.
+   e. Solve for the monthly sale: (0.15 * monthly sale) = 4500. Divide both sides by 0.15: monthly sale = 4500 / 0.15 = 30000.
+
+4. **STATE",153.353,19.90664451827244,10634.916320598006,65.5511627906978,9.541528239202657,3688.765625,0.012195121951219513,0.0,0.012195121951219513,0.0,0.0,0.014492753623188406,1.0,0.02857142857142857,1,0.0010548523206751481,0.046511627906976744,0.7503571510314941,0.09074316918849945,,,,,,,,,,,
+48,aqua,"A shopkeeper employed a servant at a monthly salary of 1500. In addition to it, he agreed to pay him a commission of 15% on the monthly sale. How much sale in Rupees should the servant do if he wants his monthly income as 6000?
+# Answer option: ['A)30000', 'B)415000', 'C)31500', 'D)50000', 'E)None of these']",A,MGCoT," To find the required sale amount, we need to first determine the servant's total monthly income. The servant's total income is the sum of his fixed salary and the commission on the monthly sale.
+
+Let's denote the monthly sale as S. The servant's total income is given as 6000. So, we can write the equation:
+
+Total Income = Fixed Salary + Commission
+6000 = 1500 + 0.15S
+
+Now, we can solve for S:
+
+6000 - 1500 = 0.15S
+4500 = 0.15S
+S = 4500 / 0.15
+S = 30000
+
+So, the servant should aim for a monthly sale of 30000 Rupees to achieve his desired income of 6000.
+
+The answer is A)30000.",114.3803,22.094036697247752,10590.43413130734,65.2807339449539,12.917431192660551,3688.765625,0.01785714285714286,0.0,0.01785714285714286,0.0,0.0,0.01694915254237288,1.0,0.03333333333333333,1,0.0017182130584192379,0.05,0.7705707550048828,0.043260373175144196,97.9822006225586,0.48340141773223877,0.40656086802482605,0.492005854845047,0.015132205560803413,0.5456758737564087,0.01629805564880371,0.40927040576934814,0.5330966711044312,1.634017825126648,5.029838562011719
+49,aqua,"A man borrows Rs.360 If he pays it back in 12 monthly installments of Rs.31.50, what is his interest rate?
+# Answer option: ['A)1.5%', 'B)4.5%', 'C)10%', 'D)5%', 'E)12%']",D,SCoT," 1. **ANALYZE** the question: The question asks for the interest rate on a loan of Rs.360, which is paid back in 12 monthly installments of Rs.31.50.
+
+2. **PLAN** the reasoning steps:
+   a. Calculate the total amount paid back: 12 installments * Rs.31.50 = Rs.378
+   b. Calculate the interest paid: Rs.378 - Rs.360 = Rs.18
+   c. Calculate the interest rate: Interest / Principal * 100
+
+3. **SOLVE** step by step:
+   a. Total amount paid back: 12 * 31.50 = 378
+   b. Interest paid: 378 - 360 = 18
+   c. Interest rate: (18 / 360) * 100 = 5%
+
+4. **STATE** the final answer clearly: The interest rate is 5%. So, the correct answer is 'D)5%'.",128.6149,20.714342629482104,10659.057737798805,65.70637450199213,9.812749003984063,3688.765625,0.017699115044247787,0.0,0.017699115044247787,0.0,0.0,0.0,0.0,0.0,0,0.0015698587127158659,0.042553191489361694,0.7656605243682861,0.1746377944946289,,,,,,,,,,,
+49,aqua,"A man borrows Rs.360 If he pays it back in 12 monthly installments of Rs.31.50, what is his interest rate?
+# Answer option: ['A)1.5%', 'B)4.5%', 'C)10%', 'D)5%', 'E)12%']",D,MGCoT," To find the interest rate, we first need to determine the total amount paid back and the total interest paid.
+
+The man pays back Rs.31.50 per month for 12 months, so the total amount paid back is:
+
+31.50 * 12 = Rs.378
+
+Since the total amount borrowed was Rs.360, the interest paid is:
+
+378 - 360 = Rs.18
+
+Now, we can calculate the interest rate using the formula:
+
+Interest Rate = (Interest Paid / Original Principal) * 100
+
+Interest Rate = (18 / 360) * 100
+
+Interest Rate = 0.05 * 100
+
+Interest Rate = 5%
+
+So, the correct answer is:
+
+D) 5%",105.3183,23.284500000000016,10643.12658203125,65.60850000000002,12.81,3688.765625,0.020408163265306124,0.0,0.020408163265306124,0.0,0.0,0.017543859649122806,1.0,0.034482758620689655,1,0.001848428835489857,0.047619047619047616,0.7702956795692444,0.08889264613389969,100.0,0.0,0.27179670333862305,0.3669593930244446,0.0,1.0,0.0,0.6906124353408813,0.7568020820617676,0.0,1.0120258331298828
+50,aqua,"The price of a product is reduced by 30% . By what percentage should it be increased to make it 100%
+# Answer option: ['A)41.86%', 'B)42.86%', 'C)43.86%', 'D)44.86%', 'E)45.86%']",B,SCoT," 1. **ANALYZE** the question: We need to find the percentage increase needed to make the price 100% after a 30% reduction.
+
+2. **PLAN** the reasoning steps:
+   a. Determine the remaining price after the 30% reduction.
+   b. Calculate the percentage increase needed to reach 100%.
+
+3. **SOLVE** step by step:
+   a. If the price is reduced by 30%, the remaining price will be 70% of the original price.
+   b. To find the percentage increase needed to make the price 100%, we need to find the difference between 100% and 70% and divide it by 70%.
+   c. 100% - 70% = 30%
+   d. 30% / 70% = 0.4286
+   e. Multiply the result by 100 to get the percentage increase: 0.4286 * 100 = 42.86%
+
+4. **STATE** the final answer clearly: The price should be increased by 42.86% to make it 100%. So, the correct answer is 'B)42.86%'.",152.1916,20.17550335570473,10850.822514681207,66.89228187919454,9.895973154362416,3688.765625,0.0136986301369863,0.0,0.0136986301369863,0.0,0.0,0.0136986301369863,1.0,0.027027027027027025,1,0.0012300123001229846,0.044444444444444446,0.7629323601722717,0.14302900433540344,,,,,,,,,,,
+50,aqua,"The price of a product is reduced by 30% . By what percentage should it be increased to make it 100%
+# Answer option: ['A)41.86%', 'B)42.86%', 'C)43.86%', 'D)44.86%', 'E)45.86%']",B,MGCoT," To find the percentage increase needed to make the product 100% of its original price after a 30% reduction, we can follow these steps:
+
+1. Start with the original price, which is 100%.
+2. Reduce the price by 30% to get the new price.
+3. Calculate the difference between the original price and the new price.
+4. Divide the difference by the new price to find the percentage increase needed.
+
+Let's perform these calculations:
+
+1. Original price = 100%.
+2. New price = 100% - 30% = 100% - 30% = 70%.
+3. Difference = 100% - 70% = 30%.
+4. Percentage increase = (30% / 70%) * 100% = 42.86%.
+
+So, the correct answer is B) 42.86%.",117.2972,21.837333333333373,10839.466892361112,66.80177777777787,12.71111111111111,3688.765625,0.018348623853211007,0.0,0.018348623853211007,0.0,0.0,0.01694915254237288,1.0,0.03333333333333333,1,0.0016000000000000458,0.04545454545454545,0.7599865794181824,0.11302847415208817,100.0,0.0,0.676425576210022,0.7546921372413635,0.0,1.0,0.0,1.0,1.0,0.00684669753536582,1.0627764463424683

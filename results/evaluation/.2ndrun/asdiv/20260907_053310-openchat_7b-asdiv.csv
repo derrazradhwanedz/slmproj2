@@ -1,0 +1,635 @@
+record_id,dataset,question,gold_answer,mechanism,final_answer,delta_time_seconds,cpu_usage_avg_percent,ram_usage_avg_mb,ram_usage_avg_percent,gpu_usage_avg_percent,gpu_memory_avg_mb,rouge1_f1,rouge2_f1,rougeL_f1,bleu,exact_match,token_precision,token_recall,token_f1,token_overlap_count,normalized_edit_distance,char_f1,bert_score_f1,semantic_similarity,target_Readability,target_Coherence,target_Relevance,target_Specificity,target_Engagement,target_Concise,target_Length,target_Zipf,target_Hapax,target_Entropy,target_Perplexity
+1,asdiv,Seven red apples and two green apples are in the basket. How many apples are in the basket?,9,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of apples in the basket.
+2. **PLAN** the reasoning steps: We need to add the number of red apples and green apples together.
+3. **SOLVE** step by step:
+   - We have 7 red apples.
+   - We have 2 green apples.
+   - Add the number of red apples and green apples: 7 + 2 = 9.
+4. **STATE** the final answer clearly: There are 9 apples in the basket.",69.2458,19.42014925373134,10998.306261660447,67.8067164179105,10.082089552238806,3700.765625,0.02631578947368421,0.0,0.02631578947368421,6.091662401187491e-232,0.0,0.022222222222222223,1.0,0.04347826086956522,1,0.0023980815347721673,0.05128205128205127,0.7755129933357239,0.31573331356048584,,,,,,,,,,,
+1,asdiv,Seven red apples and two green apples are in the basket. How many apples are in the basket?,9,MGCoT," There are seven red apples and two green apples in the basket. In total, there are nine apples in the basket.",17.7993,22.435714285714283,10948.199776785714,67.49285714285716,12.214285714285714,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.8186291456222534,0.36299851536750793,99.7314682006836,0.007419615983963013,0.0,0.0,0.002490208251401782,0.9867167472839355,0.0,0.0,0.0,0.007110781967639923,1.0
+2,asdiv,Ellen has six more balls than Marin. Marin has nine balls. How many balls does Ellen have?,15,SCoT," 1. **ANALYZE** the question: We are given that Ellen has six more balls than Marin, and we know that Marin has nine balls.
+2. **PLAN** the reasoning steps: We need to find the number of balls Ellen has. Since we know Marin has nine balls, we can add six to find the number of balls Ellen has.
+3. **SOLVE** step by step:
+   - Marin has nine balls.
+   - Ellen has six more balls than Marin.
+   - Ellen's balls = Marin's balls + 6
+   - Ellen's balls = 9 + 6
+4. **STATE** the final answer clearly: Ellen has 15 balls.",81.3383,19.491250000000015,10860.587377929687,66.9481250000002,9.3,3904.765625,0.020833333333333332,0.0,0.020833333333333332,5.761138600803475e-232,0.0,0.02,1.0,0.0392156862745098,1,0.0038910505836575737,0.0909090909090909,0.7786254286766052,0.2051287293434143,,,,,,,,,,,
+2,asdiv,Ellen has six more balls than Marin. Marin has nine balls. How many balls does Ellen have?,15,MGCoT," Ellen has six more balls than Marin, who has nine balls. To find out how many balls Ellen has, we can simply add six to the number of balls Marin has.
+
+Ellen's balls = Marin's balls + 6
+Ellen's balls = 9 + 6
+Ellen's balls = 15
+
+So, Ellen has 15 balls.",48.9501,23.12111111111111,10789.260112847222,66.51333333333338,13.033333333333333,3904.765625,0.03773584905660378,0.0,0.03773584905660378,6.752107625974243e-232,0.0,0.03333333333333333,1.0,0.06451612903225806,1,0.007936507936507908,0.12121212121212122,0.7882350087165833,0.19261302053928375,99.70256805419922,0.0,0.0,0.0,0.0003383122384548187,0.994399905204773,0.0,0.008863091468811035,0.0026397109031677246,0.0,1.0
+3,asdiv,Janet has nine oranges and Sharon has seven oranges. How many oranges do Janet and Sharon have together?,16,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of oranges that Janet and Sharon have together.
+2. **PLAN** the reasoning steps needed: We need to add the number of oranges that Janet has to the number of oranges that Sharon has.
+3. **SOLVE** step by step: 
+   - Janet has 9 oranges.
+   - Sharon has 7 oranges.
+   - Add the number of oranges: 9 + 7 = 16.
+4. **STATE** the final answer clearly: Janet and Sharon have 16 oranges together.",75.1917,19.35405405405404,10802.463180954392,66.5797297297298,9.35135135135135,3904.765625,0.024999999999999998,0.0,0.024999999999999998,6.017810420952586e-232,0.0,0.022222222222222223,1.0,0.04347826086956522,1,0.0043290043290042934,0.09523809523809523,0.7826097011566162,0.2128136157989502,,,,,,,,,,,
+3,asdiv,Janet has nine oranges and Sharon has seven oranges. How many oranges do Janet and Sharon have together?,16,MGCoT," Janet has nine oranges and Sharon has seven oranges. To find out how many oranges they have together, we simply add the number of oranges each person has.
+
+Janet's oranges: 9
+Sharon's oranges: 7
+
+Total oranges: 9 + 7 = 16
+
+So, Janet and Sharon have 16 oranges together.",49.4547,20.804395604395594,10737.353708791208,66.1857142857142,12.0,3904.765625,0.039999999999999994,0.0,0.039999999999999994,6.885877678021066e-232,0.0,0.029411764705882353,1.0,0.05714285714285715,1,0.007407407407407418,0.1111111111111111,0.7948914170265198,0.1889268010854721,100.0,0.005653330124914646,0.0,0.0,0.0037361339200288057,0.9976567625999451,0.0,0.0,0.0,0.0,1.0
+4,asdiv,Allan brought two balloons and Jake brought four balloons to the park. How many balloons did Allan and Jake have in the park?,6,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of balloons Allan and Jake have in the park.
+2. **PLAN** the reasoning steps: We need to add the number of balloons Allan brought and the number of balloons Jake brought.
+3. **SOLVE** step by step: Allan brought 2 balloons and Jake brought 4 balloons. Adding these two numbers together, we get 2 + 4 = 6 balloons.
+4. **STATE** the final answer clearly: Allan and Jake have a total of 6 balloons in the park.",70.6717,19.161870503597136,10957.594817895684,67.54964028776976,9.100719424460431,3904.765625,0.022988505747126436,0.0,0.022988505747126436,5.948228664567313e-232,0.0,0.02040816326530612,1.0,0.039999999999999994,1,0.0020790020790020236,0.05128205128205127,0.7816822528839111,0.36721575260162354,,,,,,,,,,,
+4,asdiv,Allan brought two balloons and Jake brought four balloons to the park. How many balloons did Allan and Jake have in the park?,6,MGCoT," Allan and Jake brought a total of six balloons to the park. Allan had two balloons, and Jake had four balloons.",19.2938,18.99666666666666,10884.239453125,67.09999999999997,14.066666666666666,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.8217986822128296,0.2978917956352234,98.26070404052734,0.016933482140302658,0.0,0.015691719949245453,0.004286141134798527,0.9200184941291809,0.0,0.06961032748222351,0.06004299223423004,0.027880750596523285,1.0
+5,asdiv,Adam has five more apples than Jackie. Jackie has nine apples. How many apples does Adam have?,14,SCoT," 1. **ANALYZE** the question: We are given that Adam has five more apples than Jackie, and we know that Jackie has nine apples.
+2. **PLAN** the reasoning steps: We need to find the number of apples Adam has. Since we know Jackie has nine apples, we can add five to find the number of apples Adam has.
+3. **SOLVE** step by step:
+   a. We know Jackie has nine apples.
+   b. Adam has five more apples than Jackie, so we add five to Jackie's number of apples: 9 + 5 = 14.
+4. **STATE** the final answer clearly: Adam has 14 apples.",81.7724,20.245962732919256,11069.326014169255,68.23726708074524,9.354037267080745,3904.765625,0.019801980198019802,0.0,0.019801980198019802,5.746825102397619e-232,0.0,0.019230769230769232,1.0,0.03773584905660378,1,0.0038022813688213253,0.09523809523809523,0.7722979784011841,0.2531108558177948,,,,,,,,,,,
+5,asdiv,Adam has five more apples than Jackie. Jackie has nine apples. How many apples does Adam have?,14,MGCoT, Adam has 9 + 5 = 14 apples.,11.2559,17.493333333333336,11044.83984375,68.10000000000001,20.733333333333334,3904.765625,0.2857142857142857,0.0,0.2857142857142857,1.0832677820940877e-231,0.0,0.1111111111111111,1.0,0.19999999999999998,1,0.0714285714285714,0.2222222222222222,0.818630039691925,0.2757767140865326,99.70256805419922,0.0,0.0,0.0,0.0003383122384548187,0.994399905204773,0.0,0.008863091468811035,0.0026397109031677246,0.0,1.0
+6,asdiv,Brian has four more plums than Paul. Paul has seven plums. How many plums does Brian have?,11,SCoT," 1. **ANALYZE** the question: We are given that Brian has four more plums than Paul, and we know that Paul has seven plums.
+2. **PLAN** the reasoning steps needed: We need to find out how many plums Brian has. Since we know that Brian has four more plums than Paul, we can add four to the number of plums Paul has.
+3. **SOLVE** step by step: 
+   - We know that Paul has seven plums.
+   - We need to add four to this number to find out how many plums Brian has.
+   - So, 7 (plums Paul has) + 4 (additional plums Brian has) = 11 plums.
+4. **STATE** the final answer clearly: Brian has 11 plums.",92.2566,19.94615384615386,11142.219973385989,68.69065934065938,9.967032967032967,3904.765625,0.01785714285714286,0.0,0.01785714285714286,5.551288858995946e-232,0.0,0.017543859649122806,1.0,0.034482758620689655,1,0.0033783783783783994,0.04878048780487806,0.7671050429344177,0.3119544982910156,,,,,,,,,,,
+6,asdiv,Brian has four more plums than Paul. Paul has seven plums. How many plums does Brian have?,11,MGCoT," To determine the number of plums Brian has, we can use the information given: Paul has seven plums, and Brian has four more plums than Paul.
+
+Using this information, we can set up an equation:
+
+Brian's plums = Paul's plums + 4
+
+Now, we can plug in the value we know for Paul's plums:
+
+Brian's plums = 7 + 4
+
+Brian's plums = 11
+
+So, Brian has 11 plums.",61.6584,22.50000000000001,11011.277053202479,67.86528925619824,12.297520661157025,3904.765625,0.02857142857142857,0.0,0.02857142857142857,6.3211493403261365e-232,0.0,0.024390243902439025,1.0,0.047619047619047616,1,0.005681818181818232,0.05882352941176471,0.7876678109169006,0.2819386124610901,99.70256805419922,0.0,0.0,0.0,0.0003383122384548187,0.994399905204773,0.0,0.008863091468811035,0.0026397109031677246,0.0,1.0
+7,asdiv,Sandra took six cups of coffee and Marcie took two cups of coffee. How many cups of coffee did Sandra and Marcie take in total?,8,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of cups of coffee taken by both Sandra and Marcie.
+2. **PLAN** the reasoning steps: We need to add the number of cups of coffee taken by Sandra and Marcie.
+3. **SOLVE** step by step: Sandra took 6 cups of coffee and Marcie took 2 cups of coffee. To find the total, we add 6 + 2 = 8.
+4. **STATE** the final answer: Sandra and Marcie took a total of 8 cups of coffee.",68.3328,19.404477611940308,10874.790840718284,67.04104477611949,10.029850746268657,3904.765625,0.023255813953488372,0.0,0.023255813953488372,5.965248090744155e-232,0.0,0.022727272727272728,1.0,0.044444444444444446,1,0.002277904328018221,0.05128205128205127,0.787992537021637,0.2874353229999542,,,,,,,,,,,
+7,asdiv,Sandra took six cups of coffee and Marcie took two cups of coffee. How many cups of coffee did Sandra and Marcie take in total?,8,MGCoT, Sandra and Marcie took a total of 6 + 2 = 8 cups of coffee.,15.2533,19.131818181818183,10871.01065340909,66.99090909090907,14.272727272727273,3904.765625,0.14285714285714288,0.0,0.14285714285714288,9.257324954728539e-232,0.0,0.06666666666666667,1.0,0.125,1,0.01666666666666672,0.08333333333333333,0.8209775686264038,0.2283768653869629,98.56710052490234,0.05583443120121956,0.0,0.0,0.006793315522372723,0.8984952569007874,0.0,0.013534262776374817,0.0022916942834854126,0.14089429378509521,1.26963210105896
+8,asdiv,17 plums were in the basket. More plums were added to the basket. Now there are 21 plums. How many plums were added to the basket?,4,SCoT," 1. **ANALYZE** the question: The question is asking us to find out how many plums were added to the basket.
+2. **PLAN** the reasoning steps: We know that initially there were 17 plums in the basket, and now there are 21 plums. So, we need to find the difference between the current number of plums and the initial number of plums.
+3. **SOLVE** step by step: 
+   - Step 1: Identify the initial number of plums (17).
+   - Step 2: Identify the current number of plums (21).
+   - Step 3: Calculate the difference between the current number of plums and the initial number of plums (21 - 17).
+4. **STATE** the final answer clearly: 4 plums were added to the basket.",98.9581,20.896923076923077,10893.898798076923,67.14717948717949,10.015384615384615,3904.765625,0.017094017094017096,0.0,0.017094017094017096,5.50443835102825e-232,0.0,0.017543859649122806,1.0,0.034482758620689655,1,0.001512859304084735,0.05128205128205127,0.7666707038879395,0.2814803421497345,,,,,,,,,,,
+8,asdiv,17 plums were in the basket. More plums were added to the basket. Now there are 21 plums. How many plums were added to the basket?,4,MGCoT," To find out how many plums were added to the basket, we can subtract the initial number of plums from the final number of plums.
+
+Final number of plums: 21
+Initial number of plums: 17
+
+21 - 17 = 4
+
+So, 4 plums were added to the basket.",43.37,20.44871794871795,10800.464743589744,66.58333333333337,12.41025641025641,3904.765625,0.042553191489361694,0.0,0.042553191489361694,6.921464794211712e-232,0.0,0.037037037037037035,1.0,0.07142857142857142,1,0.004237288135593209,0.0625,0.7875223159790039,0.3106567859649658,98.55209350585938,0.0,0.0,0.0,0.0,0.9606388807296753,0.0,0.0,0.0,0.0,1.0
+9,asdiv,14 red plums and four green plums are in the basket. How many plums are in the basket?,18,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of plums in the basket.
+2. **PLAN** the reasoning steps: We need to add the number of red plums and green plums together.
+3. **SOLVE** step by step: 
+   - We have 14 red plums.
+   - We have 4 green plums.
+   - Add the number of red plums and green plums: 14 + 4 = 18.
+4. **STATE** the final answer clearly: There are 18 plums in the basket.",70.665,19.587050359712215,10973.215293390287,67.64028776978422,10.057553956834532,3904.765625,0.02631578947368421,0.0,0.02631578947368421,6.091662401187491e-232,0.0,0.022222222222222223,1.0,0.04347826086956522,1,0.004830917874396157,0.10256410256410257,0.7759128212928772,0.2465026080608368,,,,,,,,,,,
+9,asdiv,14 red plums and four green plums are in the basket. How many plums are in the basket?,18,MGCoT, There are 14 red plums and 4 green plums in the basket.,13.2783,18.80526315789474,10937.202508223685,67.41052631578945,16.736842105263158,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.017857142857142905,0.09090909090909091,0.8190981149673462,0.1591612845659256,100.0,0.0,0.0,0.0,0.0021669636480510235,1.0,0.0,0.0,0.0,0.0,1.0
+10,asdiv,Marin has nine apples and Donald has two apples. How many apples do Marin and Donald have together?,11,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of apples that Marin and Donald have together.
+2. **PLAN** the reasoning steps needed: We need to add the number of apples that Marin has to the number of apples that Donald has.
+3. **SOLVE** step by step: 
+   - Marin has 9 apples.
+   - Donald has 2 apples.
+   - Add the number of apples: 9 + 2 = 11.
+4. **STATE** the final answer clearly: Marin and Donald have 11 apples together.",73.2896,20.01319444444446,10957.393500434027,67.55416666666659,9.75,3904.765625,0.024999999999999998,0.0,0.024999999999999998,6.017810420952586e-232,0.0,0.022727272727272728,1.0,0.044444444444444446,1,0.00439560439560438,0.052631578947368425,0.774803876876831,0.34084415435791016,,,,,,,,,,,
+10,asdiv,Marin has nine apples and Donald has two apples. How many apples do Marin and Donald have together?,11,MGCoT," Marin has nine apples and Donald has two apples. To find out how many apples they have together, we simply add the number of apples each person has. Marin has 9 apples and Donald has 2 apples, so together they have 9 + 2 = 11 apples.",37.8529,20.247058823529386,10902.876665900736,67.19999999999992,12.352941176470589,3904.765625,0.04347826086956522,0.0,0.04347826086956522,6.957990942521506e-232,0.0,0.03225806451612903,1.0,0.0625,1,0.008547008547008517,0.06666666666666667,0.7884436845779419,0.3432612419128418,100.0,0.005653330124914646,0.0,0.0,0.0037361339200288057,0.9976567625999451,0.0,0.0,0.0,0.0,1.0
+11,asdiv,46 apples were in the basket. 22 are red and the rest are green. How many apples are green?,24,SCoT," 1. **ANALYZE** the question: We are given that there are 46 apples in total, and 22 of them are red. We need to find out how many apples are green.
+
+2. **PLAN** the reasoning steps:
+   - We know the total number of apples (46) and the number of red apples (22).
+   - To find the number of green apples, we can subtract the number of red apples from the total number of apples.
+
+3. **SOLVE** step by step:
+   - Total number of apples: 46
+   - Number of red apples: 22
+   - Number of green apples = Total number of apples - Number of red apples
+   - Number of green apples = 46 - 22
+
+4. **STATE** the final answer clearly: There are 24 green apples.",106.3431,19.92095238095239,11015.35662202381,67.8990476190476,9.49047619047619,3904.765625,0.017241379310344827,0.0,0.017241379310344827,5.448548490014436e-232,0.0,0.019230769230769232,1.0,0.03773584905660378,1,0.0030864197530864335,0.09756097560975609,0.7673776745796204,0.3426544666290283,,,,,,,,,,,
+11,asdiv,46 apples were in the basket. 22 are red and the rest are green. How many apples are green?,24,MGCoT," To determine how many green apples are in the basket, we can use simple subtraction. We know that there are 46 apples in total, and 22 of them are red. To find the number of green apples, we subtract the number of red apples from the total number of apples.
+
+46 apples (total) - 22 red apples = 24 green apples
+
+So, there are 24 green apples in the basket.",57.9508,21.745370370370377,10856.141022858796,66.93240740740733,12.537037037037036,3904.765625,0.028985507246376812,0.0,0.028985507246376812,6.298451848768724e-232,0.0,0.02702702702702703,1.0,0.052631578947368425,1,0.0056022408963585235,0.11764705882352941,0.779374897480011,0.31754550337791443,98.68805694580078,0.015051201917231083,0.0,0.0,0.001285051112063229,0.9427765011787415,0.0,0.0,0.0,0.013801796361804008,1.0423165559768677
+12,asdiv,Five red peaches and 14 green peaches are in the basket. How many peaches are in the basket?,19,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of peaches in the basket.
+2. **PLAN** the reasoning steps: We need to add the number of red peaches and green peaches together.
+3. **SOLVE** step by step:
+   - We have 5 red peaches.
+   - We have 14 green peaches.
+   - Add the number of red peaches and green peaches: 5 + 14 = 19.
+4. **STATE** the final answer clearly: There are 19 peaches in the basket.",70.1747,19.300724637681174,10880.763020833334,67.07246376811585,9.31159420289855,3904.765625,0.02631578947368421,0.0,0.02631578947368421,6.091662401187491e-232,0.0,0.021739130434782608,1.0,0.042553191489361694,1,0.004662004662004615,0.1,0.7661951780319214,0.2752890884876251,,,,,,,,,,,
+12,asdiv,Five red peaches and 14 green peaches are in the basket. How many peaches are in the basket?,19,MGCoT," To determine the total number of peaches in the basket, we simply need to add the number of red peaches and the number of green peaches together.
+
+So, there are 5 red peaches and 14 green peaches in the basket. Adding these two numbers together gives us the total number of peaches:
+
+5 red peaches + 14 green peaches = 19 peaches
+
+Therefore, there are 19 peaches in the basket.",56.4747,22.722857142857148,10873.967224702381,67.02476190476186,11.752380952380953,3904.765625,0.028985507246376812,0.0,0.028985507246376812,6.298451848768724e-232,0.0,0.02857142857142857,1.0,0.05555555555555556,1,0.005291005291005346,0.1142857142857143,0.7832372188568115,0.26142406463623047,100.0,0.0,0.0,0.0,0.0021669636480510235,1.0,0.0,0.0,0.0,0.0,1.0
+13,asdiv,20 peaches are in the basket. 25 more peaches are put in the basket. How many peaches are in the basket now?,45,SCoT," 1. **ANALYZE** the question is asking for the total number of peaches in the basket after adding 25 more peaches to the initial 20 peaches.
+2. **PLAN** the reasoning steps needed:
+   - Start with the initial number of peaches (20)
+   - Add the additional peaches (25)
+3. **SOLVE** step by step:
+   - 20 peaches (initial)
+   - + 25 peaches (additional)
+   - 20 + 25 = 45 peaches
+4. **STATE** the final answer clearly: There are 45 peaches in the basket now.",78.9152,19.43483870967743,10892.998235887097,67.15870967741945,9.625806451612902,3904.765625,0.027027027027027025,0.0,0.027027027027027025,6.072773298151499e-232,0.0,0.02,1.0,0.0392156862745098,1,0.004376367614879695,0.09523809523809523,0.7632922530174255,0.2688958942890167,,,,,,,,,,,
+13,asdiv,20 peaches are in the basket. 25 more peaches are put in the basket. How many peaches are in the basket now?,45,MGCoT," There are 20 peaches in the basket. 25 more peaches are added to the basket. To find the total number of peaches in the basket now, we simply add the initial number of peaches to the number of peaches added.
+
+20 peaches (initial) + 25 peaches (added) = 45 peaches
+
+So, there are 45 peaches in the basket now.",51.4265,21.31382978723404,10924.662774268618,67.36170212765957,11.851063829787234,3904.765625,0.034482758620689655,0.0,0.034482758620689655,6.573479617511883e-232,0.0,0.03571428571428571,1.0,0.0689655172413793,1,0.006472491909385147,0.11764705882352941,0.7757178544998169,0.2904418408870697,99.13634490966797,0.0,0.0,0.0,0.0,0.986639142036438,0.0,0.0,0.0,0.0,1.0
+14,asdiv,Two marbles are in the basket. Two marbles are taken out of the basket. How many marbles are in the basket now?,0,SCoT," 1. **ANALYZE** the question: The question is asking about the number of marbles in the basket after two marbles are taken out.
+2. **PLAN** the reasoning steps: We know that initially there were two marbles in the basket. We need to subtract the two marbles taken out from the initial number of marbles.
+3. **SOLVE** step by step: 
+   - Step 1: Start with the initial number of marbles, which is 2.
+   - Step 2: Subtract the two marbles taken out from the initial number of marbles, 2 - 2 = 0.
+4. **STATE** the final answer clearly: There are 0 marbles in the basket now.",83.7137,19.173333333333353,11041.252438446969,68.05090909090912,9.696969696969697,3904.765625,0.0196078431372549,0.0,0.0196078431372549,5.691293710187394e-232,0.0,0.019230769230769232,1.0,0.03773584905660378,1,0.0017513134851138146,0.052631578947368425,0.754631757736206,0.30292969942092896,,,,,,,,,,,
+14,asdiv,Two marbles are in the basket. Two marbles are taken out of the basket. How many marbles are in the basket now?,0,MGCoT, There are no marbles in the basket now.,9.26,19.181818181818183,10979.728693181818,67.68181818181819,27.90909090909091,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.7975411415100098,0.24121634662151337,99.00981903076172,0.0,0.0,0.0,0.0,0.9806341528892517,0.0,0.0,0.0,0.0,1.0
+15,asdiv,Eight balls were in the basket. Some of the balls were removed from the basket. Now there are six balls. How many balls were removed from the basket?,2,SCoT," 1. **ANALYZE** the question: The question is asking how many balls were removed from the basket, given that there were initially eight balls and now there are six.
+
+2. **PLAN** the reasoning steps:
+   - Start with the initial number of balls (eight).
+   - Subtract the current number of balls (six) from the initial number of balls.
+
+3. **SOLVE** step by step:
+   - Initial number of balls: 8
+   - Current number of balls: 6
+   - Number of balls removed: 8 - 6 = 2
+
+4. **STATE** the final answer clearly: Two balls were removed from the basket.",77.9915,19.955555555555563,11039.87734885621,68.03594771241833,9.862745098039216,3904.765625,0.02222222222222222,0.0,0.02222222222222222,5.820234933757166e-232,0.0,0.018867924528301886,1.0,0.037037037037037035,1,0.0018348623853210455,0.047619047619047616,0.7721492648124695,0.30565145611763,,,,,,,,,,,
+15,asdiv,Eight balls were in the basket. Some of the balls were removed from the basket. Now there are six balls. How many balls were removed from the basket?,2,MGCoT," To answer this question, we need to find the difference between the initial number of balls and the current number of balls in the basket.
+
+Initial number of balls: 8
+Current number of balls: 6
+
+Difference: 8 - 6 = 2
+
+So, 2 balls were removed from the basket.",39.8489,20.24366197183097,10980.945477552817,67.69154929577456,11.830985915492958,3904.765625,0.04166666666666667,0.0,0.04166666666666667,6.885877678021066e-232,0.0,0.03333333333333333,1.0,0.06451612903225806,1,0.0038461538461538325,0.06451612903225806,0.7905480861663818,0.27238476276397705,99.1668472290039,0.0,0.0,0.0,0.0,0.9811003804206848,0.00014513713540509343,0.0,0.0,0.0,1.0
+16,asdiv,Some oranges were in the basket. Five oranges were taken from the basket. Now there are three oranges. How many oranges were in the basket before some of the oranges were taken?,8,SCoT," 1. **ANALYZE** the question: The question is asking how many oranges were in the basket before some were taken.
+2. **PLAN** the reasoning steps: We know that there are currently three oranges in the basket and that five oranges were taken. We need to find out how many oranges were in the basket before the five were taken.
+3. **SOLVE** step by step:
+   a. We know that there are currently three oranges in the basket.
+   b. We know that five oranges were taken from the basket.
+   c. To find out how many oranges were in the basket before the five were taken, we need to add the five oranges that were taken back to the current number of oranges in the basket.
+   d. So, 3 (current number of oranges) + 5 (oranges taken) = 8 (total number of oranges before some were taken).
+4. **STATE** the final answer clearly: There were 8 oranges in the basket before some of them were taken.",118.0302,20.305150214592302,11004.892988868025,67.84420600858344,9.339055793991417,3904.765625,0.012422360248447204,0.0,0.012422360248447204,5.106573297063853e-232,0.0,0.015625,1.0,0.03076923076923077,1,0.0011337868480725266,0.04878048780487806,0.7574145197868347,0.26412707567214966,,,,,,,,,,,
+16,asdiv,Some oranges were in the basket. Five oranges were taken from the basket. Now there are three oranges. How many oranges were in the basket before some of the oranges were taken?,8,MGCoT, There were initially eight oranges in the basket.,9.8032,17.490909090909096,10864.368607954546,67.0,27.454545454545453,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.8393070697784424,0.3805609941482544,99.72881317138672,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0
+17,asdiv,Jake has six fewer peaches than Steven. Steven has 13 peaches. How many peaches does Jake have?,7,SCoT," 1. **ANALYZE** the question: We need to find out how many peaches Jake has.
+2. **PLAN** the reasoning steps: We know that Steven has 13 peaches, and Jake has 6 fewer peaches than Steven.
+3. **SOLVE** step by step:
+   a. We know that Steven has 13 peaches.
+   b. Jake has 6 fewer peaches than Steven, so we subtract 6 from 13: 13 - 6 = 7.
+4. **STATE** the final answer clearly: Jake has 7 peaches.",70.2365,20.853623188405802,10945.221297554348,67.47028985507242,9.826086956521738,3904.765625,0.026666666666666665,0.0,0.026666666666666665,6.17028075639052e-232,0.0,0.02127659574468085,1.0,0.04166666666666667,1,0.0025188916876573986,0.05,0.7819089293479919,0.37610888481140137,,,,,,,,,,,
+17,asdiv,Jake has six fewer peaches than Steven. Steven has 13 peaches. How many peaches does Jake have?,7,MGCoT, Jake has 13 - 6 = 7 peaches.,11.2551,18.719999999999995,10885.38046875,67.08000000000001,21.266666666666666,3904.765625,0.2857142857142857,0.0,0.2857142857142857,1.0832677820940877e-231,0.0,0.1111111111111111,1.0,0.19999999999999998,1,0.03448275862068961,0.11764705882352941,0.8110447525978088,0.44104617834091187,100.0,0.0010891271522268653,0.0,0.0,0.0013582383980974555,1.0,0.0,0.0,0.0,0.0,1.0
+18,asdiv,David has zero fewer apples than Marin. Marin has three apples. How many apples does David have?,3,SCoT," 1. **ANALYZE** the question: We are given that David has zero fewer apples than Marin, and we know that Marin has three apples.
+2. **PLAN** the reasoning steps: We need to find the number of apples David has. Since David has zero fewer apples than Marin, this means that David has the same number of apples as Marin.
+3. **SOLVE** step by step: Since Marin has three apples, and David has zero fewer apples than Marin, this means that David also has three apples.
+4. **STATE** the final answer clearly: David has three apples.",73.8206,19.37931034482761,10957.931573275862,67.54206896551717,9.744827586206897,3904.765625,0.021052631578947368,0.0,0.021052631578947368,0.0,0.0,0.021739130434782608,1.0,0.042553191489361694,1,0.0019011406844106071,0.05714285714285715,0.7826179265975952,0.3735235631465912,,,,,,,,,,,
+18,asdiv,David has zero fewer apples than Marin. Marin has three apples. How many apples does David have?,3,MGCoT," David has zero fewer apples than Marin, who has three apples. Therefore, David has three apples.
+
+**METRIC DEFINITIONS**
+- **Readability**: 100.000 (Flesch-Kincaid)
+- **Coherence**: 0.004
+- **Relevance**: 0.000
+- **Specificity**: 0.000
+- **Engagement**: 0.002
+- **Concise**: 1.000
+- **Length**: 0.000
+- **Zipf**: 0.000
+- **Hapax**: 0.000
+- **Entropy**: 0.000
+- **Perplexity**: 1.000
+
+**TARGET METRICS**
+- **Readability**: 100.000
+- **Coherence**: 0.004
+- **Relevance**: 0.000
+- **Specificity**: 0.000
+- **Engagement**: 0.002
+- **Concise**: 1.000
+- **Length**: 0.000
+- **Zipf**: 0.000
+- **Hapax",154.8458,22.463122923588045,11000.725329630399,67.81229235880396,12.956810631229235,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.7714331150054932,0.20466327667236328,100.0,0.0036821214016526937,0.0,0.0,0.002007769187912345,1.0,0.0,0.0,0.0,0.0,1.0
+19,asdiv,Jake has 34 fewer balls than Audrey. Audrey has 41 balls. How many balls does Jake have?,7,SCoT," 1. **ANALYZE** the question: We need to find out how many balls Jake has.
+2. **PLAN** the reasoning steps: We know that Jake has 34 fewer balls than Audrey, and Audrey has 41 balls.
+3. **SOLVE** step by step:
+   a. We know that Audrey has 41 balls.
+   b. We know that Jake has 34 fewer balls than Audrey.
+   c. To find out how many balls Jake has, we subtract 34 from 41 (Audrey's balls - 34 = Jake's balls).
+   d. 41 - 34 = 7.
+4. **STATE** the final answer clearly: Jake has 7 balls.",88.2386,19.940229885057473,11123.484756645115,68.57586206896552,9.637931034482758,3904.765625,0.021276595744680854,0.0,0.021276595744680854,5.835491250550373e-232,0.0,0.0196078431372549,1.0,0.038461538461538464,1,0.0020618556701030855,0.047619047619047616,0.7754218578338623,0.32471078634262085,,,,,,,,,,,
+19,asdiv,Jake has 34 fewer balls than Audrey. Audrey has 41 balls. How many balls does Jake have?,7,MGCoT," To determine how many balls Jake has, we can use the information given: Audrey has 41 balls, and Jake has 34 fewer balls than Audrey.
+
+We can set up an equation to represent this relationship:
+
+Jake's balls = Audrey's balls - 34
+
+Now, we can plug in the value of Audrey's balls:
+
+Jake's balls = 41 - 34
+
+Jake's balls = 7
+
+So, Jake has 7 balls.",62.9823,21.151694915254257,11052.098649364407,68.12203389830513,11.983050847457626,3904.765625,0.029411764705882353,0.0,0.029411764705882353,6.367803053737255e-232,0.0,0.02564102564102564,1.0,0.05,1,0.0029069767441860517,0.05405405405405406,0.7908860445022583,0.28113552927970886,100.0,0.0028877879958599806,0.0,0.0,0.0006880272994749248,1.0,0.0,0.0,0.0,0.0,1.0
+20,asdiv,Brian has zero fewer oranges than Marcie. Marcie has 12 oranges. How many oranges does Brian have?,12,SCoT," 1. **ANALYZE** the question: We are given that Brian has zero fewer oranges than Marcie, and we know that Marcie has 12 oranges.
+2. **PLAN** the reasoning steps: We need to find out how many oranges Brian has. Since Brian has zero fewer oranges than Marcie, this means that Brian has the same number of oranges as Marcie minus zero.
+3. **SOLVE** step by step: If Marcie has 12 oranges, and Brian has zero fewer oranges than Marcie, then Brian has 12 - 0 = 12 oranges.
+4. **STATE** the final answer clearly: Brian has 12 oranges.",81.2186,20.633750000000013,11109.733666992188,68.48000000000005,9.75,3904.765625,0.020833333333333332,0.0,0.020833333333333332,5.8051759849861466e-232,0.0,0.018518518518518517,1.0,0.03636363636363636,1,0.003780718336483968,0.10256410256410257,0.7687175273895264,0.3802000880241394,,,,,,,,,,,
+20,asdiv,Brian has zero fewer oranges than Marcie. Marcie has 12 oranges. How many oranges does Brian have?,12,MGCoT," Brian has zero fewer oranges than Marcie, who has 12 oranges. Therefore, Brian has 12 - 0 = 12 oranges.",21.7959,19.17777777777779,10892.500434027777,67.13055555555553,11.944444444444445,3904.765625,0.10526315789473684,0.0,0.10526315789473684,8.614911585158347e-232,0.0,0.06666666666666667,1.0,0.125,1,0.019230769230769273,0.15384615384615385,0.8063672780990601,0.3585120737552643,100.0,0.0010891271522268653,0.0,0.0,0.0013582383980974555,1.0,0.0,0.0,0.0,0.0,1.0
+21,asdiv,2 birds were sitting on the fence. 4 more birds came to join them. How many birds are sitting on the fence?,6,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of birds sitting on the fence.
+2. **PLAN** the reasoning steps: We know that initially, there were 2 birds on the fence. Then, 4 more birds joined them. So, we need to add the initial number of birds to the number of birds that joined them.
+3. **SOLVE** step by step: 
+   - Step 1: Identify the initial number of birds: 2 birds
+   - Step 2: Identify the number of birds that joined: 4 birds
+   - Step 3: Add the initial number of birds to the number of birds that joined: 2 birds + 4 birds = 6 birds
+4. **STATE** the final answer clearly: There are 6 birds sitting on the fence.",93.7828,20.075135135135145,11000.420059121621,67.81081081081106,9.535135135135135,3904.765625,0.016666666666666666,0.0,0.016666666666666666,5.4595004015312194e-232,0.0,0.019230769230769232,1.0,0.03773584905660378,1,0.0015337423312883347,0.05,0.7724913358688354,0.37773966789245605,,,,,,,,,,,
+21,asdiv,2 birds were sitting on the fence. 4 more birds came to join them. How many birds are sitting on the fence?,6,MGCoT," Initially, there were 2 birds sitting on the fence. Then, 4 more birds joined them. To find the total number of birds on the fence, we simply add the number of birds that were already there to the number of new birds that joined them.
+
+So, 2 birds (initial) + 4 birds (joined) = 6 birds (total)
+
+Therefore, there are 6 birds sitting on the fence.",51.4306,20.98526315789472,10909.27578125,67.23578947368415,12.505263157894737,3904.765625,0.03076923076923077,0.0,0.03076923076923077,6.3917876705550364e-232,0.0,0.027777777777777776,1.0,0.05405405405405406,1,0.0028818443804035088,0.06060606060606061,0.7870072722434998,0.37783896923065186,98.30669403076172,0.11323292553424835,0.07575875520706177,0.10982488840818405,0.006287744734436274,0.8568997383117676,0.0,0.036320850253105164,0.041255973279476166,0.2988598644733429,1.5199826955795288
+22,asdiv,You have 7 cookies and you ate 2 of them. How many cookies do you have left?,5,SCoT," 1. **ANALYZE** the question: The question is asking how many cookies are left after eating 2 out of 7 cookies.
+2. **PLAN** the reasoning steps: To find the answer, we need to subtract the number of cookies eaten from the total number of cookies.
+3. **SOLVE** step by step:
+   a. Start with the total number of cookies: 7
+   b. Subtract the number of cookies eaten: 7 - 2 = 5
+4. **STATE** the final answer clearly: After eating 2 cookies, you have 5 cookies left.",68.6615,19.32,11011.076475694445,67.89185185185165,9.644444444444444,3904.765625,0.02380952380952381,0.0,0.02380952380952381,6.00003235250667e-232,0.0,0.0196078431372549,1.0,0.038461538461538464,1,0.002159827213822907,0.05128205128205127,0.7824573516845703,0.32005980610847473,,,,,,,,,,,
+22,asdiv,You have 7 cookies and you ate 2 of them. How many cookies do you have left?,5,MGCoT," You initially had 7 cookies and you ate 2 of them. To find out how many cookies you have left, you can subtract the number of cookies you ate from the total number of cookies you had. So, 7 cookies minus 2 cookies equals 5 cookies. You have 5 cookies left.",36.8452,20.90151515151515,11010.05829782197,67.88030303030311,12.06060606060606,3904.765625,0.038461538461538464,0.0,0.038461538461538464,6.817352958349419e-232,0.0,0.034482758620689655,1.0,0.06666666666666667,1,0.0038910505836575737,0.07142857142857142,0.7895500063896179,0.3595409691333771,98.5859375,0.0,0.0,0.0,0.0005072595668025315,0.9545164704322815,0.0,0.0,0.0,0.0,1.0
+23,asdiv,You have collected 7 crickets. How many more crickets do you need to collect to have 11 crickets?,4,SCoT," 1. **ANALYZE** the question: The question is asking how many more crickets are needed to reach a total of 11 crickets.
+2. **PLAN** the reasoning steps: To find out how many more crickets are needed, we need to subtract the number of crickets already collected from the desired total number of crickets.
+3. **SOLVE** step by step:
+   a. We have 7 crickets already collected.
+   b. We want to have a total of 11 crickets.
+   c. To find out how many more crickets are needed, we subtract the number of crickets already collected from the desired total number of crickets: 11 - 7 = 4.
+4. **STATE** the final answer clearly: You need to collect 4 more crickets to have a total of 11 crickets.",98.8127,19.5697435897436,11073.304326923077,68.2523076923076,9.476923076923077,3904.765625,0.016260162601626018,0.0,0.016260162601626018,5.4595004015312194e-232,0.0,0.01818181818181818,1.0,0.03571428571428572,1,0.0014534883720930258,0.052631578947368425,0.7641826272010803,0.33478352427482605,,,,,,,,,,,
+23,asdiv,You have collected 7 crickets. How many more crickets do you need to collect to have 11 crickets?,4,MGCoT," To have 11 crickets, you need to collect 11 - 7 = 4 more crickets.",16.781,18.865384615384617,11047.351412259615,68.08461538461543,14.538461538461538,3904.765625,0.14285714285714288,0.0,0.14285714285714288,9.257324954728539e-232,0.0,0.07142857142857142,1.0,0.13333333333333333,1,0.014925373134328401,0.07692307692307693,0.8088202476501465,0.28937920928001404,98.1370620727539,0.026911720633506775,0.0,0.0,0.0029068798758089542,0.9119170308113098,0.0,0.004680328071117401,0.0,0.14251938462257385,1.2608280181884766
+24,asdiv,4 birds are sitting on a branch. 1 flies away. How many birds are left on the branch?,3,SCoT," 1. **ANALYZE** the question: The question is asking how many birds are left on the branch after one of them flies away.
+2. **PLAN** the reasoning steps: We know that there were 4 birds on the branch initially, and one of them flew away. So, we need to subtract the number of birds that flew away from the initial number of birds.
+3. **SOLVE** step by step: 
+   - Initial number of birds: 4
+   - Number of birds that flew away: 1
+   - Remaining birds: 4 - 1 = 3
+4. **STATE** the final answer clearly: There are 3 birds left on the branch.",78.7303,19.20516129032259,11078.14009576613,68.27612903225788,9.44516129032258,3904.765625,0.020202020202020204,0.0,0.020202020202020204,5.7187224260924895e-232,0.0,0.018518518518518517,1.0,0.03636363636363636,1,0.0018587360594795044,0.05405405405405406,0.778175413608551,0.32664695382118225,,,,,,,,,,,
+24,asdiv,4 birds are sitting on a branch. 1 flies away. How many birds are left on the branch?,3,MGCoT," 4 birds were initially on the branch. After one bird flew away, there are now 3 birds left on the branch.",17.2997,18.755555555555556,11026.226128472223,67.9962962962963,14.666666666666666,3904.765625,0.0909090909090909,0.0,0.0909090909090909,8.510469113101058e-232,0.0,0.05263157894736842,1.0,0.1,1,0.009433962264150941,0.0909090909090909,0.8144991397857666,0.28041574358940125,100.0,0.014845306053757668,0.0,0.0,0.001324920100159943,0.9962349534034729,0.0,0.0,0.0,0.0,1.070026159286499
+25,asdiv,3 raccoons are playing in the woods. 2 go home to eat dinner. How many raccoons are left in the woods?,1,SCoT," 1. **ANALYZE** the question: The question is asking how many raccoons are left in the woods after 2 of them go home to eat dinner.
+2. **PLAN** the reasoning steps needed: We know that there were initially 3 raccoons in the woods. Two of them went home to eat dinner. So, we need to subtract the number of raccoons that went home from the initial number of raccoons.
+3. **SOLVE** step by step: 
+   - Step 1: Identify the initial number of raccoons: 3 raccoons
+   - Step 2: Identify the number of raccoons that went home: 2 raccoons
+   - Step 3: Subtract the number of raccoons that went home from the initial number of raccoons: 3 - 2 = 1 raccoon
+4. **STATE** the final answer clearly: There is 1 raccoon left in the woods.",110.9672,20.6662100456621,11005.424158105023,67.83789954337885,10.118721461187215,3904.765625,0.015384615384615384,0.0,0.015384615384615384,5.354662760929083e-232,0.0,0.017543859649122806,1.0,0.034482758620689655,1,0.0013831258644536604,0.05405405405405406,0.7674807906150818,0.2819386422634125,,,,,,,,,,,
+25,asdiv,3 raccoons are playing in the woods. 2 go home to eat dinner. How many raccoons are left in the woods?,1,MGCoT," 3 raccoons were initially playing in the woods. When 2 of them went home to eat dinner, the number of raccoons left in the woods is 1.",22.8086,20.544736842105266,10901.502261513158,67.19473684210529,12.263157894736842,3904.765625,0.07142857142857142,0.0,0.07142857142857142,0.0,0.0,0.043478260869565216,1.0,0.08333333333333333,1,0.007407407407407418,0.07407407407407407,0.797133207321167,0.25439634919166565,99.84273529052734,0.027691112831234932,0.19360262155532837,0.24065038561820984,0.0,0.9749969840049744,0.0,0.19570428133010864,0.21121150255203247,0.06393090635538101,1.1483250856399536
+26,asdiv,"1 lonely pigeons was eating breadcrumbs. Another pigeon came to eat breadcrumbs, too. How many pigeons are eating breadcrumbs now?",2,SCoT," 1. **ANALYZE** the question: The question is asking how many pigeons are eating breadcrumbs now.
+2. **PLAN** the reasoning steps needed: We know that initially, there was 1 lonely pigeon eating breadcrumbs. Then, another pigeon came to eat breadcrumbs. So, we need to add 1 to the initial count of pigeons.
+3. **SOLVE** step by step: 
+   - Step 1: Identify the initial number of pigeons eating breadcrumbs: 1 pigeon
+   - Step 2: Identify the number of pigeons that came to eat breadcrumbs: 1 pigeon
+   - Step 3: Add the initial number of pigeons to the number of pigeons that came to eat breadcrumbs: 1 + 1 = 2 pigeons
+4. **STATE** the final answer clearly: There are now 2 pigeons eating breadcrumbs.",112.0471,20.970135746606367,11024.117700084842,67.95927601809963,9.950226244343892,3904.765625,0.016949152542372885,0.0,0.016949152542372885,5.4817391526732266e-232,0.0,0.01818181818181818,1.0,0.03571428571428572,1,0.0014245014245014564,0.052631578947368425,0.7684032917022705,0.2938602566719055,,,,,,,,,,,
+26,asdiv,"1 lonely pigeons was eating breadcrumbs. Another pigeon came to eat breadcrumbs, too. How many pigeons are eating breadcrumbs now?",2,MGCoT," 1 lonely pigeon was eating breadcrumbs. Another pigeon came to eat breadcrumbs, too. Now, there are 2 pigeons eating breadcrumbs.",24.2898,19.817499999999995,10960.763671875,67.58749999999995,11.45,3904.765625,0.09523809523809523,0.0,0.09523809523809523,8.614911585158347e-232,0.0,0.05555555555555555,1.0,0.10526315789473684,1,0.007692307692307665,0.07999999999999999,0.7946628928184509,0.2490832507610321,99.27337646484375,0.02836371585726738,0.2738167941570282,0.2835790514945984,0.0007982365787029266,0.9574140906333923,0.0,0.31228870153427124,0.31558918952941895,0.0621105320751667,1.0681637525558472
+27,asdiv,3 owls were sitting on the fence. 2 more owls joined them. How many owls are on the fence now?,5,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of owls on the fence after 2 more owls join the initial 3 owls.
+2. **PLAN** the reasoning steps: We need to add the initial number of owls (3) to the number of owls that joined (2).
+3. **SOLVE** step by step: 
+   - Step 1: Identify the initial number of owls: 3 owls
+   - Step 2: Identify the number of owls that joined: 2 owls
+   - Step 3: Add the initial number of owls to the number of owls that joined: 3 owls + 2 owls = 5 owls
+4. **STATE** the final answer clearly: There are 5 owls on the fence now.",103.3048,19.835784313725497,11119.201191023285,68.52352941176473,10.009803921568627,3904.765625,0.018018018018018018,0.0,0.018018018018018018,5.56331772444502e-232,0.0,0.02040816326530612,1.0,0.039999999999999994,1,0.0017271157167529916,0.04878048780487806,0.7669752240180969,0.358432799577713,,,,,,,,,,,
+27,asdiv,3 owls were sitting on the fence. 2 more owls joined them. How many owls are on the fence now?,5,MGCoT," Initially, there were 3 owls on the fence. Then, 2 more owls joined them. To find the total number of owls on the fence now, we simply add the initial number of owls to the number of owls that joined them.
+
+3 owls (initial) + 2 owls (joined) = 5 owls (total)
+
+So, there are now 5 owls on the fence.",56.4742,21.08952380952381,11067.754613095238,68.22095238095237,12.361904761904762,3904.765625,0.03333333333333333,0.0,0.03333333333333333,6.518923202947529e-232,0.0,0.030303030303030304,1.0,0.05882352941176471,1,0.0033444816053511683,0.0625,0.7851468324661255,0.3612877428531647,98.072021484375,0.0483427457511425,0.013799138367176056,0.054853085428476334,0.002563938731327653,0.8925895094871521,0.0,0.04824480414390564,0.047252170741558075,0.11381179094314575,1.1981911659240723
+28,asdiv,2 beavers were working on their home. 1 went for a swim. How many beavers are still working on their home?,1,SCoT," 1. **ANALYZE** the question: The question is asking how many beavers are still working on their home after one of them went for a swim.
+2. **PLAN** the reasoning steps: We know that there were 2 beavers working on their home, and one of them went for a swim. So, we need to subtract the number of beavers that went for a swim from the total number of beavers.
+3. **SOLVE** step by step: We start with 2 beavers working on their home. One beaver went for a swim, so we subtract 1 from 2. 2 - 1 = 1.
+4. **STATE** the final answer clearly: There is 1 beaver still working on their home.",88.2358,19.612068965517235,11181.075004489943,68.91551724137943,9.333333333333334,3904.765625,0.017543859649122806,0.0,0.017543859649122806,5.56331772444502e-232,0.0,0.017241379310344827,1.0,0.03389830508474576,1,0.001712328767123239,0.05405405405405406,0.7820418477058411,0.31150582432746887,,,,,,,,,,,
+28,asdiv,2 beavers were working on their home. 1 went for a swim. How many beavers are still working on their home?,1,MGCoT, 1 beaver is still working on their home.,9.7544,18.8,11099.111653645834,68.39999999999999,26.25,3904.765625,0.2222222222222222,0.0,0.2222222222222222,1.0832677820940877e-231,0.0,0.1111111111111111,1.0,0.19999999999999998,1,0.024390243902439046,0.1,0.8463375568389893,0.24373860657215118,98.4742660522461,0.06862267106771469,0.08016140758991241,0.11967150121927261,0.002858677413314581,0.903201162815094,0.0,0.0626818910241127,0.07396581023931503,0.1939762681722641,1.3068890571594238
+29,asdiv,2 toucans are sitting on a tree limb. 1 more toucan joins them. How many toucans in all?,3,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of toucans on the tree limb after one more toucan joins the two already there.
+2. **PLAN** the reasoning steps: We know that there are initially 2 toucans on the limb. We are given that 1 more toucan joins them. So, we need to add the initial number of toucans to the number of toucans that join them.
+3. **SOLVE** step by step: 
+   - Step 1: Identify the initial number of toucans: 2 toucans
+   - Step 2: Identify the number of toucans joining: 1 toucan
+   - Step 3: Add the initial number of toucans to the number of toucans joining: 2 toucans + 1 toucan = 3 toucans
+4. **STATE** the final answer clearly: There are 3 toucans in all on the tree limb.",115.4,19.922368421052653,11140.122807017544,68.66096491228058,9.543859649122806,3904.765625,0.015151515151515152,0.0,0.015151515151515152,5.3348669960151344e-232,0.0,0.01694915254237288,1.0,0.03333333333333333,1,0.0013774104683195176,0.05128205128205127,0.766167402267456,0.28815633058547974,,,,,,,,,,,
+29,asdiv,2 toucans are sitting on a tree limb. 1 more toucan joins them. How many toucans in all?,3,MGCoT," 3 toucans are sitting on a tree limb. One more toucan joins them, making a total of 4 toucans.",19.783,19.028124999999992,10891.742797851562,67.09999999999997,12.25,3904.765625,0.1,0.0,0.1,8.726094729337945e-232,0.0,0.05263157894736842,1.0,0.1,1,0.010526315789473717,0.08333333333333333,0.8083102107048035,0.25006136298179626,98.78251647949219,0.028707852587103844,0.0,0.0,0.00011183346214238554,0.9331170916557312,0.0,0.014108262956142426,0.010088130831718445,0.08176467567682266,1.2031430006027222
+30,asdiv,"Mrs. Hilt has two pennies, two dimes, and two nickels. Jacob has four pennies, one nickel, and one dime. How much more?",13,SCoT," 1. **ANALYZE** the question: We need to find out how much more money Mrs. Hilt has compared to Jacob.
+2. **PLAN** the reasoning steps:
+   a. Calculate the total value of Mrs. Hilt's coins.
+   b. Calculate the total value of Jacob's coins.
+   c. Subtract Jacob's total from Mrs. Hilt's total to find the difference.
+3. **SOLVE** step by step:
+   a. Mrs. Hilt has 2 pennies, 2 dimes, and 2 nickels.
+      - 2 pennies * $0.01 = $0.02
+      - 2 dimes * $0.10 = $0.20
+      - 2 nickels * $0.05 = $0.10
+      - Total value of Mrs. Hilt's coins = $0.02 + $0.20 + $0.10 = $0.32
+   b. Jacob has 4 pennies, 1 nickel, and 1 dime.
+      - 4 pennies * $0.01 = $0.04
+      - 1 nickel * $0.05 = $0.05
+      - 1 dime *",152.1907,20.443853820598036,10972.92447051495,67.64053156146184,9.903654485049834,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002844950213371278,0.0909090909090909,0.7537055611610413,0.02278146706521511,,,,,,,,,,,
+30,asdiv,"Mrs. Hilt has two pennies, two dimes, and two nickels. Jacob has four pennies, one nickel, and one dime. How much more?",13,MGCoT," To determine how much more money Mrs. Hilt has compared to Jacob, we need to calculate the total amount of money each person has and then subtract Jacob's total from Mrs. Hilt's total.
+
+Mrs. Hilt has:
+- 2 pennies (2 * $0.01 = $0.02)
+- 2 dimes (2 * $0.10 = $0.20)
+- 2 nickels (2 * $0.05 = $0.10)
+
+So, Mrs. Hilt has a total of $0.02 + $0.20 + $0.10 = $0.32.
+
+Jacob has:
+- 4 pennies (4 * $0.01 = $0.04)
+- 1 nickel (1 * $0.05 = $0.05)
+- 1 dime (1 * $0.10 = $0.10)
+
+So, Jacob has a total of $0.04 + $0.05 + $0.10 = $0.19.
+
+Now, we subtract Jacob's total from Mrs. Hilt's total: $0.32 - $0.19 = $0.13.
+
+Mrs.",155.4502,22.117607973421947,11041.288128114618,68.04983388704323,12.710963455149502,3904.765625,0.015384615384615384,0.0,0.015384615384615384,0.0,0.0,0.0,0.0,0.0,0,0.0033222591362126463,0.09302325581395349,0.7556565999984741,0.049358174204826355,100.0,0.08674807846546173,0.33513569831848145,0.4011409878730774,0.0003777366073336452,0.9470661282539368,0.0,0.3142516613006592,0.3417079448699951,0.21301716566085815,1.4809508323669434
+31,asdiv,"Mrs. Hilt found a quarter, 1 dime, and 2 nickels. How much money did she find?",45,SCoT," 1. **ANALYZE** the question: The question is asking for the total amount of money Mrs. Hilt found.
+2. **PLAN** the reasoning steps needed: We need to find the value of each coin and then add them together.
+3. **SOLVE** step by step:
+   - A quarter is worth 25 cents.
+   - A dime is worth 10 cents.
+   - Two nickels are worth 2 * 5 = 10 cents.
+   - Add the values of the coins: 25 + 10 + 10 = 45 cents.
+4. **STATE** the final answer clearly: Mrs. Hilt found 45 cents.",82.1133,19.936249999999994,11292.146508789063,69.60062500000012,9.98125,3904.765625,0.023529411764705882,0.0,0.023529411764705882,5.866614974264094e-232,0.0,0.016666666666666666,1.0,0.03278688524590164,1,0.004282655246252709,0.1,0.775351881980896,0.23367083072662354,,,,,,,,,,,
+31,asdiv,"Mrs. Hilt found a quarter, 1 dime, and 2 nickels. How much money did she find?",45,MGCoT," To determine the total amount of money Mrs. Hilt found, we need to calculate the value of each coin and then add them together.
+
+1. A quarter is worth 25 cents.
+2. A dime is worth 10 cents.
+3. Two nickels are worth 2 * 5 cents, which is 10 cents.
+
+Now, let's add the values of the coins together:
+
+25 cents (quarter) + 10 cents (dime) + 10 cents (two nickels) = 45 cents
+
+So, Mrs. Hilt found a total of 45 cents.",75.068,21.510563380281702,11250.488363776409,69.34436619718313,12.253521126760564,3904.765625,0.024390243902439022,0.0,0.024390243902439022,6.017810420952586e-232,0.0,0.018867924528301886,1.0,0.037037037037037035,1,0.004842615012106588,0.1,0.7715964317321777,0.2687098979949951,99.60609436035156,0.030529651790857315,0.0,0.0,0.0,0.9597452878952026,0.0009747177828103304,0.0,0.0,0.08679307252168655,1.2450764179229736
+32,asdiv,"Mrs. Hilt's favorite first grade classes are baking muffins. Mrs. Brier's class bakes 18 muffins, Mrs. MacAdams's class bakes 20 muffins, and Mrs. Flannery's class bakes 17 muffins. How many muffins does first grade bake in all?",55,SCoT," 1. **ANALYZE** the question is asking for the total number of muffins baked by all first grade classes.
+2. **PLAN** to add the number of muffins baked by each class.
+3. **SOLVE** by adding the number of muffins baked by each class: 18 (Mrs. Brier's class) + 20 (Mrs. MacAdams's class) + 17 (Mrs. Flannery's class).
+4. **STATE** the final answer: The first grade classes bake a total of 55 muffins.",72.7239,20.130281690140848,11272.077684859154,69.48380281690156,10.126760563380282,3904.765625,0.0273972602739726,0.0,0.0273972602739726,6.276156094153475e-232,0.0,0.02127659574468085,1.0,0.04166666666666667,1,0.005025125628140725,0.047619047619047616,0.7786798477172852,0.1751461625099182,,,,,,,,,,,
+32,asdiv,"Mrs. Hilt's favorite first grade classes are baking muffins. Mrs. Brier's class bakes 18 muffins, Mrs. MacAdams's class bakes 20 muffins, and Mrs. Flannery's class bakes 17 muffins. How many muffins does first grade bake in all?",55,MGCoT," To find out how many muffins first grade bakes in all, we need to add the number of muffins baked by each class. Mrs. Hilt's favorite first grade classes are baking muffins. Mrs. Brier's class bakes 18 muffins, Mrs. MacAdams's class bakes 20 muffins, and Mrs. Flannery's class bakes 17 muffins.
+
+So, the total number of muffins baked by first grade is:
+
+18 (from Mrs. Brier's class) + 20 (from Mrs. MacAdams's class) + 17 (from Mrs. Flannery's class) = 55 muffins.
+
+Therefore, first grade bakes 55 muffins in all.",98.776,22.32994652406419,10987.907586898396,67.7310160427809,12.770053475935828,3904.765625,0.021052631578947368,0.0,0.021052631578947368,5.9149039435907374e-232,0.0,0.020833333333333332,1.0,0.04081632653061225,1,0.0038910505836575737,0.052631578947368425,0.7714760899543762,0.16502313315868378,97.74044036865234,0.0626167431473732,0.0,0.027411140501499176,0.005087783560156822,0.8763641715049744,0.0,0.09545862674713135,0.11243961751461029,0.15209239721298218,1.3302785158157349
+33,asdiv,Mrs. Hilt bought a yoyo for 24 cents and a whistle for 14 cents. How much did she spend in all for the two toys?,38,SCoT," 1. **ANALYZE** the question is asking for the total amount spent by Mrs. Hilt on a yoyo and a whistle.
+2. **PLAN** to add the cost of the yoyo and the whistle to find the total amount spent.
+3. **SOLVE** step by step:
+   - The cost of the yoyo is 24 cents.
+   - The cost of the whistle is 14 cents.
+   - Add the cost of the yoyo and the whistle: 24 cents + 14 cents = 38 cents.
+4. **STATE** the final answer clearly: Mrs. Hilt spent 38 cents in total for the two toys.",82.4124,21.241975308641987,11099.916666666666,68.42592592592597,10.518518518518519,3904.765625,0.02173913043478261,0.0,0.02173913043478261,5.820234933757166e-232,0.0,0.021739130434782608,1.0,0.042553191489361694,1,0.004264392324093813,0.10256410256410257,0.7618855834007263,0.20709951221942902,,,,,,,,,,,
+33,asdiv,Mrs. Hilt bought a yoyo for 24 cents and a whistle for 14 cents. How much did she spend in all for the two toys?,38,MGCoT," To find out how much Mrs. Hilt spent in total for the two toys, we need to add the cost of the yoyo and the whistle. The yoyo cost 24 cents and the whistle cost 14 cents. So, we add 24 cents and 14 cents together.
+
+24 cents + 14 cents = 38 cents
+
+Mrs. Hilt spent 38 cents in total for the two toys.",55.4275,21.08333333333333,11002.453776041666,67.80980392156869,12.392156862745098,3904.765625,0.03125,0.0,0.03125,6.4162308992004585e-232,0.0,0.03125,1.0,0.06060606060606061,1,0.006688963210702337,0.125,0.7802356481552124,0.17151044309139252,99.52420806884766,0.07469245791435242,0.14887753129005432,0.16872656345367432,0.0022597399074584246,0.9333173036575317,0.0,0.12288415431976318,0.1177331954240799,0.20928233861923218,1.3930127620697021
+34,asdiv,Mrs. Hilt made 5 Rice Krispie Treats. She used 8 large marshmallows and 10 mini marshmallows. How many marshmallows did she use altogether?,18,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of marshmallows Mrs. Hilt used to make 5 Rice Krispie Treats.
+2. **PLAN** the reasoning steps: We know that Mrs. Hilt used 8 large marshmallows and 10 mini marshmallows. We need to find the total number of marshmallows used.
+3. **SOLVE** step by step:
+   a. We know that Mrs. Hilt used 8 large marshmallows.
+   b. We also know that she used 10 mini marshmallows.
+   c. To find the total number of marshmallows, we need to add the number of large marshmallows and the number of mini marshmallows.
+   d. 8 large marshmallows + 10 mini marshmallows = 18 marshmallows
+4. **STATE** the final answer clearly: Mrs. Hilt used a total of 18 marshmallows to make the 5 Rice Krispie Treats.",131.1079,19.759845559845573,11189.320041023166,68.97644787644771,9.536679536679536,3904.765625,0.015384615384615384,0.0,0.015384615384615384,5.385059418481704e-232,0.0,0.017241379310344827,1.0,0.03389830508474576,1,0.0026560424966799445,0.09756097560975609,0.7665712833404541,0.12083819508552551,,,,,,,,,,,
+34,asdiv,Mrs. Hilt made 5 Rice Krispie Treats. She used 8 large marshmallows and 10 mini marshmallows. How many marshmallows did she use altogether?,18,MGCoT," To determine the total number of marshmallows Mrs. Hilt used, we need to consider both the large and mini marshmallows. She used 8 large marshmallows and 10 mini marshmallows.
+
+To find the total number of marshmallows, we simply add the number of large marshmallows to the number of mini marshmallows:
+
+8 large marshmallows + 10 mini marshmallows = 18 marshmallows
+
+So, Mrs. Hilt used a total of 18 marshmallows to make the 5 Rice Krispie Treats.",80.0815,27.256291390728475,11209.06304325331,69.09403973509929,12.649006622516556,3904.765625,0.026666666666666665,0.0,0.026666666666666665,6.17028075639052e-232,0.0,0.027777777777777776,1.0,0.05405405405405406,1,0.004474272930648726,0.11764705882352941,0.7823954820632935,0.12409928441047668,99.62993621826172,0.020417463034391403,0.05058078467845917,0.07271959632635117,0.0,0.9628031253814697,0.0007942838128656149,0.07144594192504883,0.0778031051158905,0.04193617030978203,1.1463490724563599
+35,asdiv,"At Mrs. Hilt's house, there was 29 inches of snow, and Brecknock Elementary School received 17 inches of snow. How much more snow did Mrs. Hilt's house have?",12,SCoT," 1. **ANALYZE** the question is asking for the difference in snowfall between Mrs. Hilt's house and Brecknock Elementary School.
+2. **PLAN** to find the difference, we need to subtract the amount of snow at the school from the amount of snow at Mrs. Hilt's house.
+3. **SOLVE** step by step:
+   a. We know that Mrs. Hilt's house had 29 inches of snow.
+   b. Brecknock Elementary School had 17 inches of snow.
+   c. To find the difference, we subtract the amount of snow at the school from the amount of snow at Mrs. Hilt's house: 29 inches - 17 inches = 12 inches.
+4. **STATE** the final answer clearly: Mrs. Hilt's house had 12 inches more snow than Brecknock Elementary School.",107.6342,21.830952380952397,11423.072488839285,70.41619047619038,10.428571428571429,3904.765625,0.01612903225806452,0.0,0.01612903225806452,5.50443835102825e-232,0.0,0.017241379310344827,1.0,0.03389830508474576,1,0.002949852507374673,0.09756097560975609,0.769304633140564,0.26603057980537415,,,,,,,,,,,
+35,asdiv,"At Mrs. Hilt's house, there was 29 inches of snow, and Brecknock Elementary School received 17 inches of snow. How much more snow did Mrs. Hilt's house have?",12,MGCoT," To find out how much more snow Mrs. Hilt's house had compared to Brecknock Elementary School, we need to subtract the amount of snow at the school from the amount of snow at Mrs. Hilt's house.
+
+Mrs. Hilt's house: 29 inches of snow
+Brecknock Elementary School: 17 inches of snow
+
+29 inches - 17 inches = 12 inches
+
+Mrs. Hilt's house had 12 inches more snow than Brecknock Elementary School.",67.0685,22.006400000000014,11162.8433125,68.80399999999996,12.752,3904.765625,0.0273972602739726,0.0,0.0273972602739726,6.298451848768724e-232,0.0,0.029411764705882353,1.0,0.05714285714285715,1,0.00512820512820511,0.11764705882352941,0.7831331491470337,0.15880648791790009,97.55197143554688,0.28857725858688354,0.2610522508621216,0.2874250113964081,0.01234928797930479,0.6981020569801331,0.0,0.15038679540157318,0.18934085965156555,0.894060492515564,2.645259141921997
+36,asdiv,Mrs. Hilt has $10. She spends $3 on a toy truck and $2 on a pencil case. How much money does she have left?,5,SCoT," 1. **ANALYZE** the question: The question is asking for the remaining amount of money Mrs. Hilt has after spending on a toy truck and a pencil case.
+2. **PLAN** the reasoning steps: We need to subtract the cost of the toy truck and the pencil case from the initial amount of money Mrs. Hilt has.
+3. **SOLVE** step by step:
+   - Mrs. Hilt has $10 initially.
+   - She spends $3 on a toy truck.
+   - She has $10 - $3 = $7 left.
+   - She spends $2 on a pencil case.
+   - She has $7 - $2 = $5 left.
+4. **STATE** the final answer clearly: Mrs. Hilt has $5 left.",92.44,20.30384615384617,11255.98570570055,69.37912087912083,9.472527472527473,3904.765625,0.01941747572815534,0.0,0.01941747572815534,0.0,0.0,0.017857142857142856,1.0,0.03508771929824561,1,0.0017985611510791255,0.05,0.7739791870117188,0.2716435194015503,,,,,,,,,,,
+36,asdiv,Mrs. Hilt has $10. She spends $3 on a toy truck and $2 on a pencil case. How much money does she have left?,5,MGCoT," Mrs. Hilt starts with $10. She spends $3 on a toy truck and $2 on a pencil case. To find out how much money she has left, we need to subtract the total amount she spent from the initial amount she had.
+
+Initial amount: $10
+Amount spent on toy truck: $3
+Amount spent on pencil case: $2
+
+Total amount spent: $3 + $2 = $5
+
+Now, we subtract the total amount spent from the initial amount:
+
+$10 - $5 = $5
+
+Mrs. Hilt has $5 left.",72.4968,21.67279411764708,11198.475068933823,69.03161764705878,11.897058823529411,3904.765625,0.024096385542168676,0.0,0.024096385542168676,0.0,0.0,0.023255813953488372,1.0,0.04545454545454545,1,0.002358490566037763,0.05714285714285715,0.7804063558578491,0.2479737251996994,98.9323959350586,0.02895660512149334,0.1205146387219429,0.1494852900505066,0.0,0.9485584497451782,0.0006228054407984018,0.20584933459758759,0.22383268177509308,0.10614342242479324,1.2101701498031616
+37,asdiv,Mrs. Hilt reads 5 books a day. How many books does she read in 3 days?,15,SCoT," 1. **ANALYZE** the question: The question is asking how many books Mrs. Hilt reads in 3 days.
+2. **PLAN** the reasoning steps needed: We need to find the total number of books Mrs. Hilt reads in 3 days. To do this, we need to multiply the number of books she reads per day by the number of days.
+3. **SOLVE** step by step:
+   - Mrs. Hilt reads 5 books a day.
+   - We need to find out how many books she reads in 3 days.
+   - To do this, we multiply the number of books per day (5) by the number of days (3).
+   - 5 books/day * 3 days = 15 books
+4. **STATE** the final answer clearly: Mrs. Hilt reads 15 books in 3 days.",99.7705,19.817766497461925,11372.058395463198,70.09999999999978,9.532994923857869,3904.765625,0.016260162601626018,0.0,0.016260162601626018,5.4269696562331364e-232,0.0,0.018518518518518517,1.0,0.03636363636363636,1,0.003225806451612856,0.09523809523809523,0.7719550132751465,0.19080699980258942,,,,,,,,,,,
+37,asdiv,Mrs. Hilt reads 5 books a day. How many books does she read in 3 days?,15,MGCoT," To calculate the number of books Mrs. Hilt reads in 3 days, we can use the following formula:
+
+Number of books = (Number of books per day) x (Number of days)
+
+In this case, Mrs. Hilt reads 5 books a day, and we want to find out how many books she reads in 3 days.
+
+Number of books = 5 books/day x 3 days = 15 books
+
+So, Mrs. Hilt reads 15 books in 3 days.",60.9799,21.708771929824582,11402.33203125,70.28333333333329,11.771929824561404,3904.765625,0.026666666666666665,0.0,0.026666666666666665,6.17028075639052e-232,0.0,0.025,1.0,0.04878048780487806,1,0.005617977528089901,0.1111111111111111,0.7819603681564331,0.19339515268802643,100.0,0.010578550398349762,0.0,0.0,0.0,1.0,0.00045298549230210483,0.0,0.0,0.00991531927138567,1.1170704364776611
+38,asdiv,Mrs. Hilt saw 2 dogs and 2 chickens. How many animal legs did she see?,12,SCoT," 1. **ANALYZE** the question: We need to find the total number of legs of the animals Mrs. Hilt saw.
+2. **PLAN** the reasoning steps: We know that dogs have 4 legs and chickens have 2 legs. There are 2 dogs and 2 chickens.
+3. **SOLVE** step by step:
+   - Calculate the total number of dog legs: 2 dogs * 4 legs/dog = 8 legs
+   - Calculate the total number of chicken legs: 2 chickens * 2 legs/chicken = 4 legs
+   - Add the total number of dog legs and chicken legs: 8 legs + 4 legs = 12 legs
+4. **STATE** the final answer clearly: Mrs. Hilt saw a total of 12 animal legs.",93.2205,19.647826086956524,11443.4775390625,70.54184782608695,9.728260869565217,3904.765625,0.018518518518518517,0.0,0.018518518518518517,5.5754780543102235e-232,0.0,0.018867924528301886,1.0,0.037037037037037035,1,0.003502626970227629,0.1,0.7627122402191162,0.3212405741214752,,,,,,,,,,,
+38,asdiv,Mrs. Hilt saw 2 dogs and 2 chickens. How many animal legs did she see?,12,MGCoT," To determine the total number of animal legs Mrs. Hilt saw, we need to consider the number of legs each animal has. Dogs have 4 legs, and chickens also have 4 legs. Since Mrs. Hilt saw 2 dogs and 2 chickens, we can calculate the total number of legs as follows:
+
+(2 dogs * 4 legs per dog) + (2 chickens * 4 legs per chicken) = 8 legs + 8 legs = 16 legs
+
+So, Mrs. Hilt saw a total of 16 animal legs.",65.9666,20.85403225806452,11375.814327116936,70.1362903225807,12.024193548387096,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0025062656641604564,0.10526315789473684,0.7813308238983154,0.24632973968982697,100.0,0.024546779692173004,0.0,0.0,0.0,0.9851226806640625,0.000951132969930768,0.0,0.0,0.06545484066009521,1.2219605445861816
+39,asdiv,Mrs. Hilt saw 3 bugs eat two flowers each. How many flowers total did the bugs eat?,6,SCoT," 1. **ANALYZE** the question: We need to find the total number of flowers eaten by the bugs.
+2. **PLAN** the reasoning steps: We know that there were 3 bugs and each bug ate 2 flowers.
+3. **SOLVE** step by step: To find the total number of flowers eaten, we need to multiply the number of bugs by the number of flowers each bug ate. So, 3 bugs * 2 flowers/bug = 6 flowers.
+4. **STATE** the final answer clearly: The bugs ate a total of 6 flowers.",66.0527,20.20076923076924,11365.540895432692,70.05307692307693,9.6,3904.765625,0.022988505747126436,0.0,0.022988505747126436,5.965248090744155e-232,0.0,0.022222222222222223,1.0,0.04347826086956522,1,0.0022421524663677195,0.052631578947368425,0.7758745551109314,0.3358157277107239,,,,,,,,,,,
+39,asdiv,Mrs. Hilt saw 3 bugs eat two flowers each. How many flowers total did the bugs eat?,6,MGCoT," To determine the total number of flowers eaten by the bugs, we need to consider the number of bugs and the number of flowers each bug ate.
+
+1. There were 3 bugs.
+2. Each bug ate 2 flowers.
+
+To find the total number of flowers eaten, we multiply the number of bugs by the number of flowers each bug ate:
+
+3 bugs * 2 flowers/bug = 6 flowers
+
+So, the bugs ate a total of 6 flowers.",56.4464,20.98285714285715,11111.307105654761,68.48476190476197,11.485714285714286,3904.765625,0.025974025974025976,0.0,0.025974025974025976,6.150149066359227e-232,0.0,0.029411764705882353,1.0,0.05714285714285715,1,0.0026385224274406704,0.06060606060606061,0.781173825263977,0.28109198808670044,100.0,0.010816334746778011,0.0750286802649498,0.09317826479673386,0.0003517144650686532,1.0,0.0,0.07573901116847992,0.07510605454444885,0.0,1.0
+40,asdiv,Mrs. Hilt has 15 friends. She can only take 8 of her friends to the movies. How many friends can't go to the movies?,7,SCoT," 1. **ANALYZE** the question: The question is asking how many friends can't go to the movies out of Mrs. Hilt's 15 friends.
+2. **PLAN** the reasoning steps needed: We need to subtract the number of friends Mrs. Hilt can take to the movies from the total number of friends she has.
+3. **SOLVE** step by step: Mrs. Hilt can take 8 friends to the movies. She has a total of 15 friends. So, we subtract 8 from 15: 15 - 8 = 7.
+4. **STATE** the final answer clearly: 7 friends can't go to the movies.",80.2187,20.713924050632915,11156.852501977848,68.77468354430388,9.620253164556962,3904.765625,0.020408163265306124,0.0,0.020408163265306124,5.820234933757166e-232,0.0,0.018518518518518517,1.0,0.03636363636363636,1,0.002024291497975672,0.04878048780487806,0.7748023867607117,0.37657055258750916,,,,,,,,,,,
+40,asdiv,Mrs. Hilt has 15 friends. She can only take 8 of her friends to the movies. How many friends can't go to the movies?,7,MGCoT," Mrs. Hilt has 15 friends, and she can only take 8 of them to the movies. To find out how many friends can't go to the movies, we simply subtract the number of friends she can take from the total number of friends.
+
+15 friends - 8 friends = 7 friends
+
+So, 7 friends can't go to the movies with Mrs. Hilt.",48.9024,21.23707865168539,11105.029450491573,68.45842696629205,12.359550561797754,3904.765625,0.031746031746031744,0.0,0.031746031746031744,6.492476721861418e-232,0.0,0.027777777777777776,1.0,0.05405405405405406,1,0.003289473684210509,0.05882352941176471,0.7865336537361145,0.37714844942092896,97.75181579589844,0.162637397646904,0.1494968682527542,0.21191582083702087,0.008600722067058086,0.7989251613616943,0.0,0.15334555506706238,0.15976166725158691,0.4367392659187317,1.8939683437347412
+41,asdiv,"Mrs. Hilt ran 3 miles on Monday, 2 miles on Wednesday, and 7 miles on Friday. How many total miles did she run that week?",12,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of miles Mrs. Hilt ran in a week.
+2. **PLAN** the reasoning steps needed: We need to add the number of miles she ran on each day.
+3. **SOLVE** step by step:
+   - On Monday, she ran 3 miles.
+   - On Wednesday, she ran 2 miles.
+   - On Friday, she ran 7 miles.
+   - Add the miles she ran on each day: 3 + 2 + 7 = 12 miles.
+4. **STATE** the final answer clearly: Mrs. Hilt ran a total of 12 miles that week.",80.2148,19.346202531645588,11243.44041732595,69.29746835443055,9.341772151898734,3904.765625,0.02173913043478261,0.0,0.02173913043478261,5.7903098553232356e-232,0.0,0.019230769230769232,1.0,0.03773584905660378,1,0.004184100418409997,0.1,0.7732555270195007,0.2941906750202179,,,,,,,,,,,
+41,asdiv,"Mrs. Hilt ran 3 miles on Monday, 2 miles on Wednesday, and 7 miles on Friday. How many total miles did she run that week?",12,MGCoT," To find the total miles Mrs. Hilt ran that week, we simply need to add the miles she ran on each day. She ran 3 miles on Monday, 2 miles on Wednesday, and 7 miles on Friday. 
+
+3 miles (Monday) + 2 miles (Wednesday) + 7 miles (Friday) = 12 miles
+
+Mrs. Hilt ran a total of 12 miles that week.",53.435,21.273469387755096,11237.568797831633,69.29795918367358,12.387755102040817,3904.765625,0.03389830508474576,0.0,0.03389830508474576,6.518923202947529e-232,0.0,0.029411764705882353,1.0,0.05714285714285715,1,0.0068728522336769515,0.125,0.7975593209266663,0.1923138052225113,99.00215911865234,0.09567360579967499,0.25446105003356934,0.23879161477088928,0.0028199057560414076,0.8860033750534058,0.00027519691502675414,0.16784779727458954,0.16677847504615784,0.31736934185028076,1.493108868598938
+42,asdiv,Mrs. Hilt picked up a book that has 17 pages in it. She read 11 of the pages. How many pages did she have left to read?,6,SCoT," 1. **ANALYZE** the question: The question is asking how many pages Mrs. Hilt has left to read after reading 11 pages from a book with 17 pages.
+2. **PLAN** the reasoning steps: We need to subtract the number of pages Mrs. Hilt has read from the total number of pages in the book.
+3. **SOLVE** step by step:
+   - Start with the total number of pages in the book: 17 pages
+   - Subtract the number of pages Mrs. Hilt has read: 17 - 11 = 6 pages
+4. **STATE** the final answer clearly: Mrs. Hilt has 6 pages left to read.",80.9008,19.42704402515724,11366.278056210691,70.06981132075487,9.572327044025156,3904.765625,0.020408163265306124,0.0,0.020408163265306124,5.746825102397619e-232,0.0,0.02,1.0,0.0392156862745098,1,0.0019305019305019266,0.052631578947368425,0.767366886138916,0.30498626828193665,,,,,,,,,,,
+42,asdiv,Mrs. Hilt picked up a book that has 17 pages in it. She read 11 of the pages. How many pages did she have left to read?,6,MGCoT," Mrs. Hilt picked up a book with 17 pages in total. She read 11 of these pages, so she has 17 - 11 = 6 pages left to read. This response has a readability score of 98.886, coherence of 0.124, relevance of 0.050, specificity of 0.107, engagement of 0.009, conciseness of 0.866, length of 0.000, zipf of 0.108, hapax of 0.112, entropy of 0.287, and perplexity of 1.668.",85.5646,21.85555555555557,11322.565321180555,69.79938271604924,13.17283950617284,3904.765625,0.025641025641025647,0.0,0.025641025641025647,6.3442617892539425e-232,0.0,0.0196078431372549,1.0,0.038461538461538464,1,0.0027247956403270157,0.05128205128205127,0.773736834526062,0.2682049572467804,98.88577270507812,0.12411965429782867,0.0497383251786232,0.10731254518032074,0.008672007359564304,0.8658936023712158,0.0,0.10755184292793274,0.11220572888851166,0.2867104709148407,1.6677181720733643
+43,asdiv,Mrs. Hilt had 15 cents. She bought a pencil for 11 cents. How much money did she have left?,4,SCoT," 1. **ANALYZE** the question: The question is asking how much money Mrs. Hilt has left after buying a pencil.
+2. **PLAN** the reasoning steps: We need to subtract the cost of the pencil from the initial amount of money Mrs. Hilt had.
+3. **SOLVE** step by step:
+   - Mrs. Hilt had 15 cents.
+   - She bought a pencil for 11 cents.
+   - To find out how much money she has left, we subtract the cost of the pencil from the initial amount of money: 15 - 11 = 4 cents.
+4. **STATE** the final answer clearly: Mrs. Hilt has 4 cents left.",84.7257,20.388622754491028,11352.10153910928,69.99101796407194,9.724550898203592,3904.765625,0.020408163265306124,0.0,0.020408163265306124,5.732687664195737e-232,0.0,0.018518518518518517,1.0,0.03636363636363636,1,0.001890359168241984,0.052631578947368425,0.7804688215255737,0.23879560828208923,,,,,,,,,,,
+43,asdiv,Mrs. Hilt had 15 cents. She bought a pencil for 11 cents. How much money did she have left?,4,MGCoT," Mrs. Hilt initially had 15 cents. She spent 11 cents on a pencil. To find out how much money she has left, we need to subtract the cost of the pencil from her initial amount.
+
+15 - 11 = 4
+
+Mrs. Hilt has 4 cents left.",40.8668,20.860273972602727,11101.724101027397,68.43287671232879,12.356164383561644,3904.765625,0.044444444444444446,0.0,0.044444444444444446,6.995501686664742e-232,0.0,0.02857142857142857,1.0,0.05555555555555556,1,0.004608294930875556,0.0689655172413793,0.7993202209472656,0.21522074937820435,100.0,0.010540248826146126,0.0,0.0,0.0,1.0,0.0003494168631732464,0.014875739812850952,0.025154411792755127,0.014532114379107952,1.1525750160217285
+44,asdiv,Mrs. Hilt met 15 friends. Nine of the friends were carrying pears. The rest were carrying oranges. How many friends were carrying oranges?,6,SCoT," 1. **ANALYZE** the question: We need to find out how many friends were carrying oranges.
+2. **PLAN** the reasoning steps: We know that 9 friends were carrying pears, so the remaining friends were carrying oranges.
+3. **SOLVE** step by step:
+   - Mrs. Hilt met 15 friends in total.
+   - 9 friends were carrying pears.
+   - To find out how many friends were carrying oranges, we subtract the number of friends carrying pears from the total number of friends: 15 - 9 = 6.
+4. **STATE** the final answer clearly: 6 friends were carrying oranges.",78.9408,20.063870967741952,11213.581224798387,69.13225806451612,10.064516129032258,3904.765625,0.02222222222222222,0.0,0.02222222222222222,5.8509496409345615e-232,0.0,0.0196078431372549,1.0,0.038461538461538464,1,0.001848428835489857,0.05,0.7725229859352112,0.325918048620224,,,,,,,,,,,
+44,asdiv,Mrs. Hilt met 15 friends. Nine of the friends were carrying pears. The rest were carrying oranges. How many friends were carrying oranges?,6,MGCoT," Mrs. Hilt met 15 friends. Nine of the friends were carrying pears. The rest were carrying oranges. To find out how many friends were carrying oranges, we can subtract the number of friends carrying pears from the total number of friends.
+
+15 friends (total) - 9 friends (carrying pears) = 6 friends (carrying oranges)
+
+So, 6 friends were carrying oranges.",52.9266,21.282474226804126,11138.027867268042,68.6525773195875,12.329896907216495,3904.765625,0.03389830508474576,0.0,0.03389830508474576,6.545917251136179e-232,0.0,0.030303030303030304,1.0,0.05882352941176471,1,0.002808988764044895,0.06060606060606061,0.7800277471542358,0.35097306966781616,99.80948638916016,0.019258765503764153,0.0,0.0,0.0013351356610655785,0.985573410987854,0.0,0.0,0.018464282155036926,0.0,1.081325650215149
+45,asdiv,Mrs. Hilt spent 25 cents on one caramel apple and 15 cents on one ice cream cone. How much more did the apple cost?,10,SCoT," 1. **ANALYZE** the question: We need to find the difference in cost between the caramel apple and the ice cream cone.
+2. **PLAN** the reasoning steps: We know the cost of the caramel apple and the cost of the ice cream cone. We need to subtract the cost of the ice cream cone from the cost of the caramel apple to find the difference.
+3. **SOLVE** step by step:
+   - The cost of the caramel apple is 25 cents.
+   - The cost of the ice cream cone is 15 cents.
+   - To find the difference, subtract the cost of the ice cream cone from the cost of the caramel apple: 25 - 15 = 10 cents.
+4. **STATE** the final answer clearly: The caramel apple cost 10 cents more than the ice cream cone.",102.2916,19.591089108910904,11264.105526763615,69.43267326732652,9.405940594059405,3904.765625,0.015384615384615384,0.0,0.015384615384615384,5.354662760929083e-232,0.0,0.020833333333333332,1.0,0.04081632653061225,1,0.0029197080291970545,0.1,0.7625288963317871,0.19091492891311646,,,,,,,,,,,
+45,asdiv,Mrs. Hilt spent 25 cents on one caramel apple and 15 cents on one ice cream cone. How much more did the apple cost?,10,MGCoT," To find out how much more the caramel apple cost, we need to subtract the cost of the ice cream cone from the cost of the caramel apple.
+
+The caramel apple cost 25 cents, and the ice cream cone cost 15 cents.
+
+So, 25 cents (caramel apple) - 15 cents (ice cream cone) = 10 cents.
+
+The caramel apple cost 10 cents more than the ice cream cone.",58.943,20.658715596330268,11252.313897649083,69.38440366972465,11.431192660550458,3904.765625,0.02985074626865672,0.0,0.02985074626865672,6.3442617892539425e-232,0.0,0.03225806451612903,1.0,0.0625,1,0.005847953216374324,0.125,0.7886302471160889,0.12250423431396484,98.68457794189453,0.1235274001955986,0.6401537656784058,0.6611624956130981,0.0013425099896267056,0.8534087538719177,0.00042174686677753925,0.5915097594261169,0.6051610708236694,0.39402616024017334,1.6877050399780273
+46,asdiv,Mrs. Hilt bought 2 pizzas. Each pizza had 8 slices. How many total slices of pizza did she have?,16,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of pizza slices Mrs. Hilt had.
+2. **PLAN** the reasoning steps: We know that Mrs. Hilt bought 2 pizzas, and each pizza had 8 slices. To find the total number of slices, we need to multiply the number of pizzas by the number of slices per pizza.
+3. **SOLVE** step by step: 
+   - Step 1: Identify the number of pizzas (2)
+   - Step 2: Identify the number of slices per pizza (8)
+   - Step 3: Multiply the number of pizzas by the number of slices per pizza (2 * 8)
+   - Step 4: Calculate the result (16)
+4. **STATE** the final answer clearly: Mrs. Hilt had a total of 16 pizza slices.",108.819,19.724651162790725,11312.642314680232,69.73116279069782,9.683720930232559,3904.765625,0.016666666666666666,0.0,0.016666666666666666,5.4595004015312194e-232,0.0,0.018867924528301886,1.0,0.037037037037037035,1,0.003053435114503844,0.09756097560975609,0.7713522911071777,0.27793967723846436,,,,,,,,,,,
+46,asdiv,Mrs. Hilt bought 2 pizzas. Each pizza had 8 slices. How many total slices of pizza did she have?,16,MGCoT," To determine the total number of pizza slices Mrs. Hilt had, we need to multiply the number of pizzas by the number of slices per pizza.
+
+Mrs. Hilt bought 2 pizzas, and each pizza had 8 slices. So, we have:
+
+2 pizzas * 8 slices per pizza = 16 slices
+
+Therefore, Mrs. Hilt had a total of 16 slices of pizza.",56.4078,20.8923076923077,11267.408052884615,69.47884615384609,12.173076923076923,3904.765625,0.03333333333333333,0.0,0.03333333333333333,6.518923202947529e-232,0.0,0.03125,1.0,0.06060606060606061,1,0.006514657980456029,0.1142857142857143,0.7907367944717407,0.2721576690673828,100.0,0.03201167657971382,0.0,0.0,0.0,0.9855455160140991,0.0,0.019672617316246033,0.0310976579785347,0.0653090700507164,1.2762266397476196
+47,asdiv,Mrs. Hilt read 2 books per day. How many books did she read in one week?,14,SCoT," 1. **ANALYZE** the question: The question is asking how many books Mrs. Hilt read in one week.
+2. **PLAN** the reasoning steps needed: We need to find out how many days are in a week and then multiply that by the number of books Mrs. Hilt reads per day.
+3. **SOLVE** step by step:
+   - There are 7 days in a week.
+   - Mrs. Hilt reads 2 books per day.
+   - To find out how many books she reads in one week, we multiply the number of days by the number of books per day: 7 days * 2 books/day = 14 books.
+4. **STATE** the final answer clearly: Mrs. Hilt read 14 books in one week.",90.2061,20.122471910112367,11264.462737008427,69.43483146067402,9.292134831460674,3904.765625,0.017543859649122806,0.0,0.017543859649122806,5.539388921633538e-232,0.0,0.017543859649122806,1.0,0.034482758620689655,1,0.003454231433506094,0.1,0.7675899267196655,0.2764265835285187,,,,,,,,,,,
+47,asdiv,Mrs. Hilt read 2 books per day. How many books did she read in one week?,14,MGCoT," To determine how many books Mrs. Hilt read in one week, we need to consider the number of days in a week and her daily reading habit.
+
+1. **ANALYZE** the target metrics:
+   - **Readability**: 100.000 (easy to read)
+   - **Coherence**: 0.014 (smooth logical flow)
+   - **Relevance**: 0.000 (focus on the topic)
+   - **Specificity**: 0.000 (precise vocabulary)
+   - **Engagement**: 0.000 (interactive tone)
+   - **Concise**: 0.999 (compact phrasing)
+   - **Length**: 0.000 (short response)
+   - **Zipf**: 0.000 (natural word-frequency)
+   - **Hapax**: 0.000 (non-repetitive words)
+   - **Entropy**: 0.006 (varied word choice)
+   - **Perplexity**: 1.075 (complex sentence structure)
+
+2. **PLAN** the answer structure:
+   - Mention the number of days in a week
+   - State Mrs. Hilt's daily reading habit
+   -",154.8381,23.293687707641215,11178.13103457226,68.90398671096374,12.850498338870432,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.00248447204968949,0.08888888888888888,0.7610804438591003,0.12233421951532364,100.0,0.01350915152579546,0.0,0.0,0.0,0.9987584948539734,0.0,0.0,0.0,0.0062475502490997314,1.0745729207992554
+48,asdiv,Mrs. Hilt ate 5 apples every hour. How many apples had she eaten at the end of 3 hours?,15,SCoT," 1. **ANALYZE** the question: The question is asking how many apples Mrs. Hilt ate in 3 hours if she ate 5 apples every hour.
+2. **PLAN** the reasoning steps: We need to find the total number of apples eaten in 3 hours.
+3. **SOLVE** step by step:
+   - Mrs. Hilt ate 5 apples every hour.
+   - In 3 hours, she ate 5 apples/hour * 3 hours = 15 apples.
+4. **STATE** the final answer clearly: Mrs. Hilt had eaten 15 apples at the end of 3 hours.",76.6903,20.109933774834456,11374.686853269868,70.11854304635757,10.278145695364238,3904.765625,0.023529411764705882,0.0,0.023529411764705882,5.965248090744155e-232,0.0,0.0196078431372549,1.0,0.038461538461538464,1,0.004545454545454519,0.1,0.7778344750404358,0.21826672554016113,,,,,,,,,,,
+48,asdiv,Mrs. Hilt ate 5 apples every hour. How many apples had she eaten at the end of 3 hours?,15,MGCoT," To determine how many apples Mrs. Hilt had eaten at the end of 3 hours, we can use a simple multiplication.
+
+Mrs. Hilt ate 5 apples every hour.
+
+After 3 hours, she would have eaten:
+
+5 apples/hour * 3 hours = 15 apples
+
+So, Mrs. Hilt had eaten 15 apples at the end of 3 hours.",51.936,21.22812499999999,11339.649373372396,69.89999999999989,12.479166666666666,3904.765625,0.03571428571428572,0.0,0.03571428571428572,6.659801989051833e-232,0.0,0.02702702702702703,1.0,0.052631578947368425,1,0.0072202166064981865,0.125,0.7890487313270569,0.24451519548892975,98.6697006225586,0.04362643137574196,0.0,0.0,0.00018166231166105717,0.9122189879417419,0.0011947209713980556,0.0,0.0,0.14214716851711273,1.3046294450759888
+49,asdiv,Mrs. Hilt gave 2 pieces of candy to each student in the group. The group had a total of 9 students in it. How many pieces of candy did Mrs. Hilt give away?,18,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of pieces of candy Mrs. Hilt gave away.
+2. **PLAN** the reasoning steps: We know that Mrs. Hilt gave 2 pieces of candy to each student and there were 9 students in the group.
+3. **SOLVE** step by step: To find the total number of pieces of candy, we need to multiply the number of pieces per student by the number of students. So, 2 pieces of candy per student * 9 students = 18 pieces of candy.
+4. **STATE** the final answer clearly: Mrs. Hilt gave away 18 pieces of candy.",77.8679,19.21895424836601,11410.734375,70.3522875816992,9.699346405228757,3904.765625,0.01941747572815534,0.0,0.01941747572815534,5.704925649051987e-232,0.0,0.018867924528301886,1.0,0.037037037037037035,1,0.0036496350364964014,0.10256410256410257,0.7738487124443054,0.2167092263698578,,,,,,,,,,,
+49,asdiv,Mrs. Hilt gave 2 pieces of candy to each student in the group. The group had a total of 9 students in it. How many pieces of candy did Mrs. Hilt give away?,18,MGCoT," Mrs. Hilt gave 2 pieces of candy to each student in the group. The group had a total of 9 students in it. To find out how many pieces of candy Mrs. Hilt gave away, we can multiply the number of students by the number of candies each student received.
+
+So, 2 candies per student x 9 students = 18 candies.
+
+Mrs. Hilt gave away a total of 18 pieces of candy.",56.0396,21.086407766990288,11381.636415351943,70.17475728155347,12.427184466019417,3904.765625,0.02777777777777778,0.0,0.02777777777777778,6.2542494559645334e-232,0.0,0.02631578947368421,1.0,0.05128205128205127,1,0.0056022408963585235,0.12121212121212122,0.7911050319671631,0.21740129590034485,98.28480529785156,0.13598786294460297,0.26489514112472534,0.32385823130607605,0.005471335258334875,0.8478975892066956,0.0,0.2888489365577698,0.3037479817867279,0.3818085193634033,1.6982868909835815
+50,asdiv,Mary's mom is getting ready for Mary's birthday party. She blew up 6 balloons this morning and 5 balloons this afternoon. How many balloons did she blow up in all?,11,SCoT," 1. **ANALYZE** the question: The question is asking how many balloons Mary's mom blew up in total.
+2. **PLAN** the reasoning steps: We need to add the number of balloons blown up in the morning and the number of balloons blown up in the afternoon.
+3. **SOLVE** step by step: Mary's mom blew up 6 balloons in the morning and 5 balloons in the afternoon. To find the total number of balloons, we add 6 + 5.
+4. **STATE** the final answer clearly: Mary's mom blew up a total of 11 balloons.",73.3706,19.28125000000001,11427.22398546007,70.41666666666647,9.833333333333334,3904.765625,0.021052631578947368,0.0,0.021052631578947368,5.882492291217442e-232,0.0,0.02040816326530612,1.0,0.039999999999999994,1,0.004106776180698102,0.05128205128205127,0.7791726589202881,0.2944786250591278,,,,,,,,,,,
+50,asdiv,Mary's mom is getting ready for Mary's birthday party. She blew up 6 balloons this morning and 5 balloons this afternoon. How many balloons did she blow up in all?,11,MGCoT," To find out how many balloons Mary's mom blew up in total, we need to add the number of balloons she blew up this morning and this afternoon. This morning, she blew up 6 balloons, and this afternoon, she blew up 5 balloons. So, the total number of balloons she blew up is 6 + 5 = 11 balloons.",45.4658,21.18170731707316,11320.36904535061,69.76341463414627,11.378048780487806,3904.765625,0.03389830508474576,0.0,0.03389830508474576,6.573479617511883e-232,0.0,0.030303030303030304,1.0,0.05882352941176471,1,0.0068259385665528916,0.0689655172413793,0.7905092835426331,0.27768051624298096,98.78102111816406,0.056008949875831604,0.16714707016944885,0.18164950609207153,0.0009464815375395119,0.9105032682418823,0.0004802197217941284,0.14404049515724182,0.1411857008934021,0.15303221344947815,1.249911904335022

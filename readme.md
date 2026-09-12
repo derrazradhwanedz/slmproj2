@@ -6,6 +6,30 @@ target quality metrics for the answer and asks the model to match them).
 
 ## Version
 
+**v1.1.0**
+
+- **Answer-side quality profiles (`profile_answers.py`)**: measures the same 11 profile metrics on
+  every gold answer and every generated answer, adding `gold_*` and `actual_*` columns so answers
+  can be compared against the `target_*` values MGCoT asked for.
+- **Task accuracy (`compute_accuracy.py`)**: extracts the final answer from each stored response
+  with a per-dataset rule (last number, option letter, yes/no, plausibility verdict, kinship term,
+  calendar date, or action sequence) and scores it against the reference, adding `accuracy` and
+  `answer_extracted`. No model re-run is involved; it reads the responses already saved.
+- **Paired statistical analysis (`analysis_v2.py`)**: Wilcoxon signed-rank tests for continuous
+  metrics and exact McNemar tests for binary ones, Benjamini-Hochberg FDR correction, 5,000-sample
+  bootstrap confidence intervals and matched-pairs rank-biserial effect sizes, plus a full scan of
+  every metric at every level (overall, dataset, model, model x dataset) under one FDR family.
+- **Results tables and fact sheets (`analysis_v4.py`)**: per-model Excel tables (hardware and
+  response quality) with best/worst shading, `patterns.json` (per-metric facts behind every claim
+  in the Results) and `supplementary_tests.xlsx` (every test with means, CI, effect size and
+  corrected p-value).
+- **Results section builder (`build_results_md.py`)**: renders `results_text.json` plus the Excel
+  tables into `results_section.md` and a Word file, with numbered captions, per-paragraph
+  aggregate p-values and journal-style formatting.
+- **Hardware report (`src/Hardware_spec.ps1`)**: writes the machine specification to
+  `results/Hardware_Specifications.txt` instead of the desktop, so the execution environment can
+  be reported and verified.
+
 **v1.0.3**
 
 - **Robust Semantic & Lexical Metric Scoring (`src/metrics/`)**: Added safety guards to `BertScoreF1` and `SemanticSimilarity` metrics against empty or whitespace-only model outputs, resolving compatibility issues with `transformers` tokenizer internals (`AttributeError: RobertaTokenizer has no attribute build_inputs_with_special_tokens`).
@@ -127,6 +151,22 @@ runner.process_many(["phi3:mini", "llama3.2:1b"], stream=True)  # several models
 
 `stream=True` prints each chunk of the SLM's response to the terminal as it arrives.
 
+## 7. Analyse the results
+
+The evaluation writes one CSV per model and dataset. The analysis steps below turn those into
+the tables, statistics and text used in the paper, and none of them re-runs any model.
+
+```
+python profile_answers.py       # adds gold_* and actual_* quality profiles
+python compute_accuracy.py      # adds task accuracy per response
+python analysis_v4.py           # per-model tables, patterns.json, supplementary_tests.xlsx
+python analysis_v2.py           # full paired-test scan across metrics, models and datasets
+python build_results_md.py      # renders the Results section (Markdown + Word)
+```
+
+Order matters: `profile_answers.py` and `compute_accuracy.py` extend the combined CSV that the
+other scripts read.
+
 ## Output layout
 
 ```
@@ -136,6 +176,11 @@ results/
   training/            final_q_df.csv, final_a_df.csv (step 3)
   weights/              model.pth, q_scaler.pkl, a_scaler.pkl (step 4)
   evaluation/           per-dataset and combined result CSVs (step 6)
+  analysis/             per-model tables, patterns.json, supplementary_tests.xlsx,
+                        results_text.json and the generated Results section (step 7)
+  discussion/           discussion_points.md (trends), evidence_map.md (findings to
+                        literature) and refs/ (one BibTeX file per reference)
+  Hardware_Specifications.txt   machine specification of the experimental platform
 logs/                   one timestamped log file per main.py run
 ```
 
@@ -143,7 +188,7 @@ logs/                   one timestamped log file per main.py run
 
 The 11 quality-profile metrics MGCoT predicts and targets (see `src/metrics/profile/`):
 
-Readability: Readability measures text complexity using the Flesch-Kincaid formula, scoring 0–100 where higher values indicate easier comprehension. Formula: FK = 206.835 - 1.015 × AWL - 84.6 × (S/WC), where AWL is average word length, S is sentence count, and WC is word count. The formula subtracts weighted word length and sentence density from a baseline, penalizing complex sentences [29].
+Readability: measures text complexity by applying Flesch Reading Ease coefficients to average word length and sentence density, clipped to 0–100. For responses of the length generated here the expression reaches its upper bound, a ceiling effect reported as a limitation. Formula: FK = 206.835 - 1.015 × AWL - 84.6 × (S/WC), where AWL is average word length, S is sentence count, and WC is word count. The formula subtracts weighted word length and sentence density from a baseline, penalizing complex sentences [29].
 
 Coherence: Coherence evaluates logical flow between ideas, scoring 0.0–1.0 with higher values indicating smoother connections. Formula: C = 1 - (S/WC), where S is sentence count and WC is word count. Lower sentence-to-word ratios (fewer sentences per word, implying longer sentences) yield higher coherence scores, suggesting better connectivity between ideas [30].
 
@@ -159,8 +204,8 @@ Zipf: evaluates how closely a text's vocabulary distribution follows Zipf's law,
 
 Hapax: measures the proportion of unique words appearing once (hapax legomena), scoring 0.0–1.0 with higher values indicating more diverse vocabulary. Hapax = words_appearing_once / total_words. Higher ratios indicate more unique, non-repetitive vocabulary, reflecting lexical diversity and avoiding formulaic language [36].
 
-Length: measures the extent of a response, with higher values indicating longer text (peaking around ~100 words as a reasonable conversational target). We operationalize length as Length = 1 - exp(-0.05 × normalized_word_count), where normalized_word_count = word_count / 100. This exponential saturation curve rewards longer texts up to about 100 words, then plateaus [37].
+Length: measures the extent of a response, with higher values indicating longer text (peaking around ~100 words as a reasonable conversational target). We operationalize length as Length = 1 - exp(-0.05 × normalized_word_count), where normalized_word_count = word_count / 100. The curve increases gradually rather than saturating within the observed range: a 100-word response scores approximately 0.05, so the metric orders responses by length [37].
 
 Entropy: measures word choice unpredictability, scoring 0.0+ with higher values indicating more uniform, varied vocabulary distribution. Formula: Entropy = -sum(p_i × log2(p_i)), where p_i is the probability of word i occurring. Higher entropy indicates more uniform word distribution (less predictable), while lower entropy suggests repetitive or predictable word choices [38].
 
-Perplexity: measures sentence structure predictability, scoring 1.0+ with lower values indicating more predictable, simpler structures. Formula: Perplexity = 2^entropy. Lower values indicate more predictable text (simpler structures); higher values suggest complex, less predictable sentence patterns [39].
+Perplexity: measures sentence structure predictability, scoring 1.0+ with lower values indicating more predictable, simpler structures. Formula: Perplexity = 2^entropy, where the entropy is computed in nats, so the metric is a monotone transformation of entropy rather than perplexity in its classical form. Lower values indicate more predictable text (simpler structures); higher values suggest complex, less predictable sentence patterns [39].

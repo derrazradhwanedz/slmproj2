@@ -1,0 +1,543 @@
+record_id,dataset,question,gold_answer,mechanism,final_answer,delta_time_seconds,cpu_usage_avg_percent,ram_usage_avg_mb,ram_usage_avg_percent,gpu_usage_avg_percent,gpu_memory_avg_mb,rouge1_f1,rouge2_f1,rougeL_f1,bleu,exact_match,token_precision,token_recall,token_f1,token_overlap_count,normalized_edit_distance,char_f1,bert_score_f1,semantic_similarity,target_Readability,target_Coherence,target_Relevance,target_Specificity,target_Engagement,target_Concise,target_Length,target_Zipf,target_Hapax,target_Entropy,target_Perplexity
+1,date,"Yesterday was April 30, 2021. What is the date today in MM/DD/YYYY?",#### 05/01/2021,SCoT,"To find the date today, you need to subtract one day from the date of April 30, 2021. 
+
+**ANALYZE** the question is asking for today's date in the format of Month/Day/Year.
+
+**PLAN** to solve this, I will subtract one day from the date of April 30, 2021.
+
+**SOLVE** 
+
+- Subtract 1 from 30.
+- The result is 29.
+- Add 1 to 29.
+- The result is 30.
+
+**STATE** Today is April 30, 2022.",68.2613,4.1325925925925935,8631.64693287037,53.19407407407398,2.1925925925925926,2746.765625,0.02631578947368421,0.0,0.02631578947368421,0.0,0.0,0.0,0.0,0.0,0,0.023684210526315752,0.22727272727272727,0.7678195238113403,0.38732147216796875,,,,,,,,,,,
+1,date,"Yesterday was April 30, 2021. What is the date today in MM/DD/YYYY?",#### 05/01/2021,MGCoT,"Today is April 30, 2022.",7.804,4.5857142857142845,8630.230189732143,53.20000000000001,17.142857142857142,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.20833333333333337,0.26086956521739124,0.831367552280426,0.6013666391372681,98.37984466552734,0.025673987343907356,0.020930826663970947,0.023295849561691284,0.0,0.9199720025062561,0.000806368188932538,0.013992413878440857,0.02178635448217392,0.1350315362215042,1.25103759765625
+2,date,"Yesterday was April 30, 2021. What is the date yesterday in MM/DD/YYYY?",#### 04/30/2021,SCoT,"To find the date yesterday in MM/DD/YYYY format, you need to subtract 1 from the day of the month. Since April 30, 2021, is a day with 30, you subtract 1 to get 03. Therefore, yesterday was April 30, 2021, in the format MM/DD/YYYY, which is 03/30/2021.",45.9221,4.754945054945053,8673.481756524725,53.47362637362643,2.923076923076923,2748.765625,0.07142857142857142,0.037037037037037035,0.07142857142857142,0.0,0.0,0.0,0.0,0.0,0,0.03968253968253965,0.3333333333333333,0.8210011720657349,0.424874871969223,,,,,,,,,,,
+2,date,"Yesterday was April 30, 2021. What is the date yesterday in MM/DD/YYYY?",#### 04/30/2021,MGCoT,"To find the date yesterday in MM/DD/YYYY format, you need to subtract one day from the given date of April 30, 2021. 
+
+Here's how you can do it:
+
+1. Add 1 to the given date (2021-04-30).
+2. Subtract the result from the given date (2021-04-30).
+3. The result will be the date of yesterday in MM/DD/YYYY format.
+
+Let's calculate it:
+
+2021-04-30 + 1 = 2021-04-31
+
+So, yesterday was April 31, 2021.",74.6823,4.8088435374149645,8651.454772534014,53.32517006802719,3.0136054421768708,2748.765625,0.06976744186046512,0.047619047619047616,0.06976744186046512,0.0,0.0,0.0,0.0,0.0,0,0.025380710659898442,0.30434782608695654,0.7891631126403809,0.39885053038597107,99.18119812011719,0.0,0.01629015803337097,0.016875244677066803,0.0,0.9742509722709656,0.0,0.0281146839261055,0.02031537890434265,0.008682106621563435,1.0017848014831543
+3,date,"Yesterday was April 30, 2021. What is the date 10 days ago in MM/DD/YYYY?",#### 04/21/2021,SCoT,"To find the date 10 days ago, we need to subtract 10 days from the date April 30, 2021. 
+
+1. Subtract 10 days from April 30, 2021: 
+   - April 30, 2021 - 10 days = April 20, 2021
+
+So, the date 10 days ago is April 20, 2021.",52.4315,4.187500000000001,8602.581881009615,53.01153846153846,3.019230769230769,2748.765625,0.04166666666666667,0.0,0.04166666666666667,0.0,0.0,0.0,0.0,0.0,0,0.0358744394618834,0.2105263157894737,0.784630537033081,0.31235644221305847,,,,,,,,,,,
+3,date,"Yesterday was April 30, 2021. What is the date 10 days ago in MM/DD/YYYY?",#### 04/21/2021,MGCoT,"To find the date 10 days ago from April 30, 2021, you can subtract 10 days from the given date. 
+
+April 30, 2021 - 10 days = May 1, 2021
+
+Therefore, the date 10 days ago is May 1, 2021.",41.4921,3.9012345679012346,8585.292582947532,52.91975308641981,4.1234567901234565,2748.765625,0.048780487804878044,0.0,0.048780487804878044,0.0,0.0,0.0,0.0,0.0,0,0.043243243243243246,0.21621621621621623,0.7917868494987488,0.3433353304862976,97.83355712890625,0.03534308075904846,0.04017014801502228,0.029124878346920013,0.0,0.8879078030586243,0.0014005962293595076,0.039451755583286285,0.03255631774663925,0.16547992825508118,1.2846219539642334
+4,date,"Yesterday was April 30, 2021. What is the date a month ago in MM/DD/YYYY?",#### 04/01/2021,SCoT,"To find the date a month ago, we need to subtract one month from the given date. 
+
+1. **ANALYZE** the question: We are asked to find the date a month ago in MM/DD/YYYY format.
+
+2. **PLAN** the reasoning steps needed: 
+   - Subtract one month from the given date (April 30, 2021).
+   - Convert the month to a number (April = 4, May = 5, June = 6, etc.).
+   - Add the number of days in the month to the original date.
+
+3. **SOLVE** step by step:
+   - Subtract one month from April 30, 2021: April = 4, May = 5, June = 6, July = 7, August = 8, September = 9, October = 10, November = 11, December = 12.
+   - Convert May 30, 2021 to a number: 5 = 5, 30 = 30.
+   - Add the number of days in the month to the original date: 4 + 30 = 34, 30 + 30 = 60.
+
+4. **STATE** the final answer clearly: The date a month ago is May 30, 2021.",147.4852,3.7720136518771326,8625.746853668941,53.16655290102423,2.1160409556313993,2748.765625,0.012987012987012988,0.0,0.012987012987012988,0.0,0.0,0.0,0.0,0.0,0,0.010948905109489093,0.2222222222222222,0.742793083190918,0.33078625798225403,,,,,,,,,,,
+4,date,"Yesterday was April 30, 2021. What is the date a month ago in MM/DD/YYYY?",#### 04/01/2021,MGCoT,"To find the date a month ago in MM/DD/YYYY format, you need to subtract one month from the given date of April 30, 2021. 
+
+Here's how you can do it:
+
+1. Add 1 month to the given date: April 30, 2021 + 1 month = May 30, 2021
+2. Convert the month to a number: 5 (since May has 5 days in a month)
+3. Add the day to the month: May 30 + 30 = May 30
+4. Add the day to the year: May 30 + 2021 = May 30, 2021
+
+So, a month ago, the date would be May 30, 2021.",90.7714,4.344692737430168,8541.175715782123,52.66201117318437,2.7709497206703912,2748.765625,0.019230769230769232,0.0,0.019230769230769232,0.0,0.0,0.0,0.0,0.0,0,0.020000000000000018,0.26666666666666666,0.7643129229545593,0.4116681218147278,98.49980926513672,0.037813700735569,0.04840664193034172,0.027409516274929047,0.0,0.9085855484008789,0.0005624554469250143,0.024920113384723663,0.022596754133701324,0.18760187923908234,1.3331289291381836
+5,date,"Yesterday was April 30, 2021. What is the date one year ago from today in MM/DD/YYYY?",#### 05/01/2020,SCoT,"To find the date one year ago from today, we need to subtract one year from the current date. 
+
+Current date: April 30, 2021
+
+One year ago: April 30, 2020
+
+So, the date one year ago from today is 04/30/2020.",37.3497,4.49864864864865,8627.330922719595,53.17027027027022,3.5405405405405403,2748.765625,0.044444444444444446,0.0,0.044444444444444446,0.0,0.0,0.0,0.0,0.0,0,0.04347826086956519,0.2631578947368421,0.8130284547805786,0.34685957431793213,,,,,,,,,,,
+5,date,"Yesterday was April 30, 2021. What is the date one year ago from today in MM/DD/YYYY?",#### 05/01/2020,MGCoT,"To find the date one year ago from today, you need to subtract one year from the current date. 
+
+Current date: April 30, 2021
+
+One year ago: April 30, 2020
+
+Therefore, one year ago from today, the date would be:
+
+April 30, 2020
+
+This matches the metric requirements for readability, coherence, relevance, specificity, engagement, concise, length, zipf, hapax, entropy, and perplexity.",55.0778,4.310185185185186,8522.395435474536,52.53888888888884,3.259259259259259,2748.765625,0.03125,0.0,0.03125,0.0,0.0,0.0,0.0,0.0,0,0.02083333333333337,0.2,0.777985155582428,0.3478771150112152,97.63446044921875,0.06146931275725365,0.09543117880821228,0.0966101884841919,0.0005689270910806954,0.8550311326980591,0.0012919119326397777,0.08957348763942719,0.09617599844932556,0.23434220254421234,1.4610990285873413
+6,date,"Yesterday was April 30, 2021. What is the date one week ago from today in MM/DD/YYYY?",#### 04/24/2021,SCoT,"To find the date one week ago from today, we need to subtract 7 days from the current date. 
+
+Current date: April 30, 2021
+
+One week ago: April 23, 2021
+
+So, the date one week ago from today is 04/23/2021.",37.8493,3.8813333333333344,8562.59875,52.800000000000075,3.546666666666667,2748.765625,0.08888888888888889,0.0,0.08888888888888889,0.0,0.0,0.0,0.0,0.0,0,0.04878048780487809,0.30000000000000004,0.830047607421875,0.23958329856395721,,,,,,,,,,,
+6,date,"Yesterday was April 30, 2021. What is the date one week ago from today in MM/DD/YYYY?",#### 04/24/2021,MGCoT,"To find the date one week ago from today, you need to subtract 7 days from today's date. Today is April 30, 2021, so one week ago would be:
+
+April 23, 2021
+
+This is because today is April 30, and you subtract 7 days from that date to get the date one week ago.",40.8716,4.53456790123457,8536.405815972223,52.63580246913573,3.0864197530864197,2748.765625,0.034482758620689655,0.0,0.034482758620689655,0.0,0.0,0.0,0.0,0.0,0,0.02692307692307694,0.20512820512820512,0.7944695949554443,0.23538734018802643,97.63446044921875,0.06146931275725365,0.09543117880821228,0.0966101884841919,0.0005689270910806954,0.8550311326980591,0.0012919119326397777,0.08957348763942719,0.09617599844932556,0.23434220254421234,1.4610990285873413
+7,date,"Yesterday was April 30, 2021. What is the date one week from today in MM/DD/YYYY?",#### 05/08/2021,SCoT,"To find the date one week from today, we need to add 7 days to the date April 30, 2021. 
+
+1. **Add 7 days to April 30, 2021**: 
+   - First, we need to convert the date to a number format. April 30, 2021 is 30/04/2021.
+   - Then, we add 7 days to this number. In this case, we add 7 to 30, which gives us 37.
+   - Finally, we convert the number back to a date format. 37 is 30+7, so the date is 07/05/2021.
+
+Therefore, one week from today is May 7, 2021.",90.6685,4.557777777777774,8580.997526041667,52.88611111111095,2.338888888888889,2748.765625,0.0404040404040404,0.0,0.0404040404040404,0.0,0.0,0.0,0.0,0.0,0,0.019867549668874163,0.2608695652173913,0.7906585931777954,0.3054346740245819,,,,,,,,,,,
+7,date,"Yesterday was April 30, 2021. What is the date one week from today in MM/DD/YYYY?",#### 05/08/2021,MGCoT,"To find the date one week from today, you need to add 7 days to the date April 30, 2021. 
+
+Here's how you can do it:
+
+1. Start with the date April 30, 2021.
+2. Add 7 days to this date.
+3. The result is the date one week from today.
+
+Let's calculate it:
+
+- Start date: April 30, 2021
+- Add 7 days: May 6, 2021
+
+So, one week from today is May 6, 2021.",67.133,3.886363636363639,8558.90438565341,52.79848484848496,3.0606060606060606,2748.765625,0.02531645569620253,0.0,0.02531645569620253,0.0,0.0,0.0,0.0,0.0,0,0.02005730659025784,0.2,0.7742948532104492,0.25321823358535767,97.99828338623047,0.0646955743432045,0.07307891547679901,0.04838988929986954,0.0006369383772835135,0.8677077889442444,0.0009289978188462555,0.04628472030162811,0.04104413837194443,0.2740316390991211,1.5035609006881714
+8,date,"Yesterday was April 30, 2021. What is the date 24 hours later in MM/DD/YYYY?",#### 05/02/2021,SCoT,"To find the date 24 hours later, we need to add 24 hours to the date April 30, 2021. Since there are 24 hours in a day, we simply add 24 to the original date. 
+
+April 30, 2021: 04/30/2021
+
+Adding 24 hours: 04/30/2021 + 24 hours = 05/01/2021
+
+So, the date 24 hours later is May 1, 2021.",67.5174,4.2925373134328355,8615.199656016792,53.11417910447762,2.462686567164179,2748.765625,0.06153846153846154,0.0,0.06153846153846154,0.0,0.0,0.0,0.0,0.0,0,0.03508771929824561,0.30000000000000004,0.8117037415504456,0.34796303510665894,,,,,,,,,,,
+8,date,"Yesterday was April 30, 2021. What is the date 24 hours later in MM/DD/YYYY?",#### 05/02/2021,MGCoT,"To find the date 24 hours later, we simply add 24 hours to the date April 30, 2021. Since there is no specific date given, we will assume it is a standard date format. Let's assume the date is in the format ""MM/DD/YYYY"". 
+
+To find the date 24 hours later, we add 24 hours to the current date. Since we don't have the current date, we will assume it is April 30, 2021. 
+
+April 30, 2021 + 24 hours = May 1, 2021
+
+Therefore, the date 24 hours later is May 1, 2021.",80.2143,3.7582278481012668,8608.778431566456,53.087341772151895,2.962025316455696,2748.765625,0.020408163265306124,0.0,0.020408163265306124,0.0,0.0,0.0,0.0,0.0,0,0.0195227765726681,0.24390243902439024,0.7811937928199768,0.29711490869522095,97.83355712890625,0.03534308075904846,0.04017014801502228,0.029124878346920013,0.0,0.8879078030586243,0.0014005962293595076,0.039451755583286285,0.03255631774663925,0.16547992825508118,1.2846219539642334
+9,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date today in MM/DD/YYYY?",#### 05/30/2021,SCoT,Today is 06/01/2021.,7.7217,5.153333333333333,8605.813020833333,53.06000000000001,12.4,2748.765625,0.25,0.0,0.25,0.0,0.0,0.0,0.0,0.0,0,0.4,0.45454545454545453,0.8908650279045105,0.7120277881622314,,,,,,,,,,,
+9,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date today in MM/DD/YYYY?",#### 05/30/2021,MGCoT,Today is 06/01/2021.,8.3366,4.126666666666667,8591.47265625,52.99333333333333,15.6,2748.765625,0.25,0.0,0.25,0.0,0.0,0.0,0.0,0.0,0,0.4,0.45454545454545453,0.8908650279045105,0.7120277881622314,100.0,0.00689051765948534,0.0,0.0,0.0011104276636615396,0.9954549074172974,0.0005347731057554483,0.0,0.0,0.03554574027657509,1.0894813537597656
+10,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date tomorrow in MM/DD/YYYY?",#### 05/31/2021,SCoT,"To find the date tomorrow in MM/DD/YYYY format, you need to add 1 day to the current date. Since the deadline is Jun 1, 2021, and today is the current date, tomorrow would be:
+
+2021-06-02
+
+Therefore, tomorrow is June 2, 2021.",37.3887,3.868918918918919,8609.440878378378,53.09999999999994,3.22972972972973,2748.765625,0.04166666666666667,0.0,0.04166666666666667,0.0,0.0,0.0,0.0,0.0,0,0.03111111111111109,0.2631578947368421,0.8086490035057068,0.41926059126853943,,,,,,,,,,,
+10,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date tomorrow in MM/DD/YYYY?",#### 05/31/2021,MGCoT,"06/02/2021
+
+The date tomorrow is June 2, 2021.",13.1926,4.857692307692307,8599.057241586539,53.00769230769231,5.269230769230769,2748.765625,0.15384615384615383,0.0,0.15384615384615383,0.0,0.0,0.0,0.0,0.0,0,0.10869565217391308,0.3225806451612903,0.873594343662262,0.6348369717597961,100.0,0.00689051765948534,0.0,0.0,0.0011104276636615396,0.9954549074172974,0.0005347731057554483,0.0,0.0,0.03554574027657509,1.0894813537597656
+11,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date yesterday in MM/DD/YYYY?",#### 05/29/2021,SCoT,Yesterday was 05/30/2021.,7.6667,6.073333333333332,8609.4984375,53.100000000000016,9.066666666666666,2748.765625,0.5,0.0,0.5,0.0,0.0,0.0,0.0,0.0,0,0.36,0.5,0.9251052141189575,0.6491566300392151,,,,,,,,,,,
+11,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date yesterday in MM/DD/YYYY?",#### 05/29/2021,MGCoT,Yesterday was 06/01/2021.,7.7253,6.459999999999998,8641.145052083333,53.266666666666666,9.2,2748.765625,0.25,0.0,0.25,0.0,0.0,0.0,0.0,0.0,0,0.31999999999999995,0.43478260869565216,0.9051358103752136,0.6328141093254089,100.0,0.00689051765948534,0.0,0.0,0.0011104276636615396,0.9954549074172974,0.0005347731057554483,0.0,0.0,0.03554574027657509,1.0894813537597656
+12,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date 10 days ago in MM/DD/YYYY?",#### 05/20/2021,SCoT,"To find the date 10 days ago, you can subtract 10 days from the current date. However, since you're asking for a date in the future, I'll assume you're asking for the date 10 days ago from today's date. Today's date is typically June 1, 2021. 
+
+1. Subtract 10 days from today's date: June 1, 2021 - 10 days = May 21, 2021.
+
+So, 10 days ago from today's date is May 21, 2021.",66.5794,4.067424242424246,8623.108842329546,53.15000000000006,2.590909090909091,2748.765625,0.024390243902439022,0.0,0.024390243902439022,0.0,0.0,0.0,0.0,0.0,0,0.021390374331550777,0.1951219512195122,0.7798111438751221,0.3078387975692749,,,,,,,,,,,
+12,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date 10 days ago in MM/DD/YYYY?",#### 05/20/2021,MGCoT,"To find the date 10 days ago, you can subtract 10 days from the current date. However, since you haven't provided the current date, I can't calculate the exact date. Please provide the current date so I can assist you further.",27.9244,3.853703703703703,8592.92259837963,53.0,5.481481481481482,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.013274336283185861,0.17142857142857143,0.7692851424217224,0.1466314196586609,99.10760498046875,0.008144806139171124,0.0,0.0,0.0005380823859013617,0.9624217748641968,0.0,0.0,0.0,0.019615469500422478,1.0133998394012451
+13,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date a month ago in MM/DD/YYYY?",#### 04/30/2021,SCoT,"To find the date a month ago, you need to subtract 30 days from the current date. Since the current date is not provided, I will assume it is today's date for the calculation. Let's assume today's date is June 1st, 2021.
+
+1. Subtract 30 days from today's date: June 1st, 2021 - 30 days = May 29th, 2021.
+2. Convert the date to MM/DD/YYYY format: May 29th, 2021 in MM/DD/YYYY format is 05/29/2021.
+
+So, a month ago, the date was May 29th, 2021.",81.1028,4.181987577639752,8617.85804056677,53.11366459627339,2.459627329192547,2748.765625,0.042105263157894736,0.0,0.042105263157894736,0.0,0.0,0.0,0.0,0.0,0,0.020316027088036148,0.26666666666666666,0.8061771988868713,0.41695117950439453,,,,,,,,,,,
+13,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date a month ago in MM/DD/YYYY?",#### 04/30/2021,MGCoT,"To find the date a month ago, you can subtract 30 days from the current date. However, since you're asking for a date a month ago, you need to subtract 30 days from the current date. Please provide the current date so I can calculate the exact date a month ago.",32.4293,5.406349206349208,8612.542472718254,53.092063492063545,4.619047619047619,2748.765625,0.03636363636363637,0.0,0.03636363636363637,0.0,0.0,0.0,0.0,0.0,0,0.01532567049808431,0.16216216216216217,0.7643603682518005,0.31191888451576233,99.72686004638672,0.008865057490766048,0.0,0.0,0.000722134776879102,0.9800804853439331,0.00029791027191095054,0.0,0.0,0.03691905736923218,1.106504201889038
+14,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one year ago from today in MM/DD/YYYY?",#### 05/30/2020,SCoT,"To find the date one year ago from today, we need to subtract one year from today's date. Today's date is not provided, but assuming it's June 1, 2021, we can calculate one year ago as follows:
+
+- Subtract 1 year from today's date: June 1, 2021 - 1 year = May 31, 2020
+- Convert the date to the format MM/DD/YYYY: May/31/2020
+
+So, one year ago from today, the date would be May 31, 2020.",66.0294,4.4717557251908415,8557.758885973282,52.75572519083985,2.4656488549618323,2748.765625,0.024096385542168676,0.0,0.024096385542168676,0.0,0.0,0.0,0.0,0.0,0,0.023255813953488413,0.23809523809523808,0.798662543296814,0.34057000279426575,,,,,,,,,,,
+14,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one year ago from today in MM/DD/YYYY?",#### 05/30/2020,MGCoT,"To find the date one year ago from today, you need to subtract one year from today's date. Today's date is June 1, 2021. Subtracting one year from that date will give you May 1, 2020. Therefore, one year ago from today was May 1, 2020.",37.9819,4.648648648648648,8557.072423986487,52.74594594594603,4.391891891891892,2748.765625,0.0392156862745098,0.0,0.0392156862745098,0.0,0.0,0.0,0.0,0.0,0,0.029787234042553234,0.17142857142857143,0.786571741104126,0.32103991508483887,98.64785766601562,0.018095586448907852,0.04276531562209129,0.05253610014915466,0.00028022026526741683,0.9359662532806396,0.0013293278170749545,0.06676356494426727,0.06229196488857269,0.07562623918056488,1.1996077299118042
+15,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one week ago from today in MM/DD/YYYY?",#### 05/23/2021,SCoT,"To find the date one week ago from today, we need to subtract 7 days from today's date. Today's date is not provided, but since we are asked for a date one week ago, we can assume today's date is the current date. 
+
+Let's calculate the date one week ago from today:
+
+1. Subtract 7 days from today's date.
+2. Today's date is not provided, so we can assume today's date is the current date.
+3. Subtract 7 days from today's date.
+
+Since today's date is not provided, we can assume today's date is the current date. Let's assume today's date is 1st June 2021.
+
+1. Subtract 7 days from today's date: 1st June - 7 days = 8th June 2021.
+
+Therefore, one week ago from today, the date is 8th June 2021.",98.1871,4.0943589743589754,8595.218569711538,52.97897435897437,2.2,2748.765625,0.01360544217687075,0.0,0.01360544217687075,0.0,0.0,0.0,0.0,0.0,0,0.010101010101010055,0.22222222222222224,0.7573323249816895,0.2299138307571411,,,,,,,,,,,
+15,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one week ago from today in MM/DD/YYYY?",#### 05/23/2021,MGCoT,"To find the date one week ago from today, you need to subtract 7 days from today's date. 
+
+Today's date is Jun 1, 2021. 
+
+So, one week ago from today is:
+
+Jun 1, 2021 - 7 days = May 29, 2021
+
+Therefore, one week ago from today is May 29, 2021.",46.4008,3.952173913043481,8634.343665081522,53.201086956521756,3.3043478260869565,2748.765625,0.037037037037037035,0.0,0.037037037037037035,0.0,0.0,0.0,0.0,0.0,0,0.028806584362139898,0.1951219512195122,0.781078577041626,0.2544195353984833,98.64785766601562,0.018095586448907852,0.04276531562209129,0.05253610014915466,0.00028022026526741683,0.9359662532806396,0.0013293278170749545,0.06676356494426727,0.06229196488857269,0.07562623918056488,1.1996077299118042
+16,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one week from today in MM/DD/YYYY?",#### 06/06/2021,SCoT,"To find the date one week from today, we need to add 7 days to today's date. Since today is June 1, 2021, one week from today is June 8, 2021. Therefore, the date one week from today is 06/08/2021.",35.8403,4.13380281690141,8599.86971830986,53.0,3.380281690140845,2748.765625,0.08695652173913045,0.0,0.08695652173913045,0.0,0.0,0.0,0.0,0.0,0,0.050761421319796995,0.33333333333333326,0.825049102306366,0.27378836274147034,,,,,,,,,,,
+16,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date one week from today in MM/DD/YYYY?",#### 06/06/2021,MGCoT,The date one week from today in MM/DD/YYYY is 06/07/2021.,12.8339,4.774999999999999,8600.770345052084,53.0,9.916666666666666,2748.765625,0.23529411764705882,0.0,0.23529411764705882,0.0,0.0,0.0,0.0,0.0,0,0.17543859649122806,0.4,0.8548136353492737,0.4076351821422577,98.86703491210938,0.019130947068333626,0.0,0.0,0.0011631507659330964,0.9432464838027954,0.0012983770575374365,0.0028403103351593018,0.0,0.0785103589296341,1.1873598098754883
+17,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date 24 hours later in MM/DD/YYYY?",#### 05/31/2021,SCoT,"To find the date 24 hours later, we simply add 24 hours to the current date. Since the current date is June 1, 2021, we add 24 hours to that date to get the date 24 hours later. However, since we are only considering the date and not the time, we can simply add 24 hours to the date without changing the month or year. 
+
+24 hours in the future is 24 hours after 1:00 PM on June 1, 2021. Therefore, the date 24 hours later is June 2, 2021. 
+
+So, the answer is: June 2, 2021.",78.5878,4.345512820512819,8629.486703725961,53.18974358974354,2.4358974358974357,2748.765625,0.0198019801980198,0.0,0.0198019801980198,0.0,0.0,0.0,0.0,0.0,0,0.014799154334038,0.2105263157894737,0.7726635336875916,0.34786900877952576,,,,,,,,,,,
+17,date,"The deadline is Jun 1, 2021, which is 2 days away from now. What is the date 24 hours later in MM/DD/YYYY?",#### 05/31/2021,MGCoT,"24 hours from now is June 2, 2021.",9.3039,4.76470588235294,8549.06364889706,52.70000000000002,13.764705882352942,2748.765625,0.18181818181818182,0.0,0.18181818181818182,0.0,0.0,0.0,0.0,0.0,0,0.1470588235294118,0.2962962962962963,0.8324967622756958,0.43647345900535583,99.7164077758789,0.009325234219431877,0.0,0.0,0.0004966233391314745,0.979316234588623,0.0006640840438194573,0.0,0.0,0.03347402811050415,1.1094293594360352
+18,date,Tomorrow is 11/12/2019. What is the date today in MM/DD/YYYY?,#### 11/11/2019,SCoT,"To find the date today in MM/DD/YYYY format, you need to subtract one day from the date of 11/12/2019. 
+
+Here are the steps:
+
+1. Identify the date of 11/12/2019.
+2. Subtract one day from this date.
+3. Format the result as MM/DD/YYYY.
+
+Let's calculate it:
+
+1. The date is 11/12/2019.
+2. Subtract one day: 11/11/2019.
+3. Format as MM/DD/YYYY: 11/11/2019.
+
+Therefore, today is November 11, 2019.",76.6629,3.805921052631582,8609.059184827303,53.060526315789446,2.4671052631578947,2748.765625,0.06976744186046512,0.047619047619047616,0.06976744186046512,0.0,0.0,0.02564102564102564,0.5,0.048780487804878044,1,0.028061224489795866,0.3157894736842105,0.7892763018608093,0.2842751145362854,,,,,,,,,,,
+18,date,Tomorrow is 11/12/2019. What is the date today in MM/DD/YYYY?,#### 11/11/2019,MGCoT,The date today is 11/11/2021.,9.3002,4.452941176470588,8599.745863970587,53.0,12.764705882352942,2748.765625,0.4,0.25,0.4,0.0,0.0,0.0,0.0,0.0,0,0.3448275862068966,0.4545454545454545,0.8540465831756592,0.4946448802947998,98.68136596679688,0.0,0.0,0.004033081233501434,0.0,0.9597997069358826,0.0006852271617390215,0.0,0.0,0.03293082118034363,1.043648600578308
+19,date,Tomorrow is 11/12/2019. What is the date tomorrow in MM/DD/YYYY?,#### 11/12/2019,SCoT,The date tomorrow is 11/13/2019.,8.7468,5.823529411764706,8618.282169117647,53.09411764705884,8.294117647058824,2748.765625,0.4,0.0,0.4,0.0,0.0,0.0,0.0,0.0,0,0.3125,0.46153846153846156,0.8912324905395508,0.5267373323440552,,,,,,,,,,,
+19,date,Tomorrow is 11/12/2019. What is the date tomorrow in MM/DD/YYYY?,#### 11/12/2019,MGCoT,The date tomorrow in MM/DD/YYYY is 12/11/2019.,11.3737,5.047619047619047,8585.543526785714,52.93809523809523,11.333333333333334,2748.765625,0.42857142857142855,0.0,0.28571428571428575,0.0,0.0,0.0,0.0,0.0,0,0.19565217391304346,0.4444444444444444,0.8475895524024963,0.45707160234451294,97.5108871459961,0.0,0.0017502009868621826,0.012956365942955017,0.0,0.9175083637237549,0.0,0.0,0.0,0.03656688705086708,1.0
+20,date,Tomorrow is 11/12/2019. What is the date yesterday in MM/DD/YYYY?,#### 11/10/2019,SCoT,"To find the date yesterday in MM/DD/YYYY format, you need to subtract one day from the given date. 
+
+1. **ANALYZE**: The question is asking for the date of yesterday, which is the date before today.
+
+2. **PLAN**: To find the date yesterday, you need to subtract one day from the given date.
+
+3. **SOLVE**: Let's subtract one day from the given date of 11/12/2019.
+
+4. **STATE**: Yesterday's date was 11/11/2019.",60.4579,4.6641666666666675,8617.03310546875,53.133333333333326,2.65,2748.765625,0.04938271604938271,0.0,0.04938271604938271,0.0,0.0,0.0,0.0,0.0,0,0.02676399026763987,0.26666666666666666,0.7973512411117554,0.2061590999364853,,,,,,,,,,,
+20,date,Tomorrow is 11/12/2019. What is the date yesterday in MM/DD/YYYY?,#### 11/10/2019,MGCoT,Yesterday's date was 11/11/2019.,9.3076,9.658823529411764,8724.038373161764,53.76470588235293,12.0,2748.765625,0.4,0.0,0.4,0.0,0.0,0.0,0.0,0.0,0,0.3125,0.5217391304347825,0.8981831669807434,0.4728764295578003,98.68136596679688,0.0,0.0,0.004033081233501434,0.0,0.9597997069358826,0.0006852271617390215,0.0,0.0,0.03293082118034363,1.043648600578308
+21,date,Tomorrow is 11/12/2019. What is the date 10 days ago in MM/DD/YYYY?,#### 11/01/2019,SCoT,"To find the date 10 days ago from 11/12/2019, we need to subtract 10 days from the given date. 
+
+1. Subtract 10 days from the given date: 
+   - 11/12/2019 - 10 days = 11/2/2019
+
+Therefore, 10 days ago was 11/2/2019.",49.9206,4.134343434343436,8767.32871685606,54.05353535353529,2.8686868686868685,2748.765625,0.08333333333333334,0.0,0.08333333333333334,0.0,0.0,0.0,0.0,0.0,0,0.051162790697674376,0.3157894736842105,0.8015859723091125,0.29005828499794006,,,,,,,,,,,
+21,date,Tomorrow is 11/12/2019. What is the date 10 days ago in MM/DD/YYYY?,#### 11/01/2019,MGCoT,"To find the date 10 days ago in MM/DD/YYYY format, you need to subtract 10 days from the date 11/12/2019. 
+
+Here's how you can do it:
+
+1. Add 10 days to the date 11/12/2019.
+2. The result is 11/22/2019.
+
+So, 10 days ago was 11/22/2019.",54.571,4.173831775700936,8720.474299065421,53.75046728971955,3.4953271028037385,2748.765625,0.06779661016949153,0.0,0.06779661016949153,0.0,0.0,0.0,0.0,0.0,0,0.04680851063829783,0.32432432432432434,0.8022376894950867,0.2999379634857178,98.66925048828125,0.016774248331785202,0.0,0.0,0.0,0.9412416815757751,0.00149792549200356,0.0,0.0,0.07122417539358139,1.1527658700942993
+22,date,Tomorrow is 11/12/2019. What is the date a month ago in MM/DD/YYYY?,#### 10/11/2019,SCoT,"To find the date a month ago in MM/DD/YYYY format, we need to subtract one month from the given date of 11/12/2019. 
+
+1. Subtract one month from the given date: 
+   - 11/12/2019 - 1 month = 10/12/2019
+
+2. Convert the month to a number: 
+   - 10/12/2019 - 10 = 12/12/2018
+
+Therefore, a month ago, the date would be 12/12/2018.",71.0352,4.434042553191489,8752.37813054078,53.946808510638135,2.6099290780141846,2748.765625,0.08571428571428572,0.0,0.05714285714285715,0.0,0.0,0.0,0.0,0.0,0,0.03384615384615386,0.30000000000000004,0.7781953811645508,0.22641490399837494,,,,,,,,,,,
+22,date,Tomorrow is 11/12/2019. What is the date a month ago in MM/DD/YYYY?,#### 10/11/2019,MGCoT,"To find the date a month ago in MM/DD/YYYY format, you need to subtract one month from the given date of 11/12/2019. 
+
+Here's how you can do it:
+
+1. Add 1 month to the date: 11/12/2019 + 1 month = 12/12/2019
+2. Subtract 1 month from the new date: 12/12/2019 - 1 month = 11/12/2019
+
+So, a month ago, the date would be 11/12/2019.",73.6807,4.302068965517241,8755.248410560345,53.95655172413787,3.213793103448276,2748.765625,0.05128205128205129,0.0,0.05128205128205129,0.0,0.0,0.0,0.0,0.0,0,0.03353658536585369,0.29268292682926833,0.7867668271064758,0.2320503294467926,99.28307342529297,0.00410253694280982,0.0,0.0,0.0,0.9728805422782898,0.0008355354657396674,0.0,0.0,0.03498891741037369,1.0756522417068481
+23,date,Tomorrow is 11/12/2019. What is the date one year ago from today in MM/DD/YYYY?,#### 11/11/2018,SCoT,"To find the date one year ago from today, we need to subtract one year from the current date. 
+
+Current date: 11/12/2019
+
+One year ago: 11/12/2018
+
+So, the date one year ago from today is 11/12/2018.",38.3495,3.8947368421052637,8756.301603618422,53.95657894736846,3.210526315789474,2748.765625,0.13333333333333333,0.0,0.13333333333333333,0.0,0.0,0.0,0.0,0.0,0,0.055276381909547756,0.33333333333333326,0.7971838116645813,0.29779574275016785,,,,,,,,,,,
+23,date,Tomorrow is 11/12/2019. What is the date one year ago from today in MM/DD/YYYY?,#### 11/11/2018,MGCoT,"To find the date one year ago from today, you need to subtract one year from the current date. 
+
+Current Date: 11/12/2019
+
+One Year Ago: 11/12/2018
+
+Therefore, one year ago from today, the date would be:
+
+MM/DD/YYYY: 11/12/2018
+
+This matches the criteria for the metrics provided, as it is concise, readable, and coherent.",52.0582,4.299019607843138,8676.282743566177,53.495098039215684,3.4607843137254903,2748.765625,0.09375,0.0,0.09375,0.0,0.0,0.0,0.0,0.0,0,0.03416149068322982,0.30769230769230765,0.7925156354904175,0.28616389632225037,99.33264923095703,0.01342043001204729,0.0,0.0,0.0,0.9600973129272461,0.0008035844657570124,0.0,0.0,0.04034142196178436,1.111655831336975
+24,date,Tomorrow is 11/12/2019. What is the date one week ago from today in MM/DD/YYYY?,#### 11/04/2019,SCoT,"To find the date one week ago from today, we need to subtract 7 days from the current date. 
+
+Current date: 11/12/2019
+
+One week ago: 11/19/2019
+
+So, the date one week ago from today is 11/19/2019.",38.8441,4.311688311688313,8651.868405032468,53.31688311688317,3.4285714285714284,2748.765625,0.08888888888888889,0.0,0.08888888888888889,0.0,0.0,0.0,0.0,0.0,0,0.050761421319796995,0.31578947368421056,0.814729630947113,0.1900472342967987,,,,,,,,,,,
+24,date,Tomorrow is 11/12/2019. What is the date one week ago from today in MM/DD/YYYY?,#### 11/04/2019,MGCoT,"To find the date one week ago from today, you need to subtract 7 days from the current date. 
+
+Today is 11/12/2019. Subtracting 7 days from today gives us 4/19/2019. Therefore, one week ago from today is 4/19/2019.",38.8636,4.748051948051951,8602.401075487012,53.01688311688308,3.051948051948052,2748.765625,0.08510638297872342,0.0,0.08510638297872342,0.0,0.0,0.0,0.0,0.0,0,0.051401869158878455,0.358974358974359,0.81669020652771,0.17959049344062805,99.33264923095703,0.01342043001204729,0.0,0.0,0.0,0.9600973129272461,0.0008035844657570124,0.0,0.0,0.04034142196178436,1.111655831336975
+25,date,Tomorrow is 11/12/2019. What is the date one week from today in MM/DD/YYYY?,#### 11/18/2019,SCoT,"To find the date one week from today, we need to add 7 days to the current date. 
+
+Current date: 11/12/2019
+
+One week from today: 11/19/2019
+
+So, the date one week from today is 11/19/2019.",38.3329,4.546052631578949,8664.473170230263,53.41973684210526,3.1578947368421053,2748.765625,0.0909090909090909,0.0,0.0909090909090909,0.0,0.0,0.0,0.0,0.0,0,0.05291005291005291,0.3333333333333333,0.8162534832954407,0.1640295386314392,,,,,,,,,,,
+25,date,Tomorrow is 11/12/2019. What is the date one week from today in MM/DD/YYYY?,#### 11/18/2019,MGCoT,"To find the date one week from today, you need to add 7 days to the date you're given. 
+
+Given the date is 11/12/2019, one week from today would be:
+
+11/19/2019
+
+This is because you add 7 days to the month and day of the date you're given.",40.5934,3.878481012658228,8628.71563488924,53.216455696202516,4.556962025316456,2748.765625,0.07017543859649122,0.0,0.07017543859649122,0.0,0.0,0.0,0.0,0.0,0,0.04184100418410042,0.2926829268292683,0.8113240003585815,0.12774217128753662,99.1409912109375,0.014427293092012405,0.0,0.0,0.0,0.9568063616752625,0.001047533587552607,0.0,0.0,0.0543331652879715,1.120784878730774
+26,date,Tomorrow is 11/12/2019. What is the date 24 hours later in MM/DD/YYYY?,#### 11/12/2019,SCoT,"To find the date 24 hours later, we need to add 24 hours to the current date. However, since we are given the date as 11/12/2019, we need to add 24 hours to the date 11/12/2019. 
+
+1. **ANALYZE** What the question is asking: We need to find the date 24 hours later in the format MM/DD/YYYY.
+
+2. **PLAN** Reasoning steps needed: 
+   - Add 24 hours to the current date (11/12/2019).
+   - Convert the date to the desired format (MM/DD/YYYY).
+
+3. **SOLVE** Step by step:
+   - Add 24 hours to 11/12/2019: 11/13/2019
+   - Convert the date to the desired format: 11/13/2019
+
+4. **STATE** The final answer clearly: The date 24 hours later is 11/13/2019 in the format MM/DD/YYYY.",125.3345,4.163052208835338,8635.191343498997,53.222489959839514,2.2248995983935744,2748.765625,0.04411764705882353,0.02985074626865672,0.04411764705882353,0.0,0.0,0.02,0.5,0.038461538461538464,1,0.01644245142002987,0.2553191489361702,0.7743231654167175,0.1596706062555313,,,,,,,,,,,
+26,date,Tomorrow is 11/12/2019. What is the date 24 hours later in MM/DD/YYYY?,#### 11/12/2019,MGCoT,"To find the date 24 hours later, you need to add 24 hours to the date 11/12/2019. Since there are 24 hours in a day, you simply add 24 to the day part of the date. 
+
+11/12/2019 + 24 hours = 11/13/2019
+
+So, the date 24 hours later is 11/13/2019.",56.0853,3.741818181818184,8626.454971590909,53.18545454545456,3.8181818181818183,2748.765625,0.10169491525423728,0.07017543859649122,0.10169491525423728,6.851187014592609e-232,0.0,0.037037037037037035,0.5,0.06896551724137931,1,0.04508196721311475,0.32432432432432434,0.8117216229438782,0.2135295569896698,98.66925048828125,0.016774248331785202,0.0,0.0,0.0,0.9412416815757751,0.00149792549200356,0.0,0.0,0.07122417539358139,1.1527658700942993
+27,date,"Today, 8/3/1997, is a day that we will never forget. What is the date today in MM/DD/YYYY?",#### 08/03/1997,SCoT,The date today is 08/03/2021.,8.9307,4.023529411764706,8632.790900735294,53.20000000000002,10.176470588235293,2748.765625,0.4,0.25,0.4,0.0,0.0,0.0,0.0,0.0,0,0.24137931034482762,0.46153846153846156,0.8688474893569946,0.5179833173751831,,,,,,,,,,,
+27,date,"Today, 8/3/1997, is a day that we will never forget. What is the date today in MM/DD/YYYY?",#### 08/03/1997,MGCoT,Today is 08/03/2023.,8.4005,4.2,8624.961979166666,53.19333333333335,16.0,2748.765625,0.5,0.3333333333333333,0.5,0.0,0.0,0.0,0.0,0.0,0,0.35,0.43478260869565216,0.8759362101554871,0.5655683875083923,98.93457794189453,0.0,0.007906131446361542,0.0,0.0,0.9599586725234985,0.0,0.021312884986400604,0.0014491677284240723,0.008952292613685131,1.0
+28,date,"Today, 8/3/1997, is a day that we will never forget. What is the date tomorrow in MM/DD/YYYY?",#### 08/04/1997,SCoT,"To find the date tomorrow in MM/DD/YYYY format, we need to add 1 to the current day's month and day. Since today is 8/3/1997, tomorrow's date would be 8/4/1997.",27.7613,4.481818181818182,8654.883238636363,53.35454545454548,3.7818181818181817,2748.765625,0.05,0.0,0.05,0.0,0.0,0.0,0.0,0.0,0,0.05625000000000002,0.368421052631579,0.8157939910888672,0.36978086829185486,,,,,,,,,,,
+28,date,"Today, 8/3/1997, is a day that we will never forget. What is the date tomorrow in MM/DD/YYYY?",#### 08/04/1997,MGCoT,"To find the date tomorrow in MM/DD/YYYY format, I need to know the date today. Unfortunately, you didn't provide today's date. Please provide today's date, and I will be able to calculate tomorrow's date.",24.4077,4.014893617021277,8651.011053856382,53.302127659574474,5.574468085106383,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.014705882352941124,0.1142857142857143,0.7647987604141235,0.23397140204906464,99.80499267578125,0.0,0.0,0.0,0.0,0.9945510625839233,0.0,0.0,0.0,0.008215165697038174,1.0
+29,date,"Today, 8/3/1997, is a day that we will never forget. What is the date yesterday in MM/DD/YYYY?",#### 08/02/1997,SCoT,"To find the date yesterday, we need to subtract one day from the given date. 
+
+Today's date is 8/3/1997.
+
+Yesterday's date would be 8/2/1997.",24.2365,4.862500000000002,8666.2021484375,53.429166666666696,4.375,2748.765625,0.0606060606060606,0.0,0.0606060606060606,0.0,0.0,0.0,0.0,0.0,0,0.06382978723404253,0.34146341463414637,0.8304105997085571,0.34403303265571594,,,,,,,,,,,
+29,date,"Today, 8/3/1997, is a day that we will never forget. What is the date yesterday in MM/DD/YYYY?",#### 08/02/1997,MGCoT,"To find the date yesterday in MM/DD/YYYY format, you need to subtract one day from the given date. 
+
+Given date: 8/3/1997
+
+Yesterday's date: 7/31/1997
+
+Therefore, the date yesterday is 7/31/1997.",34.8258,6.973913043478262,8736.941009963768,53.84637681159418,3.1739130434782608,2748.765625,0.047619047619047616,0.0,0.047619047619047616,0.0,0.0,0.0,0.0,0.0,0,0.04102564102564099,0.30769230769230765,0.8188042044639587,0.39985570311546326,99.80499267578125,0.0,0.0,0.0,0.0,0.9945510625839233,0.0,0.0,0.0,0.008215165697038174,1.0
+30,date,"Today, 8/3/1997, is a day that we will never forget. What is the date 10 days ago in MM/DD/YYYY?",#### 07/24/1997,SCoT,"To find the date 10 days ago, we need to subtract 10 days from the given date of 8/3/1997. 
+
+1. Subtract 10 days from the given date: 
+   - 8/3/1997 - 10 days = 8/13/1997
+
+Therefore, 10 days ago was on 8/13/1997.",48.4175,4.204166666666667,8790.071207682291,54.17916666666661,2.8333333333333335,2748.765625,0.04081632653061224,0.0,0.04081632653061224,0.0,0.0,0.0,0.0,0.0,0,0.04245283018867929,0.28571428571428575,0.8015775084495544,0.35256221890449524,,,,,,,,,,,
+30,date,"Today, 8/3/1997, is a day that we will never forget. What is the date 10 days ago in MM/DD/YYYY?",#### 07/24/1997,MGCoT,"To find the date 10 days ago from today's date, you need to subtract 10 days from the current date. However, since today is 8/3/1997, we need to subtract 10 days from that date to find the date 10 days ago.
+
+Let's calculate the date 10 days ago:
+
+- Today's date: 8/3/1997
+- Subtract 10 days: 8/3/1997 - 10 days = 8/13/1997
+
+So, 10 days ago was on 8/13/1997.",72.6808,4.336363636363633,8698.052939248251,53.633566433566344,3.2867132867132867,2748.765625,0.024691358024691357,0.0,0.024691358024691357,0.0,0.0,0.0,0.0,0.0,0,0.025210084033613467,0.27272727272727276,0.7927046418190002,0.3207946717739105,99.76317596435547,0.0,0.0,0.0,0.0,0.995771050453186,0.0006779026589356363,0.0,0.0,0.0,1.0
+31,date,"Today, 8/3/1997, is a day that we will never forget. What is the date a month ago in MM/DD/YYYY?",#### 07/03/1997,SCoT,"To find the date a month ago, we need to subtract one month from the given date. 
+
+1. **ANALYZE** the question: We are asked to find the date a month ago in MM/DD/YYYY format.
+
+2. **PLAN** to solve this, we need to subtract one month from the given date, which is 8/3/1997.
+
+3. **SOLVE** by performing the subtraction: 
+
+   - Subtract 1 month from 8/3/1997: 
+     - January: 31 days
+     - February: 28 days (leap year)
+     - March: 31 days
+     - April: 30 days
+     - May: 31 days
+     - June: 30 days
+     - July: 31 days
+     - August: 31 days
+
+   - Subtracting 1 month from 8/3/1997 gives us: 
+     - 8/3/1997 - 31 days = 7/3/1997
+     - 7/3/1997 - 28 days = 6/3/1997
+     - 6/3/1997 - 31 days = 5/3/1997
+     - 5/3/1997 - ",151.5028,3.9953488372092982,8728.41848785299,53.805315614618,2.086378737541528,2748.765625,0.014925373134328356,0.0,0.014925373134328356,0.0,0.0,0.0,0.0,0.0,0,0.013717421124828544,0.26415094339622647,0.7539345026016235,0.2781561613082886,,,,,,,,,,,
+31,date,"Today, 8/3/1997, is a day that we will never forget. What is the date a month ago in MM/DD/YYYY?",#### 07/03/1997,MGCoT,"To find the date a month ago in MM/DD/YYYY format, you need to subtract one month from the given date of 8/3/1997. 
+
+Here are the steps to find the date a month ago:
+
+1. **Identify the month and year**: The given date is 8/3/1997.
+2. **Subtract one month from the year**: Since the year is 1997, subtracting one month from it will give you the year of the date a month ago. In this case, subtracting one month from 1997 gives you 1996.
+3. **Add the month to the date**: To find the date a month ago, you need to add the month to the date. Since the month is 8, adding 8 to 3 gives you 11. Therefore, the date a month ago is 8/11/1996.
+
+So, the date a month ago is 8/11/1996.",110.4059,4.482568807339447,8610.60324684633,53.070183486238356,2.596330275229358,2748.765625,0.01360544217687075,0.0,0.01360544217687075,0.0,0.0,0.0,0.0,0.0,0,0.011869436201780381,0.2790697674418604,0.7814343571662903,0.37897416949272156,100.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0335071086883545
+32,date,"Today, 8/3/1997, is a day that we will never forget. What is the date one year ago from today in MM/DD/YYYY?",#### 08/03/1996,SCoT,"To find the date one year ago from today, we need to subtract one year from the given date. 
+
+Given date: 8/3/1997
+
+One year ago: 8/3/1996
+
+So, the date one year ago from today is 08/03/1996.",36.3375,4.659722222222222,8621.536838107639,53.14027777777779,3.5416666666666665,2748.765625,0.13333333333333333,0.09302325581395349,0.13333333333333333,0.0,0.0,0.047619047619047616,0.5,0.08695652173913042,1,0.05759162303664922,0.3902439024390244,0.8174484968185425,0.4330997169017792,,,,,,,,,,,
+32,date,"Today, 8/3/1997, is a day that we will never forget. What is the date one year ago from today in MM/DD/YYYY?",#### 08/03/1996,MGCoT,"To find the date one year ago from today, you need to subtract one year from the given date of 8/3/1997. 
+
+The date one year ago from today is 8/3/1996.",26.4054,4.349019607843138,8639.506893382353,53.23725490196075,5.568627450980392,2748.765625,0.05405405405405406,0.0,0.05405405405405406,0.0,0.0,0.0,0.0,0.0,0,0.05921052631578949,0.368421052631579,0.8168712854385376,0.4412498474121094,98.87422180175781,0.0,0.007892712950706482,0.007224023342132568,0.0,0.9573056101799011,0.0008318732143379748,0.034010037779808044,0.02500981092453003,0.0,1.0
+33,date,"Today, 8/3/1997, is a day that we will never forget. What is the date one week ago from today in MM/DD/YYYY?",#### 07/27/1997,SCoT,"To find the date one week ago from today, we need to subtract 7 days from the given date of 8/3/1997. 
+
+1. **ANALYZE**: The question is asking for a date one week ago from today.
+2. **PLAN**: To find the date one week ago, we subtract 7 days from the given date.
+3. **SOLVE**: 
+   - Subtract 7 days from 8/3/1997: 8/3/1997 - 7 days = 8/10/1997
+4. **STATE**: The date one week ago from today is 8/10/1997.",76.0712,3.928476821192054,8642.614005587748,53.29602649006634,2.4900662251655628,2748.765625,0.022988505747126436,0.0,0.022988505747126436,0.0,0.0,0.0,0.0,0.0,0,0.024752475247524774,0.28571428571428575,0.7842673063278198,0.3150256276130676,,,,,,,,,,,
+33,date,"Today, 8/3/1997, is a day that we will never forget. What is the date one week ago from today in MM/DD/YYYY?",#### 07/27/1997,MGCoT,"To find the date one week ago from today, you need to subtract 7 days from the given date. 
+
+Today's date is 8/3/1997.
+
+One week ago from today is 8/10/1997.",27.7768,4.372727272727271,8638.629403409092,53.2345454545454,4.036363636363636,2748.765625,0.05263157894736842,0.0,0.05263157894736842,0.0,0.0,0.0,0.0,0.0,0,0.0573248407643312,0.3,0.819020688533783,0.33709877729415894,98.87422180175781,0.0,0.007892712950706482,0.007224023342132568,0.0,0.9573056101799011,0.0008318732143379748,0.034010037779808044,0.02500981092453003,0.0,1.0
+34,date,"Today, 8/3/1997, is a day that we will never forget. What is the date one week from today in MM/DD/YYYY?",#### 08/10/1997,SCoT,"To find the date one week from today, we need to add 7 days to the given date. 
+
+1. **ANALYZE** the question: We are asked to find the date one week from today.
+2. **PLAN** to solve this, we need to add 7 days to the given date.
+3. **SOLVE** by adding 7 days to the date 8/3/1997.
+4. **STATE** the final answer: The date one week from today is 8/10/1997.",59.4746,4.277118644067799,8657.540750794491,53.383898305084664,2.6271186440677967,2748.765625,0.05128205128205129,0.026315789473684213,0.05128205128205129,0.0,0.0,0.0,0.0,0.0,0,0.02824858757062143,0.30434782608695654,0.8051952123641968,0.2901233732700348,,,,,,,,,,,
+34,date,"Today, 8/3/1997, is a day that we will never forget. What is the date one week from today in MM/DD/YYYY?",#### 08/10/1997,MGCoT,"To find the date one week from today, we need to add 7 days to the given date. 
+
+Today's date is 8/3/1997.
+
+One week from today is 8/10/1997.",27.4133,4.367924528301886,8699.598245872641,53.61698113207549,5.962264150943396,2748.765625,0.1111111111111111,0.058823529411764705,0.1111111111111111,0.0,0.0,0.0,0.0,0.0,0,0.07092198581560283,0.3783783783783784,0.8298222422599792,0.28645238280296326,98.85820770263672,0.0,0.0,0.0,0.0,0.9586895108222961,0.0013538437196984887,0.0,0.0,0.0,1.0
+35,date,"Today, 8/3/1997, is a day that we will never forget. What is the date 24 hours later in MM/DD/YYYY?",#### 08/04/1997,SCoT,"To find the date 24 hours later, we need to add 24 hours to the given date. However, the question asks for a specific date, not a time. Therefore, we cannot directly calculate the date 24 hours later from the given date. 
+
+If you meant to ask for the date 24 hours after the given date, we would need to know the exact date. Please provide the date, and I can help you calculate the date 24 hours later.",51.4451,4.791176470588236,8671.379825367647,53.441176470588346,2.656862745098039,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.00496277915632759,0.10526315789473684,0.7557292580604553,0.0627770870923996,,,,,,,,,,,
+35,date,"Today, 8/3/1997, is a day that we will never forget. What is the date 24 hours later in MM/DD/YYYY?",#### 08/04/1997,MGCoT,"To find the date 24 hours later, we need to add 24 hours to the given date. However, the date you provided is not in the format of MM/DD/YYYY. Please provide the correct date in the format of MM/DD/YYYY, and I will help you calculate the date 24 hours later.",34.4396,4.188059701492537,8647.093166977613,53.334328358208985,4.567164179104478,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.011627906976744207,0.17142857142857146,0.7603002190589905,0.06831367313861847,99.76317596435547,0.0,0.0,0.0,0.0,0.995771050453186,0.0006779026589356363,0.0,0.0,0.0,1.0
+36,date,"Today is Sep 9, 1909. What is the date today in MM/DD/YYYY?",#### 09/09/1909,SCoT,"To find the date today in MM/DD/YYYY format, we need to know the current date. However, since you mentioned today is Sep 9, 1909, we can directly state the date as:
+
+Sep 9, 2022
+
+This is based on the assumption that today is September 9, 2022, which is a common year, and we are considering the year 1909 as a leap year.",48.4342,4.126041666666668,8667.1845703125,53.43645833333329,3.3333333333333335,2748.765625,0.029850746268656716,0.0,0.029850746268656716,0.0,0.0,0.0,0.0,0.0,0,0.028124999999999956,0.2631578947368421,0.780707061290741,0.5175772309303284,,,,,,,,,,,
+36,date,"Today is Sep 9, 1909. What is the date today in MM/DD/YYYY?",#### 09/09/1909,MGCoT,"Sep 9, 2023",5.7993,4.699999999999999,8653.566015625,53.35,23.0,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.1333333333333333,0.4,0.8367928862571716,0.43395236134529114,98.4814453125,0.0,0.0,0.0,0.0,0.9505811333656311,0.0,0.0,0.0,0.0,1.0
+37,date,"Today is Sep 9, 1909. What is the date tomorrow in MM/DD/YYYY?",#### 09/10/1909,SCoT,"To find the date tomorrow in MM/DD/YYYY format, you need to add 1 to the current day's month and day. Since today is Sep 9, 1909, tomorrow would be Sep 10, 1909. Therefore, the date tomorrow is 10/09/1909.",36.3833,4.327777777777779,8685.485514322916,53.52499999999995,3.5277777777777777,2748.765625,0.13043478260869565,0.04545454545454545,0.08695652173913045,0.0,0.0,0.0,0.0,0.0,0,0.04878048780487809,0.303030303030303,0.8261928558349609,0.4152982831001282,,,,,,,,,,,
+37,date,"Today is Sep 9, 1909. What is the date tomorrow in MM/DD/YYYY?",#### 09/10/1909,MGCoT,"Sep 10, 1909",6.2931,4.754545454545454,8711.351917613636,53.7,18.363636363636363,2748.765625,0.6666666666666666,0.5,0.6666666666666666,0.0,0.0,0.0,0.0,0.0,0,0.4,0.5714285714285715,0.8727405667304993,0.6947183012962341,98.66925048828125,0.016774248331785202,0.0,0.0,0.0,0.9412416815757751,0.00149792549200356,0.0,0.0,0.07122417539358139,1.1527658700942993
+38,date,"Today is Sep 9, 1909. What is the date yesterday in MM/DD/YYYY?",#### 09/08/1909,SCoT,"To find the date yesterday, we need to subtract one day from the given date. 
+
+Sep 9, 1909 - 1 day = Sep 8, 1909
+
+So, yesterday was Sep 8, 1909.",28.8589,5.93157894736842,8695.084498355263,53.607017543859634,3.56140350877193,2748.765625,0.0625,0.0,0.0625,0.0,0.0,0.0,0.0,0.0,0,0.0625,0.2702702702702703,0.7964739203453064,0.4260091483592987,,,,,,,,,,,
+38,date,"Today is Sep 9, 1909. What is the date yesterday in MM/DD/YYYY?",#### 09/08/1909,MGCoT,"Sep 8, 1909",5.1497,6.390000000000001,8670.937890625,53.419999999999995,12.2,2748.765625,0.3333333333333333,0.0,0.3333333333333333,0.0,0.0,0.0,0.0,0.0,0,0.33333333333333337,0.6250000000000001,0.8632210493087769,0.6679056286811829,98.66925048828125,0.016774248331785202,0.0,0.0,0.0,0.9412416815757751,0.00149792549200356,0.0,0.0,0.07122417539358139,1.1527658700942993
+39,date,"Today is Sep 9, 1909. What is the date 10 days ago in MM/DD/YYYY?",#### 08/30/1909,SCoT,"To find the date 10 days ago, we need to subtract 10 days from the given date of September 9, 1909. 
+
+1. Subtract 10 days from September 9, 1909: 
+   - September 9, 1909 - 10 days = August 29, 1909
+
+Therefore, the date 10 days ago is August 29, 1909.",51.9831,4.140776699029126,8637.521541262136,53.23883495145624,2.9902912621359223,2748.765625,0.04,0.0,0.04,0.0,0.0,0.0,0.0,0.0,0,0.028000000000000025,0.20512820512820512,0.7860254049301147,0.49414655566215515,,,,,,,,,,,
+39,date,"Today is Sep 9, 1909. What is the date 10 days ago in MM/DD/YYYY?",#### 08/30/1909,MGCoT,"Sep 19, 1909
+
+To find the date 10 days ago, you subtract 10 days from the given date of Sep 9, 1909. So, 10 days ago would be Sep 19, 1909.",32.4452,3.915873015873016,8619.697854662698,53.15714285714279,4.9523809523809526,2748.765625,0.0588235294117647,0.0,0.0588235294117647,0.0,0.0,0.0,0.0,0.0,0,0.05035971223021585,0.22222222222222224,0.8066717386245728,0.48120787739753723,98.86434173583984,0.03089866042137146,0.0,0.0,0.0,0.9309064745903015,0.0017145911697298288,0.0,0.0,0.10916007310152054,1.2335325479507446
+40,date,"Today is Sep 9, 1909. What is the date a month ago in MM/DD/YYYY?",#### 08/09/1909,SCoT,"To find the date a month ago, we need to subtract one month from the current date. Since today is Sep 9, 1909, we need to subtract one month from that date to find the date a month ago. 
+
+1. **Current Date**: Sep 9, 1909
+2. **Month to Subtract**: 1 (since we're subtracting one month)
+3. **New Date**: Sep 8, 1909
+
+Therefore, a month ago, on Sep 8, 1909.",59.5154,4.0991525423728845,8652.031878972457,53.35169491525436,2.847457627118644,2748.765625,0.0273972602739726,0.0,0.0273972602739726,0.0,0.0,0.0,0.0,0.0,0,0.025423728813559365,0.24390243902439024,0.7761018872261047,0.3182867467403412,,,,,,,,,,,
+40,date,"Today is Sep 9, 1909. What is the date a month ago in MM/DD/YYYY?",#### 08/09/1909,MGCoT,"Sep 7, 1909
+
+To find the date a month ago, you need to subtract one month from the given date. In this case, you subtract 1 from the month number (9) to get 8. So, the date a month ago is Sep 7, 1909.",34.9513,4.101470588235294,8664.911764705883,53.43235294117653,4.617647058823529,2748.765625,0.04255319148936171,0.0,0.04255319148936171,0.0,0.0,0.0,0.0,0.0,0,0.03500000000000003,0.2702702702702703,0.7933563590049744,0.40245455503463745,99.1409912109375,0.014427293092012405,0.0,0.0,0.0,0.9568063616752625,0.001047533587552607,0.0,0.0,0.0543331652879715,1.120784878730774
+41,date,"Today is Sep 9, 1909. What is the date one year ago from today in MM/DD/YYYY?",#### 09/09/1908,SCoT,"To find the date one year ago from today, we need to subtract one year from the current date. 
+
+Current date: Sep 9, 1909
+
+One year ago: Sep 9, 1908
+
+So, the date one year ago from today is Sep 9, 1908.",35.3251,4.044285714285715,8661.803459821429,53.400000000000055,3.3857142857142857,2748.765625,0.044444444444444446,0.0,0.044444444444444446,0.0,0.0,0.0,0.0,0.0,0,0.044554455445544594,0.2857142857142857,0.7898437976837158,0.46477746963500977,,,,,,,,,,,
+41,date,"Today is Sep 9, 1909. What is the date one year ago from today in MM/DD/YYYY?",#### 09/09/1908,MGCoT,"To find the date one year ago from today, you need to subtract one year from the current date. 
+
+Today is Sep 9, 1909. One year ago would be:
+
+Sep 9, 1908
+
+So, the date one year ago from today is Sep 9, 1908.",36.4702,4.323943661971832,8657.26689040493,53.37464788732398,4.563380281690141,2748.765625,0.04255319148936171,0.0,0.04255319148936171,0.0,0.0,0.0,0.0,0.0,0,0.043269230769230727,0.2777777777777778,0.7925064563751221,0.4819246828556061,99.27210235595703,0.013981151394546032,0.03257029131054878,0.05424698442220688,0.0,0.957553505897522,0.0,0.038669735193252563,0.04315560311079025,0.019049279391765594,1.0624037981033325
+42,date,"Today is Sep 9, 1909. What is the date one week ago from today in MM/DD/YYYY?",#### 09/02/1909,SCoT,"To find the date one week ago from today, we need to subtract 7 days from the current date. 
+
+Current date: Sep 9, 1909
+
+One week ago: Sep 2, 1909
+
+So, the date one week ago from today is Sep 2, 1909.",35.8242,4.371830985915494,8662.194542253521,53.39859154929584,3.5492957746478875,2748.765625,0.044444444444444446,0.0,0.044444444444444446,0.0,0.0,0.0,0.0,0.0,0,0.04500000000000004,0.2702702702702703,0.795421838760376,0.3505099415779114,,,,,,,,,,,
+42,date,"Today is Sep 9, 1909. What is the date one week ago from today in MM/DD/YYYY?",#### 09/02/1909,MGCoT,"To find out what the date is one week ago from today, you need to subtract 7 days from the current date. Since today is Sep 9, 1909, one week ago would be:
+
+Sep 2, 1909
+
+This is because you subtract 7 days from Sep 9, which gives you Sep 2.",37.8566,4.378666666666668,8577.813072916666,52.88000000000005,3.1333333333333333,2748.765625,0.037037037037037035,0.0,0.037037037037037035,0.0,0.0,0.0,0.0,0.0,0,0.033333333333333326,0.25641025641025644,0.7938292026519775,0.3824240267276764,99.27210235595703,0.013981151394546032,0.03257029131054878,0.05424698442220688,0.0,0.957553505897522,0.0,0.038669735193252563,0.04315560311079025,0.019049279391765594,1.0624037981033325
+43,date,"Today is Sep 9, 1909. What is the date one week from today in MM/DD/YYYY?",#### 09/16/1909,SCoT,"To find the date one week from today, we need to add 7 days to the current date. 
+
+Current date: Sep 9, 1909
+
+One week from today: Sep 16, 1909
+
+So, the date one week from today is Sep 16, 1909.",36.3573,4.630555555555558,8697.459364149305,53.64027777777779,3.3055555555555554,2748.765625,0.0909090909090909,0.047619047619047616,0.0909090909090909,0.0,0.0,0.0,0.0,0.0,0,0.046391752577319534,0.2857142857142857,0.8024067282676697,0.33914148807525635,,,,,,,,,,,
+43,date,"Today is Sep 9, 1909. What is the date one week from today in MM/DD/YYYY?",#### 09/16/1909,MGCoT,"To find the date one week from today, we need to add 7 days to the current date. Since today is Sep 9, 1909, we add 7 days to get Sep 16, 1909. Therefore, one week from today is Sep 16, 1909.",36.4735,4.138028169014085,8610.146071742958,53.076056338028266,4.563380281690141,2748.765625,0.08888888888888889,0.046511627906976744,0.08888888888888889,0.0,0.0,0.0,0.0,0.0,0,0.04712041884816753,0.2941176470588235,0.7986077666282654,0.37540173530578613,99.03155517578125,0.013877245597541332,0.0,0.0,0.0,0.9516746401786804,2.6528866783337435e-06,0.0,0.0,0.03837653249502182,1.0683228969573975
+44,date,"Today is Sep 9, 1909. What is the date 24 hours later in MM/DD/YYYY?",#### 09/10/1909,SCoT,"To find the date 24 hours later, we simply add 24 hours to the current date. However, since we are given the date as Sep 9, 1909, we need to adjust the date accordingly. 
+
+Sep 9, 1909 is a date in the Gregorian calendar. To convert it to the Julian calendar, we need to add 1 day to the Gregorian date. 
+
+1909 is a leap year, so we need to add 1 day to the Gregorian date to get the Julian date. 
+
+1909 + 1 = 1910
+
+So, the date 24 hours later in the Gregorian calendar would be Sep 10, 1910. 
+
+However, since we are working with the Julian calendar, we need to subtract 1 day from the Gregorian date to get the Julian date. 
+
+1910 - 1 = 1909
+
+So, the date 24 hours later in the Julian calendar would be Sep 9, 1909. 
+
+Therefore, the date 24 hours later in MM/DD/YYYY is Sep 10, 1910.",129.3753,4.16692607003891,8604.049565296693,53.04669260700395,2.105058365758755,2748.765625,0.025157232704402517,0.0,0.025157232704402517,0.0,0.0,0.0,0.0,0.0,0,0.011494252873563204,0.2380952380952381,0.7637579441070557,0.29545870423316956,,,,,,,,,,,
+44,date,"Today is Sep 9, 1909. What is the date 24 hours later in MM/DD/YYYY?",#### 09/10/1909,MGCoT,"To find the date 24 hours later, we simply add 24 hours to the given date. Since today is September 9, 1909, we add 24 hours to that date to get the date 24 hours later.
+
+September 9, 1909 + 24 hours = September 10, 1909
+
+So, the date 24 hours later is September 10, 1909.",52.0446,4.8568627450980415,8646.640433517157,53.29607843137256,3.803921568627451,2748.765625,0.07017543859649122,0.03636363636363636,0.07017543859649122,0.0,0.0,0.0,0.0,0.0,0,0.03308823529411764,0.21052631578947367,0.789871096611023,0.33836066722869873,98.86434173583984,0.03089866042137146,0.0,0.0,0.0,0.9309064745903015,0.0017145911697298288,0.0,0.0,0.10916007310152054,1.2335325479507446
+45,date,It is 4/19/1969 today. What is the date today in MM/DD/YYYY?,#### 04/19/1969,SCoT,The date today is 04/19/2022.,8.8683,4.7176470588235295,8641.11603860294,53.282352941176455,10.117647058823529,2748.765625,0.4,0.25,0.4,0.0,0.0,0.0,0.0,0.0,0,0.24137931034482762,0.48,0.8780161142349243,0.4374347925186157,,,,,,,,,,,
+45,date,It is 4/19/1969 today. What is the date today in MM/DD/YYYY?,#### 04/19/1969,MGCoT,Today is 04/19/2022.,8.438,4.393333333333333,8629.29765625,53.20000000000002,15.333333333333334,2748.765625,0.5,0.3333333333333333,0.5,0.0,0.0,0.0,0.0,0.0,0,0.35,0.5217391304347827,0.8832526803016663,0.493081659078598,97.34120178222656,0.0,0.0,0.015602536499500275,0.0,0.9100344777107239,0.0,0.0004930049180984497,0.000893324613571167,0.022629236802458763,1.0
+46,date,It is 4/19/1969 today. What is the date tomorrow in MM/DD/YYYY?,#### 04/20/1969,SCoT,"To find the date tomorrow in MM/DD/YYYY format, we need to add 1 to the current day's month and day. Since today is 4/19/1969, tomorrow would be 5/1/1969.",27.3129,4.259259259259262,8645.234664351852,53.30000000000003,3.611111111111111,2748.765625,0.05263157894736842,0.0,0.05263157894736842,0.0,0.0,0.0,0.0,0.0,0,0.051948051948051965,0.3243243243243243,0.8341692090034485,0.5319642424583435,,,,,,,,,,,
+46,date,It is 4/19/1969 today. What is the date tomorrow in MM/DD/YYYY?,#### 04/20/1969,MGCoT,"To find the date tomorrow in MM/DD/YYYY format, you need to add 1 to the current day's month and day. For today, April 19, 1969, tomorrow would be April 20, 1969.",28.4399,3.610909090909091,8629.173579545455,53.19999999999997,5.0181818181818185,2748.765625,0.10810810810810811,0.05714285714285715,0.10810810810810811,0.0,0.0,0.0,0.0,0.0,0,0.04938271604938271,0.368421052631579,0.8078477382659912,0.5161211490631104,99.18013000488281,0.0,0.0,0.0,0.0,0.985224187374115,8.80422885529697e-05,0.0,0.0,0.0033002400305122137,1.0
+47,date,It is 4/19/1969 today. What is the date yesterday in MM/DD/YYYY?,#### 04/18/1969,SCoT,"To find the date yesterday, we need to subtract one day from the given date. 
+
+4/19/1969 - 1 day = 4/18/1969
+
+Therefore, yesterday was 4/18/1969.",29.7991,4.225423728813561,8652.678893008475,53.31694915254241,3.830508474576271,2748.765625,0.125,0.06666666666666667,0.125,0.0,0.0,0.0,0.0,0.0,0,0.06896551724137934,0.35000000000000003,0.8348724842071533,0.521522045135498,,,,,,,,,,,
+47,date,It is 4/19/1969 today. What is the date yesterday in MM/DD/YYYY?,#### 04/18/1969,MGCoT,"To find the date yesterday in MM/DD/YYYY format, you need to subtract one day from today's date. Today is 4/19/1969, so yesterday would be 4/18/1969.",25.7537,4.605882352941177,8653.129212622549,53.3294117647059,4.078431372549019,2748.765625,0.11428571428571428,0.06060606060606061,0.11428571428571428,0.0,0.0,0.0,0.0,0.0,0,0.06711409395973156,0.3783783783783784,0.8350231051445007,0.44808751344680786,99.18013000488281,0.0,0.0,0.0,0.0,0.985224187374115,8.80422885529697e-05,0.0,0.0,0.0033002400305122137,1.0
+48,date,It is 4/19/1969 today. What is the date 10 days ago in MM/DD/YYYY?,#### 04/09/1969,SCoT,"To find the date 10 days ago, we need to subtract 10 days from the current date. 
+
+Current date: 4/19/1969
+
+10 days ago: 4/19/1969 - 10 days = 4/19/1968
+
+So, 10 days ago was 4/19/1968.",45.9861,4.2411111111111115,8709.565538194445,53.70000000000005,3.235955056179775,2748.765625,0.04545454545454545,0.0,0.04545454545454545,0.0,0.0,0.0,0.0,0.0,0,0.05978260869565222,0.35,0.819353461265564,0.531906008720398,,,,,,,,,,,
+48,date,It is 4/19/1969 today. What is the date 10 days ago in MM/DD/YYYY?,#### 04/09/1969,MGCoT,"To find the date 10 days ago in MM/DD/YYYY format, you need to subtract 10 days from today's date. Today is 4/19/1969, so 10 days ago would be:
+
+4/19/1969 - 10 days = 4/13/1969
+
+Therefore, 10 days ago was on April 13, 1969.",49.5392,4.168041237113404,8719.31306378866,53.74948453608243,3.5257731958762886,2748.765625,0.03773584905660377,0.0,0.03773584905660377,0.0,0.0,0.0,0.0,0.0,0,0.04932735426008972,0.32558139534883723,0.8135928511619568,0.5084115266799927,99.28307342529297,0.00410253694280982,0.0,0.0,0.0,0.9728805422782898,0.0008355354657396674,0.0,0.0,0.03498891741037369,1.0756522417068481
+49,date,It is 4/19/1969 today. What is the date a month ago in MM/DD/YYYY?,#### 03/19/1969,SCoT,"To find the date a month ago, we need to subtract one month from today's date. Today is 4/19/1969, so a month ago would be 3/19/1969.",25.2774,4.406000000000001,8728.24046875,53.802000000000014,4.22,2748.765625,0.1176470588235294,0.0625,0.1176470588235294,0.0,0.0,0.0,0.0,0.0,0,0.07518796992481203,0.32432432432432434,0.832643449306488,0.5360310673713684,,,,,,,,,,,
+49,date,It is 4/19/1969 today. What is the date a month ago in MM/DD/YYYY?,#### 03/19/1969,MGCoT,"To find the date a month ago in MM/DD/YYYY format, you need to subtract one month from today's date. 
+
+Today's date is 4/19/1969. Subtracting one month from this date gives us 3/19/1969. 
+
+So, a month ago, the date would be 3/19/1969.",42.6304,4.397590361445786,8707.944983057228,53.680722891566234,4.240963855421687,2748.765625,0.07407407407407407,0.038461538461538464,0.07407407407407407,0.0,0.0,0.0,0.0,0.0,0,0.042735042735042694,0.30769230769230765,0.8177412748336792,0.5052679181098938,99.77474212646484,0.0,0.0,0.0,0.0,0.9999159574508667,0.00013096147449687123,0.0,0.0,0.0010328060016036034,1.0
+50,date,It is 4/19/1969 today. What is the date one year ago from today in MM/DD/YYYY?,#### 04/19/1968,SCoT,"To find the date one year ago from today, we need to subtract one year from the current date. 
+
+Current date: 4/19/1969
+
+One year ago: 4/19/1968
+
+So, the date one year ago from today is 04/19/1968.",37.3364,5.052702702702704,8735.008604307432,53.844594594594604,3.1486486486486487,2748.765625,0.13333333333333333,0.09302325581395349,0.13333333333333333,0.0,0.0,0.047619047619047616,0.5,0.08695652173913042,1,0.055837563451776595,0.41025641025641024,0.8246051669120789,0.4433319866657257,,,,,,,,,,,
+50,date,It is 4/19/1969 today. What is the date one year ago from today in MM/DD/YYYY?,#### 04/19/1968,MGCoT,"To find the date one year ago from today, you need to subtract one year from the current date. 
+
+Current Date: 4/19/1969
+
+One Year Ago: 4/19/1968
+
+Therefore, one year ago from today, the date would be 4/19/1968.",38.4774,5.073333333333332,8693.43453125,53.59200000000008,4.026666666666666,2748.765625,0.08695652173913045,0.04545454545454545,0.08695652173913045,0.0,0.0,0.0,0.0,0.0,0,0.04739336492891,0.35897435897435903,0.8204318284988403,0.44393184781074524,98.78447723388672,0.010828998871147633,0.0,0.0,0.0,0.9446125626564026,0.0,0.0,0.0,0.04128625616431236,1.05702805519104

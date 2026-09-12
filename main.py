@@ -417,7 +417,7 @@ def main() -> None:
             # "llama3.2:1b", 
             # "gemma2:2b", 
             # "qwen2:1.5b", 
-            "mistral:7b", 
+            # "mistral:7b", 
             "openchat:7b", 
             "deepseek-r1:8b",
         ],

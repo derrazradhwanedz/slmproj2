@@ -1,0 +1,596 @@
+record_id,dataset,question,gold_answer,mechanism,final_answer,delta_time_seconds,cpu_usage_avg_percent,ram_usage_avg_mb,ram_usage_avg_percent,gpu_usage_avg_percent,gpu_memory_avg_mb,rouge1_f1,rouge2_f1,rougeL_f1,bleu,exact_match,token_precision,token_recall,token_f1,token_overlap_count,normalized_edit_distance,char_f1,bert_score_f1,semantic_similarity,target_Readability,target_Coherence,target_Relevance,target_Specificity,target_Engagement,target_Concise,target_Length,target_Zipf,target_Hapax,target_Entropy,target_Perplexity
+1,MultiArith,"For Halloween Debby and her sister combined the candy they received. Debby had 32 pieces of candy while her sister had 42. If they ate 35 pieces the first night, how many pieces do they have left?",#### 39,SCoT," 1. **ANALYZE** the problem: We need to find out how many pieces of candy Debby and her sister have left after eating 35 pieces on the first night.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of pieces of candy they had initially.
+   b. Subtract the number of pieces they ate on the first night from the total.
+3. **SOLVE** step by step:
+   a. Debby had 32 pieces and her sister had 42 pieces, so the total number of pieces they had initially is 32 + 42 = 74 pieces.
+   b. They ate 35 pieces on the first night, so the number of pieces they have left is 74 - 35 = 39 pieces.
+4. **STATE** the final answer clearly: Debby and her sister have 39 pieces of candy left.",104.4397,20.171707317073178,13174.145979420731,81.21268292682944,9.61951219512195,3904.765625,0.015503875968992248,0.0,0.015503875968992248,5.374831339232389e-232,0.0,0.016129032258064516,0.5,0.03125,1,0.004405286343612369,0.14285714285714285,0.7488692998886108,0.2802814543247223,,,,,,,,,,,
+1,MultiArith,"For Halloween Debby and her sister combined the candy they received. Debby had 32 pieces of candy while her sister had 42. If they ate 35 pieces the first night, how many pieces do they have left?",#### 39,MGCoT," Debby and her sister combined their candy, so we need to add the number of candies they each had. Debby had 32 pieces and her sister had 42 pieces, so together they had 32 + 42 = 74 pieces of candy. They ate 35 pieces the first night, so to find out how many pieces they have left, we subtract the number of pieces they ate from the total number of pieces they had. 74 - 35 = 39 pieces of candy left.",61.5751,21.50350877192983,12995.872669956141,80.11140350877186,11.701754385964913,3904.765625,0.024999999999999998,0.0,0.024999999999999998,6.0358550325078056e-232,0.0,0.023255813953488372,0.5,0.04444444444444444,1,0.007481296758104716,0.16216216216216214,0.7595618963241577,0.28290459513664246,98.70267486572266,0.07673011720180511,0.0,0.0,0.0029564276337623596,0.8861508965492249,0.005230274051427841,0.0,0.0,0.23599305748939514,1.5487537384033203
+2,MultiArith,A pet store had 13 siamese cats and 5 house cats. During a sale they sold 10 cats. How many cats do they have left?,#### 8,SCoT," 1. **ANALYZE** the question: We need to find out how many cats the pet store has left after selling 10 cats.
+2. **PLAN** the reasoning steps:
+   - Start with the total number of cats the pet store had initially.
+   - Subtract the number of cats sold from the initial number of cats.
+3. **SOLVE** step by step:
+   - The pet store initially had 13 Siamese cats + 5 house cats = 18 cats.
+   - After selling 10 cats, they have 18 - 10 = 8 cats left.
+4. **STATE** the final answer clearly: The pet store has 8 cats left.",81.4236,20.992500000000003,13145.923876953126,81.03374999999997,9.9375,3904.765625,0.02150537634408602,0.0,0.02150537634408602,5.761138600803475e-232,0.0,0.017241379310344827,0.5,0.03333333333333333,1,0.003875968992248069,0.09523809523809523,0.7540444731712341,0.1906786412000656,,,,,,,,,,,
+2,MultiArith,A pet store had 13 siamese cats and 5 house cats. During a sale they sold 10 cats. How many cats do they have left?,#### 8,MGCoT," The pet store initially had 13 Siamese cats and 5 house cats, which totals to 13 + 5 = 18 cats. After the sale, they sold 10 cats, so they now have 18 - 10 = 8 cats left.",35.829,20.053968253968247,13031.71273561508,80.33650793650791,11.492063492063492,3904.765625,0.05555555555555556,0.0,0.05555555555555556,7.290245807398516e-232,0.0,0.03333333333333333,0.5,0.0625,1,0.011695906432748537,0.1212121212121212,0.7753939628601074,0.12618033587932587,98.29096221923828,0.05453091114759445,0.03297696262598038,0.05555050075054169,0.003924142569303513,0.900469958782196,0.0,0.030462101101875305,0.03749909624457359,0.1348590850830078,1.1926995515823364
+3,MultiArith,"Luke was trying to expand his game collection. He bought 2 games from a friend and bought 2 more at a garage sale. If 2 of the games didn't work, how many good games did he end up with?",#### 2,SCoT," 1. **ANALYZE** the question: The question is asking how many good games Luke ended up with after buying some from a friend and a garage sale, and considering that 2 of the games didn't work.
+
+2. **PLAN** the reasoning steps needed:
+   - Determine the total number of games Luke bought.
+   - Subtract the number of games that didn't work.
+
+3. **SOLVE** step by step:
+   - Luke bought 2 games from a friend and 2 more at a garage sale, so he bought a total of 2 + 2 = 4 games.
+   - 2 of the games didn't work, so we subtract that from the total number of games: 4 - 2 = 2.
+
+4. **STATE** the final answer clearly: Luke ended up with 2 good games.",98.6546,19.669587628865997,13200.299552996134,81.3664948453609,9.608247422680412,3904.765625,0.01639344262295082,0.0,0.01639344262295082,5.437705553716812e-232,0.0,0.016666666666666666,0.5,0.03225806451612903,1,0.0031055900621117516,0.09756097560975609,0.7569939494132996,0.1273646205663681,,,,,,,,,,,
+3,MultiArith,"Luke was trying to expand his game collection. He bought 2 games from a friend and bought 2 more at a garage sale. If 2 of the games didn't work, how many good games did he end up with?",#### 2,MGCoT," Luke initially bought 2 games from a friend and 2 more at a garage sale, so he had a total of 2 + 2 = 4 games. However, 2 of these games didn't work, so he ended up with 4 - 2 = 2 good games.",35.9256,20.315873015873027,13192.33060515873,81.35714285714297,12.095238095238095,3904.765625,0.04545454545454545,0.0,0.04545454545454545,6.995501686664742e-232,0.0,0.030303030303030304,0.5,0.05714285714285715,1,0.01041666666666663,0.1212121212121212,0.781262993812561,0.10684841871261597,99.58985137939453,0.0,0.0,0.0,0.0005170195363461971,0.9979260563850403,0.004846087656915188,0.0,0.0,0.0,1.0
+4,MultiArith,"The school cafeteria ordered 42 red apples and 7 green apples for students lunches. But, if only 9 students wanted fruit, how many extra did the cafeteria end up with?",#### 40,SCoT," 1. **ANALYZE** the question: We need to find out how many extra apples the cafeteria has after serving 9 students.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of apples ordered.
+   b. Find the total number of apples served to 9 students.
+   c. Subtract the number of apples served from the total number of apples ordered to find the extra apples.
+3. **SOLVE** step by step:
+   a. Total number of apples ordered = 42 red apples + 7 green apples = 49 apples.
+   b. Number of apples served to 9 students = 9 students * 1 apple per student = 9 apples.
+   c. Extra apples = Total number of apples ordered - Number of apples served = 49 apples - 9 apples = 40 apples.
+4. **STATE** the final answer clearly: The cafeteria ended up with 40 extra apples.",119.5622,19.725847457627122,13293.572745630298,81.94915254237281,9.76271186440678,3904.765625,0.015267175572519085,0.0,0.015267175572519085,5.286929818568628e-232,0.0,0.016666666666666666,0.5,0.03225806451612903,1,0.003931847968545177,0.13953488372093026,0.7390033602714539,0.19309711456298828,,,,,,,,,,,
+4,MultiArith,"The school cafeteria ordered 42 red apples and 7 green apples for students lunches. But, if only 9 students wanted fruit, how many extra did the cafeteria end up with?",#### 40,MGCoT," The school cafeteria ordered a total of 42 red apples and 7 green apples, which makes 42 + 7 = 49 apples in total. However, only 9 students wanted fruit, so the cafeteria ended up with 49 - 9 = 40 extra apples.",39.9158,20.66760563380281,13220.40751540493,81.49295774647888,12.507042253521126,3904.765625,0.05,0.0,0.05,7.114448003820407e-232,0.0,0.029411764705882353,0.5,0.05555555555555555,1,0.014218009478673022,0.16216216216216214,0.7705157399177551,0.18791505694389343,99.43250274658203,0.06023638695478439,0.7294690608978271,0.7732405066490173,0.00041676024557091296,0.9334218502044678,0.0,0.7360981106758118,0.7635092735290527,0.15919238328933716,1.3506401777267456
+5,MultiArith,"Lana picked 36 tulips and 37 roses to make flower bouquets. If she only used 70 of the flowers though, how many extra flowers did Lana pick?",#### 3,SCoT," 1. **ANALYZE** the question: We need to find out how many extra flowers Lana picked.
+2. **PLAN** the reasoning steps: We know the total number of flowers Lana picked (36 tulips + 37 roses) and the number of flowers she used (70). We can find the extra flowers by subtracting the used flowers from the total picked flowers.
+3. **SOLVE** step by step:
+   a. Calculate the total number of flowers Lana picked: 36 tulips + 37 roses = 73 flowers
+   b. Subtract the number of used flowers from the total picked flowers: 73 flowers - 70 flowers = 3 extra flowers
+4. **STATE** the final answer clearly: Lana picked 3 extra flowers.",93.4363,20.17989130434784,13219.412809952446,81.48858695652181,9.923913043478262,3904.765625,0.018518518518518517,0.0,0.018518518518518517,5.60020361889364e-232,0.0,0.017857142857142856,0.5,0.03448275862068965,1,0.0032051282051281937,0.08888888888888889,0.7548531889915466,0.10833258926868439,,,,,,,,,,,
+5,MultiArith,"Lana picked 36 tulips and 37 roses to make flower bouquets. If she only used 70 of the flowers though, how many extra flowers did Lana pick?",#### 3,MGCoT," To find out how many extra flowers Lana picked, we need to subtract the total number of flowers used from the total number of flowers picked.
+
+Lana picked 36 tulips and 37 roses, which totals to 36 + 37 = 73 flowers. However, she only used 70 flowers to make the bouquets.
+
+So, the number of extra flowers Lana picked is 73 - 70 = 3 flowers.",58.0057,21.40280373831776,12997.309396904206,80.12523364485986,12.205607476635514,3904.765625,0.03125,0.0,0.03125,6.367803053737255e-232,0.0,0.025,0.5,0.047619047619047616,1,0.005847953216374324,0.10810810810810811,0.7736185193061829,0.0644998699426651,96.87139892578125,0.19541041553020477,0.401223361492157,0.41673743724823,0.004359266255050898,0.7124373316764832,0.003651822917163372,0.36441701650619507,0.36729317903518677,0.6367493867874146,2.3364617824554443
+6,MultiArith,"Carol and her mom were picking carrots from their garden. Carol picked 29 and her mother picked 16. If only 38 of the carrots were good, how many bad carrots did they have?",#### 7,SCoT," 1. **ANALYZE** the question: We need to find out how many bad carrots Carol and her mom picked in total.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of carrots picked by Carol and her mom.
+   b. Subtract the good carrots from the total carrots picked to find the bad carrots.
+3. **SOLVE** step by step:
+   a. Total carrots picked = 29 (Carol) + 16 (her mom) = 45 carrots.
+   b. Bad carrots = Total carrots picked - Good carrots = 45 - 38 = 7 bad carrots.
+4. **STATE** the final answer clearly: Carol and her mom picked a total of 7 bad carrots.",98.6481,20.990721649484545,13091.203044458764,80.69123711340204,10.175257731958762,3904.765625,0.02,0.0,0.02,5.6645104083792066e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.003558718861209953,0.08695652173913045,0.7564170956611633,0.18635524809360504,,,,,,,,,,,
+6,MultiArith,"Carol and her mom were picking carrots from their garden. Carol picked 29 and her mother picked 16. If only 38 of the carrots were good, how many bad carrots did they have?",#### 7,MGCoT," Carol and her mom picked a total of 29 + 16 = 45 carrots. Since only 38 of these carrots were good, they must have picked 45 - 38 = 7 bad carrots.",32.4277,20.289285714285707,13033.539829799107,80.32857142857138,11.75,3904.765625,0.06666666666666667,0.0,0.06666666666666667,7.601159375410181e-232,0.0,0.03571428571428571,0.5,0.06666666666666667,1,0.013605442176870763,0.1,0.7824843525886536,0.13847467303276062,99.3307113647461,0.0,0.0,0.0,0.0,0.9928663372993469,0.0,0.0,0.0,0.0,1.0
+7,MultiArith,Roger had 16 dollars. For his birthday he got 28 more dollars but spent 25 on a new game. How much money does he have now?,#### 19,SCoT," 1. **ANALYZE** the question: We need to find out how much money Roger has now after receiving more dollars and spending some on a game.
+2. **PLAN** the reasoning steps:
+   a. Find out how much money Roger had initially.
+   b. Find out how much money he received for his birthday.
+   c. Find out how much he spent on the game.
+   d. Calculate the total amount of money he has now.
+3. **SOLVE** step by step:
+   a. Roger initially had 16 dollars.
+   b. He received 28 more dollars for his birthday.
+   c. He spent 25 dollars on a game.
+   d. To find out how much money he has now, we need to add the initial amount, the amount he received, and subtract the amount he spent: 16 + 28 - 25 = 29 dollars.
+4. **STATE** the final answer clearly: Roger has 29 dollars now.",115.1585,19.623348017621183,13170.410569245594,81.17577092511007,9.612334801762115,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003926701570680646,0.13636363636363635,0.7394479513168335,0.06351408362388611,,,,,,,,,,,
+7,MultiArith,Roger had 16 dollars. For his birthday he got 28 more dollars but spent 25 on a new game. How much money does he have now?,#### 19,MGCoT," Roger initially had 16 dollars. He received 28 more dollars for his birthday, bringing his total to 16 + 28 = 44 dollars. However, he spent 25 dollars on a new game, so he now has 44 - 25 = 19 dollars left.",38.3471,19.82205882352941,13162.09748391544,81.1470588235293,10.882352941176471,3904.765625,0.05,0.0,0.05,7.114448003820407e-232,0.0,0.030303030303030304,0.5,0.05714285714285715,1,0.01449275362318836,0.16216216216216214,0.7734965682029724,0.14734338223934174,99.31309509277344,0.010866002179682255,0.0,0.0,0.0,0.9628159403800964,0.002300987485796213,0.0,0.0,0.012022057548165321,1.010717749595642
+8,MultiArith,"While on vacation, Megan took 15 pictures at the zoo and 18 at the museum. If she later deleted 31 of the pictures, how many pictures from her vacation did she still have?",#### 2,SCoT," 1. **ANALYZE** the question: We need to find out how many pictures Megan has left after deleting some of them.
+2. **PLAN** the reasoning steps: We know Megan took 15 pictures at the zoo and 18 at the museum, so we need to add these numbers together. Then, we need to subtract the number of pictures she deleted from the total.
+3. **SOLVE** step by step:
+   a. Add the number of pictures taken at the zoo and the museum: 15 + 18 = 33
+   b. Subtract the number of pictures deleted from the total: 33 - 31 = 2
+4. **STATE** the final answer clearly: Megan has 2 pictures left from her vacation.",90.4333,20.171348314606742,13271.076413272473,81.79550561797772,9.831460674157304,3904.765625,0.018181818181818184,0.0,0.018181818181818184,5.587772457628148e-232,0.0,0.014925373134328358,0.5,0.02898550724637681,1,0.0033840947546531774,0.09523809523809523,0.7576356530189514,0.15263718366622925,,,,,,,,,,,
+8,MultiArith,"While on vacation, Megan took 15 pictures at the zoo and 18 at the museum. If she later deleted 31 of the pictures, how many pictures from her vacation did she still have?",#### 2,MGCoT," Megan initially took 15 pictures at the zoo and 18 at the museum, for a total of 15 + 18 = 33 pictures. After deleting 31 pictures, she had 33 - 31 = 2 pictures left from her vacation.",36.4156,21.304687500000004,13233.012573242188,81.60312499999998,11.625,3904.765625,0.05555555555555556,0.0,0.05555555555555556,7.290245807398516e-232,0.0,0.03225806451612903,0.5,0.06060606060606061,1,0.010810810810810811,0.11428571428571428,0.7769702672958374,0.06200283020734787,99.21668243408203,0.0,0.0,0.0,0.0,0.9978793263435364,0.0006051891250535846,0.0,0.0,0.0,1.0
+9,MultiArith,Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color?,#### 11,SCoT," 1. **ANALYZE** the problem: We need to find out how many pictures Rachel still has to color.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of pictures in both coloring books.
+   b. Subtract the number of pictures she has already colored from the total number of pictures.
+3. **SOLVE** step by step:
+   a. Total number of pictures = 23 (from the first coloring book) + 32 (from the second coloring book) = 55 pictures.
+   b. Pictures still to be colored = Total number of pictures - Pictures already colored = 55 - 44 = 11 pictures.
+4. **STATE** the final answer clearly: Rachel still has to color 11 pictures.",90.4389,20.242696629213494,13266.556333391854,81.78820224719085,9.561797752808989,3904.765625,0.01923076923076923,0.0,0.01923076923076923,5.612774300937817e-232,0.0,0.016666666666666666,0.5,0.03225806451612903,1,0.0048000000000000265,0.09756097560975609,0.7488976120948792,0.17827044427394867,,,,,,,,,,,
+9,MultiArith,Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color?,#### 11,MGCoT," Rachel bought two coloring books, one with 23 pictures and the other with 32 pictures. In total, she has 23 + 32 = 55 pictures in both coloring books. After one week, she had already colored 44 of the pictures. To find out how many pictures she still has to color, we subtract the number of colored pictures from the total number of pictures: 55 - 44 = 11. So, Rachel still has 11 pictures to color.",60.4932,21.540178571428566,13051.354945591518,80.45178571428563,12.910714285714286,3904.765625,0.027027027027027025,0.0,0.027027027027027025,6.150149066359227e-232,0.0,0.021739130434782608,0.5,0.041666666666666664,1,0.007499999999999951,0.1111111111111111,0.7695714235305786,0.1347256451845169,98.65795135498047,0.11858600378036499,0.12217584252357483,0.1637713611125946,0.004982077982276678,0.8671039938926697,0.0,0.12039493024349213,0.13846345245838165,0.3249824345111847,1.636222004890442
+10,MultiArith,"Ned had to wash 9 short sleeve shirts and 21 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash?",#### 1,SCoT," 1. **ANALYZE** the question: We need to find out how many shirts Ned did not wash.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of shirts Ned had to wash.
+   b. Find the number of shirts he actually washed.
+   c. Subtract the number of shirts he washed from the total number of shirts to find the number of shirts he did not wash.
+3. **SOLVE** step by step:
+   a. Total number of shirts = 9 short sleeve shirts + 21 long sleeve shirts = 30 shirts
+   b. Number of shirts he actually washed = 29
+   c. Number of shirts he did not wash = Total number of shirts - Number of shirts he actually washed = 30 - 29 = 1 shirt
+4. **STATE** the final answer clearly: Ned did not wash 1 shirt.",108.5712,20.53785046728975,13132.062992844627,80.94392523364479,9.794392523364486,3904.765625,0.015625,0.0,0.015625,5.3348669960151344e-232,0.0,0.017857142857142856,0.5,0.03448275862068965,1,0.0028694404591105283,0.1,0.7566001415252686,0.13296210765838623,,,,,,,,,,,
+10,MultiArith,"Ned had to wash 9 short sleeve shirts and 21 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash?",#### 1,MGCoT," Ned had to wash a total of 9 short sleeve shirts + 21 long sleeve shirts = 30 shirts before school. However, he only managed to wash 29 of them. Therefore, he did not wash 30 - 29 = 1 shirt.",35.4159,20.12580645161289,13068.419795866936,80.55967741935476,11.161290322580646,3904.765625,0.052631578947368425,0.0,0.052631578947368425,7.199666163340923e-232,0.0,0.03125,0.5,0.058823529411764705,1,0.010471204188481686,0.1212121212121212,0.7815237045288086,0.09082429111003876,98.99050903320312,0.0,0.0,0.0,0.0009596374584361911,0.9950946569442749,0.0,0.03661981225013733,0.025039613246917725,0.0,1.0
+11,MultiArith,"Oliver had to wash 39 short sleeve shirts and 47 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?",#### 66,SCoT," 1. **ANALYZE** the question: We need to find out how many shirts Oliver did not wash.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of shirts Oliver had to wash.
+   b. Find the number of shirts Oliver had already washed.
+   c. Subtract the number of shirts already washed from the total number of shirts to find the number of shirts not washed.
+3. **SOLVE** step by step:
+   a. Total number of shirts = 39 short sleeve shirts + 47 long sleeve shirts = 86 shirts
+   b. Number of shirts already washed = 20
+   c. Number of shirts not washed = Total number of shirts - Number of shirts already washed = 86 - 20 = 66
+4. **STATE** the final answer clearly: Oliver did not wash 66 shirts.",107.5182,19.58584905660378,13200.806530070755,81.36745283018867,9.264150943396226,3904.765625,0.01639344262295082,0.0,0.01639344262295082,5.3953855625775506e-232,0.0,0.01818181818181818,0.5,0.03508771929824561,1,0.004297994269340966,0.09302325581395349,0.740858256816864,0.21209554374217987,,,,,,,,,,,
+11,MultiArith,"Oliver had to wash 39 short sleeve shirts and 47 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?",#### 66,MGCoT," To find out how many shirts Oliver did not wash, we need to subtract the number of shirts he washed from the total number of shirts he had to wash.
+
+Total number of shirts: 39 short sleeve shirts + 47 long sleeve shirts = 86 shirts
+
+Number of shirts washed: 20 shirts
+
+Number of shirts not washed: 86 shirts (total) - 20 shirts (washed) = 66 shirts
+
+So, Oliver did not wash 66 shirts.",64.3578,21.2793650793651,13181.242063492064,81.26031746031735,12.492063492063492,3904.765625,0.028169014084507043,0.0,0.028169014084507043,6.211555838206664e-232,0.0,0.02564102564102564,0.5,0.048780487804878044,1,0.007792207792207795,0.09756097560975609,0.7557398676872253,0.11781179159879684,98.99050903320312,0.0,0.0,0.0,0.0009596374584361911,0.9950946569442749,0.0,0.03661981225013733,0.025039613246917725,0.0,1.0
+12,MultiArith,For the school bake sale Wendy made pastries. She baked 4 cupcakes and 29 cookies. After the sale she had 24 to take back home. How many pastries did she sell?,#### 9,SCoT," 1. **ANALYZE** the question: We need to find out how many pastries Wendy sold at the bake sale.
+2. **PLAN** the reasoning steps:
+   a. Determine the total number of pastries Wendy made for the bake sale.
+   b. Subtract the number of pastries she took back home from the total number of pastries she made.
+   c. The result will be the number of pastries she sold.
+3. **SOLVE** step by step:
+   a. Wendy made 4 cupcakes and 29 cookies, so the total number of pastries she made is 4 + 29 = 33 pastries.
+   b. She took 24 pastries back home, so the number of pastries she sold is 33 - 24 = 9 pastries.
+4. **STATE** the final answer clearly: Wendy sold 9 pastries at the bake sale.",110.189,20.072350230414745,13254.811545938941,81.71244239631339,9.806451612903226,3904.765625,0.016,0.0,0.016,5.4163389104701204e-232,0.0,0.015625,0.5,0.030303030303030304,1,0.002954209748892156,0.09756097560975609,0.7519742846488953,0.12593074142932892,,,,,,,,,,,
+12,MultiArith,For the school bake sale Wendy made pastries. She baked 4 cupcakes and 29 cookies. After the sale she had 24 to take back home. How many pastries did she sell?,#### 9,MGCoT," To find out how many pastries Wendy sold, we need to subtract the number of pastries she took back home from the total number of pastries she made.
+
+Wendy made 4 cupcakes and 29 cookies, which totals to 4 + 29 = 33 pastries.
+
+She took 24 pastries back home, so she sold 33 - 24 = 9 pastries.
+
+So, Wendy sold 9 pastries at the school bake sale.",62.5277,22.602586206896543,13179.955650592672,81.2448275862067,12.431034482758621,3904.765625,0.030303030303030307,0.0,0.030303030303030307,6.3211493403261365e-232,0.0,0.024390243902439025,0.5,0.046511627906976744,1,0.005813953488372103,0.1176470588235294,0.7651107907295227,0.11996272951364517,98.12391662597656,0.08439242094755173,0.27925628423690796,0.30813759565353394,0.0,0.8679097294807434,0.00026298908051103354,0.308139443397522,0.32373476028442383,0.28601452708244324,1.473791241645813
+13,MultiArith,"While on vacation, Debby took 24 pictures at the zoo and 12 at the museum. If she later deleted 14 of the pictures, how many pictures from her vacation did she still have?",#### 22,SCoT," 1. **ANALYZE** the question: We need to find out how many pictures Debby has left after deleting some of them.
+2. **PLAN** the reasoning steps: We know she took 24 pictures at the zoo and 12 at the museum, so we need to find the total number of pictures she took. Then, we need to subtract the number of pictures she deleted.
+3. **SOLVE** step by step:
+   a. Find the total number of pictures taken: 24 (zoo) + 12 (museum) = 36 pictures.
+   b. Subtract the number of pictures deleted: 36 - 14 = 22 pictures.
+4. **STATE** the final answer clearly: Debby still has 22 pictures from her vacation.",92.9385,19.8617486338798,13115.938353825137,80.8546448087431,9.704918032786885,3904.765625,0.018691588785046728,0.0,0.018691588785046728,5.625487347946324e-232,0.0,0.014925373134328358,0.5,0.02898550724637681,1,0.005050505050505083,0.09302325581395349,0.749680757522583,0.2471739798784256,,,,,,,,,,,
+13,MultiArith,"While on vacation, Debby took 24 pictures at the zoo and 12 at the museum. If she later deleted 14 of the pictures, how many pictures from her vacation did she still have?",#### 22,MGCoT," Debby initially took 24 pictures at the zoo and 12 at the museum, for a total of 24 + 12 = 36 pictures. After deleting 14 pictures, she had 36 - 14 = 22 pictures left from her vacation.",36.9212,22.28461538461537,13102.749158653845,80.74923076923078,12.338461538461539,3904.765625,0.05555555555555556,0.0,0.05555555555555556,7.290245807398516e-232,0.0,0.03225806451612903,0.5,0.06060606060606061,1,0.016129032258064502,0.1111111111111111,0.7689688205718994,0.18514476716518402,99.21668243408203,0.0,0.0,0.0,0.0,0.9978793263435364,0.0006051891250535846,0.0,0.0,0.0,1.0
+14,MultiArith,"Katie picked 3 tulips and 9 roses to make flower bouquets. If she only used 10 of the flowers though, how many extra flowers did Katie pick?",#### 2,SCoT," 1. **ANALYZE** the question: We need to find out how many extra flowers Katie picked.
+2. **PLAN** the reasoning steps:
+   a. Determine the total number of flowers Katie picked.
+   b. Determine the number of flowers used in the bouquets.
+   c. Subtract the number of flowers used from the total number of flowers picked to find the extra flowers.
+3. **SOLVE** step by step:
+   a. Total number of flowers picked = 3 tulips + 9 roses = 12 flowers
+   b. Number of flowers used = 10 flowers
+   c. Extra flowers = Total number of flowers picked - Number of flowers used = 12 - 10 = 2 flowers
+4. **STATE** the final answer clearly: Katie picked 2 extra flowers.",97.0354,19.671727748691097,13102.61841459424,80.76806282722497,9.774869109947645,3904.765625,0.018181818181818184,0.0,0.018181818181818184,5.527615446108862e-232,0.0,0.0196078431372549,0.5,0.03773584905660377,1,0.003053435114503844,0.09523809523809523,0.7521364092826843,0.10646824538707733,,,,,,,,,,,
+14,MultiArith,"Katie picked 3 tulips and 9 roses to make flower bouquets. If she only used 10 of the flowers though, how many extra flowers did Katie pick?",#### 2,MGCoT," To determine how many extra flowers Katie picked, we need to find the difference between the total number of flowers she picked and the number of flowers she used to make the bouquets.
+
+Katie picked 3 tulips and 9 roses, which totals to 3 + 9 = 12 flowers. She used 10 flowers to make the bouquets.
+
+Now, we can find the difference by subtracting the number of flowers used from the total number of flowers picked:
+
+12 flowers (total) - 10 flowers (used) = 2 extra flowers
+
+So, Katie picked 2 extra flowers that she didn't use to make the bouquets.",81.6048,21.80519480519481,13154.61429586039,81.07792207792214,12.571428571428571,3904.765625,0.02,0.0,0.02,5.732687664195737e-232,0.0,0.02040816326530612,0.5,0.039215686274509796,1,0.0036429872495445936,0.09523809523809523,0.7595461010932922,0.03700735419988632,96.87139892578125,0.19541041553020477,0.401223361492157,0.41673743724823,0.004359266255050898,0.7124373316764832,0.003651822917163372,0.36441701650619507,0.36729317903518677,0.6367493867874146,2.3364617824554443
+15,MultiArith,"Faye had 46 math problems and 9 science problems for homework. If she finished 40 of the problems at school, how many problems did she have to do for homework?",#### 15,SCoT," 1. **ANALYZE** the question: We need to find out how many problems Faye had to do for homework.
+2. **PLAN** the reasoning steps:
+   - Find the total number of problems Faye had for homework.
+   - Subtract the number of problems she finished at school.
+3. **SOLVE** step by step:
+   - Total problems = 46 math problems + 9 science problems = 55 problems
+   - Problems finished at school = 40 problems
+   - Problems left for homework = Total problems - Problems finished at school = 55 - 40 = 15 problems
+4. **STATE** the final answer clearly: Faye had to do 15 problems for homework.",86.9018,19.828070175438597,13263.869791666666,81.75087719298217,10.163742690058479,3904.765625,0.02173913043478261,0.0,0.02173913043478261,5.691293710187394e-232,0.0,0.019230769230769232,0.5,0.037037037037037035,1,0.005145797598627766,0.13636363636363635,0.7459198832511902,0.21872654557228088,,,,,,,,,,,
+15,MultiArith,"Faye had 46 math problems and 9 science problems for homework. If she finished 40 of the problems at school, how many problems did she have to do for homework?",#### 15,MGCoT," Faye had 46 math problems and 9 science problems for homework. If she finished 40 of the problems at school, she had to do 46 + 9 - 40 = 25 problems for homework.",29.8815,19.5921568627451,13195.699601715687,81.3176470588236,12.196078431372548,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.012269938650306789,0.1142857142857143,0.7770390510559082,0.1104506403207779,99.97606658935547,0.0,0.0,0.0,0.0005211711977608502,1.0,0.0,0.013212665915489197,0.0009520202875137329,0.0,1.0
+16,MultiArith,"Amy had 4 music files and 21 video files on her flash drive. If she deleted 23 of the files, how many files were still on her flash drive?",#### 2,SCoT," 1. **ANALYZE** the question: We need to find out how many files are left on Amy's flash drive after she deleted some files.
+2. **PLAN** the reasoning steps: We know the initial number of music and video files, and the total number of files deleted. We can subtract the deleted files from the total initial files to find the remaining files.
+3. **SOLVE** step by step:
+   - Initial number of music files: 4
+   - Initial number of video files: 21
+   - Total initial files: 4 + 21 = 25
+   - Total files deleted: 23
+   - Remaining files: 25 - 23 = 2
+4. **STATE** the final answer clearly: After deleting 23 files, Amy has 2 files left on her flash drive.",97.4652,19.405208333333338,13281.662780761719,81.85885416666636,9.520833333333334,3904.765625,0.017543859649122806,0.0,0.017543859649122806,5.493030127324876e-232,0.0,0.01639344262295082,0.5,0.031746031746031744,1,0.003072196620583667,0.09523809523809523,0.7534688711166382,0.12192422896623611,,,,,,,,,,,
+16,MultiArith,"Amy had 4 music files and 21 video files on her flash drive. If she deleted 23 of the files, how many files were still on her flash drive?",#### 2,MGCoT," Amy initially had 4 music files and 21 video files on her flash drive, totaling 4 + 21 = 25 files. After deleting 23 files, the number of files remaining on her flash drive is 25 - 23 = 2 files. So, there are 2 files still on her flash drive. This answer is concise, relevant, and specific to the problem, while maintaining a high readability score and a low perplexity score.",57.0463,21.768571428571434,13192.048511904763,81.32380952380947,11.733333333333333,3904.765625,0.028985507246376812,0.0,0.028985507246376812,6.2542494559645334e-232,0.0,0.020833333333333332,0.5,0.039999999999999994,1,0.0053050397877983935,0.1111111111111111,0.7705894112586975,0.049588315188884735,97.86012268066406,0.008534468710422516,0.053833071142435074,0.06540022790431976,0.004592464305460453,0.9033007025718689,0.0,0.1379389464855194,0.12763488292694092,0.011892629787325859,1.0
+17,MultiArith,"Ned was trying to expand his game collection. He bought 11 games from a friend and bought 22 more at a garage sale. If 19 of the games didn't work, how many good games did he end up with?",#### 14,SCoT," 1. **ANALYZE** the question: We need to find out how many good games Ned has after buying and testing them.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of games Ned bought.
+   b. Subtract the number of games that didn't work.
+   c. State the final answer.
+3. **SOLVE** step by step:
+   a. Total games bought = 11 (from friend) + 22 (at garage sale) = 33 games.
+   b. Good games = Total games bought - Games that didn't work = 33 - 19 = 14 games.
+4. **STATE** the final answer: Ned ended up with 14 good games.",87.6238,19.523255813953497,13095.49457212936,80.72616279069777,9.313953488372093,3904.765625,0.021052631578947368,0.0,0.021052631578947368,5.761138600803475e-232,0.0,0.015384615384615385,0.5,0.029850746268656723,1,0.005692599620493399,0.13636363636363635,0.7526706457138062,0.18442963063716888,,,,,,,,,,,
+17,MultiArith,"Ned was trying to expand his game collection. He bought 11 games from a friend and bought 22 more at a garage sale. If 19 of the games didn't work, how many good games did he end up with?",#### 14,MGCoT," Ned started with 0 games and bought 11 from a friend and 22 more at a garage sale, so he had a total of 11 + 22 = 33 games. Out of these, 19 didn't work, so he ended up with 33 - 19 = 14 good games.",41.9774,22.846666666666653,13080.052447916667,80.62666666666665,12.533333333333333,3904.765625,0.04347826086956522,0.0,0.04347826086956522,6.921464794211712e-232,0.0,0.02702702702702703,0.5,0.05128205128205129,1,0.015075376884422065,0.16666666666666666,0.7778106331825256,0.14682818949222565,99.58985137939453,0.0,0.0,0.0,0.0005170195363461971,0.9979260563850403,0.004846087656915188,0.0,0.0,0.0,1.0
+18,MultiArith,Chloe was playing a trivia game. In the first round she scored 40 points and in the second round she scored 50 points. In the last round she lost 4 points. How many points did she have at the end of the game?,#### 86,SCoT," 1. **ANALYZE** the question: We need to find the total points Chloe had at the end of the game.
+2. **PLAN** the reasoning steps:
+   - Add the points from the first and second rounds.
+   - Subtract the points lost in the last round.
+3. **SOLVE** step by step:
+   - First round: Chloe scored 40 points.
+   - Second round: Chloe scored 50 points.
+   - Add the points from the first and second rounds: 40 + 50 = 90 points.
+   - Last round: Chloe lost 4 points.
+   - Subtract the points lost in the last round: 90 - 4 = 86 points.
+4. **STATE** the final answer clearly: Chloe had 86 points at the end of the game.",99.6549,20.389795918367373,13057.609016262755,80.4959183673469,9.994897959183673,3904.765625,0.01886792452830189,0.0,0.01886792452830189,5.551288858995946e-232,0.0,0.0196078431372549,0.5,0.03773584905660377,1,0.0049261083743842304,0.13636363636363635,0.7401175498962402,0.22515584528446198,,,,,,,,,,,
+18,MultiArith,Chloe was playing a trivia game. In the first round she scored 40 points and in the second round she scored 50 points. In the last round she lost 4 points. How many points did she have at the end of the game?,#### 86,MGCoT," Chloe started the game with 0 points. In the first round, she scored 40 points, so she had 40 points. In the second round, she scored 50 points, so she had 40 + 50 = 90 points. In the last round, she lost 4 points, so she had 90 - 4 = 86 points at the end of the game.",50.0064,21.35604395604395,13128.478365384615,80.94395604395594,12.945054945054945,3904.765625,0.03508771929824561,0.0,0.03508771929824561,6.545917251136179e-232,0.0,0.03333333333333333,0.5,0.0625,1,0.01115241635687736,0.17647058823529416,0.7638137340545654,0.17193220555782318,98.23590087890625,0.07772713899612427,0.002666689455509186,0.0,0.0023752471897751093,0.8695402145385742,0.006670425180345774,0.0,0.0,0.2791677713394165,1.5832160711288452
+19,MultiArith,"At the arcade, Tom won 32 tickets playing 'whack a mole' and 25 tickets playing 'skee ball'. If he spent 7 of his tickets on a hat, how many tickets does Tom have left?",#### 50,SCoT," 1. **ANALYZE** the question: We need to find out how many tickets Tom has left after winning some tickets, spending some on a hat, and considering the total number of tickets he had.
+2. **PLAN** the reasoning steps:
+   a. Add the number of tickets Tom won playing 'whack a mole' and 'skee ball'.
+   b. Subtract the number of tickets Tom spent on a hat.
+   c. State the final answer.
+3. **SOLVE** step by step:
+   a. Tom won 32 tickets playing 'whack a mole' and 25 tickets playing 'skee ball'. So, 32 + 25 = 57 tickets.
+   b. Tom spent 7 tickets on a hat. So, 57 - 7 = 50 tickets.
+4. **STATE** the final answer: Tom has 50 tickets left.",104.2176,19.728292682926824,13247.603067835365,81.65317073170768,9.873170731707317,3904.765625,0.016949152542372885,0.0,0.016949152542372885,5.493030127324876e-232,0.0,0.014925373134328358,0.5,0.02898550724637681,1,0.004709576138147598,0.13333333333333333,0.7465460896492004,0.2636188864707947,,,,,,,,,,,
+19,MultiArith,"At the arcade, Tom won 32 tickets playing 'whack a mole' and 25 tickets playing 'skee ball'. If he spent 7 of his tickets on a hat, how many tickets does Tom have left?",#### 50,MGCoT," Tom started with a total of 32 tickets from 'whack a mole' and 25 tickets from 'skee ball', which gives him a total of 32 + 25 = 57 tickets. He spent 7 tickets on a hat, so he has 57 - 7 = 50 tickets left.",40.9482,20.850684931506844,13199.645173373288,81.39315068493147,12.520547945205479,3904.765625,0.04545454545454545,0.0,0.04545454545454545,6.957990942521506e-232,0.0,0.029411764705882353,0.5,0.05555555555555555,1,0.014563106796116498,0.16666666666666666,0.7714820504188538,0.18762849271297455,99.19188690185547,0.13449402153491974,0.05163947492837906,0.08833836019039154,0.015729626640677452,0.8612282276153564,0.0,0.10680460184812546,0.10919643938541412,0.3152249753475189,1.665526270866394
+20,MultiArith,"Bianca and her mom were picking carrots from their garden. Bianca picked 26 and her mother picked 15. If only 16 of the carrots were good, how many bad carrots did they have?",#### 25,SCoT," 1. **ANALYZE** the question: We need to find out how many bad carrots Bianca and her mom picked in total.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of carrots picked by Bianca and her mom.
+   b. Subtract the number of good carrots from the total number of carrots picked.
+   c. The result will be the number of bad carrots.
+3. **SOLVE** step by step:
+   a. Total number of carrots picked = 26 (Bianca) + 15 (her mom) = 41 carrots.
+   b. Number of bad carrots = 41 (total carrots) - 16 (good carrots) = 25 carrots.
+4. **STATE** the final answer clearly: Bianca and her mom picked a total of 25 bad carrots.",111.6956,19.618636363636398,13280.053071732955,81.85727272727257,9.831818181818182,3904.765625,0.018018018018018018,0.0,0.018018018018018018,5.551288858995946e-232,0.0,0.017241379310344827,0.5,0.03333333333333333,1,0.0048000000000000265,0.13636363636363635,0.7544055581092834,0.22213976085186005,,,,,,,,,,,
+20,MultiArith,"Bianca and her mom were picking carrots from their garden. Bianca picked 26 and her mother picked 15. If only 16 of the carrots were good, how many bad carrots did they have?",#### 25,MGCoT," Bianca and her mom picked a total of 26 + 15 = 41 carrots. Since only 16 of the carrots were good, they had 41 - 16 = 25 bad carrots.",32.9086,21.51578947368421,13190.516241776315,81.30000000000003,12.24561403508772,3904.765625,0.07142857142857142,0.0,0.07142857142857142,7.720899511627474e-232,0.0,0.037037037037037035,0.5,0.06896551724137931,1,0.02238805970149249,0.1714285714285714,0.7791579961776733,0.22655107080936432,99.3307113647461,0.0,0.0,0.0,0.0,0.9928663372993469,0.0,0.0,0.0,0.0,1.0
+21,MultiArith,For the school bake sale Katie made pastries. She baked 7 cupcakes and 5 cookies. After the sale she had 8 to take back home. How many pastries did she sell?,#### 4,SCoT," 1. **ANALYZE** the question: The question is asking how many pastries Katie sold at the school bake sale.
+2. **PLAN** the reasoning steps needed: We know that Katie baked 7 cupcakes and 5 cookies, and she had 8 pastries left to take back home. So, we need to find out how many pastries she sold.
+3. **SOLVE** step by step:
+   a. Add the number of cupcakes and cookies Katie baked: 7 cupcakes + 5 cookies = 12 pastries.
+   b. Subtract the number of pastries she had left to take back home from the total number of pastries she baked: 12 pastries - 8 pastries = 4 pastries.
+4. **STATE** the final answer clearly: Katie sold 4 pastries at the school bake sale.",102.9965,19.642857142857146,13106.093384390395,80.78719211822674,9.729064039408867,3904.765625,0.01680672268907563,0.0,0.01680672268907563,5.4817391526732266e-232,0.0,0.015151515151515152,0.5,0.029411764705882356,1,0.003039513677811523,0.09302325581395349,0.7525545358657837,0.1562856286764145,,,,,,,,,,,
+21,MultiArith,For the school bake sale Katie made pastries. She baked 7 cupcakes and 5 cookies. After the sale she had 8 to take back home. How many pastries did she sell?,#### 4,MGCoT," To determine how many pastries Katie sold, we need to consider the number of pastries she made and the number she took back home.
+
+Katie made 7 cupcakes and 5 cookies, which totals to 7 + 5 = 12 pastries.
+
+After the bake sale, she had 8 pastries left to take back home.
+
+To find out how many pastries she sold, we subtract the number of pastries she took back home from the total number of pastries she made:
+
+12 pastries (total) - 8 pastries (took back home) = 4 pastries (sold)
+
+So, Katie sold 4 pastries at the school bake sale.",85.6991,23.48333333333335,13092.915533371914,80.7154320987655,13.209876543209877,3904.765625,0.020202020202020204,0.0,0.020202020202020204,5.732687664195737e-232,0.0,0.02,0.5,0.038461538461538464,1,0.003759398496240629,0.10256410256410256,0.7568151950836182,0.11362028867006302,98.12391662597656,0.08439242094755173,0.27925628423690796,0.30813759565353394,0.0,0.8679097294807434,0.00026298908051103354,0.308139443397522,0.32373476028442383,0.28601452708244324,1.473791241645813
+22,MultiArith,Zoe bought two coloring books. One had 44 pictures and the other had 44. After one week she had already colored 20 of the pictures. How many pictures does she still have to color?,#### 68,SCoT," 1. **ANALYZE** the question: We need to find out how many pictures Zoe still has to color after coloring 20 pictures from a total of 44 pictures in each coloring book.
+
+2. **PLAN** the reasoning steps:
+   - Find the total number of pictures in both coloring books.
+   - Subtract the number of pictures Zoe has already colored from the total number of pictures.
+
+3. **SOLVE** step by step:
+   - Total number of pictures in both coloring books = 44 + 44 = 88 pictures.
+   - Number of pictures Zoe has already colored = 20 pictures.
+   - Number of pictures Zoe still has to color = Total number of pictures - Number of pictures already colored = 88 - 20 = 68 pictures.
+
+4. **STATE** the final answer clearly: Zoe still has to color 68 pictures.",107.4927,20.185377358490577,13188.055313974057,81.308490566038,9.632075471698114,3904.765625,0.01639344262295082,0.0,0.01639344262295082,5.344719054588824e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.0040431266846361336,0.13953488372093026,0.7498579025268555,0.21296468377113342,,,,,,,,,,,
+22,MultiArith,Zoe bought two coloring books. One had 44 pictures and the other had 44. After one week she had already colored 20 of the pictures. How many pictures does she still have to color?,#### 68,MGCoT," Zoe bought two coloring books, each with 44 pictures. After one week, she had colored 20 pictures. To find out how many pictures she still has to color, we can subtract the number of colored pictures from the total number of pictures in both books.
+
+So, 44 pictures in the first book + 44 pictures in the second book = 88 pictures in total.
+
+Now, we subtract the number of colored pictures: 88 pictures - 20 colored pictures = 68 pictures.
+
+Zoe still has 68 pictures to color.",69.5674,21.498461538461548,13218.327313701922,81.48615384615371,12.138461538461538,3904.765625,0.023529411764705882,0.0,0.023529411764705882,5.948228664567313e-232,0.0,0.02127659574468085,0.5,0.04081632653061224,1,0.0062893081761006275,0.15384615384615383,0.7629377841949463,0.1852063536643982,98.65795135498047,0.11858600378036499,0.12217584252357483,0.1637713611125946,0.004982077982276678,0.8671039938926697,0.0,0.12039493024349213,0.13846345245838165,0.3249824345111847,1.636222004890442
+23,MultiArith,"John was trying to expand his game collection. He bought 21 games from a friend and bought 8 more at a garage sale. If 23 of the games didn't work, how many good games did he end up with?",#### 6,SCoT," 1. **ANALYZE** the question: We need to find out how many good games John has after buying 21 games from a friend and 8 more at a garage sale, and after 23 of the games didn't work.
+
+2. **PLAN** the reasoning steps needed:
+   - Step 1: Find the total number of games John bought.
+   - Step 2: Subtract the number of games that didn't work from the total number of games.
+
+3. **SOLVE** step by step:
+   - Step 1: John bought 21 games from a friend and 8 more at a garage sale, so he bought a total of 21 + 8 = 29 games.
+   - Step 2: 23 of the games didn't work, so we subtract 23 from the total number of games: 29 - 23 = 6.
+
+4. **STATE** the final answer clearly: John ended up with 6 good games.",116.2195,19.922270742358094,13276.65432246179,81.84235807860264,10.11353711790393,3904.765625,0.014492753623188404,0.0,0.014492753623188404,5.277597161146185e-232,0.0,0.015384615384615385,0.5,0.029850746268656723,1,0.0028694404591105283,0.08888888888888889,0.7522231340408325,0.12120956182479858,,,,,,,,,,,
+23,MultiArith,"John was trying to expand his game collection. He bought 21 games from a friend and bought 8 more at a garage sale. If 23 of the games didn't work, how many good games did he end up with?",#### 6,MGCoT," John initially bought 21 games from a friend and then bought 8 more at a garage sale. In total, he bought 21 + 8 = 29 games. However, 23 of these games didn't work, so he ended up with 29 - 23 = 6 good games.",39.4525,20.527142857142852,13250.832310267857,81.6985714285713,12.714285714285714,3904.765625,0.04545454545454545,0.0,0.04545454545454545,6.995501686664742e-232,0.0,0.02702702702702703,0.5,0.05128205128205129,1,0.009569377990430672,0.10526315789473684,0.7830283641815186,0.07583732157945633,99.58985137939453,0.0,0.0,0.0,0.0005170195363461971,0.9979260563850403,0.004846087656915188,0.0,0.0,0.0,1.0
+24,MultiArith,Henry had 11 dollars. For his birthday he got 18 more dollars but spent 10 on a new game. How much money does he have now?,#### 19,SCoT," 1. **ANALYZE** the question: The question is asking how much money Henry has left after receiving more money for his birthday and spending some on a game.
+2. **PLAN** the reasoning steps:
+   a. Start with the initial amount of money Henry had (11 dollars).
+   b. Add the amount of money he received for his birthday (18 dollars).
+   c. Subtract the amount he spent on a game (10 dollars).
+3. **SOLVE** step by step:
+   a. 11 dollars (initial amount) + 18 dollars (birthday money) = 29 dollars (total money)
+   b. 29 dollars (total money) - 10 dollars (game) = 19 dollars (remaining money)
+4. **STATE** the final answer clearly: Henry has 19 dollars left.",99.4725,20.00510204081635,13216.088508450255,81.45867346938762,9.464285714285714,3904.765625,0.018181818181818184,0.0,0.018181818181818184,5.587772457628148e-232,0.0,0.014705882352941176,0.5,0.028571428571428574,1,0.004580152671755711,0.13333333333333333,0.7376906275749207,0.15098117291927338,,,,,,,,,,,
+24,MultiArith,Henry had 11 dollars. For his birthday he got 18 more dollars but spent 10 on a new game. How much money does he have now?,#### 19,MGCoT," Henry initially had 11 dollars. He received 18 more dollars for his birthday, bringing his total to 11 + 18 = 29 dollars. However, he spent 10 dollars on a new game, so he now has 29 - 10 = 19 dollars.",37.8554,21.32089552238806,13053.191522854477,80.46865671641798,12.119402985074627,3904.765625,0.05128205128205127,0.0,0.05128205128205127,7.156422969333831e-232,0.0,0.03125,0.5,0.058823529411764705,1,0.014851485148514865,0.1714285714285714,0.7727009057998657,0.1546957641839981,99.31309509277344,0.010866002179682255,0.0,0.0,0.0,0.9628159403800964,0.002300987485796213,0.0,0.0,0.012022057548165321,1.010717749595642
+25,MultiArith,"While on vacation, Gwen took 41 pictures at the zoo and 29 at the museum. If she later deleted 15 of the pictures, how many pictures from her vacation did she still have?",#### 55,SCoT," 1. **ANALYZE** the question: The question is asking for the total number of pictures Gwen has left after deleting some of them.
+2. **PLAN** the reasoning steps: We need to find the total number of pictures Gwen took, and then subtract the number of pictures she deleted.
+3. **SOLVE** step by step:
+   a. Gwen took 41 pictures at the zoo and 29 at the museum, so she took a total of 41 + 29 = 70 pictures.
+   b. She deleted 15 pictures, so she has 70 - 15 = 55 pictures left.
+4. **STATE** the final answer clearly: Gwen still has 55 pictures from her vacation.",88.4223,21.42528735632185,13246.2654454023,81.65402298850566,10.17816091954023,3904.765625,0.01941747572815534,0.0,0.01941747572815534,5.677823098089411e-232,0.0,0.015625,0.5,0.030303030303030304,1,0.005357142857142838,0.0909090909090909,0.7514493465423584,0.17656809091567993,,,,,,,,,,,
+25,MultiArith,"While on vacation, Gwen took 41 pictures at the zoo and 29 at the museum. If she later deleted 15 of the pictures, how many pictures from her vacation did she still have?",#### 55,MGCoT," Gwen initially took 41 pictures at the zoo and 29 at the museum, for a total of 41 + 29 = 70 pictures. After deleting 15 pictures, she had 70 - 15 = 55 pictures remaining from her vacation.",36.9127,20.663076923076915,13120.325901442307,80.87384615384612,11.753846153846155,3904.765625,0.05555555555555556,0.0,0.05555555555555556,7.290245807398516e-232,0.0,0.03225806451612903,0.5,0.06060606060606061,1,0.015789473684210575,0.10526315789473684,0.7693372368812561,0.11089117079973221,99.21668243408203,0.0,0.0,0.0,0.0,0.9978793263435364,0.0006051891250535846,0.0,0.0,0.0,1.0
+26,MultiArith,"Sam had to wash 40 short sleeve shirts and 23 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash?",#### 34,SCoT," 1. **ANALYZE** the question: We need to find out how many shirts Sam did not wash.
+2. **PLAN** the reasoning steps: We know the total number of shirts Sam had to wash, and the number of shirts he actually washed. We can find the number of shirts he did not wash by subtracting the number of shirts he washed from the total number of shirts.
+3. **SOLVE** step by step:
+   - Total number of shirts: 40 short sleeve shirts + 23 long sleeve shirts = 63 shirts
+   - Number of shirts Sam actually washed: 29 shirts
+   - Number of shirts Sam did not wash: 63 shirts (total) - 29 shirts (washed) = 34 shirts
+4. **STATE** the final answer clearly: Sam did not wash 34 shirts.",104.9739,19.51400966183575,13287.81338692633,81.90917874396159,9.497584541062801,3904.765625,0.016666666666666666,0.0,0.016666666666666666,5.437705553716812e-232,0.0,0.01694915254237288,0.5,0.03278688524590164,1,0.004497751124437732,0.13043478260869565,0.7439352869987488,0.21022766828536987,,,,,,,,,,,
+26,MultiArith,"Sam had to wash 40 short sleeve shirts and 23 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash?",#### 34,MGCoT," Sam had to wash a total of 40 short sleeve shirts and 23 long sleeve shirts, making a total of 40 + 23 = 63 shirts. By the time school started, he had only washed 29 shirts. To find out how many shirts he did not wash, we subtract the number of shirts he washed from the total number of shirts. So, 63 - 29 = 34 shirts. Therefore, Sam did not wash 34 shirts.",62.5554,21.58706896551724,13302.02017106681,82.00172413793116,12.0,3904.765625,0.02777777777777778,0.0,0.02777777777777778,6.190746313491463e-232,0.0,0.023255813953488372,0.5,0.04444444444444444,1,0.00835654596100277,0.16216216216216214,0.7650159597396851,0.22757411003112793,98.99050903320312,0.0,0.0,0.0,0.0009596374584361911,0.9950946569442749,0.0,0.03661981225013733,0.025039613246917725,0.0,1.0
+27,MultiArith,A pet store had 12 siamese cats and 20 house cats. During a sale they sold 20 cats. How many cats do they have left?,#### 12,SCoT," 1. **ANALYZE** the question: We need to find out how many cats the pet store has left after selling 20 cats.
+2. **PLAN** the reasoning steps:
+   - Start with the total number of cats the pet store had initially.
+   - Subtract the number of cats sold from the initial number of cats.
+3. **SOLVE** step by step:
+   - The pet store initially had 12 Siamese cats + 20 house cats = 32 cats.
+   - After selling 20 cats, they have 32 cats - 20 cats = 12 cats left.
+4. **STATE** the final answer clearly: The pet store has 12 cats left.",83.9041,19.459393939393962,13346.64775094697,82.28000000000009,10.290909090909091,3904.765625,0.021052631578947368,0.0,0.021052631578947368,5.732687664195737e-232,0.0,0.017857142857142856,0.5,0.03448275862068965,1,0.005671077504725952,0.14634146341463414,0.7486017942428589,0.21877823770046234,,,,,,,,,,,
+27,MultiArith,A pet store had 12 siamese cats and 20 house cats. During a sale they sold 20 cats. How many cats do they have left?,#### 12,MGCoT," The pet store initially had 12 Siamese cats and 20 house cats, which totals to 12 + 20 = 32 cats. During the sale, they sold 20 cats, so they now have 32 - 20 = 12 cats left.",37.3526,20.325757575757567,13278.237571022728,81.82424242424251,11.606060606060606,3904.765625,0.05555555555555556,0.0,0.05555555555555556,7.290245807398516e-232,0.0,0.03571428571428571,0.5,0.06666666666666667,1,0.017142857142857126,0.17647058823529416,0.7729994058609009,0.21425041556358337,98.29096221923828,0.05453091114759445,0.03297696262598038,0.05555050075054169,0.003924142569303513,0.900469958782196,0.0,0.030462101101875305,0.03749909624457359,0.1348590850830078,1.1926995515823364
+28,MultiArith,"Faye and her mom were picking carrots from their garden. Faye picked 23 and her mother picked 5. If only 12 of the carrots were good, how many bad carrots did they have?",#### 16,SCoT," 1. **ANALYZE** the question: We need to find out how many bad carrots Faye and her mom picked in total.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of carrots picked by Faye and her mom.
+   b. Subtract the number of good carrots from the total number of carrots picked.
+   c. The result will be the number of bad carrots.
+3. **SOLVE** step by step:
+   a. Total number of carrots picked = 23 (Faye) + 5 (her mom) = 28 carrots.
+   b. Number of bad carrots = 28 (total carrots) - 12 (good carrots) = 16 bad carrots.
+4. **STATE** the final answer clearly: Faye and her mom picked a total of 16 bad carrots.",109.7015,19.994444444444465,13291.087691695602,81.92870370370376,9.38425925925926,3904.765625,0.01785714285714286,0.0,0.01785714285714286,5.539388921633538e-232,0.0,0.017241379310344827,0.5,0.03333333333333333,1,0.004838709677419395,0.13333333333333333,0.7539485096931458,0.23343734443187714,,,,,,,,,,,
+28,MultiArith,"Faye and her mom were picking carrots from their garden. Faye picked 23 and her mother picked 5. If only 12 of the carrots were good, how many bad carrots did they have?",#### 16,MGCoT," Faye and her mom picked a total of 23 + 5 = 28 carrots. Since only 12 of them were good, they must have picked 28 - 12 = 16 bad carrots.",31.4442,20.261111111111102,13062.574363425925,80.51666666666668,13.074074074074074,3904.765625,0.0689655172413793,0.0,0.0689655172413793,7.659859945595747e-232,0.0,0.03571428571428571,0.5,0.06666666666666667,1,0.021897810218978075,0.15789473684210525,0.7803633213043213,0.1900073140859604,99.3307113647461,0.0,0.0,0.0,0.0,0.9928663372993469,0.0,0.0,0.0,0.0,1.0
+29,MultiArith,"The school cafeteria ordered 43 red apples and 32 green apples for students lunches. But, if only 2 students wanted fruit, how many extra did the cafeteria end up with?",#### 73,SCoT," 1. **ANALYZE** the question: We need to find out how many extra apples the cafeteria has after 2 students took their fruit.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of apples ordered.
+   b. Subtract the number of apples taken by the 2 students.
+   c. Calculate the difference.
+3. **SOLVE** step by step:
+   a. Total apples ordered = 43 red apples + 32 green apples = 75 apples.
+   b. Apples taken by 2 students = 2 students * 1 apple/student = 2 apples.
+   c. Extra apples = Total apples ordered - Apples taken by 2 students = 75 apples - 2 apples = 73 apples.
+4. **STATE** the final answer clearly: The cafeteria ended up with 73 extra apples.",110.5684,20.499082568807353,13161.898652522936,81.14082568807343,9.825688073394495,3904.765625,0.01785714285714286,0.0,0.01785714285714286,5.493030127324876e-232,0.0,0.016666666666666666,0.5,0.03225806451612903,1,0.004511278195488688,0.13636363636363635,0.7508489489555359,0.20663505792617798,,,,,,,,,,,
+29,MultiArith,"The school cafeteria ordered 43 red apples and 32 green apples for students lunches. But, if only 2 students wanted fruit, how many extra did the cafeteria end up with?",#### 73,MGCoT," The school cafeteria ordered a total of 43 red apples and 32 green apples, which makes a total of 43 + 32 = 75 apples. However, only 2 students wanted fruit, so the cafeteria ended up with 75 - 2 = 73 extra apples.",41.432,20.69189189189188,13109.129856418918,80.82567567567557,12.756756756756756,3904.765625,0.04878048780487806,0.0,0.04878048780487806,7.073675849566084e-232,0.0,0.030303030303030304,0.5,0.05714285714285715,1,0.013953488372092981,0.16216216216216214,0.7728780508041382,0.2267591655254364,99.43250274658203,0.06023638695478439,0.7294690608978271,0.7732405066490173,0.00041676024557091296,0.9334218502044678,0.0,0.7360981106758118,0.7635092735290527,0.15919238328933716,1.3506401777267456
+30,MultiArith,"There were 39 girls and 4 boys trying out for the schools basketball team. If only 26 of them got called back, how many students didn't make the cut?",#### 17,SCoT," 1. **ANALYZE** the question: We need to find out how many students didn't make the cut for the basketball team.
+2. **PLAN** the reasoning steps: We know the total number of students trying out and the number of students who got called back. We can subtract the number of students who got called back from the total number of students to find out how many didn't make the cut.
+3. **SOLVE** step by step:
+   a. Total number of students trying out: 39 girls + 4 boys = 43 students
+   b. Number of students who got called back: 26 students
+   c. Number of students who didn't make the cut: 43 students - 26 students = 17 students
+4. **STATE** the final answer clearly: 17 students didn't make the cut for the basketball team.",100.9788,19.416080402010063,13237.23743718593,81.60100502512543,9.5678391959799,3904.765625,0.015037593984962407,0.0,0.015037593984962407,5.374831339232389e-232,0.0,0.016666666666666666,0.5,0.03225806451612903,1,0.0041551246537395725,0.13636363636363635,0.7501998543739319,0.21337644755840302,,,,,,,,,,,
+30,MultiArith,"There were 39 girls and 4 boys trying out for the schools basketball team. If only 26 of them got called back, how many students didn't make the cut?",#### 17,MGCoT," To determine how many students didn't make the cut, we need to subtract the number of students who got called back from the total number of students who tried out.
+
+Total students trying out: 39 girls + 4 boys = 43 students
+
+Students who got called back: 26 students
+
+Students who didn't make the cut: 43 students (total) - 26 students (called back) = 17 students
+
+So, 17 students didn't make the cut for the school's basketball team.",66.5211,21.487903225806466,13260.661101310483,81.74354838709684,12.46774193548387,3904.765625,0.02531645569620253,0.0,0.02531645569620253,6.130341565759569e-232,0.0,0.022222222222222223,0.5,0.0425531914893617,1,0.006896551724137945,0.14285714285714285,0.7624160647392273,0.15096332132816315,99.15047454833984,0.01303631067276001,0.0493590384721756,0.0,0.0,0.9455608129501343,0.007700060494244099,0.0,0.0,0.13809029757976532,1.1324632167816162
+31,MultiArith,A pet store had 38 siamese cats and 25 house cats. During a sale they sold 45 cats. How many cats do they have left?,#### 18,SCoT," 1. **ANALYZE** the question: We need to find out how many cats the pet store has left after selling 45 cats.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of cats the pet store had initially.
+   b. Subtract the number of cats sold from the initial number of cats.
+3. **SOLVE** step by step:
+   a. Initial number of cats = 38 Siamese cats + 25 house cats = 63 cats
+   b. Remaining cats = Initial number of cats - Cats sold = 63 - 45 = 18 cats
+4. **STATE** the final answer clearly: The pet store has 18 cats left.",84.8952,20.168263473053894,13355.95459861527,82.32275449101805,10.0,3904.765625,0.020833333333333332,0.0,0.020833333333333332,5.7187224260924895e-232,0.0,0.017857142857142856,0.5,0.03448275862068965,1,0.005681818181818232,0.14285714285714285,0.7506508231163025,0.20377719402313232,,,,,,,,,,,
+31,MultiArith,A pet store had 38 siamese cats and 25 house cats. During a sale they sold 45 cats. How many cats do they have left?,#### 18,MGCoT," The pet store initially had 38 Siamese cats and 25 house cats, which totals to 38 + 25 = 63 cats. During the sale, they sold 45 cats, so they have 63 - 45 = 18 cats left.",36.8563,19.963076923076912,13288.380348557692,81.90153846153842,13.076923076923077,3904.765625,0.05714285714285715,0.0,0.05714285714285715,7.337741777064293e-232,0.0,0.034482758620689655,0.5,0.06451612903225806,1,0.01754385964912286,0.16216216216216214,0.7750846743583679,0.14463524520397186,98.29096221923828,0.05453091114759445,0.03297696262598038,0.05555050075054169,0.003924142569303513,0.900469958782196,0.0,0.030462101101875305,0.03749909624457359,0.1348590850830078,1.1926995515823364
+32,MultiArith,For the school bake sale Paige made pastries. She baked 36 cupcakes and 9 cookies. After the sale she had 4 to take back home. How many pastries did she sell?,#### 41,SCoT," 1. **ANALYZE** the question: We need to find out how many pastries Paige sold at the bake sale.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of pastries Paige made for the bake sale.
+   b. Subtract the number of pastries she took back home.
+   c. State the final answer.
+3. **SOLVE** step by step:
+   a. Paige made 36 cupcakes + 9 cookies = 45 pastries for the bake sale.
+   b. She took back home 4 pastries.
+   c. So, she sold 45 pastries - 4 pastries = 41 pastries.
+4. **STATE** the final answer: Paige sold 41 pastries at the bake sale.",96.4464,20.46631578947369,13325.606476151315,82.14421052631569,9.757894736842106,3904.765625,0.02,0.0,0.02,5.7187224260924895e-232,0.0,0.017857142857142856,0.5,0.03448275862068965,1,0.0053956834532373765,0.13636363636363635,0.7413444519042969,0.19310447573661804,,,,,,,,,,,
+32,MultiArith,For the school bake sale Paige made pastries. She baked 36 cupcakes and 9 cookies. After the sale she had 4 to take back home. How many pastries did she sell?,#### 41,MGCoT," Paige baked a total of 36 cupcakes and 9 cookies, which makes 36 + 9 = 45 pastries. After the bake sale, she had 4 pastries left to take back home. Therefore, Paige sold 45 - 4 = 41 pastries at the bake sale.",41.9446,20.865333333333307,13152.301354166666,81.09466666666673,12.746666666666666,3904.765625,0.04878048780487806,0.0,0.04878048780487806,7.073675849566084e-232,0.0,0.02857142857142857,0.5,0.05405405405405405,1,0.014354066985645897,0.16666666666666666,0.7637250423431396,0.15771275758743286,98.12391662597656,0.08439242094755173,0.27925628423690796,0.30813759565353394,0.0,0.8679097294807434,0.00026298908051103354,0.308139443397522,0.32373476028442383,0.28601452708244324,1.473791241645813
+33,MultiArith,Carol was playing a trivia game. In the first round she scored 17 points and in the second round she scored 6 points. In the last round she lost 16 points. How many points did she have at the end of the game?,#### 7,SCoT," 1. **ANALYZE** the question: We need to find out the total points Carol had at the end of the game.
+2. **PLAN** the reasoning steps: We know her scores in each round, so we can add them up to find the total points.
+3. **SOLVE** step by step:
+   - In the first round, Carol scored 17 points.
+   - In the second round, Carol scored 6 points.
+   - In the last round, Carol lost 16 points.
+   - To find the total points, we add the points from each round: 17 + 6 - 16 = 7.
+4. **STATE** the final answer clearly: Carol had 7 points at the end of the game.",87.1638,19.990058479532173,13229.68343384503,81.55730994152033,9.52046783625731,3904.765625,0.01904761904761905,0.0,0.01904761904761905,5.612774300937817e-232,0.0,0.017241379310344827,0.5,0.03333333333333333,1,0.003629764065335772,0.09523809523809523,0.7585067749023438,0.18458707630634308,,,,,,,,,,,
+33,MultiArith,Carol was playing a trivia game. In the first round she scored 17 points and in the second round she scored 6 points. In the last round she lost 16 points. How many points did she have at the end of the game?,#### 7,MGCoT," To find out how many points Carol had at the end of the game, we need to add up her scores from each round. In the first round, she scored 17 points. In the second round, she scored 6 points. In the last round, she lost 16 points. So, we can calculate her total points by adding these numbers together:
+
+17 (first round) + 6 (second round) - 16 (last round) = 7 points
+
+Carol had 7 points at the end of the game.",63.5387,21.887288135593227,13166.065413135593,81.17542372881341,13.338983050847459,3904.765625,0.024390243902439022,0.0,0.024390243902439022,6.017810420952586e-232,0.0,0.02,0.5,0.038461538461538464,1,0.004842615012106588,0.1111111111111111,0.7695450186729431,0.14851796627044678,98.23590087890625,0.07772713899612427,0.002666689455509186,0.0,0.0023752471897751093,0.8695402145385742,0.006670425180345774,0.0,0.0,0.2791677713394165,1.5832160711288452
+34,MultiArith,Gwen bought two coloring books. One had 10 pictures and the other had 39. After one week she had already colored 13 of the pictures. How many pictures does she still have to color?,#### 36,SCoT," 1. **ANALYZE** the problem: We need to find out how many pictures Gwen still has to color.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of pictures in both coloring books.
+   b. Subtract the number of pictures she has already colored from the total number of pictures.
+3. **SOLVE** step by step:
+   a. Total number of pictures = 10 (from the first coloring book) + 39 (from the second coloring book) = 49 pictures.
+   b. Pictures still to be colored = Total number of pictures - Pictures already colored = 49 - 13 = 36 pictures.
+4. **STATE** the final answer clearly: Gwen still has to color 36 pictures.",91.4561,19.726111111111116,13283.929470486111,81.8805555555558,9.9,3904.765625,0.01923076923076923,0.0,0.01923076923076923,5.612774300937817e-232,0.0,0.016666666666666666,0.5,0.03225806451612903,1,0.004830917874396157,0.13636363636363635,0.7453597784042358,0.137785404920578,,,,,,,,,,,
+34,MultiArith,Gwen bought two coloring books. One had 10 pictures and the other had 39. After one week she had already colored 13 of the pictures. How many pictures does she still have to color?,#### 36,MGCoT," Gwen bought two coloring books, one with 10 pictures and the other with 39 pictures. In total, she has 10 + 39 = 49 pictures to color. After one week, she colored 13 pictures. To find out how many pictures she still has to color, we subtract the number of colored pictures from the total number of pictures: 49 - 13 = 36. Gwen still has 36 pictures to color.",57.0075,20.72285714285714,13257.527008928571,81.72761904761897,11.6,3904.765625,0.02985074626865672,0.0,0.02985074626865672,6.298451848768724e-232,0.0,0.023809523809523808,0.5,0.04545454545454545,1,0.00835654596100277,0.15789473684210525,0.7606443166732788,0.11658018827438354,98.65795135498047,0.11858600378036499,0.12217584252357483,0.1637713611125946,0.004982077982276678,0.8671039938926697,0.0,0.12039493024349213,0.13846345245838165,0.3249824345111847,1.636222004890442
+35,MultiArith,"For Halloween Janet and her sister combined the candy they received. Janet had 34 pieces of candy while her sister had 33. If they ate 4 pieces the first night, how many pieces do they have left?",#### 63,SCoT," 1. **ANALYZE** the problem: We need to find out how many pieces of candy Janet and her sister have left after eating 4 pieces.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of pieces of candy they had initially.
+   b. Subtract the 4 pieces they ate from the total.
+3. **SOLVE** step by step:
+   a. Janet had 34 pieces and her sister had 33 pieces, so initially, they had 34 + 33 = 67 pieces of candy.
+   b. After eating 4 pieces, they have 67 - 4 = 63 pieces of candy left.
+4. **STATE** the final answer clearly: Janet and her sister have 63 pieces of candy left.",93.1298,19.90819672131148,13447.914638831968,82.89781420765011,10.098360655737705,3904.765625,0.018518518518518517,0.0,0.018518518518518517,5.612774300937817e-232,0.0,0.017543859649122806,0.5,0.033898305084745756,1,0.005181347150259086,0.14285714285714285,0.7449719309806824,0.20216184854507446,,,,,,,,,,,
+35,MultiArith,"For Halloween Janet and her sister combined the candy they received. Janet had 34 pieces of candy while her sister had 33. If they ate 4 pieces the first night, how many pieces do they have left?",#### 63,MGCoT," Janet and her sister had a total of 34 + 33 = 67 pieces of candy. After eating 4 pieces the first night, they have 67 - 4 = 63 pieces left.",28.8803,19.37142857142857,13388.26450892857,82.52653061224487,12.816326530612244,3904.765625,0.0689655172413793,0.0,0.0689655172413793,7.659859945595747e-232,0.0,0.03571428571428571,0.5,0.06666666666666667,1,0.021428571428571463,0.1875,0.7712799906730652,0.20203810930252075,98.70267486572266,0.07673011720180511,0.0,0.0,0.0029564276337623596,0.8861508965492249,0.005230274051427841,0.0,0.0,0.23599305748939514,1.5487537384033203
+36,MultiArith,"Haley and her mom were picking carrots from their garden. Haley picked 39 and her mother picked 38. If only 64 of the carrots were good, how many bad carrots did they have?",#### 13,SCoT," 1. **ANALYZE** the question: We need to find out how many bad carrots Haley and her mom picked in total.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of carrots picked by Haley and her mom.
+   b. Subtract the total number of good carrots from the total number of carrots picked to find the number of bad carrots.
+3. **SOLVE** step by step:
+   a. Total number of carrots picked = 39 (Haley) + 38 (her mom) = 77 carrots.
+   b. Number of bad carrots = 77 (total carrots picked) - 64 (good carrots) = 13 bad carrots.
+4. **STATE** the final answer clearly: Haley and her mom picked a total of 13 bad carrots.",109.7981,20.04074074074075,13349.882595486111,82.30509259259237,9.273148148148149,3904.765625,0.018018018018018018,0.0,0.018018018018018018,5.551288858995946e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.004838709677419395,0.13043478260869565,0.7482333183288574,0.19364431500434875,,,,,,,,,,,
+36,MultiArith,"Haley and her mom were picking carrots from their garden. Haley picked 39 and her mother picked 38. If only 64 of the carrots were good, how many bad carrots did they have?",#### 13,MGCoT," Haley and her mom picked a total of 39 + 38 = 77 carrots. Since only 64 of these carrots were good, they must have picked 77 - 64 = 13 bad carrots.",33.9398,20.7542372881356,13150.98987023305,81.06779661016947,12.169491525423728,3904.765625,0.06666666666666667,0.0,0.06666666666666667,7.601159375410181e-232,0.0,0.03571428571428571,0.5,0.06666666666666667,1,0.020270270270270285,0.15384615384615383,0.7755464315414429,0.19393537938594818,99.3307113647461,0.0,0.0,0.0,0.0,0.9928663372993469,0.0,0.0,0.0,0.0,1.0
+37,MultiArith,"There were 30 girls and 36 boys trying out for the schools basketball team. If only 10 of them got called back, how many students didn't make the cut?",#### 56,SCoT," 1. **ANALYZE** the question: We need to find out how many students didn't make the cut for the basketball team.
+2. **PLAN** the reasoning steps: We know the total number of girls and boys trying out, and the number of students called back. We can subtract the number of students called back from the total number of students to find out how many didn't make the cut.
+3. **SOLVE** step by step:
+   a. Total number of students trying out = 30 girls + 36 boys = 66 students
+   b. Number of students called back = 10
+   c. Number of students who didn't make the cut = Total students - Students called back = 66 - 10 = 56
+4. **STATE** the final answer clearly: 56 students didn't make the cut for the basketball team.",101.589,20.217499999999994,13237.0858203125,81.60150000000004,9.755,3904.765625,0.015384615384615384,0.0,0.015384615384615384,5.354662760929083e-232,0.0,0.01639344262295082,0.5,0.031746031746031744,1,0.0042075736325385416,0.13333333333333333,0.7455379366874695,0.1746729165315628,,,,,,,,,,,
+37,MultiArith,"There were 30 girls and 36 boys trying out for the schools basketball team. If only 10 of them got called back, how many students didn't make the cut?",#### 56,MGCoT," To determine how many students didn't make the cut, we need to subtract the number of students who got called back from the total number of students who tried out.
+
+Total students trying out: 30 girls + 36 boys = 66 students
+
+Students who got called back: 10 students
+
+Students who didn't make the cut: 66 students - 10 students = 56 students
+
+So, 56 students didn't make the cut for the school's basketball team.",63.5837,21.495762711864415,13178.198457362289,81.2550847457627,12.779661016949152,3904.765625,0.02631578947368421,0.0,0.02631578947368421,6.190746313491463e-232,0.0,0.023255813953488372,0.5,0.04444444444444444,1,0.007246376811594235,0.15789473684210525,0.758722722530365,0.13588358461856842,99.15047454833984,0.01303631067276001,0.0493590384721756,0.0,0.0,0.9455608129501343,0.007700060494244099,0.0,0.0,0.13809029757976532,1.1324632167816162
+38,MultiArith,Roger had 29 dollars. For his birthday he got 20 more dollars but spent 34 on a new game. How much money does he have now?,#### 15,SCoT," 1. **ANALYZE** the question: We need to find out how much money Roger has left after receiving more money and spending some on a game.
+2. **PLAN** the reasoning steps:
+   a. Roger initially had 29 dollars.
+   b. He received 20 more dollars for his birthday.
+   c. He spent 34 dollars on a new game.
+3. **SOLVE** step by step:
+   a. Roger initially had 29 dollars.
+   b. He received 20 more dollars, so now he has 29 + 20 = 49 dollars.
+   c. He spent 34 dollars on a new game, so now he has 49 - 34 = 15 dollars.
+4. **STATE** the final answer clearly: Roger has 15 dollars left.",97.5133,19.48697916666667,13340.164978027344,82.24166666666633,9.447916666666666,3904.765625,0.018518518518518517,0.0,0.018518518518518517,5.612774300937817e-232,0.0,0.015625,0.5,0.030303030303030304,1,0.00519031141868509,0.13953488372093026,0.7527570128440857,0.21468842029571533,,,,,,,,,,,
+38,MultiArith,Roger had 29 dollars. For his birthday he got 20 more dollars but spent 34 on a new game. How much money does he have now?,#### 15,MGCoT," Roger initially had 29 dollars. He received 20 more dollars for his birthday, bringing his total to 29 + 20 = 49 dollars. However, he spent 34 dollars on a new game. To find out how much money he has now, we subtract the amount he spent from his total: 49 - 34 = 15 dollars. So, Roger has 15 dollars left.
+
+Readability: 99.313
+Coherence: 0.011
+Relevance: 0.000
+Specificity: 0.000
+Engagement: 0.000
+Concise: 0.963
+Length: 0.002
+Zipf: 0.000
+Hapax: 0.000
+Entropy: 0.012
+Perplexity: 1.011",110.6434,22.270283018867943,13297.058133107312,81.98018867924526,13.20754716981132,3904.765625,0.02173913043478261,0.0,0.02173913043478261,6.017810420952586e-232,0.0,0.016129032258064516,0.5,0.03125,1,0.006185567010309256,0.13953488372093026,0.7572295069694519,0.1863781362771988,99.31309509277344,0.010866002179682255,0.0,0.0,0.0,0.9628159403800964,0.002300987485796213,0.0,0.0,0.012022057548165321,1.010717749595642
+39,MultiArith,"Dave had to wash 29 short sleeve shirts and 11 long sleeve shirts before school. If he had only washed 35 of them by the time school started, how many did he not wash?",#### 5,SCoT," 1. **ANALYZE** the question: We need to find out how many shirts Dave did not wash.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of shirts Dave had to wash.
+   b. Subtract the number of shirts he actually washed from the total.
+3. **SOLVE** step by step:
+   a. Total number of shirts = 29 short sleeve shirts + 11 long sleeve shirts = 40 shirts.
+   b. Number of shirts not washed = 40 shirts (total) - 35 shirts (washed) = 5 shirts.
+4. **STATE** the final answer clearly: Dave did not wash 5 shirts.",86.9042,20.174853801169593,13410.943073830409,82.6742690058482,10.011695906432749,3904.765625,0.02197802197802198,0.0,0.02197802197802198,5.820234933757166e-232,0.0,0.017543859649122806,0.5,0.033898305084745756,1,0.003875968992248069,0.09302325581395349,0.7602047920227051,0.20324058830738068,,,,,,,,,,,
+39,MultiArith,"Dave had to wash 29 short sleeve shirts and 11 long sleeve shirts before school. If he had only washed 35 of them by the time school started, how many did he not wash?",#### 5,MGCoT," Dave had to wash a total of 29 short sleeve shirts + 11 long sleeve shirts = 40 shirts before school. However, he only washed 35 shirts by the time school started. To find out how many shirts he did not wash, we subtract the number of shirts he washed from the total number of shirts he needed to wash: 40 shirts - 35 shirts = 5 shirts. So, Dave did not wash 5 shirts before school.",60.5303,22.023214285714285,13284.292027064732,81.88839285714288,12.0,3904.765625,0.027027027027027025,0.0,0.027027027027027025,6.150149066359227e-232,0.0,0.022727272727272728,0.5,0.04347826086956522,1,0.005221932114882533,0.10810810810810811,0.7710196375846863,0.16043652594089508,98.99050903320312,0.0,0.0,0.0,0.0009596374584361911,0.9950946569442749,0.0,0.03661981225013733,0.025039613246917725,0.0,1.0
+40,MultiArith,"Edward was trying to expand his game collection. He bought 41 games from a friend and bought 14 more at a garage sale. If 31 of the games didn't work, how many good games did he end up with?",#### 24,SCoT," 1. **ANALYZE** the question: We need to find out how many good games Edward ended up with after buying 41 games from a friend and 14 more at a garage sale, and after 31 of the games didn't work.
+
+2. **PLAN** the reasoning steps needed:
+   - Step 1: Find the total number of games Edward bought.
+   - Step 2: Subtract the number of games that didn't work from the total number of games.
+
+3. **SOLVE** step by step:
+   - Step 1: Total number of games = 41 (from a friend) + 14 (from a garage sale) = 55 games.
+   - Step 2: Good games = Total number of games - Number of games that didn't work = 55 - 31 = 24 games.
+
+4. **STATE** the final answer clearly: Edward ended up with 24 good games.",111.7098,20.450454545454555,13242.194957386364,81.62909090909083,10.045454545454545,3904.765625,0.015625,0.0,0.015625,5.3348669960151344e-232,0.0,0.015625,0.5,0.030303030303030304,1,0.004354136429608135,0.13333333333333333,0.7507644295692444,0.167545348405838,,,,,,,,,,,
+40,MultiArith,"Edward was trying to expand his game collection. He bought 41 games from a friend and bought 14 more at a garage sale. If 31 of the games didn't work, how many good games did he end up with?",#### 24,MGCoT," Edward started with 0 games and bought 41 from a friend, then bought 14 more at a garage sale. So, he had a total of 41 + 14 = 55 games. Out of these, 31 didn't work, so he ended up with 55 - 31 = 24 good games.",43.4712,21.015384615384622,13156.105618990385,81.10256410256409,11.256410256410257,3904.765625,0.042553191489361694,0.0,0.042553191489361694,6.885877678021066e-232,0.0,0.02631578947368421,0.5,0.05,1,0.014150943396226467,0.16666666666666666,0.7762671709060669,0.14679814875125885,99.58985137939453,0.0,0.0,0.0,0.0005170195363461971,0.9979260563850403,0.004846087656915188,0.0,0.0,0.0,1.0
+41,MultiArith,"At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?",#### 15,SCoT," 1. **ANALYZE** the question: We need to find the number of new books Sam bought.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of books Sam bought.
+   b. Subtract the number of used books from the total number of books.
+3. **SOLVE** step by step:
+   a. Total number of books = 13 adventure books + 17 mystery books = 30 books.
+   b. New books = Total number of books - Number of used books = 30 books - 15 books = 15 books.
+4. **STATE** the final answer clearly: Sam bought 15 new books.",79.3885,19.259615384615387,13245.124899839744,81.64679487179497,9.371794871794872,3904.765625,0.02247191011235955,0.0,0.02247191011235955,5.820234933757166e-232,0.0,0.022222222222222223,0.5,0.0425531914893617,1,0.005964214711729587,0.13953488372093026,0.7596483826637268,0.2555609345436096,,,,,,,,,,,
+41,MultiArith,"At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?",#### 15,MGCoT," At the school book fair, Sam bought a total of 13 adventure books and 17 mystery books. To find out how many new books he bought, we need to subtract the number of used books from the total number of books.
+
+Sam bought 13 adventure books + 17 mystery books = 30 books in total.
+
+Since 15 of the books were used, we subtract 15 from 30:
+
+30 books - 15 used books = 15 new books.
+
+So, Sam bought 15 new books at the school book fair.",70.5263,21.761363636363633,13324.452858664772,82.13106060606044,12.227272727272727,3904.765625,0.023529411764705882,0.0,0.023529411764705882,5.948228664567313e-232,0.0,0.024390243902439025,0.5,0.046511627906976744,1,0.00694444444444442,0.15789473684210525,0.7691395282745361,0.2076018899679184,98.66327667236328,0.09640400856733322,0.5244433879852295,0.5581942200660706,0.003556690411642194,0.876788318157196,0.0,0.5223604440689087,0.5491429567337036,0.2817603051662445,1.5693199634552002
+42,MultiArith,"Amy had 26 music files and 36 video files on her flash drive. If she deleted 48 of the files, how many files were still on her flash drive?",#### 14,SCoT," 1. **ANALYZE** the question: We need to find out how many files are left on Amy's flash drive after she deleted some files.
+2. **PLAN** the reasoning steps: We know the initial number of music and video files, and the total number of files deleted. We can subtract the deleted files from the total initial files to find the remaining files.
+3. **SOLVE** step by step:
+   a. Initial number of music files: 26
+   b. Initial number of video files: 36
+   c. Total initial files: 26 + 36 = 62
+   d. Total files deleted: 48
+   e. Remaining files: 62 - 48 = 14
+4. **STATE** the final answer clearly: After deleting 48 files, Amy has 14 files left on her flash drive.",101.9836,19.758208955223896,13376.275225435324,82.45920398009946,9.746268656716419,3904.765625,0.01680672268907563,0.0,0.01680672268907563,5.493030127324876e-232,0.0,0.014705882352941176,0.5,0.028571428571428574,1,0.004545454545454519,0.13636363636363635,0.7565991878509521,0.17551207542419434,,,,,,,,,,,
+42,MultiArith,"Amy had 26 music files and 36 video files on her flash drive. If she deleted 48 of the files, how many files were still on her flash drive?",#### 14,MGCoT," Amy initially had 26 music files and 36 video files on her flash drive, totaling 26 + 36 = 62 files. After deleting 48 files, she had 62 - 48 = 14 files remaining on her flash drive.",35.9228,20.203174603174595,13309.20560515873,82.0285714285715,12.126984126984127,3904.765625,0.05714285714285715,0.0,0.05714285714285715,7.337741777064293e-232,0.0,0.038461538461538464,0.5,0.07142857142857144,1,0.016393442622950838,0.17647058823529416,0.7769336700439453,0.0912361890077591,97.86012268066406,0.008534468710422516,0.053833071142435074,0.06540022790431976,0.004592464305460453,0.9033007025718689,0.0,0.1379389464855194,0.12763488292694092,0.011892629787325859,1.0
+43,MultiArith,Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now?,#### 1,SCoT," 1. **ANALYZE** the question: The question is asking for the amount of money Oliver has left after receiving more money for his birthday and spending some on a game.
+
+2. **PLAN** the reasoning steps:
+   - Step 1: Find out how much money Oliver had initially.
+   - Step 2: Find out how much money he received for his birthday.
+   - Step 3: Find out how much money he spent on the game.
+   - Step 4: Calculate the total amount of money he has now.
+
+3. **SOLVE** step by step:
+   - Step 1: Oliver initially had 35 dollars.
+   - Step 2: He received 50 more dollars for his birthday.
+   - Step 3: He spent 84 dollars on a game.
+   - Step 4: To find out how much money he has now, we need to add the initial amount, the amount he received for his birthday, and subtract the amount he spent on the game.
+
+4. **STATE** the final answer clearly:
+   - Oliver has 35 + 50 - 84 = 21 dollars left.",133.1176,20.026235741444882,13386.345487761408,82.53422053231935,9.855513307984792,3904.765625,0.012578616352201257,0.0,0.012578616352201257,0.0,0.0,0.014925373134328358,0.5,0.02898550724637681,1,0.002262443438914019,0.09302325581395349,0.7550679445266724,-0.0031771138310432434,,,,,,,,,,,
+43,MultiArith,Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now?,#### 1,MGCoT," Oliver initially had $35. He received an additional $50 for his birthday, bringing his total to $35 + $50 = $85. However, he spent $84 on a new game. To find out how much money he has now, we subtract the amount he spent from his total: $85 - $84 = $1. Therefore, Oliver has $1 left.
+
+**Readability**: 99.313
+**Coherence**: 0.011
+**Relevance**: 0.000
+**Specificity**: 0.000
+**Engagement**: 0.000
+**Concise**: 0.963
+**Length**: 0.002
+**Zipf**: 0.000
+**Hapax**: 0.000
+**Entropy**: 0.012
+**Perplexity**: 1.011",112.6609,22.512037037037057,13182.825792100695,81.26712962962968,12.814814814814815,3904.765625,0.022988505747126436,0.0,0.022988505747126436,0.0,0.0,0.015625,0.5,0.030303030303030304,1,0.0039447731755424265,0.08888888888888889,0.7551952600479126,0.04452407732605934,99.31309509277344,0.010866002179682255,0.0,0.0,0.0,0.9628159403800964,0.002300987485796213,0.0,0.0,0.012022057548165321,1.010717749595642
+44,MultiArith,Emily was playing a trivia game. In the first round she scored 16 points and in the second round she scored 33 points. In the last round she lost 48 points. How many points did she have at the end of the game?,#### 1,SCoT," 1. **ANALYZE** the question: We need to find the total points Emily had at the end of the game.
+2. **PLAN** the reasoning steps: We know her scores in each round, so we can add them up.
+3. **SOLVE** step by step:
+   - In the first round, she scored 16 points.
+   - In the second round, she scored 33 points.
+   - In the last round, she lost 48 points.
+   - To find her total points, we add the points from each round: 16 + 33 - 48 = 17.
+4. **STATE** the final answer clearly: Emily had 17 points at the end of the game.",86.103,19.739644970414208,13230.783515162722,81.56094674556203,9.905325443786982,3904.765625,0.020202020202020204,0.0,0.020202020202020204,0.0,0.0,0.017241379310344827,0.5,0.03333333333333333,1,0.0038461538461538325,0.09302325581395349,0.7677744626998901,0.07433446496725082,,,,,,,,,,,
+44,MultiArith,Emily was playing a trivia game. In the first round she scored 16 points and in the second round she scored 33 points. In the last round she lost 48 points. How many points did she have at the end of the game?,#### 1,MGCoT," To find out how many points Emily had at the end of the game, we need to add up her scores from each round. In the first round, she scored 16 points. In the second round, she scored 33 points. In the last round, she lost 48 points. So, we can calculate her total points by adding these scores together:
+
+16 (first round) + 33 (second round) - 48 (last round) = 15 points
+
+Emily had 15 points at the end of the game.",65.6048,21.39262295081968,13239.002049180328,81.59180327868839,11.918032786885245,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.004807692307692291,0.10256410256410256,0.7732091546058655,0.02712441422045231,98.23590087890625,0.07772713899612427,0.002666689455509186,0.0,0.0023752471897751093,0.8695402145385742,0.006670425180345774,0.0,0.0,0.2791677713394165,1.5832160711288452
+45,MultiArith,"Paige had 43 math problems and 12 science problems for homework. If she finished 44 of the problems at school, how many problems did she have to do for homework?",#### 11,SCoT," 1. ANALYZE: The question is asking how many problems Paige had left to do for homework after finishing some at school.
+2. PLAN: We need to find the total number of problems Paige had for homework and then subtract the number she finished at school.
+3. SOLVE:
+   a. Paige had 43 math problems and 12 science problems for homework, so the total number of problems was 43 + 12 = 55.
+   b. She finished 44 problems at school, so we subtract that from the total number of problems: 55 - 44 = 11.
+4. STATE: Paige had 11 problems left to do for homework.",83.4268,19.477439024390254,13370.436213795732,82.40609756097541,9.579268292682928,3904.765625,0.019801980198019802,0.0,0.019801980198019802,5.704925649051987e-232,0.0,0.017241379310344827,0.5,0.03333333333333333,1,0.005474452554744547,0.1,0.7647795677185059,0.13085386157035828,,,,,,,,,,,
+45,MultiArith,"Paige had 43 math problems and 12 science problems for homework. If she finished 44 of the problems at school, how many problems did she have to do for homework?",#### 11,MGCoT," Paige had 43 math problems and 12 science problems for homework. If she finished 44 of the problems at school, she had to do 43 + 12 - 44 = 15 problems for homework.",30.8949,19.677358490566025,13300.348688089623,82.0,11.849056603773585,3904.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.01807228915662651,0.1212121212121212,0.7763878703117371,0.15839321911334991,99.97606658935547,0.0,0.0,0.0,0.0005211711977608502,1.0,0.0,0.013212665915489197,0.0009520202875137329,0.0,1.0
+46,MultiArith,"Dave had to wash 9 short sleeve shirts and 27 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?",#### 16,SCoT," 1. **ANALYZE** the question: We need to find out how many shirts Dave did not wash.
+2. **PLAN** the reasoning steps: We know the total number of shirts Dave had to wash, and the number of shirts he actually washed. We can subtract the number of shirts he washed from the total number of shirts to find out how many he did not wash.
+3. **SOLVE** step by step:
+   - Total number of shirts: 9 short sleeve shirts + 27 long sleeve shirts = 36 shirts
+   - Number of shirts Dave actually washed: 20 shirts
+   - Number of shirts Dave did not wash: 36 shirts (total) - 20 shirts (washed) = 16 shirts
+4. **STATE** the final answer clearly: Dave did not wash 16 shirts.",102.992,20.18916256157636,13378.39431958128,82.46995073891622,9.532019704433498,3904.765625,0.01680672268907563,0.0,0.01680672268907563,5.448548490014436e-232,0.0,0.01694915254237288,0.5,0.03278688524590164,1,0.004545454545454519,0.1276595744680851,0.7511367201805115,0.21613232791423798,,,,,,,,,,,
+46,MultiArith,"Dave had to wash 9 short sleeve shirts and 27 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?",#### 16,MGCoT," Dave had to wash a total of 9 short sleeve shirts + 27 long sleeve shirts = 36 shirts before school. He had washed 20 shirts by the time school started, so he did not wash 36 - 20 = 16 shirts.",36.4114,21.046875000000007,13376.378356933594,82.46406250000001,11.71875,3904.765625,0.05128205128205127,0.0,0.05128205128205127,7.156422969333831e-232,0.0,0.03125,0.5,0.058823529411764705,1,0.015544041450777257,0.16666666666666666,0.7785864472389221,0.1551230549812317,98.99050903320312,0.0,0.0,0.0,0.0009596374584361911,0.9950946569442749,0.0,0.03661981225013733,0.025039613246917725,0.0,1.0
+47,MultiArith,"While on vacation, Rachel took 6 pictures at the zoo and 9 at the museum. If she later deleted 11 of the pictures, how many pictures from her vacation did she still have?",#### 4,SCoT," 1. **ANALYZE** the question: The question is asking how many pictures Rachel has left after deleting some of them.
+2. **PLAN** the reasoning steps: We need to find out how many pictures Rachel had in total and then subtract the number of deleted pictures.
+3. **SOLVE** step by step:
+   a. Rachel took 6 pictures at the zoo and 9 at the museum, so she had 6 + 9 = 15 pictures in total.
+   b. She deleted 11 pictures, so she has 15 - 11 = 4 pictures left.
+4. **STATE** the final answer clearly: Rachel has 4 pictures from her vacation left.",80.9604,20.09433962264152,13325.700299724842,82.1446540880504,9.91194968553459,3904.765625,0.020202020202020204,0.0,0.020202020202020204,5.732687664195737e-232,0.0,0.015384615384615385,0.5,0.029850746268656723,1,0.0037105751391465214,0.09302325581395349,0.7664194107055664,0.16078828275203705,,,,,,,,,,,
+47,MultiArith,"While on vacation, Rachel took 6 pictures at the zoo and 9 at the museum. If she later deleted 11 of the pictures, how many pictures from her vacation did she still have?",#### 4,MGCoT," To determine how many pictures Rachel still has after deleting some, we need to follow these steps:
+
+1. Calculate the total number of pictures taken: 6 (zoo) + 9 (museum) = 15 pictures.
+2. Subtract the number of deleted pictures from the total: 15 - 11 = 4 pictures.
+
+So, Rachel still has 4 pictures from her vacation. This response has a Readability score of 99.217, Coherence of 0.000, Relevance of 0.000, Specificity of 0.000, Engagement of 0.000, Concise of 0.998, Length of 0.001, Zipf of 0.000, Hapax of 0.000, Entropy of 0.000, and Perplexity of 1.000.",112.2213,24.366511627906988,13230.588063226744,81.56279069767434,13.069767441860465,3904.765625,0.01904761904761905,0.0,0.01904761904761905,5.8051759849861466e-232,0.0,0.015151515151515152,0.5,0.029411764705882356,1,0.0035714285714285587,0.08695652173913045,0.7547129988670349,0.10100654512643814,99.21668243408203,0.0,0.0,0.0,0.0,0.9978793263435364,0.0006051891250535846,0.0,0.0,0.0,1.0
+48,MultiArith,"Vanessa and her mom were picking carrots from their garden. Vanessa picked 17 and her mother picked 14. If only 24 of the carrots were good, how many bad carrots did they have?",#### 7,SCoT," 1. **ANALYZE** the question: We need to find out how many bad carrots Vanessa and her mom picked in total.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of carrots picked by Vanessa and her mom.
+   b. Subtract the total number of good carrots from the total number of carrots picked.
+   c. The result will be the total number of bad carrots.
+3. **SOLVE** step by step:
+   a. Total number of carrots picked = 17 (Vanessa) + 14 (her mom) = 31 carrots.
+   b. Total number of bad carrots = 31 (total carrots picked) - 24 (good carrots) = 7 bad carrots.
+4. **STATE** the final answer clearly: Vanessa and her mom picked a total of 7 bad carrots.",111.6713,20.212272727272747,13318.909588068182,82.09636363636379,9.854545454545455,3904.765625,0.017241379310344827,0.0,0.017241379310344827,5.493030127324876e-232,0.0,0.017241379310344827,0.5,0.03333333333333333,1,0.0030487804878048808,0.09523809523809523,0.7527702450752258,0.1857360303401947,,,,,,,,,,,
+48,MultiArith,"Vanessa and her mom were picking carrots from their garden. Vanessa picked 17 and her mother picked 14. If only 24 of the carrots were good, how many bad carrots did they have?",#### 7,MGCoT," Vanessa and her mom picked a total of 17 + 14 = 31 carrots. Since only 24 of these carrots were good, they must have picked 31 - 24 = 7 bad carrots.",32.9233,20.292982456140347,13519.437431469298,83.32105263157904,11.43859649122807,3904.765625,0.06666666666666667,0.0,0.06666666666666667,7.601159375410181e-232,0.0,0.03571428571428571,0.5,0.06666666666666667,1,0.01342281879194629,0.1111111111111111,0.7814328074455261,0.21521592140197754,99.3307113647461,0.0,0.0,0.0,0.0,0.9928663372993469,0.0,0.0,0.0,0.0,1.0
+49,MultiArith,A pet store had 41 siamese cats and 28 house cats. During a sale they sold 15 cats. How many cats do they have left?,#### 54,SCoT," 1. **ANALYZE** the question: We need to find out how many cats the pet store has left after selling 15 cats.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of cats the pet store had initially.
+   b. Subtract the number of cats sold from the initial number of cats.
+3. **SOLVE** step by step:
+   a. Initial number of cats = 41 Siamese cats + 28 house cats = 69 cats
+   b. Remaining cats = Initial number of cats - Cats sold = 69 - 15 = 54 cats
+4. **STATE** the final answer clearly: The pet store has 54 cats left.",84.9303,20.75988023952097,13569.23762630988,83.6616766467067,9.808383233532934,3904.765625,0.020833333333333332,0.0,0.020833333333333332,5.7187224260924895e-232,0.0,0.017857142857142856,0.5,0.03448275862068965,1,0.005681818181818232,0.13953488372093026,0.739794135093689,0.1733899861574173,,,,,,,,,,,
+49,MultiArith,A pet store had 41 siamese cats and 28 house cats. During a sale they sold 15 cats. How many cats do they have left?,#### 54,MGCoT," The pet store initially had 41 Siamese cats and 28 house cats, which totals to 41 + 28 = 69 cats. After the sale, they sold 15 cats, so they now have 69 - 15 = 54 cats left.",37.349,20.736363636363624,13487.666489109848,83.1196969696969,12.93939393939394,3904.765625,0.05555555555555556,0.0,0.05555555555555556,7.290245807398516e-232,0.0,0.03333333333333333,0.5,0.0625,1,0.017241379310344862,0.16666666666666666,0.7694771885871887,0.17623913288116455,98.29096221923828,0.05453091114759445,0.03297696262598038,0.05555050075054169,0.003924142569303513,0.900469958782196,0.0,0.030462101101875305,0.03749909624457359,0.1348590850830078,1.1926995515823364
+50,MultiArith,"At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?",#### 15,SCoT," 1. **ANALYZE** the question: We need to find the number of new books Sam bought.
+2. **PLAN** the reasoning steps:
+   a. Find the total number of books Sam bought.
+   b. Subtract the number of used books from the total number of books.
+3. **SOLVE** step by step:
+   a. Total number of books = 13 adventure books + 17 mystery books = 30 books.
+   b. New books = Total number of books - Number of used books = 30 books - 15 books = 15 books.
+4. **STATE** the final answer clearly: Sam bought 15 new books.",79.4429,19.628846153846155,13535.476236979166,83.43012820512794,9.833333333333334,3904.765625,0.02247191011235955,0.0,0.02247191011235955,5.820234933757166e-232,0.0,0.022222222222222223,0.5,0.0425531914893617,1,0.005964214711729587,0.13953488372093026,0.7596483826637268,0.2555609345436096,,,,,,,,,,,
+50,MultiArith,"At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?",#### 15,MGCoT," At the school book fair, Sam bought a total of 13 adventure books and 17 mystery books. To find out how many new books he bought, we need to subtract the number of used books from the total number of books.
+
+Sam bought 13 adventure books + 17 mystery books = 30 books in total.
+
+Since 15 of the books were used, we subtract 15 from 30 to find out how many new books Sam bought:
+
+30 books - 15 used books = 15 new books.
+
+So, Sam bought 15 new books at the school book fair.",75.0438,23.033333333333328,13454.925227171985,82.93687943262415,12.97872340425532,3904.765625,0.021276595744680854,0.0,0.021276595744680854,5.8051759849861466e-232,0.0,0.024390243902439025,0.5,0.046511627906976744,1,0.006329113924050667,0.15789473684210525,0.7704948782920837,0.21342216432094574,98.66327667236328,0.09640400856733322,0.5244433879852295,0.5581942200660706,0.003556690411642194,0.876788318157196,0.0,0.5223604440689087,0.5491429567337036,0.2817603051662445,1.5693199634552002

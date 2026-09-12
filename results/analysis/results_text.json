@@ -1,0 +1,132 @@
+[
+  {
+    "title": "",
+    "paragraph": "This section compares Standard Chain-of-Thought (SCoT) and Metric-Guided Chain-of-Thought (MGCoT) on seven small language models (SLMs) across ten reasoning benchmarks. Each model answered the same 50 questions per dataset under both mechanisms, so every comparison is paired at the question level. Tables 1–14 report, for each model, the mean ± standard deviation of each metric per dataset, with the SCoT and MGCoT rows of a dataset placed next to each other; the final pair of rows aggregates all datasets (500 questions per mechanism). In each metric column, the best value across all dataset × mechanism rows is shown in bold and the worst in italics (dark and light grey shading in the accompanying spreadsheets); lower is better for hardware metrics and higher is better for quality metrics.",
+    "caption": ""
+  },
+  {
+    "title": "",
+    "paragraph": "A difference is described as *significant* when a paired Wilcoxon signed-rank test over the questions of that dataset (or over all 500 questions for the aggregate) remains below 0.05 after Benjamini–Hochberg false-discovery-rate correction within the table. The statements \"MGCoT was better/worse on *k* of 10 datasets\" follow the two-decimal means shown in the tables.",
+    "caption": ""
+  },
+  {
+    "title": "",
+    "paragraph": "Two properties of the measurements frame the interpretation. First, the reported generation time grows with the number of generated tokens (the profiler samples resources once per streamed token), so time differences primarily reflect response length. Second, all runs used a 300-token generation budget, well above the length of every reference answer; deepseek-r1-8b spent this budget on its internal reasoning trace in 97–98% of runs and returned an empty visible answer, so its quality scores are close to zero under both mechanisms and are reported for completeness rather than interpreted as answer quality.",
+    "caption": ""
+  },
+  {
+    "title": "1. Hardware Efficiency",
+    "paragraph": "Tables 1–7 report the hardware efficiency metrics defined in the Hardware Efficiency Evaluation Metrics section: Time (min), CPU (%), RAM (GB), RAM (%), PGPU (%) and MGPU (GB).",
+    "caption": ""
+  },
+  {
+    "title": "Mistral-7b (Table 1)",
+    "paragraph": "MGCoT increased generation time by 29.3% (1.74 ± 0.56 → 2.25 ± 0.70 min), and the increase was significant on all ten datasets, most pronounced on SayCan (+1.10 min) and CLUTRR (+0.99 min). CPU utilisation (+3.9%; 24.34 → 25.28%) and GPU utilisation (+9.9%; 10.90 → 11.98%) were also higher under MGCoT on all ten datasets. The only resource that improved was RAM, which was lower on all ten datasets (12.71 → 12.62 GB, −0.7%; significant on eight). GPU memory was unchanged (3.79 GB), as it is dominated by the resident model weights. The shortest runs were SCoT on ASDiv (1.22 min) and the longest MGCoT on AQUA (2.56 min).",
+    "caption": "Table 1. Hardware efficiency of Mistral-7b under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Phi3-mini (Table 2)",
+    "paragraph": "Aggregate generation time was equivalent under the two mechanisms (1.89 vs 1.88 min, −0.8%, not significant), but the balance differed by dataset: MGCoT was significantly faster on Date (−1.11 min, the fastest cell at 0.51 min) and significantly slower on ASDiv, CLUTRR, SayCan and StrategyQA (the slowest cell, 2.47 min). MGCoT times were more variable on every dataset (higher standard deviation on 10 of 10), indicating that response length depended more on the question. MGCoT produced the largest RAM reduction of all models (13.33 → 13.05 GB, −2.1%, significant on all ten datasets), at the cost of higher CPU (+13.2%; 12.69 → 14.37%) and GPU utilisation (+44.8%; 5.60 → 8.11%), both higher on all ten datasets.",
+    "caption": "Table 2. Hardware efficiency of Phi3-mini under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Llama3.2-1b (Table 3)",
+    "paragraph": "MGCoT increased generation time by 14.1% (1.92 → 2.19 min), significantly on seven datasets, with the largest increases on ASDiv (+1.12 min) and CLUTRR (+0.98 min). The exception was QASports, where MGCoT was significantly faster (−1.41 min) and produced the fastest cell of the table (0.76 min). CPU utilisation was unchanged (5.11 vs 5.12%, not significant), and RAM was slightly lower on nine datasets (9.72 → 9.69 GB, −0.3%). GPU utilisation rose on aggregate (+43.4%; 2.47 → 3.55%) but not uniformly: it was significantly lower on ASDiv, CLUTRR and MultiArith and higher on the remaining datasets, most on QASports (+4.9 points). GPU memory was constant at 3.05 GB.",
+    "caption": "Table 3. Hardware efficiency of Llama3.2-1b under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Gemma2-2b (Table 4)",
+    "paragraph": "Gemma2-2b showed the largest efficiency gain of the study. MGCoT halved generation time (1.98 ± 0.48 → 1.01 ± 0.84 min, −49.1%), with faster generation on all ten datasets (significant on nine); the largest reductions were on QASports (−1.75 min) and SayCan (−1.59 min), and the fastest cell was MGCoT on CLUTRR (0.21 min) against the slowest SCoT on StrategyQA (2.45 min). RAM was lower on all ten datasets (11.74 → 11.68 GB). In exchange, GPU utilisation more than doubled (3.88 → 8.76%, +125.9%, significant on all datasets; +14.4 points on CLUTRR) and CPU rose slightly (+4.0%; 5.21 → 5.42%). MGCoT time was more variable (standard deviation 0.84 vs 0.48 min), consistent with response lengths that adapt to the question rather than a uniformly long reasoning chain.",
+    "caption": "Table 4. Hardware efficiency of Gemma2-2b under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Qwen2-1.5b (Table 5)",
+    "paragraph": "MGCoT reduced generation time by 11.3% (1.13 → 1.00 min), with shorter times on eight datasets, significantly on ASDiv (−0.38 min) and Date (−0.28 min); QASports was the only dataset with a significant increase (+0.31 min). Qwen2-1.5b was the only model whose CPU utilisation decreased under MGCoT (5.24 → 5.05%, −3.5%; lower on seven datasets, significantly on QASports and SayCan). RAM was lower on all datasets (9.33 → 9.31 GB), whereas GPU utilisation increased (+54.7%; 4.42 → 6.84%), significantly on nine datasets. Qwen2-1.5b also had the smallest GPU memory footprint of all models (2.66 GB).",
+    "caption": "Table 5. Hardware efficiency of Qwen2-1.5b under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Openchat-7b (Table 6)",
+    "paragraph": "MGCoT reduced generation time by 40.8% (1.76 → 1.05 min), and the reduction was significant on all ten datasets, largest on Date (−1.33 min) and CLUTRR (−0.99 min); the fastest cell was MGCoT on CLUTRR (0.24 min) and the slowest SCoT on AQUA (2.34 min). RAM was significantly lower on all ten datasets (12.42 → 12.34 GB, −0.6%). CPU utilisation increased on aggregate (+4.1%; 21.81 → 22.70%) but decreased significantly on CLUTRR and Date, the two datasets with the largest time savings. GPU utilisation was higher on all datasets (9.95 → 13.41%, +34.8%).",
+    "caption": "Table 6. Hardware efficiency of Openchat-7b under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Deepseek-r1-8b (Table 7)",
+    "paragraph": "Generation time was nearly constant under both mechanisms (2.56 ± 0.04 vs 2.58 ± 0.07 min) because almost every run reached the 300-token limit; the statistically significant MGCoT increase on nine datasets amounts to at most 0.04 min. Deepseek-r1-8b had the highest CPU utilisation (30.12 → 31.74%, +5.4%) and RAM usage (13.73 → 13.65 GB) of all models. As for the other models, MGCoT slightly lowered RAM (all ten datasets) and slightly raised GPU utilisation (+2.1%).",
+    "caption": "Table 7. Hardware efficiency of Deepseek-r1-8b under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Summary",
+    "paragraph": "Three hardware patterns hold across models. (i) Generation time depends on the model: MGCoT shortened generation for gemma2-2b (−49.1%), openchat-7b (−40.8%) and qwen2-1.5b (−11.3%), lengthened it for mistral-7b (+29.3%) and llama3.2-1b (+14.1%), and left it unchanged for phi3-mini and deepseek-r1-8b. (ii) RAM was lower under MGCoT for all seven models (−0.2% to −2.1%), consistently on nine or ten of ten datasets. (iii) GPU utilisation was higher under MGCoT for all seven models (+2.1% to +125.9%), and CPU utilisation was higher for five, unchanged for llama3.2-1b and lower for qwen2-1.5b. GPU memory did not differ between mechanisms for any model.",
+    "caption": ""
+  },
+  {
+    "title": "2. Response Quality",
+    "paragraph": "Tables 8–14 report the response quality metrics defined in the Response Quality Metrics section: RLF1, TP, TR, TF1, NED, CF1, BERT-F1, SS and task accuracy (ACC), the proportion of questions whose extracted final answer matches the reference. Absolute overlap values are low for every model, because reference answers are short labels or numbers while generated answers contain the reasoning, so the comparison rests on the differences between mechanisms.",
+    "caption": ""
+  },
+  {
+    "title": "Mistral-7b (Table 8)",
+    "paragraph": "MGCoT did not improve answer quality for mistral-7b. Token F1 decreased by 13.5% (0.067 → 0.058), with lower values on six datasets and significantly lower values on five, alongside token recall (−18.3%; 0.38 → 0.31) and token precision (−12.2%); ROUGE-L (−2.4%), edit similarity (+3.3%) and character F1 (+0.1%) were unchanged on aggregate. Semantic similarity fell by 15.8% (0.281 → 0.237), significantly on six datasets, and BERTScore was marginally lower (0.782 → 0.777, −0.6%; significant on CLUTRR, SayCan and StrategyQA). The losses were concentrated on GSM8K (TF1 −0.065, SS −0.125) and CLUTRR (SS −0.110), while Date was the only dataset that gained under MGCoT (RLF1 +0.055, NED +0.050, CF1 +0.051) and StrategyQA the only one with a significant SS gain (+0.028). The highest values of the table were all reached by SCoT on GSM8K (TF1 0.40, CF1 0.83, BERT-F1 0.84, SS 0.78). Task accuracy fell from 38.0% to 20.6% (−17.4 points, 95% CI [−22.4, −12.8]), significantly on five datasets (ASDiv, CLUTRR, GSM8K, MultiArith and SVAMP) and on no dataset in favour of MGCoT.",
+    "caption": "Table 8. Response quality of Mistral-7b under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Phi3-mini (Table 9)",
+    "paragraph": "MGCoT raised the metrics that reward concise, well-aligned answers for phi3-mini: edit similarity increased by 56.6% (0.043 → 0.068) and character F1 by 8.0% (0.289 → 0.312), both significant, while ROUGE-L (+64.9%), token precision (+29.2%) and token F1 (+9.5%) increased without reaching significance on aggregate. BERTScore increased by 1.1% (0.781 → 0.790, significant) and semantic similarity by 4.9% (0.263 → 0.276, not significant). The gains were concentrated on Date (RLF1 +0.34, NED +0.24, CF1 +0.23, BERT-F1 +0.091, SS +0.289; the best cells of the table at RLF1 0.38 and BERT-F1 0.88) and MultiArith, both significant. Token recall moved in the opposite direction (−19.8%; 0.42 → 0.34), driven by QASports (−0.60) and ASDiv (−0.26), and CLUTRR and SayCan were significantly lower on both overlap and meaning (SS −0.126 on SayCan). Task accuracy fell from 46.2% to 38.0% (−8.2 points, 95% CI [−12.8, −3.6]), significantly on ASDiv and MultiArith, although it was nominally higher on AQUA, QASports and StrategyQA.",
+    "caption": "Table 9. Response quality of Phi3-mini under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Llama3.2-1b (Table 10)",
+    "paragraph": "Llama3.2-1b degraded on every quality dimension under MGCoT. ROUGE-L fell by 70.0% (0.042 → 0.013), token F1 by 62.4% (0.065 → 0.024), token precision by 60.4%, token recall by 70.9% (0.35 → 0.10), character F1 by 7.4% and edit similarity by 15.4%, with significantly lower values on eight of ten datasets for the overlap metrics and on all ten for recall. Meaning followed: semantic similarity dropped by 58.4% (0.266 → 0.110) and BERTScore by 1.8% (0.775 → 0.761), both significantly lower on eight datasets. The largest losses were on GSM8K (TF1 −0.259, SS −0.631) and ASDiv (TR −0.88). Only StrategyQA improved (SS +0.052, NED +0.009) together with QASports on BERTScore (+0.030), and every best cell of the table belongs to SCoT. Task accuracy collapsed from 35.4% to 2.8% (−32.6 points, 95% CI [−37.2, −28.2]), significantly lower on six datasets and higher on none, confirming that the model stopped producing usable final answers under MGCoT.",
+    "caption": "Table 10. Response quality of Llama3.2-1b under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Gemma2-2b (Table 11)",
+    "paragraph": "Gemma2-2b improved on nearly all quality metrics under MGCoT. ROUGE-L more than doubled (0.044 → 0.101, +129.4%), edit similarity rose by 129.6% (0.038 → 0.087), token precision by 44.4%, token F1 by 24.7% (0.067 → 0.083) and character F1 by 9.1% (0.287 → 0.314), all significant; ROUGE-L and character F1 were significantly higher on six and seven datasets respectively, and edit similarity on eight. BERTScore rose by 3.7% (0.771 → 0.799) and was significantly higher on all ten datasets — the most consistent semantic gain of the study — while semantic similarity rose by 7.6% on aggregate (not significant after correction) with significant gains on CLUTRR, Date (+0.281) and GSM8K. The largest gains were on Date (RLF1 +0.27, BERT-F1 +0.084) and CLUTRR (RLF1 +0.16), and the best cells of RLF1, TF1, CF1 and SS were MGCoT on GSM8K (0.32, 0.44, 0.84, 0.80). The exceptions were token recall (−28.6%; 0.39 → 0.28, lower on nine datasets) and the two tasks presented without task framing, QASports and SayCan (SS −0.128). Task accuracy, however, fell from 40.6% to 34.2% (−6.4 points, 95% CI [−10.2, −2.6]; significant on MultiArith), so the closer surface and semantic alignment did not translate into more correct answers.",
+    "caption": "Table 11. Response quality of Gemma2-2b under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Qwen2-1.5b (Table 12)",
+    "paragraph": "MGCoT produced moderate gains for qwen2-1.5b: token F1 increased by 10.9% (0.073 → 0.081) and edit similarity by 18.7% (0.062 → 0.074), both significant, while ROUGE-L (+21.9%), token precision (+11.2%) and character F1 (+1.8%) increased without reaching significance. Semantic quality was preserved rather than improved: BERTScore (0.792 → 0.795) and semantic similarity (0.251 → 0.254) did not differ significantly, and qwen2-1.5b retained the highest SCoT BERTScore baseline of all models (0.792). The gains were significant mainly on ASDiv (RLF1 +0.066, TF1 +0.049, BERT-F1 +0.015) with smaller gains on CLUTRR and Date, and StrategyQA was significantly higher on SS. Token recall was slightly lower (−3.4%, not significant; significant only on SVAMP) and QASports lower on SS. The best overlap cells remained with SCoT on GSM8K (RLF1 0.28, TF1 0.43), whereas the best SS cell was MGCoT on GSM8K (0.80). Task accuracy was unchanged overall (36.4% vs 36.6%, 95% CI [−3.4, +3.8]) and significantly higher on CLUTRR (28% to 48%), the only condition in the study where MGCoT significantly improved accuracy.",
+    "caption": "Table 12. Response quality of Qwen2-1.5b under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Openchat-7b (Table 13)",
+    "paragraph": "Openchat-7b showed the broadest improvement of the study. Under MGCoT, ROUGE-L increased by 83.2% (0.048 → 0.089), edit similarity by 85.3% (0.044 → 0.082), token precision by 41.3%, token F1 by 32.5% (0.067 → 0.089) and character F1 by 12.1% (0.289 → 0.324), all significant, with significantly higher token F1 on seven datasets and edit similarity and character F1 on seven. BERTScore increased by 2.7% (0.778 → 0.799), significantly on eight datasets and lower on none. The largest gains were on Date (RLF1 +0.19, BERT-F1 +0.066, SS +0.205) and CLUTRR (NED +0.18, TF1 +0.08), and the best cells of TF1 (0.47), CF1 (0.85), BERT-F1 (0.86) and SS (0.82) were all MGCoT on GSM8K. Aggregate semantic similarity was unchanged (0.279 → 0.276) because dataset effects cancelled: significant gains on Date and GSM8K against significant losses on AQUA, ASDiv, MultiArith, SVAMP, QASports and SayCan (−0.135). As for gemma2-2b, token recall decreased (−15.1%). Task accuracy was preserved (43.8% vs 44.8%, 95% CI [−3.2, +5.4], not significant), with nominal gains on five datasets, so openchat-7b obtained the alignment and efficiency gains at no cost in correctness.",
+    "caption": "Table 13. Response quality of Openchat-7b under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Deepseek-r1-8b (Table 14)",
+    "paragraph": "All quality scores were close to zero under both mechanisms, with every aggregate mean at or below 0.002 under SCoT and 0.024 under MGCoT, because the model returned no visible answer in 97–98% of runs. The apparent relative changes (e.g., ROUGE-L +1,466%, SS +156%) come from the roughly 3% of runs that did return an answer, mostly on Date and CLUTRR, and none of the differences was significant. These values measure budget compliance rather than answer quality. Task accuracy was 0.2% under SCoT and 2.4% under MGCoT, both at floor level, as almost no run produced a visible answer.",
+    "caption": "Table 14. Response quality of Deepseek-r1-8b under SCoT and MGCoT (mean ± std)."
+  },
+  {
+    "title": "Summary",
+    "paragraph": "MGCoT improved answer quality for openchat-7b and gemma2-2b on nearly all metrics and datasets, moderately for qwen2-1.5b, and selectively for phi3-mini (Date and MultiArith); it reduced quality strongly for llama3.2-1b and mildly for mistral-7b. Three regularities hold across models. First, the gains concentrate on Date and CLUTRR and, for gemma2-2b and openchat-7b, on GSM8K, whereas SayCan and QASports — the two benchmarks presented without task framing — are lower under MGCoT for most models. Second, MGCoT shifts overlap from recall towards precision: token precision, ROUGE-L, edit similarity and token F1 increase while token recall decreases for every model (−3% to −71%), in line with shorter and more focused responses that contain fewer unrelated words but cover fewer reference words. Third, the two semantic metrics diverge: BERTScore, which compares token embeddings and rewards concise answers, improved for gemma2-2b (ten of ten datasets), openchat-7b (eight of ten) and phi3-mini, was preserved for qwen2-1.5b and fell for llama3.2-1b and mistral-7b, whereas sentence-level similarity moved by dataset rather than by model, with large gains on Date (+0.20 to +0.29 for phi3-mini, gemma2-2b and openchat-7b), significant gains on StrategyQA for four models, and significant losses on SayCan for five of the six models with valid answers. Task accuracy, however, did not follow the alignment metrics: it was preserved for openchat-7b (43.8% vs 44.8%) and qwen2-1.5b (36.4% vs 36.6%) and significantly lower for phi3-mini (−8.2 points), gemma2-2b (−6.4), mistral-7b (−17.4) and llama3.2-1b (−32.6). Across the 60 model x dataset conditions MGCoT was significantly more accurate in one (qwen2-1.5b on CLUTRR, 28% to 48%) and significantly less accurate in 14, so the gains reported above concern generation cost and reference alignment rather than correctness.",
+    "caption": ""
+  },
+  {
+    "title": "",
+    "paragraph": "Across the three dimensions, the results separate into two scenarios.",
+    "caption": ""
+  },
+  {
+    "title": "",
+    "caption": "",
+    "paragraph": "In the first scenario MGCoT is advantageous. For openchat-7b and qwen2-1.5b it reduced generation cost (−40.8% and −11.3% generation time) and improved reference alignment (openchat-7b: +83.2% ROUGE-L F1, +32.5% token F1, +2.7% BERTScore F1, significant on six to eight datasets) while preserving task accuracy, and qwen2-1.5b gained the only significant accuracy improvement of the study (CLUTRR, 28% to 48%). Gemma2-2b belongs to this group for cost and alignment (−49.1% generation time, +129.4% ROUGE-L F1, +3.7% BERTScore F1 on all ten datasets) but not for correctness, as its accuracy fell by 6.4 points. By dataset, the advantage was strongest on Date, CLUTRR and GSM8K."
+  },
+  {
+    "title": "",
+    "paragraph": "For gemma2-2b and openchat-7b, MGCoT delivered simultaneous efficiency and alignment gains: 41–49% shorter generation, lower RAM on every dataset, significantly higher precision-type lexical overlap on six to eight datasets, and significantly higher BERT-F1 on eight to ten datasets. Qwen2-1.5b showed the same direction with smaller effects (11% shorter generation, lower CPU, moderate syntactic gains, semantic parity). By dataset, the advantage was strongest and most consistent on Date and CLUTRR, followed by GSM8K and StrategyQA.",
+    "caption": ""
+  },
+  {
+    "title": "",
+    "paragraph": "For llama3.2-1b and mistral-7b, MGCoT lengthened generation (+14% and +29%) and reduced both lexical overlap and semantic similarity on most datasets, most strongly for llama3.2-1b (SS −58%, TF1 −62%), and it reduced task accuracy by 32.6 and 17.4 points respectively. Phi3-mini fell between the two scenarios, with gains on Date and MultiArith and losses on CLUTRR, SayCan and recall-type metrics. By dataset, SayCan and QASports — the two benchmarks without explicit task framing — were the least favourable to MGCoT across models, and recall-type metrics decreased even for models that otherwise benefited.",
+    "caption": ""
+  },
+  {
+    "title": "",
+    "paragraph": "Irrespective of the scenario, MGCoT lowered system RAM (all seven models) and raised GPU utilisation (all seven models), while GPU memory was unaffected. Deepseek-r1-8b could not be evaluated for answer quality under either mechanism because its reasoning trace exhausted the 300-token budget, which identifies budget compliance as a prerequisite for deploying reasoning-distilled SLMs in constrained settings.",
+    "caption": ""
+  }
+]

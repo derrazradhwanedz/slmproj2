@@ -209,3 +209,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Manuscript working copies and Word build artefacts kept out of the repo
+# (the manuscript itself lives in manuscript/, which is already ignored)
+results/analysis/*.docx
+results/analysis/reference.docx
+results/analysis/manuscript*
+results/analysis/~$*
+
+# Scratch output from interrupted pandoc/Word runs
+-

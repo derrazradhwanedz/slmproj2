@@ -1,0 +1,979 @@
+record_id,dataset,question,gold_answer,mechanism,final_answer,delta_time_seconds,cpu_usage_avg_percent,ram_usage_avg_mb,ram_usage_avg_percent,gpu_usage_avg_percent,gpu_memory_avg_mb,rouge1_f1,rouge2_f1,rougeL_f1,bleu,exact_match,token_precision,token_recall,token_f1,token_overlap_count,normalized_edit_distance,char_f1,bert_score_f1,semantic_similarity,target_Readability,target_Coherence,target_Relevance,target_Specificity,target_Engagement,target_Concise,target_Length,target_Zipf,target_Hapax,target_Entropy,target_Perplexity
+1,SVAMP,"Each pack of dvds costs 76 dollars. If there is a discount of 25 dollars on each pack, how much do you have to pay to buy each pack?",#### 51,SCoT,"To find out how much you have to pay to buy each pack of DVDs, you need to subtract the discount from the original price of each pack. 
+
+Original price per pack: $76
+Discount per pack: $25
+
+Total price per pack after discount: $76 - $25 = $51
+
+So, you have to pay $51 to buy each pack of DVDs.",42.7442,4.44166666666667,10036.543898809523,61.858333333333334,2.880952380952381,2748.765625,0.03389830508474576,0.0,0.03389830508474576,0.0,0.0,0.030303030303030304,0.5,0.05714285714285715,1,0.010238907849829393,0.15384615384615383,0.783551037311554,-0.003474572906270623,,,,,,,,,,,
+1,SVAMP,"Each pack of dvds costs 76 dollars. If there is a discount of 25 dollars on each pack, how much do you have to pay to buy each pack?",#### 51,MGCoT,"To calculate the cost of each pack of DVDs after a 25% discount, you need to subtract the discount amount from the original price of each pack.
+
+Original price per pack: $76
+Discount: $25
+
+Cost per pack after discount: $76 - $25 = $51
+
+So, to buy each pack of DVDs, you have to pay $51.",42.5133,4.387951807228916,9958.121658509037,61.36867469879516,4.168674698795181,2748.765625,0.03636363636363636,0.0,0.03636363636363636,0.0,0.0,0.030303030303030304,0.5,0.05714285714285715,1,0.010489510489510523,0.15384615384615383,0.7665652632713318,0.04022182151675224,99.74395751953125,0.0,0.0,0.0,0.0,1.0,0.00012993719428777695,0.0,0.0,0.0,1.0
+2,SVAMP,"Dan had $ 3 left with him after he bought a candy bar. If he had $ 4 at the start, how much did the candy bar cost?",#### 1,SCoT,"To solve this problem, let's break it down step by step:
+
+1. **Start with the information given**: Dan had $3 left after buying a candy bar. This means he had $4 - $3 = $1 more than he started with.
+
+2. **Calculate the cost of the candy bar**: Since Dan had $1 more than he started with, the candy bar must have cost $1.
+
+So, the candy bar cost $1.",46.9366,3.8935483870967764,9963.851184475807,61.43225806451605,3.010752688172043,2748.765625,0.02857142857142857,0.0,0.02857142857142857,0.0,0.0,0.02127659574468085,0.5,0.04081632653061224,1,0.005747126436781658,0.10256410256410256,0.7761147618293762,0.11496352404356003,,,,,,,,,,,
+2,SVAMP,"Dan had $ 3 left with him after he bought a candy bar. If he had $ 4 at the start, how much did the candy bar cost?",#### 1,MGCoT,"To find out how much the candy bar cost, we need to subtract the amount Dan had left with him from the amount he had at the start. 
+
+Given that Dan had $3 left and $4 at the start, we can calculate the cost of the candy bar as follows:
+
+Cost of candy bar = Amount at start - Amount left
+Cost of candy bar = $4 - $3
+Cost of candy bar = $1
+
+Therefore, the candy bar cost $1.",50.0507,4.132653061224491,9965.692562181122,61.43775510204081,3.7142857142857144,2748.765625,0.025974025974025976,0.0,0.025974025974025976,0.0,0.0,0.025,0.5,0.047619047619047616,1,0.005376344086021501,0.1176470588235294,0.7836794853210449,0.06069977208971977,98.78490447998047,0.0,0.0,0.0,0.0,0.9624167084693909,0.0,0.0,0.0,0.0,1.0
+3,SVAMP,Paco had 26 salty cookies and 17 sweet cookies. He ate 14 sweet cookies and 9 salty cookies. How many salty cookies did Paco have left?,#### 17,SCoT,"To find out how many salty cookies Paco had left, we need to subtract the number of salty cookies he ate from the total number of salty cookies he had initially. 
+
+Paco initially had 26 salty cookies. He ate 9 of them. So, to find out how many he had left, we subtract 9 from 26:
+
+26 - 9 = 17
+
+Paco had 17 salty cookies left.",46.95,5.1172043010752715,9972.762768817205,61.46559139784941,2.89247311827957,2748.765625,0.030303030303030307,0.0,0.030303030303030307,6.367803053737255e-232,0.0,0.03225806451612903,0.5,0.06060606060606061,1,0.009230769230769265,0.16666666666666666,0.785918116569519,0.2450776845216751,,,,,,,,,,,
+3,SVAMP,Paco had 26 salty cookies and 17 sweet cookies. He ate 14 sweet cookies and 9 salty cookies. How many salty cookies did Paco have left?,#### 17,MGCoT,"Paco had 26 salty cookies and ate 9 of them. So, he had 26 - 9 = 17 salty cookies left. 
+
+Paco had 17 sweet cookies and ate 14 of them. So, he had 17 - 14 = 3 sweet cookies left. 
+
+Therefore, Paco had 17 - 9 = 8 salty cookies left. 
+
+So, Paco had 8 salty cookies left.",51.0473,4.262000000000001,9924.7852734375,61.19700000000017,3.38,2748.765625,0.03636363636363636,0.0,0.03636363636363636,6.545917251136179e-232,0.0,0.043478260869565216,0.5,0.08,1,0.011194029850746245,0.16666666666666666,0.7708379626274109,0.24762536585330963,99.03465270996094,0.034911125898361206,0.0,0.0,0.005372587125748396,0.9281802773475647,0.0,0.026069991290569305,0.0193202942609787,0.07529934495687485,1.1621265411376953
+4,SVAMP,43 children were riding on the bus. At the bus stop some children got off the bus. Then there were 21 children left on the bus. How many children got off the bus at the bus stop?,#### 22,SCoT,"To find out how many children got off the bus at the bus stop, we can subtract the number of children left on the bus from the initial number of children on the bus. 
+
+Initial number of children on the bus: 43
+Number of children left on the bus: 21
+
+Number of children who got off the bus: 43 - 21 = 22
+
+So, 22 children got off the bus at the bus stop.",49.4991,4.174489795918368,9850.057637117347,60.713265306122466,3.1020408163265305,2748.765625,0.0273972602739726,0.0,0.0273972602739726,6.211555838206664e-232,0.0,0.03225806451612903,0.5,0.06060606060606061,1,0.008522727272727293,0.1176470588235294,0.7730018496513367,0.14619646966457367,,,,,,,,,,,
+4,SVAMP,43 children were riding on the bus. At the bus stop some children got off the bus. Then there were 21 children left on the bus. How many children got off the bus at the bus stop?,#### 22,MGCoT,"To find out how many children got off the bus at the bus stop, we can subtract the number of children left on the bus from the initial number of children on the bus. 
+
+Given that there were initially 43 children on the bus and now there are 21 children left, we can calculate the number of children who got off the bus by subtracting 21 from 43:
+
+43 - 21 = 22
+
+Therefore, 22 children got off the bus at the bus stop.",55.5815,4.032110091743122,9930.506594036697,61.19357798165153,3.706422018348624,2748.765625,0.024096385542168676,0.0,0.024096385542168676,6.017810420952586e-232,0.0,0.023809523809523808,0.5,0.04545454545454545,1,0.007211538461538436,0.11428571428571428,0.7760906219482422,0.14119654893875122,97.7042007446289,0.0,0.00929258018732071,0.01532869040966034,0.0,0.9262580871582031,0.0,0.02313859760761261,0.025790341198444366,0.0,1.0
+5,SVAMP,28 children were riding on the bus. At the bus stop 82 children got on the bus while some got off the bus. Then there were 30 children altogether on the bus. How many more children got on the bus than those that got off?,#### 2,SCoT,"To solve this problem, let's break it down step by step:
+
+1. **Start with the initial number of children on the bus**: 28
+2. **Add the number of children who got on the bus**: 82
+3. **Subtract the number of children who got off the bus**: 30
+
+Now, let's calculate how many more children got on the bus than those that got off:
+
+- **Initial number of children on the bus**: 28
+- **Number of children who got on the bus**: 82
+- **Number of children who got off the bus**: 30
+
+**Total number of children on the bus after changes**: 28 + 82 - 30 = 100
+
+**Difference**: 100 - 30 = 70
+
+So, 70 more children got on the bus than those that got off.",97.7751,4.181443298969075,10039.389859858247,61.90412371134018,2.3762886597938144,2748.765625,0.01639344262295082,0.0,0.01639344262295082,0.0,0.0,0.018867924528301886,0.5,0.03636363636363636,1,0.0031250000000000444,0.09756097560975609,0.7475732564926147,0.09548158198595047,,,,,,,,,,,
+5,SVAMP,28 children were riding on the bus. At the bus stop 82 children got on the bus while some got off the bus. Then there were 30 children altogether on the bus. How many more children got on the bus than those that got off?,#### 2,MGCoT,"To find out how many more children got on the bus than those that got off, we need to subtract the number of children that got off from the total number of children on the bus after some got on.
+
+Total number of children on the bus after some got on = 30
+Number of children that got on the bus = 82 - 30 = 52
+
+Number of children that got off the bus = 82 - 52 = 30
+
+Number of children that got on the bus than those that got off = 52 - 30 = 22
+
+So, 22 more children got on the bus than those that got off.",73.2707,4.109722222222223,10015.287868923611,61.73541666666659,3.0833333333333335,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003960396039603964,0.1212121212121212,0.7535672783851624,0.08962228149175644,98.94244384765625,0.0,0.018212854862213135,0.012887723743915558,0.0,0.9771274328231812,0.0001814334245864302,0.02850053459405899,0.020952776074409485,0.0,1.0
+6,SVAMP,There were 3 dollars in Olivia's wallet. She collected 49 more dollars from an atm. After she visited a supermarket there were 49 dollars left. How much more money did she collect at the atm than she spent at the supermarket?,#### 46,SCoT,"To solve this problem, we need to follow these steps:
+
+1. **Understand the initial amount of money Olivia had in her wallet**: 3 dollars.
+2. **Calculate the total amount of money Olivia had after collecting more from the ATM**: 3 dollars + 49 dollars = 52 dollars.
+3. **Calculate the amount of money Olivia spent at the supermarket**: 52 dollars - 49 dollars = 3 dollars.
+4. **Calculate how much more money Olivia collected at the ATM than she spent at the supermarket**: 49 dollars - 3 dollars = 46 dollars.
+
+So, Olivia collected 46 dollars more at the ATM than she spent at the supermarket.",73.6499,4.751369863013702,9997.54296875,61.62534246575334,2.5136986301369864,2748.765625,0.019801980198019802,0.0,0.019801980198019802,5.677823098089411e-232,0.0,0.0196078431372549,0.5,0.03773584905660377,1,0.0050675675675675436,0.14285714285714285,0.7563605904579163,0.12133269757032394,,,,,,,,,,,
+6,SVAMP,There were 3 dollars in Olivia's wallet. She collected 49 more dollars from an atm. After she visited a supermarket there were 49 dollars left. How much more money did she collect at the atm than she spent at the supermarket?,#### 46,MGCoT,"To find out how much more money Olivia collected at the ATM than she spent at the supermarket, we need to subtract the amount she spent at the supermarket from the total amount she collected from the ATM.
+
+Let's denote the amount Olivia spent at the supermarket as \(S\). The total amount she collected from the ATM is \(T = 49 + 3\), since she initially had 3 dollars and then collected 49 more from the ATM.
+
+The amount she spent at the supermarket is \(S = 49\), since she spent 49 dollars there.
+
+The difference between the amount she collected at the ATM and the amount she spent at the supermarket is \(T - S\).
+
+So, the calculation is:
+
+\[T - S = (49 + 3) - 49\]
+
+\[T - S = 52 - 49\]
+
+\[T - S = 3\]
+
+Therefore, Olivia collected 3 dollars more at the ATM than she spent at the supermarket.",105.8715,4.038755980861241,10011.323957087321,61.739234449760886,2.5454545454545454,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002515723270440251,0.09090909090909091,0.738909125328064,0.10282060503959656,98.78755950927734,0.15463373064994812,0.05022592842578888,0.12723518908023834,0.005903903860598803,0.8372058868408203,0.0005905653233639896,0.09317762404680252,0.12326399981975555,0.5027990341186523,2.264674186706543
+7,SVAMP,"Jerry had some action figures on a shelf in his room. Later he added 7 more action figures to the shelf. If there are a total of 10 action figures on his shelf now, how many action figures did he have initially on the shelf?",#### 3,SCoT,"To find out how many action figures Jerry had initially on his shelf, we can follow these steps:
+
+1. **Identify the total number of action figures on the shelf now**:
+   - Jerry has 10 action figures on his shelf now.
+
+2. **Determine the initial number of action figures before adding the 7 more**:
+   - If Jerry added 7 more action figures to his shelf, then the initial number of action figures on the shelf must have been \(10 - 7\).
+
+3. **Calculate the initial number of action figures**:
+   - \(10 - 7 = 3\)
+
+So, Jerry initially had 3 action figures on his shelf.",72.6178,4.97361111111111,9997.309299045139,61.61736111111119,2.7777777777777777,2748.765625,0.020202020202020204,0.0,0.020202020202020204,5.704925649051987e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.0035211267605633756,0.09756097560975609,0.7580225467681885,0.1322111040353775,,,,,,,,,,,
+7,SVAMP,"Jerry had some action figures on a shelf in his room. Later he added 7 more action figures to the shelf. If there are a total of 10 action figures on his shelf now, how many action figures did he have initially on the shelf?",#### 3,MGCoT,"To find out how many action figures Jerry initially had on his shelf, we can subtract the number of action figures he added later from the total number of action figures on the shelf now.
+
+Total action figures now = 10
+Action figures added later = 7
+
+Initial action figures = Total action figures now - Action figures added later
+Initial action figures = 10 - 7
+Initial action figures = 3
+
+Jerry initially had 3 action figures on his shelf.",50.1362,3.9306122448979623,9938.143455038266,61.2520408163264,3.816326530612245,2748.765625,0.026666666666666665,0.0,0.026666666666666665,6.072773298151499e-232,0.0,0.030303030303030304,0.5,0.05714285714285715,1,0.004545454545454519,0.1212121212121212,0.7737232446670532,0.08339876681566238,100.0,0.0,0.0,0.0,0.0014865820994600654,1.0,0.0,0.016588784754276276,0.02382826805114746,0.0,1.0
+8,SVAMP,Paco had 41 cookies. He gave 9 cookies to his friend and ate 18 cookies. How many more cookies did he eat than those he gave to his friend?,#### 9,SCoT,"To solve this problem, let's break it down step by step:
+
+1. **Start with the initial number of cookies Paco had:** 41 cookies.
+2. **Calculate how many cookies he gave to his friend:** 9 cookies.
+3. **Subtract the number of cookies he gave to his friend from the initial number of cookies:** 41 - 9 = 32 cookies.
+4. **Calculate how many cookies he ate:** 18 cookies.
+5. **Subtract the number of cookies he ate from the number of cookies he had left after giving some to his friend:** 32 - 18 = 14 cookies.
+
+So, Paco ate 14 more cookies than those he gave to his friend.",78.6391,4.173717948717948,9964.003280248397,61.42243589743574,2.6025641025641026,2748.765625,0.01886792452830189,0.0,0.01886792452830189,5.65135233948518e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.0035149384885764245,0.09756097560975609,0.7565815448760986,0.12143179774284363,,,,,,,,,,,
+8,SVAMP,Paco had 41 cookies. He gave 9 cookies to his friend and ate 18 cookies. How many more cookies did he eat than those he gave to his friend?,#### 9,MGCoT,"To find out how many more cookies Paco ate than those he gave to his friend, we need to subtract the number of cookies he gave away from the number of cookies he ate.
+
+Paco gave away 9 cookies and ate 18 cookies. So, we subtract 18 from 9 to find out how many more cookies he ate than those he gave to his friend:
+
+18 (cookies he ate) - 9 (cookies he gave away) = 9 more cookies Paco ate than those he gave to his friend.
+
+Therefore, Paco ate 9 more cookies than those he gave to his friend.",65.1166,4.152343750000002,9950.705993652344,61.32734375000004,3.1875,2748.765625,0.02,0.0,0.02,5.746825102397619e-232,0.0,0.02857142857142857,0.5,0.05405405405405405,1,0.004073319755600768,0.1111111111111111,0.7629250884056091,0.15418286621570587,99.36859130859375,0.0,0.0,0.0,0.0,0.9854881167411804,0.0005116683314554393,0.0,0.0,0.0,1.0
+9,SVAMP,Mary is baking a cake. The recipe calls for 3 cups of sugar 10 cups of flour and 15 cups of salt. She already put in 6 cups of flour. How many more cups of flour does she need to add?,#### 4,SCoT,"To find out how many more cups of flour Mary needs to add, we can subtract the amount of flour she has already put in from the total amount of flour in the recipe. 
+
+Total flour in the recipe: 10 cups
+Amount of flour Mary has already put in: 6 cups
+
+Amount of flour Mary needs to add: 10 cups - 6 cups = 4 cups
+
+Mary needs to add 4 more cups of flour.",47.4857,4.315957446808512,9976.200506981382,61.50957446808518,3.0425531914893615,2748.765625,0.027027027027027025,0.0,0.027027027027027025,6.190746313491463e-232,0.0,0.030303030303030304,0.5,0.05714285714285715,1,0.005698005698005715,0.1212121212121212,0.7848979830741882,0.04553011432290077,,,,,,,,,,,
+9,SVAMP,Mary is baking a cake. The recipe calls for 3 cups of sugar 10 cups of flour and 15 cups of salt. She already put in 6 cups of flour. How many more cups of flour does she need to add?,#### 4,MGCoT,"To determine how many more cups of flour Mary needs to add, we need to subtract the amount of flour she has already put in from the total amount of flour required in the recipe.
+
+The recipe calls for 10 cups of flour, and Mary has already put in 6 cups. So, the amount of flour she still needs to add is:
+
+10 cups (total flour required) - 6 cups (already put in) = 4 cups
+
+Therefore, Mary needs to add 4 more cups of flour to the recipe.",56.0772,3.942727272727274,9968.319282670454,61.44090909090907,3.3181818181818183,2748.765625,0.022727272727272724,0.0,0.022727272727272724,5.931449291043158e-232,0.0,0.023809523809523808,0.5,0.04545454545454545,1,0.004576659038901587,0.1111111111111111,0.7659236192703247,0.07131894677877426,99.01375579833984,0.2384026199579239,0.10825040936470032,0.09344516694545746,0.012536509893834591,0.7817639112472534,0.005813157185912132,0.014757439494132996,0.05538252741098404,0.7410763502120972,2.5769615173339844
+10,SVAMP,A waiter had some customers. After 9 customers left he still had 12 customers. How many customers did he have at the start?,#### 21,SCoT,"To solve this problem, let's break it down step by step:
+
+1. **Start with the information given**: The waiter had some customers, and after 9 customers left, he still had 12 customers.
+2. **Add the 9 customers who left to the 12 customers he had left**: 12 (remaining) + 9 (left) = 21 customers.
+3. **The waiter had 21 customers at the start**.
+
+So, the answer is that the waiter had 21 customers at the start.",57.9916,4.901739130434785,9965.14347826087,61.43391304347826,2.782608695652174,2748.765625,0.02631578947368421,0.0,0.02631578947368421,6.17028075639052e-232,0.0,0.02127659574468085,0.5,0.04081632653061224,1,0.007317073170731714,0.14634146341463414,0.7561413049697876,0.18482576310634613,,,,,,,,,,,
+10,SVAMP,A waiter had some customers. After 9 customers left he still had 12 customers. How many customers did he have at the start?,#### 21,MGCoT,The waiter had 12 customers at the start.,6.8023,4.716666666666666,9877.024088541666,60.908333333333324,16.583333333333332,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.04878048780487809,0.2857142857142857,0.8033949136734009,0.0873664915561676,99.47298431396484,0.0021731092128902674,0.0,0.0,0.0,0.9730627536773682,0.0,0.014628618955612183,0.00456024706363678,0.0,1.0
+11,SVAMP,3 birds were sitting on the fence. 6 more storks and 2 more birds came to join them. How many more storks than birds are sitting on the fence?,#### 1,SCoT,"To solve this problem, let's break it down step by step:
+
+1. **Start with the initial number of birds on the fence**: 3
+2. **Add the number of storks that joined**: 6
+3. **Add the number of birds that joined**: 2
+
+Now, let's calculate the total number of birds and storks on the fence:
+
+- Birds: 3 (initial) + 2 (joined) = 5
+- Storks: 6 (joined)
+
+Total number of birds and storks on the fence: 5 (birds) + 6 (storks) = 11
+
+Now, to find out how many more storks than birds are sitting on the fence:
+
+- Storks: 6
+- Birds: 5
+
+Difference: 6 - 5 = 1
+
+So, there are 1 more stork than birds sitting on the fence.",96.239,4.126178010471204,9946.605305137435,61.31047120418861,2.345549738219895,2748.765625,0.017391304347826087,0.0,0.017391304347826087,5.4817391526732266e-232,0.0,0.01818181818181818,0.5,0.03508771929824561,1,0.0033057851239669533,0.09302325581395349,0.7546671032905579,0.11699100583791733,,,,,,,,,,,
+11,SVAMP,3 birds were sitting on the fence. 6 more storks and 2 more birds came to join them. How many more storks than birds are sitting on the fence?,#### 1,MGCoT,"To determine how many more storks than birds are sitting on the fence, we need to add the number of storks and the number of birds that joined them to the original number of birds sitting on the fence. 
+
+Original number of birds = 3
+Number of storks that joined = 6
+Number of birds that joined = 2
+
+Total number of birds = 3 + 2 = 5
+Total number of storks = 6
+
+Difference = Total number of storks - Total number of birds = 6 - 5 = 1
+
+There are 1 more storks than birds sitting on the fence.",66.6316,4.723664122137407,9942.38710639313,61.27480916030533,3.450381679389313,2748.765625,0.02173913043478261,0.0,0.02173913043478261,5.7187224260924895e-232,0.0,0.027777777777777776,0.5,0.05263157894736842,1,0.004081632653061273,0.1111111111111111,0.7671589851379395,0.10399508476257324,98.98627471923828,0.0,0.0,0.0,0.0,0.9647969007492065,0.0004467009857762605,0.0,0.0,0.0,1.0
+12,SVAMP,"They decided to hold the party in their backyard. If they have 11 sets of tables and each set has 13 chairs, how many chairs do they have in the backyard?",#### 143,SCoT,"To find out how many chairs there are in the backyard, we need to multiply the number of sets of tables by the number of chairs per set. 
+
+1. **Calculate the total number of sets of tables**: Since there are 11 sets of tables, and each set has 13 chairs, we multiply 11 (sets) by 13 (chairs per set): 11 * 13 = 143 chairs.
+
+2. **State the final answer**: There are 143 chairs in the backyard.",57.5324,3.8166666666666687,9941.909779331141,61.29824561403521,2.807017543859649,2748.765625,0.02631578947368421,0.0,0.02631578947368421,6.150149066359227e-232,0.0,0.023809523809523808,0.5,0.04545454545454545,1,0.010204081632653073,0.2105263157894737,0.7810406684875488,0.11858265846967697,,,,,,,,,,,
+12,SVAMP,"They decided to hold the party in their backyard. If they have 11 sets of tables and each set has 13 chairs, how many chairs do they have in the backyard?",#### 143,MGCoT,"To determine the total number of chairs in the backyard, you need to multiply the number of sets of tables by the number of chairs in each set. 
+
+Given that there are 11 sets of tables and each set has 13 chairs, you can calculate the total number of chairs as follows:
+
+Total chairs = Number of sets of tables × Number of chairs per set
+
+Total chairs = 11 × 13
+
+Total chairs = 143
+
+So, there are 143 chairs in the backyard.",55.5813,4.1302752293578004,9956.687141628441,61.3688073394496,3.3394495412844036,2748.765625,0.024999999999999998,0.0,0.024999999999999998,6.017810420952586e-232,0.0,0.02702702702702703,0.5,0.05128205128205129,1,0.009433962264150941,0.21621621621621623,0.7870025038719177,0.08958090096712112,99.30586242675781,0.014544335193932056,0.0,0.0,0.0019300748826935887,0.9661375880241394,0.0005882607656531036,0.0,0.0,0.024141622707247734,1.1336582899093628
+13,SVAMP,"In a school there are 458 more girls than boys. If there are 692 girls, how many pupils are there in that school?",#### 926,SCoT,"To find the total number of pupils in the school, we can follow these steps:
+
+1. **Identify the information given**: There are 692 girls and 458 more girls than boys.
+2. **Calculate the number of boys**: Since there are 692 girls and 458 more girls than boys, we can subtract 458 from 692 to find the number of boys.
+3. **Add the number of boys and girls to find the total number of pupils**: Finally, add the number of boys (which is the number of girls minus 458) to the number of girls to find the total number of pupils in the school.
+
+Let's calculate:
+
+1. **Number of boys**: 692 girls - 458 = 234 boys
+2. **Total number of pupils**: 234 boys + 692 girls = 926 pupils
+
+So, there are 926 pupils in the school.",106.2855,3.881042654028435,9982.11246667654,61.54597156398117,2.360189573459716,2748.765625,0.014814814814814815,0.0,0.014814814814814815,5.325105075896282e-232,0.0,0.019230769230769232,0.5,0.037037037037037035,1,0.005610098176718092,0.1739130434782609,0.7669979333877563,0.12751834094524384,,,,,,,,,,,
+13,SVAMP,"In a school there are 458 more girls than boys. If there are 692 girls, how many pupils are there in that school?",#### 926,MGCoT,"To find the total number of pupils in the school, we can use the information given about the number of girls and the difference between the number of girls and boys.
+
+Let's denote the number of boys as \(B\). According to the information, there are 458 more girls than boys. This can be represented as:
+\[G = B + 458\]
+
+We are also told that there are 692 girls. Therefore, we can substitute \(G = 692\) into the equation to find the number of boys:
+\[692 = B + 458\]
+
+Now, we can solve for \(B\):
+\[B = 692 - 458\]
+\[B = 234\]
+
+Now that we know there are 234 boys and 692 girls, we can find the total number of pupils in the school by adding the number of boys and girls together:
+\[Total\ pupils = B + G\]
+\[Total\ pupils = 234 + 692\]
+\[Total\ pupils = 926\]
+
+Therefore, there are 926 pupils in the school.",126.4422,4.780399999999996,10049.76765625,61.95519999999973,2.468,2748.765625,0.013513513513513513,0.0,0.013513513513513513,5.1304923275757076e-232,0.0,0.014285714285714285,0.5,0.02777777777777778,1,0.0049443757725586845,0.163265306122449,0.7619473338127136,0.061338987201452255,99.08192443847656,0.0,0.0,0.0,0.00048732556751929224,0.9690380096435547,0.0,0.0,0.0,0.0,1.0
+14,SVAMP,"After resting they decided to go for a swim. The depth of the water is 15 times Dean's height. Dean is 4 feet taller than Ron. If Ron stands at 13 feet, how deep was the water?",#### 255,SCoT,"To solve this problem, we need to follow these steps:
+
+1. **Understand the information given**: Dean is 4 feet taller than Ron. This means Ron is 13 feet tall, and Dean is 17 feet tall (13 feet + 4 feet).
+
+2. **Calculate the depth of the water**: The depth of the water is 15 times Dean's height. So, the depth of the water is \(15 \times 17\) feet.
+
+3. **Solve the equation**: \(15 \times 17 = 255\) feet.
+
+Therefore, the water was 255 feet deep.",69.093,4.3116788321167885,10033.982778284671,61.860583941605796,2.7007299270072993,2748.765625,0.023529411764705882,0.0,0.023529411764705882,6.00003235250667e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.008948545861297563,0.13953488372093026,0.7543981075286865,0.1499810814857483,,,,,,,,,,,
+14,SVAMP,"After resting they decided to go for a swim. The depth of the water is 15 times Dean's height. Dean is 4 feet taller than Ron. If Ron stands at 13 feet, how deep was the water?",#### 255,MGCoT,"To determine the depth of the water, we need to calculate the height of Dean and Ron, and then use the given ratio to find the depth of the water. Let's break down the information given:
+
+1. Dean is 4 feet taller than Ron.
+2. Ron stands at 13 feet.
+
+First, let's find Dean's height:
+\[ \text{Dean's height} = \text{Ron's height} + 4 \]
+\[ \text{Dean's height} = 13 + 4 \]
+\[ \text{Dean's height} = 17 \text{ feet} \]
+
+Now, we know Dean is 17 feet tall and the depth of the water is 15 times Dean's height. Let's calculate the depth of the water:
+\[ \text{Depth of water} = \text{Dean's height} \times 15 \]
+\[ \text{Depth of water} = 17 \times 15 \]
+\[ \text{Depth of water} = 255 \text{ feet} \]
+
+So, the water was 255 feet deep.",120.4381,4.497899159663863,10007.039883140757,61.689915966386636,2.596638655462185,2748.765625,0.014285714285714287,0.0,0.014285714285714287,5.286929818568628e-232,0.0,0.017857142857142856,0.5,0.03448275862068965,1,0.005479452054794498,0.13333333333333333,0.7339902520179749,0.16335870325565338,98.5709228515625,0.12743711471557617,0.14225387573242188,0.19704827666282654,0.0074321734718978405,0.8567730188369751,0.0,0.1880900263786316,0.22198867797851562,0.35394805669784546,1.761946439743042
+15,SVAMP,6 birds were sitting on the fence. 4 more birds and 8 more storks came to join them. How many birds are sitting on the fence?,#### 10,SCoT,"To solve this problem, let's break it down step by step:
+
+1. **Start with the initial number of birds on the fence**: 6
+2. **Add the number of birds that joined**: 4 more birds + 8 more storks = 12 birds
+3. **Add the number of birds that joined**: 12 birds + 6 birds = 18 birds
+
+So, there are now 18 birds sitting on the fence.",49.4571,5.366326530612247,10030.57102997449,61.84693877551025,2.9489795918367347,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.006116207951070374,0.09523809523809525,0.75862056016922,0.165296733379364,,,,,,,,,,,
+15,SVAMP,6 birds were sitting on the fence. 4 more birds and 8 more storks came to join them. How many birds are sitting on the fence?,#### 10,MGCoT,"There are now 6 birds sitting on the fence, with 4 more birds and 8 more storks joining them. So, the total number of birds on the fence is 6 (original birds) + 4 (new birds) + 8 (new storks) = 18 birds.",32.9484,4.151562500000001,9957.261596679688,61.396875000000065,4.625,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.009852216748768461,0.1142857142857143,0.7722808718681335,0.12152868509292603,98.43622589111328,0.03141448274254799,0.0,0.0006482377648353577,0.0015245716786012053,0.917599618434906,0.0,0.0,0.0,0.06574894487857819,1.0815353393554688
+16,SVAMP,Marco and his dad went strawberry picking. Together they collected strawberries that weighed 36 pounds. On the way back Marco ' dad lost 8 pounds of strawberries. Marco's strawberries now weighed 12 pounds. How much did his dad's strawberries weigh now?,#### 16,SCoT,"To find out how much Marco's dad's strawberries weighed now, we need to subtract the weight of the strawberries Marco picked from the total weight of the strawberries they collected together. 
+
+Total weight of strawberries = 36 pounds
+Weight of strawberries Marco picked = 12 pounds
+
+Weight of strawberries Marco's dad lost = 8 pounds
+
+Weight of strawberries Marco's dad now has = Total weight of strawberries - Weight of strawberries Marco picked - Weight of strawberries Marco's dad lost
+
+Weight of strawberries Marco's dad now has = 36 pounds - 12 pounds - 8 pounds
+
+Weight of strawberries Marco's dad now has = 16 pounds
+
+So, Marco's dad's strawberries weighed 16 pounds now.",75.1335,4.304697986577184,9972.827653104026,61.46711409395972,2.51006711409396,2748.765625,0.017543859649122806,0.0,0.017543859649122806,5.5754780543102235e-232,0.0,0.02857142857142857,0.5,0.05405405405405405,1,0.004418262150220897,0.16216216216216214,0.7678375244140625,0.10000824928283691,,,,,,,,,,,
+16,SVAMP,Marco and his dad went strawberry picking. Together they collected strawberries that weighed 36 pounds. On the way back Marco ' dad lost 8 pounds of strawberries. Marco's strawberries now weighed 12 pounds. How much did his dad's strawberries weigh now?,#### 16,MGCoT,"To find out how much Marco's dad's strawberries weighed now, we need to subtract the weight of Marco's strawberries from the total weight of the strawberries collected by Marco and his dad.
+
+Total weight of strawberries collected = 36 pounds
+Weight of Marco's strawberries = 12 pounds
+
+Weight of strawberries lost by Marco's dad = 8 pounds
+
+Weight of strawberries now with Marco's dad = Total weight - Weight of Marco's strawberries - Weight of strawberries lost by Marco's dad
+
+Weight of strawberries now with Marco's dad = 36 pounds - 12 pounds - 8 pounds
+
+Weight of strawberries now with Marco's dad = 16 pounds
+
+So, Marco's dad's strawberries weighed 16 pounds now.",76.8028,4.065562913907286,9936.074839610927,61.261589403973495,3.1390728476821192,2748.765625,0.017094017094017096,0.0,0.017094017094017096,5.5754780543102235e-232,0.0,0.02857142857142857,0.5,0.05405405405405405,1,0.004484304932735439,0.16666666666666666,0.7531248331069946,0.10381852090358734,99.01537322998047,0.8083612322807312,0.6308507919311523,0.6049551963806152,0.034299787133932114,0.3715641498565674,0.0209953635931015,0.30391043424606323,0.4725290536880493,2.633051633834839,6.504947185516357
+17,SVAMP,"In a school there are 697 girls and the rest are boys. If there are 228 more girls than boys, how many boys are there in that school?",#### 469,SCoT,"To find the number of boys in the school, we can start by setting up an equation based on the information given. Let's denote the number of boys as \(B\) and the number of girls as \(G\). We know that \(G = 697\) and that there are \(G + 228\) girls. Therefore, we can write the following equation:
+
+\[G + 228 = 697\]
+
+Solving for \(G\), we subtract 228 from both sides of the equation:
+
+\[G = 697 - 228\]
+
+\[G = 469\]
+
+Now that we know there are 469 girls in the school, we can find the number of boys by subtracting the number of girls from the total number of students:
+
+\[Total\ students = G + B\]
+
+\[Total\ students = 469 + B\]
+
+Since we know there are 697 girls, we can substitute \(G = 469\) into the equation:
+
+\[Total\ students = 469 + B\]
+
+\[Total\ students = 697 + B\]
+
+We know that the total number of students is 697, so we can set up the equation:
+
+\[697 + B = 697\]
+
+\[B = 0\]
+
+Therefore, there are 0 boys in the school.",151.5453,3.853156146179396,9983.691497093023,61.54186046511596,2.122923588039867,2748.765625,0.011834319526627219,0.0,0.011834319526627219,4.933215501532788e-232,0.0,0.0136986301369863,0.5,0.02666666666666666,1,0.004278074866310155,0.163265306122449,0.7506287693977356,0.14682380855083466,,,,,,,,,,,
+17,SVAMP,"In a school there are 697 girls and the rest are boys. If there are 228 more girls than boys, how many boys are there in that school?",#### 469,MGCoT,"To find the number of boys in the school, we can set up an equation based on the information given. Let's denote the number of boys as \(B\) and the number of girls as \(G\). We know that there are 697 girls and 228 more girls than boys, so we can write:
+
+\[G = 697 + 228\]
+
+Solving for \(G\), we get:
+
+\[G = 925\]
+
+Now, we know there are 697 girls, so to find the number of boys, we subtract the number of girls from the total number of students in the school:
+
+\[B = 697 - G\]
+
+Substituting the value of \(G\) we found:
+
+\[B = 697 - 925\]
+
+\[B = -228\]
+
+This result doesn't make sense because the number of boys cannot be negative. It seems there might have been a misunderstanding in the question or the context provided. If we're to interpret the question as there are 228 more girls than boys, then the number of boys would be negative, which doesn't make sense in the context of the question. 
+
+However, if we're to interpret the question as there are 228 more girls than boys, and we're looking for the number of boys, we can proceed as follows:
+
+\[B = 697 -",152.1196,4.403986710963454,9974.515560112126,61.48372093023222,2.292358803986711,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0028169014084507005,0.1224489795918367,0.7557032108306885,0.059235479682683945,100.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0
+18,SVAMP,In a school there are 732 girls and 761 boys. 682 more girls and 8 more boys joined the school. How many girls are there in the school now?,#### 1414,SCoT,"To find the number of girls in the school now, we need to add the number of girls that joined the school to the original number of girls. 
+
+Original number of girls = 732
+Number of girls that joined = 682
+
+Total number of girls now = Original number of girls + Number of girls that joined
+Total number of girls now = 732 + 682 = 1414
+
+So, there are now 1414 girls in the school.",54.1606,3.94299065420561,9977.812061915887,61.523364485981375,3.205607476635514,2748.765625,0.028169014084507043,0.0,0.028169014084507043,6.150149066359227e-232,0.0,0.038461538461538464,0.5,0.07142857142857144,1,0.013227513227513255,0.16666666666666666,0.7877065539360046,0.24128621816635132,,,,,,,,,,,
+18,SVAMP,In a school there are 732 girls and 761 boys. 682 more girls and 8 more boys joined the school. How many girls are there in the school now?,#### 1414,MGCoT,"To find the total number of girls in the school now, we need to add the number of girls that joined the school to the original number of girls. 
+
+Original number of girls = 732
+Number of girls that joined = 682
+
+Total number of girls now = Original number of girls + Number of girls that joined
+Total number of girls now = 732 + 682
+
+Let's calculate the total number of girls now:
+
+Total number of girls now = 732 + 682 = 1414
+
+So, there are now 1414 girls in the school.",67.5691,4.6410447761194025,9954.089056669776,61.35373134328358,2.8955223880597014,2748.765625,0.022727272727272724,0.0,0.022727272727272724,5.835491250550373e-232,0.0,0.03333333333333333,0.5,0.0625,1,0.010615711252653925,0.15789473684210525,0.783046543598175,0.2200009822845459,100.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0
+19,SVAMP,Danny collects bottle caps and wrappers. He found 22 bottle caps and 30 wrappers at the park. Now he has 17 bottle caps and 57 wrappers in his collection. How many wrappers did danny have at first?,#### 27,SCoT,"To find out how many wrappers Danny had at first, we need to subtract the number of bottle caps and wrappers Danny has now from the total number of bottle caps and wrappers he had at the park. 
+
+Danny has 17 bottle caps and 57 wrappers now. 
+
+So, Danny had 22 bottle caps at first and 57 wrappers at first. 
+
+Therefore, Danny had 57 - 22 = 35 wrappers at first. 
+
+Danny had 35 wrappers at first.",53.5115,3.997169811320757,9971.349941037735,61.46886792452831,3.169811320754717,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0075949367088608,0.1714285714285714,0.7641502022743225,0.19425053894519806,,,,,,,,,,,
+19,SVAMP,Danny collects bottle caps and wrappers. He found 22 bottle caps and 30 wrappers at the park. Now he has 17 bottle caps and 57 wrappers in his collection. How many wrappers did danny have at first?,#### 27,MGCoT,Danny had 57 - 57 = 0 wrappers at first.,9.411,4.694117647058823,10030.28125,61.823529411764696,15.235294117647058,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.050000000000000044,0.16666666666666669,0.7754130363464355,0.16019372642040253,98.50511932373047,0.11901923269033432,0.06009165197610855,0.03052487224340439,0.004464045632630587,0.8510062098503113,0.004580402746796608,0.0,0.0,0.4039219319820404,1.7638318538665771
+20,SVAMP,Paul got a box of 457 erasers and 617 crayons for his birthday. At the end of the school year he only had 523 crayons left while not having lost a single eraser. How many more crayons than erasers did he have left?,#### 66,SCoT,"To solve this problem, we need to follow these steps:
+
+1. **Identify the initial quantities of erasers and crayons Paul had**: 457 erasers and 617 crayons.
+2. **Calculate the total number of crayons Paul had at the end of the school year**: 523 crayons.
+3. **Subtract the number of crayons Paul had left from the total number of crayons he had at the end of the school year**: 523 crayons - 523 crayons = 0 crayons.
+4. **Subtract the number of erasers Paul had left from the total number of erasers he had at the beginning of the school year**: 457 erasers - 457 erasers = 0 erasers.
+5. **Compare the number of crayons left to the number of erasers left**: 0 crayons - 0 erasers = 0 crayons - 0 erasers = 0 crayons - 0 erasers = 0 crayons - 0 erasers = 0 crayons - 0 erasers = 0 crayons - 0 erasers = 0 crayons - 0 erasers = 0 crayons - 0 erasers = 0 crayons - 0 erasers = 0 crayons - 0 erasers = 0 crayons - 0 erasers = 0 crayons",151.7046,3.9976744186046487,10035.7955902201,61.8591362126244,2.1727574750830563,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0021505376344086446,0.09756097560975609,0.7218629717826843,0.08919139206409454,,,,,,,,,,,
+20,SVAMP,Paul got a box of 457 erasers and 617 crayons for his birthday. At the end of the school year he only had 523 crayons left while not having lost a single eraser. How many more crayons than erasers did he have left?,#### 66,MGCoT,"To find out how many more crayons than erasers Paul had left, we need to subtract the number of crayons he had left from the total number of crayons he initially had. 
+
+Given that Paul initially had 617 crayons and at the end of the school year he had 523 crayons left, we can calculate the difference as follows:
+
+617 crayons (initial) - 523 crayons (left) = 94 crayons (more crayons than erasers)
+
+So, Paul had 94 more crayons than erasers left.",63.2083,3.981451612903227,10042.578156502017,61.90403225806463,3.2419354838709675,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.006711409395973145,0.09756097560975609,0.7762953639030457,0.10395043343305588,98.87023162841797,0.043744903057813644,0.0,0.0,0.0031729356851428747,0.9234086275100708,0.0059135230258107185,0.0,0.0,0.16784769296646118,1.4390437602996826
+21,SVAMP,Baker made 121 cakes. He sold 105 of them and bought 170 new cakes. How many cakes does baker still have?,#### 186,SCoT,"To find out how many cakes baker still has, we need to follow these steps:
+
+1. Subtract the number of cakes sold from the total number of cakes made: 121 cakes - 105 cakes = 16 cakes
+2. Add the number of new cakes bought to the remaining cakes: 16 cakes + 170 cakes = 186 cakes
+
+So, baker still has 186 cakes.",47.1156,4.925806451612906,10071.905283938173,62.06989247311828,3.4408602150537635,2748.765625,0.03333333333333333,0.0,0.03333333333333333,6.466558133769387e-232,0.0,0.025,0.5,0.047619047619047616,1,0.012944983818770184,0.19512195121951217,0.7708834409713745,0.1857839673757553,,,,,,,,,,,
+21,SVAMP,Baker made 121 cakes. He sold 105 of them and bought 170 new cakes. How many cakes does baker still have?,#### 186,MGCoT,"Baker initially had 121 cakes. He sold 105 of them, so he had 121 - 105 = 16 cakes left. Then he bought 170 new cakes, so he now has 16 + 170 = 186 cakes. Therefore, Baker still has 186 cakes.",40.5009,4.632911392405062,9934.320955300633,61.24430379746832,4.2025316455696204,2748.765625,0.05128205128205127,0.0,0.05128205128205127,7.156422969333831e-232,0.0,0.037037037037037035,0.5,0.06896551724137931,1,0.02083333333333337,0.2105263157894737,0.7690619826316833,0.2616242468357086,98.38026428222656,0.06348159164190292,0.0772877037525177,0.10334767401218414,0.0034447547513991594,0.896131694316864,0.0,0.11795558780431747,0.12373767048120499,0.17038221657276154,1.272849678993225
+22,SVAMP,An industrial machine worked for 5 minutes. It can make 4 shirts a minute. How many shirts did machine make?,#### 20,SCoT,"To find out how many shirts the machine made, you can multiply the number of minutes it worked by the number of shirts it made per minute. 
+
+1. **ANALYZE** the question: We need to calculate the total number of shirts made by the machine.
+
+2. **PLAN** to solve the problem:
+
+   - **Step 1**: Multiply the number of minutes the machine worked (5 minutes) by the number of shirts it made per minute (4 shirts per minute).
+   - **Step 2**: Add the result from Step 1 to get the total number of shirts made.
+
+3. **SOLVE** the problem:
+
+   - **Step 1**: Multiply 5 minutes by 4 shirts per minute to get 20 shirts made in total.
+   - **Step 2**: Add the result from Step 1 to get the total number of shirts made: 20 shirts + 20 shirts = 40 shirts.
+
+4. **STATE** the final answer clearly: The machine made a total of 40 shirts.",109.7986,4.198165137614678,9943.416678612386,61.29862385321092,2.311926605504587,2748.765625,0.013422818791946308,0.0,0.013422818791946308,5.1716383031778185e-232,0.0,0.017857142857142856,0.5,0.03448275862068965,1,0.003658536585365857,0.13333333333333333,0.760062038898468,0.2062566727399826,,,,,,,,,,,
+22,SVAMP,An industrial machine worked for 5 minutes. It can make 4 shirts a minute. How many shirts did machine make?,#### 20,MGCoT,The industrial machine made 20 shirts in 5 minutes.,7.7986,5.728571428571429,10002.324497767857,61.664285714285725,17.0,2748.765625,0.19999999999999998,0.0,0.19999999999999998,1.0518351895246305e-231,0.0,0.1,0.5,0.16666666666666669,1,0.05882352941176472,0.27272727272727276,0.7964832186698914,0.23531660437583923,99.054443359375,0.032484475523233414,0.07084760814905167,0.08538686484098434,0.001520470599643886,0.945361852645874,0.0,0.10214473307132721,0.10643032938241959,0.08723430335521698,1.1049617528915405
+23,SVAMP,"The bananas in Philip's collection are organized into groups of size 18. If there are a total of 180 bananas in Philip's banana collection, how many groups are there?",#### 10,SCoT,"To find out how many groups there are, we divide the total number of bananas by the size of each group:
+
+180 bananas ÷ 18 bananas/group = 10 groups
+
+So, there are 10 groups of bananas in Philip's collection.",27.8897,4.194545454545455,9961.138423295455,61.403636363636416,3.890909090909091,2748.765625,0.05,0.0,0.05,7.290245807398516e-232,0.0,0.030303030303030304,0.5,0.05714285714285715,1,0.01449275362318836,0.15789473684210525,0.7720628380775452,0.12238156795501709,,,,,,,,,,,
+23,SVAMP,"The bananas in Philip's collection are organized into groups of size 18. If there are a total of 180 bananas in Philip's banana collection, how many groups are there?",#### 10,MGCoT,"To find out how many groups of size 18 there are in Philip's banana collection, you can divide the total number of bananas by the size of each group:
+
+Total bananas = 180
+Group size = 18
+
+Groups = Total bananas / Group size
+Groups = 180 / 18
+Groups = 10
+
+So, there are 10 groups of size 18 in Philip's banana collection.",48.045,4.888297872340428,9948.014710771276,61.31489361702126,3.6808510638297873,2748.765625,0.03333333333333333,0.0,0.03333333333333333,6.441148769597431e-232,0.0,0.029411764705882353,0.5,0.05555555555555555,1,0.009375000000000022,0.16216216216216214,0.7625546455383301,0.086036816239357,97.67993927001953,0.049636319279670715,0.06528517603874207,0.06253164261579514,0.002921927021816373,0.8768889307975769,5.5042946769390255e-05,0.10302456468343735,0.0887695923447609,0.15778742730617523,1.2084087133407593
+24,SVAMP,"There were some birds sitting on the fence. 4 more birds came to join them. If there are a total of 5 birds on the fence now, how many birds had been sitting on the fence at the start?",#### 1,SCoT,"To find out how many birds were sitting on the fence at the start, we can subtract the number of birds that joined the group from the total number of birds now on the fence. 
+
+So, if there are 5 birds on the fence now and 4 more birds joined, then the number of birds sitting on the fence at the start would be:
+
+5 (current birds) - 4 (joined birds) = 1 bird
+
+Therefore, there were 1 bird sitting on the fence at the start.",53.0148,4.034285714285718,9954.699888392857,61.38095238095239,2.8857142857142857,2748.765625,0.023529411764705882,0.0,0.023529411764705882,5.9825138229219476e-232,0.0,0.021739130434782608,0.5,0.041666666666666664,1,0.004728132387706863,0.1111111111111111,0.781607449054718,0.08947312086820602,,,,,,,,,,,
+24,SVAMP,"There were some birds sitting on the fence. 4 more birds came to join them. If there are a total of 5 birds on the fence now, how many birds had been sitting on the fence at the start?",#### 1,MGCoT,There were 1 bird sitting on the fence at the start.,7.8032,4.307142857142856,9938.240513392857,61.28571428571428,16.928571428571427,2748.765625,0.16666666666666669,0.0,0.16666666666666669,1.0003688322288243e-231,0.0,0.09090909090909091,0.5,0.15384615384615385,1,0.038461538461538436,0.1904761904761905,0.8162890076637268,0.0958787128329277,100.0,0.0,0.0,0.0,0.0,1.0,0.0005036587244831026,0.0,0.0,0.0,1.0
+25,SVAMP,"Jerry had 3 action figures on a shelf in his room. Later he added 4 more action figures to the shelf and removed some of the old ones. If there are 6 action figures on his shelf now, how many action figures did he remove from the shelf?",#### 1,SCoT,"To solve this, let's break down the information given:
+
+1. Jerry initially had 3 action figures on his shelf.
+2. He added 4 more action figures to the shelf.
+3. Now, there are 6 action figures on his shelf.
+
+To find out how many action figures Jerry removed, we can subtract the initial number of action figures from the current number of action figures:
+
+Initial action figures: 3
+Added action figures: 4
+Current action figures: 6
+
+Action figures removed = Initial + Added - Current
+Action figures removed = 3 + 4 - 6
+Action figures removed = 7 - 6
+Action figures removed = 1
+
+Jerry removed 1 action figure from the shelf.",76.2771,4.114569536423843,9987.202504139073,61.564238410596,2.4834437086092715,2748.765625,0.018691588785046728,0.0,0.018691588785046728,5.5754780543102235e-232,0.0,0.019230769230769232,0.5,0.037037037037037035,1,0.0032102728731941976,0.1,0.7612066864967346,0.11192414909601212,,,,,,,,,,,
+25,SVAMP,"Jerry had 3 action figures on a shelf in his room. Later he added 4 more action figures to the shelf and removed some of the old ones. If there are 6 action figures on his shelf now, how many action figures did he remove from the shelf?",#### 1,MGCoT,"To find out how many action figures Jerry removed from the shelf, we can follow these steps:
+
+1. **Identify the initial number of action figures on the shelf**: Jerry had 3 action figures on his shelf initially.
+2. **Add the new action figures to the initial count**: Jerry added 4 more action figures to the shelf, making the total number of action figures on the shelf 3 + 4 = 7.
+3. **Find out how many action figures were removed**: Now, there are 6 action figures on the shelf, which means Jerry removed 7 - 6 = 1 action figure from the shelf.
+
+Jerry removed 1 action figure from the shelf.",71.6605,4.1531914893617055,9994.419298537234,61.60992907801418,3.0709219858156027,2748.765625,0.018518518518518517,0.0,0.018518518518518517,5.612774300937817e-232,0.0,0.019230769230769232,0.5,0.037037037037037035,1,0.0033670033670033517,0.09756097560975609,0.7641834616661072,0.1035812646150589,100.0,0.03992949798703194,0.0,0.0,0.007639593910425901,1.0,0.0006982356426306069,0.021609582006931305,0.05236633121967316,0.08161552995443344,1.3492252826690674
+26,SVAMP,Danny collects bottle caps and wrappers. He found 65 wrappers and 5 bottle caps at the park. Now he has 31 bottle caps and 9 wrappers in his collection. How many more wrappers than bottle caps did danny find at the park?,#### 60,SCoT,"To find out how many more wrappers than bottle caps Danny found at the park, we need to subtract the number of bottle caps and wrappers Danny has from the total number he found at the park.
+
+Danny found 65 wrappers and 5 bottle caps at the park. He now has 31 bottle caps and 9 wrappers in his collection. 
+
+First, let's find out how many wrappers Danny found at the park. Subtract the number of bottle caps from the total number of wrappers he found:
+
+65 wrappers - 5 bottle caps = 60 wrappers
+
+Now, let's find out how many more wrappers than bottle caps Danny found at the park:
+
+60 wrappers - 31 bottle caps = 29 more wrappers than bottle caps
+
+So, Danny found 29 more wrappers than bottle caps at the park.",85.6879,4.088235294117648,10011.261305147058,61.704117647058894,2.635294117647059,2748.765625,0.014814814814814815,0.0,0.014814814814814815,5.3348669960151344e-232,0.0,0.022727272727272728,0.5,0.04347826086956522,1,0.004225352112676051,0.15384615384615383,0.758349597454071,0.2579324245452881,,,,,,,,,,,
+26,SVAMP,Danny collects bottle caps and wrappers. He found 65 wrappers and 5 bottle caps at the park. Now he has 31 bottle caps and 9 wrappers in his collection. How many more wrappers than bottle caps did danny find at the park?,#### 60,MGCoT,"Danny found 5 bottle caps at the park and now has 31 bottle caps in his collection. So, he found 31 - 5 = 26 more bottle caps at the park.
+
+Danny found 9 wrappers at the park and now has 9 wrappers in his collection. So, he found 9 - 9 = 0 more wrappers at the park.
+
+Danny found 26 more bottle caps than wrappers at the park.",47.611,4.807526881720429,10021.158224126344,61.7709677419355,4.0,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.009202453987730008,0.16216216216216214,0.7804653644561768,0.20022481679916382,96.8636703491211,0.2827146649360657,0.28248530626296997,0.25093770027160645,0.013173449784517288,0.6819053292274475,0.009572046808898449,0.1814035177230835,0.22508887946605682,0.9965077638626099,2.9722092151641846
+27,SVAMP,"Because of the decision Sofia asked the students to suggest specific types of food from a total of 66 choices. If 450 students suggested adding mashed potatoes 38 suggested adding bacon to the menu and the rest did not participate, how many students participated in the suggestion of new food items?",#### 488,SCoT,"To solve this problem, let's break it down step by step:
+
+1. **Identify the total number of students who suggested adding mashed potatoes and bacon:**
+   - We know that 450 students suggested adding mashed potatoes.
+   - We also know that 38 students suggested adding bacon.
+   - To find the total number of students who participated in suggesting new food items, we add the number of students who suggested mashed potatoes to the number of students who suggested bacon.
+   - Total = 450 (mashed potatoes) + 38 (bacon) = 488 students.
+
+2. **Calculate the number of students who did not participate:**
+   - We know that the rest of the students did not participate.
+   - To find the number of students who did not participate, we subtract the total number of students who participated from the total number of students.
+   - Number of students who did not participate = Total - Participants = 488 - 450 = 38 students.
+
+So, 38 students did not participate in the suggestion of new food items.",115.9169,3.985217391304348,9940.908746603262,61.28739130434749,2.260869565217391,2748.765625,0.012738853503184714,0.0,0.012738853503184714,5.0454056966289525e-232,0.0,0.016666666666666666,0.5,0.03225806451612903,1,0.004040404040404066,0.13333333333333333,0.7636281251907349,0.14483927190303802,,,,,,,,,,,
+27,SVAMP,"Because of the decision Sofia asked the students to suggest specific types of food from a total of 66 choices. If 450 students suggested adding mashed potatoes 38 suggested adding bacon to the menu and the rest did not participate, how many students participated in the suggestion of new food items?",#### 488,MGCoT,"To find out how many students participated in the suggestion of new food items, we can follow these steps:
+
+1. **Identify the total number of students who suggested adding mashed potatoes**: Since 450 students suggested adding mashed potatoes, this is our starting point.
+2. **Calculate the number of students who suggested adding bacon**: We know that 38 students suggested adding bacon to the menu. To find out how many students did not participate, we subtract the number of students who suggested adding bacon from the total number of students who suggested adding mashed potatoes.
+3. **Calculate the total number of students who participated in the suggestion of new food items**: To find out how many students participated, we add the number of students who suggested adding mashed potatoes to the number of students who suggested adding bacon.
+
+Let's calculate:
+
+1. **Total number of students who suggested adding mashed potatoes**: 450
+2. **Number of students who did not participate**: 450 - 38 = 412
+3. **Total number of students who participated in the suggestion of new food items**: 450 (mashed potatoes) + 38 (bacon) = 488
+
+So, 488 students participated in the suggestion of new food items.",134.0551,5.953584905660369,10299.340521816037,63.486792452829846,2.6037735849056602,2748.765625,0.010309278350515464,0.0,0.010309278350515464,4.869050800549907e-232,0.0,0.015873015873015872,0.5,0.03076923076923077,1,0.0033222591362126463,0.13636363636363635,0.7597407698631287,0.1715545654296875,97.38961029052734,0.09827566146850586,0.34766802191734314,0.40239304304122925,0.0014754619915038347,0.824016273021698,0.0,0.5619027018547058,0.6075363159179688,0.34593790769577026,1.8203474283218384
+28,SVAMP,"Matthew gave equal numbers of crackers and cakes to his 28 friends. If he had 13 crackers and 15 cakes initially, how many crackers and cakes did each person eat?",#### 1,SCoT,"To find out how many crackers and cakes each person ate, we need to divide the total number of crackers and cakes by the number of friends, which is 28. 
+
+First, let's calculate the total number of crackers and cakes:
+
+- Crackers: 13
+- Cakes: 15
+
+Total = Crackers + Cakes = 13 + 15 = 28
+
+Now, divide the total by the number of friends:
+
+28 crackers and cakes / 28 friends = 1 cracker and cake per friend
+
+So, each person ate 1 cracker and cake.",65.2236,4.073643410852715,10228.566709060078,63.064341085271415,2.852713178294574,2748.765625,0.02469135802469136,0.0,0.02469135802469136,5.948228664567313e-232,0.0,0.022727272727272728,0.5,0.04347826086956522,1,0.0045045045045044585,0.10256410256410256,0.7744055390357971,0.10145291686058044,,,,,,,,,,,
+28,SVAMP,"Matthew gave equal numbers of crackers and cakes to his 28 friends. If he had 13 crackers and 15 cakes initially, how many crackers and cakes did each person eat?",#### 1,MGCoT,"To find out how many crackers and cakes each person ate, we need to divide the total number of crackers and cakes by the number of friends, which is 28.
+
+First, let's calculate the total number of crackers and cakes:
+
+- Crackers: 13
+- Cakes: 15
+
+Total = Crackers + Cakes
+Total = 13 + 15
+Total = 28
+
+Now, we divide the total number of crackers and cakes by the number of friends:
+
+- Crackers: 28 / 28 = 1
+- Cakes: 28 / 28 = 1
+
+So, each person ate 1 cracker and 1 cake.",76.217,3.7840000000000016,10146.086744791666,62.54200000000001,2.973333333333333,2748.765625,0.023255813953488372,0.0,0.023255813953488372,5.8051759849861466e-232,0.0,0.023809523809523808,0.5,0.04545454545454545,1,0.004282655246252709,0.10256410256410256,0.7597866058349609,0.1074264645576477,98.758544921875,0.015111381188035011,0.21508915722370148,0.23180177807807922,0.004220196511596441,0.9398491382598877,0.0,0.28420257568359375,0.2814745306968689,0.01050487905740738,1.0
+29,SVAMP,"A grocery store had 49 bottles of regular soda, 40 bottles of diet soda and 6 bottles of lite soda. How many bottles of regular soda and diet soda did they have altogether?",#### 89,SCoT,"To find out how many bottles of regular soda and diet soda the grocery store had altogether, we need to add the number of regular soda bottles to the number of diet soda bottles. 
+
+Regular soda bottles: 49
+Diet soda bottles: 40
+
+Total bottles of regular soda and diet soda: 49 + 40 = 89
+
+So, the grocery store had 89 bottles of regular soda and diet soda altogether.",47.4745,4.25531914893617,10160.647107712766,62.640425531914914,3.0851063829787235,2748.765625,0.029411764705882353,0.0,0.029411764705882353,6.3211493403261365e-232,0.0,0.03333333333333333,0.5,0.0625,1,0.008196721311475419,0.17647058823529416,0.7830474376678467,-0.01246064342558384,,,,,,,,,,,
+29,SVAMP,"A grocery store had 49 bottles of regular soda, 40 bottles of diet soda and 6 bottles of lite soda. How many bottles of regular soda and diet soda did they have altogether?",#### 89,MGCoT,"The grocery store had a total of 49 bottles of regular soda and 40 bottles of diet soda. Altogether, they had 89 bottles of regular soda and diet soda.",20.8837,5.135,10132.36943359375,62.45,6.85,2748.765625,0.06666666666666667,0.0,0.06666666666666667,7.850707993042515e-232,0.0,0.05263157894736842,0.5,0.09523809523809525,1,0.019867549668874163,0.21428571428571427,0.7717888355255127,0.07764079421758652,100.0,0.24593675136566162,0.21030375361442566,0.2350350022315979,0.018124913796782494,0.8610230684280396,0.0,0.12720084190368652,0.16951382160186768,0.7016758918762207,2.5528268814086914
+30,SVAMP,"Dan has $ 3. He bought 2 candy bar for $ 4, each one costing the same amount of money. How much did each candy bar cost?",#### 2,SCoT,"To find out how much each candy bar cost, we need to subtract the amount Dan had initially ($3) from the total amount he spent on the candy bars ($4). 
+
+So, the calculation is:
+
+Total spent = $4
+Initial amount = $3
+
+Amount spent on candy bars = Total spent - Initial amount
+Amount spent on candy bars = $4 - $3 = $1
+
+Now, we divide the amount spent on candy bars by the number of candy bars to find the cost of each candy bar:
+
+Cost of each candy bar = Amount spent on candy bars / Number of candy bars
+Cost of each candy bar = $1 / 2 = $0.50
+
+Therefore, each candy bar cost $0.50.",77.6344,4.018181818181821,10105.488813920454,62.298051948052006,2.4545454545454546,2748.765625,0.018018018018018018,0.0,0.018018018018018018,5.50443835102825e-232,0.0,0.02127659574468085,0.5,0.04081632653061224,1,0.0034423407917383297,0.1,0.7691348195075989,0.028554825112223625,,,,,,,,,,,
+30,SVAMP,"Dan has $ 3. He bought 2 candy bar for $ 4, each one costing the same amount of money. How much did each candy bar cost?",#### 2,MGCoT,"To find out how much each candy bar cost, we need to subtract the amount Dan initially had ($3) from the total amount he spent on the candy bars ($4). 
+
+So, the calculation is:
+
+Total spent = $4 (on 2 candy bars) - $3 (initial amount) = $1
+
+Therefore, each candy bar cost $1.",38.4578,4.821333333333333,10163.485989583334,62.655999999999985,4.706666666666667,2748.765625,0.038461538461538464,0.0,0.038461538461538464,6.720628411503338e-232,0.0,0.025,0.5,0.047619047619047616,1,0.0072727272727273196,0.1111111111111111,0.7851907014846802,0.030301714316010475,99.28124237060547,0.03919309750199318,0.10386890172958374,0.13296806812286377,0.0023848116397857666,0.9527454972267151,0.0,0.1442488133907318,0.1551579236984253,0.07378162443637848,1.0880436897277832
+31,SVAMP,Tiffany was collecting cans for recycling. On monday she had 7 bags of cans. The next day she found 12 more bags worth of cans. How many more bags did she find on the next day than she had on monday?,#### 5,SCoT,"To find out how many more bags Tiffany found on the next day than she had on Monday, we need to subtract the number of bags she had on Monday from the number of bags she found on the next day.
+
+1. Tiffany had 7 bags on Monday.
+2. On the next day, she found 12 more bags.
+3. Subtract the number of bags she had on Monday from the number of bags she found on the next day: 12 - 7 = 5.
+
+Therefore, Tiffany found 5 more bags on the next day than she had on Monday.",60.561,4.1233333333333375,10096.164127604166,62.23500000000001,3.033333333333333,2748.765625,0.020408163265306124,0.0,0.020408163265306124,5.775632145762076e-232,0.0,0.027777777777777776,0.5,0.05263157894736842,1,0.004347826086956497,0.1176470588235294,0.7595648169517517,0.18586602807044983,,,,,,,,,,,
+31,SVAMP,Tiffany was collecting cans for recycling. On monday she had 7 bags of cans. The next day she found 12 more bags worth of cans. How many more bags did she find on the next day than she had on monday?,#### 5,MGCoT,Tiffany found 12 more bags of cans on the next day than she had on Monday.,11.325,3.9952380952380944,10132.5390625,62.4904761904762,12.333333333333334,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.013513513513513487,0.08,0.8031302094459534,0.12746135890483856,97.71873474121094,0.06057262048125267,0.09924929589033127,0.13266177475452423,0.0,0.8736962676048279,0.0019751067738980055,0.20177890360355377,0.20908600091934204,0.18704554438591003,1.3762273788452148
+32,SVAMP,There were 15 roses and 62 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. There are now 17 roses and 96 orchids in the vase. How many roses did she cut?,#### 2,SCoT,"To find out how many roses Jessica cut, we can subtract the number of roses in the vase before she cut any from the total number of roses now in the vase. 
+
+17 roses (total now) - 15 roses (before cutting) = 2 roses (cut)
+
+So, Jessica cut 2 roses from her garden.",35.5177,4.21714285714286,10133.973270089286,62.468571428571444,3.8,2748.765625,0.038461538461538464,0.0,0.038461538461538464,6.752107625974243e-232,0.0,0.02857142857142857,0.5,0.05405405405405405,1,0.0076045627376425395,0.1111111111111111,0.787039577960968,0.039380695670843124,,,,,,,,,,,
+32,SVAMP,There were 15 roses and 62 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. There are now 17 roses and 96 orchids in the vase. How many roses did she cut?,#### 2,MGCoT,"To find out how many roses Jessica cut, we can subtract the number of roses and orchids in the vase after she cut some from the total number of roses and orchids in the vase before she cut any.
+
+Before cutting any flowers, there were 15 roses and 62 orchids in the vase. After cutting some, there are now 17 roses and 96 orchids in the vase. So, the total number of roses and orchids in the vase after cutting some is:
+
+17 roses + 96 orchids = 113 roses and orchids
+
+Now, we subtract the number of roses and orchids in the vase before cutting any from the total number after cutting some:
+
+113 roses and orchids - 15 roses - 62 orchids = 46 roses
+
+Jessica cut 46 roses from her flower garden.",92.9067,4.610928961748631,10089.673155737704,62.196174863387924,2.879781420765027,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0028901734104046506,0.1,0.7465955018997192,0.03891702741384506,99.80760955810547,0.0,0.0,0.0,0.0,1.0,0.0007097662892192602,0.0,0.0,0.0,1.0
+33,SVAMP,"There are some baskets of peaches. Each basket has 4 red peaches and 3 green peaches. If there are a total of 7 peaches in all baskets, how many baskets of peaches are there?",#### 1,SCoT,"To solve this problem, let's break it down step by step:
+
+1. **Identify the total number of peaches**: We know there are 7 peaches in total.
+2. **Determine the number of red peaches**: Since each basket has 4 red peaches, and there are 7 peaches in total, we can subtract the number of red peaches from the total number of peaches to find the number of green peaches.
+3. **Calculate the number of baskets**: Since each basket has 3 green peaches, and we know there are 3 green peaches in each basket, we can divide the number of green peaches by the number of green peaches per basket to find the number of baskets.
+
+Let's calculate:
+
+1. **Total number of peaches**: 7
+2. **Number of red peaches**: 4
+3. **Number of green peaches**: 7 - 4 = 3
+
+Now, let's find the number of baskets:
+
+- Number of green peaches per basket: 3
+- Number of baskets: 3 / 3 = 1
+
+So, there is 1 basket of peaches.",123.9064,3.8691056910569115,9988.04271468496,61.56585365853684,2.3252032520325203,2748.765625,0.011976047904191616,0.0,0.011976047904191616,5.052852810173745e-232,0.0,0.018867924528301886,0.5,0.03636363636363636,1,0.0022497187851518996,0.1,0.7513589859008789,0.135923370718956,,,,,,,,,,,
+33,SVAMP,"There are some baskets of peaches. Each basket has 4 red peaches and 3 green peaches. If there are a total of 7 peaches in all baskets, how many baskets of peaches are there?",#### 1,MGCoT,"To find out how many baskets of peaches there are, we can set up an equation based on the information given. Let's denote the number of baskets as \(B\). Each basket contains 4 red peaches and 3 green peaches, totaling \(4B + 3B = 7\) peaches. Simplifying this equation gives us \(7B = 7\), which means each basket contains 1 peach. Since we're looking for the number of baskets, we divide both sides by 7 to find \(B = 1\). Therefore, there is 1 basket of peaches.",64.6531,3.9850393700787436,10002.428057332678,61.64803149606303,3.4330708661417324,2748.765625,0.023255813953488372,0.0,0.023255813953488372,5.965248090744155e-232,0.0,0.014705882352941176,0.5,0.028571428571428574,1,0.004301075268817178,0.10256410256410256,0.7605233788490295,0.13379645347595215,100.0,0.0,0.0,0.0,0.0,1.0,0.00029989631730131805,0.0,0.0,0.0,1.0
+34,SVAMP,There were 78 dollars in Olivia's wallet. She spent 15 dollars at a supermarket. How much money does she have left?,#### 63,SCoT,"To find out how much money Olivia has left, we need to subtract the amount she spent from the amount she had initially. 
+
+1. **Start with the initial amount Olivia had:**
+   - Olivia had $78 in her wallet.
+
+2. **Subtract the amount she spent:**
+   - She spent $15 at a supermarket.
+
+3. **Calculate the remaining amount:**
+   - $78 - $15 = $63
+
+4. **State the final answer:**
+   - Olivia has $63 left in her wallet.",58.6817,4.232758620689657,10023.262863685344,61.79051724137924,2.9482758620689653,2748.765625,0.02857142857142857,0.0,0.02857142857142857,0.0,0.0,0.02127659574468085,0.5,0.04081632653061224,1,0.007246376811594235,0.13953488372093026,0.7705947756767273,0.10223406553268433,,,,,,,,,,,
+34,SVAMP,There were 78 dollars in Olivia's wallet. She spent 15 dollars at a supermarket. How much money does she have left?,#### 63,MGCoT,"Olivia initially had $78 in her wallet. After spending $15 at a supermarket, she would have:
+
+$78 - $15 = $63
+
+Olivia has $63 left in her wallet.",24.8902,4.595833333333334,9996.468098958334,61.641666666666616,5.604166666666667,2748.765625,0.07407407407407407,0.0,0.07407407407407407,0.0,0.0,0.04,0.5,0.07407407407407407,1,0.020689655172413834,0.15789473684210525,0.7680736184120178,0.1681940257549286,99.31126403808594,0.12360215932130814,0.1007387712597847,0.1255459040403366,0.005938377231359482,0.8840383291244507,0.0,0.08360345661640167,0.08494439721107483,0.3312894105911255,1.6862709522247314
+35,SVAMP,"Jack received 6 emails in the morning, 3 emails in the afternoon and some more in the evening. If he received a total of 10 emails in the day, how many emails did Jack receive in the afternoon?",#### 1,SCoT,"To find out how many emails Jack received in the afternoon, we can subtract the number of emails he received in the morning and the evening from the total number of emails he received in the day.
+
+Total emails received in the day = 10
+Emails received in the morning = 6
+Emails received in the evening = 3
+
+Emails received in the afternoon = Total emails received in the day - (Emails received in the morning + Emails received in the evening)
+Emails received in the afternoon = 10 - (6 + 3)
+Emails received in the afternoon = 10 - 9
+Emails received in the afternoon = 1
+
+Jack received 1 email in the afternoon.",75.2241,4.387919463087249,10015.821230075504,61.74496644295289,2.7248322147651005,2748.765625,0.01886792452830189,0.0,0.01886792452830189,5.539388921633538e-232,0.0,0.027777777777777776,0.5,0.05263157894736842,1,0.003284072249589487,0.10256410256410256,0.751039445400238,-0.008581701666116714,,,,,,,,,,,
+35,SVAMP,"Jack received 6 emails in the morning, 3 emails in the afternoon and some more in the evening. If he received a total of 10 emails in the day, how many emails did Jack receive in the afternoon?",#### 1,MGCoT,"To find out how many emails Jack received in the afternoon, we can subtract the number of emails he received in the morning and the evening from the total number of emails he received in the day.
+
+Total emails received in the day = 10
+Emails received in the morning = 6
+Emails received in the evening = 3
+
+Emails received in the afternoon = Total emails received in the day - (Emails received in the morning + Emails received in the evening)
+Emails received in the afternoon = 10 - (6 + 3)
+Emails received in the afternoon = 10 - 9
+Emails received in the afternoon = 1
+
+Jack received 1 email in the afternoon.",75.6874,4.511409395973152,9954.15669567953,61.36040268456389,2.8456375838926173,2748.765625,0.01886792452830189,0.0,0.01886792452830189,5.539388921633538e-232,0.0,0.027777777777777776,0.5,0.05263157894736842,1,0.003284072249589487,0.10256410256410256,0.751039445400238,-0.008581701666116714,99.24320220947266,0.0,0.0,0.0,0.0006730210152454674,0.9820325970649719,0.00024088003556244075,0.0,0.0,0.0,1.0
+36,SVAMP,"Dan has $ 4. He bought a candy bar for $ 8. Then his friend have him $ 5, how much money is left?",#### 1,SCoT,"To solve this problem, let's break it down step by step:
+
+1. **Starting Amount**: Dan starts with $4.
+2. **Purchase of Candy Bar**: Dan spends $8 on a candy bar.
+3. **Remaining Amount**: After buying the candy bar, Dan has $4 - $8 = -$4 left. This means Dan is in debt by $4.
+4. **Friend's Donation**: Dan receives an additional $5 from his friend.
+
+**Solving the Problem:**
+
+- **Starting Amount**: $4
+- **After Spending**: -$8
+- **After Donation**: $-4 + $5 = $1
+
+**Final Answer**: Dan has $1 left after his friend gave him $5 and he spent $8 on a candy bar.",80.1333,4.185534591194968,9968.177550117925,61.43396226415088,2.5534591194968552,2748.765625,0.02,0.0,0.02,0.0,0.0,0.015625,0.5,0.030303030303030304,1,0.003577817531305927,0.09523809523809523,0.7554497718811035,0.04526162147521973,,,,,,,,,,,
+36,SVAMP,"Dan has $ 4. He bought a candy bar for $ 8. Then his friend have him $ 5, how much money is left?",#### 1,MGCoT,"To determine how much money Dan has left after buying the candy bar and receiving an additional $5 from his friend, we need to follow these steps:
+
+1. **Calculate the total amount of money Dan has after buying the candy bar**: Dan initially had $4. After buying the candy bar for $8, his total amount of money is $4 + $8 = $12.
+
+2. **Add the $5 from his friend**: Dan now has $12 + $5 = $17.
+
+Therefore, after buying the candy bar and receiving an additional $5 from his friend, Dan has $17 left.",65.1283,4.516406250000002,9976.22817993164,61.470312499999906,3.375,2748.765625,0.02150537634408602,0.0,0.02150537634408602,0.0,0.0,0.02,0.5,0.038461538461538464,1,0.0040322580645161255,0.10256410256410256,0.7695369720458984,0.033875834196805954,99.65901184082031,0.09464912861585617,0.016407310962677002,0.0020784884691238403,0.0033278916962444782,0.9129915237426758,0.0010756952688097954,0.0,0.0,0.30853161215782166,1.6521055698394775
+37,SVAMP,"After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 703 visitors came to the Buckingham palace on the previous day. If there were 246 visitors on that day, how many visited the Buckingham palace within 25 days?",#### 949,SCoT,"To solve this problem, we need to divide the total number of visitors by the number of days to find out how many visitors visited the Buckingham Palace within 25 days. 
+
+First, let's find out how many visitors visited the Buckingham Palace within 25 days. 
+
+246 visitors (previous day) + 703 visitors (previous day) = 949 visitors (total visitors within 25 days)
+
+Now, we divide the total number of visitors by the number of days to find out how many visitors visited the Buckingham Palace within 25 days:
+
+949 visitors / 25 days = 37.8 visitors per day
+
+So, within 25 days, approximately 37.8 visitors visited the Buckingham Palace.",80.2019,4.0094339622641515,10007.00793533805,61.698742138364985,2.691823899371069,2748.765625,0.018348623853211007,0.0,0.018348623853211007,5.6383456886193345e-232,0.0,0.022727272727272728,0.5,0.04347826086956522,1,0.006319115323854652,0.1276595744680851,0.7758344411849976,0.05181494727730751,,,,,,,,,,,
+37,SVAMP,"After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 703 visitors came to the Buckingham palace on the previous day. If there were 246 visitors on that day, how many visited the Buckingham palace within 25 days?",#### 949,MGCoT,"To find out how many visitors visited Buckingham Palace within 25 days, we need to calculate the total number of visitors over the 25 days and then divide that by the number of visitors on the previous day.
+
+First, let's calculate the total number of visitors over the 25 days:
+
+Total visitors = Visitors on previous day + Visitors on the next day + Visitors on the third day + ... + Visitors on the 25th day
+
+Total visitors = 246 + (246 + 703) + (246 + 703 + 703) + ... + (246 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + 703 + ",152.2195,4.085714285714281,10022.142273151994,61.79136212624594,2.435215946843854,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002949852507374673,0.09090909090909091,0.7329981327056885,0.06906776130199432,97.84043884277344,0.35927024483680725,0.5932767391204834,0.5581942200660706,0.009570710361003876,0.6419569849967957,0.010170149616897106,0.5350338816642761,0.5895028710365295,1.2620967626571655,3.653203248977661
+38,SVAMP,For Gwen's birthday she received 5 dollars from her dad. Her mom gave her 7 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?,#### 2,SCoT,"To solve this problem, we need to follow these steps:
+
+1. Add the amount of money Gwen received from her dad and her mom: 5 dollars (from dad) + 7 dollars (from mom) = 12 dollars.
+2. Subtract the amount of money Gwen spent from the total amount of money she received: 12 dollars (total) - 4 dollars (spent) = 8 dollars.
+3. The difference between the amount of money Gwen received from her mom and her dad is 8 dollars.
+
+So, Gwen received 8 dollars more from her mom than she did from her dad.",64.0537,5.985039370078741,10136.256551427165,62.50708661417319,2.7716535433070866,2748.765625,0.02150537634408602,0.0,0.02150537634408602,0.0,0.0,0.0,0.0,0.0,0,0.004065040650406471,0.09756097560975609,0.76430743932724,0.022906960919499397,,,,,,,,,,,
+38,SVAMP,For Gwen's birthday she received 5 dollars from her dad. Her mom gave her 7 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?,#### 2,MGCoT,"To find out how much more money Gwen received from her mom than from her dad, we need to subtract the amount she spent from the total amount she received from her dad and her mom.
+
+Gwen received 5 dollars from her dad and 7 dollars from her mom. So, the total amount she received is 5 + 7 = 12 dollars.
+
+Gwen spent 4 dollars, so the amount she has left is 12 - 4 = 8 dollars.
+
+To find out how much more money she received from her mom than from her dad, we subtract the amount she received from her dad from the amount she has left: 8 - 5 = 3 dollars.
+
+So, Gwen received 3 dollars more from her mom than from her dad.",80.7416,4.500000000000001,10158.938654677673,62.623270440251574,3.10062893081761,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0032414910858995505,0.10256410256410256,0.7547987103462219,0.02855287864804268,98.58932495117188,0.0,0.0,0.0187637060880661,0.00015661169891245663,0.9595634937286377,0.0,0.09550265222787857,0.08496951311826706,0.0,1.0
+39,SVAMP,"There are 142 bananas and 356 oranges in Philip's collection. If the bananas are organized into 47 groups and oranges are organized into 178 groups, how big is each group of oranges?",#### 2,SCoT,"To find the size of each group of oranges, we need to divide the total number of oranges by the number of groups. 
+
+First, we need to find the total number of groups for both bananas and oranges. 
+
+Bananas: 142 bananas / 47 groups = 3 groups of bananas
+Oranges: 356 oranges / 178 groups = 2 groups of oranges
+
+Now, we can find the size of each group of oranges by dividing the total number of oranges by the number of groups:
+
+2 groups of oranges / 178 groups = 0.1157 groups of oranges
+
+So, each group of oranges is approximately 0.1157 of the total number of oranges.",78.1355,4.65290322580645,10077.950327620967,62.12774193548375,2.535483870967742,2748.765625,0.01886792452830189,0.0,0.01886792452830189,5.6383456886193345e-232,0.0,0.02631578947368421,0.5,0.05,1,0.0035149384885764245,0.09523809523809523,0.7615451812744141,0.08731751888990402,,,,,,,,,,,
+39,SVAMP,"There are 142 bananas and 356 oranges in Philip's collection. If the bananas are organized into 47 groups and oranges are organized into 178 groups, how big is each group of oranges?",#### 2,MGCoT,"To determine the size of each group of oranges, we need to divide the total number of oranges by the number of groups. 
+
+First, let's find the total number of oranges by adding the number of oranges in Philip's collection to the number of oranges in the 47 groups of bananas:
+
+Total oranges = Number of oranges in bananas + Number of oranges in 47 groups of bananas
+Total oranges = 356 + 47 * 142
+
+Now, let's calculate the total number of oranges:
+
+Total oranges = 356 + 6494
+Total oranges = 6848
+
+Now, we can find the size of each group of oranges by dividing the total number of oranges by the number of groups:
+
+Size of each group of oranges = Total oranges / Number of groups
+Size of each group of oranges = 6848 / 178
+
+Let's calculate the size of each group of oranges:
+
+Size of each group of oranges = 38
+
+So, each group of oranges is 38 oranges in size.",113.8944,4.410222222222221,10084.48689236111,62.16622222222236,2.5955555555555554,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0023255813953488857,0.0909090909090909,0.754019021987915,0.11101502180099487,99.29131317138672,0.0,0.0,0.0,0.0008855586056597531,0.9986039996147156,0.0,0.0,0.0,0.0,1.0
+40,SVAMP,"There are 8 different books and 5 different movies in the ' crazy silly school ' series. If you read 19 of the movies and watched 16 of the books, how many more movies than books have you read?",#### 3,SCoT,"To find out how many more movies than books you have read, we need to subtract the number of books read from the number of movies watched. 
+
+1. **Read:** 19 books
+2. **Watched:** 16 movies
+
+Subtract the number of books read from the number of movies watched:
+
+16 movies - 19 books = -3 books
+
+Since we can't have a negative number of books, it means you have read 3 more books than movies. 
+
+So, you have read 3 more books than movies.",58.0211,4.446086956521739,10049.109544836956,61.95043478260864,2.9217391304347826,2748.765625,0.024096385542168676,0.0,0.024096385542168676,6.0358550325078056e-232,0.0,0.025,0.5,0.047619047619047616,1,0.0045977011494252595,0.10810810810810811,0.7743120789527893,0.06508372724056244,,,,,,,,,,,
+40,SVAMP,"There are 8 different books and 5 different movies in the ' crazy silly school ' series. If you read 19 of the movies and watched 16 of the books, how many more movies than books have you read?",#### 3,MGCoT,"To find out how many more movies than books you have read, we need to subtract the number of books you have read from the number of movies you have watched. 
+
+You have read 19 movies and watched 16 books. 
+
+So, the difference is:
+
+19 movies - 16 books = 3 more movies than books
+
+Therefore, you have read 3 more movies than books.",43.018,4.475000000000001,10043.471400669643,61.924999999999976,4.023809523809524,2748.765625,0.031746031746031744,0.0,0.031746031746031744,6.441148769597431e-232,0.0,0.030303030303030304,0.5,0.05714285714285715,1,0.0060606060606061,0.1212121212121212,0.7796152234077454,0.04633311927318573,99.16809844970703,6.08576119702775e-05,0.018986277282238007,0.0,0.0028751599602401257,0.9680736660957336,0.002283879090100527,0.06423962861299515,0.04696394503116608,0.003214118303731084,1.0
+41,SVAMP,"Mary is baking a cake. The recipe calls for 12 cups of flour and 5 cups of sugar. She already put in some cups of flour. If she still needs 2 more cups of flour, how many cups of flour did she put in?",#### 10,SCoT,"To find out how many cups of flour Mary put in initially, we can subtract the number of cups she still needs from the total amount she needs. 
+
+Total cups of flour needed: 12 cups
+Cups of flour she still needs: 2 cups
+
+Cups of flour she put in initially: 12 cups - 2 cups = 10 cups
+
+Mary put in 10 cups of flour initially.",44.9748,3.901123595505619,10007.8358497191,61.69213483146058,3.0224719101123596,2748.765625,0.03076923076923077,0.0,0.03076923076923077,6.3917876705550364e-232,0.0,0.03125,0.5,0.058823529411764705,1,0.009316770186335366,0.18181818181818182,0.7841302752494812,0.0651259645819664,,,,,,,,,,,
+41,SVAMP,"Mary is baking a cake. The recipe calls for 12 cups of flour and 5 cups of sugar. She already put in some cups of flour. If she still needs 2 more cups of flour, how many cups of flour did she put in?",#### 10,MGCoT,"To find out how many cups of flour Mary put in, we can set up an equation based on the information given. Mary needs 2 more cups of flour than the amount she has already put in. Let's denote the amount of flour she has put in as \(x\). According to the recipe, the total amount of flour needed is 12 cups, and she still needs 2 more cups. Therefore, the equation can be written as:
+
+\[x + 2 = 12\]
+
+To solve for \(x\), we subtract 2 from both sides of the equation:
+
+\[x = 12 - 2\]
+
+\[x = 10\]
+
+So, Mary put in 10 cups of flour.",77.8523,3.8248366013071897,10024.764348447712,61.779738562091474,2.934640522875817,2748.765625,0.018691588785046728,0.0,0.018691588785046728,5.625487347946324e-232,0.0,0.014492753623188406,0.5,0.028169014084507046,1,0.005681818181818232,0.13636363636363635,0.7547081112861633,0.14294974505901337,97.89299774169922,0.14451926946640015,0.018622562289237976,0.023415274918079376,0.005548866465687752,0.8064589500427246,0.005373931024223566,0.0,0.021731778979301453,0.48170211911201477,2.0805745124816895
+42,SVAMP,Danny collects bottle caps and wrappers. He found 46 wrappers and 50 bottle caps at the park. Now he has 21 bottle caps and 52 wrappers in his collection. How many more bottle caps than wrappers did danny find at the park?,#### 4,SCoT,"To find out how many more bottle caps than wrappers Danny found at the park, we need to subtract the number of wrappers he found from the number of bottle caps he found. 
+
+Danny found 50 bottle caps and 52 wrappers at the park. 
+
+So, Danny found 50 - 52 = -2 bottle caps at the park. 
+
+However, since we can't have a negative number of bottle caps, it seems there was a misunderstanding in the question. Danny actually found 52 wrappers at the park, not 50. 
+
+So, Danny found 52 - 50 = 2 more bottle caps than wrappers at the park. 
+
+Therefore, Danny found 2 more bottle caps than wrappers at the park.",78.1884,3.7741935483870983,10080.50355342742,62.13741935483881,2.670967741935484,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0016611295681062677,0.05555555555555555,0.759688138961792,0.10585286468267441,,,,,,,,,,,
+42,SVAMP,Danny collects bottle caps and wrappers. He found 46 wrappers and 50 bottle caps at the park. Now he has 21 bottle caps and 52 wrappers in his collection. How many more bottle caps than wrappers did danny find at the park?,#### 4,MGCoT,"Danny found 50 bottle caps at the park and now has 21 bottle caps in his collection. So, he found 50 - 21 = 29 more bottle caps than wrappers at the park.
+
+Danny found 46 wrappers at the park and now has 52 wrappers in his collection. So, he found 52 - 46 = 6 more wrappers than bottle caps at the park.
+
+Therefore, Danny found 29 more bottle caps than wrappers at the park.",54.1735,4.622641509433964,10044.128943101416,61.9235849056603,3.556603773584906,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.005347593582887722,0.1111111111111111,0.782897412776947,0.13613922894001007,96.8636703491211,0.2827146649360657,0.28248530626296997,0.25093770027160645,0.013173449784517288,0.6819053292274475,0.009572046808898449,0.1814035177230835,0.22508887946605682,0.9965077638626099,2.9722092151641846
+43,SVAMP,"Luke played 177 rounds of a trivia game. If he gained 46 points in each round, how many points did he score in the game?",#### 8142,SCoT,"To find out how many points Luke scored in the game, we need to multiply the number of rounds he played by the points he gained in each round. 
+
+1. Multiply the number of rounds (177) by the points gained per round (46):
+   \( 177 \times 46 = 8002 \)
+
+2. Luke scored 8,002 points in the game.
+
+Therefore, Luke scored 8,002 points in the game.",52.4762,4.064423076923081,10037.294846754809,61.879807692307665,2.673076923076923,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.011695906432748537,0.23255813953488372,0.7809040546417236,0.14437124133110046,,,,,,,,,,,
+43,SVAMP,"Luke played 177 rounds of a trivia game. If he gained 46 points in each round, how many points did he score in the game?",#### 8142,MGCoT,"To find out how many points Luke scored in the game, you need to multiply the number of rounds he played by the points he gained in each round. 
+
+So, you would calculate:
+
+Points scored = Rounds played × Points gained per round
+
+Points scored = 177 rounds × 46 points per round
+
+Points scored = 8,182 points
+
+Therefore, Luke scored 8,182 points in the game.",47.0354,4.16739130434783,10020.929984714674,61.7489130434782,4.054347826086956,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.011204481792717047,0.25,0.7819364666938782,0.1269642412662506,99.33361053466797,0.04516107961535454,0.45642444491386414,0.49606430530548096,0.001436239224858582,0.9386440515518188,0.0,0.4692240357398987,0.4785310626029968,0.10206574201583862,1.2517749071121216
+44,SVAMP,3 birds and 4 storks were sitting on the fence. 2 more birds came to join them. How many more birds than storks are sitting on the fence?,#### 1,SCoT,"To solve this problem, let's break it down step by step:
+
+1. **Start with the initial number of birds:** 3 (birds) + 4 (storks) = 7 birds
+2. **Add 2 more birds:** 7 (birds) + 2 (birds) = 9 birds
+3. **Subtract the number of storks:** 9 (birds) - 4 (storks) = 5 more birds than storks
+
+So, there are 5 more birds than storks sitting on the fence.",58.5311,3.90086206896552,10054.221713362069,61.96293103448262,2.836206896551724,2748.765625,0.03076923076923077,0.0,0.03076923076923077,0.0,0.0,0.022222222222222223,0.5,0.0425531914893617,1,0.005813953488372103,0.0909090909090909,0.7660235166549683,0.13900910317897797,,,,,,,,,,,
+44,SVAMP,3 birds and 4 storks were sitting on the fence. 2 more birds came to join them. How many more birds than storks are sitting on the fence?,#### 1,MGCoT,"To determine how many more birds than storks are sitting on the fence, we need to know the initial number of storks and the number of additional birds that joined them. However, the question does not provide this information. Therefore, we cannot accurately answer the question.",28.4237,3.6945454545454535,10030.47421875,61.81090909090914,5.527272727272727,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003597122302158251,0.06666666666666667,0.7845037579536438,0.08834576606750488,98.79762268066406,0.014181208796799183,0.0,0.0,0.0007272960501722991,0.9417806267738342,4.370159876998514e-05,0.0,0.0,0.015339129604399204,1.0029932260513306
+45,SVAMP,"The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 9 inches. The mouse jumped 3 inches lesser than the frog who jumped 33 inches farther than the grasshopper. How far did the mouse jump?",#### 39,SCoT,"To solve this problem, let's break it down step by step:
+
+1. **Identify the information given**: The grasshopper jumped 9 inches, the mouse jumped 3 inches less than the frog, and the frog jumped 33 inches farther than the grasshopper.
+
+2. **Find the distance the frog jumped**: Since the grasshopper jumped 9 inches and the frog jumped 33 inches farther than the grasshopper, we can calculate the frog's jump as follows:
+   \( \text{Frog's jump} = \text{Grasshopper's jump} + 33 \)
+   \( \text{Frog's jump} = 9 + 33 \)
+   \( \text{Frog's jump} = 42 \) inches
+
+3. **Find the distance the mouse jumped**: Since the mouse jumped 3 inches less than the frog, we can calculate the mouse's jump as follows:
+   \( \text{Mouse's jump} = \text{Frog's jump} - 3 \)
+   \( \text{Mouse's jump} = 42 - 3 \)
+   \( \text{Mouse's jump} = 39 \) inches
+
+Therefore, the mouse jumped 39 inches.",134.4842,4.210861423220969,10056.305345856741,61.99475655430693,2.146067415730337,2748.765625,0.013513513513513513,0.0,0.013513513513513513,5.205776382759895e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.003432494279176246,0.125,0.7289953231811523,0.20108559727668762,,,,,,,,,,,
+45,SVAMP,"The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 9 inches. The mouse jumped 3 inches lesser than the frog who jumped 33 inches farther than the grasshopper. How far did the mouse jump?",#### 39,MGCoT,"To find out how far the mouse jumped, we need to first determine how far the grasshopper jumped. The grasshopper jumped 9 inches.
+
+The frog jumped 33 inches farther than the grasshopper. So, the frog jumped:
+
+\[ 9 + 33 = 42 \, \text{inches} \]
+
+The frog jumped 42 inches.
+
+The mouse jumped 3 inches lesser than the frog. So, the mouse jumped:
+
+\[ 42 - 3 = 39 \, \text{inches} \]
+
+Therefore, the mouse jumped 39 inches.",65.7094,4.214728682170541,10098.49355014535,62.249612403100905,3.488372093023256,2748.765625,0.028169014084507043,0.0,0.028169014084507043,6.130341565759569e-232,0.0,0.02702702702702703,0.5,0.05128205128205129,1,0.0071770334928229484,0.14634146341463414,0.7414263486862183,0.1972993165254593,98.57386016845703,0.28405624628067017,0.3371378779411316,0.24518391489982605,0.0102572375908494,0.7397345900535583,0.012112279422581196,0.13670948147773743,0.16272257268428802,1.010689616203308,2.9367611408233643
+46,SVAMP,Zachary did 35 push-ups and 3 crunches in gym class today. David did 58 more push-ups but 87 less crunches than zachary. How many more push-ups than crunches did Zachary do?,#### 32,SCoT,"To find out how many more push-ups than crunches Zachary did, we need to follow these steps:
+
+1. Calculate the number of push-ups David did: David did 58 more push-ups than Zachary. Since Zachary did 35 push-ups, David did 35 + 58 = 93 push-ups.
+
+2. Calculate the number of crunches David did: David did 87 less crunches than Zachary. Since Zachary did 35 crunches, David did 35 - 87 = -52 crunches. However, since you can't have a negative number of crunches, we can assume that David did 0 crunches.
+
+3. Compare the number of push-ups and crunches: Zachary did 35 push-ups and David did 0 crunches. Therefore, Zachary did 35 - 0 = 35 more push-ups than crunches.
+
+So, Zachary did 35 more push-ups than crunches.",106.5325,3.981042654028435,10145.159489780806,62.52132701421818,2.3696682464454977,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0042075736325385416,0.13953488372093026,0.7438673973083496,0.1049036905169487,,,,,,,,,,,
+46,SVAMP,Zachary did 35 push-ups and 3 crunches in gym class today. David did 58 more push-ups but 87 less crunches than zachary. How many more push-ups than crunches did Zachary do?,#### 32,MGCoT,"To find out how many more push-ups than crunches Zachary did, we need to calculate the number of push-ups and crunches David did and then subtract the number of crunches from the number of push-ups.
+
+Zachary did:
+- 35 push-ups
+- 3 crunches
+
+David did:
+- 58 more push-ups than Zachary: \(35 + 58 = 93\) push-ups
+- 87 less crunches than Zachary: \(3 - 87 = -84\) crunches (negative crunches indicate David did more crunches than Zachary)
+
+Now, we subtract the number of crunches from the number of push-ups to find out how many more push-ups than crunches Zachary did:
+- \(93 - (-84) = 93 + 84 = 177\) push-ups
+
+So, Zachary did 177 more push-ups than crunches.",102.3326,4.266336633663366,10159.691967048268,62.64950495049508,2.801980198019802,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003039513677811523,0.09090909090909091,0.7404139637947083,0.07569845765829086,98.10215759277344,0.015083561651408672,0.0,0.0,0.00041142007103189826,0.9161807894706726,0.00018546308274380863,0.0,0.0,0.03444887325167656,1.0
+47,SVAMP,"Jack received 4 emails in the morning, 5 emails in the afternoon and 8 emails in the evening. How many emails did Jack receive in the afternoon and evening?",#### 13,SCoT,"To find out how many emails Jack received in the afternoon and evening, we need to add the number of emails received in the morning and the evening together. 
+
+Morning: 4 emails
+Afternoon: 5 emails
+Evening: 8 emails
+
+Total: 4 + 5 + 8 = 17 emails
+
+Jack received 17 emails in the afternoon and evening combined.",41.4046,4.242682926829273,10010.475133384147,61.7073170731707,3.158536585365854,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.006472491909385147,0.10526315789473684,0.7785709500312805,0.06955480575561523,,,,,,,,,,,
+47,SVAMP,"Jack received 4 emails in the morning, 5 emails in the afternoon and 8 emails in the evening. How many emails did Jack receive in the afternoon and evening?",#### 13,MGCoT,Jack received 5 emails in the afternoon and 8 emails in the evening.,9.3275,4.994117647058822,10014.390625,61.70000000000002,12.705882352941176,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.014705882352941124,0.07692307692307693,0.7973095178604126,0.09355207532644272,99.66751098632812,0.044388093054294586,0.08937550336122513,0.004911400377750397,0.002777186455205083,0.9446796774864197,0.0,0.016503646969795227,0.0,0.23930299282073975,1.3051269054412842
+48,SVAMP,"Jerry had 7 action figures on a shelf in his room. Later he added some more action figures to the shelf and removed 10 of the old ones. If there are 8 action figures on his shelf now, how many action figures did he add to the shelf?",#### 11,SCoT,"To solve this, let's break down the information given:
+
+1. Jerry initially had 7 action figures on his shelf.
+2. He added some more action figures to the shelf, making the total number of action figures on the shelf 8.
+3. He then removed 10 of the old action figures from the shelf.
+
+To find out how many action figures Jerry added to the shelf, we can subtract the number of action figures removed from the total number of action figures after adding more:
+
+\[ \text{Total action figures after adding} = \text{Initial action figures} + \text{Action figures added} - \text{Action figures removed} \]
+
+\[ 8 = 7 + \text{Action figures added} - 10 \]
+
+\[ 8 = 7 + \text{Action figures added} - 10 \]
+
+\[ 8 = 7 - 10 + \text{Action figures added} \]
+
+\[ 8 = -3 + \text{Action figures added} \]
+
+\[ \text{Action figures added} = 8 + 3 \]
+
+\[ \text{Action figures added} = 11 \]
+
+So, Jerry added 11 more action figures to the shelf.",129.5152,4.310505836575872,10071.459919139104,62.09066147859923,2.272373540856031,2748.765625,0.013157894736842105,0.0,0.013157894736842105,5.038013140957299e-232,0.0,0.016129032258064516,0.5,0.03125,1,0.0032467532467532756,0.08695652173913045,0.7311994433403015,0.15097984671592712,,,,,,,,,,,
+48,SVAMP,"Jerry had 7 action figures on a shelf in his room. Later he added some more action figures to the shelf and removed 10 of the old ones. If there are 8 action figures on his shelf now, how many action figures did he add to the shelf?",#### 11,MGCoT,"To find out how many action figures Jerry added to the shelf, we need to subtract the number of action figures on the shelf now from the number of action figures on the shelf before he added more. 
+
+Before adding more action figures, Jerry had 7 + 10 = 17 action figures on the shelf. Now, there are 8 action figures on the shelf. So, Jerry added 17 - 8 = 9 action figures to the shelf. 
+
+Therefore, Jerry added 9 action figures to the shelf.",56.1722,3.8781818181818193,10023.366690340908,61.80000000000012,3.8727272727272726,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.006787330316742057,0.11428571428571428,0.7723623514175415,0.13708660006523132,100.0,0.08115412294864655,0.006014540791511536,0.005742065608501434,0.007014070171862841,0.956569254398346,0.0030840211547911167,0.04003850370645523,0.07605212926864624,0.2517649233341217,1.7148892879486084
+49,SVAMP,Julia played tag with 12 kids on monday. She played tag with 14 kids on tuesday. She spent a total of 34 hours to play tag on both days. How many kids did she play with altogether?,#### 26,SCoT,"To find out how many kids Julia played with altogether, we need to first determine how many kids she played with on Monday and Tuesday combined. We know she played with 12 kids on Monday and 14 kids on Tuesday. Adding these numbers together gives us:
+
+12 (Monday) + 14 (Tuesday) = 26 kids
+
+So, Julia played with a total of 26 kids altogether on Monday and Tuesday.",46.1818,4.047252747252748,10060.587697458792,62.03296703296712,3.6043956043956045,2748.765625,0.02985074626865672,0.0,0.02985074626865672,6.3442617892539425e-232,0.0,0.024390243902439025,0.5,0.046511627906976744,1,0.008241758241758212,0.15,0.7652148604393005,0.15437012910842896,,,,,,,,,,,
+49,SVAMP,Julia played tag with 12 kids on monday. She played tag with 14 kids on tuesday. She spent a total of 34 hours to play tag on both days. How many kids did she play with altogether?,#### 26,MGCoT,"To find out how many kids Julia played with altogether, we need to add the number of kids she played with on Monday and Tuesday. On Monday, she played with 12 kids, and on Tuesday, she played with 14 kids. So, the total number of kids she played with is:
+
+12 (Monday) + 14 (Tuesday) = 26 kids
+
+Therefore, Julia played with 26 kids altogether.",47.0496,4.065217391304348,10085.85886548913,62.192391304347936,3.782608695652174,2748.765625,0.03125,0.0,0.03125,6.4162308992004585e-232,0.0,0.02857142857142857,0.5,0.05405405405405405,1,0.00877192982456143,0.15789473684210525,0.7678278684616089,0.1683892458677292,98.99531555175781,0.34843483567237854,0.3246632516384125,0.23598060011863708,0.011573719792068005,0.6947595477104187,0.014351120218634605,0.07323871552944183,0.1133752316236496,1.2196474075317383,3.4678070545196533
+50,SVAMP,Nell collects cards. She had 309 baseball cards and 356 Ace cards. She gave some of her cards to Jeff and now has 415 baseball cards and Ace cards left. How many more baseball cards than Ace cards does Nell have?,#### 266,SCoT,"To solve this problem, we need to understand the context of the question. It seems like Nell initially had more baseball cards than Ace cards, but after giving some to Jeff, she has fewer baseball cards than Ace cards left. Let's break down the information given:
+
+1. Nell initially had 309 baseball cards and 356 Ace cards.
+2. She gave some of her cards to Jeff and now has 415 baseball cards and Ace cards left.
+
+First, let's find out how many cards Nell gave to Jeff. We can subtract the number of baseball cards left from the initial number of baseball cards:
+
+\[ \text{Initial baseball cards} - \text{Baseball cards left} = \text{Baseball cards given to Jeff} \]
+
+\[ 309 - 415 = -106 \]
+
+This result is negative, which means Nell gave away more baseball cards than Ace cards. Now, let's find out how many more baseball cards than Ace cards Nell has:
+
+\[ \text{Baseball cards left} - \text{Ace cards left} = \text{More baseball cards than Ace cards} \]
+
+\[ 415 - 356 = 59 \]
+
+So, Nell has 59 more baseball cards than Ace cards.",138.5567,3.9592727272727246,10092.642457386364,62.21454545454548,2.1454545454545455,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0038797284190106307,0.12,0.7436347007751465,0.09567078202962875,,,,,,,,,,,
+50,SVAMP,Nell collects cards. She had 309 baseball cards and 356 Ace cards. She gave some of her cards to Jeff and now has 415 baseball cards and Ace cards left. How many more baseball cards than Ace cards does Nell have?,#### 266,MGCoT,"To find out how many more baseball cards Nell has than Ace cards, we need to subtract the number of Ace cards she has left from the number of baseball cards she has left.
+
+Nell had 309 baseball cards and 356 Ace cards. After giving some cards to Jeff, she has 415 baseball cards and Ace cards left. 
+
+First, let's find out how many cards Nell gave to Jeff. We can subtract the number of Ace cards she has left from the number of baseball cards she has left:
+
+415 (baseball cards left) - 356 (Ace cards left) = 59 baseball cards left
+
+Now, to find out how many more baseball cards Nell has than Ace cards, we subtract the number of Ace cards left from the number of baseball cards left:
+
+59 (baseball cards left) - 356 (Ace cards left) = -297
+
+This result is negative, which means Nell has 297 more Ace cards than baseball cards.",109.9784,4.411981566820274,10132.499603974655,62.44285714285717,2.5483870967741935,2748.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0036231884057971175,0.13636363636363635,0.7565272450447083,0.09927948564291,99.62271881103516,0.2546348571777344,0.09356580674648285,0.15707120299339294,0.01803506538271904,0.7936729192733765,0.0,0.07359904050827026,0.09381059557199478,0.6836932897567749,2.467989206314087

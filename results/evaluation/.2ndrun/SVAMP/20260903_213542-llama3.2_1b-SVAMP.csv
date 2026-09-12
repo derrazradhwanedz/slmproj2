@@ -1,0 +1,2036 @@
+record_id,dataset,question,gold_answer,mechanism,final_answer,delta_time_seconds,cpu_usage_avg_percent,ram_usage_avg_mb,ram_usage_avg_percent,gpu_usage_avg_percent,gpu_memory_avg_mb,rouge1_f1,rouge2_f1,rougeL_f1,bleu,exact_match,token_precision,token_recall,token_f1,token_overlap_count,normalized_edit_distance,char_f1,bert_score_f1,semantic_similarity,target_Readability,target_Coherence,target_Relevance,target_Specificity,target_Engagement,target_Concise,target_Length,target_Zipf,target_Hapax,target_Entropy,target_Perplexity
+1,SVAMP,"Each pack of dvds costs 76 dollars. If there is a discount of 25 dollars on each pack, how much do you have to pay to buy each pack?",#### 51,SCoT,"**ANALYZE**:
+
+* The question asks how much we have to pay to buy each pack of DVDs after a discount of $25 is applied.
+* We are given the original price of each pack ($76) and the discount amount ($25).
+
+**PLAN** the reasoning steps needed:
+
+1. Calculate the discount amount on each pack.
+2. Subtract the discount amount from the original price to find the price after the discount.
+3. The price after the discount is the amount we need to pay to buy each pack.
+
+**SOLVE** step by step:
+
+1. Calculate the discount amount on each pack:
+$76 (original price) - $25 (discount amount) = $51 (discounted price)
+
+2. Subtract the discount amount from the original price to find the price after the discount:
+$76 (original price) - $51 (discounted price) = $25
+
+3. The price after the discount is the amount we need to pay to buy each pack:
+$25
+
+**STATE** the final answer clearly:
+
+To buy each pack of DVDs, you need to pay $25.",114.5426,3.944493392070484,8956.344094162996,55.216740088106036,2.1145374449339207,3120.765625,0.012269938650306747,0.0,0.012269938650306747,0.0,0.0,0.016666666666666666,0.5,0.03225806451612903,1,0.003260869565217428,0.13333333333333333,0.7427566051483154,0.08202443271875381,,,,,,,,,,,
+1,SVAMP,"Each pack of dvds costs 76 dollars. If there is a discount of 25 dollars on each pack, how much do you have to pay to buy each pack?",#### 51,MGCoT,"I will follow the chain of thought process to answer the question while matching the predicted targets exactly.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.744 (Flesch-Kincaid)
+- **Coherence**: 0.000 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.000 (more interactive, conversational tone)
+- **Concise**: 1.000 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.000 (a more natural word-frequency distribution)
+- **Hapax**: 0.000 (more unique, non-repetitive words)
+- **Entropy**: 0.000 (more varied, less predictable word choice)
+- **Perplexity**: 1.000 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. Calculate the discount amount: 76 - 25 = 51 dollars
+2. Calculate the total cost without discount: 76 dollars
+3. Calculate the total cost with discount: 76 - 51 = 25 dollars
+
+**WRITE** following the specific guidance for each metric:
+
+- **Readability**: ",151.8945,4.17176079734219,8969.397438226744,55.27973421926946,2.431893687707641,3120.765625,0.012578616352201257,0.0,0.012578616352201257,5.1224570760947575e-232,0.0,0.00909090909090909,0.5,0.01785714285714286,1,0.0026619343389530092,0.125,0.732670783996582,0.07857304066419601,99.74395751953125,0.0,0.0,0.0,0.0,1.0,0.00012993719428777695,0.0,0.0,0.0,1.0
+2,SVAMP,"Dan had $ 3 left with him after he bought a candy bar. If he had $ 4 at the start, how much did the candy bar cost?",#### 1,SCoT,"**ANALYZE**:
+
+* The question asks for the cost of the candy bar.
+* Dan had $3 left after buying the candy bar.
+* Dan had $4 at the start.
+
+**PLAN**:
+
+To find the cost of the candy bar, we need to determine how much money Dan spent on the candy bar.
+
+**SOLVE**:
+
+1. Subtract the amount of money Dan had left ($3) from the initial amount of money he had ($4) to find out how much he spent on the candy bar.
+
+$4 (initial amount) - $3 (amount left) = $1
+
+Therefore, the candy bar cost $1.
+
+**STATE**:
+
+The candy bar cost $1.",73.5847,3.886301369863015,9005.180811215754,55.5,2.8493150684931505,3120.765625,0.020202020202020204,0.0,0.020202020202020204,0.0,0.0,0.02040816326530612,0.5,0.039215686274509796,1,0.0038461538461538325,0.09756097560975609,0.7590233683586121,0.09513088315725327,,,,,,,,,,,
+2,SVAMP,"Dan had $ 3 left with him after he bought a candy bar. If he had $ 4 at the start, how much did the candy bar cost?",#### 1,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.785 (Flesch-Kincaid)
+- **Coherence**: 0.000 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.000 (more interactive, conversational tone)
+- **Concise**: 0.962 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.000 (a more natural word-frequency distribution)
+- **Hapax**: 0.000 (more unique, non-repetitive words)
+- **Entropy**: 0.000 (more varied, less predictable word choice)
+- **Perplexity**: 1.000 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to convey the information. For example: ""Dan had $3 left after buying a candy bar. He had $4 at the start.""
+2. **Coherence**: I will use a logical flow of ideas to connect the information. For example: ""If Dan",151.9004,4.118604651162786,9011.259914867109,55.538205980066394,2.441860465116279,3120.765625,0.011904761904761906,0.0,0.011904761904761906,0.0,0.0,0.008547008547008548,0.5,0.016806722689075633,1,0.0017590149516271136,0.08163265306122448,0.7443165183067322,0.07728541642427444,98.78490447998047,0.0,0.0,0.0,0.0,0.9624167084693909,0.0,0.0,0.0,0.0,1.0
+3,SVAMP,Paco had 26 salty cookies and 17 sweet cookies. He ate 14 sweet cookies and 9 salty cookies. How many salty cookies did Paco have left?,#### 17,SCoT,"**ANALYZE** what the question is asking: We need to find out how many salty cookies Paco had left after eating 14 sweet cookies and 9 salty cookies.
+
+**PLAN** the reasoning steps needed:
+
+1. Start with the initial number of salty cookies Paco had: 26
+2. Subtract the number of sweet cookies Paco ate: 14
+3. Subtract the number of salty cookies Paco ate: 9
+4. Add the result of step 2 and step 3 to find the final number of salty cookies Paco had left
+
+**SOLVE** step by step:
+
+1. Start with the initial number of salty cookies: 26
+2. Subtract the number of sweet cookies Paco ate: 14
+   26 - 14 = 12
+3. Subtract the number of salty cookies Paco ate: 9
+   12 - 9 = 3
+4. Add the result of step 2 and step 3 to find the final number of salty cookies Paco had left
+   3 + 12 = 15
+
+**STATE** the final answer clearly: Paco had 15 salty cookies left.",122.8633,4.336475409836064,8945.95655097336,55.15409836065586,2.377049180327869,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0023696682464454666,0.09302325581395347,0.7399238348007202,0.22589460015296936,,,,,,,,,,,
+3,SVAMP,Paco had 26 salty cookies and 17 sweet cookies. He ate 14 sweet cookies and 9 salty cookies. How many salty cookies did Paco have left?,#### 17,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.035, which is a high score indicating the text is easy to read.
+   - Coherence: 0.035, which is a low score indicating the text is disjointed.
+   - Relevance: 0.000, which is a very low score indicating the text is irrelevant.
+   - Specificity: 0.000, which is a very low score indicating the text is vague.
+   - Engagement: 0.005, which is a low score indicating the text is not engaging.
+   - Concise: 0.928, which is a high score indicating the text is concise.
+   - Length: 0.000, which is a very low score indicating the text is extremely short.
+   - Zipf: 0.026, which is a low score indicating the text has a relatively normal word-frequency distribution.
+   - Hapax: 0.019, which is a low score indicating the text has a relatively low number of unique words.
+   - Entropy: 0.075, which is a moderate score indicating the text has a moderate level of variation in word choice.
+   - Perplexity: 1.162, which is a high score indicating the text is highly complex.
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - To",151.9065,4.512956810631226,8971.434541112956,55.30066445182721,2.425249169435216,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002590673575129543,0.13333333333333333,0.7484503984451294,0.09703915566205978,99.03465270996094,0.034911125898361206,0.0,0.0,0.005372587125748396,0.9281802773475647,0.0,0.026069991290569305,0.0193202942609787,0.07529934495687485,1.1621265411376953
+4,SVAMP,43 children were riding on the bus. At the bus stop some children got off the bus. Then there were 21 children left on the bus. How many children got off the bus at the bus stop?,#### 22,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks how many children got off the bus at the bus stop. We know that initially, there were 43 children on the bus.
+2. **PLAN**: To find out how many children got off the bus, we need to subtract the number of children left on the bus (21) from the initial number of children (43).
+3. **SOLVE**:
+   - Subtract 21 from 43: 43 - 21 = 22
+4. **STATE**: The final answer is 22 children who got off the bus at the bus stop.
+
+Therefore, 22 children got off the bus at the bus stop.",74.6207,3.906756756756758,8995.905801309122,55.45405405405406,2.7162162162162162,3120.765625,0.019801980198019802,0.0,0.019801980198019802,5.7187224260924895e-232,0.0,0.01818181818181818,0.5,0.03508771929824561,1,0.0056285178236398226,0.09756097560975609,0.761562705039978,0.21033714711666107,,,,,,,,,,,
+4,SVAMP,43 children were riding on the bus. At the bus stop some children got off the bus. Then there were 21 children left on the bus. How many children got off the bus at the bus stop?,#### 22,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 97.704 (target: 0-100)
+- **Coherence**: 0.000 (target: 0.0-1.0)
+- **Relevance**: 0.009 (target: 0.0-1.0)
+- **Specificity**: 0.015 (target: 0.0-1.0)
+- **Engagement**: 0.000 (target: 0.0-1.0)
+- **Concise**: 0.926 (target: 0.0-1.0)
+- **Length**: 0.000 (target: 0.0-1.0)
+- **Zipf**: 0.023 (target: 0.0-1.0)
+- **Hapax**: 0.026 (target: 0.0-1.0)
+- **Entropy**: 0.000 (target: 0.0 and up)
+- **Perplexity**: 1.000 (target: 1.0 and up)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Start with a clear and concise statement**: ""There were 43 children on the bus. At the bus stop, some children got off",151.9243,4.059800664451822,8990.445403343023,55.433887043189095,2.4651162790697674,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003712871287128716,0.08695652173913045,0.7255977988243103,0.10487961024045944,97.7042007446289,0.0,0.00929258018732071,0.01532869040966034,0.0,0.9262580871582031,0.0,0.02313859760761261,0.025790341198444366,0.0,1.0
+5,SVAMP,28 children were riding on the bus. At the bus stop 82 children got on the bus while some got off the bus. Then there were 30 children altogether on the bus. How many more children got on the bus than those that got off?,#### 2,SCoT,"**ANALYZE**:
+
+* We are given the initial number of children on the bus (28).
+* We are also given the number of children who got on the bus at the bus stop (82).
+* We are asked to find the difference between the number of children who got on the bus and the number of children who got off the bus.
+
+**PLAN**:
+
+To solve this problem, we need to find the number of children who got off the bus. We can do this by subtracting the number of children on the bus at the bus stop from the initial number of children on the bus.
+
+**SOLVE**:
+
+1. Let x be the number of children who got off the bus.
+2. We know that the number of children on the bus at the bus stop is 82, and the initial number of children on the bus is 28.
+3. We can set up the equation: 28 + x = 82
+4. To solve for x, we can subtract 28 from both sides of the equation:
+   28 + x - 28 = 82 - 28
+   x = 54
+5. Now that we know the number of children who got off the bus (x), we can find the difference between the number of children who got on the bus and the number of children who got off:
+   Difference = Number of children who got on the bus - Number of children who got off
+   Difference = 82 -",151.5615,4.0119601328903585,9025.338883409468,55.61362126245868,2.259136212624585,3120.765625,0.008620689655172414,0.0,0.008620689655172414,0.0,0.0,0.0,0.0,0.0,0,0.0017301038062284002,0.08888888888888889,0.741525411605835,0.11053501814603806,,,,,,,,,,,
+5,SVAMP,28 children were riding on the bus. At the bus stop 82 children got on the bus while some got off the bus. Then there were 30 children altogether on the bus. How many more children got on the bus than those that got off?,#### 2,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.942 (excellent)
+   - Coherence: 0.000 (perfect)
+   - Relevance: 0.018 (good)
+   - Specificity: 0.013 (excellent)
+   - Engagement: 0.000 (excellent)
+   - Concise: 0.977 (excellent)
+   - Length: 0.000 (excellent)
+   - Zipf: 0.029 (excellent)
+   - Hapax: 0.021 (excellent)
+   - Entropy: 0.000 (excellent)
+   - Perplexity: 1.000 (perfect)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To answer the question, we need to identify the number of children who got on the bus and those who got off.
+   - We are given the total number of children on the bus at the bus stop (28) and the number of children who got on the bus (82).
+   - We can calculate the number of children who got off the bus by subtracting the number of children on the bus from the total number of children on the bus at the bus stop.
+   - Then, we can find the difference between the number of children who got on the bus and those who got off",151.9268,4.169102990033219,9002.720346241695,55.509634551494926,2.3687707641196014,3120.765625,0.011560693641618497,0.0,0.011560693641618497,0.0,0.0,0.012345679012345678,0.5,0.024096385542168672,1,0.00191387559808609,0.0909090909090909,0.7471022605895996,0.11371885240077972,98.94244384765625,0.0,0.018212854862213135,0.012887723743915558,0.0,0.9771274328231812,0.0001814334245864302,0.02850053459405899,0.020952776074409485,0.0,1.0
+6,SVAMP,There were 3 dollars in Olivia's wallet. She collected 49 more dollars from an atm. After she visited a supermarket there were 49 dollars left. How much more money did she collect at the atm than she spent at the supermarket?,#### 46,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE** what the question is asking: We need to find out how much more money Olivia collected at the ATM than she spent at the supermarket.
+2. **PLAN** the reasoning steps needed: To solve this problem, we need to:
+	* Find out how much money Olivia collected at the ATM.
+	* Find out how much money she spent at the supermarket.
+	* Subtract the amount spent from the amount collected to find the difference.
+3. **SOLVE** step by step:
+	* Olivia collected 49 dollars from the ATM.
+	* After visiting the supermarket, she had 49 dollars left.
+	* To find out how much she spent at the supermarket, we need to subtract the amount left from the amount collected at the ATM: 49 - 49 = 0.
+	* Since she spent 0 dollars at the supermarket, we can conclude that she spent the same amount she collected at the ATM.
+	* Now, we need to find out how much more money she collected at the ATM than she spent at the supermarket. Since she spent the same amount, the difference is 0 dollars.
+
+**STATE** the final answer clearly: Olivia collected 49 dollars at the ATM and spent 0 dollars at the supermarket, so she collected 49 dollars more at the ATM than she spent at the supermarket.",143.5132,3.890526315789472,9004.094668311403,55.50175438596507,2.270175438596491,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0016611295681062677,0.09302325581395347,0.7472004890441895,0.06386414170265198,,,,,,,,,,,
+6,SVAMP,There were 3 dollars in Olivia's wallet. She collected 49 more dollars from an atm. After she visited a supermarket there were 49 dollars left. How much more money did she collect at the atm than she spent at the supermarket?,#### 46,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.788 (excellent)
+- **Coherence**: 0.155 (good)
+- **Relevance**: 0.050 (low)
+- **Specificity**: 0.127 (low)
+- **Engagement**: 0.006 (low)
+- **Concise**: 0.837 (excellent)
+- **Length**: 0.001 (very short)
+- **Zipf**: 0.093 (excellent)
+- **Hapax**: 0.123 (excellent)
+- **Entropy**: 0.503 (excellent)
+- **Perplexity**: 2.265 (excellent)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple and short sentences to make the response easy to read.
+2. **Coherence**: I will use short connected sentences to maintain a smooth logical flow between ideas.
+3. **Relevance**: I will use relevant vocabulary to focus on the topic and avoid filler words.
+4. **Specificity**: I will use diverse and precise vocabulary to convey the information.
+5. **Engagement**: I will use a conversational tone to make the response more interactive.
+6. **Concise**: I will use short sentences and",151.9332,3.8900332225913554,9059.698193521595,55.86777408637841,2.524916943521595,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0027002700270026825,0.1276595744680851,0.7278282642364502,0.10394502431154251,98.78755950927734,0.15463373064994812,0.05022592842578888,0.12723518908023834,0.005903903860598803,0.8372058868408203,0.0005905653233639896,0.09317762404680252,0.12326399981975555,0.5027990341186523,2.264674186706543
+7,SVAMP,"Jerry had some action figures on a shelf in his room. Later he added 7 more action figures to the shelf. If there are a total of 10 action figures on his shelf now, how many action figures did he have initially on the shelf?",#### 3,SCoT,"**ANALYZE**:
+The question asks us to find the initial number of action figures Jerry had on the shelf. We know that he added 7 more action figures to the shelf and now there are a total of 10 action figures.
+
+**PLAN**:
+To find the initial number of action figures, we can use a simple subtraction problem. Let's call the initial number of action figures ""x"". We know that x + 7 = 10, since Jerry added 7 more action figures.
+
+**SOLVE**:
+To find the initial number of action figures, we can subtract 7 from both sides of the equation:
+
+x + 7 = 10
+x = 10 - 7
+x = 3
+
+Therefore, Jerry had 3 action figures on the shelf initially.
+
+**STATE**:
+The initial number of action figures Jerry had on the shelf was 3.",92.3396,5.091256830601094,9173.201673497268,56.55136612021849,2.6666666666666665,3120.765625,0.015267175572519085,0.0,0.015267175572519085,5.3348669960151344e-232,0.0,0.01639344262295082,0.5,0.031746031746031744,1,0.0028409090909090606,0.0909090909090909,0.7574150562286377,0.13150173425674438,,,,,,,,,,,
+7,SVAMP,"Jerry had some action figures on a shelf in his room. Later he added 7 more action figures to the shelf. If there are a total of 10 action figures on his shelf now, how many action figures did he have initially on the shelf?",#### 3,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 100.000 (exact target)
+   - Coherence: 0.000 (exact target)
+   - Relevance: 0.000 (exact target)
+   - Specificity: 0.000 (exact target)
+   - Engagement: 0.001 (exact target)
+   - Concise: 1.000 (exact target)
+   - Length: 0.000 (exact target)
+   - Zipf: 0.017 (exact target)
+   - Hapax: 0.024 (exact target)
+   - Entropy: 0.000 (exact target)
+   - Perplexity: 1.000 (exact target)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the exact target of Readability: 100.000, the response should be written in a clear and concise manner, using short sentences and simple vocabulary.
+   - To achieve the exact target of Coherence: 0.000, the response should have a smooth logical flow between ideas, with no unnecessary words or phrases.
+   - To achieve the exact target of Relevance: 0.000, the response should focus on the topic of action figures and their increase.
+   - To achieve the exact target of Specificity: 0.000, the response should",151.9423,4.02225913621262,9037.915035818107,55.714617940199744,2.39202657807309,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0009233610341643494,0.048780487804878044,0.7448874115943909,0.08752740919589996,100.0,0.0,0.0,0.0,0.0014865820994600654,1.0,0.0,0.016588784754276276,0.02382826805114746,0.0,1.0
+8,SVAMP,Paco had 41 cookies. He gave 9 cookies to his friend and ate 18 cookies. How many more cookies did he eat than those he gave to his friend?,#### 9,SCoT,"**ANALYZE**:
+
+* The question asks for the difference between the number of cookies Paco ate and the number of cookies he gave to his friend.
+* We are given the initial number of cookies Paco had (41) and the number of cookies he gave to his friend (9).
+
+**PLAN** the reasoning steps needed:
+
+1. Calculate the number of cookies Paco ate.
+2. Calculate the number of cookies Paco gave to his friend.
+3. Find the difference between the number of cookies Paco ate and the number of cookies he gave to his friend.
+
+**SOLVE** step by step:
+
+1. Calculate the number of cookies Paco ate:
+Paco had 41 cookies and ate 18 cookies, so the number of cookies he ate is:
+41 - 18 = 23
+
+2. Calculate the number of cookies Paco gave to his friend:
+Paco gave 9 cookies to his friend.
+
+3. Find the difference between the number of cookies Paco ate and the number of cookies he gave to his friend:
+Difference = Number of cookies Paco ate - Number of cookies Paco gave to his friend
+= 23 - 9
+= 14
+
+**STATE** the final answer clearly:
+
+Paco ate 23 cookies and gave 9 cookies to his friend. The difference between the number of cookies he ate and the number of cookies he gave to his friend is 14.",146.5144,4.246735395188997,9020.0764604811,55.62439862542957,2.3195876288659796,3120.765625,0.009259259259259259,0.0,0.009259259259259259,4.7091911478183385e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.0017064846416382506,0.09302325581395349,0.7476407885551453,0.09433504939079285,,,,,,,,,,,
+8,SVAMP,Paco had 41 cookies. He gave 9 cookies to his friend and ate 18 cookies. How many more cookies did he eat than those he gave to his friend?,#### 9,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.369 (Flesch-Kincaid)
+- **Coherence**: 0.000 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.000 (more interactive, conversational tone)
+- **Concise**: 0.985 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.001 (a longer response)
+- **Zipf**: 0.000 (a more natural word-frequency distribution)
+- **Hapax**: 0.000 (more unique, non-repetitive words)
+- **Entropy**: 0.000 (more varied, less predictable word choice)
+- **Perplexity**: 1.000 (simpler, more predictable sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. Start with a clear and concise statement about Paco's cookie situation.
+2. Use simple and short sentences to maintain readability.
+3. Focus on the specific question and avoid unnecessary words.
+4. Use a conversational tone to engage the reader.
+5. Keep the response concise and to the point.
+
+",151.8892,3.922923588039863,9013.835314576412,55.56013289036536,2.4983388704318936,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0016920473773265332,0.08510638297872342,0.7403578758239746,0.12693668901920319,99.36859130859375,0.0,0.0,0.0,0.0,0.9854881167411804,0.0005116683314554393,0.0,0.0,0.0,1.0
+9,SVAMP,Mary is baking a cake. The recipe calls for 3 cups of sugar 10 cups of flour and 15 cups of salt. She already put in 6 cups of flour. How many more cups of flour does she need to add?,#### 4,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks how many more cups of flour Mary needs to add to the recipe.
+2. **PLAN**: To solve this problem, we need to determine how much flour Mary still needs to add.
+3. **SOLVE**:
+   - First, we need to find out how much flour Mary has already added. She has put in 6 cups of flour.
+   - Then, we need to find out how much flour is left in the recipe. The recipe calls for 10 cups of flour, but Mary has already put in 6 cups. So, the amount of flour left is 10 - 6 = 4 cups.
+   - Finally, we need to find out how much more flour Mary needs to add. We can do this by subtracting the amount of flour left from the total amount of flour needed. So, 15 - 4 = 11 cups.
+
+**STATE**: Mary needs to add 11 more cups of flour to the recipe.",108.4387,3.7888372093023257,9035.058957122093,55.700465116279204,2.697674418604651,3120.765625,0.012903225806451613,0.0,0.012903225806451613,5.114484356095503e-232,0.0,0.014925373134328358,0.5,0.02898550724637681,1,0.0025380710659898,0.09523809523809523,0.7644020915031433,0.0878235325217247,,,,,,,,,,,
+9,SVAMP,Mary is baking a cake. The recipe calls for 3 cups of sugar 10 cups of flour and 15 cups of salt. She already put in 6 cups of flour. How many more cups of flour does she need to add?,#### 4,MGCoT,"I'll follow the chain of thought process to answer the question while matching the predicted targets exactly.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.014 (Flesch-Kincaid)
+- **Coherence**: 0.238 (smooth logical flow between ideas)
+- **Relevance**: 0.108 (tighter focus on the topic)
+- **Specificity**: 0.093 (diverse, precise vocabulary)
+- **Engagement**: 0.013 (more interactive tone)
+- **Concise**: 0.782 (compact phrasing)
+- **Length**: 0.006 (a longer response)
+- **Zipf**: 0.015 (natural word-frequency distribution)
+- **Hapax**: 0.055 (unique, non-repetitive words)
+- **Entropy**: 0.741 (more varied word choice)
+- **Perplexity**: 2.577 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I'll use simple, short sentences to convey the information. For example: ""Mary needs 3 cups of sugar, 10 cups of flour, and 15 cups of salt. She already put in 6 cups of flour.""
+2. **Coherence**: I'll use a logical flow of ideas to connect the information. For example: ""First, let's calculate",151.9255,4.8235880398671025,8966.568106312292,55.27574750830562,2.352159468438538,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0018248175182481452,0.08163265306122448,0.7433313727378845,0.10679242014884949,99.01375579833984,0.2384026199579239,0.10825040936470032,0.09344516694545746,0.012536509893834591,0.7817639112472534,0.005813157185912132,0.014757439494132996,0.05538252741098404,0.7410763502120972,2.5769615173339844
+10,SVAMP,A waiter had some customers. After 9 customers left he still had 12 customers. How many customers did he have at the start?,#### 21,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks how many customers the waiter had at the start, given that 9 customers left and 12 customers remained.
+2. **PLAN**: To solve this problem, we need to use basic arithmetic operations to find the initial number of customers.
+3. **SOLVE**:
+   - Let's denote the initial number of customers as x.
+   - After 9 customers left, the number of customers remaining is x - 9.
+   - We are told that the number of customers remaining is 12, so we can set up the equation: x - 9 = 12.
+   - To solve for x, we need to isolate x on one side of the equation.
+4. **STATE**: The initial number of customers is 12 + 9 = 21.
+
+Therefore, the waiter had 21 customers at the start.",95.1624,4.886243386243386,9240.455708498677,56.95767195767197,2.6455026455026456,3120.765625,0.015625,0.0,0.015625,5.344719054588824e-232,0.0,0.014084507042253521,0.5,0.027397260273972605,1,0.004149377593360981,0.13636363636363635,0.7553244829177856,0.14395856857299805,,,,,,,,,,,
+10,SVAMP,A waiter had some customers. After 9 customers left he still had 12 customers. How many customers did he have at the start?,#### 21,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.473 (Flesch-Kincaid)
+- **Coherence**: 0.002 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.000 (more interactive, conversational tone)
+- **Concise**: 0.973 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.015 (a more natural word-frequency distribution)
+- **Hapax**: 0.005 (more unique, non-repetitive words)
+- **Entropy**: 0.000 (more varied, less predictable word choice)
+- **Perplexity**: 1.000 (simpler, more predictable sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+To answer the question, I will provide a concise and clear explanation, using simple language and short sentences.
+
+**WRITE** the following response:
+
+The waiter had some customers. After 9 customers left, he still had 12 customers. To find out how many customers he had at the start, we need to",151.8956,3.727906976744183,9125.088416216777,56.257475083056455,2.4651162790697674,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002540220152413175,0.13043478260869565,0.7351425886154175,0.11997805535793304,99.47298431396484,0.0021731092128902674,0.0,0.0,0.0,0.9730627536773682,0.0,0.014628618955612183,0.00456024706363678,0.0,1.0
+11,SVAMP,3 birds were sitting on the fence. 6 more storks and 2 more birds came to join them. How many more storks than birds are sitting on the fence?,#### 1,SCoT,"**ANALYZE** what the question is asking: We need to find the difference between the number of storks and the number of birds sitting on the fence.
+
+**PLAN** the reasoning steps needed:
+
+1. Identify the initial number of birds on the fence.
+2. Calculate the total number of birds after more birds join.
+3. Calculate the total number of storks on the fence.
+4. Find the difference between the total number of storks and the total number of birds.
+
+**SOLVE** step by step:
+
+1. Initial number of birds: 3
+2. More birds join: 6
+3. Total number of birds: 3 + 6 = 9
+4. More storks join: 2
+5. Total number of storks: 3 + 2 = 5
+6. Difference between the total number of storks and the total number of birds: 5 - 9 = -4
+
+**STATE** the final answer clearly: There are 4 more storks than birds sitting on the fence.",109.7792,4.219266055045873,9191.208912700688,56.64816513761473,2.5688073394495414,3120.765625,0.013513513513513513,0.0,0.013513513513513513,0.0,0.0,0.0,0.0,0.0,0,0.00249066002490661,0.09302325581395349,0.7521470189094543,0.09897488355636597,,,,,,,,,,,
+11,SVAMP,3 birds were sitting on the fence. 6 more storks and 2 more birds came to join them. How many more storks than birds are sitting on the fence?,#### 1,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.986 (excellent, easy to read)
+   - Coherence: 0.000 (perfect, smooth logical flow)
+   - Relevance: 0.000 (excellent, focused on the topic)
+   - Specificity: 0.000 (excellent, diverse vocabulary)
+   - Engagement: 0.000 (excellent, conversational tone)
+   - Concise: 0.965 (excellent, compact phrasing)
+   - Length: 0.000 (excellent, a longer response)
+   - Zipf: 0.000 (excellent, natural word-frequency distribution)
+   - Hapax: 0.000 (excellent, unique words)
+   - Entropy: 0.000 (excellent, varied word choice)
+   - Perplexity: 1.000 (excellent, complex sentence structure)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - Start with a clear and concise statement about the initial number of birds and storks.
+   - Then, describe the change in the number of birds and storks.
+   - Finally, calculate the difference between the two numbers.
+
+3. **WRITE** following the specific guidance for each metric:
+   - Readability: The sentence is clear and easy to understand, with",151.8851,4.154817275747505,9153.507397217609,56.428571428571516,2.4983388704318936,3120.765625,0.013071895424836602,0.0,0.013071895424836602,0.0,0.0,0.00980392156862745,0.5,0.019230769230769232,1,0.0018018018018017834,0.08888888888888889,0.7471767067909241,0.09058476239442825,98.98627471923828,0.0,0.0,0.0,0.0,0.9647969007492065,0.0004467009857762605,0.0,0.0,0.0,1.0
+12,SVAMP,"They decided to hold the party in their backyard. If they have 11 sets of tables and each set has 13 chairs, how many chairs do they have in the backyard?",#### 143,SCoT,"**ANALYZE**:
+
+* The question asks for the total number of chairs in the backyard.
+* We are given that there are 11 sets of tables, and each set has 13 chairs.
+
+**PLAN** the reasoning steps needed:
+
+1. Multiply the number of sets of tables by the number of chairs in each set to find the total number of chairs.
+2. Calculate the total number of chairs.
+
+**SOLVE** step by step:
+
+1. Multiply the number of sets of tables by the number of chairs in each set:
+11 sets x 13 chairs/set = 143 chairs
+2. The total number of chairs is 143.
+
+**STATE** the final answer clearly:
+
+They have 143 chairs in the backyard.",76.1046,3.7966887417218547,9159.193889693708,56.4834437086091,2.6821192052980134,3120.765625,0.017699115044247787,0.0,0.017699115044247787,5.5754780543102235e-232,0.0,0.019230769230769232,0.5,0.037037037037037035,1,0.0066006600660065695,0.19047619047619047,0.752992570400238,0.1527690440416336,,,,,,,,,,,
+12,SVAMP,"They decided to hold the party in their backyard. If they have 11 sets of tables and each set has 13 chairs, how many chairs do they have in the backyard?",#### 143,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.306 (Flesch-Kincaid)
+- **Coherence**: 0.015 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (diverse, precise vocabulary)
+- **Engagement**: 0.002 (more interactive tone)
+- **Concise**: 0.966 (compact phrasing)
+- **Length**: 0.001 (a longer response)
+- **Zipf**: 0.000 (natural word-frequency distribution)
+- **Hapax**: 0.000 (unique, non-repetitive words)
+- **Entropy**: 0.024 (more varied word choice)
+- **Perplexity**: 1.134 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to explain the problem and the solution.
+2. **Coherence**: I will use a logical flow of ideas to connect the problem statement to the solution.
+3. **Relevance**: I will focus on the specific topic of the party and the number of chairs.
+4. **Specificity**: I will use precise vocabulary to describe the number",151.9215,4.242524916943514,9128.393570909468,56.25813953488383,2.4983388704318936,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003478260869565264,0.1702127659574468,0.7341623306274414,0.07523024827241898,99.30586242675781,0.014544335193932056,0.0,0.0,0.0019300748826935887,0.9661375880241394,0.0005882607656531036,0.0,0.0,0.024141622707247734,1.1336582899093628
+13,SVAMP,"In a school there are 458 more girls than boys. If there are 692 girls, how many pupils are there in that school?",#### 926,SCoT,"**ANALYZE** what the question is asking: We need to find the total number of pupils in the school.
+
+**PLAN** the reasoning steps needed:
+
+1. Let's represent the number of boys as B and the number of girls as G.
+2. We know that there are 458 more girls than boys, so we can write an equation: G = B + 458.
+3. We also know that there are 692 girls, so we can write another equation: G = 692.
+4. We can substitute the second equation into the first equation to solve for B: 692 = B + 458.
+5. Now, we can solve for B: B = 692 - 458 = 234.
+6. Finally, we can find the total number of pupils by adding the number of boys and girls: Total = B + G = 234 + 692 = 926.
+
+**SOLVE** step by step:
+
+1. G = B + 458
+2. G = 692
+3. 692 = B + 458
+4. 692 - 458 = B
+5. 234 = B
+6. Total = B + G
+7. Total = 234 + 692
+8. Total = 926
+
+**STATE** the final answer clearly: The total number of pupils in the school is 926.",142.4549,4.226501766784449,9089.794238626326,56.03109540636051,2.2508833922261484,3120.765625,0.0111731843575419,0.0,0.0111731843575419,4.826522266402496e-232,0.0,0.0125,0.5,0.02439024390243903,1,0.004474272930648726,0.16666666666666666,0.7606632113456726,0.06827447563409805,,,,,,,,,,,
+13,SVAMP,"In a school there are 458 more girls than boys. If there are 692 girls, how many pupils are there in that school?",#### 926,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.082 (we need to write in simple, concise language)
+   - Coherence: 0.000 (we need to have a smooth logical flow between ideas)
+   - Relevance: 0.000 (we need to focus on the topic)
+   - Specificity: 0.000 (we need to use diverse vocabulary)
+   - Engagement: 0.000 (we need to have a conversational tone)
+   - Concise: 0.969 (we need to write in a compact manner)
+   - Length: 0.000 (we need to keep it to 100 words)
+   - Zipf: 0.000 (we need to have a natural word-frequency distribution)
+   - Hapax: 0.000 (we need to use unique words)
+   - Entropy: 0.000 (we need to have varied word choice)
+   - Perplexity: 1.000 (we need to have a complex sentence structure)
+
+2. **PLAN** our answer structure to hit these exact targets:
+   - We will start with a simple sentence to set the context.
+   - Then, we will use specific vocabulary to describe the difference between girls and boys.
+   - We will use concise language to convey the information.
+   - We will keep it to 100",151.8915,3.941860465116276,9120.700140157807,56.2126245847178,2.398671096345515,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003676470588235281,0.1777777777777778,0.7555001974105835,0.04132331162691116,99.08192443847656,0.0,0.0,0.0,0.00048732556751929224,0.9690380096435547,0.0,0.0,0.0,0.0,1.0
+14,SVAMP,"After resting they decided to go for a swim. The depth of the water is 15 times Dean's height. Dean is 4 feet taller than Ron. If Ron stands at 13 feet, how deep was the water?",#### 255,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. Analyze what the question is asking: We need to find the depth of the water in the pool.
+2. Plan the reasoning steps needed: We know the height of Ron, the height of Dean, and the relationship between their heights.
+3. Solve step by step:
+   - First, we need to find Dean's height. We know Ron's height is 13 feet and Dean is 4 feet taller than Ron. So, Dean's height is 13 + 4 = 17 feet.
+   - Next, we need to find the depth of the water. We know the depth of the water is 15 times Dean's height. So, the depth of the water is 15 x 17 = 255 feet.
+
+**STATE THE FINAL ANSWER CLEARLY**:
+
+The depth of the water in the pool is 255 feet.",92.7138,3.919021739130435,9071.728664232336,55.9054347826087,2.510869565217391,3120.765625,0.014814814814814815,0.0,0.014814814814814815,5.344719054588824e-232,0.0,0.016129032258064516,0.5,0.03125,1,0.005997001499250421,0.13333333333333333,0.7665808200836182,0.1061069443821907,,,,,,,,,,,
+14,SVAMP,"After resting they decided to go for a swim. The depth of the water is 15 times Dean's height. Dean is 4 feet taller than Ron. If Ron stands at 13 feet, how deep was the water?",#### 255,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.571 (Flesch-Kincaid)
+- **Coherence**: 0.127 (smooth logical flow between ideas)
+- **Relevance**: 0.142 (tighter focus on the topic)
+- **Specificity**: 0.197 (diverse, precise vocabulary)
+- **Engagement**: 0.007 (more interactive, conversational tone)
+- **Concise**: 0.857 (more compact phrasing)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.188 (natural word-frequency distribution)
+- **Hapax**: 0.222 (unique, non-repetitive words)
+- **Entropy**: 0.354 (more varied, less predictable word choice)
+- **Perplexity**: 1.762 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Introduction**: Provide a clear and concise introduction to the problem, stating the context and the goal.
+2. **Setup**: State the variables and the relationships between them.
+3. **Calculation**: Perform the calculations to find the depth of the water.
+4. **Conclusion**: Summarize the findings and provide a final answer.
+
+**WRITE** following the",151.9341,4.150166112956805,9070.069559800664,55.90232558139514,2.352159468438538,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003392705682782049,0.125,0.7355723977088928,0.11051473021507263,98.5709228515625,0.12743711471557617,0.14225387573242188,0.19704827666282654,0.0074321734718978405,0.8567730188369751,0.0,0.1880900263786316,0.22198867797851562,0.35394805669784546,1.761946439743042
+15,SVAMP,6 birds were sitting on the fence. 4 more birds and 8 more storks came to join them. How many birds are sitting on the fence?,#### 10,SCoT,"**ANALYZE** what the question is asking: We need to find the total number of birds sitting on the fence.
+
+**PLAN** the reasoning steps needed:
+
+1. Start with the initial number of birds: 6
+2. Add the number of birds that came to join them: 4
+3. Add the number of storks that came to join them: 8
+4. Calculate the total number of birds: 6 + 4 + 8
+
+**SOLVE** step by step:
+
+1. Start with the initial number of birds: 6
+2. Add the number of birds that came to join them: 6 + 4 = 10
+3. Add the number of storks that came to join them: 10 + 8 = 18
+
+**STATE** the final answer clearly: There are 18 birds sitting on the fence.",92.1827,4.275956284153007,9122.660924692624,56.24153005464466,2.5136612021857925,3120.765625,0.01639344262295082,0.0,0.01639344262295082,5.4269696562331364e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.004838709677419395,0.13953488372093026,0.7464476227760315,0.16760484874248505,,,,,,,,,,,
+15,SVAMP,6 birds were sitting on the fence. 4 more birds and 8 more storks came to join them. How many birds are sitting on the fence?,#### 10,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.436 (target: 100)
+   - Coherence: 0.031 (target: 1.0)
+   - Relevance: 0.000 (target: 1.0)
+   - Specificity: 0.001 (target: 1.0)
+   - Engagement: 0.002 (target: 1.0)
+   - Concise: 0.918 (target: 1.0)
+   - Length: 0.000 (target: 1.0)
+   - Zipf: 0.000 (target: 1.0)
+   - Hapax: 0.000 (target: 1.0)
+   - Entropy: 0.066 (target: 1.0)
+   - Perplexity: 1.082 (target: 1.0)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - To achieve high readability, use simple and short sentences.
+   - To maintain coherence, use a consistent sentence structure.
+   - To ensure relevance, focus on the main topic (birds on the fence).
+   - To increase specificity, use unique words and phrases.
+   - To engage the reader, use a conversational tone and direct address.
+   - To keep the response",151.9278,3.955481727574746,9141.293539763288,56.34053156146148,2.3289036544850497,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0033039647577092213,0.13043478260869565,0.7414122819900513,0.10807722061872482,98.43622589111328,0.03141448274254799,0.0,0.0006482377648353577,0.0015245716786012053,0.917599618434906,0.0,0.0,0.0,0.06574894487857819,1.0815353393554688
+16,SVAMP,Marco and his dad went strawberry picking. Together they collected strawberries that weighed 36 pounds. On the way back Marco ' dad lost 8 pounds of strawberries. Marco's strawberries now weighed 12 pounds. How much did his dad's strawberries weigh now?,#### 16,SCoT,"**ANALYZE** what the question is asking: We need to find out how much his dad's strawberries weighed after Marco's dad lost 8 pounds of strawberries.
+
+**PLAN** the reasoning steps needed:
+
+1. Let's denote the initial weight of Marco's strawberries as M and the initial weight of his dad's strawberries as D.
+2. We know that together they collected 36 pounds of strawberries, so M + D = 36.
+3. After Marco's dad lost 8 pounds of strawberries, the new weight of Marco's strawberries is 12 pounds, so M - 8 = 12.
+4. We need to find the new weight of his dad's strawberries, which is D - 8.
+
+**SOLVE** step by step:
+
+1. From the first equation, we can express M as M = 36 - D.
+2. Substitute this expression for M into the second equation: (36 - D) - 8 = 12.
+3. Simplify the equation: 36 - D - 8 = 12.
+4. Combine like terms: 28 - D = 12.
+5. Subtract 28 from both sides: -D = -16.
+6. Multiply both sides by -1: D = 16.
+
+**STATE** the final answer clearly: Marco's dad's strawberries now weigh 16 pounds.",140.4791,4.13333333333333,9138.591845878136,56.341577060931705,2.3082437275985663,3120.765625,0.010582010582010583,0.0,0.010582010582010583,4.875281204592571e-232,0.0,0.010526315789473684,0.5,0.020618556701030927,1,0.0030090270812437314,0.125,0.7447183728218079,0.09576307982206345,,,,,,,,,,,
+16,SVAMP,Marco and his dad went strawberry picking. Together they collected strawberries that weighed 36 pounds. On the way back Marco ' dad lost 8 pounds of strawberries. Marco's strawberries now weighed 12 pounds. How much did his dad's strawberries weigh now?,#### 16,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.015
+   - Coherence: 0.808
+   - Relevance: 0.631
+   - Specificity: 0.605
+   - Engagement: 0.034
+   - Concise: 0.372
+   - Length: 0.021
+   - Zipf: 0.304
+   - Hapax: 0.473
+   - Entropy: 2.633
+   - Perplexity: 6.505
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the target Readability of 99.015, the response should be written in simple, concise language with short sentences.
+   - To achieve the target Coherence of 0.808, the response should have a smooth logical flow between ideas.
+   - To achieve the target Relevance of 0.631, the response should focus on the topic of Marco and his dad's strawberry picking.
+   - To achieve the target Specificity of 0.605, the response should use diverse vocabulary and avoid repetition.
+   - To achieve the target Engagement of 0.034, the response should be conversational and direct.
+   - To achieve the target Concise of 0.372, the response should be compact with shorter sentences",151.9231,4.075415282392025,9107.744224979237,56.149169435215974,2.5415282392026577,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0028011204481792618,0.1276595744680851,0.7488937377929688,0.1296042948961258,99.01537322998047,0.8083612322807312,0.6308507919311523,0.6049551963806152,0.034299787133932114,0.3715641498565674,0.0209953635931015,0.30391043424606323,0.4725290536880493,2.633051633834839,6.504947185516357
+17,SVAMP,"In a school there are 697 girls and the rest are boys. If there are 228 more girls than boys, how many boys are there in that school?",#### 469,SCoT,"**ANALYZE** what the question is asking: We need to find the number of boys in the school.
+
+**PLAN** the reasoning steps needed:
+
+1. Let's represent the number of boys as B.
+2. Since there are 697 girls, the total number of students is 697 + B.
+3. We know that there are 228 more girls than boys, so we can set up the equation: 697 + B = B + 228.
+
+**SOLVE** step by step:
+
+1. Subtract B from both sides of the equation: 697 = B + 228.
+2. Subtract 228 from both sides: 469 = B.
+
+**STATE** the final answer clearly: There are 469 boys in the school.",78.2114,4.075483870967745,9115.933114919355,56.18645161290321,2.832258064516129,3120.765625,0.01904761904761905,0.0,0.01904761904761905,5.625487347946324e-232,0.0,0.016129032258064516,0.5,0.03125,1,0.007312614259597838,0.1739130434782609,0.7650570869445801,0.1741696149110794,,,,,,,,,,,
+17,SVAMP,"In a school there are 697 girls and the rest are boys. If there are 228 more girls than boys, how many boys are there in that school?",#### 469,MGCoT,"I will follow the chain of thought process to answer the question while matching the predicted targets exactly.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 100.000 (Flesch-Kincaid)
+- **Coherence**: 0.000 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.000 (more interactive, conversational tone)
+- **Concise**: 1.000 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.000 (a more natural word-frequency distribution)
+- **Hapax**: 0.000 (more unique, non-repetitive words)
+- **Entropy**: 0.000 (more varied, less predictable word choice)
+- **Perplexity**: 1.000 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. Start with a clear and concise statement that sets the context.
+2. Use simple and direct language to convey the information.
+3. Avoid using complex sentences or overly long phrases.
+4. Use basic arithmetic operations to solve the problem.
+5. Provide a clear and concise final answer.
+
+**WRITE** following the specific guidance for",151.9058,3.84817275747508,9141.424976640365,56.35182724252479,2.478405315614618,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0016597510373443924,0.0888888888888889,0.7486359477043152,0.08801258355379105,100.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0
+18,SVAMP,In a school there are 732 girls and 761 boys. 682 more girls and 8 more boys joined the school. How many girls are there in the school now?,#### 1414,SCoT,"**ANALYZE** what the question is asking: We need to find the current number of girls in the school.
+
+**PLAN** the reasoning steps needed:
+
+1. Identify the initial number of girls and boys in the school.
+2. Calculate the total number of girls after more girls join.
+3. Calculate the total number of boys after more boys join.
+4. Find the difference between the total number of girls and boys to determine the current number of girls.
+
+**SOLVE** step by step:
+
+1. Initial number of girls: 732
+2. Initial number of boys: 761
+3. More girls join: 682
+4. More boys join: 8
+5. Total number of girls after more girls join: 732 + 682 = 1414
+6. Total number of boys after more boys join: 761 + 8 = 769
+7. Difference between the total number of girls and boys: 1414 - 769 = 645
+
+Therefore, there are 645 girls in the school now.",108.7714,4.156944444444443,9181.997504340277,56.59537037037057,2.439814814814815,3120.765625,0.013422818791946308,0.0,0.013422818791946308,5.1716383031778185e-232,0.0,0.016666666666666666,0.5,0.03225806451612903,1,0.006119951040391647,0.1276595744680851,0.7539299726486206,0.24175722897052765,,,,,,,,,,,
+18,SVAMP,In a school there are 732 girls and 761 boys. 682 more girls and 8 more boys joined the school. How many girls are there in the school now?,#### 1414,MGCoT,"I will follow the chain of thought process to answer the question while matching the predicted targets exactly.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 100.000 (Flesch-Kincaid)
+- **Coherence**: 0.000 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.000 (more interactive, conversational tone)
+- **Concise**: 1.000 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.000 (a more natural word-frequency distribution)
+- **Hapax**: 0.000 (more unique, non-repetitive words)
+- **Entropy**: 0.000 (more varied, less predictable word choice)
+- **Perplexity**: 1.000 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. Start with a clear and concise statement about the initial number of girls and boys in the school.
+2. Use simple and direct language to express the change in the number of girls and boys.
+3. Provide a clear and concise calculation to determine the new number of girls in the school.
+4. Use proper grammar, spelling",151.5222,4.116279069767435,9147.479469476744,56.37774086378745,2.2823920265780733,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003364171572750263,0.13953488372093026,0.7552397847175598,0.06939566880464554,100.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,1.0
+19,SVAMP,Danny collects bottle caps and wrappers. He found 22 bottle caps and 30 wrappers at the park. Now he has 17 bottle caps and 57 wrappers in his collection. How many wrappers did danny have at first?,#### 27,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. Analyze what the question is asking: We need to find out how many wrappers Danny had at first.
+2. Plan the reasoning steps needed: To solve this problem, we need to subtract the number of wrappers Danny has now from the number of wrappers he has now.
+3. Solve step by step:
+   - Let's denote the initial number of wrappers as x.
+   - Danny found 30 wrappers at the park, so the number of wrappers he has now is x + 30.
+   - Danny has 17 wrappers now, so we can set up the equation: x + 30 = 17.
+   - To solve for x, we need to isolate x on one side of the equation.
+4. State the final answer clearly: To find the initial number of wrappers, we need to subtract 30 from 17.
+
+**SOLUTION**:
+
+x + 30 = 17
+x = 17 - 30
+x = -13
+
+Since the number of wrappers cannot be negative, we need to re-examine the problem.
+
+**RE-ANALYSIS**:
+
+Let's re-evaluate the problem. We know that Danny has 17 wrappers now and 30 wrappers at the park. To find the initial number of wrappers, we need to subtract the number of wrappers he has now from the number of wrappers he has at the park.
+
+x + 30 = 17
+x = 17 -",151.5348,4.442192691029894,9182.80026214701,56.60299003322254,2.3255813953488373,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.00267618198037467,0.13333333333333333,0.743089497089386,0.18312416970729828,,,,,,,,,,,
+19,SVAMP,Danny collects bottle caps and wrappers. He found 22 bottle caps and 30 wrappers at the park. Now he has 17 bottle caps and 57 wrappers in his collection. How many wrappers did danny have at first?,#### 27,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.505 (target: 100)
+   - Coherence: 0.119 (target: 1.0)
+   - Relevance: 0.060 (target: 1.0)
+   - Specificity: 0.031 (target: 1.0)
+   - Engagement: 0.004 (target: 1.0)
+   - Concise: 0.851 (target: 1.0)
+   - Length: 0.005 (target: 1.0)
+   - Zipf: 0.000 (target: 1.0)
+   - Hapax: 0.000 (target: 1.0)
+   - Entropy: 0.404 (target: 1.0)
+   - Perplexity: 1.764 (target: 1.0)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To match the readability target, we need to use simple, short sentences.
+   - To match the coherence target, we need to use connected sentences that flow logically.
+   - To match the relevance target, we need to use relevant vocabulary.
+   - To match the specificity target, we need to use diverse, precise vocabulary.
+   - To match the engagement target, we",151.9072,3.9026578073089633,9175.217997300664,56.545847176079526,2.4152823920265782,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002200220022002153,0.1276595744680851,0.7340750694274902,0.10853657871484756,98.50511932373047,0.11901923269033432,0.06009165197610855,0.03052487224340439,0.004464045632630587,0.8510062098503113,0.004580402746796608,0.0,0.0,0.4039219319820404,1.7638318538665771
+20,SVAMP,Paul got a box of 457 erasers and 617 crayons for his birthday. At the end of the school year he only had 523 crayons left while not having lost a single eraser. How many more crayons than erasers did he have left?,#### 66,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. Analyze what the question is asking: We need to find out how many more crayons than erasers Paul had left after the school year.
+2. Plan the reasoning steps needed: We will need to subtract the number of erasers from the number of crayons to find the difference.
+3. Solve step by step:
+   - First, we need to find the total number of crayons and erasers Paul had initially.
+   - Then, we need to find the number of crayons and erasers Paul had left.
+   - Finally, we need to subtract the number of erasers from the number of crayons to find the difference.
+
+**SOLVE**:
+
+Step 1: Find the total number of crayons and erasers Paul had initially.
+   - Total crayons = 617
+   - Total erasers = 457
+
+Step 2: Find the number of crayons and erasers Paul had left.
+   - Crayons left = 523
+   - Erasers left = 457
+
+Step 3: Subtract the number of erasers from the number of crayons to find the difference.
+   - Difference = Crayons left - Erasers left
+   - Difference = 523 - 457
+   - Difference = 66
+
+Therefore, Paul had 66 more crayons than erasers left after the school year.",145.1676,3.7454861111111075,9234.496419270834,56.94131944444434,2.4027777777777777,3120.765625,0.010928961748633882,0.0,0.010928961748633882,4.838483999430961e-232,0.0,0.016129032258064516,0.5,0.03125,1,0.0027247956403270157,0.09523809523809523,0.7480483055114746,0.11061787605285645,,,,,,,,,,,
+20,SVAMP,Paul got a box of 457 erasers and 617 crayons for his birthday. At the end of the school year he only had 523 crayons left while not having lost a single eraser. How many more crayons than erasers did he have left?,#### 66,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.870 (excellent, easy to read)
+   - Coherence: 0.044 (good, logical flow)
+   - Relevance: 0.000 (tight focus on the topic)
+   - Specificity: 0.000 (diverse vocabulary)
+   - Engagement: 0.003 (conversational tone)
+   - Concise: 0.923 (compact phrasing)
+   - Length: 0.006 (short average sentences)
+   - Zipf: 0.000 (natural word-frequency distribution)
+   - Hapax: 0.000 (unique words)
+   - Entropy: 0.168 (varied word choice)
+   - Perplexity: 1.439 (complex sentence structure)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - Start with a clear and concise statement about the initial number of erasers and crayons.
+   - Use simple and direct language to express the relationship between the two quantities.
+   - Avoid using complex sentences or overly long phrases.
+   - Use basic arithmetic operations to calculate the difference between the two quantities.
+   - Use a clear and direct comparison to express the difference.
+
+3. **WRITE** the following response:
+   - Initial number of erasers: 457
+   - Initial number",151.8942,4.8491694352159405,9240.5911285299,56.96279069767438,2.4152823920265782,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0025974025974025983,0.08695652173913045,0.7435746192932129,0.047986455261707306,98.87023162841797,0.043744903057813644,0.0,0.0,0.0031729356851428747,0.9234086275100708,0.0059135230258107185,0.0,0.0,0.16784769296646118,1.4390437602996826
+21,SVAMP,Baker made 121 cakes. He sold 105 of them and bought 170 new cakes. How many cakes does baker still have?,#### 186,SCoT,"**ANALYZE** what the question is asking: We need to find out how many cakes Baker still has after selling 105 cakes and buying 170 new cakes.
+
+**PLAN** the reasoning steps needed:
+
+1. Start with the initial number of cakes Baker made: 121
+2. Subtract the number of cakes sold: 121 - 105 = 16
+3. Add the number of new cakes bought: 16 + 170 = 186
+
+**SOLVE** step by step:
+
+1. Start with the initial number of cakes Baker made: 121
+2. Subtract the number of cakes sold: 121 - 105 = 16
+3. Add the number of new cakes bought: 16 + 170 = 186
+
+**STATE** the final answer clearly: Baker still has 186 cakes.",86.2775,4.694736842105267,9254.11287006579,57.05321637426896,2.736842105263158,3120.765625,0.018181818181818184,0.0,0.018181818181818184,5.539388921633538e-232,0.0,0.017543859649122806,0.5,0.033898305084745756,1,0.00666666666666671,0.1777777777777778,0.743245005607605,0.25453948974609375,,,,,,,,,,,
+21,SVAMP,Baker made 121 cakes. He sold 105 of them and bought 170 new cakes. How many cakes does baker still have?,#### 186,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.380
+   - Coherence: 0.063
+   - Relevance: 0.077
+   - Specificity: 0.103
+   - Engagement: 0.003
+   - Concise: 0.896
+   - Length: 0.000
+   - Zipf: 0.118
+   - Hapax: 0.124
+   - Entropy: 0.170
+   - Perplexity: 1.273
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To match the readability target, the response should be concise and easy to read.
+   - To match the coherence target, the response should have a smooth logical flow between ideas.
+   - To match the relevance target, the response should focus on the topic (Baker's cakes).
+   - To match the specificity target, the response should use diverse and precise vocabulary.
+   - To match the engagement target, the response should be conversational and interactive.
+   - To match the concise target, the response should be compact and have shorter sentences on average.
+   - To match the length target, the response should be a reasonable length.
+   - To match the Zipf target, the response should have a natural word-frequency distribution.
+   - To match",151.9119,3.811627906976741,9166.927156872924,56.51196013289036,2.46843853820598,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0034965034965035446,0.163265306122449,0.7531881928443909,0.077308289706707,98.38026428222656,0.06348159164190292,0.0772877037525177,0.10334767401218414,0.0034447547513991594,0.896131694316864,0.0,0.11795558780431747,0.12373767048120499,0.17038221657276154,1.272849678993225
+22,SVAMP,An industrial machine worked for 5 minutes. It can make 4 shirts a minute. How many shirts did machine make?,#### 20,SCoT,"**ANALYZE**:
+
+* The question asks how many shirts the machine made in 5 minutes.
+* We know the machine can make 4 shirts per minute.
+
+**PLAN** the reasoning steps needed:
+
+1. Multiply the number of minutes the machine worked by the number of shirts it can make per minute.
+2. Calculate the total number of shirts made.
+
+**SOLVE** step by step:
+
+1. Multiply 5 minutes by 4 shirts/minute: 5 x 4 = 20
+2. The machine made 20 shirts in 5 minutes.
+
+**STATE** the final answer clearly:
+
+The machine made 20 shirts in 5 minutes.",69.0277,4.294890510948905,9229.901203239051,56.91386861313885,2.759124087591241,3120.765625,0.021276595744680854,0.0,0.021276595744680854,5.835491250550373e-232,0.0,0.021739130434782608,0.5,0.041666666666666664,1,0.005769230769230749,0.14634146341463414,0.7519137263298035,0.19678840041160583,,,,,,,,,,,
+22,SVAMP,An industrial machine worked for 5 minutes. It can make 4 shirts a minute. How many shirts did machine make?,#### 20,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.054 (easier to read, short words, short sentences)
+   - Coherence: 0.032 (smooth logical flow between ideas)
+   - Relevance: 0.071 (tighter focus on the topic)
+   - Specificity: 0.085 (diverse, precise vocabulary)
+   - Engagement: 0.002 (conversational tone)
+   - Concise: 0.945 (compact phrasing, shorter sentences on average)
+   - Length: 0.000 (a longer response)
+   - Zipf: 0.102 (natural word-frequency distribution)
+   - Hapax: 0.106 (unique, non-repetitive words)
+   - Entropy: 0.087 (more varied, less predictable word choice)
+   - Perplexity: 1.105 (more complex sentence structure)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - Start with a clear and concise question that addresses the given information.
+   - Use simple and short sentences to maintain readability.
+   - Focus on the topic (machine making shirts) and avoid filler words.
+   - Use precise vocabulary to maintain specificity.
+   - Address the question directly and avoid indirect answers.
+   - Use a conversational tone to engage the reader.
+   - Keep",151.8735,3.900332225913617,9193.568612437708,56.670764119601685,2.435215946843854,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0025706940874036244,0.125,0.7438479661941528,0.1412833034992218,99.054443359375,0.032484475523233414,0.07084760814905167,0.08538686484098434,0.001520470599643886,0.945361852645874,0.0,0.10214473307132721,0.10643032938241959,0.08723430335521698,1.1049617528915405
+23,SVAMP,"The bananas in Philip's collection are organized into groups of size 18. If there are a total of 180 bananas in Philip's banana collection, how many groups are there?",#### 10,SCoT,"**ANALYZE**:
+
+* The question asks for the number of groups of bananas with a size of 18.
+* We know that the total number of bananas is 180.
+
+**PLAN**:
+
+1. To find the number of groups, we need to divide the total number of bananas by the size of each group (18).
+2. We can use division to find the number of groups.
+
+**SOLVE**:
+
+1. Divide 180 by 18: 180 ÷ 18 = 10
+2. The result is 10, which means there are 10 groups of bananas with a size of 18.
+
+**STATE**:
+
+There are 10 groups of bananas with a size of 18 in Philip's collection.",76.5791,4.434210526315788,9146.630216899672,56.383552631579036,2.6578947368421053,3120.765625,0.01904761904761905,0.0,0.01904761904761905,5.6645104083792066e-232,0.0,0.019230769230769232,0.5,0.037037037037037035,1,0.005639097744360888,0.13953488372093026,0.7553167939186096,0.14414936304092407,,,,,,,,,,,
+23,SVAMP,"The bananas in Philip's collection are organized into groups of size 18. If there are a total of 180 bananas in Philip's banana collection, how many groups are there?",#### 10,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 97.680 (target: 100)
+   - Coherence: 0.050 (target: 1.0)
+   - Relevance: 0.065 (target: 1.0)
+   - Specificity: 0.063 (target: 1.0)
+   - Engagement: 0.003 (target: 1.0)
+   - Concise: 0.877 (target: 1.0)
+   - Length: 0.000 (target: 1.0)
+   - Zipf: 0.103 (target: 1.0)
+   - Hapax: 0.089 (target: 1.0)
+   - Entropy: 0.158 (target: 1.0)
+   - Perplexity: 1.208 (target: 1.0)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the target Readability of 100, we need to use a mix of short and long sentences.
+   - To achieve the target Coherence of 1.0, we need to use connected sentences that flow smoothly.
+   - To achieve the target Relevance of 1.0, we need to use relevant vocabulary and avoid filler words.
+   - To",151.8774,4.099003322259134,9155.08883149917,56.43654485049834,2.425249169435216,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003512880562060894,0.13043478260869565,0.7396924495697021,0.10832783579826355,97.67993927001953,0.049636319279670715,0.06528517603874207,0.06253164261579514,0.002921927021816373,0.8768889307975769,5.5042946769390255e-05,0.10302456468343735,0.0887695923447609,0.15778742730617523,1.2084087133407593
+24,SVAMP,"There were some birds sitting on the fence. 4 more birds came to join them. If there are a total of 5 birds on the fence now, how many birds had been sitting on the fence at the start?",#### 1,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks for the number of birds that had been sitting on the fence at the start, given that 4 more birds joined them.
+2. **PLAN**: To solve this problem, we need to identify the initial number of birds and then subtract the number of birds that joined them.
+3. **SOLVE**:
+   - Let's assume the initial number of birds is x.
+   - After 4 more birds joined, the total number of birds became x + 4.
+   - We are given that the total number of birds now is 5.
+   - So, we can set up the equation: x + 4 = 5
+4. **STATE**: To find the initial number of birds, we need to solve the equation x + 4 = 5 for x.
+
+**Solving the equation**:
+
+x + 4 = 5
+Subtract 4 from both sides:
+x = 5 - 4
+x = 1
+
+Therefore, there were 1 bird sitting on the fence at the start.",116.3607,3.95800865800866,9242.178588338744,56.95930735930728,2.3896103896103895,3120.765625,0.013157894736842105,0.0,0.013157894736842105,5.09093276637784e-232,0.0,0.013888888888888888,0.5,0.02702702702702703,1,0.00249066002490661,0.0909090909090909,0.7629165053367615,0.11810537427663803,,,,,,,,,,,
+24,SVAMP,"There were some birds sitting on the fence. 4 more birds came to join them. If there are a total of 5 birds on the fence now, how many birds had been sitting on the fence at the start?",#### 1,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 100.000 (exact target)
+   - Coherence: 0.000 (exact target)
+   - Relevance: 0.000 (exact target)
+   - Specificity: 0.000 (exact target)
+   - Engagement: 0.000 (exact target)
+   - Concise: 1.000 (exact target)
+   - Length: 0.001 (exact target)
+   - Zipf: 0.000 (exact target)
+   - Hapax: 0.000 (exact target)
+   - Entropy: 0.000 (exact target)
+   - Perplexity: 1.000 (exact target)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the exact target for Readability, the sentence should be short and concise.
+   - To achieve the exact target for Coherence, the sentence should have a smooth logical flow between ideas.
+   - To achieve the exact target for Relevance, the sentence should have a tight focus on the topic.
+   - To achieve the exact target for Specificity, the vocabulary should be diverse and precise.
+   - To achieve the exact target for Engagement, the tone should be conversational and direct.
+   - To achieve the exact target for Concise, the phrasing should be compact",151.9033,4.150830564784048,9272.667631333057,57.17043189368773,2.4584717607973423,3120.765625,0.011904761904761906,0.0,0.011904761904761906,0.0,0.0,0.014084507042253521,0.5,0.027397260273972605,1,0.0017730496453900457,0.10256410256410256,0.7449374794960022,0.06070129945874214,100.0,0.0,0.0,0.0,0.0,1.0,0.0005036587244831026,0.0,0.0,0.0,1.0
+25,SVAMP,"Jerry had 3 action figures on a shelf in his room. Later he added 4 more action figures to the shelf and removed some of the old ones. If there are 6 action figures on his shelf now, how many action figures did he remove from the shelf?",#### 1,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks how many action figures Jerry removed from the shelf. We need to find out how many action figures he had initially and how many he has now.
+2. **PLAN**: To solve this problem, we need to identify the initial number of action figures Jerry had and the number of action figures he has now.
+3. **SOLVE**:
+Step 1: Jerry had 3 action figures initially.
+Step 2: Jerry added 4 more action figures to the shelf.
+Step 3: Jerry removed some action figures from the shelf.
+Step 4: The total number of action figures on the shelf now is 6.
+
+To find out how many action figures Jerry removed, we need to subtract the number of action figures he has now (6) from the initial number of action figures (3).
+
+**SOLUTION**:
+
+3 (initial action figures) - 6 (action figures now) = -3
+
+Since Jerry cannot remove a negative number of action figures, we need to re-examine the problem.
+
+**RE-ANALYZE**: Let's re-evaluate the problem.
+
+Step 1: Jerry had 3 action figures initially.
+Step 2: Jerry added 4 more action figures to the shelf.
+Step 3: Jerry removed some action figures from the shelf.
+
+To find out how many action figures Jerry removed, we need to subtract the number of action figures he",151.5523,5.75813953488372,9535.080435008305,58.78272425249179,2.2857142857142856,3120.765625,0.00900900900900901,0.0,0.00900900900900901,0.0,0.0,0.014492753623188406,0.5,0.028169014084507046,1,0.001612903225806428,0.08888888888888889,0.7502356767654419,0.15407872200012207,,,,,,,,,,,
+25,SVAMP,"Jerry had 3 action figures on a shelf in his room. Later he added 4 more action figures to the shelf and removed some of the old ones. If there are 6 action figures on his shelf now, how many action figures did he remove from the shelf?",#### 1,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 100.000
+   - Coherence: 0.040
+   - Relevance: 0.000
+   - Specificity: 0.000
+   - Engagement: 0.008
+   - Concise: 1.000
+   - Length: 0.001
+   - Zipf: 0.022
+   - Hapax: 0.052
+   - Entropy: 0.082
+   - Perplexity: 1.349
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the target of 100.000 readability, I will use simple, short sentences to convey the information.
+   - To achieve the target of 0.040 coherence, I will use connected sentences that flow smoothly.
+   - To achieve the target of 0.000 relevance, I will use precise vocabulary and avoid filler words.
+   - To achieve the target of 0.000 specificity, I will use diverse vocabulary and avoid repetition.
+   - To achieve the target of 0.008 engagement, I will use a conversational tone and direct address.
+   - To achieve the target of 1.000 concise, I will use short sentences and simple phrasing.
+   - To achieve the target of 0.001 length",151.9218,4.244850498338865,9283.061851121263,57.245847176079906,2.441860465116279,3120.765625,0.012048192771084336,0.0,0.012048192771084336,0.0,0.0,0.013157894736842105,0.5,0.025641025641025637,1,0.0019193857965451588,0.09523809523809523,0.7577046155929565,0.07501004636287689,100.0,0.03992949798703194,0.0,0.0,0.007639593910425901,1.0,0.0006982356426306069,0.021609582006931305,0.05236633121967316,0.08161552995443344,1.3492252826690674
+26,SVAMP,Danny collects bottle caps and wrappers. He found 65 wrappers and 5 bottle caps at the park. Now he has 31 bottle caps and 9 wrappers in his collection. How many more wrappers than bottle caps did danny find at the park?,#### 60,SCoT,"**ANALYZE** what the question is asking: We need to find out how many more wrappers than bottle caps Danny found at the park.
+
+**PLAN** the reasoning steps needed:
+
+1. Find the total number of bottle caps Danny found at the park.
+2. Find the total number of wrappers Danny found at the park.
+3. Subtract the total number of bottle caps from the total number of wrappers to find the difference.
+
+**SOLVE** step by step:
+
+1. Find the total number of bottle caps Danny found at the park:
+   - He found 5 bottle caps at the park.
+   - He now has 31 bottle caps in his collection.
+   - So, the total number of bottle caps he found at the park is 5 + 31 = 36.
+
+2. Find the total number of wrappers Danny found at the park:
+   - He found 65 wrappers at the park.
+   - He now has 9 wrappers in his collection.
+   - So, the total number of wrappers he found at the park is 65 + 9 = 74.
+
+3. Subtract the total number of bottle caps from the total number of wrappers to find the difference:
+   - 74 (total wrappers) - 36 (total bottle caps) = 38
+
+**STATE** the final answer clearly: Danny found 38 more wrappers than bottle caps at the park.",142.501,4.054416961130738,9227.996963339223,56.88869257950536,2.2897526501766783,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.001769911504424737,0.08333333333333334,0.7377273440361023,0.16702140867710114,,,,,,,,,,,
+26,SVAMP,Danny collects bottle caps and wrappers. He found 65 wrappers and 5 bottle caps at the park. Now he has 31 bottle caps and 9 wrappers in his collection. How many more wrappers than bottle caps did danny find at the park?,#### 60,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 96.864 (target: 100)
+   - Coherence: 0.283 (target: 1.0)
+   - Relevance: 0.282 (target: 1.0)
+   - Specificity: 0.251 (target: 1.0)
+   - Engagement: 0.013 (target: 1.0)
+   - Concise: 0.682 (target: 1.0)
+   - Length: 0.010 (target: 1.0)
+   - Zipf: 0.181 (target: 1.0)
+   - Hapax: 0.225 (target: 1.0)
+   - Entropy: 0.997 (target: 1.0)
+   - Perplexity: 2.972 (target: 1.0)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To match the readability target, we need to use simple, short sentences.
+   - To match the coherence target, we need to use connected sentences that flow logically.
+   - To match the relevance target, we need to use relevant vocabulary and avoid filler words.
+   - To match the specificity target, we need to use diverse, precise vocabulary.
+   - To match the",151.9149,3.9049833887043155,9207.599369289866,56.747508305647976,2.451827242524917,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003296703296703285,0.1276595744680851,0.7382646203041077,0.0933447778224945,96.8636703491211,0.2827146649360657,0.28248530626296997,0.25093770027160645,0.013173449784517288,0.6819053292274475,0.009572046808898449,0.1814035177230835,0.22508887946605682,0.9965077638626099,2.9722092151641846
+27,SVAMP,"Because of the decision Sofia asked the students to suggest specific types of food from a total of 66 choices. If 450 students suggested adding mashed potatoes 38 suggested adding bacon to the menu and the rest did not participate, how many students participated in the suggestion of new food items?",#### 488,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks us to find the number of students who participated in the suggestion of new food items. We are given the total number of choices (66), the number of students who suggested mashed potatoes (38), and the number of students who suggested bacon (450).
+2. **PLAN**: To find the number of students who participated in the suggestion of new food items, we need to subtract the number of students who suggested mashed potatoes and bacon from the total number of choices.
+3. **SOLVE**:
+   - First, we need to find the number of students who suggested both mashed potatoes and bacon. This can be done by adding the number of students who suggested mashed potatoes and bacon and subtracting the total number of choices.
+   - Then, we can subtract the number of students who suggested both from the total number of choices to find the number of students who suggested new food items.
+4. **STATE**: The number of students who participated in the suggestion of new food items is 66 - 38 - 450 = - 392.
+
+However, since the number of students who suggested new food items cannot be negative, we need to re-examine our calculation.
+
+**RE-EXAMINATION**:
+
+- We know that 450 students suggested bacon, and 38 suggested mashed potatoes. To find the number of students who suggested both, we can use the principle of inclusion-exclusion.
+- Let",151.7334,4.03521594684385,9257.840648359635,57.051827242524816,2.2857142857142856,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0028860028860029363,0.125,0.7547686696052551,0.13996821641921997,,,,,,,,,,,
+27,SVAMP,"Because of the decision Sofia asked the students to suggest specific types of food from a total of 66 choices. If 450 students suggested adding mashed potatoes 38 suggested adding bacon to the menu and the rest did not participate, how many students participated in the suggestion of new food items?",#### 488,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 97.390, which is close to the target of 100.
+   - Coherence: 0.098, which is lower than the target of 1.0.
+   - Relevance: 0.348, which is lower than the target of 1.0.
+   - Specificity: 0.402, which is lower than the target of 1.0.
+   - Engagement: 0.001, which is lower than the target of 1.0.
+   - Concise: 0.824, which is lower than the target of 1.0.
+   - Length: 0.000, which is lower than the target of 1.0.
+   - Zipf: 0.562, which is lower than the target of 1.0.
+   - Hapax: 0.608, which is lower than the target of 1.0.
+   - Entropy: 0.346, which is lower than the target of 1.0.
+   - Perplexity: 1.820, which is higher than the target of 1.0.
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - To achieve a high readability, we need to use simple vocabulary and short sentences.
+   - To",151.9353,4.163787375415279,9226.065536752492,56.8564784053153,2.362126245847176,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0043057050592034685,0.13333333333333333,0.7578665614128113,0.0481099896132946,97.38961029052734,0.09827566146850586,0.34766802191734314,0.40239304304122925,0.0014754619915038347,0.824016273021698,0.0,0.5619027018547058,0.6075363159179688,0.34593790769577026,1.8203474283218384
+28,SVAMP,"Matthew gave equal numbers of crackers and cakes to his 28 friends. If he had 13 crackers and 15 cakes initially, how many crackers and cakes did each person eat?",#### 1,SCoT,"**ANALYZE**:
+
+The question asks us to find out how many crackers and cakes Matthew gave to each of his 28 friends, given that he initially had 13 crackers and 15 cakes.
+
+**PLAN**:
+
+To solve this problem, we need to divide the total number of crackers and cakes by the number of friends. This will give us the number of crackers and cakes each friend received.
+
+**SOLVE**:
+
+Step 1: Divide the total number of crackers by the number of friends.
+13 crackers ÷ 28 friends = 0.464 (approximately) crackers per friend
+
+Step 2: Divide the total number of cakes by the number of friends.
+15 cakes ÷ 28 friends = 0.536 (approximately) cakes per friend
+
+**STATE**:
+
+Therefore, each of Matthew's 28 friends received approximately 0.464 crackers and 0.536 cakes.",92.3061,4.085245901639346,9274.31019467213,57.17759562841527,2.808743169398907,3120.765625,0.015384615384615384,0.0,0.015384615384615384,0.0,0.0,0.01694915254237288,0.5,0.03278688524590164,1,0.002666666666666706,0.08510638297872342,0.7596350312232971,0.10167969763278961,,,,,,,,,,,
+28,SVAMP,"Matthew gave equal numbers of crackers and cakes to his 28 friends. If he had 13 crackers and 15 cakes initially, how many crackers and cakes did each person eat?",#### 1,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.759 (Flesch-Kincaid)
+- **Coherence**: 0.015 (smooth logical flow between ideas)
+- **Relevance**: 0.215 (tighter focus on the topic)
+- **Specificity**: 0.232 (diverse, precise vocabulary)
+- **Engagement**: 0.004 (conversational tone)
+- **Concise**: 0.940 (compact phrasing)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.284 (natural word-frequency distribution)
+- **Hapax**: 0.281 (unique, non-repetitive words)
+- **Entropy**: 0.011 (more varied, less predictable word choice)
+- **Perplexity**: 1.000 (simpler, more predictable sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+To solve this problem, I will:
+
+1. Calculate the total number of crackers and cakes Matthew initially had.
+2. Determine the number of crackers and cakes each person received.
+3. Calculate the number of crackers and cakes each person ate.
+
+**WRITE** following the specific guidance for each metric:
+
+1. **Readability**: 98.759 (Flesch",151.8965,3.9255813953488348,9292.02294435216,57.28239202657806,2.511627906976744,3120.765625,0.012195121951219513,0.0,0.012195121951219513,0.0,0.0,0.008403361344537815,0.5,0.01652892561983471,1,0.0017406440382942145,0.08695652173913045,0.7429466247558594,0.08365784585475922,98.758544921875,0.015111381188035011,0.21508915722370148,0.23180177807807922,0.004220196511596441,0.9398491382598877,0.0,0.28420257568359375,0.2814745306968689,0.01050487905740738,1.0
+29,SVAMP,"A grocery store had 49 bottles of regular soda, 40 bottles of diet soda and 6 bottles of lite soda. How many bottles of regular soda and diet soda did they have altogether?",#### 89,SCoT,"**ANALYZE** what the question is asking: We need to find the total number of bottles of regular soda and diet soda.
+
+**PLAN** the reasoning steps needed:
+
+1. We need to add the number of bottles of regular soda and diet soda.
+2. We need to add the number of bottles of lite soda to the total.
+
+**SOLVE** step by step:
+
+1. Add the number of bottles of regular soda and diet soda: 49 + 40 = 89
+2. Add the number of bottles of lite soda to the total: 89 + 6 = 95
+
+**STATE** the final answer clearly: The grocery store had 95 bottles of regular soda and diet soda altogether.",74.6094,3.854054054054056,9338.02903293919,57.56148648648643,2.945945945945946,3120.765625,0.018348623853211007,0.0,0.018348623853211007,5.60020361889364e-232,0.0,0.02127659574468085,0.5,0.04081632653061224,1,0.005253940455341555,0.13953488372093026,0.7425057291984558,0.18903748691082,,,,,,,,,,,
+29,SVAMP,"A grocery store had 49 bottles of regular soda, 40 bottles of diet soda and 6 bottles of lite soda. How many bottles of regular soda and diet soda did they have altogether?",#### 89,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 100.000
+   - Coherence: 0.246
+   - Relevance: 0.210
+   - Specificity: 0.235
+   - Engagement: 0.018
+   - Concise: 0.861
+   - Length: 0.000
+   - Zipf: 0.127
+   - Hapax: 0.170
+   - Entropy: 0.702
+   - Perplexity: 2.553
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the target of 100.000 readability, the response should be concise and have short sentences.
+   - To achieve the target of 0.246 coherence, the response should have a smooth logical flow between ideas.
+   - To achieve the target of 0.210 relevance, the response should focus on the topic of the question.
+   - To achieve the target of 0.235 specificity, the response should use diverse and precise vocabulary.
+   - To achieve the target of 0.018 engagement, the response should be conversational and direct.
+   - To achieve the target of 0.861 concise, the response should be compact and have short sentences.
+   - To achieve the target of 0.000 length,",151.8889,4.105980066445179,9224.050885070597,56.8674418604652,2.475083056478405,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0018850141376060003,0.09090909090909091,0.7470054626464844,0.14623050391674042,100.0,0.24593675136566162,0.21030375361442566,0.2350350022315979,0.018124913796782494,0.8610230684280396,0.0,0.12720084190368652,0.16951382160186768,0.7016758918762207,2.5528268814086914
+30,SVAMP,"Dan has $ 3. He bought 2 candy bar for $ 4, each one costing the same amount of money. How much did each candy bar cost?",#### 2,SCoT,"**ANALYZE** what the question is asking: We need to find the cost of each candy bar.
+
+**PLAN** the reasoning steps needed:
+
+1. We know that Dan has $3.
+2. We know that he bought 2 candy bars for $4.
+3. We need to find the cost of each candy bar.
+
+**SOLVE** step by step:
+
+1. Let's say the cost of each candy bar is x.
+2. Since Dan bought 2 candy bars for $4, we can set up the equation: 2x = 4
+3. To solve for x, we can divide both sides of the equation by 2: x = 4/2
+4. Simplifying the fraction, we get: x = 2
+5. Therefore, each candy bar costs $2.
+
+**STATE** the final answer clearly: Each candy bar costs $2.",93.6853,4.620967741935482,9284.702704973119,57.24569892473135,2.5483870967741935,3120.765625,0.015748031496062992,0.0,0.015748031496062992,5.4269696562331364e-232,0.0,0.014925373134328358,0.5,0.02898550724637681,1,0.00327332242225864,0.09302325581395349,0.7538270354270935,0.09983725100755692,,,,,,,,,,,
+30,SVAMP,"Dan has $ 3. He bought 2 candy bar for $ 4, each one costing the same amount of money. How much did each candy bar cost?",#### 2,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.281 (Flesch-Kincaid)
+- **Coherence**: 0.039 (smooth logical flow between ideas)
+- **Relevance**: 0.104 (tighter focus on the topic)
+- **Specificity**: 0.133 (diverse, precise vocabulary)
+- **Engagement**: 0.002 (more interactive tone)
+- **Concise**: 0.953 (compact phrasing)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.144 (natural word-frequency distribution)
+- **Hapax**: 0.155 (unique, non-repetitive words)
+- **Entropy**: 0.074 (more varied word choice)
+- **Perplexity**: 1.088 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to make the response easy to read.
+2. **Coherence**: I will use short connected sentences to maintain a smooth logical flow between ideas.
+3. **Relevance**: I will focus on the topic (candy bars) and use relevant vocabulary.
+4. **Specificity**: I will use diverse, precise vocabulary to describe the situation",151.899,3.921262458471755,9285.498650332225,57.25813953488386,2.451827242524917,3120.765625,0.012048192771084336,0.0,0.012048192771084336,0.0,0.0,0.00909090909090909,0.5,0.01785714285714286,1,0.0017376194613379914,0.08695652173913045,0.7351259589195251,0.1072913408279419,99.28124237060547,0.03919309750199318,0.10386890172958374,0.13296806812286377,0.0023848116397857666,0.9527454972267151,0.0,0.1442488133907318,0.1551579236984253,0.07378162443637848,1.0880436897277832
+31,SVAMP,Tiffany was collecting cans for recycling. On monday she had 7 bags of cans. The next day she found 12 more bags worth of cans. How many more bags did she find on the next day than she had on monday?,#### 5,SCoT,"**ANALYZE**:
+
+* The question asks how many more bags of cans Tiffany found on the next day than she had on Monday.
+* We know that on Monday, she had 7 bags of cans.
+* On the next day, she found 12 more bags of cans.
+
+**PLAN** the reasoning steps needed:
+
+1. Find the total number of bags of cans Tiffany had on Monday.
+2. Find the difference between the number of bags she found on the next day and the number of bags she had on Monday.
+
+**SOLVE** step by step:
+
+1. Find the total number of bags of cans Tiffany had on Monday:
+7 (bags on Monday) + 12 (bags found on Tuesday) = 19 bags
+
+2. Find the difference between the number of bags she found on the next day and the number of bags she had on Monday:
+12 (bags found on Tuesday) - 7 (bags on Monday) = 5 bags
+
+**STATE** the final answer clearly:
+
+Tiffany found 5 more bags of cans on the next day than she had on Monday.",113.327,4.171999999999997,9313.971111111112,57.423111111110934,2.4266666666666667,3120.765625,0.011764705882352941,0.0,0.011764705882352941,5.001844161143828e-232,0.0,0.01818181818181818,0.5,0.03508771929824561,1,0.002293577981651418,0.0909090909090909,0.7539713978767395,0.17090998589992523,,,,,,,,,,,
+31,SVAMP,Tiffany was collecting cans for recycling. On monday she had 7 bags of cans. The next day she found 12 more bags worth of cans. How many more bags did she find on the next day than she had on monday?,#### 5,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 97.719 (target: 100)
+   - Coherence: 0.061 (target: 1.0)
+   - Relevance: 0.099 (target: 1.0)
+   - Specificity: 0.133 (target: 1.0)
+   - Engagement: 0.000 (target: 1.0)
+   - Concise: 0.874 (target: 1.0)
+   - Length: 0.002 (target: 1.0)
+   - Zipf: 0.202 (target: 1.0)
+   - Hapax: 0.209 (target: 1.0)
+   - Entropy: 0.187 (target: 1.0)
+   - Perplexity: 1.376 (target: 1.0)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - Start with a clear and concise question that addresses the problem.
+   - Provide a brief explanation of the situation and the actions taken.
+   - Calculate the difference in the number of bags found on the next day and the previous day.
+   - Use simple and clear language to express the calculation.
+   - Use a formula or a simple arithmetic operation to calculate the difference.
+
+3",151.9232,4.085382059800662,9318.823660714286,57.443521594684384,2.478405315614618,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0010695187165775666,0.044444444444444446,0.7426728010177612,0.023441988974809647,97.71873474121094,0.06057262048125267,0.09924929589033127,0.13266177475452423,0.0,0.8736962676048279,0.0019751067738980055,0.20177890360355377,0.20908600091934204,0.18704554438591003,1.3762273788452148
+32,SVAMP,There were 15 roses and 62 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. There are now 17 roses and 96 orchids in the vase. How many roses did she cut?,#### 2,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks how many roses Jessica cut from her garden to add to the existing roses in the vase.
+2. **PLAN**: To solve this problem, we need to identify the initial and final number of roses and orchids in the vase.
+3. **SOLVE**:
+   - Let's denote the number of roses Jessica cut as x.
+   - The initial number of roses in the vase is 15.
+   - The initial number of orchids in the vase is 62.
+   - After cutting x roses, the number of roses in the vase becomes 15 + x.
+   - After cutting x orchids, the number of orchids in the vase becomes 62 + x.
+   - We know that after cutting x roses and x orchids, there are 17 roses and 96 orchids in the vase.
+   - Therefore, we can set up the following equations:
+     15 + x = 17 (equation 1)
+     62 + x = 96 (equation 2)
+4. **STATE**: To find the value of x, we need to solve the system of equations.
+
+**Solving the system of equations**:
+
+From equation 1, we can express x as x = 17 - 15 = 2.
+From equation 2, we can express x as x = 96 - 62 = 34.
+
+Since both",151.5318,3.86079734219269,9264.709613787376,57.116279069767494,2.26578073089701,3120.765625,0.010256410256410256,0.0,0.010256410256410256,0.0,0.0,0.0125,0.5,0.02439024390243903,1,0.0018921475875117721,0.08163265306122448,0.7407183647155762,0.05738939717411995,,,,,,,,,,,
+32,SVAMP,There were 15 roses and 62 orchids in the vase. Jessica cut some more roses and orchids from her flower garden. There are now 17 roses and 96 orchids in the vase. How many roses did she cut?,#### 2,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.808 (excellent)
+   - Coherence: 0.000 (perfect)
+   - Relevance: 0.000 (excellent)
+   - Specificity: 0.000 (excellent)
+   - Engagement: 0.000 (excellent)
+   - Concise: 1.000 (excellent)
+   - Length: 0.001 (excellent)
+   - Zipf: 0.000 (excellent)
+   - Hapax: 0.000 (excellent)
+   - Entropy: 0.000 (excellent)
+   - Perplexity: 1.000 (excellent)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the high readability, we need to use simple and concise language.
+   - To maintain coherence, we should use a logical and consistent structure.
+   - To ensure relevance, we should focus on the main question and avoid unnecessary details.
+   - To increase specificity, we can use more precise vocabulary and avoid repetition.
+   - To make the response more engaging, we can use a conversational tone and include a question.
+   - To keep the response concise, we should use short sentences and avoid unnecessary words.
+   - To maintain a length of 100 words, we should use",151.9251,4.143521594684383,9256.67501557309,57.055481727574865,2.504983388704319,3120.765625,0.012578616352201257,0.0,0.012578616352201257,0.0,0.0,0.011764705882352941,0.5,0.02298850574712644,1,0.0018050541516245744,0.09523809523809523,0.7494027018547058,0.08773613721132278,99.80760955810547,0.0,0.0,0.0,0.0,1.0,0.0007097662892192602,0.0,0.0,0.0,1.0
+33,SVAMP,"There are some baskets of peaches. Each basket has 4 red peaches and 3 green peaches. If there are a total of 7 peaches in all baskets, how many baskets of peaches are there?",#### 1,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks for the number of baskets of peaches, given that each basket has 4 red peaches and 3 green peaches, and there are a total of 7 peaches in all baskets.
+2. **PLAN**: To solve this problem, we need to find the total number of peaches in one basket and then divide the total number of peaches by the number of peaches in one basket to find the number of baskets.
+3. **SOLVE**:
+   - Let's start by finding the total number of peaches in one basket. We know that there are 4 red peaches and 3 green peaches, so the total number of peaches in one basket is 4 + 3 = 7.
+   - Now, we need to find the number of baskets. We know that there are a total of 7 peaches in all baskets, and each basket has 7 peaches. To find the number of baskets, we can divide the total number of peaches (7) by the number of peaches in one basket (7).
+   - 7 ÷ 7 = 1
+
+Therefore, there is 1 basket of peaches.
+
+**STATE**: The number of baskets of peaches is 1.",138.6302,4.090909090909089,9337.819289772728,57.561818181818204,2.3527272727272726,3120.765625,0.010471204188481674,0.0,0.010471204188481674,4.869050800549907e-232,0.0,0.015625,0.5,0.030303030303030304,1,0.002012072434607659,0.08888888888888889,0.7504273056983948,0.13624519109725952,,,,,,,,,,,
+33,SVAMP,"There are some baskets of peaches. Each basket has 4 red peaches and 3 green peaches. If there are a total of 7 peaches in all baskets, how many baskets of peaches are there?",#### 1,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 100.000 (exact target)
+   - Coherence: 0.000 (exact target)
+   - Relevance: 0.000 (exact target)
+   - Specificity: 0.000 (exact target)
+   - Engagement: 0.000 (exact target)
+   - Concise: 1.000 (exact target)
+   - Length: 0.000 (exact target)
+   - Zipf: 0.000 (exact target)
+   - Hapax: 0.000 (exact target)
+   - Entropy: 0.000 (exact target)
+   - Perplexity: 1.000 (exact target)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the exact target for Readability, the response should be written in a clear and concise manner, avoiding unnecessary words and phrases.
+   - For Coherence, the response should have a smooth logical flow between ideas, using short sentences and connected paragraphs.
+   - To achieve the exact target for Relevance, the response should focus on the topic of the problem, avoiding filler words and off-topic information.
+   - For Specificity, the response should use diverse and precise vocabulary, avoiding repetition of the same content words.
+   - Engagement should be achieved through a conversational tone,",151.8964,4.737209302325573,9381.564264950166,57.82691029900318,2.4651162790697674,3120.765625,0.011764705882352941,0.0,0.011764705882352941,0.0,0.0,0.011363636363636364,0.5,0.022222222222222223,1,0.0016920473773265332,0.10256410256410256,0.7522733211517334,0.05974677950143814,100.0,0.0,0.0,0.0,0.0,1.0,0.00029989631730131805,0.0,0.0,0.0,1.0
+34,SVAMP,There were 78 dollars in Olivia's wallet. She spent 15 dollars at a supermarket. How much money does she have left?,#### 63,SCoT,"**ANALYZE**:
+
+The question asks us to find out how much money Olivia has left after spending 15 dollars at a supermarket. We are given the initial amount of money in her wallet, which is 78 dollars.
+
+**PLAN**:
+
+To solve this problem, we need to subtract the amount Olivia spent (15 dollars) from the initial amount of money in her wallet (78 dollars).
+
+**SOLVE**:
+
+Step 1: Subtract 15 dollars from 78 dollars.
+78 - 15 = 63
+
+Step 2: Write the final answer.
+
+**STATE**:
+
+Olivia has 63 dollars left in her wallet.",66.6715,4.012878787878791,9411.409120501894,58.02045454545466,2.9242424242424243,3120.765625,0.02222222222222222,0.0,0.02222222222222222,5.898586811762746e-232,0.0,0.017543859649122806,0.5,0.033898305084745756,1,0.00588235294117645,0.13333333333333333,0.7540717124938965,0.1163536086678505,,,,,,,,,,,
+34,SVAMP,There were 78 dollars in Olivia's wallet. She spent 15 dollars at a supermarket. How much money does she have left?,#### 63,MGCoT,"I will analyze each target metric and plan my answer structure to hit these exact targets.
+
+**Readability**: 99.311
+To achieve this target, I will use simple and concise language, avoiding complex sentences and long words. I will also ensure that the response is easy to understand and free of jargon.
+
+**Coherence**: 0.124
+To achieve this target, I will use a logical and straightforward approach to the problem. I will break down the solution into clear steps and avoid using ambiguous or confusing language.
+
+**Relevance**: 0.101
+To achieve this target, I will focus on the specific question and provide a relevant and accurate answer. I will avoid providing unnecessary information or tangents.
+
+**Specificity**: 0.126
+To achieve this target, I will use precise vocabulary and avoid repetition of the same content words. I will also ensure that the response is concise and to the point.
+
+**Engagement**: 0.006
+To achieve this target, I will use a conversational tone and avoid using overly formal or technical language. I will also try to make the response more interactive and interesting.
+
+**Concise**: 0.884
+To achieve this target, I will use short sentences and avoid unnecessary words or phrases. I will also ensure that the response is easy to read and understand.
+
+**Length**: 0.000
+To achieve this target, I will keep the response to a minimum number of words. I will avoid providing",151.9144,4.11129568106312,9356.51515780731,57.66578073089717,2.3588039867109636,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0014336917562723928,0.13636363636363635,0.7369480729103088,0.08976811915636063,99.31126403808594,0.12360215932130814,0.1007387712597847,0.1255459040403366,0.005938377231359482,0.8840383291244507,0.0,0.08360345661640167,0.08494439721107483,0.3312894105911255,1.6862709522247314
+35,SVAMP,"Jack received 6 emails in the morning, 3 emails in the afternoon and some more in the evening. If he received a total of 10 emails in the day, how many emails did Jack receive in the afternoon?",#### 1,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks for the number of emails Jack received in the afternoon.
+2. **PLAN**: To find the number of emails Jack received in the afternoon, we need to subtract the number of emails he received in the morning and the evening from the total number of emails he received in the day.
+3. **SOLVE**:
+   - Total emails received in the day = 10
+   - Emails received in the morning = 6
+   - Emails received in the evening = x (unknown)
+   - Total emails received in the day = Emails received in the morning + Emails received in the afternoon + Emails received in the evening
+   - 10 = 6 + x + x
+   - 10 = 6 + 2x
+   - 10 - 6 = 2x
+   - 4 = 2x
+   - x = 4 / 2
+   - x = 2
+
+Therefore, Jack received 2 emails in the afternoon.",110.3173,3.8173515981735164,9319.765428795663,57.435616438356064,2.356164383561644,3120.765625,0.015625,0.0,0.015625,0.0,0.0,0.02040816326530612,0.5,0.039215686274509796,1,0.0026109660574412663,0.08510638297872342,0.7567528486251831,0.035081952810287476,,,,,,,,,,,
+35,SVAMP,"Jack received 6 emails in the morning, 3 emails in the afternoon and some more in the evening. If he received a total of 10 emails in the day, how many emails did Jack receive in the afternoon?",#### 1,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.243 (target: 100)
+   - Coherence: 0.000 (target: 1.0)
+   - Relevance: 0.000 (target: 1.0)
+   - Specificity: 0.000 (target: 1.0)
+   - Engagement: 0.001 (target: 1.0)
+   - Concise: 0.982 (target: 1.0)
+   - Length: 0.000 (target: 1.0)
+   - Zipf: 0.000 (target: 1.0)
+   - Hapax: 0.000 (target: 1.0)
+   - Entropy: 0.000 (target: 1.0)
+   - Perplexity: 1.000 (target: 1.0)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve high readability, we need to use simple and short sentences.
+   - To ensure coherence, we should use connected sentences that flow smoothly.
+   - To make the answer more relevant, we should focus on the topic (Jack's email count).
+   - To make the answer more specific, we should use unique words and avoid repetition.
+   - To make the answer",151.942,3.7843853820597952,9324.973889119601,57.497674418604575,2.425249169435216,3120.765625,0.013605442176870748,0.0,0.013605442176870748,0.0,0.0,0.01282051282051282,0.5,0.025,1,0.0022123893805309214,0.08695652173913045,0.7501956820487976,0.09337571263313293,99.24320220947266,0.0,0.0,0.0,0.0006730210152454674,0.9820325970649719,0.00024088003556244075,0.0,0.0,0.0,1.0
+36,SVAMP,"Dan has $ 4. He bought a candy bar for $ 8. Then his friend have him $ 5, how much money is left?",#### 1,SCoT,"**ANALYZE**:
+
+The question is asking us to find out how much money Dan has left after he bought a candy bar for $8 and his friend gave him $5.
+
+**PLAN**:
+
+To solve this problem, we need to follow these steps:
+
+1. Subtract the cost of the candy bar from the initial amount of money Dan had.
+2. Add the amount of money his friend gave him to the result from step 1.
+
+**SOLVE**:
+
+Step 1: Subtract the cost of the candy bar from the initial amount of money Dan had:
+$4 (initial amount) - $8 (cost of candy bar) = -$4
+
+Since Dan can't have a negative amount of money, we need to re-examine the problem.
+
+Step 2: Add the amount of money his friend gave him to the result from step 1:
+$4 (initial amount) + $5 (amount given by friend) = $9
+
+Therefore, Dan has $9 left.
+
+**STATE**:
+
+The final answer is $9.",108.2705,4.2404651162790685,9307.775072674418,57.367441860465014,2.437209302325581,3120.765625,0.012987012987012988,0.0,0.012987012987012988,0.0,0.0,0.013157894736842105,0.5,0.025641025641025637,1,0.0025062656641604564,0.08510638297872342,0.7591975331306458,0.03411088138818741,,,,,,,,,,,
+36,SVAMP,"Dan has $ 4. He bought a candy bar for $ 8. Then his friend have him $ 5, how much money is left?",#### 1,MGCoT,"I will analyze each target metric and plan my answer structure to hit these exact targets.
+
+**Readability**: 99.659
+To achieve this target, I will use simple and concise language, avoiding complex sentences and long words. I will also ensure that the response is easy to understand and not too dense.
+
+**Coherence**: 0.095
+To achieve this target, I will use a logical and smooth flow of ideas, connecting them with short sentences. I will also make sure that the response is easy to follow and not too convoluted.
+
+**Relevance**: 0.016
+To achieve this target, I will focus on the specific question and answer it directly. I will avoid using irrelevant information and ensure that the response is relevant to the topic.
+
+**Specificity**: 0.002
+To achieve this target, I will use precise vocabulary and avoid repetition of the same content words. I will also ensure that the response is specific to the question and does not contain unnecessary words.
+
+**Engagement**: 0.003
+To achieve this target, I will use a conversational tone and make the response interactive. I will also use rhetorical devices such as questions and direct address to engage the reader.
+
+**Concise**: 0.913
+To achieve this target, I will use short sentences and avoid unnecessary words. I will also ensure that the response is easy to understand and not too long.
+
+**Length**: 0.001
+To achieve this target,",151.8848,4.487707641196011,9262.246158637874,57.090697674418735,2.398671096345515,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0014513788098693414,0.09756097560975609,0.7488991022109985,0.05733119696378708,99.65901184082031,0.09464912861585617,0.016407310962677002,0.0020784884691238403,0.0033278916962444782,0.9129915237426758,0.0010756952688097954,0.0,0.0,0.30853161215782166,1.6521055698394775
+37,SVAMP,"After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 703 visitors came to the Buckingham palace on the previous day. If there were 246 visitors on that day, how many visited the Buckingham palace within 25 days?",#### 949,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks us to find the total number of visitors to the Buckingham palace within 25 days, given that 246 visitors came on the previous day.
+2. **PLAN**: To solve this problem, we need to find the total number of visitors over 25 days. We can start by finding the number of visitors on the previous day and then add the number of visitors on the current day.
+3. **SOLVE**:
+   - Let's start by finding the number of visitors on the current day (day 2). We know that 246 visitors came on the previous day, so we can subtract 246 from 703 to find the number of visitors on day 2: 703 - 246 = 457.
+   - Now, we need to find the number of visitors on day 3. We can add 246 (the number of visitors on day 2) to 457 (the number of visitors on day 1): 457 + 246 = 703.
+   - We can continue this process for each day, but we can also notice a pattern. The number of visitors on each day is equal to the number of visitors on the previous day plus the number of visitors on the current day.
+   - Since the number of visitors on each day is equal to the number of visitors on the previous day plus the number of visitors on the current day, we can use",151.5462,3.8548172757475045,9297.147113787376,57.309966777408576,2.2857142857142856,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0016736401673640433,0.08333333333333334,0.7519034147262573,0.08189340680837631,,,,,,,,,,,
+37,SVAMP,"After eating a hearty meal they went to see the Buckingham palace. There, Rachel learned that 703 visitors came to the Buckingham palace on the previous day. If there were 246 visitors on that day, how many visited the Buckingham palace within 25 days?",#### 949,MGCoT,"I'll follow the chain of thought process to answer the question while matching the predicted targets exactly.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 97.84 (Flesch-Kincaid)
+- **Coherence**: 0.359 (smooth logical flow between ideas)
+- **Relevance**: 0.593 (tighter focus on the topic)
+- **Specificity**: 0.558 (diverse, precise vocabulary)
+- **Engagement**: 0.010 (more interactive tone)
+- **Concise**: 0.642 (more compact phrasing)
+- **Length**: 0.010 (a longer response)
+- **Zipf**: 0.535 (natural word-frequency distribution)
+- **Hapax**: 0.590 (more unique words)
+- **Entropy**: 1.262 (more varied word choice)
+- **Perplexity**: 3.653 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I'll use simple, short sentences to convey the information. I'll avoid using complex vocabulary or long phrases.
+2. **Coherence**: I'll use a logical flow of ideas to connect the information. I'll avoid using long, complex sentences or unnecessary words.
+3. **Relevance**: I'll focus on the topic and avoid using filler words or unnecessary information.
+4. **Specific",151.9253,4.089700996677734,9338.08675508721,57.56312292358806,2.388704318936877,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0034393809114359186,0.12244897959183675,0.7495158314704895,0.13418971002101898,97.84043884277344,0.35927024483680725,0.5932767391204834,0.5581942200660706,0.009570710361003876,0.6419569849967957,0.010170149616897106,0.5350338816642761,0.5895028710365295,1.2620967626571655,3.653203248977661
+38,SVAMP,For Gwen's birthday she received 5 dollars from her dad. Her mom gave her 7 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?,#### 2,SCoT,"**ANALYZE**:
+
+* Gwen received $5 from her dad.
+* Her mom gave her $7 more.
+* Gwen spent $4.
+
+**PLAN** the reasoning steps needed:
+
+1. Calculate the total amount of money Gwen received from her dad and mom.
+2. Subtract the amount Gwen spent from the total amount to find the difference.
+
+**SOLVE** step by step:
+
+1. Calculate the total amount of money Gwen received from her dad and mom:
+$5 (from dad) + $7 (from mom) = $12
+
+2. Subtract the amount Gwen spent from the total amount:
+$12 (total) - $4 (spent) = $8
+
+**STATE** the final answer clearly:
+
+Gwen received $8 more from her mom than she did from her dad.",82.6552,3.964634146341462,9363.189572217987,57.728658536585385,2.841463414634146,3120.765625,0.018518518518518517,0.0,0.018518518518518517,0.0,0.0,0.0,0.0,0.0,0,0.003278688524590123,0.09523809523809523,0.7494823932647705,0.027463020756840706,,,,,,,,,,,
+38,SVAMP,For Gwen's birthday she received 5 dollars from her dad. Her mom gave her 7 more dollars. If she spent 4 dollars. How much more money did she receive from her mom than she did from her dad?,#### 2,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.589 (excellent, easy to read)
+   - Coherence: 0.000 (perfect, smooth logical flow)
+   - Relevance: 0.000 (excellent, focused on the topic)
+   - Specificity: 0.019 (good, diverse vocabulary)
+   - Engagement: 0.000 (excellent, conversational tone)
+   - Concise: 0.960 (excellent, compact phrasing)
+   - Length: 0.000 (excellent, a long response)
+   - Zipf: 0.096 (excellent, natural word-frequency distribution)
+   - Hapax: 0.085 (excellent, unique words)
+   - Entropy: 0.000 (excellent, varied word choice)
+   - Perplexity: 1.000 (excellent, complex sentence structure)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - Start with a clear and concise introduction to set the context.
+   - Provide a detailed breakdown of the transactions between Gwen and her parents.
+   - Calculate the total amount of money Gwen received from both parents.
+   - Calculate the difference in the amount received from her mom compared to her dad.
+
+3. **WRITE** following the specific guidance for each metric:
+
+   **Read",151.9404,4.186710963455145,9385.52781094269,57.85348837209281,2.46843853820598,3120.765625,0.012658227848101266,0.0,0.012658227848101266,0.0,0.0,0.008928571428571428,0.5,0.017543859649122806,1,0.0017590149516271136,0.08888888888888889,0.7431970238685608,0.08193934708833694,98.58932495117188,0.0,0.0,0.0187637060880661,0.00015661169891245663,0.9595634937286377,0.0,0.09550265222787857,0.08496951311826706,0.0,1.0
+39,SVAMP,"There are 142 bananas and 356 oranges in Philip's collection. If the bananas are organized into 47 groups and oranges are organized into 178 groups, how big is each group of oranges?",#### 2,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks for the size of each group of oranges, given the number of groups of oranges and the number of groups of bananas.
+2. **PLAN**: To find the size of each group of oranges, we need to divide the total number of oranges by the number of groups of oranges.
+3. **SOLVE**:
+   - First, we need to find the total number of groups of oranges. Since there are 178 groups of oranges, we can divide the total number of oranges by 178.
+   - Total groups of oranges = 356 oranges / 178 groups = 2 groups of oranges.
+   - Now, we need to find the size of each group of oranges. Since there are 2 groups of oranges, we can divide the total number of oranges by 2.
+   - Size of each group of oranges = 356 oranges / 2 groups = 178 oranges per group.
+
+**STATE**: The size of each group of oranges is 178 oranges.",109.2773,4.293548387096772,9389.816478254608,57.87281105990778,2.4377880184331797,3120.765625,0.012820512820512822,0.0,0.012820512820512822,5.0832016388865694e-232,0.0,0.020833333333333332,0.5,0.039999999999999994,1,0.002331002331002363,0.09302325581395349,0.7503944039344788,0.146499365568161,,,,,,,,,,,
+39,SVAMP,"There are 142 bananas and 356 oranges in Philip's collection. If the bananas are organized into 47 groups and oranges are organized into 178 groups, how big is each group of oranges?",#### 2,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.291 (target: 0-100)
+- **Coherence**: 0.000 (target: 0.0-1.0)
+- **Relevance**: 0.000 (target: 0.0-1.0)
+- **Specificity**: 0.000 (target: 0.0-1.0)
+- **Engagement**: 0.001 (target: 0.0-1.0)
+- **Concise**: 0.999 (target: 0.0-1.0)
+- **Length**: 0.000 (target: 0.0-1.0)
+- **Zipf**: 0.000 (target: 0.0-1.0)
+- **Hapax**: 0.000 (target: 0.0-1.0)
+- **Entropy**: 0.000 (target: 0.0 and up)
+- **Perplexity**: 1.000 (target: 1.0 and up)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. Calculate the total number of groups for bananas and oranges.
+2. Divide the total number of groups by the number of groups for oranges to find",151.8797,3.773754152823915,9278.073803467609,57.196345514950394,2.46843853820598,3120.765625,0.013333333333333332,0.0,0.013333333333333332,0.0,0.0,0.0,0.0,0.0,0,0.002409638554216831,0.10256410256410256,0.7374809384346008,0.06979501247406006,99.29131317138672,0.0,0.0,0.0,0.0008855586056597531,0.9986039996147156,0.0,0.0,0.0,0.0,1.0
+40,SVAMP,"There are 8 different books and 5 different movies in the ' crazy silly school ' series. If you read 19 of the movies and watched 16 of the books, how many more movies than books have you read?",#### 3,SCoT,"**ANALYZE**:
+
+* The question asks for the difference between the number of movies read and the number of books read.
+* We are given the following information:
+	+ There are 8 different books in the series.
+	+ There are 5 different movies in the series.
+	+ You read 19 movies and watched 16 books.
+
+**PLAN**:
+
+To find the difference between the number of movies read and the number of books read, we need to calculate the total number of movies read and the total number of books read, and then subtract the number of books read from the number of movies read.
+
+**SOLVE**:
+
+1. Calculate the total number of movies read:
+19 (movies) + 16 (books) = 35
+
+2. Calculate the total number of books read:
+8 (books) + 16 (books) = 24
+
+3. Subtract the number of books read from the number of movies read:
+35 (movies) - 24 (books) = 11
+
+**STATE**:
+
+Therefore, you have read 11 more movies than books.",113.3225,3.9657777777777783,9339.283315972221,57.585333333333374,2.4266666666666667,3120.765625,0.013071895424836602,0.0,0.013071895424836602,0.0,0.0,0.0,0.0,0.0,0,0.0022573363431150906,0.08510638297872342,0.7533305287361145,0.025648536160588264,,,,,,,,,,,
+40,SVAMP,"There are 8 different books and 5 different movies in the ' crazy silly school ' series. If you read 19 of the movies and watched 16 of the books, how many more movies than books have you read?",#### 3,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.168 (target: 100)
+   - Coherence: 0.000 (target: 1.0)
+   - Relevance: 0.019 (target: 1.0)
+   - Specificity: 0.000 (target: 1.0)
+   - Engagement: 0.003 (target: 1.0)
+   - Concise: 0.968 (target: 1.0)
+   - Length: 0.002 (target: 1.0)
+   - Zipf: 0.064 (target: 1.0)
+   - Hapax: 0.047 (target: 1.0)
+   - Entropy: 0.003 (target: 1.0)
+   - Perplexity: 1.000 (target: 1.0)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - To achieve high readability, use simple vocabulary and short sentences.
+   - To maintain coherence, use connected sentences and avoid long phrases.
+   - To ensure relevance, focus on the topic and avoid filler words.
+   - To increase specificity, use diverse vocabulary and avoid repetition.
+   - To engage the reader, use a conversational tone and direct address.
+   - To keep",151.9184,3.9358803986710895,9319.767026578073,57.44318936877087,2.521594684385382,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0021528525296017342,0.08695652173913045,0.7426309585571289,0.12392856180667877,99.16809844970703,6.08576119702775e-05,0.018986277282238007,0.0,0.0028751599602401257,0.9680736660957336,0.002283879090100527,0.06423962861299515,0.04696394503116608,0.003214118303731084,1.0
+41,SVAMP,"Mary is baking a cake. The recipe calls for 12 cups of flour and 5 cups of sugar. She already put in some cups of flour. If she still needs 2 more cups of flour, how many cups of flour did she put in?",#### 10,SCoT,"**ANALYZE**:
+
+* The question asks how many cups of flour Mary put in, given that she still needs 2 more cups.
+* We know the recipe calls for 12 cups of flour and 5 cups of sugar.
+
+**PLAN** the reasoning steps needed:
+
+1. We need to find out how much flour Mary has already put in.
+2. We know that she still needs 2 more cups of flour.
+
+**SOLVE** step by step:
+
+1. Let's say Mary put x cups of flour in.
+2. The total amount of flour she needs is 12 cups.
+3. Since she still needs 2 more cups, the amount of flour she has already put in (x) plus the amount she still needs (2) should equal the total amount of flour she needs (12).
+4. We can write an equation: x + 2 = 12
+5. To solve for x, we need to isolate x on one side of the equation. We can do this by subtracting 2 from both sides: x = 12 - 2
+6. Simplifying the equation, we get: x = 10
+
+**STATE** the final answer clearly:
+
+Mary put 10 cups of flour in.",128.9606,4.253124999999996,9319.460952758789,57.44921874999984,2.34375,3120.765625,0.010752688172043012,0.0,0.010752688172043012,4.900608192873829e-232,0.0,0.011235955056179775,0.5,0.021978021978021976,1,0.003296703296703285,0.125,0.7504878044128418,0.138063445687294,,,,,,,,,,,
+41,SVAMP,"Mary is baking a cake. The recipe calls for 12 cups of flour and 5 cups of sugar. She already put in some cups of flour. If she still needs 2 more cups of flour, how many cups of flour did she put in?",#### 10,MGCoT,"I'll follow the chain of thought process to answer the question while matching the predicted targets exactly.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 97.893 (target: 100)
+- **Coherence**: 0.145 (target: 1.0)
+- **Relevance**: 0.019 (target: 1.0)
+- **Specificity**: 0.023 (target: 1.0)
+- **Engagement**: 0.006 (target: 1.0)
+- **Concise**: 0.806 (target: 1.0)
+- **Length**: 0.005 (target: 1.0)
+- **Zipf**: 0.000 (target: 1.0)
+- **Hapax**: 0.022 (target: 1.0)
+- **Entropy**: 0.482 (target: 1.0)
+- **Perplexity**: 2.081 (target: 1.0)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I'll use simple, short sentences to make the explanation easy to understand. I'll avoid using complex vocabulary or long words.
+2. **Coherence**: I'll use short connected sentences to create a smooth logical flow between ideas. I'll avoid using long, complex sentences or unnecessary words.
+3. **Re",151.9206,3.7604651162790663,9342.936721345515,57.587375415282644,2.388704318936877,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003154574132492094,0.12244897959183675,0.7388425469398499,0.06117144972085953,97.89299774169922,0.14451926946640015,0.018622562289237976,0.023415274918079376,0.005548866465687752,0.8064589500427246,0.005373931024223566,0.0,0.021731778979301453,0.48170211911201477,2.0805745124816895
+42,SVAMP,Danny collects bottle caps and wrappers. He found 46 wrappers and 50 bottle caps at the park. Now he has 21 bottle caps and 52 wrappers in his collection. How many more bottle caps than wrappers did danny find at the park?,#### 4,SCoT,"**ANALYZE** what the question is asking: We need to find out how many more bottle caps than wrappers Danny found at the park.
+
+**PLAN** the reasoning steps needed:
+
+1. Find the total number of bottle caps and wrappers Danny has now.
+2. Find the difference between the number of bottle caps and wrappers he has now.
+
+**SOLVE** step by step:
+
+1. Find the total number of bottle caps and wrappers Danny has now:
+   - He has 21 bottle caps.
+   - He has 52 wrappers.
+   Total = 21 + 52 = 73
+
+2. Find the difference between the number of bottle caps and wrappers he has now:
+   - He has 21 bottle caps.
+   - He has 52 wrappers.
+   Difference = 52 - 21 = 31
+
+**STATE** the final answer clearly: Danny found 31 more bottle caps than wrappers at the park.",95.7298,3.9978947368421047,9385.83122944079,57.853684210526275,2.663157894736842,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0013404825737265424,0.05,0.7463914752006531,0.1503530889749527,,,,,,,,,,,
+42,SVAMP,Danny collects bottle caps and wrappers. He found 46 wrappers and 50 bottle caps at the park. Now he has 21 bottle caps and 52 wrappers in his collection. How many more bottle caps than wrappers did danny find at the park?,#### 4,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 96.864
+   - Coherence: 0.283
+   - Relevance: 0.282
+   - Specificity: 0.251
+   - Engagement: 0.013
+   - Concise: 0.682
+   - Length: 0.010
+   - Zipf: 0.181
+   - Hapax: 0.225
+   - Entropy: 0.997
+   - Perplexity: 2.972
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To match the readability target, the answer should be concise and easy to read.
+   - To match the coherence target, the answer should have a smooth logical flow between ideas.
+   - To match the relevance target, the answer should focus on the topic (bottle caps and wrappers).
+   - To match the specificity target, the answer should use diverse and precise vocabulary.
+   - To match the engagement target, the answer should have a conversational tone.
+   - To match the concise target, the answer should be compact and have shorter sentences on average.
+   - To match the length target, the answer should be around 100 words.
+   - To match the Zipf target, the answer should have a natural word-frequency distribution.
+   -",152.0219,4.081395348837202,9343.530224771595,57.59966777408656,2.451827242524917,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0017857142857142794,0.08695652173913045,0.7536594867706299,0.08894908428192139,96.8636703491211,0.2827146649360657,0.28248530626296997,0.25093770027160645,0.013173449784517288,0.6819053292274475,0.009572046808898449,0.1814035177230835,0.22508887946605682,0.9965077638626099,2.9722092151641846
+43,SVAMP,"Luke played 177 rounds of a trivia game. If he gained 46 points in each round, how many points did he score in the game?",#### 8142,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks how many points Luke scored in the game, given that he played 177 rounds and gained 46 points in each round.
+2. **PLAN**: To find the total points scored, we need to multiply the number of rounds played by the points gained in each round.
+3. **SOLVE**:
+   - First, we multiply the number of rounds played (177) by the points gained in each round (46).
+   - 177 x 46 = 8,194
+4. **STATE**: The total points scored by Luke in the game is 8,194.
+
+Therefore, Luke scored 8,194 points in the game.",76.5668,4.034210526315792,9301.44775390625,57.34210526315799,2.789473684210526,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.007194244604316502,0.20408163265306123,0.7642005681991577,0.15777406096458435,,,,,,,,,,,
+43,SVAMP,"Luke played 177 rounds of a trivia game. If he gained 46 points in each round, how many points did he score in the game?",#### 8142,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.334 (target: 100)
+   - Coherence: 0.045 (target: 1.0)
+   - Relevance: 0.456 (target: 1.0)
+   - Specificity: 0.496 (target: 1.0)
+   - Engagement: 0.001 (target: 1.0)
+   - Concise: 0.939 (target: 1.0)
+   - Length: 0.000 (target: 1.0)
+   - Zipf: 0.469 (target: 1.0)
+   - Hapax: 0.479 (target: 1.0)
+   - Entropy: 0.102 (target: 1.0)
+   - Perplexity: 1.252 (target: 1.0)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - To achieve high readability, use simple and short sentences.
+   - To maintain coherence, use connected sentences that flow logically.
+   - To ensure relevance, focus on the topic (trivia game) and avoid filler words.
+   - To increase specificity, use diverse vocabulary and avoid repetition.
+   - To engage the reader, use a conversational tone and direct address.
+  ",151.8936,4.097342192691024,9307.692742940199,57.36943521594669,2.345514950166113,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0043525571273123065,0.16666666666666666,0.7416965365409851,0.07741478830575943,99.33361053466797,0.04516107961535454,0.45642444491386414,0.49606430530548096,0.001436239224858582,0.9386440515518188,0.0,0.4692240357398987,0.4785310626029968,0.10206574201583862,1.2517749071121216
+44,SVAMP,3 birds and 4 storks were sitting on the fence. 2 more birds came to join them. How many more birds than storks are sitting on the fence?,#### 1,SCoT,"**ANALYZE** what the question is asking: We need to find the difference between the number of birds and the number of storks sitting on the fence.
+
+**PLAN** the reasoning steps needed:
+
+1. Identify the initial number of birds and storks.
+2. Determine the number of birds that joined the initial group.
+3. Calculate the total number of birds.
+4. Calculate the total number of storks.
+5. Find the difference between the total number of birds and the total number of storks.
+
+**SOLVE** step by step:
+
+1. Initial number of birds: 3
+2. Initial number of storks: 4
+3. Number of birds that joined: 2
+4. Total number of birds: 3 + 2 = 5
+5. Total number of storks: 4
+6. Difference between the total number of birds and the total number of storks: 5 - 4 = 1
+
+**STATE** the final answer clearly: There are 1 more bird than stork sitting on the fence.",111.2983,3.908597285067871,9360.84709063914,57.709954751131185,2.5610859728506785,3120.765625,0.013157894736842105,0.0,0.013157894736842105,5.1632766940978595e-232,0.0,0.016129032258064516,0.5,0.03125,1,0.0023837902264600697,0.09523809523809523,0.7485748529434204,0.11807459592819214,,,,,,,,,,,
+44,SVAMP,3 birds and 4 storks were sitting on the fence. 2 more birds came to join them. How many more birds than storks are sitting on the fence?,#### 1,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.798 (excellent, easy to read)
+   - Coherence: 0.014 (very good, smooth logical flow)
+   - Relevance: 0.000 (tight focus on the topic)
+   - Specificity: 0.000 (diverse vocabulary)
+   - Engagement: 0.001 (conversational tone)
+   - Concise: 0.942 (compact phrasing)
+   - Length: 0.000 (very long)
+   - Zipf: 0.000 (natural word-frequency distribution)
+   - Hapax: 0.000 (unique words)
+   - Entropy: 0.015 (varied word choice)
+   - Perplexity: 1.003 (complex sentence structure)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - Start with a clear and concise statement about the initial number of birds and storks.
+   - Then, add the new birds to the initial number, making sure to maintain coherence and relevance.
+   - Use specific vocabulary to describe the new birds and storks.
+   - Address the question directly and engage the reader.
+   - Keep the response concise and to the point.
+
+3. **WRITE** following the specific guidance for each metric:
+   - Readability: Use simple and short",151.8774,3.826578073089696,9378.913880813954,57.822923588039885,2.3588039867109636,3120.765625,0.012269938650306747,0.0,0.012269938650306747,0.0,0.0,0.008849557522123894,0.5,0.017391304347826087,1,0.001779359430605032,0.08695652173913045,0.7517338991165161,0.1076291874051094,98.79762268066406,0.014181208796799183,0.0,0.0,0.0007272960501722991,0.9417806267738342,4.370159876998514e-05,0.0,0.0,0.015339129604399204,1.0029932260513306
+45,SVAMP,"The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 9 inches. The mouse jumped 3 inches lesser than the frog who jumped 33 inches farther than the grasshopper. How far did the mouse jump?",#### 39,SCoT,"**ANALYZE**:
+
+* The question asks for the distance the mouse jumped.
+* We know the grasshopper jumped 9 inches.
+* We also know the frog jumped 33 inches farther than the grasshopper.
+* The mouse jumped 3 inches lesser than the frog.
+
+**PLAN** the reasoning steps needed:
+
+1. Find the distance the frog jumped.
+2. Find the distance the mouse jumped.
+3. Subtract 3 inches from the distance the frog jumped to find the distance the mouse jumped.
+
+**SOLVE** step by step:
+
+1. The frog jumped 33 inches farther than the grasshopper. Since the grasshopper jumped 9 inches, the frog jumped 9 + 33 = 42 inches.
+2. The mouse jumped 3 inches lesser than the frog. So, the mouse jumped 42 - 3 = 39 inches.
+
+**STATE** the final answer clearly:
+
+The mouse jumped 39 inches.",98.2528,4.205128205128205,9405.440805288461,57.984615384615374,2.476923076923077,3120.765625,0.015384615384615384,0.0,0.015384615384615384,5.325105075896282e-232,0.0,0.02040816326530612,0.5,0.039215686274509796,1,0.003947368421052588,0.13953488372093026,0.7406246066093445,0.20284518599510193,,,,,,,,,,,
+45,SVAMP,"The grasshopper, the frog and the mouse had a jumping contest. The grasshopper jumped 9 inches. The mouse jumped 3 inches lesser than the frog who jumped 33 inches farther than the grasshopper. How far did the mouse jump?",#### 39,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.574 (excellent)
+- **Coherence**: 0.284 (good)
+- **Relevance**: 0.337 (excellent)
+- **Specificity**: 0.245 (excellent)
+- **Engagement**: 0.010 (poor)
+- **Concise**: 0.740 (excellent)
+- **Length**: 0.012 (excellent)
+- **Zipf**: 0.137 (excellent)
+- **Hapax**: 0.163 (excellent)
+- **Entropy**: 1.011 (excellent)
+- **Perplexity**: 2.937 (excellent)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to explain the problem and the solution.
+2. **Coherence**: I will use short connected sentences to describe the relationships between the variables.
+3. **Relevance**: I will focus on the specific details of the problem and the mouse's jump.
+4. **Specificity**: I will use precise vocabulary to describe the variables and the relationships.
+5. **Engagement**: I will use a conversational tone to make the problem more interactive.
+6. **Concise**: I will",151.9035,4.32425249169435,9349.838156665282,57.64385382059804,2.372093023255814,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0026978417266186883,0.12,0.7290437817573547,0.10185722261667252,98.57386016845703,0.28405624628067017,0.3371378779411316,0.24518391489982605,0.0102572375908494,0.7397345900535583,0.012112279422581196,0.13670948147773743,0.16272257268428802,1.010689616203308,2.9367611408233643
+46,SVAMP,Zachary did 35 push-ups and 3 crunches in gym class today. David did 58 more push-ups but 87 less crunches than zachary. How many more push-ups than crunches did Zachary do?,#### 32,SCoT,"**ANALYZE**:
+
+The question asks us to find the difference between the number of push-ups and crunches that Zachary and David did.
+
+**PLAN** the reasoning steps needed:
+
+1. Identify the number of push-ups and crunches that Zachary did.
+2. Identify the number of push-ups and crunches that David did.
+3. Calculate the difference between the number of push-ups and crunches that Zachary did.
+4. Calculate the difference between the number of push-ups and crunches that David did.
+
+**SOLVE** step by step:
+
+1. Identify the number of push-ups and crunches that Zachary did:
+   - Zachary did 35 push-ups.
+   - David did 58 more push-ups than Zachary, so David did 35 + 58 = 93 push-ups.
+
+2. Identify the number of push-ups and crunches that David did:
+   - David did 87 less crunches than Zachary, so David did 3 + 87 = 90 crunches.
+
+3. Calculate the difference between the number of push-ups and crunches that Zachary did:
+   - Difference = Number of push-ups - Number of crunches = 93 - 90 = 3
+
+4. Calculate the difference between the number of push-ups and crunches that David did:
+   - Difference = Number of push-ups - Number of crunches = 93 - 90 = 3
+
+**STATE** the final answer clearly",151.5449,4.04019933554817,9375.297601744185,57.79202657807278,2.355481727574751,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002529510961214121,0.13043478260869565,0.7373632192611694,0.039028387516736984,,,,,,,,,,,
+46,SVAMP,Zachary did 35 push-ups and 3 crunches in gym class today. David did 58 more push-ups but 87 less crunches than zachary. How many more push-ups than crunches did Zachary do?,#### 32,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.102 (target: 100)
+   - Coherence: 0.015 (target: 1.0)
+   - Relevance: 0.000 (target: 1.0)
+   - Specificity: 0.000 (target: 1.0)
+   - Engagement: 0.000 (target: 1.0)
+   - Concise: 0.916 (target: 1.0)
+   - Length: 0.000 (target: 1.0)
+   - Zipf: 0.000 (target: 1.0)
+   - Hapax: 0.000 (target: 1.0)
+   - Entropy: 0.034 (target: 0.0)
+   - Perplexity: 1.000 (target: 1.0)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - To match the readability target, use simple and concise language.
+   - To match the coherence target, use a logical and connected sentence structure.
+   - To match the relevance target, focus on the specific question and avoid unnecessary words.
+   - To match the specificity target, use diverse and precise vocabulary.
+   - To match the engagement target, use a conversational tone and",151.9135,3.729900332225913,9414.670927637044,58.02192691029904,2.53156146179402,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0031982942430703876,0.13043478260869565,0.7354775667190552,0.07531508803367615,98.10215759277344,0.015083561651408672,0.0,0.0,0.00041142007103189826,0.9161807894706726,0.00018546308274380863,0.0,0.0,0.03444887325167656,1.0
+47,SVAMP,"Jack received 4 emails in the morning, 5 emails in the afternoon and 8 emails in the evening. How many emails did Jack receive in the afternoon and evening?",#### 13,SCoT,"**ANALYZE**:
+
+The question asks us to find the total number of emails Jack received in the afternoon and evening. We are given the number of emails received in the morning, afternoon, and evening separately.
+
+**PLAN**:
+
+To find the total number of emails received in the afternoon and evening, we need to add the number of emails received in the afternoon and evening.
+
+**SOLVE**:
+
+Step 1: Add the number of emails received in the afternoon and evening.
+Emails received in the afternoon = 5
+Emails received in the evening = 8
+Total emails received in the afternoon and evening = 5 + 8 = 13
+
+**STATE**:
+
+Therefore, Jack received 13 emails in the afternoon and evening.",77.5867,4.868181818181817,9462.594257305194,58.33701298701282,2.727272727272727,3120.765625,0.018018018018018018,0.0,0.018018018018018018,5.56331772444502e-232,0.0,0.02564102564102564,0.5,0.048780487804878044,1,0.004497751124437732,0.14634146341463414,0.7525585293769836,0.1813805103302002,,,,,,,,,,,
+47,SVAMP,"Jack received 4 emails in the morning, 5 emails in the afternoon and 8 emails in the evening. How many emails did Jack receive in the afternoon and evening?",#### 13,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.668 (target: 100)
+   - Coherence: 0.044 (target: 1.0)
+   - Relevance: 0.089 (target: 1.0)
+   - Specificity: 0.005 (target: 1.0)
+   - Engagement: 0.003 (target: 1.0)
+   - Concise: 0.945 (target: 1.0)
+   - Length: 0.000 (target: 1.0)
+   - Zipf: 0.017 (target: 1.0)
+   - Hapax: 0.000 (target: 1.0)
+   - Entropy: 0.239 (target: 1.0)
+   - Perplexity: 1.305 (target: 1.0)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To match the target readability of 100, the response should be concise and easy to read.
+   - To match the target coherence of 1.0, the response should have a smooth logical flow between ideas.
+   - To match the target relevance of 1.0, the response should focus on the topic of Jack receiving emails.
+   - To match the target",151.8735,4.143853820598003,9475.22869082226,58.401661129567856,2.39202657807309,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0034207525655644,0.12244897959183675,0.7357649803161621,0.04624318331480026,99.66751098632812,0.044388093054294586,0.08937550336122513,0.004911400377750397,0.002777186455205083,0.9446796774864197,0.0,0.016503646969795227,0.0,0.23930299282073975,1.3051269054412842
+48,SVAMP,"Jerry had 7 action figures on a shelf in his room. Later he added some more action figures to the shelf and removed 10 of the old ones. If there are 8 action figures on his shelf now, how many action figures did he add to the shelf?",#### 11,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. Analyze what the question is asking: We need to find out how many action figures Jerry added to the shelf.
+2. Plan the reasoning steps needed: We know the initial number of action figures (7), the number of action figures after adding some (8), and the number of action figures removed (10). We need to find the number of action figures added.
+3. Solve step by step:
+   - Let's say Jerry added x action figures to the shelf.
+   - After adding x action figures, Jerry had 7 + x action figures.
+   - After removing 10 action figures, Jerry had 8 action figures left.
+   - Since Jerry removed 10 action figures, the number of action figures left after removal is equal to the initial number of action figures plus the number of action figures added: 7 + x - 10 = 8
+   - Simplify the equation: x - 3 = 8
+   - Add 3 to both sides: x = 11
+
+**STATE THE FINAL ANSWER CLEARLY**:
+
+Jerry added 11 action figures to the shelf.",118.887,4.3495762711864385,9412.970967955509,58.033474576271416,2.3983050847457625,3120.765625,0.012048192771084336,0.0,0.012048192771084336,4.9947643922885574e-232,0.0,0.013513513513513514,0.5,0.026315789473684213,1,0.0031645569620253333,0.08510638297872342,0.7499514818191528,0.1890319138765335,,,,,,,,,,,
+48,SVAMP,"Jerry had 7 action figures on a shelf in his room. Later he added some more action figures to the shelf and removed 10 of the old ones. If there are 8 action figures on his shelf now, how many action figures did he add to the shelf?",#### 11,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 100.000
+   - Coherence: 0.081
+   - Relevance: 0.006
+   - Specificity: 0.006
+   - Engagement: 0.007
+   - Concise: 0.957
+   - Length: 0.003
+   - Zipf: 0.040
+   - Hapax: 0.076
+   - Entropy: 0.252
+   - Perplexity: 1.715
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the target of 100.000 readability, I will use simple, short sentences to convey the information.
+   - To achieve the target of 0.081 coherence, I will use connected sentences to smoothly flow the ideas.
+   - To achieve the target of 0.006 relevance, I will use relevant vocabulary and avoid filler words.
+   - To achieve the target of 0.006 specificity, I will use diverse vocabulary and avoid repetition.
+   - To achieve the target of 0.007 engagement, I will use a conversational tone and direct address.
+   - To achieve the target of 0.957 concise, I will use short sentences and avoid unnecessary words.
+   - To achieve the target of 0.",151.889,4.996013289036544,9516.636796615448,58.6651162790697,2.4916943521594686,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0028598665395614953,0.0909090909090909,0.7515485286712646,0.10354427993297577,100.0,0.08115412294864655,0.006014540791511536,0.005742065608501434,0.007014070171862841,0.956569254398346,0.0030840211547911167,0.04003850370645523,0.07605212926864624,0.2517649233341217,1.7148892879486084
+49,SVAMP,Julia played tag with 12 kids on monday. She played tag with 14 kids on tuesday. She spent a total of 34 hours to play tag on both days. How many kids did she play with altogether?,#### 26,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. Analyze what the question is asking: We need to find the total number of kids Julia played tag with on both Monday and Tuesday.
+2. Plan the reasoning steps needed: We will use basic arithmetic operations to solve the problem.
+3. Solve step by step:
+   - Let's denote the number of kids Julia played tag with on Monday as x.
+   - On Tuesday, she played tag with 14 kids.
+   - We know that the total number of kids she played tag with on both days is 34.
+   - We can set up an equation to represent the situation: x + 14 = 34
+4. State the final answer clearly: To find the total number of kids Julia played tag with, we need to solve the equation x + 14 = 34 for x.
+
+**SOLVE**:
+
+x + 14 = 34
+Subtract 14 from both sides:
+x = 34 - 14
+x = 20
+
+Therefore, Julia played tag with 20 kids altogether.",110.3412,3.7940639269406375,9659.010595034246,59.52922374429244,2.4657534246575343,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0024271844660194164,0.08888888888888888,0.7565902471542358,0.13268139958381653,,,,,,,,,,,
+49,SVAMP,Julia played tag with 12 kids on monday. She played tag with 14 kids on tuesday. She spent a total of 34 hours to play tag on both days. How many kids did she play with altogether?,#### 26,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.995 (excellent)
+- **Coherence**: 0.348 (fair)
+- **Relevance**: 0.325 (fair)
+- **Specificity**: 0.236 (fair)
+- **Engagement**: 0.012 (low)
+- **Concise**: 0.695 (excellent)
+- **Length**: 0.014 (low)
+- **Zipf**: 0.073 (low)
+- **Hapax**: 0.113 (low)
+- **Entropy**: 1.220 (excellent)
+- **Perplexity**: 3.468 (excellent)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to convey the information. I will avoid using complex vocabulary or long phrases.
+2. **Coherence**: I will use short connected sentences to create a smooth logical flow between ideas.
+3. **Relevance**: I will focus on the topic (number of kids Julia played with) and avoid using filler words or off-topic words.
+4. **Specificity**: I will use specific vocabulary (e.g., ""kids"") to describe the number of people Julia played with.
+5. **Engagement**: I will use a",151.9208,4.1973421926910275,9464.948141611296,58.336544850498505,2.478405315614618,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0027472527472527375,0.12,0.730945885181427,0.0763692781329155,98.99531555175781,0.34843483567237854,0.3246632516384125,0.23598060011863708,0.011573719792068005,0.6947595477104187,0.014351120218634605,0.07323871552944183,0.1133752316236496,1.2196474075317383,3.4678070545196533
+50,SVAMP,Nell collects cards. She had 309 baseball cards and 356 Ace cards. She gave some of her cards to Jeff and now has 415 baseball cards and Ace cards left. How many more baseball cards than Ace cards does Nell have?,#### 266,SCoT,"**ANALYZE** what the question is asking: We need to find out how many more baseball cards Nell has than Ace cards.
+
+**PLAN** the reasoning steps needed:
+
+1. Identify the initial number of baseball cards Nell had: 309
+2. Identify the number of baseball cards Nell has now: 415
+3. Identify the initial number of Ace cards Nell had: 356
+4. Identify the number of Ace cards Nell has now: 415
+5. Calculate the difference between the number of baseball cards and Ace cards Nell has now: 415 - 415 = 0
+
+**SOLVE** step by step:
+
+1. Nell gave some of her cards to Jeff, so we need to subtract the number of cards she gave away from the initial number of baseball cards.
+2. Nell had 309 baseball cards initially and gave away some, so let's call the number of cards she gave away ""x"". Then, the number of baseball cards she has now is 309 - x.
+3. We know that Nell now has 415 baseball cards, so we can set up the equation: 309 - x = 415
+4. To solve for x, we can add x to both sides of the equation: 309 = 415 + x
+5. Subtract 415 from both sides: -106 = x
+6. Now that we know x, we can find the difference between the number",151.5486,4.1471760797342165,9400.624104547342,57.94784053156157,2.2691029900332227,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0035874439461883734,0.12244897959183675,0.7397459745407104,0.07908988744020462,,,,,,,,,,,
+50,SVAMP,Nell collects cards. She had 309 baseball cards and 356 Ace cards. She gave some of her cards to Jeff and now has 415 baseball cards and Ace cards left. How many more baseball cards than Ace cards does Nell have?,#### 266,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.623 (excellent)
+   - Coherence: 0.255 (good)
+   - Relevance: 0.094 (fair)
+   - Specificity: 0.157 (good)
+   - Engagement: 0.018 (low)
+   - Concise: 0.794 (excellent)
+   - Length: 0.000 (excellent)
+   - Zipf: 0.074 (good)
+   - Hapax: 0.094 (excellent)
+   - Entropy: 0.684 (excellent)
+   - Perplexity: 2.468 (excellent)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To answer the question, we need to compare the number of baseball cards and Ace cards Nell has after giving some away.
+   - We can use subtraction to find the difference between the two numbers.
+
+3. **WRITE** the answer following the specific guidance for each metric:
+   - Readability: The question is clear and concise, with a simple comparison of numbers. The answer is easy to understand, with short sentences and no unnecessary words.
+   - Coherence: The answer flows smoothly, with a logical comparison of the two numbers.
+   - Relevance: The question is relevant to the topic of",151.9374,4.039867109634549,9374.63093075166,57.79302325581375,2.511627906976744,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003676470588235281,0.1276595744680851,0.7471298575401306,0.12382464855909348,99.62271881103516,0.2546348571777344,0.09356580674648285,0.15707120299339294,0.01803506538271904,0.7936729192733765,0.0,0.07359904050827026,0.09381059557199478,0.6836932897567749,2.467989206314087

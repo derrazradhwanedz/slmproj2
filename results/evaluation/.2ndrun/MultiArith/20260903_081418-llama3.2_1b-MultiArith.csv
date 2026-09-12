@@ -1,0 +1,1870 @@
+record_id,dataset,question,gold_answer,mechanism,final_answer,delta_time_seconds,cpu_usage_avg_percent,ram_usage_avg_mb,ram_usage_avg_percent,gpu_usage_avg_percent,gpu_memory_avg_mb,rouge1_f1,rouge2_f1,rougeL_f1,bleu,exact_match,token_precision,token_recall,token_f1,token_overlap_count,normalized_edit_distance,char_f1,bert_score_f1,semantic_similarity,target_Readability,target_Coherence,target_Relevance,target_Specificity,target_Engagement,target_Concise,target_Length,target_Zipf,target_Hapax,target_Entropy,target_Perplexity
+1,MultiArith,"For Halloween Debby and her sister combined the candy they received. Debby had 32 pieces of candy while her sister had 42. If they ate 35 pieces the first night, how many pieces do they have left?",#### 39,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. Analyze what the question is asking: We need to find out how many pieces of candy Debby and her sister have left after eating 35 pieces the first night.
+2. Plan the reasoning steps needed: We will start with the initial amount of candy each sister had, then subtract the amount eaten, and finally add the remaining amount to find the total.
+3. Solve step by step:
+   - Step 1: Calculate the initial amount of candy each sister had.
+     Debby had 32 pieces.
+     Her sister had 42 pieces.
+   - Step 2: Subtract the amount eaten from the initial amount.
+     Debby ate 35 pieces.
+     Her sister ate 35 pieces.
+     Total eaten = 35 + 35 = 70 pieces.
+   - Step 3: Subtract the total eaten from the initial amount.
+     Debby had 32 pieces.
+     Her sister had 42 pieces.
+     Total remaining = 32 - 42 + 70 = 90 pieces.
+
+**STATE THE FINAL ANSWER CLEARLY**:
+
+Debby and her sister have 90 pieces of candy left after eating 35 pieces the first night.",125.222,3.8419354838709676,8632.13671875,53.22580645161316,2.193548387096774,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003061224489795955,0.13333333333333333,0.7497977614402771,0.21618136763572693,,,,,,,,,,,
+1,MultiArith,"For Halloween Debby and her sister combined the candy they received. Debby had 32 pieces of candy while her sister had 42. If they ate 35 pieces the first night, how many pieces do they have left?",#### 39,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.703 (excellent)
+   - Coherence: 0.077 (poor)
+   - Relevance: 0.000 (impossible)
+   - Specificity: 0.000 (impossible)
+   - Engagement: 0.003 (low)
+   - Concise: 0.886 (excellent)
+   - Length: 0.005 (excellent)
+   - Zipf: 0.000 (impossible)
+   - Hapax: 0.000 (impossible)
+   - Entropy: 0.236 (low)
+   - Perplexity: 1.549 (high)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - Start with a clear and concise statement about the initial candy distribution.
+   - Introduce the action of eating 35 pieces and explain the consequence.
+   - Provide a final statement about the remaining candy.
+
+3. **WRITE** the response following the specific guidance for each metric:
+
+   ""Initially, Debby and her sister had 32 pieces of candy and 42 pieces, respectively. After eating 35 pieces the first night, they had 32 - 35 = -3 pieces left. Since they cannot have a negative number of pieces, this means they have 0 pieces left.""
+
+4",151.9412,4.041528239202656,8604.364656872924,53.02558139534867,2.451827242524917,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002846299810246644,0.12244897959183675,0.7431465983390808,0.16415567696094513,98.70267486572266,0.07673011720180511,0.0,0.0,0.0029564276337623596,0.8861508965492249,0.005230274051427841,0.0,0.0,0.23599305748939514,1.5487537384033203
+2,MultiArith,A pet store had 13 siamese cats and 5 house cats. During a sale they sold 10 cats. How many cats do they have left?,#### 8,SCoT,"**ANALYZE** what the question is asking: We need to find out how many cats the pet store has left after selling 10 cats.
+
+**PLAN** the reasoning steps needed:
+
+1. Start with the initial number of cats: 13 siamese cats + 5 house cats = 18 cats.
+2. Subtract the number of cats sold: 18 cats - 10 cats = 8 cats.
+
+**SOLVE** step by step:
+
+1. 18 cats (initial number) - 10 cats (sold) = 8 cats
+
+**STATE** the final answer clearly: The pet store has 8 cats left.",67.0501,4.110526315789476,8591.206414473685,52.98120300751881,2.9022556390977443,3120.765625,0.02380952380952381,0.0,0.02380952380952381,5.931449291043158e-232,0.0,0.017857142857142856,0.5,0.03448275862068965,1,0.004385964912280715,0.09302325581395349,0.7513790726661682,0.15958979725837708,,,,,,,,,,,
+2,MultiArith,A pet store had 13 siamese cats and 5 house cats. During a sale they sold 10 cats. How many cats do they have left?,#### 8,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.291
+   - Coherence: 0.055
+   - Relevance: 0.033
+   - Specificity: 0.056
+   - Engagement: 0.004
+   - Concise: 0.900
+   - Length: 0.000
+   - Zipf: 0.030
+   - Hapax: 0.037
+   - Entropy: 0.135
+   - Perplexity: 1.193
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the target readability of 98.291, the response should be concise and use short sentences.
+   - To achieve the target coherence of 0.055, the response should have a smooth logical flow between ideas.
+   - To achieve the target relevance of 0.033, the response should focus on the topic of the sale and the remaining cats.
+   - To achieve the target specificity of 0.056, the response should use diverse vocabulary and avoid repetition.
+   - To achieve the target engagement of 0.004, the response should be conversational and direct.
+   - To achieve the target concise length of 0.000, the response should be extremely short.
+   - To achieve the target Zipf distribution of",151.8804,3.831893687707637,8543.50756592608,52.656810631229035,2.372093023255814,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0018518518518518823,0.0909090909090909,0.750602126121521,0.08058757334947586,98.29096221923828,0.05453091114759445,0.03297696262598038,0.05555050075054169,0.003924142569303513,0.900469958782196,0.0,0.030462101101875305,0.03749909624457359,0.1348590850830078,1.1926995515823364
+3,MultiArith,"Luke was trying to expand his game collection. He bought 2 games from a friend and bought 2 more at a garage sale. If 2 of the games didn't work, how many good games did he end up with?",#### 2,SCoT,"**ANALYZE**:
+
+* Luke bought 2 games from a friend.
+* Luke bought 2 more games at a garage sale.
+* He also bought 2 games that didn't work.
+
+**PLAN** the reasoning steps needed:
+
+1. Find the total number of games Luke bought.
+2. Subtract the number of games that didn't work from the total number of games.
+
+**SOLVE** step by step:
+
+1. Luke bought 2 games from a friend and 2 more at a garage sale, for a total of 2 + 2 = 4 games.
+2. He also bought 2 games that didn't work, so the total number of games he bought is 4 + 2 = 6 games.
+3. To find the number of good games, subtract the number of games that didn't work (2) from the total number of games (6): 6 - 2 = 4.
+
+**STATE** the final answer clearly:
+
+Luke ended up with 4 good games.",105.2706,4.373684210526314,8491.446901166268,52.34114832535884,2.449760765550239,3120.765625,0.013605442176870748,0.0,0.013605442176870748,5.197136060230882e-232,0.0,0.017241379310344827,0.5,0.03333333333333333,1,0.0027137042062415073,0.09302325581395349,0.7480471730232239,0.10549262166023254,,,,,,,,,,,
+3,MultiArith,"Luke was trying to expand his game collection. He bought 2 games from a friend and bought 2 more at a garage sale. If 2 of the games didn't work, how many good games did he end up with?",#### 2,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.590 (excellent, indicating that the text is easy to read)
+- **Coherence**: 0.000 (perfect, indicating that the text has a smooth logical flow between ideas)
+- **Relevance**: 0.000 (excellent, indicating that the text is focused on the topic)
+- **Specificity**: 0.000 (excellent, indicating that the text uses diverse, precise vocabulary)
+- **Engagement**: 0.001 (good, indicating that the text is interactive and conversational)
+- **Concise**: 0.998 (excellent, indicating that the text is compact and well-structured)
+- **Length**: 0.005 (excellent, indicating that the text is well-structured and concise)
+- **Zipf**: 0.000 (excellent, indicating that the text has a natural word-frequency distribution)
+- **Hapax**: 0.000 (excellent, indicating that the text uses unique, non-repetitive words)
+- **Entropy**: 0.000 (excellent, indicating that the text has a varied and unpredictable word choice)
+- **Perplexity**: 1.000 (excellent, indicating that the text has a complex and unpredictable sentence structure)
+
+**PLAN**",151.9429,3.7229235880398646,8446.010784364618,52.05548172757495,2.4186046511627906,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0008176614881438837,0.048780487804878044,0.7387913465499878,0.1135079637169838,99.58985137939453,0.0,0.0,0.0,0.0005170195363461971,0.9979260563850403,0.004846087656915188,0.0,0.0,0.0,1.0
+4,MultiArith,"The school cafeteria ordered 42 red apples and 7 green apples for students lunches. But, if only 9 students wanted fruit, how many extra did the cafeteria end up with?",#### 40,SCoT,"**ANALYZE** what the question is asking: The question is asking how many extra apples the cafeteria has after only 9 students wanted fruit, given that they ordered 42 red apples and 7 green apples.
+
+**PLAN** the reasoning steps needed: To solve this problem, we need to subtract the number of students who wanted fruit (9) from the total number of apples ordered (42 + 7 = 49).
+
+**SOLVE** step by step:
+
+1. Calculate the total number of apples ordered: 42 (red apples) + 7 (green apples) = 49
+2. Subtract the number of students who wanted fruit (9) from the total number of apples ordered: 49 - 9 = 40
+
+**STATE** the final answer clearly: The cafeteria ended up with 40 extra apples.",86.6183,4.564534883720929,8538.36062409157,52.6447674418603,2.558139534883721,3120.765625,0.016949152542372885,0.0,0.016949152542372885,5.470563275684957e-232,0.0,0.015151515151515152,0.5,0.029411764705882356,1,0.004392386530014614,0.13043478260869565,0.7427365779876709,0.19566801190376282,,,,,,,,,,,
+4,MultiArith,"The school cafeteria ordered 42 red apples and 7 green apples for students lunches. But, if only 9 students wanted fruit, how many extra did the cafeteria end up with?",#### 40,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.433 (target: 100)
+   - Coherence: 0.060 (target: 1.0)
+   - Relevance: 0.729 (target: 1.0)
+   - Specificity: 0.773 (target: 1.0)
+   - Engagement: 0.000 (target: 1.0)
+   - Concise: 0.933 (target: 1.0)
+   - Length: 0.000 (target: 1.0)
+   - Zipf: 0.736 (target: 1.0)
+   - Hapax: 0.764 (target: 1.0)
+   - Entropy: 0.159 (target: 1.0)
+   - Perplexity: 1.351 (target: 1.0)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - To achieve high readability, use simple and concise language.
+   - To maintain coherence, use short connected sentences.
+   - To focus on the topic, avoid filler words and off-topic phrases.
+   - To use precise vocabulary, avoid repetition of content words.
+   - To engage the reader, use a conversational tone and direct address.
+   - To be concise, use",151.9111,4.104651162790696,8533.419759655315,52.60531561461808,2.345514950166113,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0033112582781457123,0.13043478260869565,0.7336786389350891,0.12761443853378296,99.43250274658203,0.06023638695478439,0.7294690608978271,0.7732405066490173,0.00041676024557091296,0.9334218502044678,0.0,0.7360981106758118,0.7635092735290527,0.15919238328933716,1.3506401777267456
+5,MultiArith,"Lana picked 36 tulips and 37 roses to make flower bouquets. If she only used 70 of the flowers though, how many extra flowers did Lana pick?",#### 3,SCoT,"**ANALYZE** what the question is asking: Lana picked a total of 36 tulips and 37 roses, but only used 70 of the flowers. We need to find out how many extra flowers she picked.
+
+**PLAN** the reasoning steps needed:
+
+1. Find the total number of flowers Lana picked initially.
+2. Find the total number of flowers Lana used.
+3. Subtract the number of flowers used from the total number of flowers picked to find the number of extra flowers.
+
+**SOLVE** step by step:
+
+1. Find the total number of flowers Lana picked initially:
+36 tulips + 37 roses = 73 flowers
+
+2. Find the total number of flowers Lana used:
+70 flowers
+
+3. Subtract the number of flowers used from the total number of flowers picked to find the number of extra flowers:
+73 flowers - 70 flowers = 3 flowers
+
+Therefore, Lana picked 3 extra flowers.",96.2124,3.78848167539267,8543.820271596858,52.68638743455502,2.649214659685864,3120.765625,0.013888888888888888,0.0,0.013888888888888888,5.232135586792358e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.0024752475247524774,0.09302325581395349,0.7458143830299377,0.09174591302871704,,,,,,,,,,,
+5,MultiArith,"Lana picked 36 tulips and 37 roses to make flower bouquets. If she only used 70 of the flowers though, how many extra flowers did Lana pick?",#### 3,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: Lana's response should be easy to read, with short words and sentences.
+   - Coherence: The response should have a smooth logical flow between ideas.
+   - Relevance: Lana's response should focus on the topic of flower bouquets.
+   - Specificity: Lana's response should use diverse vocabulary.
+   - Engagement: Lana's response should be conversational and interactive.
+   - Concise: Lana's response should be compact and have shorter sentences on average.
+   - Length: Lana's response should be around 100 words.
+   - Zipf: The word frequency distribution should be natural and typical.
+   - Hapax: Lana's response should use unique words.
+   - Entropy: The word choice should be varied and unpredictable.
+   - Perplexity: The sentence structure should be complex and predictable.
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - Start with a clear and concise introduction to the problem.
+   - Provide the necessary information about Lana's initial flower collection.
+   - Calculate the number of extra flowers Lana picked.
+   - Use specific vocabulary and avoid filler words.
+   - Make sure the response is conversational and interactive.
+   - Keep the response concise and around 100 words.
+   - Use a natural and typical word frequency distribution.
+   - Use unique words to avoid repetition",151.8845,4.150830564784046,8522.107895556479,52.527906976744035,2.4651162790697674,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0007002801120448154,0.05128205128205128,0.7549651265144348,0.1300085186958313,96.87139892578125,0.19541041553020477,0.401223361492157,0.41673743724823,0.004359266255050898,0.7124373316764832,0.003651822917163372,0.36441701650619507,0.36729317903518677,0.6367493867874146,2.3364617824554443
+6,MultiArith,"Carol and her mom were picking carrots from their garden. Carol picked 29 and her mother picked 16. If only 38 of the carrots were good, how many bad carrots did they have?",#### 7,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks for the number of bad carrots, which implies that we need to find the difference between the total number of carrots picked and the number of good carrots.
+2. **PLAN**: To find the number of bad carrots, we need to add the number of good carrots picked by Carol and her mother.
+3. **SOLVE**:
+   - First, we add the number of good carrots picked by Carol (29) and her mother (16) to find the total number of good carrots.
+   - Then, we subtract the total number of good carrots from the total number of carrots picked to find the number of bad carrots.
+4. **STATE**: The final answer is the number of bad carrots.
+
+**SOLUTION**:
+
+- Total number of good carrots = 29 (Carol) + 16 (mother) = 45
+- Total number of carrots = 29 (Carol) + 16 (mother) = 45
+- Number of bad carrots = Total number of carrots - Total number of good carrots = 45 - 45 = 0
+
+Therefore, they had 0 bad carrots.",122.8737,3.8286885245901625,8536.487688908812,52.6163934426233,2.4836065573770494,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0010582010582010914,0.04347826086956522,0.7528817653656006,0.10326243937015533,,,,,,,,,,,
+6,MultiArith,"Carol and her mom were picking carrots from their garden. Carol picked 29 and her mother picked 16. If only 38 of the carrots were good, how many bad carrots did they have?",#### 7,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.331 (target: 0-100, range: 0-100, value: 99.331)
+- **Coherence**: 0.000 (target: 0.0-1.0, range: 0.0-1.0, value: 0.000)
+- **Relevance**: 0.000 (target: 0.0-1.0, range: 0.0-1.0, value: 0.000)
+- **Specificity**: 0.000 (target: 0.0-1.0, range: 0.0-1.0, value: 0.000)
+- **Engagement**: 0.000 (target: 0.0-1.0, range: 0.0-1.0, value: 0.000)
+- **Concise**: 0.993 (target: 0.0-1.0, range: 0.0-1.0, value: 0.993)
+- **Length**: 0.000 (target: 0.0-1.0, range: 0.0-1.0, value: 0.000)
+-",151.8993,4.38970099667774,8546.225874688538,52.67641196013266,2.372093023255814,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0014792899408283544,0.05128205128205128,0.7301412224769592,0.0776570737361908,99.3307113647461,0.0,0.0,0.0,0.0,0.9928663372993469,0.0,0.0,0.0,0.0,1.0
+7,MultiArith,Roger had 16 dollars. For his birthday he got 28 more dollars but spent 25 on a new game. How much money does he have now?,#### 19,SCoT,"**ANALYZE**:
+
+The question asks us to find out how much money Roger has now after receiving 28 dollars for his birthday, spending 25 dollars on a new game, and having 16 dollars initially.
+
+**PLAN**:
+
+To solve this problem, we need to follow the order of operations (PEMDAS):
+
+1. Add the 28 dollars Roger received for his birthday to his initial 16 dollars.
+2. Subtract the 25 dollars he spent on the new game from the result of step 1.
+
+**SOLVE**:
+
+Step 1: Add 28 dollars to 16 dollars.
+16 + 28 = 44
+
+Step 2: Subtract 25 dollars from 44 dollars.
+44 - 25 = 19
+
+**STATE**:
+
+Therefore, Roger has 19 dollars now.",84.6548,4.20714285714286,8566.969191778273,52.81309523809537,2.2857142857142856,3120.765625,0.018181818181818184,0.0,0.018181818181818184,5.587772457628148e-232,0.0,0.014705882352941176,0.5,0.028571428571428574,1,0.0049261083743842304,0.13043478260869565,0.7540274858474731,0.15434038639068604,,,,,,,,,,,
+7,MultiArith,Roger had 16 dollars. For his birthday he got 28 more dollars but spent 25 on a new game. How much money does he have now?,#### 19,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.313 (Flesch-Kincaid)
+- **Coherence**: 0.011 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.000 (more interactive, conversational tone)
+- **Concise**: 0.963 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.002 (a longer response)
+- **Zipf**: 0.000 (a more natural word-frequency distribution)
+- **Hapax**: 0.000 (more unique, non-repetitive words)
+- **Entropy**: 0.012 (more varied, less predictable word choice)
+- **Perplexity**: 1.011 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Start with a clear and concise statement**: ""Roger had $16. He received $28 for his birthday and spent $25 on a new game.""
+2. **Use simple and short sentences**: ""Roger had $16. He got $28 for his birthday. He spent $25 on a game.""
+3.",151.8878,4.137873754152822,8517.71143064784,52.49269102990018,2.4651162790697674,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0026978417266186883,0.125,0.7321152091026306,0.1131087988615036,99.31309509277344,0.010866002179682255,0.0,0.0,0.0,0.9628159403800964,0.002300987485796213,0.0,0.0,0.012022057548165321,1.010717749595642
+8,MultiArith,"While on vacation, Megan took 15 pictures at the zoo and 18 at the museum. If she later deleted 31 of the pictures, how many pictures from her vacation did she still have?",#### 2,SCoT,"**ANALYZE** what the question is asking: Megan took a total of 15 + 18 = 33 pictures during her vacation.
+
+**PLAN** the reasoning steps needed:
+
+1. Add the number of pictures Megan took at the zoo and the museum.
+2. Subtract the number of pictures she deleted from the total number of pictures.
+
+**SOLVE** step by step:
+
+1. Add the number of pictures Megan took at the zoo and the museum: 15 + 18 = 33
+2. Subtract the number of pictures she deleted: 33 - 31 = 2
+
+**STATE** the final answer clearly: Megan still had 2 pictures from her vacation.",71.0799,4.267375886524822,8556.016982491135,52.749645390070896,2.921985815602837,3120.765625,0.020618556701030924,0.0,0.020618556701030924,5.732687664195737e-232,0.0,0.0196078431372549,0.5,0.03773584905660377,1,0.003676470588235281,0.1,0.7558985352516174,0.11492873728275299,,,,,,,,,,,
+8,MultiArith,"While on vacation, Megan took 15 pictures at the zoo and 18 at the museum. If she later deleted 31 of the pictures, how many pictures from her vacation did she still have?",#### 2,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.217 (target: 0-100)
+- **Coherence**: 0.000 (target: 0.0-1.0)
+- **Relevance**: 0.000 (target: 0.0-1.0)
+- **Specificity**: 0.000 (target: 0.0-1.0)
+- **Engagement**: 0.000 (target: 0.0-1.0)
+- **Concise**: 0.998 (target: 0.0-1.0)
+- **Length**: 0.001 (target: 0.0-1.0)
+- **Zipf**: 0.000 (target: 0.0-1.0)
+- **Hapax**: 0.000 (target: 0.0-1.0)
+- **Entropy**: 0.000 (target: 0.0 and up)
+- **Perplexity**: 1.000 (target: 1.0 and up)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. Calculate the total number of pictures Megan took during her vacation.
+2. Subtract the number of pictures she deleted from the total number of pictures.
+",151.8227,5.579401993355472,8842.48615292774,54.513621262458756,2.4053156146179404,3120.765625,0.013422818791946308,0.0,0.013422818791946308,0.0,0.0,0.0,0.0,0.0,0,0.0023781212841854638,0.09523809523809523,0.7315257787704468,0.06401530653238297,99.21668243408203,0.0,0.0,0.0,0.0,0.9978793263435364,0.0006051891250535846,0.0,0.0,0.0,1.0
+9,MultiArith,Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color?,#### 11,SCoT,"**ANALYZE** what the question is asking: We need to find out how many pictures Rachel still has to color.
+
+**PLAN** the reasoning steps needed:
+
+1. Find the total number of pictures in both coloring books.
+2. Subtract the number of pictures already colored from the total number of pictures.
+
+**SOLVE** step by step:
+
+1. Find the total number of pictures in both coloring books:
+   Total pictures = Pictures in first book + Pictures in second book
+   Total pictures = 23 + 32
+   Total pictures = 55
+
+2. Subtract the number of pictures already colored from the total number of pictures:
+   Pictures still to color = Total pictures - Pictures already colored
+   Pictures still to color = 55 - 44
+   Pictures still to color = 11
+
+**STATE** the final answer clearly: Rachel still has 11 pictures to color.",92.2054,3.7535519125683052,8880.338264173497,54.74426229508209,2.579234972677596,3120.765625,0.015625,0.0,0.015625,5.325105075896282e-232,0.0,0.017857142857142856,0.5,0.03448275862068965,1,0.0037453183520599342,0.1,0.7453961372375488,0.1615416407585144,,,,,,,,,,,
+9,MultiArith,Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color?,#### 11,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.658 (target: 100)
+- **Coherence**: 0.119 (target: 1.0)
+- **Relevance**: 0.122 (target: 1.0)
+- **Specificity**: 0.164 (target: 1.0)
+- **Engagement**: 0.005 (target: 1.0)
+- **Concise**: 0.867 (target: 1.0)
+- **Length**: 0.000 (target: 1.0)
+- **Zipf**: 0.120 (target: 1.0)
+- **Hapax**: 0.138 (target: 1.0)
+- **Entropy**: 0.325 (target: 1.0)
+- **Perplexity**: 1.636 (target: 1.0)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Start with a clear and concise statement**: ""Rachel bought two coloring books, one with 23 pictures and the other with 32. After one week, she had already colored 44 of the pictures.""
+2. **Use simple and clear language**: Avoid using complex vocabulary or long sentences.
+3. **Use transitional phrases to",151.9425,3.9694352159468385,8721.407885174418,53.76710963455141,2.431893687707641,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003171247357293905,0.08333333333333334,0.7334321737289429,0.05008102208375931,98.65795135498047,0.11858600378036499,0.12217584252357483,0.1637713611125946,0.004982077982276678,0.8671039938926697,0.0,0.12039493024349213,0.13846345245838165,0.3249824345111847,1.636222004890442
+10,MultiArith,"Ned had to wash 9 short sleeve shirts and 21 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash?",#### 1,SCoT,"**ANALYZE**:
+
+The question asks us to find out how many shirts Ned did not wash. We are given two pieces of information:
+
+1. Ned had to wash 9 short sleeve shirts and 21 long sleeve shirts.
+2. He washed 29 shirts by the time school started.
+
+**PLAN** the reasoning steps needed:
+
+To find out how many shirts Ned did not wash, we need to subtract the number of shirts he washed from the total number of shirts he had to wash.
+
+**SOLVE** step by step:
+
+1. Calculate the total number of shirts Ned had to wash:
+9 short sleeve shirts + 21 long sleeve shirts = 30 shirts
+
+2. Calculate the number of shirts Ned did not wash:
+30 shirts (total to wash) - 29 shirts (shirts washed) = 1 shirt
+
+Therefore, Ned did not wash 1 shirt.
+
+**STATE** the final answer clearly:
+
+Ned did not wash 1 shirt.",99.7688,3.9646464646464623,8681.126380997475,53.52878787878802,2.606060606060606,3120.765625,0.0136986301369863,0.0,0.0136986301369863,5.2144890096970126e-232,0.0,0.014705882352941176,0.5,0.028571428571428574,1,0.0025510204081632404,0.09302325581395349,0.7693509459495544,0.09236834943294525,,,,,,,,,,,
+10,MultiArith,"Ned had to wash 9 short sleeve shirts and 21 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash?",#### 1,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.991 (excellent, indicating the text is easy to read)
+- **Coherence**: 0.000 (excellent, indicating the text has a smooth logical flow)
+- **Relevance**: 0.000 (excellent, indicating the text is focused on the topic)
+- **Specificity**: 0.000 (excellent, indicating the text uses diverse vocabulary)
+- **Engagement**: 0.001 (excellent, indicating the text has an interactive tone)
+- **Concise**: 0.995 (excellent, indicating the text is compact)
+- **Length**: 0.000 (excellent, indicating the text is very short)
+- **Zipf**: 0.037 (excellent, indicating a natural word-frequency distribution)
+- **Hapax**: 0.025 (excellent, indicating unique, non-repetitive words)
+- **Entropy**: 0.000 (excellent, indicating a varied word choice)
+- **Perplexity**: 1.000 (excellent, indicating a complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to make the text easy to read.
+2. **Coherence**: I",151.8946,4.153156146179398,8631.721488268273,53.202990033222754,2.4983388704318936,3120.765625,0.011976047904191616,0.0,0.011976047904191616,0.0,0.0,0.010416666666666666,0.5,0.020408163265306124,1,0.0017079419299743659,0.08888888888888889,0.7475989460945129,0.09664975851774216,98.99050903320312,0.0,0.0,0.0,0.0009596374584361911,0.9950946569442749,0.0,0.03661981225013733,0.025039613246917725,0.0,1.0
+11,MultiArith,"Oliver had to wash 39 short sleeve shirts and 47 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?",#### 66,SCoT,"**ANALYZE**:
+
+The question asks us to find out how many shirts Oliver did not wash. We are given two pieces of information:
+
+1. Oliver had to wash 39 short sleeve shirts and 47 long sleeve shirts.
+2. He washed 20 shirts by the time school started.
+
+**PLAN** the reasoning steps needed:
+
+To find out how many shirts Oliver did not wash, we need to subtract the number of shirts he washed from the total number of shirts he had to wash.
+
+**SOLVE** step by step:
+
+1. Calculate the total number of shirts Oliver had to wash:
+   Total shirts = short sleeve shirts + long sleeve shirts
+   Total shirts = 39 + 47
+   Total shirts = 86
+
+2. Calculate the number of shirts Oliver did not wash:
+   Shirts not washed = Total shirts - Shirts washed
+   Shirts not washed = 86 - 20
+   Shirts not washed = 66
+
+**STATE** the final answer clearly:
+
+Oliver did not wash 66 shirts.",108.3124,4.081395348837208,8678.281867732558,53.50744186046511,2.4976744186046513,3120.765625,0.013422818791946308,0.0,0.013422818791946308,5.1385909989173886e-232,0.0,0.015625,0.5,0.030303030303030304,1,0.0034883720930232176,0.08888888888888889,0.7589253783226013,0.16078932583332062,,,,,,,,,,,
+11,MultiArith,"Oliver had to wash 39 short sleeve shirts and 47 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?",#### 66,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.991 (excellent, indicating the text is easy to read)
+- **Coherence**: 0.000 (perfect, indicating the text has a smooth logical flow)
+- **Relevance**: 0.000 (excellent, indicating the text is focused on the topic)
+- **Specificity**: 0.000 (excellent, indicating the text uses diverse vocabulary)
+- **Engagement**: 0.001 (good, indicating the text has a conversational tone)
+- **Concise**: 0.995 (excellent, indicating the text is compact)
+- **Length**: 0.000 (excellent, indicating the text is very short)
+- **Zipf**: 0.037 (excellent, indicating a natural word-frequency distribution)
+- **Hapax**: 0.025 (excellent, indicating unique, non-repetitive words)
+- **Entropy**: 0.000 (excellent, indicating a varied, less predictable word choice)
+- **Perplexity**: 1.000 (excellent, indicating a complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to make the text easy to read.
+2. **Coherence",151.5518,3.9754152823920217,8672.666735880399,53.46777408637852,2.2691029900332227,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0008481764206954567,0.044444444444444446,0.7343221306800842,0.09732815623283386,98.99050903320312,0.0,0.0,0.0,0.0009596374584361911,0.9950946569442749,0.0,0.03661981225013733,0.025039613246917725,0.0,1.0
+12,MultiArith,For the school bake sale Wendy made pastries. She baked 4 cupcakes and 29 cookies. After the sale she had 24 to take back home. How many pastries did she sell?,#### 9,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks how many pastries Wendy sold, but it doesn't specify how many pastries she sold in total.
+2. **PLAN**: To find out how many pastries Wendy sold, we need to add the number of cupcakes and cookies she baked.
+3. **SOLVE**:
+   - First, we need to add the number of cupcakes and cookies Wendy baked. 
+     - Cupcakes: 4
+     - Cookies: 29
+     - Total baked goods: 4 + 29 = 33
+   - Then, we need to subtract the number of pastries Wendy had left to take back home from the total number of baked goods.
+     - Pastries left: 24
+     - Total baked goods: 33
+     - Pastries sold: 33 - 24 = 9
+
+**STATE**: The final answer is that Wendy sold 9 pastries.",101.2497,3.900497512437813,8655.576920087065,53.34825870646749,2.487562189054726,3120.765625,0.01680672268907563,0.0,0.01680672268907563,5.405811477015716e-232,0.0,0.015625,0.5,0.030303030303030304,1,0.0028208744710860323,0.09523809523809523,0.7594429850578308,0.17067715525627136,,,,,,,,,,,
+12,MultiArith,For the school bake sale Wendy made pastries. She baked 4 cupcakes and 29 cookies. After the sale she had 24 to take back home. How many pastries did she sell?,#### 9,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.124 (target: 100)
+   - Coherence: 0.084 (target: 1.0)
+   - Relevance: 0.279 (target: 1.0)
+   - Specificity: 0.308 (target: 1.0)
+   - Engagement: 0.000 (target: 1.0)
+   - Concise: 0.868 (target: 1.0)
+   - Length: 0.000 (target: 1.0)
+   - Zipf: 0.308 (target: 1.0)
+   - Hapax: 0.324 (target: 1.0)
+   - Entropy: 0.286 (target: 1.0)
+   - Perplexity: 1.474 (target: 1.0)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To match the readability target, the response should have a clear and concise structure, avoiding unnecessary words and phrases.
+   - To match the coherence target, the response should have a logical flow of ideas, with each sentence connecting to the previous one.
+   - To match the relevance target, the response should focus on the topic (pastries) and avoid filler words.
+  ",151.8966,4.130232558139525,8644.785662375416,53.286710963455384,2.398671096345515,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0021528525296017342,0.08888888888888889,0.7444546222686768,0.09352094680070877,98.12391662597656,0.08439242094755173,0.27925628423690796,0.30813759565353394,0.0,0.8679097294807434,0.00026298908051103354,0.308139443397522,0.32373476028442383,0.28601452708244324,1.473791241645813
+13,MultiArith,"While on vacation, Debby took 24 pictures at the zoo and 12 at the museum. If she later deleted 14 of the pictures, how many pictures from her vacation did she still have?",#### 22,SCoT,"**ANALYZE**:
+
+* Debby took 24 pictures at the zoo.
+* Debby took 12 pictures at the museum.
+* Debby deleted 14 pictures.
+
+**PLAN** the reasoning steps needed:
+
+1. Add the number of pictures Debby took at the zoo and the museum.
+2. Subtract the number of pictures Debby deleted from the total number of pictures.
+
+**SOLVE** step by step:
+
+1. Add the number of pictures Debby took at the zoo and the museum:
+24 (zoo) + 12 (museum) = 36
+2. Subtract the number of pictures Debby deleted from the total number of pictures:
+36 - 14 = 22
+
+**STATE** the final answer clearly:
+
+Debby still has 22 pictures from her vacation.",83.6362,4.9728915662650595,8816.779955760541,54.35240963855411,2.5903614457831323,3120.765625,0.01886792452830189,0.0,0.01886792452830189,5.60020361889364e-232,0.0,0.021739130434782608,0.5,0.041666666666666664,1,0.004885993485342022,0.09756097560975609,0.7471063733100891,0.24231809377670288,,,,,,,,,,,
+13,MultiArith,"While on vacation, Debby took 24 pictures at the zoo and 12 at the museum. If she later deleted 14 of the pictures, how many pictures from her vacation did she still have?",#### 22,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.217 (target: 100)
+   - Coherence: 0.000 (target: 1)
+   - Relevance: 0.000 (target: 1)
+   - Specificity: 0.000 (target: 1)
+   - Engagement: 0.000 (target: 1)
+   - Concise: 0.998 (target: 1)
+   - Length: 0.001 (target: 1)
+   - Zipf: 0.000 (target: 1)
+   - Hapax: 0.000 (target: 1)
+   - Entropy: 0.000 (target: 1)
+   - Perplexity: 1.000 (target: 1)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - Start with a clear and concise question that addresses the problem.
+   - Provide a step-by-step solution that addresses each target metric.
+   - Use simple and clear language to explain each step.
+   - Use a logical and coherent structure to connect each step to the next.
+
+3. **WRITE** following the specific guidance for each metric:
+
+   **Readability**: The question is clear and concise, making it easy to understand. The language is simple, and the structure is",151.9228,3.968770764119598,8744.106208471761,53.88970099667775,2.425249169435216,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0030060120240480437,0.0909090909090909,0.7350983023643494,0.10683158040046692,99.21668243408203,0.0,0.0,0.0,0.0,0.9978793263435364,0.0006051891250535846,0.0,0.0,0.0,1.0
+14,MultiArith,"Katie picked 3 tulips and 9 roses to make flower bouquets. If she only used 10 of the flowers though, how many extra flowers did Katie pick?",#### 2,SCoT,"**ANALYZE**:
+
+* The question asks how many extra flowers Katie picked, given that she only used 10 of the flowers.
+* We know that Katie picked 3 tulips and 9 roses.
+
+**PLAN** the reasoning steps needed:
+
+1. Calculate the total number of flowers Katie picked initially.
+2. Calculate the number of flowers Katie used.
+3. Find the difference between the total number of flowers picked initially and the number of flowers used.
+
+**SOLVE** step by step:
+
+1. Calculate the total number of flowers Katie picked initially:
+   3 tulips + 9 roses = 12 flowers
+
+2. Calculate the number of flowers Katie used:
+   10 flowers
+
+3. Find the difference between the total number of flowers picked initially and the number of flowers used:
+   12 flowers - 10 flowers = 2 flowers
+
+**STATE** the final answer clearly:
+
+Katie picked 2 extra flowers.",97.2281,4.135751295336789,8732.564625161916,53.832124352331626,2.5077720207253886,3120.765625,0.014814814814814815,0.0,0.014814814814814815,5.296345581277523e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.00241837968561065,0.09523809523809523,0.7522699236869812,0.05081986263394356,,,,,,,,,,,
+14,MultiArith,"Katie picked 3 tulips and 9 roses to make flower bouquets. If she only used 10 of the flowers though, how many extra flowers did Katie pick?",#### 2,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 96.871, which is a high score, indicating the text is clear and easy to understand.
+   - Coherence: 0.195, which is a low score, indicating the text may be disjointed or hard to follow.
+   - Relevance: 0.401, which is a high score, indicating the text is focused on the topic and relevant to the question.
+   - Specificity: 0.417, which is a high score, indicating the text uses diverse and precise vocabulary.
+   - Engagement: 0.004, which is a very low score, indicating the text is not engaging or interactive.
+   - Concise: 0.712, which is a high score, indicating the text is compact and well-structured.
+   - Length: 0.004, which is a very low score, indicating the text is very short.
+   - Zipf: 0.364, which is a high score, indicating the text has a natural word-frequency distribution.
+   - Hapax: 0.367, which is a high score, indicating the text uses unique and non-repetitive words.
+   - Entropy: 0.637, which is a high score, indicating the text has a varied and unpredictable word choice.
+   - Perplexity: 2.336",151.8827,3.934219269102991,8638.28463714701,53.255481727574754,2.4451827242524917,3120.765625,0.010526315789473682,0.0,0.010526315789473682,0.0,0.0,0.0,0.0,0.0,0,0.0017528483786152238,0.08888888888888889,0.7560549974441528,0.12510249018669128,96.87139892578125,0.19541041553020477,0.401223361492157,0.41673743724823,0.004359266255050898,0.7124373316764832,0.003651822917163372,0.36441701650619507,0.36729317903518677,0.6367493867874146,2.3364617824554443
+15,MultiArith,"Faye had 46 math problems and 9 science problems for homework. If she finished 40 of the problems at school, how many problems did she have to do for homework?",#### 15,SCoT,"**ANALYZE**:
+
+* The question asks how many problems Faye had to do for homework, given that she finished 40 of the math problems and 9 science problems at school.
+
+**PLAN**:
+
+* To find out how many problems Faye had to do for homework, we need to add the number of math problems she finished at school to the number of science problems she finished at school.
+* We can represent this as: math problems finished at school + science problems finished at school = total problems to do for homework.
+
+**SOLVE**:
+
+* First, let's add the number of math problems Faye finished at school to the number of science problems she finished at school:
+  40 (math problems finished at school) + 9 (science problems finished at school) = 49
+* Now, we have the total number of problems Faye finished at school, which is 49.
+* To find out how many problems she had to do for homework, we need to add this to the number of math problems she had for homework:
+  49 (total problems finished at school) + 46 (math problems for homework) = 95
+
+**STATE**:
+
+* Faye had 95 problems to do for homework.",128.8905,4.223828124999994,8663.308181762695,53.414843749999946,2.3515625,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0018604651162790198,0.09090909090909091,0.7487461566925049,0.07367289811372757,,,,,,,,,,,
+15,MultiArith,"Faye had 46 math problems and 9 science problems for homework. If she finished 40 of the problems at school, how many problems did she have to do for homework?",#### 15,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.976 (Flesch-Kincaid)
+- **Coherence**: 0.000 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.001 (more interactive, conversational tone)
+- **Concise**: 1.000 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.013 (natural word-frequency distribution)
+- **Hapax**: 0.001 (more unique, non-repetitive words)
+- **Entropy**: 0.000 (more varied, less predictable word choice)
+- **Perplexity**: 1.000 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to make the response easy to read.
+2. **Coherence**: I will use short connected sentences to create a smooth logical flow between ideas.
+3. **Relevance**: I will focus on the math problems and science problems to ensure a tight focus on the topic.
+4",151.8915,3.7661129568106286,8646.107973421927,53.29235880398663,2.4219269102990033,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0017094017094017033,0.08695652173913042,0.7432361245155334,0.130498006939888,99.97606658935547,0.0,0.0,0.0,0.0005211711977608502,1.0,0.0,0.013212665915489197,0.0009520202875137329,0.0,1.0
+16,MultiArith,"Amy had 4 music files and 21 video files on her flash drive. If she deleted 23 of the files, how many files were still on her flash drive?",#### 2,SCoT,"**ANALYZE** what the question is asking: We need to find out how many files are still on Amy's flash drive after she deletes 23 files.
+
+**PLAN** the reasoning steps needed:
+
+1. Start with the initial number of files on the flash drive.
+2. Subtract the number of files deleted from the initial number of files.
+3. Calculate the final number of files remaining.
+
+**SOLVE** step by step:
+
+1. Initial number of files = 4 (music files) + 21 (video files) = 25
+2. Number of files deleted = 23
+3. Final number of files remaining = Initial number of files - Number of files deleted = 25 - 23 = 2
+
+**STATE** the final answer clearly: Amy has 2 files still on her flash drive after deleting 23 files.",88.159,4.203428571428571,8733.372723214286,53.84114285714285,2.4971428571428573,3120.765625,0.01639344262295082,0.0,0.01639344262295082,5.405811477015716e-232,0.0,0.015151515151515152,0.5,0.029411764705882356,1,0.0028985507246376274,0.09302325581395349,0.7483935952186584,0.07654484361410141,,,,,,,,,,,
+16,MultiArith,"Amy had 4 music files and 21 video files on her flash drive. If she deleted 23 of the files, how many files were still on her flash drive?",#### 2,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 97.860 (target: 100)
+- **Coherence**: 0.009 (target: 1.0)
+- **Relevance**: 0.054 (target: 1.0)
+- **Specificity**: 0.065 (target: 1.0)
+- **Engagement**: 0.005 (target: 1.0)
+- **Concise**: 0.903 (target: 1.0)
+- **Length**: 0.000 (target: 1.0)
+- **Zipf**: 0.138 (target: 1.0)
+- **Hapax**: 0.128 (target: 1.0)
+- **Entropy**: 0.012 (target: 1.0)
+- **Perplexity**: 1.000 (target: 1.0)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to explain the problem and the solution. This will help to increase readability.
+2. **Coherence**: I will use a logical flow of ideas to connect the problem statement to the solution. This will help to increase coherence.
+3. **Relevance**: I will focus on",151.8988,3.959136212624581,8674.055414244185,53.48504983388707,2.398671096345515,3120.765625,0.013071895424836602,0.0,0.013071895424836602,0.0,0.0,0.012048192771084338,0.5,0.023529411764705882,1,0.002111932418162654,0.08695652173913045,0.7325273752212524,0.04082470387220383,97.86012268066406,0.008534468710422516,0.053833071142435074,0.06540022790431976,0.004592464305460453,0.9033007025718689,0.0,0.1379389464855194,0.12763488292694092,0.011892629787325859,1.0
+17,MultiArith,"Ned was trying to expand his game collection. He bought 11 games from a friend and bought 22 more at a garage sale. If 19 of the games didn't work, how many good games did he end up with?",#### 14,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks how many good games Ned ended up with after buying 11 games from a friend and 22 more at a garage sale. We need to find out how many games are good.
+2. **PLAN**: To find the number of good games, we need to subtract the number of games that didn't work from the total number of games.
+3. **SOLVE**:
+   - First, let's add the number of games Ned bought from a friend and the number of games he bought at a garage sale: 11 + 22 = 33.
+   - Now, let's subtract the number of games that didn't work (19) from the total number of games (33): 33 - 19 = 14.
+
+**STATE**: The number of good games Ned ended up with is 14.
+
+The final answer is: 14",96.7388,4.3973958333333325,8662.265909830729,53.40052083333334,2.5052083333333335,3120.765625,0.014492753623188404,0.0,0.014492753623188404,5.30584579089779e-232,0.0,0.014285714285714285,0.5,0.02777777777777778,1,0.004279600570613384,0.13333333333333333,0.7652446627616882,0.20988357067108154,,,,,,,,,,,
+17,MultiArith,"Ned was trying to expand his game collection. He bought 11 games from a friend and bought 22 more at a garage sale. If 19 of the games didn't work, how many good games did he end up with?",#### 14,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.590 (excellent, indicating the text is easy to read)
+- **Coherence**: 0.000 (perfect, indicating the text has a smooth logical flow)
+- **Relevance**: 0.000 (excellent, indicating the text focuses on the topic)
+- **Specificity**: 0.000 (excellent, indicating the text uses diverse vocabulary)
+- **Engagement**: 0.001 (good, indicating the text has an interactive tone)
+- **Concise**: 0.998 (excellent, indicating the text is compact)
+- **Length**: 0.005 (excellent, indicating the text is short)
+- **Zipf**: 0.000 (excellent, indicating the text has a natural word-frequency distribution)
+- **Hapax**: 0.000 (excellent, indicating the text uses unique words)
+- **Entropy**: 0.000 (excellent, indicating the text has varied word choice)
+- **Perplexity**: 1.000 (excellent, indicating the text has a complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Introduction**: Start with a clear and concise statement about Ned's game collection.
+2. **Setup**: Provide the necessary",151.9369,3.7880398671096325,8630.682205149502,53.21162790697704,2.478405315614618,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0016501650165016146,0.09090909090909091,0.7397769093513489,0.09307219833135605,99.58985137939453,0.0,0.0,0.0,0.0005170195363461971,0.9979260563850403,0.004846087656915188,0.0,0.0,0.0,1.0
+18,MultiArith,Chloe was playing a trivia game. In the first round she scored 40 points and in the second round she scored 50 points. In the last round she lost 4 points. How many points did she have at the end of the game?,#### 86,SCoT,"**ANALYZE**:
+
+* The question asks for Chloe's final score in a trivia game.
+* We are given the scores in three rounds: 40 points in the first round, 50 points in the second round, and 46 points in the last round (since she lost 4 points).
+
+**PLAN** the reasoning steps needed:
+
+1. Add the scores of the first two rounds to find the total score before the last round.
+2. Subtract the score of the last round from the total score to find the final score.
+
+**SOLVE** step by step:
+
+1. Add the scores of the first two rounds:
+40 + 50 = 90
+2. Subtract the score of the last round from the total score:
+90 - 46 = 44
+
+**STATE** the final answer clearly:
+
+Chloe had 44 points at the end of the game.",91.2065,3.960773480662982,8673.233964951658,53.470165745856356,2.596685082872928,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0028943560057886897,0.0851063829787234,0.7524407505989075,0.17062635719776154,,,,,,,,,,,
+18,MultiArith,Chloe was playing a trivia game. In the first round she scored 40 points and in the second round she scored 50 points. In the last round she lost 4 points. How many points did she have at the end of the game?,#### 86,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.236
+   - Coherence: 0.078
+   - Relevance: 0.003
+   - Specificity: 0.000
+   - Engagement: 0.002
+   - Concise: 0.870
+   - Length: 0.007
+   - Zipf: 0.000
+   - Hapax: 0.000
+   - Entropy: 0.279
+   - Perplexity: 1.583
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the target Readability of 98.236, the response should be concise and easy to read, with short sentences and words.
+   - To achieve the target Coherence of 0.078, the response should have a smooth logical flow between ideas.
+   - To achieve the target Relevance of 0.003, the response should focus on the topic and avoid filler words.
+   - To achieve the target Specificity of 0.000, the response should use diverse and precise vocabulary.
+   - To achieve the target Engagement of 0.002, the response should be interactive and conversational.
+   - To achieve the target Concise of 0.870, the response should be compact and have shorter sentences on average",151.9186,3.9205980066445143,8668.536064680233,53.43388704318907,2.398671096345515,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002822201317027262,0.13636363636363635,0.7482743859291077,0.130510613322258,98.23590087890625,0.07772713899612427,0.002666689455509186,0.0,0.0023752471897751093,0.8695402145385742,0.006670425180345774,0.0,0.0,0.2791677713394165,1.5832160711288452
+19,MultiArith,"At the arcade, Tom won 32 tickets playing 'whack a mole' and 25 tickets playing 'skee ball'. If he spent 7 of his tickets on a hat, how many tickets does Tom have left?",#### 50,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. Analyze what the question is asking: We need to find out how many tickets Tom has left after spending 7 of his tickets on a hat.
+2. Plan the reasoning steps needed: We will subtract the number of tickets Tom spent (7) from the total number of tickets he won (32 + 25).
+3. Solve step by step:
+   - First, we need to find the total number of tickets Tom won. We add the tickets won from 'whack a mole' and 'skee ball': 32 + 25 = 57.
+   - Then, we subtract the number of tickets Tom spent (7) from the total number of tickets he won: 57 - 7 = 50.
+
+**STATE THE FINAL ANSWER CLEARLY**:
+
+Tom has 50 tickets left.",88.6952,3.924431818181817,8687.379261363636,53.55454545454561,2.6363636363636362,3120.765625,0.01652892561983471,0.0,0.01652892561983471,5.4269696562331364e-232,0.0,0.013888888888888888,0.5,0.02702702702702703,1,0.004687499999999956,0.13043478260869565,0.756813645362854,0.2729180157184601,,,,,,,,,,,
+19,MultiArith,"At the arcade, Tom won 32 tickets playing 'whack a mole' and 25 tickets playing 'skee ball'. If he spent 7 of his tickets on a hat, how many tickets does Tom have left?",#### 50,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.192 (Flesch-Kincaid)
+- **Coherence**: 0.134 (smooth logical flow between ideas)
+- **Relevance**: 0.052 (tighter focus on the topic)
+- **Specificity**: 0.088 (diverse, precise vocabulary)
+- **Engagement**: 0.016 (more interactive tone)
+- **Concise**: 0.861 (compact phrasing)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.107 (natural word-frequency distribution)
+- **Hapax**: 0.109 (unique, non-repetitive words)
+- **Entropy**: 0.315 (more varied word choice)
+- **Perplexity**: 1.666 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to convey the information. I will avoid using complex vocabulary or long phrases.
+2. **Coherence**: I will use a logical flow of ideas to connect the information. I will ensure that the answer is easy to understand and follow.
+3. **Relevance**: I will focus on the specific question and provide a clear answer that addresses the",151.9163,4.35149501661129,8684.77993926495,53.52724252491691,2.524916943521595,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002564102564102555,0.125,0.7378813028335571,0.1176770031452179,99.19188690185547,0.13449402153491974,0.05163947492837906,0.08833836019039154,0.015729626640677452,0.8612282276153564,0.0,0.10680460184812546,0.10919643938541412,0.3152249753475189,1.665526270866394
+20,MultiArith,"Bianca and her mom were picking carrots from their garden. Bianca picked 26 and her mother picked 15. If only 16 of the carrots were good, how many bad carrots did they have?",#### 25,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks for the number of bad carrots, which are the ones that are not good.
+2. **PLAN**: To find the number of bad carrots, we need to add the number of good carrots picked by Bianca and her mother.
+3. **SOLVE**:
+   - First, add the number of good carrots picked by Bianca and her mother: 26 (Bianca's carrots) + 15 (mother's carrots) = 41
+   - Then, subtract the number of good carrots from the total to find the number of bad carrots: 41 (total good carrots) - 16 (good carrots) = 25
+
+**STATE**: The number of bad carrots is 25.",82.6666,3.8743902439024382,8693.522722942073,53.61341463414642,2.8048780487804876,3120.765625,0.01904761904761905,0.0,0.01904761904761905,5.65135233948518e-232,0.0,0.017857142857142856,0.5,0.03448275862068965,1,0.005102040816326481,0.13043478260869565,0.7591578364372253,0.24947088956832886,,,,,,,,,,,
+20,MultiArith,"Bianca and her mom were picking carrots from their garden. Bianca picked 26 and her mother picked 15. If only 16 of the carrots were good, how many bad carrots did they have?",#### 25,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.331 (excellent)
+- **Coherence**: 0.000 (perfect)
+- **Relevance**: 0.000 (perfect)
+- **Specificity**: 0.000 (perfect)
+- **Engagement**: 0.000 (perfect)
+- **Concise**: 0.993 (excellent)
+- **Length**: 0.000 (perfect)
+- **Zipf**: 0.000 (perfect)
+- **Hapax**: 0.000 (perfect)
+- **Entropy**: 0.000 (perfect)
+- **Perplexity**: 1.000 (excellent)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to make the explanation easy to understand.
+2. **Coherence**: I will use short connected sentences to create a smooth logical flow between ideas.
+3. **Relevance**: I will focus on the topic (carrots) and use relevant vocabulary.
+4. **Specificity**: I will use precise vocabulary to avoid repetition.
+5. **Engagement**: I will use a conversational tone to make the explanation interactive.
+6. **Concise**: I will use short sentences and avoid unnecessary words.
+7. **Length",151.9337,4.0750830564784035,8690.167047342193,53.574418604651164,2.4983388704318936,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002664298401420906,0.1276595744680851,0.7330872416496277,0.10134563595056534,99.3307113647461,0.0,0.0,0.0,0.0,0.9928663372993469,0.0,0.0,0.0,0.0,1.0
+21,MultiArith,For the school bake sale Katie made pastries. She baked 7 cupcakes and 5 cookies. After the sale she had 8 to take back home. How many pastries did she sell?,#### 4,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks how many pastries Katie sold, but it doesn't specify how many pastries she sold in total.
+2. **PLAN**: To find out how many pastries Katie sold, we need to add the number of cupcakes she sold to the number of cookies she sold.
+3. **SOLVE**:
+   - Katie sold 7 cupcakes.
+   - Katie sold 5 cookies.
+   - To find the total number of pastries sold, we add the number of cupcakes and cookies: 7 + 5 = 12.
+4. **STATE**: The final answer is that Katie sold 12 pastries.
+
+**Answer**: Katie sold 12 pastries.",78.1351,3.925806451612903,8737.113306451613,53.861290322580714,2.6903225806451614,3120.765625,0.020202020202020204,0.0,0.020202020202020204,0.0,0.0,0.019230769230769232,0.5,0.037037037037037035,1,0.003552397868561319,0.09302325581395349,0.770592212677002,0.13039498031139374,,,,,,,,,,,
+21,MultiArith,For the school bake sale Katie made pastries. She baked 7 cupcakes and 5 cookies. After the sale she had 8 to take back home. How many pastries did she sell?,#### 4,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.124 (target: 100)
+   - Coherence: 0.084 (target: 1.0)
+   - Relevance: 0.279 (target: 1.0)
+   - Specificity: 0.308 (target: 1.0)
+   - Engagement: 0.000 (target: 1.0)
+   - Concise: 0.868 (target: 1.0)
+   - Length: 0.000 (target: 1.0)
+   - Zipf: 0.308 (target: 1.0)
+   - Hapax: 0.324 (target: 1.0)
+   - Entropy: 0.286 (target: 1.0)
+   - Perplexity: 1.474 (target: 1.0)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - To achieve high readability, use simple vocabulary and short sentences.
+   - To maintain coherence, use connected sentences that flow logically.
+   - To ensure relevance, focus on the topic (pastries) and avoid filler words.
+   - To increase specificity, use diverse vocabulary and avoid repetition.
+   - To engage the reader, use a conversational tone and direct address.
+  ",151.916,3.831229235880395,8667.785143272426,53.44318936877065,2.398671096345515,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0021574973031284195,0.08888888888888889,0.7464000582695007,0.11912552267313004,98.12391662597656,0.08439242094755173,0.27925628423690796,0.30813759565353394,0.0,0.8679097294807434,0.00026298908051103354,0.308139443397522,0.32373476028442383,0.28601452708244324,1.473791241645813
+22,MultiArith,Zoe bought two coloring books. One had 44 pictures and the other had 44. After one week she had already colored 20 of the pictures. How many pictures does she still have to color?,#### 68,SCoT,"**ANALYZE** what the question is asking: Zoe has two coloring books with 44 pictures each. She has already colored 20 pictures from one of the books. We need to find out how many pictures she still has to color.
+
+**PLAN** the reasoning steps needed:
+
+1. Find the total number of pictures in both coloring books.
+2. Subtract the number of pictures Zoe has already colored from the total number of pictures.
+
+**SOLVE** step by step:
+
+1. Find the total number of pictures in both coloring books:
+   Total pictures = Pictures in Book 1 + Pictures in Book 2
+   Total pictures = 44 + 44
+   Total pictures = 88
+
+2. Subtract the number of pictures Zoe has already colored from the total number of pictures:
+   Pictures left to color = Total pictures - Pictures already colored
+   Pictures left to color = 88 - 20
+   Pictures left to color = 68
+
+**STATE** the final answer clearly: Zoe still has 68 pictures to color.",107.3071,4.395305164319248,8695.67002274061,53.606103286384915,2.431924882629108,3120.765625,0.013157894736842105,0.0,0.013157894736842105,5.114484356095503e-232,0.0,0.01639344262295082,0.5,0.031746031746031744,1,0.0033039647577092213,0.14285714285714285,0.7409529685974121,0.20425933599472046,,,,,,,,,,,
+22,MultiArith,Zoe bought two coloring books. One had 44 pictures and the other had 44. After one week she had already colored 20 of the pictures. How many pictures does she still have to color?,#### 68,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.658 (target: 100)
+- **Coherence**: 0.119 (target: 1.0)
+- **Relevance**: 0.122 (target: 1.0)
+- **Specificity**: 0.164 (target: 1.0)
+- **Engagement**: 0.005 (target: 1.0)
+- **Concise**: 0.867 (target: 1.0)
+- **Length**: 0.000 (target: 1.0)
+- **Zipf**: 0.120 (target: 1.0)
+- **Hapax**: 0.138 (target: 1.0)
+- **Entropy**: 0.325 (target: 1.0)
+- **Perplexity**: 1.636 (target: 1.0)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Start with a clear and concise statement**: ""Zoe has 44 pictures in two coloring books. She has colored 20 of them.""
+2. **Use simple and short sentences**: ""She has 24 pictures left to color.""
+3. **Avoid filler words and repetitive content**: ""She has 24 pictures left to",151.8752,3.7754152823920224,8719.18725342608,53.76179401993343,2.425249169435216,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003285870755750264,0.125,0.735973060131073,0.06449216604232788,98.65795135498047,0.11858600378036499,0.12217584252357483,0.1637713611125946,0.004982077982276678,0.8671039938926697,0.0,0.12039493024349213,0.13846345245838165,0.3249824345111847,1.636222004890442
+23,MultiArith,"John was trying to expand his game collection. He bought 21 games from a friend and bought 8 more at a garage sale. If 23 of the games didn't work, how many good games did he end up with?",#### 6,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks how many good games John ended up with after buying 21 games and 8 more at a garage sale, given that 23 of the games didn't work.
+2. **PLAN**: To solve this problem, we need to subtract the number of non-working games from the total number of games John bought.
+3. **SOLVE**:
+   - First, we add the number of games John bought at the friend's place and the garage sale: 21 + 8 = 29 games.
+   - Then, we subtract the number of non-working games from the total number of games: 29 - 23 = 6.
+
+**STATE**: John ended up with 6 good games.",81.636,3.961111111111112,8757.176263503086,54.004938271604956,2.5864197530864197,3120.765625,0.01785714285714286,0.0,0.01785714285714286,5.587772457628148e-232,0.0,0.015625,0.5,0.030303030303030304,1,0.0033444816053511683,0.0909090909090909,0.7694011926651001,0.11023759096860886,,,,,,,,,,,
+23,MultiArith,"John was trying to expand his game collection. He bought 21 games from a friend and bought 8 more at a garage sale. If 23 of the games didn't work, how many good games did he end up with?",#### 6,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.590 (excellent)
+- **Coherence**: 0.000 (excellent)
+- **Relevance**: 0.000 (excellent)
+- **Specificity**: 0.000 (excellent)
+- **Engagement**: 0.001 (good)
+- **Concise**: 0.998 (excellent)
+- **Length**: 0.005 (excellent)
+- **Zipf**: 0.000 (excellent)
+- **Hapax**: 0.000 (excellent)
+- **Entropy**: 0.000 (excellent)
+- **Perplexity**: 1.000 (excellent)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to explain the problem and the solution. I will avoid using complex vocabulary or long phrases.
+2. **Coherence**: I will use a logical flow of ideas to explain the problem and the solution. I will avoid using unnecessary words or phrases.
+3. **Relevance**: I will focus on the topic of John's game collection and the problem of him buying games.
+4. **Specificity**: I will use specific words and phrases to describe the number of games John bought.
+5.",151.9424,4.088039867109632,8720.472344788206,53.759800664452165,2.4119601328903655,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0008960573476702871,0.04347826086956522,0.7389706969261169,0.06863925606012344,99.58985137939453,0.0,0.0,0.0,0.0005170195363461971,0.9979260563850403,0.004846087656915188,0.0,0.0,0.0,1.0
+24,MultiArith,Henry had 11 dollars. For his birthday he got 18 more dollars but spent 10 on a new game. How much money does he have now?,#### 19,SCoT,"**ANALYZE** what the question is asking: To find out how much money Henry has now, we need to subtract the amount he spent on a new game from the amount he had initially.
+
+**PLAN** the reasoning steps needed:
+
+1. Find out how much money Henry had initially.
+2. Find out how much money Henry spent on a new game.
+3. Subtract the amount Henry spent from the amount he had initially.
+
+**SOLVE** step by step:
+
+1. Henry had 11 dollars initially.
+2. He got 18 more dollars for his birthday, so he now has 11 + 18 = 29 dollars.
+3. He spent 10 dollars on a new game, so we need to subtract 10 from 29 to find out how much money he has now: 29 - 10 = 19.
+
+**STATE** the final answer clearly: Henry has 19 dollars now.",94.7023,3.9425531914893632,8679.597677027925,53.495744680851075,2.4468085106382977,3120.765625,0.014492753623188404,0.0,0.014492753623188404,5.286929818568628e-232,0.0,0.01639344262295082,0.5,0.031746031746031744,1,0.004231311706629048,0.13953488372093026,0.74367755651474,0.19681982696056366,,,,,,,,,,,
+24,MultiArith,Henry had 11 dollars. For his birthday he got 18 more dollars but spent 10 on a new game. How much money does he have now?,#### 19,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.313 (Flesch-Kincaid)
+- **Coherence**: 0.011 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.000 (more interactive, conversational tone)
+- **Concise**: 0.963 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.002 (a longer response)
+- **Zipf**: 0.000 (a more natural word-frequency distribution)
+- **Hapax**: 0.000 (more unique, non-repetitive words)
+- **Entropy**: 0.012 (more varied, less predictable word choice)
+- **Perplexity**: 1.011 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Start with a clear and concise statement**: ""Henry had $11. He received $18 for his birthday, but spent $10 on a new game.""
+2. **Use simple and short sentences**: ""He had $11. He got $18. He spent $10.""
+3. **Avoid filler words and",151.8901,4.068106312292353,8636.319014742525,53.24684385382082,2.335548172757475,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0027075812274368616,0.1276595744680851,0.7322194576263428,0.1131087988615036,99.31309509277344,0.010866002179682255,0.0,0.0,0.0,0.9628159403800964,0.002300987485796213,0.0,0.0,0.012022057548165321,1.010717749595642
+25,MultiArith,"While on vacation, Gwen took 41 pictures at the zoo and 29 at the museum. If she later deleted 15 of the pictures, how many pictures from her vacation did she still have?",#### 55,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks us to find out how many pictures Gwen still has after deleting 15 of the 41 pictures she took at the zoo and 29 pictures at the museum.
+2. **PLAN**: To solve this problem, we need to subtract the number of pictures Gwen deleted from the total number of pictures she took at the zoo and the museum.
+3. **SOLVE**:
+   - First, let's find the total number of pictures Gwen took at the zoo and the museum. This is 41 (zoo) + 29 (museum) = 70 pictures.
+   - Next, let's subtract the number of pictures Gwen deleted (15) from the total number of pictures she took (70). This is 70 - 15 = 55.
+
+**STATE**: The final answer is 55. Gwen still has 55 pictures from her vacation.",97.7379,3.8835051546391752,8698.53431056701,53.62577319587633,2.5,3120.765625,0.014925373134328356,0.0,0.014925373134328356,5.325105075896282e-232,0.0,0.015384615384615385,0.5,0.029850746268656723,1,0.004103967168262668,0.08333333333333334,0.7573937773704529,0.22765158116817474,,,,,,,,,,,
+25,MultiArith,"While on vacation, Gwen took 41 pictures at the zoo and 29 at the museum. If she later deleted 15 of the pictures, how many pictures from her vacation did she still have?",#### 55,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.217 (Flesch-Kincaid)
+- **Coherence**: 0.000 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.000 (more interactive, conversational tone)
+- **Concise**: 0.998 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.001 (a longer response)
+- **Zipf**: 0.000 (a more natural word-frequency distribution)
+- **Hapax**: 0.000 (more unique, non-repetitive words)
+- **Entropy**: 0.000 (more varied, less predictable word choice)
+- **Perplexity**: 1.000 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. Start with a clear and concise statement about Gwen's vacation.
+2. Provide the number of pictures taken at the zoo and the museum.
+3. Calculate the total number of pictures taken.
+4. Subtract the number of pictures deleted from the total number of pictures taken.
+
+**WRITE** following the specific guidance for each metric:
+
+",151.9034,3.8199335548172733,8688.602652616279,53.56079734219285,2.3853820598006643,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0008326394671107629,0.04347826086956522,0.7387198209762573,0.08421851694583893,99.21668243408203,0.0,0.0,0.0,0.0,0.9978793263435364,0.0006051891250535846,0.0,0.0,0.0,1.0
+26,MultiArith,"Sam had to wash 40 short sleeve shirts and 23 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash?",#### 34,SCoT,"**ANALYZE**:
+
+The question asks us to find out how many shirts Sam did not wash. We are given the total number of shirts he had to wash (40 short sleeve shirts + 23 long sleeve shirts) and the number of shirts he actually washed (29).
+
+**PLAN** the reasoning steps needed:
+
+1. Find the total number of shirts Sam had to wash.
+2. Find the number of shirts Sam actually washed.
+3. Subtract the number of shirts Sam actually washed from the total number of shirts he had to wash to find out how many he did not wash.
+
+**SOLVE** step by step:
+
+1. Find the total number of shirts Sam had to wash:
+   Total shirts = short sleeve shirts + long sleeve shirts
+   Total shirts = 40 + 23
+   Total shirts = 63
+
+2. Find the number of shirts Sam actually washed:
+   Shirts washed = 29
+
+3. Subtract the number of shirts Sam actually washed from the total number of shirts he had to wash to find out how many he did not wash:
+   Shirts not washed = Total shirts - Shirts washed
+   Shirts not washed = 63 - 29
+   Shirts not washed = 34
+
+**STATE** the final answer clearly:
+
+Sam did not wash 34 shirts.",135.4265,3.9613382899628222,8721.024715381041,53.7546468401486,2.2973977695167287,3120.765625,0.010256410256410256,0.0,0.010256410256410256,4.808853187931993e-232,0.0,0.01694915254237288,0.5,0.03278688524590164,1,0.002767527675276771,0.13333333333333333,0.7507492303848267,0.16771352291107178,,,,,,,,,,,
+26,MultiArith,"Sam had to wash 40 short sleeve shirts and 23 long sleeve shirts before school. If he had only washed 29 of them by the time school started, how many did he not wash?",#### 34,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.991 (excellent, indicating the text is easy to read)
+- **Coherence**: 0.000 (excellent, indicating the text has a smooth logical flow)
+- **Relevance**: 0.000 (excellent, indicating the text is focused on the topic)
+- **Specificity**: 0.000 (excellent, indicating the text uses diverse vocabulary)
+- **Engagement**: 0.001 (excellent, indicating the text has an interactive tone)
+- **Concise**: 0.995 (excellent, indicating the text is compact)
+- **Length**: 0.000 (excellent, indicating the text is very short)
+- **Zipf**: 0.037 (excellent, indicating a natural word-frequency distribution)
+- **Hapax**: 0.025 (excellent, indicating unique, non-repetitive words)
+- **Entropy**: 0.000 (excellent, indicating a varied word choice)
+- **Perplexity**: 1.000 (excellent, indicating a complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to make the text easy to read.
+2. **Coherence**: I",151.8744,5.388704318936867,8824.554869186046,54.39767441860472,2.4916943521594686,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0017079419299743659,0.08695652173913042,0.731502890586853,0.11932660639286041,98.99050903320312,0.0,0.0,0.0,0.0009596374584361911,0.9950946569442749,0.0,0.03661981225013733,0.025039613246917725,0.0,1.0
+27,MultiArith,A pet store had 12 siamese cats and 20 house cats. During a sale they sold 20 cats. How many cats do they have left?,#### 12,SCoT,"**ANALYZE** what the question is asking: We need to find out how many cats the pet store has left after selling 20 cats.
+
+**PLAN** the reasoning steps needed:
+
+1. Start with the initial number of cats: 12 siamese cats + 20 house cats = 32 cats.
+2. Subtract the number of cats sold: 32 cats - 20 cats = 12 cats.
+
+**SOLVE** step by step:
+
+1. Start with the initial number of cats: 12 siamese cats + 20 house cats = 32 cats.
+2. Subtract the number of cats sold: 32 cats - 20 cats = 12 cats.
+
+**STATE** the final answer clearly: The pet store has 12 cats left.",80.0838,5.533962264150944,8860.348860062893,54.62515723270441,2.893081761006289,3120.765625,0.01941747572815534,0.0,0.01941747572815534,5.625487347946324e-232,0.0,0.0196078431372549,0.5,0.03773584905660377,1,0.0053956834532373765,0.15,0.7446678280830383,0.20566488802433014,,,,,,,,,,,
+27,MultiArith,A pet store had 12 siamese cats and 20 house cats. During a sale they sold 20 cats. How many cats do they have left?,#### 12,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.291
+   - Coherence: 0.055
+   - Relevance: 0.033
+   - Specificity: 0.056
+   - Engagement: 0.004
+   - Concise: 0.900
+   - Length: 0.000
+   - Zipf: 0.030
+   - Hapax: 0.037
+   - Entropy: 0.135
+   - Perplexity: 1.193
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the target readability of 98.291, the response should have a moderate sentence length, with an average of 5-7 words per sentence.
+   - For coherence, the response should have a smooth logical flow between ideas, with a mix of short and long connected sentences.
+   - To achieve the target relevance of 0.033, the response should focus on the specific topic of the sale and the remaining cats.
+   - For specificity, the response should use diverse vocabulary, avoiding repetition of the same content words.
+   - Engagement should be achieved through a conversational tone, with a mix of direct address and questions.
+   - To achieve the target concise score of 0.900, the response should be compact, with",151.8828,4.061461794019927,8808.608038309801,54.29867109634549,2.451827242524917,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0027002700270026825,0.13333333333333333,0.7509342432022095,0.10474644601345062,98.29096221923828,0.05453091114759445,0.03297696262598038,0.05555050075054169,0.003924142569303513,0.900469958782196,0.0,0.030462101101875305,0.03749909624457359,0.1348590850830078,1.1926995515823364
+28,MultiArith,"Faye and her mom were picking carrots from their garden. Faye picked 23 and her mother picked 5. If only 12 of the carrots were good, how many bad carrots did they have?",#### 16,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks for the number of bad carrots, which implies that we need to find the difference between the total number of carrots picked and the number of good carrots.
+2. **PLAN**: To find the number of bad carrots, we need to subtract the number of good carrots from the total number of carrots picked.
+3. **SOLVE**:
+   - Total number of carrots picked = 23 (Faye's carrots) + 5 (mother's carrots) = 28
+   - Number of good carrots = 12
+   - Number of bad carrots = Total number of carrots picked - Number of good carrots = 28 - 12 = 16
+
+**STATE**: The number of bad carrots Faye and her mom had is 16.",86.1799,3.8532163742690084,8771.221788194445,54.09766081871363,2.7017543859649122,3120.765625,0.017699115044247787,0.0,0.017699115044247787,5.4817391526732266e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.004580152671755711,0.13043478260869565,0.7600870728492737,0.20635737478733063,,,,,,,,,,,
+28,MultiArith,"Faye and her mom were picking carrots from their garden. Faye picked 23 and her mother picked 5. If only 12 of the carrots were good, how many bad carrots did they have?",#### 16,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.331 (Flesch-Kincaid)
+- **Coherence**: 0.000 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.000 (more interactive, conversational tone)
+- **Concise**: 0.993 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.000 (a more natural word-frequency distribution)
+- **Hapax**: 0.000 (more unique, non-repetitive words)
+- **Entropy**: 0.000 (more varied, less predictable word choice)
+- **Perplexity**: 1.000 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple vocabulary and short sentences to make the text easy to read.
+2. **Coherence**: I will use short connected sentences to maintain a smooth logical flow between ideas.
+3. **Relevance**: I will focus on the topic of carrots and their quality.
+4. **Specificity",151.9171,3.8564784053156123,8689.593853820597,53.564784053156046,2.4053156146179404,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.001713796058269046,0.09090909090909091,0.7412083148956299,0.11979943513870239,99.3307113647461,0.0,0.0,0.0,0.0,0.9928663372993469,0.0,0.0,0.0,0.0,1.0
+29,MultiArith,"The school cafeteria ordered 43 red apples and 32 green apples for students lunches. But, if only 2 students wanted fruit, how many extra did the cafeteria end up with?",#### 73,SCoT,"**ANALYZE** what the question is asking: The question is asking how many extra apples the cafeteria has after only 2 students wanted fruit, given that they ordered 43 red apples and 32 green apples.
+
+**PLAN** the reasoning steps needed: To solve this problem, we need to subtract the number of apples wanted by the students from the total number of apples ordered.
+
+**SOLVE** step by step:
+
+1. Calculate the total number of apples ordered: 43 (red apples) + 32 (green apples) = 75 apples
+2. Calculate the number of apples wanted by the students: 2 students
+3. Subtract the number of apples wanted by the students from the total number of apples ordered: 75 (total apples) - 2 (apples wanted by students) = 73 apples
+
+**STATE** the final answer clearly: The cafeteria ended up with 73 extra apples.",95.2096,4.527513227513227,8710.062706679893,53.68465608465625,2.4656084656084656,3120.765625,0.014814814814814815,0.0,0.014814814814814815,5.315431820564006e-232,0.0,0.015151515151515152,0.5,0.029411764705882356,1,0.0037641154328732496,0.13043478260869565,0.7449731826782227,0.20869441330432892,,,,,,,,,,,
+29,MultiArith,"The school cafeteria ordered 43 red apples and 32 green apples for students lunches. But, if only 2 students wanted fruit, how many extra did the cafeteria end up with?",#### 73,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.433 (target: 100)
+   - Coherence: 0.060 (target: 1.0)
+   - Relevance: 0.729 (target: 1.0)
+   - Specificity: 0.773 (target: 1.0)
+   - Engagement: 0.000 (target: 1.0)
+   - Concise: 0.933 (target: 1.0)
+   - Length: 0.000 (target: 1.0)
+   - Zipf: 0.736 (target: 1.0)
+   - Hapax: 0.764 (target: 1.0)
+   - Entropy: 0.159 (target: 1.0)
+   - Perplexity: 1.351 (target: 1.0)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - Start with a clear and concise question that addresses the specific scenario.
+   - Provide a logical and coherent explanation for the situation.
+   - Use precise vocabulary and avoid filler words.
+   - Address the question directly and avoid unnecessary phrases.
+   - Keep the response concise and to the point.
+
+3. **WRITE** following the specific guidance for each metric:
+   - Readability",151.8798,3.936544850498333,8719.425911025748,53.740199335548425,2.4119601328903655,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0031813361611876534,0.13043478260869565,0.743095338344574,0.08148889243602753,99.43250274658203,0.06023638695478439,0.7294690608978271,0.7732405066490173,0.00041676024557091296,0.9334218502044678,0.0,0.7360981106758118,0.7635092735290527,0.15919238328933716,1.3506401777267456
+30,MultiArith,"There were 39 girls and 4 boys trying out for the schools basketball team. If only 26 of them got called back, how many students didn't make the cut?",#### 17,SCoT,"**ANALYZE**:
+
+* We are given the number of girls (39) and boys (4) trying out for the basketball team.
+* We are also given the number of students who got called back (26).
+* We need to find the number of students who didn't make the cut.
+
+**PLAN**:
+
+To find the number of students who didn't make the cut, we need to subtract the number of students who got called back from the total number of students who tried out.
+
+**SOLVE**:
+
+1. Calculate the total number of students who tried out: 39 girls + 4 boys = 43 students.
+2. Subtract the number of students who got called back (26) from the total number of students who tried out: 43 - 26 = 17.
+
+**STATE**:
+
+Therefore, 17 students didn't make the cut.",90.1627,4.174860335195531,8765.24482803771,54.01955307262562,2.6033519553072626,3120.765625,0.015503875968992248,0.0,0.015503875968992248,5.374831339232389e-232,0.0,0.018867924528301886,0.5,0.03636363636363636,1,0.004285714285714337,0.13043478260869565,0.7509753704071045,0.19058038294315338,,,,,,,,,,,
+30,MultiArith,"There were 39 girls and 4 boys trying out for the schools basketball team. If only 26 of them got called back, how many students didn't make the cut?",#### 17,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.150 (we need to make the text easy to read, ideally 100 words or less)
+   - Coherence: 0.013 (we need to have a smooth logical flow between ideas)
+   - Relevance: 0.049 (we need to focus on the topic, avoiding filler words)
+   - Specificity: 0.000 (we need to use diverse vocabulary)
+   - Engagement: 0.000 (we need to have a conversational tone)
+   - Concise: 0.946 (we need to be compact with our phrasing)
+   - Length: 0.008 (we need to keep it to 100 words)
+   - Zipf: 0.000 (we need to have a natural word-frequency distribution)
+   - Hapax: 0.000 (we need to use unique, non-repetitive words)
+   - Entropy: 0.138 (we need to have a varied, less predictable word choice)
+   - Perplexity: 1.132 (we need to have a complex sentence structure)
+
+2. **PLAN** our answer structure to hit these exact targets:
+   - We'll start with a clear and concise introduction to the problem.
+   - Then, we'll provide the necessary details to calculate the number of students who",151.9328,3.955149501661126,8707.90652252907,53.66644518272432,2.441860465116279,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.001846722068328699,0.08333333333333334,0.7476305961608887,0.14534015953540802,99.15047454833984,0.01303631067276001,0.0493590384721756,0.0,0.0,0.9455608129501343,0.007700060494244099,0.0,0.0,0.13809029757976532,1.1324632167816162
+31,MultiArith,A pet store had 38 siamese cats and 25 house cats. During a sale they sold 45 cats. How many cats do they have left?,#### 18,SCoT,"**ANALYZE** what the question is asking: We need to find out how many cats the pet store has left after selling 45 cats.
+
+**PLAN** the reasoning steps needed:
+
+1. Find the initial total number of cats.
+2. Subtract the number of cats sold from the initial total number of cats.
+
+**SOLVE** step by step:
+
+1. Initial total number of cats = 38 (siamese cats) + 25 (house cats) = 63
+2. Number of cats sold = 45
+3. Number of cats left = Initial total number of cats - Number of cats sold = 63 - 45 = 18
+
+**STATE** the final answer clearly: The pet store has 18 cats left.",78.0964,3.9490322580645163,8742.693220766128,53.88774193548393,2.632258064516129,3120.765625,0.01941747572815534,0.0,0.01941747572815534,5.612774300937817e-232,0.0,0.017857142857142856,0.5,0.03448275862068965,1,0.005309734513274322,0.13333333333333333,0.7443581819534302,0.21864689886569977,,,,,,,,,,,
+31,MultiArith,A pet store had 38 siamese cats and 25 house cats. During a sale they sold 45 cats. How many cats do they have left?,#### 18,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.291 (Flesch-Kincaid)
+- **Coherence**: 0.055 (smooth logical flow between ideas)
+- **Relevance**: 0.033 (tighter focus on the topic)
+- **Specificity**: 0.056 (diverse, precise vocabulary)
+- **Engagement**: 0.004 (more interactive tone)
+- **Concise**: 0.900 (more compact phrasing)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.030 (natural word-frequency distribution)
+- **Hapax**: 0.037 (unique, non-repetitive words)
+- **Entropy**: 0.135 (more varied word choice)
+- **Perplexity**: 1.193 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Start with a clear and concise statement**: ""The pet store initially had 38 siamese cats and 25 house cats.""
+2. **Use simple and clear language**: ""During the sale, they sold 45 cats.""
+3. **Use transitional phrases to connect ideas**: ""As a result, they now have 38 + 25 - 45 = 8 cats left",151.8931,4.166445182724245,8671.642260174418,53.44750830564812,2.4617940199335546,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002762430939226568,0.11764705882352941,0.7372607588768005,0.10816001147031784,98.29096221923828,0.05453091114759445,0.03297696262598038,0.05555050075054169,0.003924142569303513,0.900469958782196,0.0,0.030462101101875305,0.03749909624457359,0.1348590850830078,1.1926995515823364
+32,MultiArith,For the school bake sale Paige made pastries. She baked 36 cupcakes and 9 cookies. After the sale she had 4 to take back home. How many pastries did she sell?,#### 41,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks how many pastries Paige sold, but it doesn't specify how many she sold.
+2. **PLAN**: To find out how many pastries Paige sold, we need to add the number of cupcakes she sold to the number of cookies she sold.
+3. **SOLVE**:
+   - First, we add the number of cupcakes and cookies she sold: 36 (cupcakes) + 9 (cookies) = 45
+   - Then, we subtract the number of pastries she took back home: 45 (total pastries) - 4 (pastries taken back home) = 41
+
+**STATE**: The final answer is 41.",78.632,3.7839743589743615,8702.018930288461,53.6512820512822,2.6538461538461537,3120.765625,0.021052631578947368,0.0,0.021052631578947368,5.775632145762076e-232,0.0,0.016666666666666666,0.5,0.03225806451612903,1,0.005535055350553542,0.1276595744680851,0.7590150237083435,0.2089977264404297,,,,,,,,,,,
+32,MultiArith,For the school bake sale Paige made pastries. She baked 36 cupcakes and 9 cookies. After the sale she had 4 to take back home. How many pastries did she sell?,#### 41,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.124 (target: 100)
+   - Coherence: 0.084 (target: 1.0)
+   - Relevance: 0.279 (target: 1.0)
+   - Specificity: 0.308 (target: 1.0)
+   - Engagement: 0.000 (target: 1.0)
+   - Concise: 0.868 (target: 1.0)
+   - Length: 0.000 (target: 1.0)
+   - Zipf: 0.308 (target: 1.0)
+   - Hapax: 0.324 (target: 1.0)
+   - Entropy: 0.286 (target: 1.0)
+   - Perplexity: 1.474 (target: 1.0)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve high readability, we'll use simple sentences and short words.
+   - To ensure coherence, we'll use connected sentences and avoid long phrases.
+   - To make the answer more relevant, we'll focus on the topic (pastries) and avoid filler words.
+   - To increase specificity, we'll use diverse vocabulary and avoid repetition.
+   - To engage the",151.8863,4.060465116279065,8717.229534364618,53.73687707641185,2.362126245847176,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003325942350332567,0.125,0.7383483052253723,0.12517882883548737,98.12391662597656,0.08439242094755173,0.27925628423690796,0.30813759565353394,0.0,0.8679097294807434,0.00026298908051103354,0.308139443397522,0.32373476028442383,0.28601452708244324,1.473791241645813
+33,MultiArith,Carol was playing a trivia game. In the first round she scored 17 points and in the second round she scored 6 points. In the last round she lost 16 points. How many points did she have at the end of the game?,#### 7,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE** what the question is asking: We need to find out how many points Carol had at the end of the game.
+2. **PLAN** the reasoning steps needed: We will start with the points she scored in the first round, add the points she scored in the second round, and then subtract the points she lost in the last round.
+3. **SOLVE** step by step:
+   - First, we add the points she scored in the first round (17) and the points she scored in the second round (6): 17 + 6 = 23
+   - Then, we subtract the points she lost in the last round (16): 23 - 16 = 7
+
+**STATE** the final answer clearly: Carol had 7 points at the end of the game.",90.718,4.144999999999998,8722.295703125,53.74,2.5055555555555555,3120.765625,0.015873015873015872,0.0,0.015873015873015872,5.385059418481704e-232,0.0,0.015151515151515152,0.5,0.029411764705882356,1,0.003016591251885359,0.09302325581395349,0.7625104784965515,0.1879461407661438,,,,,,,,,,,
+33,MultiArith,Carol was playing a trivia game. In the first round she scored 17 points and in the second round she scored 6 points. In the last round she lost 16 points. How many points did she have at the end of the game?,#### 7,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.236
+   - Coherence: 0.078
+   - Relevance: 0.003
+   - Specificity: 0.000
+   - Engagement: 0.002
+   - Concise: 0.870
+   - Length: 0.007
+   - Zipf: 0.000
+   - Hapax: 0.000
+   - Entropy: 0.279
+   - Perplexity: 1.583
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To achieve the target Readability of 98.236, the response should have a moderate level of complexity, with a mix of short and long sentences.
+   - For Coherence, the response should have a smooth logical flow between ideas, with a few longer connected sentences.
+   - To achieve the target Relevance of 0.003, the response should have a tight focus on the topic, with minimal filler words.
+   - Specificity is already achieved with the target Specificity of 0.000.
+   - Engagement is achieved with the target Engagement of 0.002, as the response is conversational and direct.
+   - To achieve the target Concise of 0.870, the response should be compact, with shorter",151.9255,4.041528239202654,8713.164386939368,53.71328903654497,2.3654485049833887,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0018832391713747842,0.09302325581395349,0.7520004510879517,0.07380370050668716,98.23590087890625,0.07772713899612427,0.002666689455509186,0.0,0.0023752471897751093,0.8695402145385742,0.006670425180345774,0.0,0.0,0.2791677713394165,1.5832160711288452
+34,MultiArith,Gwen bought two coloring books. One had 10 pictures and the other had 39. After one week she had already colored 13 of the pictures. How many pictures does she still have to color?,#### 36,SCoT,"**ANALYZE** what the question is asking: Gwen bought two coloring books, one with 10 pictures and the other with 39. She colored 13 pictures from the first book. We need to find out how many pictures she still has to color from the second book.
+
+**PLAN** the reasoning steps needed:
+
+1. Find the total number of pictures in both books.
+2. Subtract the number of pictures Gwen has already colored from the total number of pictures.
+
+**SOLVE** step by step:
+
+1. Find the total number of pictures in both books:
+10 (pictures in the first book) + 39 (pictures in the second book) = 49
+
+2. Subtract the number of pictures Gwen has already colored from the total number of pictures:
+49 (total pictures) - 13 (pictures colored) = 36
+
+Therefore, Gwen still has 36 pictures to color.
+
+**STATE** the final answer clearly: Gwen still has 36 pictures to color.",101.2572,4.276119402985073,8724.245646766169,53.77661691542287,2.4925373134328357,3120.765625,0.013605442176870748,0.0,0.013605442176870748,5.205776382759895e-232,0.0,0.014705882352941176,0.5,0.028571428571428574,1,0.003537735849056589,0.13043478260869565,0.7398832440376282,0.12078399956226349,,,,,,,,,,,
+34,MultiArith,Gwen bought two coloring books. One had 10 pictures and the other had 39. After one week she had already colored 13 of the pictures. How many pictures does she still have to color?,#### 36,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.658 (target: 100)
+   - Coherence: 0.119 (target: 1.0)
+   - Relevance: 0.122 (target: 1.0)
+   - Specificity: 0.164 (target: 1.0)
+   - Engagement: 0.005 (target: 1.0)
+   - Concise: 0.867 (target: 1.0)
+   - Length: 0.000 (target: 1.0)
+   - Zipf: 0.120 (target: 1.0)
+   - Hapax: 0.138 (target: 1.0)
+   - Entropy: 0.325 (target: 1.0)
+   - Perplexity: 1.636 (target: 1.0)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - To match the readability target, use simple sentences and short words.
+   - To match the coherence target, use connected sentences that flow logically.
+   - To match the relevance target, focus on the specific task of finding out how many pictures Gwen still has to color.
+   - To match the specificity target, use precise vocabulary and avoid repetition.
+   - To match the engagement",151.9004,3.965780730897007,8740.938655004153,53.886378737541435,2.39202657807309,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0032085561497325887,0.125,0.7387053966522217,0.11332590132951736,98.65795135498047,0.11858600378036499,0.12217584252357483,0.1637713611125946,0.004982077982276678,0.8671039938926697,0.0,0.12039493024349213,0.13846345245838165,0.3249824345111847,1.636222004890442
+35,MultiArith,"For Halloween Janet and her sister combined the candy they received. Janet had 34 pieces of candy while her sister had 33. If they ate 4 pieces the first night, how many pieces do they have left?",#### 63,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. Analyze what the question is asking: We need to find out how many pieces of candy Janet and her sister have left after they ate 4 pieces the first night.
+2. Plan the reasoning steps needed: We will start with the initial amount of candy each person had, subtract the amount eaten, and then find the total amount left.
+3. Solve step by step:
+   - Step 1: Calculate the initial amount of candy each person had.
+     - Janet had 34 pieces of candy.
+     - Her sister had 33 pieces of candy.
+   - Step 2: Subtract the amount eaten from the initial amount.
+     - Janet ate 4 pieces, so she has 34 - 4 = 30 pieces left.
+     - Her sister ate 4 pieces, so she has 33 - 4 = 29 pieces left.
+   - Step 3: Add the amounts left from Janet and her sister to find the total amount left.
+     - Janet has 30 pieces left.
+     - Her sister has 29 pieces left.
+     - Total amount left = 30 + 29 = 59 pieces.
+
+**STATE THE FINAL ANSWER CLEARLY**:
+
+Janet and her sister have 59 pieces of candy left after they ate 4 pieces the first night.",137.7217,4.3366300366300345,8764.573245764652,54.020512820512835,2.323529411764706,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0018957345971564177,0.08888888888888888,0.7484275698661804,0.09984181076288223,,,,,,,,,,,
+35,MultiArith,"For Halloween Janet and her sister combined the candy they received. Janet had 34 pieces of candy while her sister had 33. If they ate 4 pieces the first night, how many pieces do they have left?",#### 63,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.703 (excellent)
+   - Coherence: 0.077 (poor)
+   - Relevance: 0.000 (impossible)
+   - Specificity: 0.000 (impossible)
+   - Engagement: 0.003 (low)
+   - Concise: 0.886 (excellent)
+   - Length: 0.005 (excellent)
+   - Zipf: 0.000 (impossible)
+   - Hapax: 0.000 (impossible)
+   - Entropy: 0.236 (low)
+   - Perplexity: 1.549 (high)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - Start with a clear and concise statement about the situation.
+   - Use simple and short sentences to maintain readability.
+   - Address the question directly and avoid filler words.
+   - Use precise vocabulary to maintain relevance.
+   - Keep the response concise and to the point.
+   - Use a conversational tone to engage the reader.
+   - Use a clear and logical structure to maintain coherence.
+
+3. **WRITE** the response following the specific guidance for each metric:
+
+   ""Janet and her sister combined the candy they received. Janet had 34 pieces of candy while her sister had 33.",151.9164,3.9940199335548145,8718.085016092193,53.73787375415296,2.4916943521594686,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0027347310847766204,0.12244897959183675,0.7400316596031189,0.05815863236784935,98.70267486572266,0.07673011720180511,0.0,0.0,0.0029564276337623596,0.8861508965492249,0.005230274051427841,0.0,0.0,0.23599305748939514,1.5487537384033203
+36,MultiArith,"Haley and her mom were picking carrots from their garden. Haley picked 39 and her mother picked 38. If only 64 of the carrots were good, how many bad carrots did they have?",#### 13,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks for the number of bad carrots, which implies that we need to find the difference between the total number of carrots picked and the number of good carrots.
+2. **PLAN**: To find the number of bad carrots, we need to subtract the number of good carrots from the total number of carrots picked.
+3. **SOLVE**:
+   - Total number of carrots picked = 39 (Haley's carrots) + 38 (mother's carrots) = 77
+   - Number of good carrots = 64
+   - Number of bad carrots = Total number of carrots picked - Number of good carrots = 77 - 64 = 13
+
+**STATE**: The number of bad carrots picked by Haley and her mom is 13.",86.2608,5.150292397660818,8775.353846856726,54.0894736842105,2.7719298245614037,3120.765625,0.017543859649122806,0.0,0.017543859649122806,5.470563275684957e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.004518072289156572,0.125,0.7536094188690186,0.17763052880764008,,,,,,,,,,,
+36,MultiArith,"Haley and her mom were picking carrots from their garden. Haley picked 39 and her mother picked 38. If only 64 of the carrots were good, how many bad carrots did they have?",#### 13,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.331 (excellent)
+- **Coherence**: 0.000 (perfect)
+- **Relevance**: 0.000 (perfect)
+- **Specificity**: 0.000 (perfect)
+- **Engagement**: 0.000 (perfect)
+- **Concise**: 0.993 (excellent)
+- **Length**: 0.000 (perfect)
+- **Zipf**: 0.000 (perfect)
+- **Hapax**: 0.000 (perfect)
+- **Entropy**: 0.000 (perfect)
+- **Perplexity**: 1.000 (excellent)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to make the text easy to read.
+2. **Coherence**: I will use short connected sentences to create a smooth logical flow between ideas.
+3. **Relevance**: I will focus on the topic (carrots) and use relevant vocabulary.
+4. **Specificity**: I will use diverse, precise vocabulary to avoid repetition.
+5. **Engagement**: I will use a conversational tone and direct address to make the text more interactive.
+6. **Concise**: I will use short sentences and phrases to",151.9211,3.9136212624584634,8788.72915801495,54.16677740863777,2.451827242524917,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0026954177897574594,0.13043478260869565,0.7338905930519104,0.08208084851503372,99.3307113647461,0.0,0.0,0.0,0.0,0.9928663372993469,0.0,0.0,0.0,0.0,1.0
+37,MultiArith,"There were 30 girls and 36 boys trying out for the schools basketball team. If only 10 of them got called back, how many students didn't make the cut?",#### 56,SCoT,"**ANALYZE** what the question is asking: We need to find the number of students who didn't make the cut, given that 10 students got called back.
+
+**PLAN** the reasoning steps needed:
+
+1. Identify the total number of students trying out for the basketball team.
+2. Identify the number of students who got called back.
+3. Subtract the number of students who got called back from the total number of students to find the number of students who didn't make the cut.
+
+**SOLVE** step by step:
+
+1. Total number of students trying out for the basketball team = 30 girls + 36 boys = 66 students
+2. Number of students who got called back = 10
+3. Number of students who didn't make the cut = Total number of students - Number of students who got called back
+= 66 - 10
+= 56
+
+**STATE** the final answer clearly: 56 students didn't make the cut.",101.2579,4.02587064676617,8830.804804104477,54.42189054726355,2.487562189054726,3120.765625,0.013333333333333332,0.0,0.013333333333333332,5.1716383031778185e-232,0.0,0.016666666666666666,0.5,0.03225806451612903,1,0.0036101083032491488,0.13636363636363635,0.7419854402542114,0.18364286422729492,,,,,,,,,,,
+37,MultiArith,"There were 30 girls and 36 boys trying out for the schools basketball team. If only 10 of them got called back, how many students didn't make the cut?",#### 56,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.150 (Flesch-Kincaid)
+- **Coherence**: 0.013 (smooth logical flow between ideas)
+- **Relevance**: 0.049 (tighter focus on the topic)
+- **Specificity**: 0.000 (diverse, precise vocabulary)
+- **Engagement**: 0.000 (conversational tone)
+- **Concise**: 0.946 (compact phrasing, shorter sentences on average)
+- **Length**: 0.008 (a longer response)
+- **Zipf**: 0.000 (natural word-frequency distribution)
+- **Hapax**: 0.000 (unique, non-repetitive words)
+- **Entropy**: 0.138 (more varied, less predictable word choice)
+- **Perplexity**: 1.132 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Introduction**: Start with a clear and concise statement about the problem, using the **Concise** metric to make it easy to read.
+2. **Data**: Provide the relevant data, using the **Readability** metric to ensure it's clear and concise.
+3. **Calculation**: Perform the calculation to find the number of students who",151.8998,3.943853820598003,8827.13980741279,54.41760797342199,2.4385382059800667,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002601908065914982,0.125,0.7322046160697937,0.053759798407554626,99.15047454833984,0.01303631067276001,0.0493590384721756,0.0,0.0,0.9455608129501343,0.007700060494244099,0.0,0.0,0.13809029757976532,1.1324632167816162
+38,MultiArith,Roger had 29 dollars. For his birthday he got 20 more dollars but spent 34 on a new game. How much money does he have now?,#### 15,SCoT,"**ANALYZE**:
+
+The question asks us to find out how much money Roger has now after receiving 20 dollars for his birthday and spending 34 dollars on a new game.
+
+**PLAN**:
+
+To solve this problem, we need to follow a series of steps:
+
+1. Start with the initial amount of money Roger had.
+2. Add the amount of money he received for his birthday.
+3. Subtract the amount he spent on the new game.
+
+**SOLVE**:
+
+Step 1: Start with the initial amount of money Roger had.
+Roger had 29 dollars initially.
+
+Step 2: Add the amount of money he received for his birthday.
+Roger received 20 dollars for his birthday, so we add 20 to 29:
+29 + 20 = 49
+
+Step 3: Subtract the amount he spent on the new game.
+Roger spent 34 dollars on the new game, so we subtract 34 from 49:
+49 - 34 = 15
+
+**STATE**:
+
+Therefore, Roger now has 15 dollars.
+
+The final answer is: Roger has 15 dollars.",113.8446,3.8610619469026553,8753.592142560841,53.96371681415929,2.495575221238938,3120.765625,0.01234567901234568,0.0,0.01234567901234568,5.0832016388865694e-232,0.0,0.0136986301369863,0.5,0.02666666666666666,1,0.0034802784222738303,0.13636363636363635,0.7551818490028381,0.14201870560646057,,,,,,,,,,,
+38,MultiArith,Roger had 29 dollars. For his birthday he got 20 more dollars but spent 34 on a new game. How much money does he have now?,#### 15,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.313 (Flesch-Kincaid)
+- **Coherence**: 0.011 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.000 (more interactive, conversational tone)
+- **Concise**: 0.963 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.002 (a longer response)
+- **Zipf**: 0.000 (a more natural word-frequency distribution)
+- **Hapax**: 0.000 (more unique, non-repetitive words)
+- **Entropy**: 0.012 (more varied, less predictable word choice)
+- **Perplexity**: 1.011 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Start with a clear and concise statement**: ""Roger had $29 initially. He received $20 for his birthday and spent $34 on a new game.""
+2. **Use simple and direct language**: Avoid using complex sentences or overly long phrases.
+3. **Focus on the key information**: Emphasize the changes",151.8779,4.4152823920265725,8749.327125726744,53.93754152823918,2.4617940199335546,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0017211703958691649,0.0851063829787234,0.7409860491752625,0.13945582509040833,99.31309509277344,0.010866002179682255,0.0,0.0,0.0,0.9628159403800964,0.002300987485796213,0.0,0.0,0.012022057548165321,1.010717749595642
+39,MultiArith,"Dave had to wash 29 short sleeve shirts and 11 long sleeve shirts before school. If he had only washed 35 of them by the time school started, how many did he not wash?",#### 5,SCoT,"**ANALYZE**:
+
+The question asks us to find out how many shirts Dave did not wash. We are given two pieces of information:
+
+1. Dave had to wash 29 short sleeve shirts.
+2. He washed 35 shirts in total by the time school started.
+
+**PLAN** the reasoning steps needed:
+
+To find out how many shirts Dave did not wash, we need to subtract the number of shirts he washed from the total number of shirts he had to wash.
+
+**SOLVE** step by step:
+
+1. Let's start by adding the number of short sleeve shirts and long sleeve shirts Dave had to wash:
+   29 (short sleeve) + 11 (long sleeve) = 40
+
+2. Now, we know that Dave washed 35 shirts in total. To find out how many shirts he did not wash, we need to subtract the number of shirts he washed from the total number of shirts:
+   40 (total shirts) - 35 (shirts washed) = 5
+
+**STATE** the final answer clearly:
+
+Dave did not wash 5 shirts.",112.8231,3.953124999999998,8831.32413155692,54.442410714285735,2.3839285714285716,3120.765625,0.012121212121212121,0.0,0.012121212121212121,5.067913641293489e-232,0.0,0.0136986301369863,0.5,0.02666666666666666,1,0.0022805017103763037,0.08695652173913045,0.7668355703353882,0.1322314590215683,,,,,,,,,,,
+39,MultiArith,"Dave had to wash 29 short sleeve shirts and 11 long sleeve shirts before school. If he had only washed 35 of them by the time school started, how many did he not wash?",#### 5,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.991 (excellent, easy to read)
+   - Coherence: 0.000 (perfect, smooth logical flow)
+   - Relevance: 0.000 (excellent, focused on the topic)
+   - Specificity: 0.000 (excellent, diverse vocabulary)
+   - Engagement: 0.001 (good, conversational tone)
+   - Concise: 0.995 (excellent, compact phrasing)
+   - Length: 0.000 (excellent, a long response)
+   - Zipf: 0.037 (excellent, natural word-frequency distribution)
+   - Hapax: 0.025 (excellent, unique words)
+   - Entropy: 0.000 (excellent, varied word choice)
+   - Perplexity: 1.000 (excellent, complex sentence structure)
+
+2. **PLAN** the answer structure to hit these exact targets:
+   - Start with a clear and concise statement about Dave's situation.
+   - Use simple and short sentences to maintain readability.
+   - Focus on the topic (Dave's situation) and avoid filler words.
+   - Use precise vocabulary to maintain specificity.
+   - Address the question directly and engage the reader.
+   - Keep the response concise and to the point.
+   - Use a",151.9071,3.8677740863787324,8813.430894414452,54.333222591361704,2.4584717607973423,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0017905102954342,0.08695652173913045,0.7478461861610413,0.08726831525564194,98.99050903320312,0.0,0.0,0.0,0.0009596374584361911,0.9950946569442749,0.0,0.03661981225013733,0.025039613246917725,0.0,1.0
+40,MultiArith,"Edward was trying to expand his game collection. He bought 41 games from a friend and bought 14 more at a garage sale. If 31 of the games didn't work, how many good games did he end up with?",#### 24,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks how many good games Edward ended up with after buying 41 games and 14 more at a garage sale, given that 31 of the games didn't work.
+2. **PLAN**: To solve this problem, we need to subtract the number of non-working games from the total number of games Edward bought.
+3. **SOLVE**:
+   - First, we add the number of games Edward bought at the friend's place and the garage sale: 41 + 14 = 55 games.
+   - Then, we subtract the number of non-working games: 55 - 31 = 24 games.
+
+**STATE**: Edward ended up with 24 good games.",79.1504,4.307643312101913,8831.259404856688,54.445222929936385,2.878980891719745,3120.765625,0.018691588785046728,0.0,0.018691588785046728,5.65135233948518e-232,0.0,0.015625,0.5,0.030303030303030304,1,0.00512820512820511,0.13953488372093026,0.7674031257629395,0.1644701361656189,,,,,,,,,,,
+40,MultiArith,"Edward was trying to expand his game collection. He bought 41 games from a friend and bought 14 more at a garage sale. If 31 of the games didn't work, how many good games did he end up with?",#### 24,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.590 (excellent)
+- **Coherence**: 0.000 (excellent)
+- **Relevance**: 0.000 (excellent)
+- **Specificity**: 0.000 (excellent)
+- **Engagement**: 0.001 (good)
+- **Concise**: 0.998 (excellent)
+- **Length**: 0.005 (excellent)
+- **Zipf**: 0.000 (excellent)
+- **Hapax**: 0.000 (excellent)
+- **Entropy**: 0.000 (excellent)
+- **Perplexity**: 1.000 (excellent)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to explain the problem and the solution. I will avoid using complex vocabulary or long phrases.
+2. **Coherence**: I will use a logical flow of ideas to explain the problem and the solution. I will avoid using unnecessary words or phrases.
+3. **Relevance**: I will focus on the specific problem and the solution, avoiding filler words or irrelevant information.
+4. **Specificity**: I will use precise vocabulary to describe the number of games Edward bought and the number of games that",151.9449,4.299999999999995,8819.503919227574,54.36345514950147,2.471760797342193,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.00260869565217392,0.13333333333333333,0.735913872718811,0.08786521852016449,99.58985137939453,0.0,0.0,0.0,0.0005170195363461971,0.9979260563850403,0.004846087656915188,0.0,0.0,0.0,1.0
+41,MultiArith,"At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?",#### 15,SCoT,"**ANALYZE** what the question is asking: Sam bought a total of 13 adventure books and 17 mystery books, and 15 of the books were used. We need to find out how many new books he bought.
+
+**PLAN** the reasoning steps needed:
+
+1. Find the total number of books Sam bought.
+2. Subtract the number of used books from the total number of books to find the number of new books.
+
+**SOLVE** step by step:
+
+1. Find the total number of books Sam bought: 13 adventure books + 17 mystery books = 30 books
+2. Subtract the number of used books from the total number of books: 30 books - 15 used books = 15 new books
+
+**STATE** the final answer clearly: Sam bought 15 new books.",84.1417,3.8784431137724567,8783.672600112275,54.148502994011984,2.568862275449102,3120.765625,0.016260162601626018,0.0,0.016260162601626018,5.437705553716812e-232,0.0,0.018867924528301886,0.5,0.03636363636363636,1,0.004531722054380682,0.13953488372093026,0.7528157830238342,0.2272668480873108,,,,,,,,,,,
+41,MultiArith,"At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?",#### 15,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.663, which is a high score, indicating the text is clear and easy to understand.
+   - Coherence: 0.096, which is a low score, indicating the text may be confusing or disjointed.
+   - Relevance: 0.524, which is a moderate score, indicating the text is relevant to the question but may not be the most focused.
+   - Specificity: 0.558, which is a moderate score, indicating the text uses a range of vocabulary but may not be precise.
+   - Engagement: 0.004, which is a very low score, indicating the text is not engaging or interactive.
+   - Concise: 0.877, which is a high score, indicating the text is well-structured and concise.
+   - Length: 0.000, which is a very low score, indicating the text is extremely short.
+   - Zipf: 0.522, which is a moderate score, indicating the text uses a natural word-frequency distribution.
+   - Hapax: 0.549, which is a moderate score, indicating the text uses a range of unique words.
+   - Entropy: 0.282, which is a low score, indicating the text uses a predictable and simple sentence structure.
+   - Perplexity: ",151.8893,4.712956810631224,8890.60648100083,54.80697674418602,2.511627906976744,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002561912894961549,0.13043478260869565,0.7508353590965271,0.09278160333633423,98.66327667236328,0.09640400856733322,0.5244433879852295,0.5581942200660706,0.003556690411642194,0.876788318157196,0.0,0.5223604440689087,0.5491429567337036,0.2817603051662445,1.5693199634552002
+42,MultiArith,"Amy had 26 music files and 36 video files on her flash drive. If she deleted 48 of the files, how many files were still on her flash drive?",#### 14,SCoT,"**ANALYZE**:
+
+* The question asks us to find the number of files still on Amy's flash drive after she deletes 48 files.
+
+**PLAN**:
+
+1. Identify the initial number of files on the flash drive.
+2. Identify the number of files deleted.
+3. Subtract the number of deleted files from the initial number of files to find the number of files still on the flash drive.
+
+**SOLVE**:
+
+1. Initial number of files = 26 (music files)
+2. Number of files deleted = 48
+3. Number of files still on the flash drive = Initial number of files - Number of files deleted
+= 26 - 48
+= -22
+
+Since the number of files still on the flash drive is negative, this means that Amy actually deleted more files than she had initially. To find the correct answer, we need to re-evaluate the question.
+
+**RE-EVALUATE**:
+
+* If Amy deleted 48 files, and she had 26 music files, the number of music files she had left would be 26 - 48 = -22.
+* If Amy deleted 48 files, and she had 36 video files, the number of video files she had left would be 36 - 48 = -12.
+* Since the number of files still on the flash drive is negative, this means that Amy actually deleted more files than she had initially.
+
+**STATE**:
+
+* The correct answer is: There",151.5162,4.03488372093023,8831.312616798174,54.44485049833868,2.3654485049833887,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0024979184013321776,0.13333333333333333,0.7433551549911499,0.14943541586399078,,,,,,,,,,,
+42,MultiArith,"Amy had 26 music files and 36 video files on her flash drive. If she deleted 48 of the files, how many files were still on her flash drive?",#### 14,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 97.860 (Flesch-Kincaid)
+- **Coherence**: 0.009 (smooth logical flow between ideas)
+- **Relevance**: 0.054 (tighter focus on the topic)
+- **Specificity**: 0.065 (diverse, precise vocabulary)
+- **Engagement**: 0.005 (conversational tone)
+- **Concise**: 0.903 (compact phrasing)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.138 (natural word-frequency distribution)
+- **Hapax**: 0.128 (unique, non-repetitive words)
+- **Entropy**: 0.012 (more varied, less predictable word choice)
+- **Perplexity**: 1.000 (simpler, more predictable sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to convey the information. I will avoid using complex vocabulary or long phrases.
+2. **Coherence**: I will use short, connected sentences to maintain a smooth logical flow between ideas.
+3. **Relevance**: I will focus on the specific question and provide a clear, concise answer.
+4.",151.8767,4.150498338870426,8764.24787167774,54.019269102990016,2.431893687707641,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002601908065914982,0.125,0.737822949886322,0.07951407134532928,97.86012268066406,0.008534468710422516,0.053833071142435074,0.06540022790431976,0.004592464305460453,0.9033007025718689,0.0,0.1379389464855194,0.12763488292694092,0.011892629787325859,1.0
+43,MultiArith,Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now?,#### 1,SCoT,"**ANALYZE**:
+
+The question asks us to find out how much money Oliver has now, after receiving 50 dollars for his birthday and spending 84 dollars on a new game.
+
+**PLAN**:
+
+To solve this problem, we need to subtract the amount spent on the game from the amount received for his birthday.
+
+**SOLVE**:
+
+Step 1: Subtract the amount spent on the game from the amount received for his birthday.
+Oliver received 50 dollars for his birthday and spent 84 dollars on a new game.
+50 - 84 = -34
+
+**STATE**:
+
+Oliver has -34 dollars now.",65.6474,4.800769230769229,8836.511959134616,54.46153846153856,2.8923076923076922,3120.765625,0.02150537634408602,0.0,0.02150537634408602,0.0,0.0,0.02040816326530612,0.5,0.039215686274509796,1,0.003816793893129722,0.09756097560975609,0.7733043432235718,0.0032866746187210083,,,,,,,,,,,
+43,MultiArith,Oliver had 35 dollars. For his birthday he got 50 more dollars but spent 84 on a new game. How much money does he have now?,#### 1,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.313 (Flesch-Kincaid)
+- **Coherence**: 0.011 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.000 (more interactive, conversational tone)
+- **Concise**: 0.963 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.002 (a longer response)
+- **Zipf**: 0.000 (a more natural word-frequency distribution)
+- **Hapax**: 0.000 (more unique, non-repetitive words)
+- **Entropy**: 0.012 (more varied, less predictable word choice)
+- **Perplexity**: 1.011 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Start with a clear and concise statement**: ""Oliver had $35. He received $50 for his birthday and spent $84 on a new game.""
+2. **Use simple and direct language**: Avoid using complex sentences or long phrases.
+3. **Focus on the main action**: ""He spent $84 on",151.8862,4.063122923588036,8847.241097383721,54.53488372093039,2.3787375415282392,3120.765625,0.011904761904761906,0.0,0.011904761904761906,0.0,0.0,0.0078125,0.5,0.015384615384615385,1,0.0017590149516271136,0.08333333333333334,0.742618203163147,0.09604102373123169,99.31309509277344,0.010866002179682255,0.0,0.0,0.0,0.9628159403800964,0.002300987485796213,0.0,0.0,0.012022057548165321,1.010717749595642
+44,MultiArith,Emily was playing a trivia game. In the first round she scored 16 points and in the second round she scored 33 points. In the last round she lost 48 points. How many points did she have at the end of the game?,#### 1,SCoT,"**ANALYZE** what the question is asking: We need to find out how many points Emily had at the end of the game.
+
+**PLAN** the reasoning steps needed:
+
+1. Add up the points Emily scored in the first two rounds.
+2. Subtract the points she lost in the last round.
+
+**SOLVE** step by step:
+
+1. Add up the points Emily scored in the first two rounds:
+16 (first round) + 33 (second round) = 49
+2. Subtract the points she lost in the last round:
+49 - 48 = 1
+
+**STATE** the final answer clearly: Emily had 1 point at the end of the game.",71.6012,4.09154929577465,8904.447375660211,54.89154929577477,2.7183098591549295,3120.765625,0.019801980198019802,0.0,0.019801980198019802,5.704925649051987e-232,0.0,0.016666666666666666,0.5,0.03225806451612903,1,0.0037878787878787845,0.0909090909090909,0.7590700387954712,0.08374718576669693,,,,,,,,,,,
+44,MultiArith,Emily was playing a trivia game. In the first round she scored 16 points and in the second round she scored 33 points. In the last round she lost 48 points. How many points did she have at the end of the game?,#### 1,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.236 (target: 100)
+   - Coherence: 0.078 (target: 1.0)
+   - Relevance: 0.003 (target: 1.0)
+   - Specificity: 0.000 (target: 1.0)
+   - Engagement: 0.002 (target: 1.0)
+   - Concise: 0.870 (target: 1.0)
+   - Length: 0.007 (target: 1.0)
+   - Zipf: 0.000 (target: 1.0)
+   - Hapax: 0.000 (target: 1.0)
+   - Entropy: 0.279 (target: 1.0)
+   - Perplexity: 1.583 (target: 1.0)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - To achieve high readability, use simple and short sentences.
+   - To maintain coherence, use connected sentences that flow logically.
+   - To ensure relevance, focus on the topic and avoid filler words.
+   - To increase specificity, use diverse vocabulary and avoid repetition.
+   - To make the response more engaging, use a conversational tone and direct address.
+   - To keep",151.9261,3.876744186046508,8840.135732454319,54.481727574750856,2.3654485049833887,3120.765625,0.013986013986013986,0.0,0.013986013986013986,0.0,0.0,0.011627906976744186,0.5,0.022727272727272724,1,0.0021528525296017342,0.08695652173913045,0.7460549473762512,0.10247045010328293,98.23590087890625,0.07772713899612427,0.002666689455509186,0.0,0.0023752471897751093,0.8695402145385742,0.006670425180345774,0.0,0.0,0.2791677713394165,1.5832160711288452
+45,MultiArith,"Paige had 43 math problems and 12 science problems for homework. If she finished 44 of the problems at school, how many problems did she have to do for homework?",#### 11,SCoT,"**ANALYZE** what the question is asking: Paige has a total of 43 math problems and 12 science problems, and she finished 44 problems at school. We need to find out how many problems she had to do for homework.
+
+**PLAN** the reasoning steps needed:
+
+1. Add the number of math problems Paige finished at school to the total number of math problems she had.
+2. Add the number of science problems Paige finished at school to the total number of science problems she had.
+3. Subtract the total number of problems Paige finished at school from the total number of problems she had.
+
+**SOLVE** step by step:
+
+1. Add the number of math problems Paige finished at school to the total number of math problems she had:
+43 (math problems) + 44 (math problems finished at school) = 87
+2. Add the number of science problems Paige finished at school to the total number of science problems she had:
+12 (science problems) + 44 (science problems finished at school) = 56
+3. Subtract the total number of problems Paige finished at school from the total number of problems she had:
+87 (total math and science problems) - 44 (problems finished at school) = 43
+
+**STATE** the final answer clearly: Paige had 43 problems to do for homework.",138.4367,3.7930909090909064,8858.550553977273,54.62654545454571,2.4,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0024630541871921707,0.08695652173913045,0.7401055693626404,0.08313056826591492,,,,,,,,,,,
+45,MultiArith,"Paige had 43 math problems and 12 science problems for homework. If she finished 44 of the problems at school, how many problems did she have to do for homework?",#### 11,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.976 (Flesch-Kincaid)
+- **Coherence**: 0.000 (smooth logical flow between ideas)
+- **Relevance**: 0.000 (tighter focus on the topic)
+- **Specificity**: 0.000 (more diverse, precise vocabulary)
+- **Engagement**: 0.001 (more interactive, conversational tone)
+- **Concise**: 1.000 (more compact phrasing, shorter sentences on average)
+- **Length**: 0.000 (a longer response)
+- **Zipf**: 0.013 (natural word-frequency distribution)
+- **Hapax**: 0.001 (more unique, non-repetitive words)
+- **Entropy**: 0.000 (more varied, less predictable word choice)
+- **Perplexity**: 1.000 (more complex sentence structure)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple vocabulary and short sentences to make the response easy to read.
+2. **Coherence**: I will use a logical flow of ideas to connect the concepts.
+3. **Relevance**: I will focus on the specific problem and provide a clear solution.
+4. **Specificity**: I will",151.8818,4.089368770764114,8766.647191652824,54.03488372093026,2.3654485049833887,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0025884383088869978,0.08888888888888889,0.7387036681175232,0.09102176874876022,99.97606658935547,0.0,0.0,0.0,0.0005211711977608502,1.0,0.0,0.013212665915489197,0.0009520202875137329,0.0,1.0
+46,MultiArith,"Dave had to wash 9 short sleeve shirts and 27 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?",#### 16,SCoT,"**ANALYZE**:
+
+The question asks us to find out how many shirts Dave did not wash. We are given the number of short sleeve shirts (9) and the number of long sleeve shirts (27), as well as the number of shirts he washed (20).
+
+**PLAN**:
+
+To find out how many shirts Dave did not wash, we need to subtract the number of shirts he washed (20) from the total number of shirts he had (9 + 27 = 36).
+
+**SOLVE**:
+
+Step 1: Calculate the total number of shirts Dave had.
+Total shirts = short sleeve shirts + long sleeve shirts
+Total shirts = 9 + 27
+Total shirts = 36
+
+Step 2: Subtract the number of shirts Dave washed (20) from the total number of shirts he had (36).
+Shirts not washed = Total shirts - Shirts washed
+Shirts not washed = 36 - 20
+Shirts not washed = 16
+
+**STATE**:
+
+Dave did not wash 16 shirts.",107.81,3.7738317757009328,8814.77323671145,54.34719626168204,2.369158878504673,3120.765625,0.013793103448275862,0.0,0.013793103448275862,5.154982246928429e-232,0.0,0.01818181818181818,0.5,0.03508771929824561,1,0.003754693366708417,0.13043478260869565,0.7510427832603455,0.14854007959365845,,,,,,,,,,,
+46,MultiArith,"Dave had to wash 9 short sleeve shirts and 27 long sleeve shirts before school. If he had only washed 20 of them by the time school started, how many did he not wash?",#### 16,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.991 (excellent, indicating Dave's writing is clear and concise)
+- **Coherence**: 0.000 (perfect, indicating a smooth logical flow between ideas)
+- **Relevance**: 0.000 (excellent, indicating Dave's focus is tight and on topic)
+- **Specificity**: 0.000 (excellent, indicating Dave uses diverse vocabulary)
+- **Engagement**: 0.001 (good, indicating a conversational tone)
+- **Concise**: 0.995 (excellent, indicating Dave's phrasing is compact)
+- **Length**: 0.000 (excellent, indicating the response is very short)
+- **Zipf**: 0.037 (excellent, indicating a natural word-frequency distribution)
+- **Hapax**: 0.025 (excellent, indicating Dave uses unique words)
+- **Entropy**: 0.000 (excellent, indicating a varied word choice)
+- **Perplexity**: 1.000 (perfect, indicating a complex sentence structure)
+
+**PLAN** the answer structure to hit these exact targets:
+
+To answer the question, we need to:
+
+1. Identify the total number of shirts Dave had to wash initially.
+2. Subtract the number of shirts he washed by the",151.8934,4.069435215946839,8818.743861607143,54.370431893687766,2.398671096345515,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0016460905349794386,0.08695652173913042,0.739635705947876,0.11122266948223114,98.99050903320312,0.0,0.0,0.0,0.0009596374584361911,0.9950946569442749,0.0,0.03661981225013733,0.025039613246917725,0.0,1.0
+47,MultiArith,"While on vacation, Rachel took 6 pictures at the zoo and 9 at the museum. If she later deleted 11 of the pictures, how many pictures from her vacation did she still have?",#### 4,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks for the number of pictures Rachel still has after deleting 11 of them.
+2. **PLAN**: To find the number of pictures Rachel still has, we need to subtract the number of pictures she deleted from the total number of pictures she took.
+3. **SOLVE**:
+   - Total pictures taken = 6 (at the zoo) + 9 (at the museum) = 15
+   - Pictures deleted = 11
+   - Pictures still have = Total pictures taken - Pictures deleted = 15 - 11 = 4
+
+**STATE**: The number of pictures Rachel still has after deleting 11 of them is 4.",76.6318,3.795394736842108,8819.268734580592,54.38684210526304,2.789473684210526,3120.765625,0.021052631578947368,0.0,0.021052631578947368,5.677823098089411e-232,0.0,0.018867924528301886,0.5,0.03636363636363636,1,0.0035087719298245723,0.08888888888888889,0.7678877115249634,0.15210846066474915,,,,,,,,,,,
+47,MultiArith,"While on vacation, Rachel took 6 pictures at the zoo and 9 at the museum. If she later deleted 11 of the pictures, how many pictures from her vacation did she still have?",#### 4,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 99.217 (target: 0-100)
+   - Coherence: 0.000 (target: 0.0-1.0)
+   - Relevance: 0.000 (target: 0.0-1.0)
+   - Specificity: 0.000 (target: 0.0-1.0)
+   - Engagement: 0.000 (target: 0.0-1.0)
+   - Concise: 0.998 (target: 0.0-1.0)
+   - Length: 0.001 (target: 0.0-1.0)
+   - Zipf: 0.000 (target: 0.0-1.0)
+   - Hapax: 0.000 (target: 0.0-1.0)
+   - Entropy: 0.000 (target: 0.0 and up)
+   - Perplexity: 1.000 (target: 1.0 and up)
+
+2. **PLAN** your answer structure to hit these exact targets:
+   - To achieve high readability, use simple vocabulary and short sentences.
+   - To maintain coherence, use connected sentences and a logical flow of ideas.
+   - To ensure relevance, focus on",151.8715,4.264784053156144,8837.535286025748,54.4744186046512,2.335548172757475,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0012706480304955914,0.047619047619047616,0.7388660907745361,0.10057564079761505,99.21668243408203,0.0,0.0,0.0,0.0,0.9978793263435364,0.0006051891250535846,0.0,0.0,0.0,1.0
+48,MultiArith,"Vanessa and her mom were picking carrots from their garden. Vanessa picked 17 and her mother picked 14. If only 24 of the carrots were good, how many bad carrots did they have?",#### 7,SCoT,"**CHAIN OF THOUGHT PROCESS**:
+
+1. **ANALYZE**: The question asks for the number of bad carrots, which are the ones that are not good.
+2. **PLAN**: To find the number of bad carrots, we need to add the number of good carrots picked by Vanessa and her mother.
+3. **SOLVE**:
+   - Vanessa picked 17 good carrots.
+   - Her mother picked 14 good carrots.
+   - To find the total number of good carrots, we add 17 + 14 = 31.
+   - Since there are only 24 good carrots in total, the number of bad carrots is 31 - 24 = 7.
+
+**STATE**: The number of bad carrots Vanessa and her mother had is 7.",80.139,4.0050314465408805,8840.301690251572,54.49622641509428,2.842767295597484,3120.765625,0.01904761904761905,0.0,0.01904761904761905,0.0,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.0034423407917383297,0.09756097560975609,0.7675521373748779,0.24545679986476898,,,,,,,,,,,
+48,MultiArith,"Vanessa and her mom were picking carrots from their garden. Vanessa picked 17 and her mother picked 14. If only 24 of the carrots were good, how many bad carrots did they have?",#### 7,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 99.331 (excellent)
+- **Coherence**: 0.000 (perfect)
+- **Relevance**: 0.000 (perfect)
+- **Specificity**: 0.000 (perfect)
+- **Engagement**: 0.000 (perfect)
+- **Concise**: 0.993 (excellent)
+- **Length**: 0.000 (perfect)
+- **Zipf**: 0.000 (perfect)
+- **Hapax**: 0.000 (perfect)
+- **Entropy**: 0.000 (perfect)
+- **Perplexity**: 1.000 (excellent)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Readability**: I will use simple, short sentences to make the explanation easy to understand.
+2. **Coherence**: I will use short connected sentences to create a smooth logical flow between ideas.
+3. **Relevance**: I will focus on the topic (carrots) and use relevant vocabulary.
+4. **Specificity**: I will use diverse, precise vocabulary to avoid repetition.
+5. **Engagement**: I will use a conversational tone to make the explanation interactive.
+6. **Concise**: I will use short sentences on average to make the explanation compact",151.8994,3.8461794019933526,8848.450438642027,54.557475083056715,2.3322259136212624,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0008795074758135568,0.044444444444444446,0.7401638627052307,0.08479246497154236,99.3307113647461,0.0,0.0,0.0,0.0,0.9928663372993469,0.0,0.0,0.0,0.0,1.0
+49,MultiArith,A pet store had 41 siamese cats and 28 house cats. During a sale they sold 15 cats. How many cats do they have left?,#### 54,SCoT,"**ANALYZE** what the question is asking: We need to find out how many cats the pet store has left after selling 15 cats.
+
+**PLAN** the reasoning steps needed:
+
+1. Start with the initial number of cats: 41 siamese cats + 28 house cats = 69 cats.
+2. Subtract the number of cats sold: 69 cats - 15 cats = 54 cats.
+
+**SOLVE** step by step:
+
+1. 69 cats - 15 cats = 54 cats
+
+**STATE** the final answer clearly: The pet store has 54 cats left.",63.5079,4.2460317460317505,8879.254340277777,54.73730158730168,2.9206349206349205,3120.765625,0.02469135802469136,0.0,0.02469135802469136,5.9825138229219476e-232,0.0,0.018518518518518517,0.5,0.03571428571428571,1,0.006880733944954143,0.13953488372093026,0.7451000809669495,0.17131704092025757,,,,,,,,,,,
+49,MultiArith,A pet store had 41 siamese cats and 28 house cats. During a sale they sold 15 cats. How many cats do they have left?,#### 54,MGCoT,"I will follow the chain of thought process to answer the question while precisely matching the predicted targets.
+
+**ANALYZE** each target metric and understand what it requires:
+
+- **Readability**: 98.291 (target: 0-100)
+- **Coherence**: 0.055 (target: 0.0-1.0)
+- **Relevance**: 0.033 (target: 0.0-1.0)
+- **Specificity**: 0.056 (target: 0.0-1.0)
+- **Engagement**: 0.004 (target: 0.0-1.0)
+- **Concise**: 0.900 (target: 0.0-1.0)
+- **Length**: 0.000 (target: 0.0-1.0)
+- **Zipf**: 0.030 (target: 0.0-1.0)
+- **Hapax**: 0.037 (target: 0.0-1.0)
+- **Entropy**: 0.135 (target: 0.0 and up)
+- **Perplexity**: 1.193 (target: 1.0 and up)
+
+**PLAN** my answer structure to hit these exact targets:
+
+1. **Introduction**: Briefly introduce the pet store, the number of siamese cats, house cats, and the sale.
+2. **",151.9016,4.104318936877073,8811.847669227574,54.31096345514951,2.478405315614618,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.003759398496240629,0.1276595744680851,0.724799633026123,0.1073899120092392,98.29096221923828,0.05453091114759445,0.03297696262598038,0.05555050075054169,0.003924142569303513,0.900469958782196,0.0,0.030462101101875305,0.03749909624457359,0.1348590850830078,1.1926995515823364
+50,MultiArith,"At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?",#### 15,SCoT,"**ANALYZE** what the question is asking: Sam bought a total of 13 adventure books and 17 mystery books, and 15 of the books were used. We need to find out how many new books he bought.
+
+**PLAN** the reasoning steps needed:
+
+1. Find the total number of books Sam bought.
+2. Subtract the number of used books from the total number of books to find the number of new books.
+
+**SOLVE** step by step:
+
+1. Find the total number of books Sam bought: 13 adventure books + 17 mystery books = 30 books
+2. Subtract the number of used books from the total number of books: 30 books - 15 used books = 15 new books
+
+**STATE** the final answer clearly: Sam bought 15 new books.",84.1326,3.997604790419161,8828.563903443113,54.422754491017926,2.5988023952095807,3120.765625,0.016260162601626018,0.0,0.016260162601626018,5.437705553716812e-232,0.0,0.018867924528301886,0.5,0.03636363636363636,1,0.004531722054380682,0.13953488372093026,0.7528157830238342,0.2272668480873108,,,,,,,,,,,
+50,MultiArith,"At the schools book fair Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?",#### 15,MGCoT,"**CHAIN OF THOUGHT PROCESS**
+
+1. **ANALYZE** each target metric and understand what it requires:
+   - Readability: 98.663, which is a high score, indicating the text is clear and easy to understand.
+   - Coherence: 0.096, which is a low score, indicating the text may be confusing or disjointed.
+   - Relevance: 0.524, which is a moderate score, indicating the text is relevant to the question but may not be the most focused.
+   - Specificity: 0.558, which is a moderate score, indicating the text uses a range of vocabulary but may not be precise.
+   - Engagement: 0.004, which is a very low score, indicating the text is not engaging or interactive.
+   - Concise: 0.877, which is a high score, indicating the text is well-structured and concise.
+   - Length: 0.000, which is a very low score, indicating the text is extremely short.
+   - Zipf: 0.522, which is a moderate score, indicating the text uses a natural word-frequency distribution.
+   - Hapax: 0.549, which is a moderate score, indicating the text uses a range of unique words.
+   - Entropy: 0.282, which is a low score, indicating the text has a predictable and simple sentence structure.
+   - Perplexity: ",151.904,4.1358803986710955,8827.365007267443,54.41661129568102,2.4385382059800667,3120.765625,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.002564102564102555,0.13043478260869565,0.7509563565254211,0.09278160333633423,98.66327667236328,0.09640400856733322,0.5244433879852295,0.5581942200660706,0.003556690411642194,0.876788318157196,0.0,0.5223604440689087,0.5491429567337036,0.2817603051662445,1.5693199634552002
