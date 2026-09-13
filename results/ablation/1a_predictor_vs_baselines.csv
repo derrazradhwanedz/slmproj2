@@ -1,0 +1,10 @@
+predictor,heldout_mse,heldout_cosine,mse_minus_dnn,ci_low,ci_high,p,p_fdr
+Mean answer profile,0.0814,0.8627,0.0489,0.0358,0.0604,0.0,0.0
+Copy of question profile,0.4041,0.2428,0.3716,0.3502,0.3914,0.0,0.0
+Linear regression,0.0631,0.8931,0.0305,0.0186,0.0415,0.0,0.0
+Random forest,0.0354,0.9379,0.0029,-0.007,0.0118,0.6475,0.6475
+Gradient boosting,0.0487,0.9162,0.0161,0.0059,0.0256,0.0,0.0
+k-nearest neighbours,0.0423,0.9308,0.0098,-0.0007,0.0198,0.0005,0.0007
+Support vector regression,0.0436,0.9302,0.0111,0.0019,0.0197,0.0,0.0
+Trained DNN (study model),0.0325,0.9488,,,,,
+DNN retrained (mean of 5 seeds),0.033,0.9448,0.0004,-0.0033,0.0039,0.6303,0.6475

@@ -219,3 +219,17 @@ results/analysis/~$*
 
 # Scratch output from interrupted pandoc/Word runs
 -
+
+# Response to reviewers quotes confidential peer-review comments: keep local
+results/response_to_reviewers*
+
+# Manuscript text drafts: the paper stays private until publication
+results/discussion/discussion_section.*
+results/discussion/conclusion_section.*
+results/discussion/discussion_citations.md
+results/ablation/ablation_sections.md
+results/**/*.docx
+
+# Reference-lookup scratch files (published-version and routing searches)
+results/discussion/published/
+results/discussion/routing/

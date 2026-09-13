@@ -6,6 +6,21 @@ target quality metrics for the answer and asks the model to match them).
 
 ## Version
 
+**v1.2.0**
+
+- **Predictor ablation (`ablation.py`)**: compares the quality predictor with the mean answer profile,
+  a copy of the question profile, linear regression and four non-neural regressors (random forest,
+  gradient boosting, k-nearest neighbours, support vector regression) tuned by 5-fold
+  cross-validation; retrains the network over five seeds; measures each input metric's contribution
+  by leave-one-metric-out retraining; and tests whether MGCoT answers follow the targets predicted for
+  their own question rather than targets reassigned from other questions. Outputs go to
+  `results/ablation/`.
+- **Task accuracy in the statistical tables (`analysis_v4.py`)**: `accuracy` is reported with the other
+  response-quality metrics and tested with the exact McNemar test, since it is a binary outcome.
+- **Response-quality section**: syntactic and semantic metrics are reported together; exact match,
+  BLEU, ROUGE-1/2 F1 and the token overlap count are computed but excluded from the tables because
+  they stay at their floor for label-type reference answers.
+
 **v1.1.0**
 
 - **Answer-side quality profiles (`profile_answers.py`)**: measures the same 11 profile metrics on
@@ -162,6 +177,7 @@ python compute_accuracy.py      # adds task accuracy per response
 python analysis_v4.py           # per-model tables, patterns.json, supplementary_tests.xlsx
 python analysis_v2.py           # full paired-test scan across metrics, models and datasets
 python build_results_md.py      # renders the Results section (Markdown + Word)
+python ablation.py              # predictor ablation and target-steering analysis
 ```
 
 Order matters: `profile_answers.py` and `compute_accuracy.py` extend the combined CSV that the
@@ -178,6 +194,7 @@ results/
   evaluation/           per-dataset and combined result CSVs (step 6)
   analysis/             per-model tables, patterns.json, supplementary_tests.xlsx,
                         results_text.json and the generated Results section (step 7)
+  ablation/             predictor-vs-baselines, leave-one-metric-out and target-steering results
   discussion/           discussion_points.md (trends), evidence_map.md (findings to
                         literature) and refs/ (one BibTeX file per reference)
   Hardware_Specifications.txt   machine specification of the experimental platform
