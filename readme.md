@@ -6,6 +6,14 @@ target quality metrics for the answer and asks the model to match them).
 
 ## Version
 
+**v1.2.1**
+
+- **Licence and citation**: the MIT licence names the copyright holder, and `CITATION.cff` plus a Citation
+  section give the reference to use when citing this repository.
+- **Metric definitions**: aligned with the code and the manuscript: Entropy is computed in nats
+  (`scipy.stats.entropy`), Length increases monotonically across the observed range, and the
+  Coherence and Relevance descriptions state what each ratio measures.
+
 **v1.2.0**
 
 - **Predictor ablation (`ablation.py`)**: compares the quality predictor with the mean answer profile,
@@ -207,23 +215,23 @@ The 11 quality-profile metrics MGCoT predicts and targets (see `src/metrics/prof
 
 Readability: measures text complexity by applying Flesch Reading Ease coefficients to average word length and sentence density, clipped to 0–100. For responses of the length generated here the expression reaches its upper bound, a ceiling effect reported as a limitation. Formula: FK = 206.835 - 1.015 × AWL - 84.6 × (S/WC), where AWL is average word length, S is sentence count, and WC is word count. The formula subtracts weighted word length and sentence density from a baseline, penalizing complex sentences [29].
 
-Coherence: Coherence evaluates logical flow between ideas, scoring 0.0–1.0 with higher values indicating smoother connections. Formula: C = 1 - (S/WC), where S is sentence count and WC is word count. Lower sentence-to-word ratios (fewer sentences per word, implying longer sentences) yield higher coherence scores, suggesting better connectivity between ideas [30].
+Coherence: Coherence evaluates logical flow between ideas, scoring 0.0–1.0 with higher values indicating smoother connections. Formula: C = 1 - (S/WC), where S is sentence count and WC is word count. Lower sentence-to-word ratios (fewer sentences per word, implying longer sentences) yield higher coherence scores; the ratio is a structural proxy for coherence, which is conventionally measured as the semantic relatedness of adjacent text segments [30].
 
-Relevance (Lexical Density): assesses how closely content aligns with the topic, scoring 0.0–1.0 where higher values indicate tighter focus. Formula: Relevance = content_words / total_words, where content_words excludes stopwords. The ratio measures the proportion of meaningful words relative to total words, with higher ratios indicating more focused, on-topic content [31].
+Relevance (Lexical Density): assesses how closely content aligns with the topic, scoring 0.0–1.0 where higher values indicate tighter focus. Formula: Relevance = content_words / total_words, where content_words excludes stopwords. The ratio is the lexical density of the text, the proportion of content words among all words [31], and higher ratios are taken to indicate more focused, on-topic content.
 
-Specificity (Lexical Diversity): measures detail level and precision, scoring 0.0–1.0 with higher values indicating greater detail. Specificity = unique_content_words / content_words, where content_words excludes stopwords. Higher ratios indicate more diverse vocabulary within content words, reflecting detailed, concrete responses (Johansson, 2008; McCarthy & Jarvis, 2010).
+Specificity (Lexical Diversity): measures detail level and precision, scoring 0.0–1.0 with higher values indicating greater detail. Specificity = unique_content_words / content_words, where content_words excludes stopwords. Higher ratios indicate more diverse vocabulary within content words, reflecting detailed, concrete responses [32].
 
 Engagement: evaluates conversational dynamism, scoring 0.0–1.0 with higher values indicating more interactive tone. Engagement = [(question_marks + interrogatives × 0.5) / word_count] × 10, where interrogatives count words like 'what', 'how', 'why'. The formula weights question marks and interrogative words relative to text length, measuring how frequently the text prompts reader interaction [33].
 
 Concise (Conciseness): measures brevity and efficiency in writing, with higher values indicating more compact language. We operationalize conciseness as a bounded, monotonically decreasing transformation of average sentence length: Conciseness = 1 / (1 + log(max(words_per_sentence, 1))), where words_per_sentence = word_count / sentence_count. This transformation penalizes verbosity (long sentences) while rewarding more concise phrasing [34].
 
-Zipf: evaluates how closely a text's vocabulary distribution follows Zipf's law, with higher values indicating more natural rank-frequency behavior. We operationalize Zipf compliance as: Zipf = 1 / (1 + std(freq × rank)), where words are ranked by frequency and freq × rank products are computed. Lower standard deviation in these products indicates more Zipf-consistent vocabulary distribution [35].
+Zipf: evaluates how closely a text's vocabulary distribution follows Zipf's law, with higher values indicating more natural rank–frequency behaviour. We operationalize Zipf compliance as: Zipf = 1 / (1 + std(freq × rank)), where words are ranked by frequency and freq × rank products are computed. Lower standard deviation in these products indicates more Zipf-consistent vocabulary distribution [35].
 
 Hapax: measures the proportion of unique words appearing once (hapax legomena), scoring 0.0–1.0 with higher values indicating more diverse vocabulary. Hapax = words_appearing_once / total_words. Higher ratios indicate more unique, non-repetitive vocabulary, reflecting lexical diversity and avoiding formulaic language [36].
 
-Length: measures the extent of a response, with higher values indicating longer text (peaking around ~100 words as a reasonable conversational target). We operationalize length as Length = 1 - exp(-0.05 × normalized_word_count), where normalized_word_count = word_count / 100. The curve increases gradually rather than saturating within the observed range: a 100-word response scores approximately 0.05, so the metric orders responses by length [37].
+Length: measures the extent of a response, with higher values indicating longer text (monotonically increasing across the range observed here). We operationalize length as Length = 1 - exp(-0.05 × normalized_word_count), where normalized_word_count = word_count / 100. The curve increases gradually rather than saturating within the observed range: a 100-word response scores approximately 0.05, so the metric orders responses by length [37].
 
-Entropy: measures word choice unpredictability, scoring 0.0+ with higher values indicating more uniform, varied vocabulary distribution. Formula: Entropy = -sum(p_i × log2(p_i)), where p_i is the probability of word i occurring. Higher entropy indicates more uniform word distribution (less predictable), while lower entropy suggests repetitive or predictable word choices [38].
+Entropy: measures word choice unpredictability, scoring 0.0+ with higher values indicating more uniform, varied vocabulary distribution. Formula: Entropy = -sum(p_i × ln(p_i)), computed in nats, where p_i is the probability of word i occurring. Higher entropy indicates more uniform word distribution (less predictable), while lower entropy suggests repetitive or predictable word choices [38].
 
 Perplexity: measures sentence structure predictability, scoring 1.0+ with lower values indicating more predictable, simpler structures. Formula: Perplexity = 2^entropy, where the entropy is computed in nats, so the metric is a monotone transformation of entropy rather than perplexity in its classical form. Lower values indicate more predictable text (simpler structures); higher values suggest complex, less predictable sentence patterns [39].
 
