@@ -226,3 +226,19 @@ Length: measures the extent of a response, with higher values indicating longer 
 Entropy: measures word choice unpredictability, scoring 0.0+ with higher values indicating more uniform, varied vocabulary distribution. Formula: Entropy = -sum(p_i × log2(p_i)), where p_i is the probability of word i occurring. Higher entropy indicates more uniform word distribution (less predictable), while lower entropy suggests repetitive or predictable word choices [38].
 
 Perplexity: measures sentence structure predictability, scoring 1.0+ with lower values indicating more predictable, simpler structures. Formula: Perplexity = 2^entropy, where the entropy is computed in nats, so the metric is a monotone transformation of entropy rather than perplexity in its classical form. Lower values indicate more predictable text (simpler structures); higher values suggest complex, less predictable sentence patterns [39].
+
+---
+
+## Citation
+
+If you use slmproj2 in your work, please cite it:
+
+> R. Derraz, *slmproj2: MGCoT vs SCoT Evaluation Pipeline*, 2025. [Online]. Available: https://github.com/derrazradhwanedz/slmproj2
+
+Citation metadata is also provided in `CITATION.cff` (GitHub's **Cite this repository** button).
+
+---
+
+## License
+
+MIT — see `LICENSE`. You are free to use, modify and redistribute the code; please keep the licence notice and cite the project.
